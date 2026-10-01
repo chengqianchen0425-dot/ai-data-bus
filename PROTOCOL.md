@@ -8,7 +8,7 @@
 1. 发单前先看 `responses/` 里有没有同名回执，避免重复提交。
 2. 一次一个文件、一个请求。
 3. 回执约 5 分钟内产出（`deep_research` 除外：首轮先回 `processing` 占位，做完再覆盖为最终结果）。
-4. `id` 全局唯一，建议 `req-YYYYMMDD-序号`。
+4. `id` 全局唯一，建议 `req-YYYYMMDD-序号`。**严禁复用已完成任务的 id 发新任务**——追问或新任务必须用新 id；如复用旧 id，旧回执会被归档为 `responses/<id>.archived-时间戳.json`，新任务重新走 processing。
 5. 回执 `status`：`ok` 成功 / `error` 失败（看 `error` 字段写的原因） / `processing` 处理中（仅耗时任务）。
 6. 抓不到、搜不到就写 `error`，不要编造数据。
 
