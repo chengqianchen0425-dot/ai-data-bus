@@ -1,0 +1,14 @@
+{
+  "id": "req-20261001-002",
+  "type": "deep_research",
+  "params": {
+    "topic": "Serie A Italy 2021-2025 historical bookmaker odds gap recovery",
+    "questions": [
+      "For Italian Serie A seasons 2021/22 through 2025/26, identify public, verifiable historical sources that can provide row-level 1X2 and total-goals odds for Bet365, Pinnacle, and William Hill, keeping bookmakers separate.",
+      "Prioritize opening and closing/pre-match snapshots and sources with stable matching by season, kickoff date, home team, and away team. Return source URL, field semantics, timestamp semantics, and whether data is truly row-level historical rather than documentation only.",
+      "Assess whether a same-bookmaker opening and closing pair can support O_INTERVAL under strict provenance rules. Do not infer missing odds, do not convert closing to opening, do not use API-Football as bookmaker odds, and do not merge ambiguous fixtures.",
+      "Return structured JSON with source coverage, bookmaker availability, season coverage, expected matchability, unavailable/blocked reasons, and any concrete rows only when independently verifiable. Explicitly report coverage counts, unmatched counts, duplicate/conflict counts, and whether opening and closing values are separately present."
+    ]
+  },
+  "created_at": "2026-10-01T21:20:00+08:00"
+}
