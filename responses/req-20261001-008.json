@@ -1,1 +1,6 @@
-{"id": "req-20261001-008", "status": "processing", "note": "deep_research 进行中：第一轮开始调研，源识别与覆盖审计中", "started_at": "2026-10-02T00:16:00+08:00"}
+{
+  "id": "req-20261001-008",
+  "status": "processing",
+  "note": "研究进行中：首轮源侦察完成（同 req-20261001-007 重试范围，结论一致）。赔率维度：OddsPortal（.../football/japan/j1-league/，历史回溯2004）为 O_OPEN/O_CLOSE 首选候选（官方开/收盘定义，tooltip 时间戳需第二轮验证）；SoccerPunter 免费层仅 close（开盘在 Platinum 付费墙后）；nowscore 初指=首次收录/即时=最新收录，仅补充、不可替换开/收盘；Soccerway（赔率区为广告无历史值）、worldfootball（无赔率，仅 fixture crosswalk）、FootyStats（仅当前快照）、schochastics（零赔率列，止于2023）、J.League 官方（无赔率，仅 kickoff/venue crosswalk）、toto（pari-mutuel 非固定赔率）均不可用；football-data.co.uk 无日本联赛；betexplorer 待第二轮验证。venue/kickoff crosswalk 可用 J.League 官方 + Soccerway + worldfootball。",
+  "started_at": "2026-10-02T00:16:00+08:00"
+}
