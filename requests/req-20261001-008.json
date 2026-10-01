@@ -1,0 +1,20 @@
+{
+  "id": "req-20261001-008",
+  "type": "deep_research",
+  "params": {
+    "topic": "Japan J1 League 2021-2025 row-level historical football data gap recovery; unique retry after wrong-scope response collision",
+    "questions": [
+      "This request is Japan J1 only: seasons 2021, 2022, 2023, 2024, and 2025; exclude J2 and every other competition. Use D:\\奇门斗数\\work\\j1-muse-supplement-20261001\\j1_muse_gap_checklist.json as the authoritative scope.",
+      "Resolve the 48 local J1 fixtures without a unique provider fixture id by season, kickoff date or UTC timestamp, normalized home team, normalized away team, and stable source URL or fixture identifier. Return row-level crosswalk evidence and unresolved_queue for ambiguous/unmatched rows.",
+      "Investigate the 642 field-level unavailable rows from the 1704 mapped fixtures for Bet365, Pinnacle, and William Hill 1X2. Keep bookmaker, opening, closing, pre_closing, and historical pre-match ticks separate. Do not infer opening from closing or relabel Football-Data pre-closing as opening.",
+      "If historical odds are found, return earliest verified pre-match and latest verified pre-match observations with recorded_at, bookmaker, market, home, draw, away, pre_match_marker, source_url, final_url, field_locator, fetched_at, and SHA-256; state O_OPEN/O_CLOSE/O_INTERVAL support explicitly.",
+      "Verify kickoff_local, kickoff_utc, venue, and venue timezone only for unambiguous J1 fixtures; preserve URL, final URL, fetched_at, locator, and hash. Put conflicts in a separate conflict list.",
+      "Review J1 club identity fields team_name, club-lineage natal_year, first-J1-season-start competition_entry_year, lineage explanation, and source URL. natal_year is lineage founding year; competition_entry_year is first J1 season start; do not substitute J2 participation.",
+      "Find rank_before, points_before, played_before, as_of, and source URL only when directly pre-kickoff evidenced. Preserve preseason/tie/unavailable states.",
+      "Do not infer Qimen Q tokens, F relation, G energy, I cycle/intent, A/B/C/E/M fields, model direction, Miss labels, BTTS, total goals, results, Review, or any post-match field; these remain local/manual gates.",
+      "Return structured JSON coverage counts expected, discovered, complete, partial, matched, unmatched, duplicate, conflict, unavailable, and blocked, plus exact unresolved_queue by season, fixture, bookmaker, market, field, status, and reason. Preserve NULL values and report unavailable rather than guessing.",
+      "Evidence-only supplement output: do not modify Snapshot, Outcome, Review, Gold, Registry, formal probabilities, weights, or prediction search index."
+    ]
+  },
+  "created_at": "2026-10-01T23:59:00+08:00"
+}
