@@ -2,166 +2,280 @@
   "id": "req-20261001-006",
   "status": "ok",
   "data": {
-    "result": {
-      "rows": [
-        {
-          "season": "2021-22",
-          "match_date": "2022-02-11",
-          "home_team": "RB Leipzig",
-          "away_team": "FC Koln",
-          "provider_fixture_id": null,
-          "source_url": "https://www.soccerway.com/match/1-fc-koln-WG9pOTse/rb-leipzig-KbS1suSm/?mid=0dnWaib6",
-          "source_type": "soccerway_match_page",
-          "match_status": "played",
-          "odds_available": "partial",
-          "notes": "页面标题核实为 RB Leipzig v FC Koln；搜索片段确认 11.02.2022、RB Leipzig 3-1 FC Koln；Odds 1X2 栏位为庄家广告内容，文本抓取未捕获数值。"
+    "result": [
+      {
+        "season": "2021-22",
+        "match_date": "2022-02-11",
+        "home_team": "RB Leipzig",
+        "away_team": "FC Koln",
+        "provider_fixture_id": null,
+        "source_url": "https://www.football-data.co.uk/mmz4281/2122/D1.csv",
+        "source_type": "public_odds_dataset_csv",
+        "match_status": "matched",
+        "odds_available": true,
+        "csv_row": 191,
+        "ft_result": "3-1 (H)",
+        "odds_b365_preclosing_1x2": {
+          "home": "1.44",
+          "draw": "4.75",
+          "away": "7"
         },
-        {
-          "season": "2021-22",
-          "match_date": "2022-02-12",
-          "home_team": "Bayer Leverkusen",
-          "away_team": "VfB Stuttgart",
-          "provider_fixture_id": null,
-          "source_url": "https://tipsterarea.com/match/bayer-leverkusen-stuttgart-bundesliga-germany-694931",
-          "source_type": "tipsterarea_pre_match_odds",
-          "match_status": "played",
-          "odds_available": true,
-          "notes": "页面核实：2022-02-12 17:30，Leverkusen 4-2 Stuttgart；完整 Leading Bookmakers Odds 表（1X2/Double Chance/DNB/Over-Under/BTS：1xbet、bet-at-home、betfair、bwin、unibet）；标注 'Odds are pre-match odds… last update 12.02.2022 16:04'（早于开球）。"
+        "odds_b365_closing_1x2": {
+          "home": "1.4",
+          "draw": "4.75",
+          "away": "7.5"
         },
-        {
-          "season": "2021-22",
-          "match_date": "2022-02-12",
-          "home_team": "Borussia M'gladbach",
-          "away_team": "FC Augsburg",
-          "provider_fixture_id": null,
-          "source_url": "https://uk.soccerway.com/matches/2022/02/12/germany/bundesliga/borussia-monchengladbach/fc-augsburg/3524858/commentary/",
-          "source_type": "soccerway_match_page",
-          "match_status": "played",
-          "odds_available": "partial",
-          "notes": "页面标题核实为 Monchengladbach v FC Augsburg；搜索片段确认 12.02.2022、Monchengladbach 3-2 Augsburg；Odds 栏位为庄家广告内容，文本抓取未捕获数值。"
-        },
-        {
-          "season": "2021-22",
-          "match_date": "2022-02-12",
-          "home_team": "Eintracht Frankfurt",
-          "away_team": "VfL Wolfsburg",
-          "provider_fixture_id": null,
-          "source_url": "https://www.telefootball.net/IN/Eintracht-Frankfurt-VfL-Wolfsburg-2022-02-12-367614.html",
-          "source_type": "telefootball_average_odds",
-          "match_status": "played",
-          "odds_available": true,
-          "notes": "页面核实：20:00 / 12.02.2022，Bundesliga；ODDS 行 'Average odds 3.40, 3.40, 2.15'（栏位标签顺序为 2/X/1，原样引用，未换算）；比赛事件与 Frankfurt 0-2 Wolfsburg 赛果一致。"
-        },
-        {
-          "season": "2021-22",
-          "match_date": "2022-02-12",
-          "home_team": "SC Freiburg",
-          "away_team": "Mainz",
-          "provider_fixture_id": null,
-          "source_url": "https://corner-stats.com/sc-freiburg-mainz-12-02-2022/bundesliga-germany/match/407567",
-          "source_type": "corner_stats_match_page",
-          "match_status": "played",
-          "odds_available": false,
-          "notes": "页面核实：12/02/2022 14:30，Bundesliga 2021/22 Round 22，Freiburg - Mainz 1:1；Odds 表仅有栏位头，无庄家行。"
-        },
-        {
-          "season": "2021-22",
-          "match_date": "2022-02-12",
-          "home_team": "Greuther Furth",
-          "away_team": "Hertha Berlin",
-          "provider_fixture_id": null,
-          "source_url": "https://corner-stats.com/greuther-furth-hertha-berlin-12-02-2022/bundesliga-germany/match/407569",
-          "source_type": "corner_stats_match_page",
-          "match_status": "played",
-          "odds_available": false,
-          "notes": "页面核实：12/02/2022 14:30，Bundesliga 2021/22 Round 22，Greuther Furth - Hertha Berlin 2:1；Odds 表仅有栏位头，无庄家行。"
-        },
-        {
-          "season": "2021-22",
-          "match_date": "2022-02-12",
-          "home_team": "VfL Bochum",
-          "away_team": "Bayern Munich",
-          "provider_fixture_id": null,
-          "source_url": "https://corner-stats.com/bochum-bayern-munich-12-02-2022/bundesliga-germany/match/407568",
-          "source_type": "corner_stats_match_page",
-          "match_status": "played",
-          "odds_available": true,
-          "notes": "页面核实：12/02/2022 14:30，Bochum - Bayern Munich 4:2。搜索缓存显示庄家行：Pinnacle 02/12 14:29 的 1X2 为 12/7.75/1.22，1xbet 02/12 14:25 为 11/8.24/1.23；另有 _open（02/08）与 _close（02/12 19:29）标签行——标签原样引用，未断言哪组是 opening；实时抓取时庄家行未渲染（可能需 JS/cookie）。"
-        },
-        {
-          "season": "2021-22",
-          "match_date": "2022-02-13",
-          "home_team": "TSG Hoffenheim",
-          "away_team": "Arminia Bielefeld",
-          "provider_fixture_id": null,
-          "source_url": "https://betballers.com/match/2425582/tsg-hoffenheim-v-arminia-bielefeld/1/",
-          "source_type": "betballers_match_page",
-          "match_status": "played",
-          "odds_available": "partial",
-          "notes": "页面核实：13-02-2022 16:30，Hoffenheim 2-0 Bielefeld；H2H 表有 1x2 栏位，仅显示部分数值，非完整庄家表。"
-        },
-        {
-          "season": "2021-22",
-          "match_date": "2022-03-16",
-          "home_team": "FSV Mainz 05",
-          "away_team": "Borussia Dortmund",
-          "provider_fixture_id": null,
-          "source_url": "https://www.telefootball.net/US/FSV-Mainz-05-Borussia-Dortmund-2022-03-16-370913.html",
-          "source_type": "telefootball_average_odds",
-          "match_status": "played",
-          "odds_available": true,
-          "notes": "页面核实：13:30 / 16.03.2022，Bundesliga；ODDS 行 'Average odds 2.30, 3.60, 2.90'（栏位标签顺序为 2/X/1，原样引用，未换算）。"
-        },
-        {
-          "season": "2021-22",
-          "match_date": "2022-04-16",
-          "home_team": "Borussia M'gladbach",
-          "away_team": "FC Koln",
-          "provider_fixture_id": null,
-          "source_url": "https://corner-stats.com/borussia-mgladbach-cologne-16-04-2022/bundesliga-germany/match/416872",
-          "source_type": "corner_stats_match_page",
-          "match_status": "played",
-          "odds_available": false,
-          "notes": "页面核实：16/04/2022 16:30，Bundesliga 2021/22 Round 30，Borussia M'gladbach vs Cologne 1:3；Odds 表仅有栏位头，无庄家行。"
-        },
-        {
-          "season": "2022-23",
-          "match_date": "2023-03-10",
-          "home_team": "FC Koln",
-          "away_team": "VfL Bochum",
-          "provider_fixture_id": null,
-          "source_url": "https://tipsterarea.com/match/fc-koln-bochum-bundesliga-germany-753828",
-          "source_type": "tipsterarea_pre_match_odds",
-          "match_status": "played",
-          "odds_available": true,
-          "notes": "页面核实：2023-03-10 19:30，FC Koln 0-2 Bochum；完整 Leading Bookmakers Odds 表（1X2：1xbet 1.69/4.22/5.35、bet-at-home 1.74/3.80/4.70、betfair 1.75/3.75/5.00、bwin 1.71/3.75/4.80、unibet 1.64/4.00/5.20，另有 Double Chance/DNB/Over-Under/BTS）；标注 'Odds are pre-match odds… last update 10.03.2023 16:01'（早于开球）。"
-        }
-      ],
-      "audit": {
-        "expected": 11,
-        "discovered": 11,
-        "complete": 4,
-        "partial": 3,
-        "missing": 3,
-        "unmatched": 0
+        "notes": "在 football-data.co.uk 2021-22 德甲 CSV 第 191 行精确匹配（日期+主客队唯一命中）。provider_fixture_id 为 null：5DollarFootballAPI 需 apiKey 认证，无公开免鉴权 fixture_id 查询入口。注意列语义：B365H/D/A 为赛前采集的 pre-closing 快照（非真 opening），B365CH/CD/CA 为 closing；不要把 pre-closing 当 opening。"
       },
-      "provider_fixture_id_found": 0,
-      "unresolved_queue": [
-        {
-          "target": "11 场全部（2022-02-11 Leipzig-Koln 等）",
-          "reason": "5DollarFootballAPI 无公开可索引的 fixture 页面，无法取得 fixture_id；如需真实 fixture_id 需走 API 直连核对"
+      {
+        "season": "2021-22",
+        "match_date": "2022-02-12",
+        "home_team": "Leverkusen",
+        "away_team": "Stuttgart",
+        "provider_fixture_id": null,
+        "source_url": "https://www.football-data.co.uk/mmz4281/2122/D1.csv",
+        "source_type": "public_odds_dataset_csv",
+        "match_status": "matched",
+        "odds_available": true,
+        "csv_row": 197,
+        "ft_result": "4-2 (H)",
+        "odds_b365_preclosing_1x2": {
+          "home": "1.4",
+          "draw": "4.75",
+          "away": "7"
         },
-        {
-          "target": "2021-22 2022-02-12 Freiburg-Mainz / Furth-Hertha, 2022-04-16 M'gladbach-Koln",
-          "reason": "corner-stats 比赛页 Odds 表仅栏位头、无庄家行；仍待其他赔率源补缺"
+        "odds_b365_closing_1x2": {
+          "home": "1.3",
+          "draw": "5.25",
+          "away": "9"
         },
-        {
-          "target": "2021-22 2022-02-11 Leipzig-Koln / 2022-02-12 M'gladbach-Augsburg / 2022-02-13 Hoffenheim-Bielefeld",
-          "reason": "仅有赔率栏位或部分数值（Soccerway 栏位为广告内容、betballers 非完整庄家表），庄家 1X2 完整数据未取得"
-        }
-      ],
-      "notes": "所有 URL 为浏览器本轮实际返回的真实 URL 并逐场核实主客队+日期；无编造。tipsterarea 两页标注 pre-match odds 且最后更新早于开球（可作为赛前赔率引用，opening/closing 语义由 Validator 定）；telefootball 的 average odds 栏位顺序为 2/X/1，未换算；corner-stats Bochum-Bayern 的 _open/_close 标签来自搜索缓存，未做断言。"
-    }
+        "notes": "在 football-data.co.uk 2021-22 德甲 CSV 第 197 行精确匹配（日期+主客队唯一命中）。provider_fixture_id 为 null：5DollarFootballAPI 需 apiKey 认证，无公开免鉴权 fixture_id 查询入口。注意列语义：B365H/D/A 为赛前采集的 pre-closing 快照（非真 opening），B365CH/CD/CA 为 closing；不要把 pre-closing 当 opening。"
+      },
+      {
+        "season": "2021-22",
+        "match_date": "2022-02-12",
+        "home_team": "M'gladbach",
+        "away_team": "Augsburg",
+        "provider_fixture_id": null,
+        "source_url": "https://www.football-data.co.uk/mmz4281/2122/D1.csv",
+        "source_type": "public_odds_dataset_csv",
+        "match_status": "matched",
+        "odds_available": true,
+        "csv_row": 196,
+        "ft_result": "3-2 (H)",
+        "odds_b365_preclosing_1x2": {
+          "home": "1.65",
+          "draw": "4.33",
+          "away": "4.75"
+        },
+        "odds_b365_closing_1x2": {
+          "home": "1.53",
+          "draw": "4.75",
+          "away": "5.25"
+        },
+        "notes": "在 football-data.co.uk 2021-22 德甲 CSV 第 196 行精确匹配（日期+主客队唯一命中）。provider_fixture_id 为 null：5DollarFootballAPI 需 apiKey 认证，无公开免鉴权 fixture_id 查询入口。注意列语义：B365H/D/A 为赛前采集的 pre-closing 快照（非真 opening），B365CH/CD/CA 为 closing；不要把 pre-closing 当 opening。"
+      },
+      {
+        "season": "2021-22",
+        "match_date": "2022-02-12",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Wolfsburg",
+        "provider_fixture_id": null,
+        "source_url": "https://www.football-data.co.uk/mmz4281/2122/D1.csv",
+        "source_type": "public_odds_dataset_csv",
+        "match_status": "matched",
+        "odds_available": true,
+        "csv_row": 193,
+        "ft_result": "0-2 (A)",
+        "odds_b365_preclosing_1x2": {
+          "home": "2.2",
+          "draw": "3.6",
+          "away": "3.2"
+        },
+        "odds_b365_closing_1x2": {
+          "home": "2.15",
+          "draw": "3.4",
+          "away": "3.4"
+        },
+        "notes": "在 football-data.co.uk 2021-22 德甲 CSV 第 193 行精确匹配（日期+主客队唯一命中）。provider_fixture_id 为 null：5DollarFootballAPI 需 apiKey 认证，无公开免鉴权 fixture_id 查询入口。注意列语义：B365H/D/A 为赛前采集的 pre-closing 快照（非真 opening），B365CH/CD/CA 为 closing；不要把 pre-closing 当 opening。"
+      },
+      {
+        "season": "2021-22",
+        "match_date": "2022-02-12",
+        "home_team": "Freiburg",
+        "away_team": "Mainz",
+        "provider_fixture_id": null,
+        "source_url": "https://www.football-data.co.uk/mmz4281/2122/D1.csv",
+        "source_type": "public_odds_dataset_csv",
+        "match_status": "matched",
+        "odds_available": true,
+        "csv_row": 194,
+        "ft_result": "1-1 (D)",
+        "odds_b365_preclosing_1x2": {
+          "home": "2.15",
+          "draw": "3.3",
+          "away": "3.5"
+        },
+        "odds_b365_closing_1x2": {
+          "home": "2.1",
+          "draw": "3.2",
+          "away": "3.6"
+        },
+        "notes": "在 football-data.co.uk 2021-22 德甲 CSV 第 194 行精确匹配（日期+主客队唯一命中）。provider_fixture_id 为 null：5DollarFootballAPI 需 apiKey 认证，无公开免鉴权 fixture_id 查询入口。注意列语义：B365H/D/A 为赛前采集的 pre-closing 快照（非真 opening），B365CH/CD/CA 为 closing；不要把 pre-closing 当 opening。"
+      },
+      {
+        "season": "2021-22",
+        "match_date": "2022-02-12",
+        "home_team": "Greuther Furth",
+        "away_team": "Hertha",
+        "provider_fixture_id": null,
+        "source_url": "https://www.football-data.co.uk/mmz4281/2122/D1.csv",
+        "source_type": "public_odds_dataset_csv",
+        "match_status": "matched",
+        "odds_available": true,
+        "csv_row": 195,
+        "ft_result": "2-1 (H)",
+        "odds_b365_preclosing_1x2": {
+          "home": "3",
+          "draw": "3.25",
+          "away": "2.45"
+        },
+        "odds_b365_closing_1x2": {
+          "home": "2.7",
+          "draw": "3.25",
+          "away": "2.7"
+        },
+        "notes": "在 football-data.co.uk 2021-22 德甲 CSV 第 195 行精确匹配（日期+主客队唯一命中）。provider_fixture_id 为 null：5DollarFootballAPI 需 apiKey 认证，无公开免鉴权 fixture_id 查询入口。注意列语义：B365H/D/A 为赛前采集的 pre-closing 快照（非真 opening），B365CH/CD/CA 为 closing；不要把 pre-closing 当 opening。"
+      },
+      {
+        "season": "2021-22",
+        "match_date": "2022-02-12",
+        "home_team": "Bochum",
+        "away_team": "Bayern Munich",
+        "provider_fixture_id": null,
+        "source_url": "https://www.football-data.co.uk/mmz4281/2122/D1.csv",
+        "source_type": "public_odds_dataset_csv",
+        "match_status": "matched",
+        "odds_available": true,
+        "csv_row": 192,
+        "ft_result": "4-2 (H)",
+        "odds_b365_preclosing_1x2": {
+          "home": "10",
+          "draw": "7.5",
+          "away": "1.22"
+        },
+        "odds_b365_closing_1x2": {
+          "home": "12",
+          "draw": "8",
+          "away": "1.2"
+        },
+        "notes": "在 football-data.co.uk 2021-22 德甲 CSV 第 192 行精确匹配（日期+主客队唯一命中）。provider_fixture_id 为 null：5DollarFootballAPI 需 apiKey 认证，无公开免鉴权 fixture_id 查询入口。注意列语义：B365H/D/A 为赛前采集的 pre-closing 快照（非真 opening），B365CH/CD/CA 为 closing；不要把 pre-closing 当 opening。"
+      },
+      {
+        "season": "2021-22",
+        "match_date": "2022-02-13",
+        "home_team": "Hoffenheim",
+        "away_team": "Bielefeld",
+        "provider_fixture_id": null,
+        "source_url": "https://www.football-data.co.uk/mmz4281/2122/D1.csv",
+        "source_type": "public_odds_dataset_csv",
+        "match_status": "matched",
+        "odds_available": true,
+        "csv_row": 199,
+        "ft_result": "2-0 (H)",
+        "odds_b365_preclosing_1x2": {
+          "home": "1.5",
+          "draw": "4.33",
+          "away": "5.75"
+        },
+        "odds_b365_closing_1x2": {
+          "home": "1.5",
+          "draw": "4.5",
+          "away": "5.75"
+        },
+        "notes": "在 football-data.co.uk 2021-22 德甲 CSV 第 199 行精确匹配（日期+主客队唯一命中）。provider_fixture_id 为 null：5DollarFootballAPI 需 apiKey 认证，无公开免鉴权 fixture_id 查询入口。注意列语义：B365H/D/A 为赛前采集的 pre-closing 快照（非真 opening），B365CH/CD/CA 为 closing；不要把 pre-closing 当 opening。"
+      },
+      {
+        "season": "2021-22",
+        "match_date": "2022-03-16",
+        "home_team": "Mainz",
+        "away_team": "Dortmund",
+        "provider_fixture_id": null,
+        "source_url": "https://www.football-data.co.uk/mmz4281/2122/D1.csv",
+        "source_type": "public_odds_dataset_csv",
+        "match_status": "matched",
+        "odds_available": true,
+        "csv_row": 234,
+        "ft_result": "0-1 (A)",
+        "odds_b365_preclosing_1x2": {
+          "home": "4",
+          "draw": "3.8",
+          "away": "1.85"
+        },
+        "odds_b365_closing_1x2": {
+          "home": "2.8",
+          "draw": "3.6",
+          "away": "2.37"
+        },
+        "notes": "在 football-data.co.uk 2021-22 德甲 CSV 第 234 行精确匹配（日期+主客队唯一命中）。provider_fixture_id 为 null：5DollarFootballAPI 需 apiKey 认证，无公开免鉴权 fixture_id 查询入口。注意列语义：B365H/D/A 为赛前采集的 pre-closing 快照（非真 opening），B365CH/CD/CA 为 closing；不要把 pre-closing 当 opening。"
+      },
+      {
+        "season": "2021-22",
+        "match_date": "2022-04-16",
+        "home_team": "M'gladbach",
+        "away_team": "FC Koln",
+        "provider_fixture_id": null,
+        "source_url": "https://www.football-data.co.uk/mmz4281/2122/D1.csv",
+        "source_type": "public_odds_dataset_csv",
+        "match_status": "matched",
+        "odds_available": true,
+        "csv_row": 267,
+        "ft_result": "1-3 (A)",
+        "odds_b365_preclosing_1x2": {
+          "home": "2.05",
+          "draw": "3.6",
+          "away": "3.5"
+        },
+        "odds_b365_closing_1x2": {
+          "home": "2.1",
+          "draw": "3.6",
+          "away": "3.3"
+        },
+        "notes": "在 football-data.co.uk 2021-22 德甲 CSV 第 267 行精确匹配（日期+主客队唯一命中）。provider_fixture_id 为 null：5DollarFootballAPI 需 apiKey 认证，无公开免鉴权 fixture_id 查询入口。注意列语义：B365H/D/A 为赛前采集的 pre-closing 快照（非真 opening），B365CH/CD/CA 为 closing；不要把 pre-closing 当 opening。"
+      },
+      {
+        "season": "2022-23",
+        "match_date": "2023-03-10",
+        "home_team": "FC Koln",
+        "away_team": "Bochum",
+        "provider_fixture_id": null,
+        "source_url": "https://www.football-data.co.uk/mmz4281/2223/D1.csv",
+        "source_type": "public_odds_dataset_csv",
+        "match_status": "matched",
+        "odds_available": true,
+        "csv_row": 209,
+        "ft_result": "0-2 (A)",
+        "odds_b365_preclosing_1x2": {
+          "home": "1.73",
+          "draw": "3.75",
+          "away": "4.75"
+        },
+        "odds_b365_closing_1x2": {
+          "home": "1.7",
+          "draw": "3.75",
+          "away": "5"
+        },
+        "notes": "在 football-data.co.uk 2022-23 德甲 CSV 第 209 行精确匹配（日期+主客队唯一命中）。provider_fixture_id 为 null：5DollarFootballAPI 需 apiKey 认证，无公开免鉴权 fixture_id 查询入口。注意列语义：B365H/D/A 为赛前采集的 pre-closing 快照（非真 opening），B365CH/CD/CA 为 closing；不要把 pre-closing 当 opening。"
+      }
+    ],
+    "audit": {
+      "expected": 11,
+      "discovered": 11,
+      "complete": 11,
+      "partial": 0,
+      "missing": 0
+    },
+    "method_note": "旧 id 复用（法甲任务）→旧回执已归档为 responses/req-20261001-006.archived-20261002-0032.json。本轮按新 data_task 执行。11 场全部在 football-data.co.uk 德甲 CSV 精确命中（含比分+Bet365 1X2 pre-closing 与 closing）。"
   },
-  "fetched_at": "2026-10-02T00:26:00+08:00"
+  "fetched_at": "2026-10-02T00:35:00+08:00"
 }
