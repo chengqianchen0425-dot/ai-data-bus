@@ -1,0 +1,14 @@
+{
+  "id": "req-20261001-001",
+  "type": "deep_research",
+  "params": {
+    "topic": "MLS 2021-2025 historical football 1X2 odds gap recovery",
+    "questions": [
+      "For USA MLS regular-season matches from 2021 through 2025, find public, verifiable historical 1X2 odds pages or datasets that provide opening and closing/pre-match odds for Pinnacle and William Hill.",
+      "Prioritize rows that can be matched by season, kickoff date, home team, and away team. Return a structured JSON list with season, kickoff, home_team, away_team, bookmaker, opening_home, opening_draw, opening_away, closing_home, closing_draw, closing_away, source_url, and evidence_notes.",
+      "Keep Pinnacle and William Hill separate. Do not infer missing odds, do not convert closing odds into opening odds, and do not merge ambiguous team/date matches. For every unavailable or ambiguous row, report unavailable or blocked with the reason rather than guessing.",
+      "Focus on historical MLS rows that can supplement a local 2021-2025 fixture inventory and explicitly state coverage counts, unmatched counts, duplicate/conflict counts, and source semantics."
+    ]
+  },
+  "created_at": "2026-10-01T21:00:00+08:00"
+}
