@@ -1,0 +1,16 @@
+{
+  "id": "req-20261001-005",
+  "type": "deep_research",
+  "params": {
+    "topic": "Bundesliga 2021-22 through 2025-26 row-level odds gap recovery for auditable Qimen shadow research",
+    "questions": [
+      "For the local Bundesliga fixture inventory (1530 matches, seasons 2021-22 through 2025-26), identify public, verifiable row-level sources that can fill the existing 731 bookmaker fields: Pinnacle 1X2 (156), William Hill 1X2 (376), and Pinnacle total-goals/goal-line fields (199). Use exact keys season, match_date, home_team, away_team; keep bookmakers and markets separate.",
+      "Prioritize source pages such as live.nowscore.com/1x2 or other explicitly accessible row-level historical pages. Return structured rows only when the match identity and bookmaker/market field are directly evidenced. Preserve opening, pre-closing, closing, and historical-tick semantics separately; never infer opening from closing, never substitute another bookmaker, and never use API-Football as bookmaker odds.",
+      "Assess whether each recovered row supports O_OPEN, O_CLOSE, or O_INTERVAL. If only closing or pre-closing is available, label it closing_fallback or pre_closing and state that it cannot be treated as true opening. Include source_url, final_url, fetched_at, field semantics, evidence_notes, and coverage counts.",
+      "Audit the 11 local fixtures that had no matched 5DollarFootballAPI response and report exact match identity, source availability, and unresolved status. Do not merge ambiguous fixtures or invent odds.",
+      "Separately report whether any source provides complete pre-match Qimen chart material or nine-palace provenance. Do not derive Qimen palace tokens, F/I/G tokens, or predictions from scores, standings, odds, or relationship prose; if absent, mark Qimen provenance unavailable and leave it for local replay/manual review.",
+      "Return audit totals: expected rows, discovered, complete, partial, missing, unmatched, conflicts, and an unresolved_queue. The result will be written only to the football supplement ledger and then validated before any odds structure screen."
+    ]
+  },
+  "created_at": "2026-10-01T23:00:00+08:00"
+}
