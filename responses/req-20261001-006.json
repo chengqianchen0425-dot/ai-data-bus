@@ -1,1 +1,31 @@
-{"id":"req-20261001-006","note":"研究进行中：法甲 2024/25–2025/26 缺口字段逐项取证（WH 1X2、Pinnacle 大小球/1X2 按请求清单）","status":"processing"}
+{
+  "id": "req-20261001-006",
+  "status": "ok",
+  "data": {
+    "report": "# Ligue 1 2024/25–2025/26 row-level bookmaker odds gap recovery — source assessment\nid: req-20261001-006 | researched 2026-10-01 23:05 (Asia/Shanghai) — takeover from stale `processing` placeholder (last updated 14:52)\n\nScope honored: only the missing fields listed in the request (2024/25 WH 1X2 open+close 72×2; 2024/25 Pinnacle OU open+close 2×2; 2025/26 Pinnacle 1X2 open+close 153×2; 2025/26 Pinnacle OU open+close 154×2; 2025/26 WH 1X2 open+close 306×2). Bet365 1X2 (both seasons, opening+closing) marked complete by requester — not touched.\n\n## 1. Verdict (per requested field group)\n\n- **2024/25 William Hill 1X2 (144 fields)**: F1 2425 file carries WHH/WHD/WHA + WHCH/WHCD/WHCA → all 144 fillable at pre-close+closing semantics. True opening: no free public bulk source.\n- **2024/25 Pinnacle OU2.5 (4 fields)**: `P>2.5`/`P<2.5` + `PC>2.5`/`PC<2.5` present → all 4 fillable pre-close+closing.\n- **2025/26 Pinnacle 1X2 (306 fields)**: PSH/PSD/PSA + PSCH/PSCD/PSCA present in 2526/F1.csv (complete season, 306 rows) → all 306 fillable pre-close+closing.\n- **2025/26 Pinnacle OU2.5 (308 fields)**: `P>2.5`/`P<2.5` + `PC>2.5`/`PC<2.5` present → all 308 fillable pre-close+closing.\n- **2025/26 William Hill 1X2 (612 fields)**: **WH bookmaker is entirely absent from 2526/F1.csv** → no football-data source; per-match fallbacks only (unverified). Missing at bulk level.\n\n## 2. Primary source: football-data.co.uk (free, bulk, row-level)\n\nURL pattern `https://www.football-data.co.uk/mmz4281/<SSSS>/F1.csv`. Headers + sample rows fetched and verified 2026-10-01:\n\n| Season file | WH pre-close (WHH/WHD/WHA) | WH closing (WHCH/WHCD/WHCA) | Pinnacle pre-close (PSH/PSD/PSA) | Pinnacle closing (PSCH/PSCD/PSCA) | Pinnacle OU pre-close | Pinnacle OU closing | Rows |\n|---|---|---|---|---|---|---|---|\n| 2425/F1.csv | yes | yes | yes | yes | P>2.5/P<2.5 yes | PC>2.5/PC<2.5 yes | 306 |\n| 2526/F1.csv | **ABSENT** | **ABSENT** | yes | yes | P>2.5/P<2.5 yes | PC>2.5/PC<2.5 yes | 306 (season complete) |\n\nField semantics (official, verbatim from https://www.football-data.co.uk/notes.txt): base columns = **pre-closing** (\"Betting odds for weekend games are collected Friday afternoons, and on Tuesday afternoons for midweek games.\"); `C`-suffix = **closing**. Pre-close is NOT opening — do not relabel.\n\nVerified sample rows (row-level evidence):\n- `2425/F1.csv`, 17/08/2024 **Brest–Marseille**: WHH 2.88 / WHD 3.4 / WHA 2.4 → WHCH 3.1 / WHCD 3.4 / WHCA 2.3; PSH 2.96 / PSD 3.37 / PSA 2.51 → PSCH 3.3 / PSCD 3.34 / PSCA 2.35; P>2.5 1.88 / P<2.5 2.0 → PC>2.5 2.07 / PC<2.5 1.85\n- `2526/F1.csv`, 16/08/2025 **Lens–Lyon**: PSH 2.35 / PSD 3.63 / PSA 3.02 → PSCH 2.41 / PSCD 3.61 / PSCA 2.98; P>2.5 1.68 / P<2.5 2.27 → PC>2.5 1.72 / PC<2.5 2.23; no WH columns\n\nJoin key: (season, Date dd/mm/yy + Time kickoff, normalized HomeTeam, normalized AwayTeam). Team names use canonical English forms (e.g. Marseille, Lyon).\n\n## 3. O_OPEN / O_CLOSE / O_INTERVAL per group\n\n- 2024/25 WH 1X2 (144): O_CLOSE ✓ (WHCH/WHCD/WHCA); pre-close ✓ (WHH/WHD/WHA); O_OPEN ✗ bulk; O_INTERVAL = pre-close→closing SAFE (documented semantics).\n- 2024/25 Pinnacle OU (4): O_CLOSE ✓ (PC>2.5/PC<2.5); pre-close ✓; O_OPEN ✗ bulk.\n- 2025/26 Pinnacle 1X2 (306): O_CLOSE ✓ (PSCH/PSCD/PSCA); pre-close ✓; O_OPEN ✗ bulk.\n- 2025/26 Pinnacle OU (308): O_CLOSE ✓ (PC>2.5/PC<2.5); pre-close ✓; O_OPEN ✗ bulk.\n- 2025/26 WH 1X2 (612): ✗ at bulk level — WH absent from the file. Per-match fallbacks: OddsPortal (per-bookmaker opener+closer, WH presence unverified, opener = first captured quote, no open timestamp), live.nowscore.com/1x2 (初指/即时, historical retention for 2025/26 unverified), 500.com (retention unverified).\n\n## 4. Shadow-use assessment\n\n- O_CLOSE rows from football-data are strict-provenance SAFE (closing columns, official semantics).\n- O_OPEN: no recovered row supports true O_OPEN from any free bulk source; do not infer opening from pre-close or from closing.\n- O_INTERVAL: only the pre-close→closing pair is strict-safe; label it as such, never as opening→closing.\n- Qimen provenance: no source found that provides complete pre-match Qimen chart material or nine-palace provenance. No F/I/G/M palace tokens derived (per request). Qimen provenance remains a local gate — mark unavailable for these fields.\n\n## 5. Audit\n\n- expected: 1374 (144 + 4 + 306 + 308 + 612)\n- discovered: 762 (public row-level bulk source exists at pre-close+closing semantics)\n- complete: 762 (2024/25 WH 1X2 144; 2024/25 Pinnacle OU 4; 2025/26 Pinnacle 1X2 306; 2025/26 Pinnacle OU 308)\n- partial: 0\n- missing: 612 (2025/26 WH 1X2 open+close — WH absent from 2526/F1.csv; per-match sources unverified)\n- missing_as_true_opening: 1374 (no free public bulk source for timestamped opening odds)\n",
+    "audit": {
+      "expected": 1374,
+      "discovered": 762,
+      "complete": 762,
+      "partial": 0,
+      "missing": 612,
+      "missing_as_true_opening": 1374,
+      "note": "complete=762 at pre-close+closing semantics (football-data.co.uk, headers+sample rows verified 2026-10-01). missing=612 = 2025/26 WH 1X2 open+close (WH bookmaker dropped from 2526/F1.csv). True opening unavailable from any free bulk source for all 1374."
+    },
+    "unresolved_queue": [
+      {
+        "target": "2025/26 William Hill 1X2 opening+closing, 306 matches x 2 fields (612)",
+        "reason": "WH bookmaker dropped entirely from football-data 2526/F1.csv (verified header, 306 rows, no WHH/WHCH columns). Per-match fallbacks (OddsPortal, NowScore 1x2, 500.com) exist but WH-presence and 2025/26 historical retention not verified this pass."
+      },
+      {
+        "target": "True opening odds (O_OPEN) for all 1374 requested fields",
+        "reason": "No free public bulk source carries timestamped same-bookmaker opening odds. football-data base columns are pre-closing (Fri/Tue before matchday) — must not be relabeled as opening. Do not use API-Football as odds."
+      },
+      {
+        "target": "Pre-match Qimen chart material / nine-palace provenance",
+        "reason": "No public source provides it. No F/I/G/M palace tokens derived. Remains a local gate for strict crosswalk to qimen_output.json."
+      }
+    ]
+  },
+  "fetched_at": "2026-10-01T23:05:00+08:00"
+}
