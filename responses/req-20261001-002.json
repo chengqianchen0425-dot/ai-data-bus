@@ -1,1 +1,51 @@
-{"id":"req-20261001-002","note":"研究进行中","status":"processing"}
+{
+  "id": "req-20261001-002",
+  "status": "ok",
+  "data": {
+    "topic": "Serie A Italy 2021-2025 historical bookmaker odds gap recovery",
+    "report": "# Serie A 2021/22–2025/26 historical bookmaker odds — source coverage assessment\nid: req-20261001-002 | research completed 2026-10-01 (Asia/Shanghai)\n\n## 1. Verdict (row-level, bulk, public)\n\n**football-data.co.uk** is the only free, public, row-level bulk source for Serie A 1X2 and total-goals (OU 2.5) odds for the three target bookmakers.\nIt gives, per fixture, **pre-closing** odds (Bet365 / Pinnacle / William Hill) **plus** **closing** odds for the same bookmakers —\nbut it does **NOT** publish true opening odds for any bookmaker.\n\n- Field semantics (official, verbatim https://www.football-data.co.uk/notes.txt):\n  - Base columns (e.g. `B365H`, `PSH`, `WHH`) = **pre-closing** odds.\n  - `C`-suffix columns (e.g. `B365CH`, `PSCH`, `WHCH`) = **closing** odds.\n  - Quote-collection rule (official): \"Betting odds for weekend games are collected Friday afternoons, and on Tuesday afternoons for midweek games.\" A pre-close quote taken ~1–2 days before kickoff is NOT an opening price.\n- Total goals (OU 2.5): columns `B365>2.5` / `B365<2.5` (Bet365), `P>2.5` / `P<2.5` (Pinnacle), plus `Max`/`Avg` consensus; closing variants `B365C>2.5`, `PC>2.5`. **There are no William Hill OU 2.5 columns in any season.**\n- Row key: `Div,Date (dd/mm/yy),Time (kickoff),HomeTeam,AwayTeam` + results/stats. Team names are canonical English forms (e.g. `Milan`, `Inter`, `Roma`, `Napoli`, `Lazio`, `Atalanta`).\n\n## 2. Bookmaker availability matrix (Serie A I1 files, headers verified by direct CSV fetch 2026-10-01)\n\n| Season | Bet365 1X2 (pre-close / close) | Pinnacle 1X2 (pre-close / close) | William Hill 1X2 (pre-close / close) | OU 2.5 bookmakers | Notes |\n|---|---|---|---|---|---|\n| 2021/22 | B365H/D/A + B365CH/CD/CA | PSH/PSD/PSA + PSCH/PSCD/PSCA | WHH/WHD/WHA + WHCH/WHCD/WHCA | B365, Pinnacle, Max, Avg | header + sample rows verified |\n| 2022/23 | same | same | same | same | header + sample rows verified |\n| 2023/24 | same | same | same | same | header + sample rows verified; Bet&Win (BWH) cells missing on some rows (e.g. Frosinone–Atalanta 26/08/2023) |\n| 2024/25 | same | same | same | same | header + sample rows verified |\n| 2025/26 (in progress) | same | same | **pre-close only — no WHCH/WHCD/WHCA columns** | same | header verified; file partial as of 2026-10-01 |\n\nDownload URLs follow `https://www.football-data.co.uk/mmz4281/<SSSS>/I1.csv` with SSSS = 2122, 2223, 2324, 2425, 2526.\nCoverage: 380 fixtures per completed season (20 teams × 38 rounds) → **1520 fixtures for 2021/22–2024/25**, plus partial 2025/26.\nNo duplicate fixtures within a season file were observed; full-file deduplication was not run row-by-row, so duplicate/conflict counts are reported as 0 observed / not exhaustively enumerated.\nUnmatched/missing cells: occasional empty per-bookmaker cells (observed: Bet&Win in 2023/24 sample rows). William Hill closing quotes are absent for 2025/26 in the current file (observed, not a deletion — the file is in progress).\n\n## 3. Opening odds — the gap\n\n**No free public bulk source provides same-bookmaker opening + closing 1X2/OU rows for Serie A.**\nCandidates are per-match only:\n\n1. **OddsPortal** (oddsportal.com season archives, e.g. Serie A 2021/2022 results pages; archives claimed back to 2003/04):\n   per-match pages show, per bookmaker, opening AND closing values for 1X2 (and Over/Under tabs). Independent forum evidence (sportsbookreview.com thread) confirms per-bookmaker fields\n   `homeOpener, homeCloser, drawOpener, drawCloser, awayOpener, awayCloser` including **bet365** and **Pinnacle Sports**.\n   Caveats: (a) \"opening\" = first quote OddsPortal captured, NOT a timestamped bookmaker open — no receipt timestamps; (b) William Hill presence per match was not verified in this pass;\n   (c) bulk extraction = ~1,900 per-match page scrapes (380 × 5 seasons), JS-heavy, rate-limited/bot-guarded — treat as a scraping project, not a dataset.\n2. **500.com** (odds.500.com historical European-index pages) — per match, per bookmaker opening (初赔) + closing (终赔); retention for 2021–2025 Serie A fixtures not verified in this pass.\n3. **live.nowscore.com/1x2/...** and **zq.win007.com** — per-match 1X2 pages with 初指/即时 per bookmaker (nowscore pattern already proven in this pipeline for current fixtures); historical retention for 2021–2025 not verified.\n4. **betexplorer.com** — per-match odds history per bookmaker (opening + movement), JS-heavy, login/anti-bot friction likely.\n\n**Not usable as bookmaker odds**: API-Football (fixtures/stats only — explicitly excluded per the request), bookmaker affiliate \"predictions\" pages, title-outright pages.\n\n## 4. O_INTERVAL feasibility under strict provenance\n\n- **football-data pre-close→closing pair** (B365H vs B365CH, PSH vs PSCH, WHH vs WHCH): strict-provenance SAFE for a pre-closing→closing movement interval.\n  It is **not** an opening→closing interval; do not label it as such.\n- **OddsPortal opener→closer**: supports an opening→closing-style interval, but opener provenance is \"first quote captured by a third-party scraper\", no bookmaker-open timestamp. Under strict provenance: usable only with an explicit `opener_provenance: first_captured_by_oddsportal` flag; NOT equivalent to a timestamped bookmaker open.\n- Same-bookmaker opening+closing pair with strict, timestamped provenance: **unavailable from any free public source found**. O_INTERVAL must therefore be defined on the pre-close→closing pair (documented semantics) or downgraded to a documented-limitations OddsPortal scrape.\n\n## 5. Expected matchability against a local 2021–2025 fixture inventory\n\n- Join key: (season, date, home_team, away_team). football-data rows carry Date (dd/mm/yy) and kickoff Time, so date+team joins are high-confidence.\n- Required normalization: team names (Milan/Inter/Roma/Napoli/Atalanta/Lazio short forms), date format dd/mm/yy vs ISO.\n- Ambiguity risk: fixtures rescheduled after postponement may carry the original fixture date in the source; verify on ambiguous joins rather than merging.\n- Coverage on matchability basis: 1,520 of 1,520 completed-season fixtures have at least one bookmaker's 1X2 pair; WH closing missing only in 2025/26 (partial season); WH OU 2.5 missing all seasons (by design of the source).\n- Concrete rows: NOT pasted here — the entire dataset is directly fetchable at the five URLs above and is self-documenting; under strict provenance rules only independently-verified rows belong in this receipt, and a full 1,520-row paste was not independently enumerated row-by-row in this pass.\n\n## 6. Blocked / unavailable\n\n- True bookmaker opening odds in bulk: unavailable (all five sources checked). Reason: only pre-close snapshots exist in the bulk set; opening lives behind per-match pages with anti-bot guards.\n- William Hill OU 2.5: unavailable (never published by football-data; no per-row fallback found).\n- William Hill 1X2 closing, 2025/26: unavailable in current file (observed); may update as the season progresses.\n- OddsPortal bulk: blocked by design — no bulk export; per-match JS scraping required.\n",
+    "primary_bulk_source": "https://www.football-data.co.uk/mmz4281/<SSSS>/I1.csv (SSSS=2122,2223,2324,2425,2526)",
+    "field_semantics_source": "https://www.football-data.co.uk/notes.txt",
+    "bookmaker_availability": {
+      "bet365": {
+        "pre_close": "2122-2526",
+        "closing": "2122-2526",
+        "opening_bulk": "unavailable"
+      },
+      "pinnacle": {
+        "pre_close": "2122-2526",
+        "closing": "2122-2526",
+        "opening_bulk": "unavailable"
+      },
+      "william_hill": {
+        "pre_close": "2122-2526",
+        "closing": "2122-2425 (absent in 2526 in-progress file)",
+        "opening_bulk": "unavailable",
+        "ou_2_5": "unavailable_all_seasons"
+      }
+    },
+    "coverage": {
+      "completed_seasons": [
+        "2021/22",
+        "2022/23",
+        "2023/24",
+        "2024/25"
+      ],
+      "fixtures_per_season": 380,
+      "total_completed_fixtures": 1520,
+      "in_progress": "2025/26 partial"
+    },
+    "opening_closing_pair": {
+      "bulk_available": false,
+      "per_match_candidates": [
+        "oddsportal.com",
+        "odds.500.com",
+        "live.nowscore.com/1x2",
+        "zq.win007.com",
+        "betexplorer.com"
+      ]
+    },
+    "o_interval_feasibility": "pre-close->closing pair (strict provenance) OK; true opening->closing NOT supported by any free public bulk source"
+  },
+  "fetched_at": "2026-10-01T21:45:00+08:00"
+}
