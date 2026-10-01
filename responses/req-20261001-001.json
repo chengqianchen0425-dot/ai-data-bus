@@ -1,1 +1,6 @@
-{"id": "req-20261001-001", "status": "processing", "note": "deep_research 进行中：第一轮开始调研，源识别与覆盖审计中", "started_at": "2026-10-02T00:16:00+08:00"}
+{
+  "id": "req-20261001-001",
+  "status": "processing",
+  "note": "研究进行中：首轮源侦察完成。football-data.co.uk 有 MLS 但仅 closing（best/avg/Pinnacle），无 opening、无分公司开盘列，不满足初指+即时需求；schochastics 数据集无任何赔率列。OddsPortal（.../football/usa/mls-{2021..2025}/results/，赛季回溯至1998）是唯一已验证的免费真 opening+closing 候选，分 bookmaker 需逐场抓取时确认；nowscore 可补初指/即时快照（即时不得写成终指）。",
+  "started_at": "2026-10-02T00:16:00+08:00"
+}

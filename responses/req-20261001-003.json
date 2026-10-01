@@ -1,1 +1,6 @@
-{"id": "req-20261001-003", "status": "processing", "note": "deep_research 进行中：第一轮开始调研，源识别与覆盖审计中", "started_at": "2026-10-02T00:16:00+08:00"}
+{
+  "id": "req-20261001-003",
+  "status": "processing",
+  "note": "研究进行中：首轮源侦察完成。同002的口径结论（football-data E0: pre-closing + closing，不可做真 opening；Pinnacle 2025-07-23 后不可靠）。OddsPortal 为真 opening+closing 主力；nowscore 初指可用、即时列只能记即时；Soccerway/WorldFootball/Footystats/schochastics 不可用。2018/19 Cardiff/Huddersfield 注册/球场信息尚未查。",
+  "started_at": "2026-10-02T00:16:00+08:00"
+}
