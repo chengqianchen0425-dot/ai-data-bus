@@ -1,6 +1,7 @@
 {
   "id": "req-20261001-008",
   "status": "processing",
-  "note": "研究进行中：首轮源侦察完成（同 req-20261001-007 重试范围，结论一致）。赔率维度：OddsPortal（.../football/japan/j1-league/，历史回溯2004）为 O_OPEN/O_CLOSE 首选候选（官方开/收盘定义，tooltip 时间戳需第二轮验证）；SoccerPunter 免费层仅 close（开盘在 Platinum 付费墙后）；nowscore 初指=首次收录/即时=最新收录，仅补充、不可替换开/收盘；Soccerway（赔率区为广告无历史值）、worldfootball（无赔率，仅 fixture crosswalk）、FootyStats（仅当前快照）、schochastics（零赔率列，止于2023）、J.League 官方（无赔率，仅 kickoff/venue crosswalk）、toto（pari-mutuel 非固定赔率）均不可用；football-data.co.uk 无日本联赛；betexplorer 待第二轮验证。venue/kickoff crosswalk 可用 J.League 官方 + Soccerway + worldfootball。",
-  "started_at": "2026-10-02T00:16:00+08:00"
+  "note": "研究进行中：第二轮进展。赔率维度：OddsPortal 的 opening/closing 区分已获第三方证据佐证（mejding/matchlabs oddsportal_opening_odds_feasibility_report：opening=赛前首发价、closing=赛前最终价，历史结果页点击单场可查 archived odds；CAVEAT：其 ToS 限制未经同意的自动化抓取/建库，Validator 侧需评估合规路径）。首轮源侦察结论延续：SoccerPunter 免费层仅 close（开盘在 Platinum 付费墙后）；nowscore 初指=首次收录/即时=最新收录，仅补充、不可替换开/收盘；Soccerway（赔率区为广告无历史值）、worldfootball（无赔率，仅 fixture crosswalk）、FootyStats（仅当前快照）、schochastics（零赔率列，止于2023）、J.League 官方（无赔率，仅 kickoff/venue crosswalk）、toto（pari-mutuel 非固定赔率）均不可用；football-data.co.uk 无日本联赛。betexplorer 开/收盘验证中：已派浏览器任务检查 2021 J1 单场详情页（opening vs closing 列标签、各公司名单、Bet365/Pinnacle/William Hill 是否在列、历史 tick 是否带时间戳），结果待回。",
+  "started_at": "2026-10-02T00:16:00+08:00",
+  "updated_at": "2026-10-02T00:40:00+08:00"
 }
