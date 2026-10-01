@@ -1,0 +1,14 @@
+{
+  "id": "req-20261001-003",
+  "type": "deep_research",
+  "params": {
+    "topic": "English Premier League historical football data gaps for an auditable Qimen replay and odds-interval study",
+    "questions": [
+      "For Premier League seasons 2018/19, 2021/22, 2024/25 and 2025/26, identify public, verifiable row-level sources that can fill only the currently missing fields in a local fixture inventory: Bet365 1X2 opening/closing, Pinnacle 1X2 opening/closing, William Hill 1X2 opening/closing, and Bet365 over/under opening when present. Keep bookmakers and opening/closing semantics separate; do not substitute API-Football for bookmaker odds.",
+      "Prioritize exact matching by season, kickoff date, home team, away team, and a stable source URL. Return source URL, field semantics, timestamp semantics, coverage counts, unmatched counts, duplicate/conflict counts, and concrete rows only when independently verifiable.",
+      "For 2018/19 Cardiff and Huddersfield, identify authoritative sources for Premier League competition-entry season, club identity/registration lineage, and home venue/venue coordinates if available. Do not use club founding year as competition-entry year, and do not infer Qimen palaces, F/I/G tokens, or match predictions.",
+      "For every unavailable, ambiguous, or source-exhausted field report unavailable or blocked with the reason. Never infer opening from closing, never infer William Hill/Pinnacle/Bet365 from another bookmaker, and never use match outcome or odds to reconstruct Qimen chart tokens. State whether any result is sufficient for a strict crosswalk into a local case_id and complete pre-match qimen_output.json."
+    ]
+  },
+  "created_at": "2026-10-01T21:30:00+08:00"
+}
