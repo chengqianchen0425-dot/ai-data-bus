@@ -101,7 +101,7 @@
 
 首轮回执（占位）：`{"id": "...", "status": "processing", "note": "研究进行中"}`。
 最终回执：`{"id": "...", "status": "ok", "data": {"report": "markdown 全文", "audit": {"expected": 380, "discovered": 380, "complete": 372, "partial": 8, "missing": 0}, "unresolved_queue": [{"target": "未解决的目标描述", "reason": "原因"}]}, "fetched_at": "..."}`。
-其中 `audit` 为漏抓审计（目标数 / 已发现数 / 完整数 / 部分缺失数 / 完全未匹配数），`unresolved_queue` 列出仍未解决的目标及原因。Muse 定位是抓取器不是判断器：允许重复、允许冲突、允许 NULL，缺字段的行必须保留（字段记 NULL 并标注如 `venue_missing: true`），冲突证据（source_A/value_A/source_B/value_B）全部带回，由后续 Validator 判断。
+其中 `audit` 为漏抓审计（目标数 / 已发现数 / 完整数 / 部分缺失数 / 完全未匹配数），`unresolved_queue` 列出仍未解决的目标及原因。Muse 定位是抓取器不是判断器：允许重复、允许冲突、允许 NULL，缺字段的行必须保留（字段记 NULL 并标注如 `venue_missing: true`）；冲突证据去重后最多带回 3-5 个来源（按权威性排序，格式 source/value/source_url），超出部分只记 `conflict_overflow_count` 和来源名单，不逐条展开；最终由后续 Validator 判断。
 
 ## 类型 5：data_task（数据处理）
 
