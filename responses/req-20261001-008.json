@@ -1,7 +1,7 @@
 {
   "id": "req-20261001-008",
   "status": "processing",
-  "note": "研究进行中：第二轮进展。赔率维度：OddsPortal 的 opening/closing 区分已获第三方证据佐证（mejding/matchlabs oddsportal_opening_odds_feasibility_report：opening=赛前首发价、closing=赛前最终价，历史结果页点击单场可查 archived odds；CAVEAT：其 ToS 限制未经同意的自动化抓取/建库，Validator 侧需评估合规路径）。首轮源侦察结论延续：SoccerPunter 免费层仅 close（开盘在 Platinum 付费墙后）；nowscore 初指=首次收录/即时=最新收录，仅补充、不可替换开/收盘；Soccerway（赔率区为广告无历史值）、worldfootball（无赔率，仅 fixture crosswalk）、FootyStats（仅当前快照）、schochastics（零赔率列，止于2023）、J.League 官方（无赔率，仅 kickoff/venue crosswalk）、toto（pari-mutuel 非固定赔率）均不可用；football-data.co.uk 无日本联赛。betexplorer 开/收盘验证中：已派浏览器任务检查 2021 J1 单场详情页（opening vs closing 列标签、各公司名单、Bet365/Pinnacle/William Hill 是否在列、历史 tick 是否带时间戳），结果待回。",
+  "note": "研究进行中：第三轮进展。betexplorer 验证完成（2026-10-02，真浏览器实测 2021 J1 两场详情页互证）：**不暴露开盘 vs 收盘区分**——全文无 \"Opening\"/\"Closing\" 字样，赔率区标题仅 \"Odds Comparison (1X2)\"，列头只有 1/X/2；仅一家博彩公司 bet365.us（未出现 Bet365 主站、Pinnacle、William Hill）；无单公司历史 tick、无时间戳、无走势图；页脚标注数据由 OddsPortal.com 提供。结果页 1/X/2 数字与详情页一致、同样无标注。结论：betexplorer 不可作为 O_OPEN 或严格 O_CLOSE 证据，降级为不可用源。当前可用源结论延续：OddsPortal（opening/closing 明确区分，按场次可查 archived odds；CAVEAT：ToS 限制自动化抓取）仍为 O_OPEN/O_CLOSE 首选候选；SoccerPunter 免费层仅 close（开盘在 Platinum 付费墙后）；nowscore 初指/即时仅补充；Soccerway/worldfootball/FootyStats/schochastics/J.League 官方/toto/football-data.co.uk 均不可用。下一步：OddsPortal J1 单场详情页 tooltip 时间戳验证。",
   "started_at": "2026-10-02T00:16:00+08:00",
-  "updated_at": "2026-10-02T00:40:00+08:00"
+  "updated_at": "2026-10-02T00:42:00+08:00"
 }
