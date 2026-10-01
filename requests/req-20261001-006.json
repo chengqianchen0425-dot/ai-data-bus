@@ -1,16 +1,21 @@
 {
   "id": "req-20261001-006",
-  "type": "deep_research",
+  "type": "data_task",
   "params": {
-    "topic": "Ligue 1 France 2024/25-2025/26 row-level bookmaker odds gap recovery for auditable Qimen Shadow research",
-    "questions": [
-      "Use the local gap inventory D:\\奇门斗数\\work\\ligue1_near_eight_shadow_20260928\\odds_gap_20240928.csv as the authoritative request scope. Fill only these missing fields and do not repeat or overwrite fields already ready: 2024/25 William Hill 1X2 opening and closing (72 matches each), 2024/25 Pinnacle total-goals opening and closing (2 matches each), 2025/26 Pinnacle 1X2 opening and closing (153 matches each), 2025/26 Pinnacle total-goals opening and closing (154 matches each), and 2025/26 William Hill 1X2 opening and closing (306 matches each). Bet365 1X2 opening/closing for both seasons is already complete and must not be requested.",
-      "Return concrete row-level evidence only when the fixture can be matched by season, kickoff date or UTC timestamp, normalized home team, normalized away team, and a stable source URL or fixture identifier. For every row preserve local case_id or a deterministic crosswalk key when available, bookmaker, market, opening, pre_closing, and closing semantics separately, source_url, final_url, fetched_at, field locator, source hash, and evidence notes.",
-      "Keep Bet365, Pinnacle, and William Hill separate. Keep 1X2 separate from total-goals markets. Do not infer opening from closing, do not relabel Football-Data pre-closing as true opening, do not substitute API-Football or another bookmaker, and do not merge ambiguous fixtures. If only latest pre-match or closing is found, label it closing_fallback or pre_closing and state that it is not true opening.",
-      "Audit coverage for only the requested missing fields: expected rows, discovered, complete, partial, matched, unmatched, duplicate, conflict, unavailable, and blocked counts. Preserve NULL/unavailable rows and provide an unresolved_queue with the exact season, fixture identity, bookmaker, market, field, and reason for every unresolved item.",
-      "For each recovered row state whether it supports O_OPEN, O_CLOSE, or O_INTERVAL Shadow use. Report whether it is sufficient for a strict local crosswalk to case_id plus complete pre-match qimen_output.json. Do not derive or invent Qimen palace tokens, F/I/G/M fields, model directions, scores, or odds from outcomes, standings, or relationship prose; Qimen provenance remains a local gate.",
-      "The output is evidence for the football supplement ledger only. It must not modify formal Snapshot, Outcome, Review, Gold, or the formal prediction search index. Return structured JSON with source URLs, field semantics, coverage audit, conflicts, and unresolved_queue; report error or unavailable rather than guessing when a field cannot be verified."
+    "task": "仅对下面 11 场 Bundesliga 本地未匹配比赛，逐场查找并返回可审计的 5DollarFootballAPI fixture_id 或公开赔率来源 URL。按 season、match_date、home_team、away_team 精确匹配；返回每场 {season,match_date,home_team,away_team,provider_fixture_id,source_url,source_type,match_status,odds_available,notes}。若无法确认，match_status=unmatched 或 unavailable；不得按年份猜 fixture_id，不得编造赔率，不得补 Qimen 宫位。",
+    "data": [
+      {"season":"2021-22","match_date":"2022-02-11","home_team":"RB Leipzig","away_team":"FC Koln"},
+      {"season":"2021-22","match_date":"2022-02-12","home_team":"Leverkusen","away_team":"Stuttgart"},
+      {"season":"2021-22","match_date":"2022-02-12","home_team":"M'gladbach","away_team":"Augsburg"},
+      {"season":"2021-22","match_date":"2022-02-12","home_team":"Ein Frankfurt","away_team":"Wolfsburg"},
+      {"season":"2021-22","match_date":"2022-02-12","home_team":"Freiburg","away_team":"Mainz"},
+      {"season":"2021-22","match_date":"2022-02-12","home_team":"Greuther Furth","away_team":"Hertha"},
+      {"season":"2021-22","match_date":"2022-02-12","home_team":"Bochum","away_team":"Bayern Munich"},
+      {"season":"2021-22","match_date":"2022-02-13","home_team":"Hoffenheim","away_team":"Bielefeld"},
+      {"season":"2021-22","match_date":"2022-03-16","home_team":"Mainz","away_team":"Dortmund"},
+      {"season":"2021-22","match_date":"2022-04-16","home_team":"M'gladbach","away_team":"FC Koln"},
+      {"season":"2022-23","match_date":"2023-03-10","home_team":"FC Koln","away_team":"Bochum"}
     ]
   },
-  "created_at": "2026-10-01T23:20:00+08:00"
+  "created_at": "2026-10-01T23:10:00+08:00"
 }
