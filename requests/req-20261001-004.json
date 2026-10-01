@@ -1,0 +1,15 @@
+{
+  "id": "req-20261001-004",
+  "type": "deep_research",
+  "params": {
+    "topic": "La Liga Spain 2018/19-2025/26 historical football data gap recovery for auditable Qimen replay and odds-interval study",
+    "questions": [
+      "For La Liga seasons 2018/19 through 2025/26, identify public, verifiable row-level sources that can fill the currently missing bookmaker fields in the local inventory: Bet365 1X2 opening/closing, Pinnacle 1X2 opening/closing, William Hill 1X2 opening/closing, and Bet365/Pinnacle total-goals opening or closing when a complete line and direction are explicitly present. Keep bookmakers, markets, and opening/closing semantics separate; do not substitute API-Football for bookmaker odds.",
+      "Prioritize exact crosswalk by season, kickoff date, home team, away team, and a stable source URL or fixture identifier. Return source URL, field locator, timestamp semantics, coverage counts, matched counts, unmatched counts, duplicate/conflict counts, and concrete rows only when independently verifiable. Preserve NULL/unavailable rows and explain the reason.",
+      "Audit whether the current La Liga 103-match supplement already covers venue name, city, timezone, longitude, latitude, true solar time, natal_year, competition_entry_year, API fixture ID, stable_match_key, complete nine-palace qimen_output.json, home/away entry palace, and provenance hashes. Do not recreate facts that are already complete; identify only residual gaps in the wider eight-season inventory.",
+      "For any residual 2018/19-2021/22 fixture metadata gaps, identify authoritative public sources for venue registration, historical temporary venue coordinates, club identity/lifecycle and competition-entry season. Keep natal_year separate from competition_entry_year. Do not infer Qimen palaces, F/I/G tokens, model directions, scores, or odds from outcomes or relationship text.",
+      "Assess whether any recovered same-bookmaker earliest pre-match and latest pre-match/closing pair is sufficient for an O_INTERVAL Shadow study when exact opening is unavailable. Never infer opening from closing, never merge bookmakers, never convert aggregate odds into bookmaker-specific odds, and explicitly state whether each result is sufficient for a strict crosswalk into local case_id plus complete pre-match qimen_output.json."
+    ]
+  },
+  "created_at": "2026-10-01T22:36:25+08:00"
+}
