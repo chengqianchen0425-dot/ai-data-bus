@@ -1,7 +1,7 @@
 {
   "id": "req-20261001-008",
   "status": "processing",
-  "note": "研究进行中：第五轮已启动（2026-10-02 01:19 CST 接手，round4 停滞 15.7min）。已派出两个并行真浏览器只读任务：A=OddsPortal 地区/博彩公司可见性＋O_INTERVAL 逐点历史验证（2021/2025 川崎场次重验博彩公司列表，寻找手动地区切换入口，点开 ODDS MOVEMENT 走势图看逐点历史是否加载出 'Loading'）；B=SoccerPunter opening 付费墙行为验证（未登录 opening/closing/历史走势图可见性，逐字记录墙上文案）＋NowScore Pinnacle/William Hill 覆盖复验（公司数、初指/即时两行、逐点历史可点否）。结果回后并入第六轮，当前状态仍 processing。",
+  "note": "研究进行中：第五轮 1/2 完成（2026-10-02 01:25 UTC，浏览器任务A回执）。OddsPortal 重验（只读、未登录）：①地区/博彩公司——美国IP下2021场（川崎4-1大阪钢巴2021-11-27）仅bet365.us一行（1.33/5.75/8.00，Payout95.2%）；2025场（川崎1-1冈山2025-11-08）bet365.us（1.57/4.20/4.75，92.1%）+BetMGM.us（1.62/4.10/4.75，93.3%）两行；Pinnacle/William Hill/主站Bet365两场均未出现。手动地区切换入口：顶部仅Decimal Odds+English/Polski语言菜单（纯界面语言）、页脚无地区切换——结论：无手动地区切换，地区由IP决定。广告位亦为美区运营商（DraftKings/FanDuel）。②ODDS MOVEMENT逐点历史：两场均悬停等待22秒+，Loading文字消失后图表区为空白，无逐点曲线、无数据列表、无下载；仅opening+最新观察两行文本。2021场：'27 Nov, 03:33 1.33 0.00'/'Opening odds: 21 Nov, 15:09 1.33'（opening时间戳较上一轮相差8小时，疑似浏览器时区渲染差，如实记录未推测）；2025场：'8 Nov, 05:58 1.57 -0.05'/'Opening odds: 1 Nov, 15:44 1.62'。时间戳无年份。结论更新：OddsPortal美区IP下O_INTERVAL逐点历史不可用，O_OPEN/O_CLOSE可（opening行+时间戳，最新观察+时间戳）。③任务B（SoccerPunter付费墙+NowScore Pinnacle/WH复验）仍运行中，回执回来后并入R5 2/2。status仍processing。",
   "started_at": "2026-10-02T00:16:00+08:00",
-  "updated_at": "2026-10-01T17:20:50Z"
+  "updated_at": "2026-10-01T17:25:50Z"
 }
