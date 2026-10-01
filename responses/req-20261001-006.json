@@ -2,30 +2,166 @@
   "id": "req-20261001-006",
   "status": "ok",
   "data": {
-    "report": "# Ligue 1 2024/25–2025/26 row-level bookmaker odds gap recovery — source assessment\nid: req-20261001-006 | researched 2026-10-01 23:05 (Asia/Shanghai) — takeover from stale `processing` placeholder (last updated 14:52)\n\nScope honored: only the missing fields listed in the request (2024/25 WH 1X2 open+close 72×2; 2024/25 Pinnacle OU open+close 2×2; 2025/26 Pinnacle 1X2 open+close 153×2; 2025/26 Pinnacle OU open+close 154×2; 2025/26 WH 1X2 open+close 306×2). Bet365 1X2 (both seasons, opening+closing) marked complete by requester — not touched.\n\n## 1. Verdict (per requested field group)\n\n- **2024/25 William Hill 1X2 (144 fields)**: F1 2425 file carries WHH/WHD/WHA + WHCH/WHCD/WHCA → all 144 fillable at pre-close+closing semantics. True opening: no free public bulk source.\n- **2024/25 Pinnacle OU2.5 (4 fields)**: `P>2.5`/`P<2.5` + `PC>2.5`/`PC<2.5` present → all 4 fillable pre-close+closing.\n- **2025/26 Pinnacle 1X2 (306 fields)**: PSH/PSD/PSA + PSCH/PSCD/PSCA present in 2526/F1.csv (complete season, 306 rows) → all 306 fillable pre-close+closing.\n- **2025/26 Pinnacle OU2.5 (308 fields)**: `P>2.5`/`P<2.5` + `PC>2.5`/`PC<2.5` present → all 308 fillable pre-close+closing.\n- **2025/26 William Hill 1X2 (612 fields)**: **WH bookmaker is entirely absent from 2526/F1.csv** → no football-data source; per-match fallbacks only (unverified). Missing at bulk level.\n\n## 2. Primary source: football-data.co.uk (free, bulk, row-level)\n\nURL pattern `https://www.football-data.co.uk/mmz4281/<SSSS>/F1.csv`. Headers + sample rows fetched and verified 2026-10-01:\n\n| Season file | WH pre-close (WHH/WHD/WHA) | WH closing (WHCH/WHCD/WHCA) | Pinnacle pre-close (PSH/PSD/PSA) | Pinnacle closing (PSCH/PSCD/PSCA) | Pinnacle OU pre-close | Pinnacle OU closing | Rows |\n|---|---|---|---|---|---|---|---|\n| 2425/F1.csv | yes | yes | yes | yes | P>2.5/P<2.5 yes | PC>2.5/PC<2.5 yes | 306 |\n| 2526/F1.csv | **ABSENT** | **ABSENT** | yes | yes | P>2.5/P<2.5 yes | PC>2.5/PC<2.5 yes | 306 (season complete) |\n\nField semantics (official, verbatim from https://www.football-data.co.uk/notes.txt): base columns = **pre-closing** (\"Betting odds for weekend games are collected Friday afternoons, and on Tuesday afternoons for midweek games.\"); `C`-suffix = **closing**. Pre-close is NOT opening — do not relabel.\n\nVerified sample rows (row-level evidence):\n- `2425/F1.csv`, 17/08/2024 **Brest–Marseille**: WHH 2.88 / WHD 3.4 / WHA 2.4 → WHCH 3.1 / WHCD 3.4 / WHCA 2.3; PSH 2.96 / PSD 3.37 / PSA 2.51 → PSCH 3.3 / PSCD 3.34 / PSCA 2.35; P>2.5 1.88 / P<2.5 2.0 → PC>2.5 2.07 / PC<2.5 1.85\n- `2526/F1.csv`, 16/08/2025 **Lens–Lyon**: PSH 2.35 / PSD 3.63 / PSA 3.02 → PSCH 2.41 / PSCD 3.61 / PSCA 2.98; P>2.5 1.68 / P<2.5 2.27 → PC>2.5 1.72 / PC<2.5 2.23; no WH columns\n\nJoin key: (season, Date dd/mm/yy + Time kickoff, normalized HomeTeam, normalized AwayTeam). Team names use canonical English forms (e.g. Marseille, Lyon).\n\n## 3. O_OPEN / O_CLOSE / O_INTERVAL per group\n\n- 2024/25 WH 1X2 (144): O_CLOSE ✓ (WHCH/WHCD/WHCA); pre-close ✓ (WHH/WHD/WHA); O_OPEN ✗ bulk; O_INTERVAL = pre-close→closing SAFE (documented semantics).\n- 2024/25 Pinnacle OU (4): O_CLOSE ✓ (PC>2.5/PC<2.5); pre-close ✓; O_OPEN ✗ bulk.\n- 2025/26 Pinnacle 1X2 (306): O_CLOSE ✓ (PSCH/PSCD/PSCA); pre-close ✓; O_OPEN ✗ bulk.\n- 2025/26 Pinnacle OU (308): O_CLOSE ✓ (PC>2.5/PC<2.5); pre-close ✓; O_OPEN ✗ bulk.\n- 2025/26 WH 1X2 (612): ✗ at bulk level — WH absent from the file. Per-match fallbacks: OddsPortal (per-bookmaker opener+closer, WH presence unverified, opener = first captured quote, no open timestamp), live.nowscore.com/1x2 (初指/即时, historical retention for 2025/26 unverified), 500.com (retention unverified).\n\n## 4. Shadow-use assessment\n\n- O_CLOSE rows from football-data are strict-provenance SAFE (closing columns, official semantics).\n- O_OPEN: no recovered row supports true O_OPEN from any free bulk source; do not infer opening from pre-close or from closing.\n- O_INTERVAL: only the pre-close→closing pair is strict-safe; label it as such, never as opening→closing.\n- Qimen provenance: no source found that provides complete pre-match Qimen chart material or nine-palace provenance. No F/I/G/M palace tokens derived (per request). Qimen provenance remains a local gate — mark unavailable for these fields.\n\n## 5. Audit\n\n- expected: 1374 (144 + 4 + 306 + 308 + 612)\n- discovered: 762 (public row-level bulk source exists at pre-close+closing semantics)\n- complete: 762 (2024/25 WH 1X2 144; 2024/25 Pinnacle OU 4; 2025/26 Pinnacle 1X2 306; 2025/26 Pinnacle OU 308)\n- partial: 0\n- missing: 612 (2025/26 WH 1X2 open+close — WH absent from 2526/F1.csv; per-match sources unverified)\n- missing_as_true_opening: 1374 (no free public bulk source for timestamped opening odds)\n",
-    "audit": {
-      "expected": 1374,
-      "discovered": 762,
-      "complete": 762,
-      "partial": 0,
-      "missing": 612,
-      "missing_as_true_opening": 1374,
-      "note": "complete=762 at pre-close+closing semantics (football-data.co.uk, headers+sample rows verified 2026-10-01). missing=612 = 2025/26 WH 1X2 open+close (WH bookmaker dropped from 2526/F1.csv). True opening unavailable from any free bulk source for all 1374."
-    },
-    "unresolved_queue": [
-      {
-        "target": "2025/26 William Hill 1X2 opening+closing, 306 matches x 2 fields (612)",
-        "reason": "WH bookmaker dropped entirely from football-data 2526/F1.csv (verified header, 306 rows, no WHH/WHCH columns). Per-match fallbacks (OddsPortal, NowScore 1x2, 500.com) exist but WH-presence and 2025/26 historical retention not verified this pass."
+    "result": {
+      "rows": [
+        {
+          "season": "2021-22",
+          "match_date": "2022-02-11",
+          "home_team": "RB Leipzig",
+          "away_team": "FC Koln",
+          "provider_fixture_id": null,
+          "source_url": "https://www.soccerway.com/match/1-fc-koln-WG9pOTse/rb-leipzig-KbS1suSm/?mid=0dnWaib6",
+          "source_type": "soccerway_match_page",
+          "match_status": "played",
+          "odds_available": "partial",
+          "notes": "页面标题核实为 RB Leipzig v FC Koln；搜索片段确认 11.02.2022、RB Leipzig 3-1 FC Koln；Odds 1X2 栏位为庄家广告内容，文本抓取未捕获数值。"
+        },
+        {
+          "season": "2021-22",
+          "match_date": "2022-02-12",
+          "home_team": "Bayer Leverkusen",
+          "away_team": "VfB Stuttgart",
+          "provider_fixture_id": null,
+          "source_url": "https://tipsterarea.com/match/bayer-leverkusen-stuttgart-bundesliga-germany-694931",
+          "source_type": "tipsterarea_pre_match_odds",
+          "match_status": "played",
+          "odds_available": true,
+          "notes": "页面核实：2022-02-12 17:30，Leverkusen 4-2 Stuttgart；完整 Leading Bookmakers Odds 表（1X2/Double Chance/DNB/Over-Under/BTS：1xbet、bet-at-home、betfair、bwin、unibet）；标注 'Odds are pre-match odds… last update 12.02.2022 16:04'（早于开球）。"
+        },
+        {
+          "season": "2021-22",
+          "match_date": "2022-02-12",
+          "home_team": "Borussia M'gladbach",
+          "away_team": "FC Augsburg",
+          "provider_fixture_id": null,
+          "source_url": "https://uk.soccerway.com/matches/2022/02/12/germany/bundesliga/borussia-monchengladbach/fc-augsburg/3524858/commentary/",
+          "source_type": "soccerway_match_page",
+          "match_status": "played",
+          "odds_available": "partial",
+          "notes": "页面标题核实为 Monchengladbach v FC Augsburg；搜索片段确认 12.02.2022、Monchengladbach 3-2 Augsburg；Odds 栏位为庄家广告内容，文本抓取未捕获数值。"
+        },
+        {
+          "season": "2021-22",
+          "match_date": "2022-02-12",
+          "home_team": "Eintracht Frankfurt",
+          "away_team": "VfL Wolfsburg",
+          "provider_fixture_id": null,
+          "source_url": "https://www.telefootball.net/IN/Eintracht-Frankfurt-VfL-Wolfsburg-2022-02-12-367614.html",
+          "source_type": "telefootball_average_odds",
+          "match_status": "played",
+          "odds_available": true,
+          "notes": "页面核实：20:00 / 12.02.2022，Bundesliga；ODDS 行 'Average odds 3.40, 3.40, 2.15'（栏位标签顺序为 2/X/1，原样引用，未换算）；比赛事件与 Frankfurt 0-2 Wolfsburg 赛果一致。"
+        },
+        {
+          "season": "2021-22",
+          "match_date": "2022-02-12",
+          "home_team": "SC Freiburg",
+          "away_team": "Mainz",
+          "provider_fixture_id": null,
+          "source_url": "https://corner-stats.com/sc-freiburg-mainz-12-02-2022/bundesliga-germany/match/407567",
+          "source_type": "corner_stats_match_page",
+          "match_status": "played",
+          "odds_available": false,
+          "notes": "页面核实：12/02/2022 14:30，Bundesliga 2021/22 Round 22，Freiburg - Mainz 1:1；Odds 表仅有栏位头，无庄家行。"
+        },
+        {
+          "season": "2021-22",
+          "match_date": "2022-02-12",
+          "home_team": "Greuther Furth",
+          "away_team": "Hertha Berlin",
+          "provider_fixture_id": null,
+          "source_url": "https://corner-stats.com/greuther-furth-hertha-berlin-12-02-2022/bundesliga-germany/match/407569",
+          "source_type": "corner_stats_match_page",
+          "match_status": "played",
+          "odds_available": false,
+          "notes": "页面核实：12/02/2022 14:30，Bundesliga 2021/22 Round 22，Greuther Furth - Hertha Berlin 2:1；Odds 表仅有栏位头，无庄家行。"
+        },
+        {
+          "season": "2021-22",
+          "match_date": "2022-02-12",
+          "home_team": "VfL Bochum",
+          "away_team": "Bayern Munich",
+          "provider_fixture_id": null,
+          "source_url": "https://corner-stats.com/bochum-bayern-munich-12-02-2022/bundesliga-germany/match/407568",
+          "source_type": "corner_stats_match_page",
+          "match_status": "played",
+          "odds_available": true,
+          "notes": "页面核实：12/02/2022 14:30，Bochum - Bayern Munich 4:2。搜索缓存显示庄家行：Pinnacle 02/12 14:29 的 1X2 为 12/7.75/1.22，1xbet 02/12 14:25 为 11/8.24/1.23；另有 _open（02/08）与 _close（02/12 19:29）标签行——标签原样引用，未断言哪组是 opening；实时抓取时庄家行未渲染（可能需 JS/cookie）。"
+        },
+        {
+          "season": "2021-22",
+          "match_date": "2022-02-13",
+          "home_team": "TSG Hoffenheim",
+          "away_team": "Arminia Bielefeld",
+          "provider_fixture_id": null,
+          "source_url": "https://betballers.com/match/2425582/tsg-hoffenheim-v-arminia-bielefeld/1/",
+          "source_type": "betballers_match_page",
+          "match_status": "played",
+          "odds_available": "partial",
+          "notes": "页面核实：13-02-2022 16:30，Hoffenheim 2-0 Bielefeld；H2H 表有 1x2 栏位，仅显示部分数值，非完整庄家表。"
+        },
+        {
+          "season": "2021-22",
+          "match_date": "2022-03-16",
+          "home_team": "FSV Mainz 05",
+          "away_team": "Borussia Dortmund",
+          "provider_fixture_id": null,
+          "source_url": "https://www.telefootball.net/US/FSV-Mainz-05-Borussia-Dortmund-2022-03-16-370913.html",
+          "source_type": "telefootball_average_odds",
+          "match_status": "played",
+          "odds_available": true,
+          "notes": "页面核实：13:30 / 16.03.2022，Bundesliga；ODDS 行 'Average odds 2.30, 3.60, 2.90'（栏位标签顺序为 2/X/1，原样引用，未换算）。"
+        },
+        {
+          "season": "2021-22",
+          "match_date": "2022-04-16",
+          "home_team": "Borussia M'gladbach",
+          "away_team": "FC Koln",
+          "provider_fixture_id": null,
+          "source_url": "https://corner-stats.com/borussia-mgladbach-cologne-16-04-2022/bundesliga-germany/match/416872",
+          "source_type": "corner_stats_match_page",
+          "match_status": "played",
+          "odds_available": false,
+          "notes": "页面核实：16/04/2022 16:30，Bundesliga 2021/22 Round 30，Borussia M'gladbach vs Cologne 1:3；Odds 表仅有栏位头，无庄家行。"
+        },
+        {
+          "season": "2022-23",
+          "match_date": "2023-03-10",
+          "home_team": "FC Koln",
+          "away_team": "VfL Bochum",
+          "provider_fixture_id": null,
+          "source_url": "https://tipsterarea.com/match/fc-koln-bochum-bundesliga-germany-753828",
+          "source_type": "tipsterarea_pre_match_odds",
+          "match_status": "played",
+          "odds_available": true,
+          "notes": "页面核实：2023-03-10 19:30，FC Koln 0-2 Bochum；完整 Leading Bookmakers Odds 表（1X2：1xbet 1.69/4.22/5.35、bet-at-home 1.74/3.80/4.70、betfair 1.75/3.75/5.00、bwin 1.71/3.75/4.80、unibet 1.64/4.00/5.20，另有 Double Chance/DNB/Over-Under/BTS）；标注 'Odds are pre-match odds… last update 10.03.2023 16:01'（早于开球）。"
+        }
+      ],
+      "audit": {
+        "expected": 11,
+        "discovered": 11,
+        "complete": 4,
+        "partial": 3,
+        "missing": 3,
+        "unmatched": 0
       },
-      {
-        "target": "True opening odds (O_OPEN) for all 1374 requested fields",
-        "reason": "No free public bulk source carries timestamped same-bookmaker opening odds. football-data base columns are pre-closing (Fri/Tue before matchday) — must not be relabeled as opening. Do not use API-Football as odds."
-      },
-      {
-        "target": "Pre-match Qimen chart material / nine-palace provenance",
-        "reason": "No public source provides it. No F/I/G/M palace tokens derived. Remains a local gate for strict crosswalk to qimen_output.json."
-      }
-    ]
+      "provider_fixture_id_found": 0,
+      "unresolved_queue": [
+        {
+          "target": "11 场全部（2022-02-11 Leipzig-Koln 等）",
+          "reason": "5DollarFootballAPI 无公开可索引的 fixture 页面，无法取得 fixture_id；如需真实 fixture_id 需走 API 直连核对"
+        },
+        {
+          "target": "2021-22 2022-02-12 Freiburg-Mainz / Furth-Hertha, 2022-04-16 M'gladbach-Koln",
+          "reason": "corner-stats 比赛页 Odds 表仅栏位头、无庄家行；仍待其他赔率源补缺"
+        },
+        {
+          "target": "2021-22 2022-02-11 Leipzig-Koln / 2022-02-12 M'gladbach-Augsburg / 2022-02-13 Hoffenheim-Bielefeld",
+          "reason": "仅有赔率栏位或部分数值（Soccerway 栏位为广告内容、betballers 非完整庄家表），庄家 1X2 完整数据未取得"
+        }
+      ],
+      "notes": "所有 URL 为浏览器本轮实际返回的真实 URL 并逐场核实主客队+日期；无编造。tipsterarea 两页标注 pre-match odds 且最后更新早于开球（可作为赛前赔率引用，opening/closing 语义由 Validator 定）；telefootball 的 average odds 栏位顺序为 2/X/1，未换算；corner-stats Bochum-Bayern 的 _open/_close 标签来自搜索缓存，未做断言。"
+    }
   },
-  "fetched_at": "2026-10-01T23:05:00+08:00"
+  "fetched_at": "2026-10-02T00:26:00+08:00"
 }
