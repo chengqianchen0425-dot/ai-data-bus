@@ -2,14 +2,19 @@
   "id": "req-20261001-007",
   "type": "deep_research",
   "params": {
-    "topic": "Serie A Italy eight-season historical bookmaker odds gap recovery for auditable Qimen Shadow research",
+    "topic": "Japan J1 League 2021-2025 row-level historical football data gap recovery for auditable odds-interval Shadow research",
     "questions": [
-      "For Serie A seasons 2018/19 through 2025/26, identify public, verifiable row-level sources for Bet365, Pinnacle, and William Hill 1X2 and total-goals odds. The local inventory already has football-data I1 bulk files for 2021/22-2025/26; focus on the missing 2018/19-2020/21 seasons and confirm whether 2025/26 is complete or partial.",
-      "Keep bookmakers and markets separate. Preserve true opening, first-captured/pre-closing, and closing semantics as distinct fields. Never relabel football-data Friday/Tuesday pre-closing values as true opening, never infer opening from closing, and never substitute API-Football for bookmaker odds.",
-      "For every concrete row, require season, match date or kickoff timestamp, normalized home team, normalized away team, bookmaker, market, source URL or stable fixture identifier, field locator, fetched_at, and source hash. Return coverage, matched, unmatched, duplicate, conflict, unavailable, and blocked counts. Preserve unresolved rows with reasons.",
-      "Assess whether any source supports O_OPEN, O_CLOSE, or O_INTERVAL Shadow use. A same-bookmaker pre-closing-to-closing pair may be reported only as pre_closing_to_closing and is not a true opening-to-closing interval. Do not derive Qimen palace, Q/F/G/I/M tokens, model directions, scores, or predictions.",
-      "State whether each recovered record is sufficient for strict crosswalk to a local case_id and complete pre-match qimen_output.json. The output is evidence for the supplement ledger only and must not modify formal Snapshot, Outcome, Review, Gold, or the formal prediction search index. Return structured JSON with source URLs, field semantics, audit totals, conflicts, and unresolved_queue."
+      "Use the project-local checklist D:\\奇门斗数\\work\\j1-muse-supplement-20261001\\j1_muse_gap_checklist.json and the linked gap artifacts as the authoritative scope. Cover Japan J1 only, seasons 2021, 2022, 2023, 2024, and 2025; do not include J2 or other competitions.",
+      "Resolve the 48 local J1 fixtures without a unique provider fixture id. Match by season, kickoff date or UTC timestamp, normalized home team, normalized away team, and a stable source URL or fixture identifier. Return a row-level crosswalk and keep ambiguous or unmatched rows in unresolved_queue.",
+      "For the 642 field-level unavailable rows in the 1704 mapped fixtures, search only for verifiable Bet365, Pinnacle, and William Hill 1X2 data. Keep each bookmaker separate and keep opening, closing, pre_closing, and earliest/latest pre-match history separate. Do not infer opening from closing and do not replace true opening with Football-Data pre-closing.",
+      "If an odds history source is available, return the earliest verified pre-match observation and latest verified pre-match observation with recorded_at, bookmaker, market, home, draw, away, pre-match marker, source_url, final_url, field locator, fetched_at, and SHA-256. State explicitly whether the evidence supports O_OPEN, O_CLOSE, or strict O_INTERVAL Shadow use.",
+      "Verify kickoff_local, kickoff_utc, venue, and venue timezone for the 1752 local rows only when the fixture identity is unambiguous. Preserve source URL, final URL, fetch time, field locator, and source hash. Conflicts must be returned separately and never auto-resolved.",
+      "Review J1 2021-2025 club registration information for team_name, club-lineage natal_year, first J1 competition_entry_year, lineage explanation, and source URL. natal_year means the club-lineage founding year; competition_entry_year means the first J1 season start. Do not substitute first J2 participation year, and do not include J2 teams as J1 participants unless the row is a verified J1 fixture.",
+      "Find pre-kickoff standings values only when directly evidenced: rank_before, points_before, played_before, as_of, and source URL. Preseason ties, unresolved rank order, and unavailable values must remain explicit unavailable rather than guessed.",
+      "Do not infer Qimen palace tokens, Q, F relation, G energy, I cycle or intent, A/B/C/E/M fields, model directions, Miss 1, Miss 2, BTTS labels, total-goals labels, results, Review, or any post-match field. These remain local workflow gates.",
+      "Return structured JSON with audit counts for expected, discovered, complete, partial, matched, unmatched, duplicate, conflict, unavailable, and blocked rows, plus an exact unresolved_queue containing season, fixture identity, bookmaker, market, field, source status, and reason. Preserve NULL/unavailable rows. Return error or unavailable rather than guessing.",
+      "This is supplement evidence only. Do not modify formal Snapshot, Outcome, Review, Gold, Registry, formal probabilities, weights, or the prediction search index."
     ]
   },
-  "created_at": "2026-10-01T23:40:00+08:00"
+  "created_at": "2026-10-01T23:55:00+08:00"
 }
