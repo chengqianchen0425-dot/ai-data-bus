@@ -1,7 +1,7 @@
 {
   "id": "req-20261001-008",
   "status": "processing",
-  "note": "研究进行中：第四轮启动。OddsPortal J1 单场详情页 tooltip 时间戳验证进行中（真浏览器实测）：目标确认 OddsPortal J1 历史场次是否按博彩公司分别标注 opening/closing、是否有每条赔率时间戳；重点看 Bet365/Pinnacle/William Hill 在 J1 2021-2025 场次的可查性。",
+  "note": "研究进行中：第四轮完成。OddsPortal J1 单场详情页 tooltip 验证（2026-10-02 真浏览器只读，未登录，浏览 4 页）：1) opening/closing 明确区分——非表格列形式，而是每博彩公司每赔率项的 'ODDS MOVEMENT' 提示框：最新（closing）赔率带时间戳+涨跌幅（如 '27 Nov, 11:33 1.33 0.00'），另有一行 'Opening odds: 21 Nov, 23:09 1.33'（逐字记录）。列头仅 'Bookmakers'/'1'/'X'/'2'/'Payout'，无 Opening/Closing 列或筛选器，无 'archived odds' 独立标签。2) 时间戳：opening 与最新观察均附日期+时间（无年份后缀，可推定比赛当年）；完整逐点历史走势图处于 'Loading' 未展开验证（O_INTERVAL 未确认）。3) **地区过滤致命限制**：本次美国 IP 下 2021 场次（川崎前锋-大阪钢巴）仅 bet365.us，2025 场次（川崎前锋-冈山）仅 bet365.us + BetMGM.us；Pinnacle、William Hill、主站 Bet365 均未出现。站点原文 'using all of the online bookmakers in your region' 证实按访问者地区过滤——对 Codex 需要 Pinnacle/William Hill 的需求（Q3/Q4），必须换非美地区重测或另找来源。4) 2021 与 2025 赛季页面布局一致；未遇到反爬/登录墙（ODDS MOVEMENT 无需登录）；页脚 ToS 链接存在但本次只读浏览无触发。结论更新：OddsPortal 可支持 O_OPEN（'Opening odds' 行+时间戳）与 O_CLOSE（最新赛前观察+时间戳），但 Pinnacle/William Hill 在当前地区不可见；O_INTERVAL 逐点历史未验证。下一步（第五轮）：非美地区（JP/EU/UK 出口）重测确认 Pinnacle/William Hill 是否出现；并行核验 SoccerPunter 付费墙后开盘与 nowscore 的 Pinnacle/WH 覆盖。",
   "started_at": "2026-10-02T00:16:00+08:00",
-  "updated_at": "2026-10-01T16:58:16Z"
+  "updated_at": "2026-10-01T17:04:00Z"
 }
