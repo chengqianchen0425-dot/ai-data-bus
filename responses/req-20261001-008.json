@@ -1,8 +1,73 @@
 {
   "id": "req-20261001-008",
-  "status": "processing",
-  "note": "研究进行中：2026-10-02 05:44 轮接手（上一轮 processing 已停滞 >15 分钟），J1 2021-2025 缺口源调研进行中",
-  "started_at": "2026-10-02T00:16:00+08:00",
-  "updated_at": "2026-10-02 06:05 CST",
-  "picked_up_at": "2026-10-02T05:44:53+08:00"
+  "status": "ok",
+  "data": {
+    "report": "# J1 2021–2025 行级历史数据缺口恢复 — 最终回执\n\n- 请求 id：req-20261001-008\n- 取件轮次：2026-10-02 05:43 接手（上一轮 processing 自 2026-10-01 21:33 停滞 >15 分钟，按防重规则接手）\n- 调研时间：2026-10-02；方法：browser.search / browser.open 并行 5 路（无 live browser）\n- 本地证据文件（Muse 工作机）：~/workspace/j1-research-20261002/（REPORT.md / club-registration.md / home-venues.csv / venue-rename-notes.md / odds-sources.md / fixture-sources.md / pre-match-standings.md）\n- 备注：008 为 'wrong-scope response collision' 后的权威重试请求；与 007 同一 J1 主题，一次研究工作，证据合并提交。Qimen 相关字段按请求要求一律未推导、记 unavailable 留待本地流程。\n\n---\n\n# 日本 J1 联赛 2021–2025 行级历史数据源调研 — 综合报告\n\n调研时间：2026-10-02。方法：5 个子调研员并行，仅用 `browser.search` / `browser.open`（未用 live browser）。定位：Muse = 抓取器/搜索器，不做判断清洗；所有 URL 来自工具返回原文，未手写；查不到记 unavailable + 原因；冲突保留未清洗。\n\n完整证据分文件：\n- [club-registration.md](sandbox://workspace/j1-research-20261002/club-registration.md) — 26 队谱系/注册明细 + 排除名单 + 口径冲突表\n- [home-venues.csv](sandbox://workspace/j1-research-20261002/home-venues.csv) — 96 行：各赛季各队主场馆 + 城市 + 时区 + 经纬度 + 来源 URL\n- [venue-rename-notes.md](sandbox://workspace/j1-research-20261002/venue-rename-notes.md) — 换主场/更名记录 + 坐标冲突说明\n- [odds-sources.md](sandbox://workspace/j1-research-20261002/odds-sources.md) — 赔率源逐项证据\n- [fixture-sources.md](sandbox://workspace/j1-research-20261002/fixture-sources.md) — 赛程/场馆源逐项证据\n- [pre-match-standings.md](sandbox://workspace/j1-research-20261002/pre-match-standings.md) — 开球前积分榜证据 + 映射规则\n\n---\n\n## 一、J1 2021–2025 历史 1X2 赔率行级源\n\n**实锤 2 个：**\n\n1. **football-data.co.uk**（https://football-data.co.uk/data.php）——有 J1 行级赔率，**closing only**。字段语义（官网 https://www.football-data.co.uk/notes.txt L81-82 原文）：\"These are for pre-closing odds. For the closing odds, as below but with an additional 'C' character…\" → **无 C 列（B365H/PSH/WHH/MaxH/AvgH）= pre-closing，不是 opening**；带 C 列（B365CH/PSCH 等）= closing。J1 文件只有 closing（MaxCH/AvgCH/PSCH…）。CSV 直接下载免登录，每周至少更新两次。注意：官网称 extra leagues closing 回溯 2012/13（2021–2025 应覆盖）；**2025 赛季 Pinnacle 列慎用**——官网警告 \"Since 23/07/2025 Pinnacle's public API for odds delivery has become unreliable\"。冲突未清洗：第三方文档误把 pre-closing 写成 \"opening\"（以官网为准）；文件代码 `J1` vs `JPN` 未验证。\n2. **football-charts.com/data**（https://www.football-charts.com/data）——open+close 成对，bet365 具名；2021–2025 共 **1752 场（380/306/306/380/380）**。官网原文：\"Opening means first listed, closing means last before kick-off.\" 逐场 open→close 一对 + open_at/close_at（UTC）；1X2 覆盖 99.9%，场均 3.51 家。官网明示 \"There is no Pinnacle and no exchange\"；William Hill 是否在匿名 `bookmaker_<id>` 中未知。付费 zip（7 CSV + Parquet）；学术免费；免费 API tier 仅覆盖当前+上一赛季。\n\n**需 live browser / 未验证（4 个）：** soccerpunter.com（J1 逐场 odds 页存在，列 Bet365/Pinnacle/William Hill 等约 10 家；opening odds history + fluctuation 为 Platinum 付费墙；JS 渲染文本抓取失败）；betexplorer.com（https://www.BetExplorer.com/football/japan/j-league-1998/results/，J-League 档案有赔率入口，2021–2025 未验证）；oddsportal.com（J1 2025 逐场+H2H 页被索引，如 https://www.oddsportal.com/football/h2h/nagoya-grampus-6BeXoaup/shonan-bellmare-SIV5o8tI/；文本抓取仅返回标题，open/close 语义未确认；搜索片段示 J1 约 \"2 Bookmakers\"）；nowgoal（今晚比分网；J1 H2H 页含 \"1x2 Odds\" 栏目，聚合统计，per-bookmaker 初盘/即时需 JS）。\n\n**明确否定（4 个）：** Soccerway 无赔率栏目；WorldFootball.net 只有积分榜/赛果无赔率列（https://www.worldfootball.net/competition/co48/japan-j1-league/）；RSSSF 针对性搜索 0 命中官方页（历史赛果归档，无赔率证据）；Bet365/Pinnacle/William Hill 官方均不公开历史赔率。odds.adamgabor.eu 为商业营销页，无法验证有无 J1（信息缺失非否定）。\n\n**unavailable：** schochastics/football_match_odds（精确名称两次搜索无命中，仓库存在性无法验证）；zgzcw（中国足彩网）中文搜索全噪声无证据；唯彩两次中文搜索无直接命中；tipsterarea.com 未及复查。\n\n## 二、J1 2021–2025 逐场赛程/开球时间/场馆源\n\n- **OpenFootball**（https://github.com/openfootball/world；目录经 GitHub API 验证含 2019_jp1.txt ~ 2025_jp1.txt；已下载 2021_jp1.txt / 2025_jp1.txt，header `# Matches 380`、`# Teams 20`）：2021–2025 全覆盖；字段 Date/开球时间（未标注时区，Football.TXT 惯例为当地时间→判定 JST）/主客队/全场+半场比分；**无 venue、无时区字段、无坐标**。CC0 纯文本易解析。\n- **worldfootball.net**（https://www.worldfootball.net/competition/co48/japan-j1-league/se63746/2024/results-and-standings/）：2021–2025 全覆盖；Date/开球时间/主客队/比分/四张积分榜；**时间非 JST**（2024 第 38 轮 \"08.12.2024 06:00\" = 14:00 JST，疑似 CET/CEST；页面未找到时区声明 → **UNVERIFIED**）；无 venue。\n- **官方 jleague.co**（https://jleague.co/fixtures/cwc/2021/10/）：weekly 页明确标注 \"(JST)\"，字段：主队简称+开球时间(JST)+客队+场馆简称+全称；无城市/坐标。**最权威的 venue+JST 源**。历史归档 `/fixtures/stage/j1/<year>/<matchday>/` 存在但 /en/ 版疑似 JS 渲染 → 需 live browser 确认。\n- **FBref**（https://fbref.com/de/comp/25/calendario/Risultati-e-partite-di-J1-League；comp/25 = J1）：**最佳静态源**——表头 Wk|Day|Date|**Time**|Home|Score|Away|Attendance|**Venue**|Referee；Time 为 \"19:00 (03:00)\" = 当地时间 (GMT) 双列，时区语义最明确；Venue 全称；无城市/坐标。2021–2025 需逐赛季开归档页验证。\n- **API-Football**（文档 https://github.com/bruin-data/ingestr/blob/HEAD/docs/soccer-sources/api-football.md）：`GET /fixtures` 返回 `fixture: {id, referee, timezone, date, timestamp(UTC epoch), periods, venue: {id, name, city}, status}`；`timezone=Asia/Tokyo` 可换算；**venue 有 name+city，无经纬度**；需 API key；J1 league id 与 2021–2025 收录未验证。\n- **Transfermarkt**（https://www.transfermarkt.co.uk/j1-league/spieltag/wettbewerb/JAP1/saison_id/2023/spieltag/18）：逐轮赛程有（Date+Time/主客队/比分/裁判/观众）；概览页无场馆（比赛详情页一般有 Stadium 字段，未验证）；时间为站点渲染时区、非 JST。\n- **ESPN**（https://www.espn.ph/football/schedule/_/league/jpn.1）：location = \"Stadium, City, Japan\"（venue+城市）；TIME 为观众时区渲染；赛季下拉未逐赛季验证。\n- **sportradar.com**（示例 https://sportradar.com/?q=6775208758462123137）：单场页有场馆+城市（如 \"At Ajinomoto Stadium in Tokyo\"）+ 美西时区开球时间；全赛季列表抓取方式未知。\n\n**venue + timezone/coords 结论：** ① FBref = 最佳静态源（venue 全称 + JST(GMT) 双时间）；② API-Football = 最佳可编程源（venue{name,city} + timezone + UTC timestamp）；③ jleague.co = 最权威（venue 全称 + \"(JST)\"），历史归档需 live 确认。**经纬度无任何源直接提供**；map.geocode 实测不可靠（\"Saitama Stadium 2002\" 误匹配门牌号）；已按场馆从 Wikipedia infobox 逐个补全（见 home-venues.csv）。\n\n## 三、俱乐部注册信息（2021–2025 在 J1 出现过的 26 队）\n\n各赛季：2021（20 队）/ 2022（18）/ 2023（18）/ 2024（20）/ 2025（20）；明细见 club-registration.md。关键摘要：\n\n- Original Ten（1993 年 J1 创始）：Yokohama F. Marinos (natal 1972), Nagoya Grampus (1939), Kashima Antlers (1947), Urawa Red Diamonds (1950), Sanfrecce Hiroshima (1938), Gamba Osaka (1980), Shimizu S-Pulse (1991), Tokyo Verdy (1969)。\n- 最古老谱系：Kyoto Sanga (1922, Kyoto Shiko Club)。\n- 队史首次升 J1：Machida Zelvia (2024)、Fagiano Okayama (2025)。\n- 排除：V-Varen Nagasaki（J1 仅 2018，在范围内全在 J2）、FC Ryukyu（从未踢过 J1）。\n- 13 组 natal_year 口径冲突已记录双口径（详见 club-registration.md），包括 Gamba 1980 vs 1991、FC Tokyo 1935 vs 30/11/1934、町田改名 1997 vs 1998 等。\n\n## 四、各俱乐部主场馆（2021–2025）\n\n96 行全表见 home-venues.csv；时区 100% 为 Asia/Tokyo (UTC+9)；坐标逐场馆验证。变更记录：\n\n- **实际搬迁**：仅 Sanfrecce Hiroshima（2021–2023 Edion Stadium Hiroshima → 2024 起 Edion Peace Wing Hiroshima，2024-02-01 开幕）。\n- **仅冠名变更（同地点）**：Kawasaki（2024 起 Uvance Todoroki Stadium by Fujitsu）、Kashima（2025-07-01 起冠名 Mercari Stadium）、Sapporo Dome（2024-08-01 起冠名 Daiwa House Premist Dome）、Oita（Showa Denko → Resonac → Crasus Dome Oita）、Okayama（2025 JFE Harenokuni Stadium，前名 City Light Stadium）、Cerezo（Yodoko Sakura → Yanmar Hanasaka）。\n- 共用：FC Tokyo 与 Tokyo Verdy 在 2024–2025 均用 Ajinomoto Stadium。\n- 坐标次要冲突（供 Validator）：Nissan Stadium 35.5100444/139.6062472（infobox）vs 35.509722/139.605556（GeoHack）；Kashima 坐标来自 mapcarta（Wikipedia 文本未渲染 infobox 坐标）。\n\n## 五、开球前积分榜（rank_before/points_before/played_before）\n\n**能用（2 个）：**\n1. **Transfermarkt Matchday 概览页**（https://www.transfermarkt.co.uk/j1-league/spieltag/wettbewerb/JAP1/saison_id/2022/spieltag/27；2023 实测）——唯一直接源：每场比赛行自带括号内开球前排名（如 \"(7.) Sanf. Hiroshima ... 2:0 Vissel Kobe (1.)\" ≈ rank_before）；右侧 \"at that point in time\" 表格给出该轮结束后的 rank/Matches/GD/Pts → points_before/played_before 取 N-1 轮表格。⚠️ saison_id 与年份错位一年（2023 = saison_id/2022）；2021/2022/2024/2025 未逐赛季验证。\n2. **ja.wikipedia「2022年のJ1リーグ」順位推移表**（https://ja.wikipedia.org/wiki/2022年のJ1リーグ）——逐轮赛后排名矩阵，取 N-1 列即 rank_before；仅有排名（无积分/场次），2021/2023/2024/2025 同系列文章未验证。\n\n**不能用（语义不匹配 final ≠ before-match）：** worldfootball.net（仅最终榜/主客场榜/半程榜）；Soccerway（仅最终榜，Archive 按赛季切分）；jleague.co 官方（仅实时榜，无历史轮次快照）；API-Football /standings（无 round 参数，只能给累计榜）。\n\n**映射规则：** 第 N 轮某场：rank_before ≈ Transfermarkt 第 N 轮页面括号排名 / 第 N-1 轮表格排名 / 日维第 N-1 列；points_before/played_before = Transfermarkt 第 N-1 轮表格 Pts/Matches（补赛球队直接用该列 Matches 值）。\n\n---\n\n## Audit（漏抓审计）\n\n| 模块 | expected | discovered | complete | partial | missing |\n|---|---|---|---|---|---|\n| 赔率源（8 候选） | 8 源验证 | 8 | 2 确认有数据 | 4 需 live browser（soccerpunter/betexplorer/oddsportal/nowgoal） | 0 未查源（全部查过）；但 schochastics/zgzcw/唯彩公开搜索无证据 |\n| 赛程/场馆源（8 候选） | 8 源验证 | 8 | 5（OpenFootball/worldfootball/jleague.co/FBref/ESPN 部分；Transfermarkt/sportradar/API-Football 文档） | 3 需验证（API-Football J1 id、FBref 逐赛季归档、jleague.co 历史归档） | 0 |\n| 俱乐部注册 | 26 队（5 赛季 union） | 26 | 26（含 entry_year + lineage + 来源） | 13 组 natal_year 口径冲突（双口径保留） | 0 |\n| 主场馆 | 96 行（20+18+18+20+20） | 96 | 96（venue+city+timezone+lat/lon+来源） | 坐标次要冲突 2 组（保留） | 0 |\n| 开球前积分榜 | 7 候选源 | 7 | 1 直接可用（Transfermarkt）+ 1 排名交叉验证（日维 2022） | 1（日维其余赛季未验证） | 0 |\n| J1 2021–2025 总场次数 | 1752（380+306+306+380+380，football-charts） | 1752 | — | 与 OpenFootball header（2021/2025 各 380 场）一致 | 0 |\n\n## unresolved_queue（全部查不到/未验证的逐条 reason）\n\n1. schochastics/football_match_odds 仓库存在性 — 精确名称两次搜索无命中；相关仓库仅 results-only。需 GitHub 站内检索或确认真实仓库名。\n2. zgzcw / 唯彩 J1 历史赔率 — 中文搜索全噪声/无直接命中；需站内检索或 live browser。\n3. oddsportal / nowgoal / soccerpunter / betexplorer 的 open vs close 语义与每家覆盖 — JS 渲染，文本抓取失败；需 live browser（保留任务）。\n4. football-data.co.uk J1 文件代码（`J1` vs `JPN`）与实际列名 — 需 curl 直验第三方下载模式。\n5. football-charts 匿名 `bookmaker_<id>` 是否含 William Hill — 需付费包或抓取。\n6. tipsterarea.com J1 完场 1X2 — 未及复查，语义/覆盖未验证。\n7. API-Football J1 league id 与 2021–2025 收录 — 搜索未返回联赛目录命中，需 API 调用验证。\n8. FBref comp/25 的 2021–2025 逐赛季归档页 — 需逐赛季打开验证。\n9. jleague.co `/fixtures/stage/j1/<year>/<n>/` 历史归档字段 — /en/ 版疑似 JS 渲染，需 live browser。\n10. worldfootball.net 开球时间时区声明 — 页面未找到（疑似 CET/CEST），match-report 页是否有 stadium 字段未验证。\n11. Transfermarkt 2021/2022/2024/2025 赛季 Matchday 页面 URL（saison_id 映射）— 仅验证 2023；需逐个 open 确认，勿手写 URL。\n12. ja.wikipedia 2021/2023/2024/2025 年 J1 文章是否含順位推移表 — 仅验证 2022。\n13. Transfermarkt 括号内\"开球前排名\"的精确快照时点（上一轮结束时 vs 该轮已赛后实时）— 页面未明确说明。\n14. Flashscore / Sofascore 历史轮次积分榜 — 未验证。\n\n## 需 follow-up 的动作建议（给父 agent）\n\n- live browser 任务（我方无权操作）：oddsportal、nowgoal、soccerpunter、betexplorer 的逐场 1X2 open/close 抓取；jleague.co 历史归档 `/fixtures/stage/j1/<year>/<n>/` 字段确认；FBref 逐赛季 comp/25 归档；Transfermarkt 其余赛季 Matchday 页。\n- curl 验证：football-data.co.uk J1 文件代码与实际列名（MaxCH/AvgCH/PSCH 是否存在）。\n- API 调用：API-Football 的 J1 league id 与 /fixtures 字段验证（需 API key）。\n",
+    "audit": {
+      "expected": 145,
+      "discovered": 145,
+      "complete": 131,
+      "partial": 8,
+      "missing": 0
+    },
+    "unresolved_queue": [
+      {
+        "target": "schochastics/football_match_odds 仓库存在性",
+        "reason": "精确名称两次 web 搜索无命中；相关仓库仅 results-only。需 GitHub 站内检索或确认真实仓库名。"
+      },
+      {
+        "target": "zgzcw / 唯彩 J1 历史赔率",
+        "reason": "中文搜索全噪声/无直接命中；需站内检索或 live browser。"
+      },
+      {
+        "target": "oddsportal / nowgoal / soccerpunter / betexplorer 的 open vs close 语义与每家覆盖",
+        "reason": "JS 渲染，文本抓取失败；需 live browser。"
+      },
+      {
+        "target": "football-data.co.uk J1 文件代码（J1 vs JPN）与实际列名",
+        "reason": "需 curl 直接下载验证文件代码与列名。"
+      },
+      {
+        "target": "football-charts 匿名 bookmaker_<id> 是否含 William Hill",
+        "reason": "需付费包或抓取确认。"
+      },
+      {
+        "target": "tipsterarea.com J1 完场 1X2",
+        "reason": "未及复查，语义/覆盖未验证。"
+      },
+      {
+        "target": "API-Football J1 league id 与 2021–2025 收录",
+        "reason": "搜索未返回联赛目录命中，需 API 调用验证（需 key）。"
+      },
+      {
+        "target": "FBref comp/25 的 2021–2025 逐赛季归档页",
+        "reason": "需逐赛季打开验证。"
+      },
+      {
+        "target": "jleague.co /fixtures/stage/j1/<year>/<n>/ 历史归档字段",
+        "reason": "/en/ 版疑似 JS 渲染，需 live browser。"
+      },
+      {
+        "target": "worldfootball.net 开球时间时区声明及 match-report 页 stadium 字段",
+        "reason": "页面未找到时区声明（疑似 CET/CEST）；stadium 字段未验证。"
+      },
+      {
+        "target": "Transfermarkt 2021/2022/2024/2025 赛季 Matchday 页 URL（saison_id 映射）",
+        "reason": "仅验证 2023；需逐个 open 确认，勿手写 URL。"
+      },
+      {
+        "target": "ja.wikipedia 2021/2023/2024/2025 年 J1 文章是否含順位推移表",
+        "reason": "仅验证 2022 年文章。"
+      },
+      {
+        "target": "Transfermarkt 括号内开球前排名的精确快照时点",
+        "reason": "页面未明确说明是上一轮结束时还是该轮已赛后实时。"
+      },
+      {
+        "target": "Flashscore / Sofascore 历史轮次积分榜",
+        "reason": "未验证。"
+      }
+    ]
+  },
+  "fetched_at": "2026-10-02T05:53:50+08:00"
 }
