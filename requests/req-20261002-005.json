@@ -1,0 +1,32 @@
+{
+  "id": "req-20261002-005",
+  "type": "deep_research",
+  "params": {
+    "topic": "英超历史补充：注册信息、2018/19开球时间和逐场赔率缺口",
+    "questions": [
+      "只处理 Premier League，优先覆盖本地缺口对应的 2018/19、2021/22、2024/25、2025/26 赛季；排除杯赛、季前赛和其他联赛。逐场身份必须返回 season、date、kickoff（含时区如来源提供）、home_team、away_team、稳定比赛键或 provider_fixture_id，并保留 source_url、final_url、retrieved_at、field_locator、source_sha256。",
+      "补充 2018/19 全部 380 场缺失的 kickoff Time；重点核验 Cardiff City 与 Huddersfield Town 相关比赛的球队注册/标准名称、赛事入口年份、场馆、城市、经纬度、时区和可核验的 Method Context。只返回来源明确的事实，不要推导奇门字段。",
+      "补充官方或可核验的 2024/25 official_round、meeting_number/second_cycle 资料，用于本地 crosswalk；若没有权威来源，列入 unresolved_queue，不要由日期或重复键猜测。",
+      "查找本地仍缺的逐场赔率：2018/19 Bet365 与 William Hill 1X2 closing、2018/19 Bet365 over/under；2021/22 Newcastle-Man City 的 Bet365 over/under opening；2024/25 William Hill 1X2 缺失或身份不一致的约 91 场；2025/26 Pinnacle 1X2 opening/closing 约 170 场；2025/26 William Hill 1X2 opening/closing 全季约 380 场。按 bookmaker 分开，market 分开，phase 必须明确为 true opening、earliest verified pre-match、pre-closing、latest verified pre-match 或 closing；不能把 pre-closing/closing 改名为 opening。",
+      "每条逐场赔率必须带比赛身份、bookmaker、market、phase、recorded_at 或时间语义、home/draw/away 或 over/under、source_url、field_locator、source_sha256。找不到、访问失败、页面为空、字段无法解析分别标记 unavailable、blocked 或 parse_failed；不同来源冲突保留全部值并进入 unresolved_queue，不自动覆盖。",
+      "不要返回或推导 qimen_output、九宫宫位、Q/F/G/I/A/B/C/E/M token、模型第一方向、Miss 1、Miss 2、总进球目标、BTTS1、正式概率、Outcome、Review 或 Gold。"
+    ]
+  },
+  "created_at": "2026-10-02T10:20:00+08:00",
+  "scope": {
+    "competition_key": "premier_league",
+    "seasons": ["2018/19", "2021/22", "2024/25", "2025/26"],
+    "league_only": true,
+    "exclude_competitions": ["fa_cup", "efl_cup", "community_shield", "preseason", "champions_league", "europa_league"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "row_level_data_preferred": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
