@@ -1,6 +1,6 @@
 {
- "id": "req-20261002-002",
- "status": "processing",
- "note": "研究进行中：J1 2018-2025 四类缺口逐场证据补充。09:50 轮接管（上一 processing 超 15 分钟阈值）。基线盘点：fixture crosswalk 2670/2670 complete（work-003/j1-crosswalk-master.csv）；赔率 earliest/latest tick 0/16020（文本层无带时间戳初指源，需 live browser 接力，part-a.md）；赛前积分 4/2670 已验证（TipsterArea 样例，part-c.md），2666 待抓；642 个 5Dollar 缺失字段与 48 场 fixture id 的上游清单在本机不可见（part-b.md B-UQ-01/02），只能提供 join 键+源级 fallback 清单。本轮已验证 football-data.co.uk 无 J1 数据（仅 11 国）。本轮派出 2 个并行子任务：D1 逐场 date_jst+轮次底表（含 75 场首轮推导），D2 赔率 fallback 源覆盖清单（SoccerPunter/TipsterArea/Titan007/NowScore/OddsPortal/betexplorer/500.com/zgzcw/唯彩源级验证）。",
- "request_sha": "cb7ee5725d870106"
+  "id": "req-20261002-002",
+  "status": "processing",
+  "note": "研究进行中：J1 2018-2025 四类缺口逐场证据补充。10:24 轮接管（上一 processing 超 15 分钟阈值，无其他改动）。基线复核：fixture crosswalk 2670/2670 主键唯一、逐季计数全对（306×5+380×3）；odds-fallback-manifest.md（D2 产物）已落盘；赔率 earliest/latest tick 仍 0/16020（需 live browser 批量）；赛前积分 4/2670。本轮新动作：worldfootball.net all_matches 文本抓取 403，改派真浏览器任务抓 8 季逐场（season/round/date/time/home/away，原样抄录），合并脚本 build_dates.py（含 28 队别名表）已就绪，结果回传后跑 join；D1（date_jst+轮次底表）子代理无磁盘产物、视为中断，由本轮浏览器任务接替。request_sha 不变。",
+  "request_sha": "cb7ee5725d870106"
 }
