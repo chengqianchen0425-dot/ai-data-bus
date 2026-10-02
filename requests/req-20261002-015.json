@@ -1,0 +1,35 @@
+{
+  "id": "req-20261002-015",
+  "type": "deep_research",
+  "params": {
+    "topic": "Japan J1 League 2018-2025 row-level historical data and pre-match odds gap supplement; never mix with Bundesliga",
+    "questions": [
+      "Scope gate first: competition_key=j1_league, country=Japan, league only, seasons 2018 through 2025, expected 2670 fixtures. Explicitly exclude Bundesliga, every German competition, J2, J3, and cup competitions. If the available source rows are German or another league, stop and return scope_mismatch without using them.",
+      "Return only row-level missing, conflicting, or newly evidenced Japan J1 cells, joined by season, match date, home team, away team, and round when available. Preserve original team labels and provide normalized identity plus evidence for aliases. Include a season coverage manifest totaling the expected 2670 J1 fixtures.",
+      "For Bet365, Pinnacle, and William Hill separately, seek directly sourced 1X2 historical observations with recorded timestamps. Preserve true opening, earliest verified pre-match, latest verified pre-match, pre-closing, and closing as distinct semantics. For O_INTERVAL, the required endpoints are earliest verified pre-match and latest verified pre-match from the same bookmaker and fixture. Never rename closing or pre-closing as opening; a single closing anchor is not an interval. If endpoints cannot be recovered, retain unavailable rows and explain why.",
+      "Prioritize these known J1-only gaps: 486 remaining odds cells after 156 Pinnacle closing candidates were identified from Football-Data; breakdown is Bet365 opening 6 and closing 6, Pinnacle opening 156, William Hill opening 159 and closing 159. Also seek historical pre-match ticks for the 52 fixtures represented by those 156 Pinnacle closing candidates. Return exact fixture/field mappings, not only aggregate totals.",
+      "Resolve the 48 J1 fixtures whose 5Dollar provider_fixture_id remains unresolved, using a stable match identity crosswalk. Existing local canonical keys were matched for all 48, including Tokushima Vortis aliases; provide provider IDs only when directly evidenced and retain unresolved cases.",
+      "For standings context, seek J1-only pre-match points, played count, and rank snapshots for the 918 fixtures in 2018-2020 currently lacking local API-Football context. For 2021-2025, seek authoritative tie-break/rank evidence for 140 fixtures where points and played count exist but rank is unresolved. Do not infer ranks from outcomes that occurred after kickoff.",
+      "Seek directly evidenced local kickoff time with timezone, venue, and official round/matchday for J1 fixtures where missing. Preserve source-local time and timezone; do not guess a timezone from country or league.",
+      "For every value return source_url, final_url if different, fetched_at, source hash when available, field semantics, exact fixture identity, and evidence locator. Keep competing source values as conflicts; do not auto-select. Return machine-readable rows, coverage audit totals by season (expected, discovered, identity_matched, complete, partial, unavailable, conflicts), and a detailed unresolved_queue suitable for manual CSV follow-up.",
+      "Do not collect or return Bundesliga data in this request. Do not return Qimen charts, palace tokens, F/G/I/Q/M tokens, natal_year, predictions, probabilities, Miss labels, BTTS, or any outcome-derived model features. This is supplemental evidence only; do not claim formal validation or run odds screening."
+    ],
+    "known_local_context": {
+      "competition_key": "j1_league",
+      "country": "Japan",
+      "expected_fixtures": 2670,
+      "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+      "previous_j1_request_id": "req-20261002-013",
+      "previous_j1_request_sha_prefix": "c1c80401a40edd11",
+      "previous_response_semantics": "closing_anchor only; no true opening or same-bookmaker earliest/latest verified pre-match endpoints",
+      "remaining_odds_cells": 486,
+      "candidate_pinnacle_closing_cells_needing_interval_evidence": 156,
+      "unresolved_5dollar_provider_fixture_ids": 48,
+      "missing_standings_context_2018_2020": 918,
+      "rank_unresolved_2021_2025": 140,
+      "kickoff_timezone_status": "unknown for all 2670 rows in current coverage matrix"
+    },
+    "note_to_muse": "Japan J1 only. Do not merge with the separate Bundesliga request req-20261002-014. Return row-level provenance and explicit null/unavailable states."
+  },
+  "created_at": "2026-10-02T14:56:30+08:00"
+}
