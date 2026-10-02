@@ -1,0 +1,33 @@
+{
+  "id": "req-20261002-016",
+  "type": "deep_research",
+  "params": {
+    "topic": "MLS 2018-2020 regular-season fixture and Method Context gap only",
+    "questions": [
+      "只处理 MLS 2018、2019、2020 常规赛，理论目标分别为 391、408、292 场，共 1091 场。逐场返回 season、date、kickoff、home_team、away_team、provider_fixture_id 或 stable_match_key、official_stage、official_round、venue、local_timezone，以及 source_url、final_url、retrieved_at、field_locator、source_sha256。",
+      "排除 MLS Cup/playoffs、USL、MLS Next Pro、杯赛和季前赛；无法确认赛事身份的行保留 unresolved，不猜测。",
+      "优先官方 MLS 或可审计的公开赛程来源；输出按赛季 expected、discovered、identity_matched、complete、partial、missing、conflicts 统计，并保留行级证据。",
+      "不要返回或推导 Qimen、九宫、主客宫位、关系、模型方向、Miss、概率、Outcome、Review、Gold 或赔率。"
+    ],
+    "exclude": [
+      "不要重复 req-20261002-004 已回传的 2024 年 234 行和 2025 年 510 行。",
+      "不要重新抓取本地 Football-Data USA.csv 已具备的 closing 赔率。"
+    ]
+  },
+  "created_at": "2026-10-02T16:30:00+08:00",
+  "scope": {
+    "competition_key": "mls",
+    "seasons": [2018, 2019, 2020],
+    "league_only": true,
+    "expected_regular_fixtures": 1091
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}

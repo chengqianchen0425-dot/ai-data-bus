@@ -1,0 +1,31 @@
+{
+  "id": "req-20261002-017",
+  "type": "deep_research",
+  "params": {
+    "topic": "MLS gap-only stage crosswalk and missing Pinnacle closing rows",
+    "questions": [
+      "只核对 Football-Data USA.csv 2018-2025 相对 MLS regular-season 理论母表多出的 175 条行，按赛季差额为 2018:17、2019:13、2020:32、2021:13、2022:13、2023:28、2024:29、2025:30。逐行返回 season、date、home_team、away_team、stage、round、provider_match_id、source_url、final_url、retrieved_at、field_locator、source_sha256；明确标记 regular、playoff、其他或 unresolved，不得按日期猜测。",
+      "仅处理以下 16 条 PSCH/PSCD/PSCA 全空候选；先判定是否为 regular season，只有确认是 regular season 才尝试独立来源的 closing 1X2：2020-08-22 Toronto FC vs Vancouver Whitecaps；2025-10-26 Philadelphia Union vs Chicago Fire；2025-10-27 San Diego FC vs Portland Timbers；2025-11-01 New York City vs Charlotte；2025-11-01 Chicago Fire vs Philadelphia Union；2025-11-01 Nashville SC vs Inter Miami；2025-11-02 FC Dallas vs Vancouver Whitecaps；2025-11-02 Portland Timbers vs San Diego FC；2025-11-02 Columbus Crew vs FC Cincinnati；2025-11-03 Austin FC vs Los Angeles FC；2025-11-04 Seattle Sounders vs Minnesota United；2025-11-08 Charlotte vs New York City；2025-11-08 Minnesota United vs Seattle Sounders；2025-11-08 FC Cincinnati vs Columbus Crew；2025-11-09 Inter Miami vs Nashville SC；2025-11-10 San Diego FC vs Portland Timbers。",
+      "赔率返回时严格区分 closing、pre-closing、opening，附 source_url、final_url、retrieved_at、field_locator、source_sha256；找不到、访问失败或无法解析分别标 unavailable、blocked 或 parse_failed，不猜值。",
+      "不要重复 req-20261002-004 的 744 行，不要重新抓取 USA.csv 已具备的 closing 赔率，不要用 API-Football fixtures 接口代替历史赔率。",
+      "不要返回 Qimen、九宫、模型方向、Miss、结构结论、正式概率、Outcome、Review 或 Gold。"
+    ]
+  },
+  "created_at": "2026-10-02T16:30:30+08:00",
+  "scope": {
+    "competition_key": "mls",
+    "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "league_only": true,
+    "extra_stage_crosswalk_rows": 175,
+    "missing_pinnacle_closing_candidates": 16
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
