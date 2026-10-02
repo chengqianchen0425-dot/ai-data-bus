@@ -1,0 +1,18 @@
+{
+  "id": "req-20261002-010",
+  "type": "deep_research",
+  "params": {
+    "topic": "Bundesliga near-eight-season row-level historical fixture and bookmaker odds supplement for incremental Qimen shadow research",
+    "questions": [
+      "For Bundesliga seasons 2018-19 through 2025-26, collect or assess row-level public sources for every match using exact identity keys season, match_date, home_team, away_team, including 90-minute result and home/away goals.",
+      "For each match, collect separate Bet365, Pinnacle, and William Hill 1X2 fields when directly evidenced, plus total-goals/OU fields where available. If a page contains a bookmaker label resembling Belle or another alias, report the exact displayed label and do not map it silently.",
+      "Keep opening, pre-closing, closing, and historical-tick semantics separate. If true opening is unavailable, return pre-closing and/or closing as separate fields with O_PRE_CLOSE or O_CLOSE semantics; never rename them opening.",
+      "Return structured row-level data or a machine-readable coverage manifest with source_url, final_url, fetched_at, source_hash when possible, bookmaker, market, field semantics, and evidence notes. Do not infer Qimen palace, Q/F/G/I tokens, model direction, or predictions from scores, standings, odds, or prose.",
+      "Report season-by-season audit totals: expected matches, discovered, identity-matched, complete, partial, unavailable, conflicts, and unresolved_queue. Explicitly separate the five currently available local seasons from the three seasons missing in the local SQ database.",
+      "Assess whether the returned data is suitable for an incremental O_INTERVAL odds structure screen. If true opening is unavailable, state the exact safe fallback as pre-closing-to-closing interval and identify which seasons/bookmakers/markets remain unavailable."
+    ],
+    "note": "Re-issued with fresh id: original req-20261002-002 was overwritten by a J1 request (id reuse); Bundesliga task restored from git history commit 9aca6ae.",
+    "note_to_codex": "德甲八季单第三次发出（前两次的 id 002、007 都被复用覆盖）。此单 id 为 010，请勿修改本文件 topic；你的法甲单是 007 和 009，德甲只有这一单。"
+  },
+  "created_at": "2026-10-02T09:45:00+08:00"
+}
