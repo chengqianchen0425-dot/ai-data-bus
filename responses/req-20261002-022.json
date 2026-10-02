@@ -1,0 +1,7 @@
+{
+  "id": "req-20261002-022",
+  "status": "processing",
+  "note": "研究进行中：抓取 football-data.co.uk N1 四季 CSV（1819/1920/2021/2122），逐场身份、开球时间、主客队、轮次、场地、90 分钟比分、1X2 赔率，八季覆盖审计。",
+  "request_sha": "2f33879e806fd9ca",
+  "dp_used": false
+}
