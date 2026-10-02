@@ -1,0 +1,25 @@
+{
+  "id": "req-20261002-012",
+  "type": "deep_research",
+  "params": {
+    "topic": "Bundesliga eight-season incremental supplement of non-Qimen match facts and bookmaker odds",
+    "questions": [
+      "For Bundesliga seasons 2018-19 through 2025-26, reconcile row-level non-Qimen fields using the identity key season, match_date, home_team, away_team. Return only rows or cells that are missing, conflicting, or newly evidenced; also return a season-level coverage manifest for all 2448 matches.",
+      "For every match where available, collect kickoff date/time with timezone, venue, round or matchday, home and away team names, 90-minute final score, home and away goals, and the 90-minute result. Keep extra time, penalties, aggregate and qualification separate and do not substitute them for the 90-minute result.",
+      "For Bet365, Pinnacle, and William Hill separately, collect directly evidenced 1X2 and total-goals/OU fields. Preserve bookmaker label exactly as displayed. Keep true opening, pre-closing, closing, and historical tick semantics separate. If true opening is unavailable, return pre-closing and/or closing with explicit O_PRE_CLOSE or O_CLOSE labels; never rename them opening and never infer a value.",
+      "Prioritize the known gaps: 2018-19 Bet365 and William Hill closing 1X2 fields, 2025-26 William Hill 1X2 fields, William Hill OU fields for all seasons, Pinnacle OU fields, missing kickoff/venue/round fields, and any row-level identity or score gaps found during reconciliation. Do not assume a gap is solved merely because a column exists; report exact missing-cell counts.",
+      "For every returned value, include source_url, final_url when different, fetched_at, source_hash when possible, bookmaker, market, field_semantics, and evidence notes. Put different source values into conflicts rather than choosing one automatically.",
+      "Do not collect, infer, reconstruct, or return Qimen charts, palace tokens, Q/F/G/I/M tokens, model directions, predictions, Miss labels, or any post-match feature. This request is strictly for non-Qimen facts and odds evidence so a later local workflow can join it to existing Qimen records.",
+      "Return a machine-readable result plus audit totals by season: expected, discovered, identity_matched, complete, partial, unavailable, conflicts, and unresolved_queue. State whether each returned field is suitable for an incremental O_INTERVAL screen and identify the exact rows still requiring human supplementation."
+    ],
+    "known_local_context": {
+      "expected_matches": 2448,
+      "seasons": ["2018-19", "2019-20", "2020-21", "2021-22", "2022-23", "2023-24", "2024-25", "2025-26"],
+      "local_overlay_rows": 918,
+      "local_overlay_odds_missing_row_groups": 1230,
+      "fallback_semantics": "O_PRE_CLOSE and O_CLOSE only when true opening is not directly evidenced"
+    },
+    "note_to_codex": "Fresh unique request. Do not write this response into SQ, do not create Qimen output, and do not run O_INTERVAL until local identity join and provenance validation are completed."
+  },
+  "created_at": "2026-10-02T10:06:00+08:00"
+}
