@@ -1,6 +1,147 @@
 {
   "id": "req-20261002-014",
-  "status": "processing",
-  "note": "2026-10-02 14:33+08 取件：新 deep_research 请求（Bundesliga eight-season incremental supplement of non-Qimen match facts and bookmaker odds），回执初始化为 processing，研究进行中。request_sha=e9c5b3fad257936e。 | 2026-10-02 14:48+08 本轮接管（processing 自 06:31Z 停滞约17分钟超15分钟阈值，按防重规则接管；request_sha 不变 e9c5b3fad257936e）。接管前核验：上一轮仅初始化 processing，无实质数据落盘。数据源探测：football-data.co.uk D1.csv（1819）抓取成功，含 Div/Date/HomeTeam/AwayTeam/FTHG/FTAG/FTR/半场 + B365*/PS*/WH* 1X2 + BbMx/BbAv 收盘 + OU/AH 列，306场；OpenFootball 试探URL 404（路径不对，非阻塞）。本轮按 deep_research 任务拆分规则派3个并行子代理：AB=8季D1.csv拉取（fixtures+收盘欧赔1X2/OU提取+逐季审计）；C=worldfootball.net 开球时间/场馆/轮次；D=true opening 赔率源可行性矩阵。Qimen禁区已传达；本地overlay在用户机，本轮产出为覆盖清单供Validator本地join。 | 2026-10-02 14:53+08 子代理AB回传完成（已验货：fixtures 2448行、odds 2448行x27列、audit/manifest落盘work-bundesliga-014/）。身份审计：八季2448/2448全匹配、complete 2448、missing 0。关键语义结论（Validator必读）：notes.txt原话确认B365*/WH*/PS*/BbMx*/BbAv*等列为pre-closing（赛前收盘前采集价），既非初盘也非收盘；仅PSCH/PSCD/PSCA为真Pinnacle收盘；输出未做任何closing/opening改称。赔率缺失热点：2018-19 Bet365/WH 1X2缺失均为0（预判热点不成立）；2025-26 WH 1X2缺失918（整列缺席）；2025-26下半赛季Pinnacle 1X2/OU大面积空白（源端缺失，unresolved）；WH OU八季列缺席。子代理C（开球时间/场馆/轮次）、D（true opening可行性矩阵）仍在途，待回传后合并最终回执。request_sha不变e9c5b3fad257936e。 | 2026-10-02 14:56+08 子代理D回传完成（已验货：opening-feasibility-matrix.md 12源x10列 + opening-pilot.csv 4行全NULL诚实负结果，落盘work-bundesliga-014/）。结论：真初盘最有希望=OddsPortal（单场页tooltip区分opening/closing，20+公司含三家；但纯JS需真浏览器任务提取，本轮未做）；次选SoccerPunter（Platinum付费墙blocked，未硬闯）；BetExplorer仅closing无opening（但可补closing缺口）；zgzcw/500/7m未验证；NowScore兄弟管线疑似已打通初指提取，建议复用其URL模式与字段口径。点名缺口可补性：2018-19 Bet365/WH closing→BetExplorer archive；2025-26 WH/Pinnacle opening→OddsPortal（真浏览器）或SoccerPunter（付费后）。子代理C（开球时间/场馆/轮次）仍在途，待回传后合并最终回执。request_sha不变e9c5b3fad257936e。",
-  "request_sha": "e9c5b3fad257936e"
+  "status": "ok",
+  "note": "2026-10-02 14:33+08 取件初始化。14:48+08 接管（前一轮停滞超15分钟）。14:53+08 子代理AB完成（2448行 fixtures/odds）。14:56+08 子代理D完成（opening可行性矩阵）。15:05+08 子代理C完成（开球时间/轮次2448/2448，venue试点9/9）。15:08+08 跨表join 2448/2448验证+crosswalk落盘。15:10+08 最终ok回执。request_sha=e9c5b3fad257936e。",
+  "request_sha": "e9c5b3fad257936e",
+  "data": {
+    "report": "# req-20261002-014 最终报告：Bundesliga 2018-19~2025-26 八季非 Qimen 事实 + 赔率增量补充（status=ok）\n\n## 1. 结论（verdict-first）\n- 八季理论比赛总数 2448（8×306），实际发现 2448，身份匹配 2448/2448（season+date+home+away），complete 2448，partial 0，missing 0。\n- 抓回 3 张行级覆盖清单：① 赛果/赛前收盘前赔率（fixtures 2448行 / odds 2448行×27列）；② 开球时间/轮次（kickoff-venue-round 2448行）；③ true-opening 可行性矩阵 + 试点（D）。三表可通过 `team-crosswalk-footballdata-worldfootball.csv` 2448/2448 连接。\n- 核心语义结论（详见 §2 Validator 必读段）：football-data.co.uk 的 B365*/WH*/PS*/BbMx*/BbAv* 系列列为 **pre-closing（赛前采集价，既非初盘也非收盘）**；仅 **PSCH/PSCD/PSCA** 为真 Pinnacle 收盘。**True opening（初盘）本轮未提取到任何数值**——这是诚实负结果，补救路径见 §6。\n- 全程无 Qimen 相关字段；一切值缺失保留整行登记为 missing flag，未删行。\n\n## 2. Validator 必读段（字段语义，禁止混称）\n| 列族 | 源站语义（源：football-data.co.uk 数据说明页） | 语义标签 | 禁止做法 |\n|---|---|---|---|\n| B365H/B365D/B365A, WHH/WHD/WHA, PSH/PSD/PSA | 开球前某日采集价，非初盘也非收盘 | **pre-closing** | 不得改称 closing/opening |\n| BbMx*/BbAv* | 最大/平均价，同样为采集价 | **pre-closing** | 同上 |\n| BbMxOver25 等（OU 4 列） | 同上 | **pre-closing** | 同上 |\n| **PSCH/PSCD/PSCA** | Pinnacle 收盘价（源站唯一真收盘列） | **closing (Pinnacle)** | 仅此三列可称为收盘 |\n| 开球时间 | worldfootball.net 显示为 **CET（UTC+1）全年恒定**（2018-19 R1 拜仁-霍芬海姆 WF 19:30 vs DFL 官方 20:30；2025-26 R1 3 场同样的 +1h 偏差；54/54 抽查 bulibox→CET 换算与 WF 完全吻合）。**源页不带时区标注，CSV 中 timezone 字段为空（不猜）；2025-26 R6-33 的 252 行标注为 CET（系从 DFL Europe/Berlin 本地时间换算，非源页原标注）。Validator 必须显式归一化后再与其它源 join。 |\n| 2025-26 赛程 | worldfootball.net all_matches 页为过期快照（仅 R1 有比分、R6-33 无逐场开球时间）；252 行（R6-33）用 bulibox.de kompakt PDF 回填，属第三方赛程（非官方），已对 DFL 官方 R22 赛程 PDF 交叉修正一处：bulibox 重复列出\"门兴 vs 勒沃库森 R22 14.02.26 18:30\"为笔误，DFL 官方 R22 为\"法兰克福 vs 门兴\"，已删除重复并补入官方\"斯图加特 vs 科隆 R22 14.02.2026 18:30\"。|\n\n## 3. 交付物清单（全部在 ~/workspace/ai-inbox/work-bundesliga-014/，供 Validator 本地 join）\n| 文件 | 内容 | 行数/规模 |\n|---|---|---|\n| fixtures-bundesliga-8seasons.csv | season,date(DD/MM/YYYY),home_team,away_team,fthg,ftag,ftr,hthg,htag（源：football-data.co.uk D1.csv 八季） | 2448 |\n| odds-closing-bundesliga-8seasons.csv | 上述赛果键 + B365H/D/A, WHH/D/A, PSH/D/A, BbMx/BbAv 系列, BbOU, BbMx/BbAv Over2.5/Under2.5, PSCH/D/A | 2448×27列 |\n| kickoff-venue-round-bundesliga-8seasons.csv | season,round,match_date,kickoff_time,timezone,home_team,away_team,venue,venue_missing,source_url | 2448 |\n| team-crosswalk-footballdata-worldfootball.csv | football-data 短名 → worldfootball 德语全名显式映射（29 对，已用 2448/2448 date+主客队连接验证） | 29 |\n| manifest-merge.json | 三表连接方式说明（grain: season+日期+主客队） | — |\n| audit-ab.json / manifest-ab.json | fixtures+odds 的逐季审计与来源清单 | — |\n| audit-c.json / manifest-c.json | 开球时间/场馆/轮次逐季审计与来源清单（含延期/异常事件） | — |\n| opening-feasibility-matrix.md | true-opening 12 源 × 10 列可行性矩阵（D） | 12源 |\n| opening-pilot.csv | 4 行试点（D），数值全部 NULL，状态均为 blocked_*（诚实负结果） | 4 |\n| season-2018-19.csv … season-2025-26.csv, supplement-2025-26-dfl.csv, raw/* | 原始 CSV 与抓取原文快照 | — |\n\n## 4. 八季审计 manifest（expected 2448）\n| 赛季 | expected | discovered | identity_matched | complete | partial | missing |\n|---|---|---|---|---|---|---|\n| 2018-19 | 306 | 306 | 306 | 306 | 0 | 0 |\n| 2019-20 | 306 | 306 | 306 | 306 | 0 | 0 |\n| 2020-21 | 306 | 306 | 306 | 306 | 0 | 0 |\n| 2021-22 | 306 | 306 | 306 | 306 | 0 | 0 |\n| 2022-23 | 306 | 306 | 306 | 306 | 0 | 0 |\n| 2023-24 | 306 | 306 | 306 | 306 | 0 | 0 |\n| 2024-25 | 306 | 306 | 306 | 306 | 0 | 0 |\n| 2025-26 | 306 | 306 | 306 | 306 | 0 | 0 |\n| **合计** | **2448** | **2448** | **2448** | **2448** | **0** | **0** |\n\n## 5. 数据缺口热点（缺失保留整行，未删行；源端缺失非抓取遗漏）\n1. **WH 1X2 整列缺席（2025-26 全 306 场）**：football-data.co.uk 2526 文件中 WHH/WHD/WHA 列全空；2024-25 缺失 72 场（部分）；2018-19~2023-24 六季全部为 0 缺失（2018-19 热点预判不成立）。\n2. **2025-26 下半季 Pinnacle 大面积空白**：PSCH/D/A 收盘 1X2 缺失 157 场（集中下半季）；PSH/D/A（pre-closing 1X2）同样 306 全缺。OU：Pinnacle OU 八季缺失 1034 单元格；WH OU 列**八季全缺席**（4896 单元格）；BetBrain OU（BbOU）8568 单元格缺失。\n3. **开球时间 2196 行 timezone 为空**：worldfootball.net 页面无时区标注（不猜）；但抽样证据显示其为 CET 全年恒定（见 §2），Validator 归一化时参考。\n4. **venue 2439/2448 缺失**：all_matches 页无场馆；试点证实 report 页默认视图含 Stadium (City / Country)，9/9 URL 模式解析成功；全量爬取需 2448 页（约 3-4h 串行），本轮未做。\n5. 异常事件已逐季登记 audit-c.json（2019-20 COVID 延期赛、2021-22 第27轮\"0:2 dec.\"判负、2024-25 第14轮柏林联 vs 波鸿 0:2 判负等），未做任何改写。\n\n## 6. True opening（初盘）专项结论（D）\n- **最有希望：OddsPortal**——单场页赔率格 hover tooltip 的 strong[2] 为 opening 值，strong[1] 为 closing 值（20+ 公司含 Bet365/Pinnacle/William Hill）。但纯 JS 渲染，文本抓取不可见，**需真浏览器任务提取**；本轮未做提取（试点 4 行全 NULL，状态 blocked_js_required）。\n- **次选：SoccerPunter**——opening odds history 为 Platinum 会员专属，本轮未订阅、未付费、未硬闯（blocked_paywall）。WH 2025-26 整列缺口、2025-26 Pinnacle 下半季缺口在此源可补（付费后）。\n- **BetExplorer**：仅存 Pinnacle 收盘快照，**语义上无 opening 字段**（negative_no_opening_field），但可补部分 closing 缺口。\n- NowScore 兄弟管线疑似已打通初指提取，建议复用其 URL 模式与字段口径（详见 opening-feasibility-matrix.md）。\n- **最终判定：真初盘数值本轮为零交付（诚实负结果），Validator 切勿把 pre-closing 当初盘用。**\n\n## 7. 限制与诚实声明\n- worldfootball.net 2025-26 R6-33 数据为 bulibox.de（第三方 kompakt PDF）+ DFL 官方赛程 PDF 回填，属未来赛程而非已赛事实，timezone 按 CET 标注。\n- 所有冲突值按\"同一字段冲突去重后最多 3-5 源\"的规则置于 conflicts；本轮三源语义一致，未发现数值冲突需仲裁。\n- 本回执只读 requests/、只写本 id 对应文件；PROTOCOL.md 未改动；无 git push（由主代理统一推送）。\n",
+    "audit": {
+      "scope": "req-20261002-014: Bundesliga 2018-19..2025-26 non-Qimen facts + bookmaker odds incremental supplement",
+      "expected": 2448,
+      "discovered": 2448,
+      "identity_matched": 2448,
+      "complete": 2448,
+      "partial": 0,
+      "missing": 0,
+      "conflicts": 0,
+      "seasons": {
+        "2018-19": {
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306,
+          "complete": 306,
+          "partial": 0,
+          "missing": 0,
+          "conflicts": 0
+        },
+        "2019-20": {
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306,
+          "complete": 306,
+          "partial": 0,
+          "missing": 0,
+          "conflicts": 0
+        },
+        "2020-21": {
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306,
+          "complete": 306,
+          "partial": 0,
+          "missing": 0,
+          "conflicts": 0
+        },
+        "2021-22": {
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306,
+          "complete": 306,
+          "partial": 0,
+          "missing": 0,
+          "conflicts": 0
+        },
+        "2022-23": {
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306,
+          "complete": 306,
+          "partial": 0,
+          "missing": 0,
+          "conflicts": 0
+        },
+        "2023-24": {
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306,
+          "complete": 306,
+          "partial": 0,
+          "missing": 0,
+          "conflicts": 0
+        },
+        "2024-25": {
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306,
+          "complete": 306,
+          "partial": 0,
+          "missing": 0,
+          "conflicts": 0
+        },
+        "2025-26": {
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306,
+          "complete": 306,
+          "partial": 0,
+          "missing": 0,
+          "conflicts": 0
+        }
+      },
+      "flagged_missing_cells": {
+        "williamhill_1x2_2025-26_full_column": 306,
+        "williamhill_1x2_2024-25": 72,
+        "pinnacle_closing_1x2_2025-26": 157,
+        "pinnacle_preclosing_1x2_2025-26": 306,
+        "williamhill_ou_all_seasons_column_absent": 4896,
+        "betbrain_ou_all_seasons": 8568,
+        "venue_missing_rows": 2439,
+        "kickoff_timezone_unlabeled_rows": 2196,
+        "true_opening_values_delivered": 0
+      },
+      "join": {
+        "grain": "season + match date + home_team + away_team",
+        "coverage": "2448/2448",
+        "crosswalk": "team-crosswalk-footballdata-worldfootball.csv (29 pairs, validated)",
+        "date_norm": "fixtures DD/MM/YYYY -> YYYY-MM-DD to match kickoff match_date"
+      }
+    },
+    "unresolved_queue": [
+      {
+        "item": "2025-26 WH 1X2 全列缺失（306场）",
+        "reason": "源端 football-data.co.uk 2526 文件 WHH/WHD/WHA 全空",
+        "next": "OddsPortal 真浏览器抓取 opening；或 SoccerPunter 付费补全；BetExplorer archive 可补部分 closing"
+      },
+      {
+        "item": "2025-26 下半季 Pinnacle 1X2/OU 空白（收盘157场、pre-closing 306场）",
+        "reason": "源端缺失",
+        "next": "同上"
+      },
+      {
+        "item": "WH OU 列八季全缺席（4896单元格）",
+        "reason": "源端 football-data.co.uk 八季均无 WH OU 列",
+        "next": "OddsPortal / NowScore 口径初指+收盘 OU"
+      },
+      {
+        "item": "true opening（初盘）数值本轮 0 交付",
+        "reason": "OddsPortal 需真浏览器任务（JS hover tooltip）；SoccerPunter 付费墙",
+        "next": "主代理派 browser.spawn_task 试点 5-10 场（OddsPortal 单场页），或付费解锁 SoccerPunter"
+      },
+      {
+        "item": "venue 2439/2448 缺失",
+        "reason": "试点证实 worldfootball report 页有场馆但全量需 2448 页抓取，本轮未做",
+        "next": "8-16 子代理并行抓取，或从球队主场页回填（注意中立场地异常）"
+      },
+      {
+        "item": "开球时间 2196 行时区未标注",
+        "reason": "源页无时区标签，不猜；抽样证据为 CET 全年恒定",
+        "next": "Validator 归一化时显式处理；2025-26 R6-33 已标注 CET"
+      },
+      {
+        "item": "2025-26 R6-33 开球时间为第三方赛程回填",
+        "reason": "worldfootball 官方页为过期快照",
+        "next": "赛季进行后以 DFL 官方赛程复核更新"
+      }
+    ]
+  }
 }
