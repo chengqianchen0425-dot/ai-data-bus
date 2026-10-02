@@ -1,0 +1,43 @@
+{
+  "id": "req-20261002-023",
+  "type": "deep_research",
+  "params": {
+    "topic": "Eredivisie 荷甲 2018/19、2019/20、2020/21 缺失赛季足球事实增量补充",
+    "questions": [
+      "只处理荷甲 Eredivisie 常规联赛 2018/19、2019/20、2020/21 三个本地缺失赛季，逐场返回 fixture_key、当地日期、当地开球时间（若来源有）、主客队、官方轮次（若来源有）、场地（若来源有）、90分钟主客进球和 full_time_result。2019/20 赛季提前终止，只返回实际已赛比赛；取消、未举行或无法匹配的记录保留 partial/unavailable，不补造成已完成比赛。",
+      "目标场次按实际赛季审计：2018/19=306，2019/20=实际已赛约232（不要把理论306当已完成），2020/21=306；逐季返回 expected、discovered、complete、partial、missing、duplicate_fixture_keys 和冲突列表。",
+      "仅返回足球事实和来源证据；不要返回或推导赔率、Qimen、宫位、qimen_first_direction、Miss 1/Miss 2、概率、Outcome、Review 或 Gold。已有 2021/22–2025/26 本地数据只做覆盖审计，不重复抓取、不覆盖。",
+      "每条可用字段保留 source_url、final_url、retrieved_at、field_locator、source_sha256、field_semantics；多来源不一致进入 conflict_queue；缺失字段进入 unresolved_queue，保留 null。返回 JSON 报告、逐场 evidence_rows 和 unresolved_queue。"
+    ]
+  },
+  "created_at": "2026-10-02T22:45:00+08:00",
+  "scope": {
+    "competition_key": "eredivisie",
+    "competition_name": "Eredivisie",
+    "division": "N1",
+    "seasons": [2018, 2019, 2020],
+    "season_labels": ["2018/19", "2019/20", "2020/21"],
+    "incremental_only": true,
+    "league_only": true,
+    "known_existing_seasons": ["2021/22", "2022/23", "2023/24", "2024/25", "2025/26"],
+    "known_existing_match_count": 1530,
+    "actual_targets": {"2018/19": 306, "2019/20": 232, "2020/21": 306},
+    "eight_season_actual_target": 2367,
+    "source_candidates": [
+      "https://www.football-data.co.uk/mmz4281/1819/N1.csv",
+      "https://www.football-data.co.uk/mmz4281/1920/N1.csv",
+      "https://www.football-data.co.uk/mmz4281/2021/N1.csv"
+    ],
+    "exclude": ["odds", "qimen", "qimen_output", "palace", "qimen_first_direction", "model_first_direction", "miss", "probability", "outcome", "review", "gold", "formal_structure"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256", "field_semantics"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false,
+    "status_policy": "processing_then_ok_or_error; incomplete_rows_remain_unresolved"
+  }
+}
