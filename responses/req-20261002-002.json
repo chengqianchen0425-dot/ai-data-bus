@@ -1,6 +1,6 @@
 {
   "id": "req-20261002-002",
   "status": "processing",
-  "note": "研究进行中：J1 2018-2025 四类缺口逐场证据补充。10:24 轮接管；crosswalk 2670/2670 复核全对。日期层路线两次切换：worldfootball.net 文本 403→真浏览器任务（URL 模式 404 + 会话崩溃，0 行）→worldfootball 再试被 Cloudflare 人机验证卡住（无人值守轮次无法过验证，已关闭任务）。最终路线：FBref 静态赛程页 https://fbref.com/en/comps/25/{年}/schedule/{年}-J1-League-Scores-and-Fixtures（2024 页文本抓取已验证，表含 Wk/Date/Time/Home/Away）。已派 8 个并行子代理逐季提取（2018/19/20/22/23 期望 306 行，2021/24/25 期望 380 行），产物 fbref-j1-<年>.json；合并脚本 merge_fbref_dates.py + build_dates.py（含 FBref 缩写别名）已就绪，结果回传后跑合并+join 生成 j1-dates.csv。赔率 earliest/latest tick 仍 0/16020；赛前积分 4/2670；642 缺失字段/48 fixture id 上游清单仍不可见（B-UQ-01/02）。request_sha 不变。",
+  "note": "研究进行中：J1 2018-2025 四类缺口逐场证据补充。日期+轮次层已完成：FBref 8 季静态赛程页逐季提取（8 并行子代理，逐行机械审计全过），j1-dates.csv 2670/2670（sha256=a20ba273dc3cb180e2582503c353489fbdbcb2a9c3019a242003f6b6028aaa90），0 未匹配，B-UQ-03 关闭，详见 work-003/part-d.md。剩余：赔率 earliest/latest tick 0/16020（需 live browser 批量，worldfootball 被 Cloudflare 人机验证卡住）；赛前积分 4/2670；642 缺失字段/48 fixture id 上游清单仍不可见（B-UQ-01/02）。request_sha 不变。",
   "request_sha": "cb7ee5725d870106"
 }
