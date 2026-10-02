@@ -1,6 +1,6 @@
 {
-  "id": "req-20261002-002",
-  "status": "processing",
-  "note": "研究进行中：J1 2018–2025 四类缺口逐场证据补充（赔率区间、642场赔率缺口、48场身份对账、赛前积分榜）。注：09:19 轮次曾误将德甲 ok 回执写到本 id，已迁移至 req-20261002-007；本单 J1 工作重新开始。",
-  "request_sha": "cb7ee5725d870106"
+ "id": "req-20261002-002",
+ "status": "processing",
+ "note": "研究进行中：J1 2018-2025 四类缺口逐场证据补充。09:50 轮接管（上一 processing 超 15 分钟阈值）。基线盘点：fixture crosswalk 2670/2670 complete（work-003/j1-crosswalk-master.csv）；赔率 earliest/latest tick 0/16020（文本层无带时间戳初指源，需 live browser 接力，part-a.md）；赛前积分 4/2670 已验证（TipsterArea 样例，part-c.md），2666 待抓；642 个 5Dollar 缺失字段与 48 场 fixture id 的上游清单在本机不可见（part-b.md B-UQ-01/02），只能提供 join 键+源级 fallback 清单。本轮已验证 football-data.co.uk 无 J1 数据（仅 11 国）。本轮派出 2 个并行子任务：D1 逐场 date_jst+轮次底表（含 75 场首轮推导），D2 赔率 fallback 源覆盖清单（SoccerPunter/TipsterArea/Titan007/NowScore/OddsPortal/betexplorer/500.com/zgzcw/唯彩源级验证）。",
+ "request_sha": "cb7ee5725d870106"
 }
