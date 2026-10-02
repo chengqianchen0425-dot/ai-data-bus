@@ -1,0 +1,1 @@
+{"created_at":"2026-10-02T21:10:00+08:00","id":"req-test-hook-001","params":{"max_results":3,"query":"DeepSeek API current flash model name 2026","want":"API model ID for the flash model"},"topic":"hook 端到端测试（测试后删除）","type":"web_search"}
