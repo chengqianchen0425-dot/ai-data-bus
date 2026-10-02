@@ -1,0 +1,44 @@
+{
+  "id": "req-20261002-013",
+  "type": "deep_research",
+  "created_at": "2026-10-02T10:25:00+08:00",
+  "params": {
+    "topic": "Japan J1 League 2018-2025 continuation: resolve remaining row-level historical data gaps only",
+    "questions": [
+      "MANDATORY SCOPE GATE: Japan J1 League / J.League Division 1 only, country=Japan, seasons=[2018,2019,2020,2021,2022,2023,2024,2025], total expected fixtures=2670. Exclude Bundesliga/Germany, J2, J3, Emperor's Cup, Levain Cup and every non-J1 competition. Return this scope confirmation before any rows.",
+      "Do not repeat the prior methodology-only report. Attempt actual row-level recovery and return evidence rows whenever a source is accessible. If a row cannot be verified, return an explicit unavailable row and reason.",
+      "ODDS GAP: for each J1 fixture and each bookmaker separately (bet365, pinnacle, williamhill), recover the earliest directly evidenced pre-match 1X2 observation and the latest directly evidenced pre-kickoff 1X2 observation. Required fields: stable_match_key, season, date, kickoff_local if available, home, away, bookmaker, market=1x2, observation_role, recorded_at, pre_match_marker, home_odds, draw_odds, away_odds, source_url, final_url, retrieved_at, field_locator, source_sha256. observation_role must be one of earliest_verified_pre_match, latest_verified_pre_match, closing_anchor, preclosing_snapshot, unavailable. Do not call any closing or football-data B365H/PSH/WHH pre-closing snapshot true opening.",
+      "Prioritize the known local 642 unavailable 5DollarFootballAPI odds fields from 2021-2025 and return only directly evidenced replacements or conflicts for those cells. Keep Bet365, Pinnacle and William Hill separate, keep opening/interval/preclosing/closing semantics separate, and never overwrite conflicting values automatically.",
+      "IDENTITY GAP: resolve the 48 J1 fixtures without a provider fixture ID using season/date/home/away. Return exactly one stable_match_key and provider ID only when the match identity is unambiguous; otherwise preserve unresolved with the competing candidates and source evidence.",
+      "STANDINGS GAP: for every fixture, recover the pre-kickoff home and away rank_before, points_before and played_before from an official or clearly dated previous-round/dated snapshot. Record snapshot_date, snapshot_time or time_status, ranking_rule, source_url, field_locator and source_sha256. First-round values may be points_before=0 and played_before=0 only when round identity is directly verified; rank_before stays unavailable unless the source defines it. Same-day ordering, postponed matches and tied-rank ambiguity must be marked rather than guessed. Do not use final-season standings as pre-match data.",
+      "OPTIONAL SECONDARY GAP: check whether row-level 2018-2020 J1 over/under 2.5 odds exist in the same sources; return only directly evidenced rows and keep this separate from 1X2.",
+      "Use source priority: official J.League Data Site for fixture and standings snapshots; NowScore/Titan007, BetExplorer or OddsPortal for historical bookmaker observations when the page exposes the actual row; football-data.co.uk only as explicitly labelled pre-closing or closing evidence. Prefer browser-capable page inspection for JavaScript-rendered tables. Do not infer values from search snippets.",
+      "Do not return or infer qimen_output, nine-palace values, F relation, G energy, I cycle/intent, natal_year, Miss 1/Miss 2, BTTS, probabilities, or any outcome-derived field. Those remain local workflow fields and must not be fabricated by this request.",
+      "Return JSON report plus row-level evidence and unresolved_queue. Include per-target audit expected/discovered/complete/partial/unavailable/blocked/conflict counts, source provenance, retrieval time and response SHA. Preserve NULLs and conflicts. Output is supplement/Shadow evidence only; formal Snapshot, Outcome, Review, Gold, probabilities, weights and existing SQLite must remain unchanged."
+    ],
+    "known_gap_context": {
+      "known_unavailable_5dollar_fields": 642,
+      "known_unmapped_provider_id_fixtures": 48,
+      "odds_interval_target_rows": 16020,
+      "prior_scope_report": "req-20261002-006",
+      "prior_row_level_report": "req-20261002-003"
+    }
+  },
+  "scope": {
+    "competition_key": "j1_league",
+    "country": "Japan",
+    "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "league_only": true,
+    "expected_fixtures": 2670,
+    "exclude_competitions": ["bundesliga", "germany_d1", "j2_league", "j3_league", "emperor_cup", "levain_cup"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_plus_unresolved_queue",
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "formal_model_unchanged": true,
+    "promotion_allowed": false,
+    "no_post_match_leakage": true
+  }
+}
