@@ -1,0 +1,16 @@
+{
+  "id": "req-20261002-011",
+  "type": "deep_research",
+  "params": {
+    "topic": "Ligue 1 France 2018/19 complete kickoff-time recovery for Qimen pre-match crosswalk",
+    "questions": [
+      "仅处理法国 Ligue 1 2018/19 的 380 场比赛。目标是补齐 football-data.co.uk 1819/F1.csv 中缺失的 Time 列，不是补赔率，也不是生成 Qimen 结论。",
+      "优先逐场读取并核验 https://www.worldfootball.net/all_matches/fra-ligue-1-2018-2019/ 及其轮次页面；必要时用 Soccerway、官方 Ligue 1/LFP 赛程、FixtureDownload 或其他明确来源交叉核验。每行按 season=2018/19、match_date、normalized_home_team、normalized_away_team 匹配，并返回 home_team、away_team、round、kickoff_local、timezone_or_timezone_status、provider_match_id（若有）、source_url、final_url、retrieved_at、field_locator、source_sha256（能计算时）。",
+      "必须保留全部 380 个目标行，包括找到、多个来源冲突、无法匹配、页面无明确时间或只给日期的行；不得按轮次或年份猜时间，不得把抓取时间当开赛时间。",
+      "明确说明来源时间是法国当地时间、UTC 还是未声明；若只有当地时间但未声明时区，标注 timezone_status=unknown，不要擅自补 UTC。对夏令时转换只提供来源明确时才转换。",
+      "统计 expected、discovered、matched、complete、partial、unavailable、blocked、conflict、duplicate，并返回 unresolved_queue。保留原始来源语义和 URL，不要从比分、赔率、球队关系或文字反推 Qimen 九宫、Q/F/I/G/M token、模型方向或盘面解释。",
+      "结果仅作为足球历史补充台账和后续 Shadow crosswalk 证据，不得修改 Snapshot、Outcome、Review、Gold、正式模型、正式检索 SQLite 或已有报告。"
+    ]
+  },
+  "created_at": "2026-10-02T10:05:00+08:00"
+}
