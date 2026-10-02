@@ -1,0 +1,32 @@
+{
+  "id": "req-20261002-024",
+  "type": "deep_research",
+  "params": {
+    "topic": "Eredivisie 荷甲 2018/19-2020/21 增量事实缺口补充",
+    "questions": [
+      "只处理上一轮 req-20261002-023 的 unresolved_queue，不重复抓取已完整的比赛事实。目标是补齐 2018/19、2019/20、2020/21 844 场的官方轮次 official_round；优先使用 worldfootball.net all_matches 页面，按日期、主客队和90分钟比分精确 join。",
+      "补齐 2018/19 306 场 kickoff_local；只在来源明确给出当地开球时间时填写，不能从日期、轮次或结果推算。",
+      "如能从明确逐场来源取得 venue/stadium，补齐 venue；无法可靠逐场取得时保留 null，并说明缺口，不要猜测或用球队常用主场替代历史场地。",
+      "返回逐场 evidence_rows、expected/discovered/complete/partial/missing、冲突队列、unresolved_queue，并保留 source_url、final_url、retrieved_at、field_locator、source_sha256、field_semantics。不得返回赔率、Qimen、宫位、方向、Miss、Review 或 Gold。"
+    ]
+  },
+  "created_at": "2026-10-02T23:05:00+08:00",
+  "scope": {
+    "competition_key": "eredivisie",
+    "seasons": [2018, 2019, 2020],
+    "season_labels": ["2018/19", "2019/20", "2020/21"],
+    "parent_request_id": "req-20261002-023",
+    "parent_response_status": "ok",
+    "parent_response_sha": "be3db3fd85af809bf66728a738edd19e72f4612252b2294e174ffded3a31e9f1",
+    "incremental_only": true,
+    "exclude": ["odds", "qimen", "qimen_output", "palace", "qimen_first_direction", "miss", "probability", "outcome", "review", "gold"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256", "field_semantics"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
