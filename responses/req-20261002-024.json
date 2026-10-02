@@ -1,8 +1,1 @@
-{
- "id": "req-20261002-024",
- "status": "processing",
- "request_sha": "55f6803093fd13fe",
- "dp_used": false,
- "note": "TAKEOVER: 上一轮 processing 已停滞 26 分钟（23:43:34 CST），本轮接手。任务：从 worldfootball.net all_matches 按(日期,主客队,90分钟比分) join 补 844 场 official_round、2018/19 306 场 kickoff_local；venue 无逐场来源则保留 null。",
- "fetched_at": "2026-10-02T16:10:00Z"
-}
+{"dp_used":false,"fetched_at":"2026-10-02T16:27:00Z","id":"req-20261002-024","note":"TAKEOVER (2nd): processing mtime 16:11:03 UTC vs now 16:27:00 UTC = 956s > 15min, strict SOP takeover. Previous round (599ac7c) itself took over a stagnant round but left no progress artifact. Continuing: join worldfootball.net all_matches (eredivisie 2018/19, 2019/20, 2020/21) to fill official_round for 844 matches, kickoff_local for 2018/19 306, venue only from explicit per-match sources.","request_sha":"55f6803093fd13fe","status":"processing"}
