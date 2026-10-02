@@ -1,0 +1,14 @@
+{
+  "id": "req-20261002-008",
+  "type": "deep_research",
+  "params": {
+    "topic": "La Liga SP1 incremental fixture-gap reconciliation for 2018/19-2025/26",
+    "questions": [
+      "For La Liga 2018/19 only, find a public, verifiable row-level schedule source with local kickoff time and official round for fixtures that can be crosswalked by date, home team, and away team. Return URL, final URL, retrieval time, field locator, source hash, matched and unmatched counts. Preserve NULL rows.",
+      "For the local API5 odds gap queue in La Liga 2024/25 and 2025/26, identify only concrete public row-level bookmaker odds evidence for Bet365, Pinnacle, and William Hill 1X2. Keep opening, pre-closing, closing, and live semantics separate; do not substitute API-Football or football-data pre-close for true opening; return fixture ID, stable source URL, timestamp semantics, and matched/unmatched/conflict counts.",
+      "Cross-check the supplied 103-match provenance pack only as an audit reference. Do not recreate or infer venue, true-solar, team lifecycle, Qimen palace, relation, direction, result, or odds fields when the pack already contains them. Report only residual conflicts or missing source fields.",
+      "Do not generate Qimen palaces, F/I/G tokens, model directions, or conclusions from odds, scores, standings, or relationship text. Keep unresolved rows explicit and separate unavailable, blocked, not-queried, and conflict states."
+    ]
+  },
+  "created_at": "2026-10-02T09:31:00+08:00"
+}
