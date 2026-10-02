@@ -1,6 +1,6 @@
 {
   "id": "req-20261002-002",
   "status": "processing",
-  "note": "研究进行中：J1 2018-2025 四类缺口逐场证据补充。日期+轮次层已完成：FBref 8 季静态赛程页逐季提取（8 并行子代理，逐行机械审计全过），j1-dates.csv 2670/2670（sha256=a20ba273dc3cb180e2582503c353489fbdbcb2a9c3019a242003f6b6028aaa90），0 未匹配，B-UQ-03 关闭，详见 work-003/part-d.md。剩余：赔率 earliest/latest tick 0/16020（需 live browser 批量，worldfootball 被 Cloudflare 人机验证卡住）；赛前积分 4/2670；642 缺失字段/48 fixture id 上游清单仍不可见（B-UQ-01/02）。request_sha 不变。",
+  "note": "本轮 10:41 接手（上一 processing mtime 02:35，超 15 分钟阈值）。request_sha 不变。进展：①赛前积分 Q4：4 个并行子代理已派发（2018+2019 / 2020+2021 / 2022+2023 / 2024+2025），Transfermarkt per-matchday 文本抓取（saison_id+spieltag，无墙已验证），逐轮取轮后榜→第N轮赛前=第N-1轮榜＋同轮早场修正（fbref JSON 比分，按 J.League 规则重排），目标 2670 场×2 行，首轮 rank=unavailable；结果回传后合并。TipsterArea 4 场样本证据保留作交叉。②赔率 Q1：live browser pilot 已派发（捷报/球探 3 场 J1 2024 样本：验证公司列名原文、威*/Pinna*/36* 映射、初指/即时列、逐场时间戳是否存在），结果回传后定批量方案；worldfootball 仍被 Cloudflare 人机验证卡。③642 缺失字段/48 fixture id：上游 5Dollar gap 文件仍不在仓库，B-UQ-01/02 继续阻塞。④日期+轮次层完成：j1-dates.csv 2670/2670（part-d，B-UQ-03 关闭）。⑤待 Codex 澄清：“唯彩”具体所指（多轮搜索无独立赔率站点）。",
   "request_sha": "cb7ee5725d870106"
 }
