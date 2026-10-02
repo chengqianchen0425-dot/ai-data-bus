@@ -1,1 +1,36 @@
-{"id":"req-20261002-017","note":"2026-10-02 17:35 CST：Q1 行级证据 CSV 已建成并校验：repo/work-017/mls-gap-175-rows.csv，175 行（2018:17、2019:13、2020:32、2021:13、2022:13、2023:28、2024:29、2025:30；160 playoff + 15 MLS-is-Back-knockout，0 regular），每行含 12 个请求字段 + stage 证据扩展列（wiki_page/section、官方 report URL）；provider_match_id 全为 null（football-data CSV 无 match id 列，未编造）。Q2 日期已核实：TOR vs VAN 实际当地日期 2020-08-21（CSV 22/08/2020 01:00 为 UTC 开球时间），为 2018–2025 唯一 PSCH/PSCD/PSCA 全空的常规赛行；其余 15 候选=2025 季后赛（门控跳过 closing）。Pinnacle closing 1X2 待家长真浏览器任务结果转发，收到后写最终 ok 回执。","request_sha":"c81c0f50c160f5cd","status":"processing"}
+{
+  "id": "req-20261002-017",
+  "status": "ok",
+  "request_sha": "c81c0f50c160f5cd",
+  "fetched_at": "2026-10-02T17:47:00+08:00",
+  "data": {
+    "report": "# MLS gap-only stage crosswalk + missing Pinnacle closing rows（req-20261002-017）\n\n## Q1：Football-Data USA.csv 相对常规赛理论母表多出的 175 行\n- 按赛季差额逐行闭环：2018:17、2019:13、2020:32、2021:13、2022:13、2023:28、2024:29、2025:30 → 175/175。\n- 判定：**160=季后赛（playoff），15=MLS-is-Back 淘汰赛（knockout），0=常规赛（regular）**。\n- 行级证据：repo/work-017/mls-gap-175-rows.csv（175 行），每行含 season/date/home_team/away_team/stage/round/provider_match_id/source_url/final_url/retrieved_at/field_locator/source_sha256 + 证据扩展列（wiki_page/wiki_section、mlssoccer.com 官方 report URL、比分、UTC 开球时间）。\n- stage 判定方法：Wikipedia 季后赛对阵表 + 官方 report URL 双重正向匹配（(season,home,away) 配对、日期容差 ±2 天），非按日期猜测。\n- provider_match_id：175 行全部为 null —— Football-Data USA.csv 本身无 match id 列，未编造。\n\n## Q2：16 条 PSCH/PSCD/PSCA 全空候选\n- 日期核实：候选列表写的 2020-08-22 是 UTC 开球日期；实际当地日期为 **2020-08-21**（Toronto FC 1-0 Vancouver Whitecaps，MLS 2020 regular season）。\n- 判定：15 候选 = 2025 季后赛（按门控跳过 closing，不为其找赔率）；1 候选 = 唯一常规赛（TOR-VAN 2020-08-21）。\n\n### Pinnacle closing 1X2（TOR-VAN 2020-08-21）核查结论：**未找到（unavailable）**\n真浏览器逐站核查（2026-10-02，北京时间）：\n1. betexplorer.com（https://www.betexplorer.com/football/usa/mls-2020/toronto-fc-vancouver-whitecaps/rgq8Aifm/）：1X2 对比仅 bet365.us 一家（1.22/6.50/11.00），无 Pinnacle 行，无分公司 history。\n2. totalcorner.com（比赛页 /stats/Toronto-FC-vs-Vancouver-Whitecaps/92370448；赔率页 /odds/toronto-fc-vs-vancouver-whitecaps/92370448）：仅 1X2 均值 1.222/6.5/11，初盘/收盘摘要 1.22/6.50/11.00（无公司明细；公司级变化需 VIP）。无 Pinnacle。\n3. bettors.club：已改版为 tipster 社区，原 Opening vs Current 结构消失；403 后无历史存档。无 Pinnacle。\n4. live.nowscore.com/1x2/1902017.htm（捷报网百家欧指，187 家公司初指/即时对照全部展开）：**Pinnacle 不在收录名单内**。其 bet365 数据：初指 1.22/6.50/11.00，即时（2020-08-22 08:00）1.30/5.50/9.00 —— 仅供参考，非 Pinnacle。\n5. win007 / zgzcw：win007.com 与 1x2.win007.com DNS 解析失败（不可达）；fenxi.zgzcw.com 站内/搜索引擎均未定位本场比赛分析页 → blocked/不可用。\n\n### 备注\n- 候选列表中的日期差异（2020-08-22 vs 2020-08-21）为时区所致：当地 ET 8 月 21 日晚约 20:00 开球 = 北京时间 8 月 22 日 08:00。\n",
+    "audit": {
+      "q1_stage_crosswalk": {
+        "expected": 175,
+        "discovered": 175,
+        "complete": 175,
+        "partial": 0,
+        "missing": 0,
+        "breakdown": {
+          "playoff": 160,
+          "mls_is_back_knockout": 15,
+          "regular": 0
+        }
+      },
+      "q2_psch_pscd_psca_candidates": {
+        "expected": 16,
+        "gated": 16,
+        "playoff_gate_skip": 15,
+        "regular_season": 1,
+        "pinnacle_closing_found": 0
+      }
+    },
+    "unresolved_queue": [
+      {
+        "target": "2020-08-21 Toronto FC vs Vancouver Whitecaps Pinnacle closing 1X2",
+        "reason": "5 个历史赔率源逐站真浏览器核查均未获得明确标注 closing 的 Pinnacle 1X2：betexplorer 仅 bet365.us、无 Pinnacle 行；TotalCorner 仅均值/摘要无公司明细；Bettors.club 改版无历史存档；捷报网 187 家公司对照无 Pinnacle 收录；win007/zgzcw 不可达（blocked）。bet365 初指 1.22/6.50/11.00 仅作非 Pinnacle 参考，已带回。"
+      }
+    ]
+  }
+}
