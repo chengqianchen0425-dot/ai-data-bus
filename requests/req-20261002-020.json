@@ -1,0 +1,35 @@
+{
+  "id": "req-20261002-020",
+  "type": "deep_research",
+  "params": {
+    "topic": "MLS 2020-08-21 Toronto FC vs Vancouver Whitecaps 唯一常规赛 Pinnacle 收盘赔率缺口",
+    "questions": [
+      "只处理 2020-08-21（北京时间日期可能为 2020-08-22）MLS 常规赛 Toronto FC vs Vancouver Whitecaps 这一场，返回主客队、当地开球时间、provider fixture id 或稳定比赛键，并保留 source_url、final_url、retrieved_at、field_locator、source_sha256。",
+      "只查 Pinnacle 1X2 收盘赔率（home/draw/away）。如果找不到明确标注为 Pinnacle closing 或 latest verified pre-match 的逐场值，返回 unavailable；不得用 bet365、跨公司均值或其他博彩公司替代。",
+      "如果同一来源同时给出 Pinnacle earliest verified pre-match 与 latest verified pre-match，也按字段语义分别返回；没有明确时间语义就标 parse_failed 或 unavailable，不把单个赛前快照改名为 opening/closing。",
+      "保留来源冲突、访问失败、空响应和字段提取失败状态；不要返回或推导 Qimen、九宫、宫位、模型方向、Miss、结构结论、概率、Outcome、Review 或 Gold。"
+    ]
+  },
+  "created_at": "2026-10-02T19:00:00+08:00",
+  "scope": {
+    "competition_key": "mls",
+    "season": 2020,
+    "league_only": true,
+    "fixture": "Toronto FC vs Vancouver Whitecaps",
+    "local_date": "2020-08-21",
+    "utc_date": "2020-08-22",
+    "bookmaker": "pinnacle",
+    "market": "1X2",
+    "phase": "closing_or_latest_verified_pre_match",
+    "incremental_only": true
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
