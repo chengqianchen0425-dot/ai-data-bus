@@ -277,5 +277,6 @@
     },
     "method_note": "旧 id 复用（法甲任务）→旧回执已归档为 responses/req-20261001-006.archived-20261002-0032.json。本轮按新 data_task 执行。11 场全部在 football-data.co.uk 德甲 CSV 精确命中（含比分+Bet365 1X2 pre-closing 与 closing）。"
   },
-  "fetched_at": "2026-10-02T00:35:00+08:00"
+  "fetched_at": "2026-10-02T00:35:00+08:00",
+  "request_sha": "b158f71d44bff7f7"
 }

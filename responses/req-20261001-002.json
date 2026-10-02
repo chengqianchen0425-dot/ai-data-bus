@@ -47,5 +47,6 @@
     },
     "o_interval_feasibility": "pre-close->closing pair (strict provenance) OK; true opening->closing NOT supported by any free public bulk source"
   },
-  "fetched_at": "2026-10-01T21:45:00+08:00"
+  "fetched_at": "2026-10-01T21:45:00+08:00",
+  "request_sha": "41791b697fef280b"
 }

@@ -1,1 +1,6 @@
-{"id":"req-20261002-004","note":"研究进行中","status":"processing"}
+{
+  "id": "req-20261002-004",
+  "note": "研究进行中",
+  "status": "processing",
+  "request_sha": "f700f3f8e99c864f"
+}
