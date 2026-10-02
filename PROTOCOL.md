@@ -9,6 +9,12 @@
 2. 一次一个文件、一个请求。
 3. 回执约 5 分钟内产出（`deep_research` 除外：首轮先回 `processing` 占位，做完再覆盖为最终结果）。
 4. `id` 全局唯一，建议 `req-YYYYMMDD-序号`。**严禁复用已完成任务的 id 发新任务**——追问或新任务必须用新 id；如复用旧 id，旧回执会被归档为 `responses/<id>.archived-时间戳.json`，新任务重新走 processing。
+
+## 请求版本指纹（v2.4 新增，防错位）
+
+- 每个回执必须带 `request_sha` 字段 = 写回执时 `requests/<id>.json` 文件内容的 sha256 前 16 位。
+- 取件员每轮机械比对：若回执的 `request_sha` 与当前请求文件 sha 不符 → 请求内容已变 → 按"严禁复用"规则归档旧回执、写新 processing。
+- 写最终 ok 前必须重读请求文件并重新计算 sha，确保回执与当前请求同主题。
 5. 回执 `status`：`ok` 成功 / `error` 失败（看 `error` 字段写的原因） / `processing` 处理中（仅耗时任务）。
 6. 抓不到、搜不到就写 `error`，不要编造数据。
 
