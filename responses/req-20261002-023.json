@@ -1,0 +1,8 @@
+{
+ "id": "req-20261002-023",
+ "status": "processing",
+ "note": "【2026-10-02 22:47 CST 取件】新需求单：荷甲 Eredivisie 2018/19、2019/20、2020/21 三个缺失赛季足球事实增量补充。首轮按 SOP 写 processing 占位：下载 Football-Data 三个 CSV（scope 指定的 source_candidates）+ worldfootball 交叉核验轮次/场次 → 逐场 evidence_rows + 漏抓审计(expected 306/232/306)。本轮先做事实抓取；赔率/qimen 相关字段一律排除。dp_used=false（搜索+脚本自足，未调用 DeepSeek）。",
+ "request_sha": "5dc7ea9a779d2115",
+ "dp_used": false,
+ "fetched_at": "2026-10-02T22:47:00+08:00"
+}
