@@ -17,6 +17,7 @@
 - 写最终 ok 前必须重读请求文件并重新计算 sha，确保回执与当前请求同主题。
 5. 回执 `status`：`ok` 成功 / `error` 失败（看 `error` 字段写的原因） / `processing` 处理中（仅耗时任务）。
 6. 抓不到、搜不到就写 `error`，不要编造数据。
+7. 每个回执必须带 `dp_used` 字段（true/false），声明本次处理是否调用了 DeepSeek；若为 true，必须同时写 `dp_reason` 说明触发了哪条调用门禁（见 SOP.md）。简单任务必须为 false。
 
 ## 类型 1：odds_1x2（单场欧赔）
 
