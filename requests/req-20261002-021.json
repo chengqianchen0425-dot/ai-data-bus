@@ -1,0 +1,30 @@
+{
+  "id": "req-20261002-021",
+  "type": "deep_research",
+  "params": {
+    "topic": "MLS 2018-2025 历史球队生命周期与官方赛季来源映射补缺",
+    "questions": [
+      "请按 MLS 常规赛 2018、2019、2020、2021、2022、2023、2024、2025，整理每支参赛球队的 active_seasons，并在可验证来源支持时给出 competition_entry_year 与球队更名/迁移/合并的 lineage_note。只返回足球事实，不推导九宫、宫位、模型方向或预测字段。",
+      "请核验 2021-2025 MLS 官方或官方可追溯的赛季标识、常规赛阶段字段和可用于 source_mapping 的逐场或赛季端点。若官方列表端点为空，保留 unavailable/blocked，并说明具体 URL、HTTP 状态、抓取时间、字段定位和源哈希，不猜测 season_id。",
+      "请列出仍无法确认的球队生命周期、赛季标识、官方轮次或字段，并按 record_key 给出 unresolved_queue；已存在 ESPN 2018-2020 赛果不要重复抓取，不能把 postponed/canceled 记录改成已完成比赛。"
+    ]
+  },
+  "created_at": "2026-10-02T21:50:00+08:00",
+  "scope": {
+    "competition_key": "mls",
+    "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "league_only": true,
+    "incremental_only": true,
+    "football_facts_only": true,
+    "exclude": ["qimen", "palace", "model_first_direction", "miss", "probability", "outcome", "review", "gold"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
