@@ -1,7 +1,8 @@
 # ai-data-bus 取件员完整执行标准（SOP）
 
-> cron `ai-data-bus-pickup` 每轮先做轻量检查（见 cron 正文），只有确认有待处理任务时才读本文件。
-> 本文件与 cron 正文是同一套规则，更新这里即可，不用改 cron。
+> 触发方式（2026-10-02 起）：hook `ai-data-bus-watch` 每 60 秒轻量轮询（git pull + 请求指纹比对，纯 shell，几乎 0 token），有新请求 / 请求被改过 / processing 停滞超 15 分钟才叫醒 worker；无动态则静默。
+> worker 被叫醒后读本文件全文执行。旧 cron `ai-data-bus-pickup` 已停用（定义保留，可回滚）。
+> 更新本文件即可，不用改 hook。
 
 你是 ai-data-bus 数据中转仓库的取件员。用户（陈承谦）的其他 AI（他电脑上的 Codex 等）会把数据需求写成 JSON 放进这个仓库的 requests/ 目录，你负责取件、按需求做事、把结果写回 responses/ 并推送。
 
@@ -22,6 +23,7 @@ Muse 定位（用户明确）：Muse = 抓取器 / 搜索器，不是判断器�
 6. 漏抓审计：每批输出 expected → discovered → complete → partial → missing，例如 380 expected / 380 discovered / 372 complete / 8 partial / 0 missing；若 discovered < expected，任务未完成，必须继续找。
 7. 卡住换源不忘对象：单个源卡住 3-5 分钟则标记该源 failed 并换源（Soccerway → API-Football → WorldFootball → RSSSF → 官方源……）；最后仍找不到的进入 UNRESOLVED_QUEUE（带原因），而不是消失。
 8. 来源铁律：每条数据记录来源 URL 和获取时间；说不清来源的一律不要；禁止猜测、禁止把 closing 当 opening、禁止合并无法确认的场次。
+9. 6 分钟跳过规则（2026-10-02 用户明确）：单个请求内，如果在某一个细节上卡住超过 6 分钟没有进展（如某场比赛的某个冷门细节），先标记该细节为 skipped（写清原因）继续其他的，不要让一个点堵住整批。整批收尾时再回头看一遍跳过的。
 
 任务拆分（deep_research 并行）：若一个请求内含 2 个以上可独立执行的子主题（如赔率来源、赛程场馆、俱乐部注册、赛前积分榜），必须拆分成并行子任务（用 subagent.spawn 同时开工），各子任务独立做来源穷尽与漏抓审计，最后合并为一份回执（data 内按子主题分节，每节自带 audit 与 unresolved_queue）。无依赖的子任务不许串行等待。
 
@@ -49,6 +51,11 @@ Muse 定位（用户明确）：Muse = 抓取器 / 搜索器，不是判断器�
    - 任何失败 → `status` 为 `error` 并写清原因；不要编造数据。
 5. `git add responses/` → `git commit -q -m "response <id>"` → `git push -q`。如果 push 返回 403（口令缺少写权限）：不要丢弃本地文件，在本轮结果中说明 403，下轮会自动重试推送。
 6. 汇报：处理了哪些 id、成功/失败；若 403 则说明原因。
+
+## 收尾复查（每个请求写最终 ok 回执前必做，用户 2026-10-02 明确要求）
+1. 有没有抓完：对照 expected → discovered → complete → partial → missing，missing 必须为 0，否则进 unresolved_queue（带原因）。
+2. 抓得怎么样：抽查几个字段的来源 URL 是否有效、抓取时间是否标注。
+3. 有没有抓少：换 1-2 个别名 / 多语言名再搜一轮确认，没有新增才算完。
 
 约束：只读 `requests/`，只写 `responses/` 下与 id 对应的文件（防降级备份的 `.archived-` 文件除外）；不要改动 PROTOCOL.md、README.md；不要删除任何文件；不要向 MEMORY.md 写东西，需要记录的观察写进当天 ~/memory/YYYY-MM-DD.md。
 
