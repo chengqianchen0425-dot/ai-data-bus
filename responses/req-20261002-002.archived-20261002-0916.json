@@ -1,0 +1,1 @@
+{"id":"req-20261002-002","note":"研究进行中：德甲 2018-19 至 2025-26 八季行级 fixture + Bet365/Pinnacle/William Hill 1X2 行级赔率补充。首轮先做理论总数核定（7 个完整赛季 × 306 场 + 2025-26 进行中轮次）与数据源普查（Football-Data / oddsportal / betexplorer / nowgoal 历史赔率归档 / bookmaker 官网归档），记录 opening / pre-closing / closing 语义可得性；完成 coverage manifest + 赛季审计后再覆盖写最终 ok 回执。","status":"processing"}
