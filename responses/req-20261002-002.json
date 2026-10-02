@@ -1,6 +1,6 @@
 {
   "id": "req-20261002-002",
   "status": "processing",
-  "note": "本轮 10:41 接手（上一 processing mtime 02:35，超 15 分钟阈值）。request_sha 不变。进展：①赛前积分 Q4：4 个并行子代理已派发（2018+2019 / 2020+2021 / 2022+2023 / 2024+2025），Transfermarkt per-matchday 文本抓取（saison_id+spieltag，无墙已验证），逐轮取轮后榜→第N轮赛前=第N-1轮榜＋同轮早场修正（fbref JSON 比分，按 J.League 规则重排），目标 2670 场×2 行，首轮 rank=unavailable；结果回传后合并。TipsterArea 4 场样本证据保留作交叉。②赔率 Q1：live browser pilot 已派发（捷报/球探 3 场 J1 2024 样本：验证公司列名原文、威*/Pinna*/36* 映射、初指/即时列、逐场时间戳是否存在），结果回传后定批量方案；worldfootball 仍被 Cloudflare 人机验证卡。③642 缺失字段/48 fixture id：上游 5Dollar gap 文件仍不在仓库，B-UQ-01/02 继续阻塞。④日期+轮次层完成：j1-dates.csv 2670/2670（part-d，B-UQ-03 关闭）。⑤待 Codex 澄清：“唯彩”具体所指（多轮搜索无独立赔率站点）。",
+  "note": "赔率 Q1 试点完成（捷报比分网，无墙）：3 场 J1 2024 样本全部打开单场百家欧指页；URL 模式 live.nowscore.com/1x2/{matchid}.htm（matchid 须站内导航获取）；公司名原样：36*(英国)=bet365、Pinna*(荷兰)=平博、威廉希*(英国)=威廉希尔（纠正：页面显示为“威廉希*”非“威*”）、立*(英国)=立博；William H*.it(意大利)为独立实体不可合并；“所有指数”视图同屏显示初指+即时 1X2（167 家）；有“变化时间”列（即时最后变化时间，如 2024-02-23 13:00）但无初指时间列。语义结论：latest tick 可用变化时间（须与开球时间交叉验证在赛前），earliest tick 需逐公司钻历史指数明细（单独立阶段）。详见 work-003/odds-pilot-nowscore-20261002.md。已派发 4 个并行 live browser 任务做阶段 U（URL 发现）：8 赛季逐轮收集每场→1x2 URL 映射（2018+19 / 2020+21 / 2022+23 / 2024+25）。赛前积分 4 子代理进行中。642 字段/48 fixture 上游 gap 文件仍不在仓库（B-UQ-01/02 阻塞）。request_sha 不变。",
   "request_sha": "cb7ee5725d870106"
 }
