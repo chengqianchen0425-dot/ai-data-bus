@@ -1,1 +1,157 @@
-{"id": "req-20261002-015", "status": "processing", "note": "2026-10-02 15:42+0800 轮次心跳：①Q7 venue 批量提取实质完成——官方日程 PDF（browser.open 文本层）2020/2021/2022 三季：venue-schedule-2020.csv（306/306 场，场馆 305 有名+1 未定；2020 为疫情前原始日程、日期为名义值带 caveat）、venue-schedule-2021.csv（380/380 场，348 有名场馆+32 TBD/空缺）、venue-schedule-2022.csv（306/306 场，306 全有名）；三季 100% join 到 j1-dates stable_key；2018/2019 PDF 同 URL 模式均 HTTP 403 upstream_access_rejected（不再重试，记 unresolved，需真浏览器任务/用户侧处理）。②UQ-15R2-01 25 场延期场次 earlier-kickoff 累积法重算完成：50/50 side-row（q6-postponed-recompute-2018-2019.csv），46 行与旧值一致（验证性证据），4 行真实变化（2019 R16 两场延期场：j1_2019_sanfrecce_hiroshima_vs_kawasaki_frontale、j1_2019_urawa_red_diamonds_vs_kashima_antlers 各 +3pts/+1 played）；0 score gap、0 kickoff 缺失；caveat: /tmp/recompute_postponed.py 重算脚本 ephemeral 已丢失，CSV 自含 old/new 全值自闭环，复验需按字段重建。status=processing，request_sha 不变。\n2026-10-02 15:08+08 取件：新 deep_research（J1 2018–2025 2670场行级缺口补充），研究进行中 2026-10-02 15:28+0800 子代理心跳（J1-015 round-2）：已接管。sha 机械校验通过（4c8c05f0668423d9），请求无变化、无复用、无归档需求。本轮重点：Q6 J.League 官方 tie-break 顺序核验（unresolved 遗留项）、2018–2020 赛前快照 918 场覆盖离线验证、Q7 官方日程 PDF 2018–2022/2024 文件名可行性核验。Q1 范围门（Q1-Q4/Q7 前一轮已完备）不再重复。2026-10-02 15:45+0800 本轮完成：①tie-break 官方顺序已核验（三源一致，文件 q6-tiebreak-official-evidence.md）；②2018–2020 快照 918/918 场覆盖确认，但发现 2018/2019 共 25 场延期场次的 50 个 side-row 用 round-table 基准且无 caveat（方法风险，已列 unresolved）；③2025 Wikipedia Results 矩阵文本层可达、逐字转录存档（wiki-2025-results-matrix-evidence.md），可作 2025 R5+ 比分重建源；④2024 官方日程 PDF 文本层可提取（672 行，含スタジアム列），venue 回填可行。status=processing，request_sha 不变。 2026-10-02 15:31+0800 本轮收官：子代理完成三件实质工作并追加心跳：①Q6 官方 tie-break 顺序三源交叉核验完成：胜点→得失点差→总得点→相互战绩（胜点→得失点差→总得点）→纪律分（少者居前）→抽签，证据存档 work-j1-015/q6-tiebreak-official-evidence.md；本地 (Pts,GD,GF) 前缀+三元组相同标 unavailable 保守正确，36+10+140 行待 H2H mini-table 裁决。②2018/2019 发现 25 场延期场次（50 side-row）以 worldfootball round 表为基准无 caveat，属方法风险，需 earlier-kickoff 累积法重算；2020 疫情季 179 场 out-of-round 方法正确无问题。③2025 比分矩阵 Wikipedia 文本层可达、380 场已转录存档（wiki-2025-results-matrix-evidence.md），可填 2025 R5+ 680 行 DATA_GAP；jleague.jp 官方日程 PDF 文本层可提（2024 已验证，672 行含スタジアム列）。coverage manifest：2670 expected/discovered/identity_matched 全齐；unresolved_queue 新增 UQ-15R2-01（25 场延期快照重算）/02（2023 全季 standings 重建）/03（2025 R5+ 重建）/04（H2H 裁决）/05（2670 venue 回填）+ 沿用 06（52 场 interval 端点需真浏览器）/07（48 个 5Dollar id blocked）。全程未触碰德甲/德国数据。request_sha 不变 4c8c05f0668423d9，status=processing。\n2026-10-02 16:23+0800 子代理心跳（015 round-3 接管）：sha 机械校验通过（4c8c05f0668423d9），请求无变化、无复用、无归档需求；work-j1-015 停滞已接管（最后落盘 15:52）。本轮计划：①Q7 venue——2024 官方 PDF 文本层提取+join；②2023/2025 官方日程源 venue 回填；③2018/2019 保持 blocked（403 不再重试）；④Q2 486 赔率缺口按场×公司矩阵漏抓审计；⑤Q3 48 场 5Dollar 直接证据检索；⑥Q6 2023 standings 重建、140 H2H 裁决、2025 R5+ 重建；⑦Q1 赔率 interval 真浏览器任务简报回传主代理。status=processing，request_sha 不变。\n2026-10-02 17:15+0800 子代理心跳（015 round-3 进展）：①Q7 venue——2024 官方日程 PDF 文本层转录+解析完成：venue-schedule-2024.csv 380/380 行、380/380 join stable_key、每轮 10 场；90 场 kickoff TBD（R30–38 初版 PDF）、1 场 date_or_tbd（R30 鹿島vs広島）、1 场馆未定（R37 名古屋vs鳥栖）；2023 官方 PDF 同样可达：venue-schedule-2023.csv 306/306 行、306/306 join、每轮 9 场，81 场 kickoff TBD、9 场 date_or_tbd、4 场馆未定；2018/2019/2025 官方 PDF 同 URL 模式均 403 （2025 不再重试，记 unresolved）。解析发现 2024 R13 header 跨行排版陷阱，已按 j1-dates 规范 round 纠正（横浜FMvs広島=名义 5/10 实际 6/19 ACL 改期，j1-dates 证实）。②Q6——2023 全季 standings 重建完成：Wikipedia 结果矩阵 306 场转录存档（wiki-2023-results-matrix.txt），与 j1-dates 306/306 join；q6-standings-2023-rebuild.csv 612 side-row 赛前快照（earlier-kickoff 累积法）；18 个 2023 rank-unresolved side-row 全部 points/played 与旧值一致，H2H mini-table 裁决 6/18 定出单一名次、12/18 仍并列（纪律分/抽签无数据，记 rank 区间）；R34 前快照与 Wikipedia 最终积分榜一致（神戸 68+3=71 冠军）。下一步：2024/2025 结果矩阵重建、Q2 486 赔率缺口矩阵审计、Q3 5Dollar、Q1 真浏览器简报。status=processing，request_sha 不变。\n2026-10-02 18:15+0800 子代理收官心跳（015 round-3）：①Q6 2021/2022/2024/2025 全季 standings 重建完成——Wikipedia 结果矩阵 2021（380 场，浦和vs湘南用官方改判 0–3）/2022（306 场）/2024（380 场）/2025（380 场）全部转录存档，与 j1-dates 逐季 100% join；q6-standings-<季>-rebuild.csv 共 3444 side-row 赛前快照（earlier-kickoff 累积法）；H2H mini-table 裁决：2021 2/17、2022 4/20、2023 6/18、2024 3/24、2025 1/14 定出单一名次（合计 16/93），其余 77 行 H2H 仍并列（纪律分/抽签无数据，记 rank_low-rank_high 区间，resolved=FALSE）；五季 points/played 与旧值 93/93 一致（交叉验证旧方法）；末轮前快照与已知最终榜五季全一致。②Q6 2018–2020 快照离线验证通过（612×3 side-row，R1 全零、末轮 played=33、末轮前 top3 与已知最终排名一致）。③Q2 行级审计矩阵 q2-odds-gap-audit-matrix.csv（2670 行）：bet365 closing 双源真空 1509 场、Pinnacle closing 10 场（2025 R36）、WH 零证据 1600 场、Pinnacle pre-match tick 候选 1590 场；真 opening 全 2670 场为零（nowscore init 非 opening）。④Q1 真浏览器任务简报已写（q1-browser-task-brief.md）：P0 10 场→P1 17 场→P2 1590 场→P3 1509 场→P4 1600 场，待主代理 spawn。⑤Q3 5Dollar：仍 blocked（48 行清单本机不存在、API 需 Ultra key），保持 unresolved，无新证据。本轮未触碰德甲/德国数据；未写 ok（仍 processing）；未 git commit（主代理统一提交）。request_sha 不变。\n2026-10-02 16:50+0800 主代理接管（防重：processing 文件 mtime 约 15.2 分钟，>15 分钟阈值；request_sha 机械校验通过 4c8c05f0668423d9，请求无变化、无复用、无归档需求）。现状：Q7 venue 2020/21/22/23/24 完成（2018/19/25 官方 PDF 403 阻塞）；Q6 2018–2025 全季赛前快照重建完成、H2H 裁决 16/93；Q2 审计矩阵完成；Q1 真浏览器简报 P0–P4 已写。本轮：①主代理 spawn Q1 P0 浏览器任务（OddsPortal 10 场 Pinnacle opening+closing+timestamp）；②子代理 B：Q7 2018/19/25 替代源一次尝试、q2 矩阵与 486 缺口对账、coverage manifest + 报告骨架起草；status=processing，request_sha 不变。\n2026-10-02 16:58+0800 Q1 P0 浏览器任务完成（10/10 单场页实际检查）：**OddsPortal 系统性 unavailable**——站点按 IP 地理定位 serving 美国版（公司列表页仅 bet365.us/BetMGM.us/DraftKings/Fanduel，无 Pinnacle；无地区切换器），Pinnacle 不可能出现在任何单场赔率表；非比赛定位问题，未编造数值，未触碰德甲。证据存档 work-j1-015/q1-p0-browser-evidence-20261002.json（含 10 场 source_url/final_url）。implication：OddsPortal 路线对 Pinnacle 在本出口 IP 下系统性阻塞（P1–P4 目标为 Pinnacle 的批次同样不可用）；Q1 earliest/latest verified pre-match tick 主力转向捷报网 nowscore 三公司 初指/即时 行（002 证据链采集、语义如实标注）；P0 10 场（nowscore 无 Pinnacle 行）需换源 betexplorer/TotalCorner/Bettors.club/唯彩 逐场尝试。status=processing，request_sha 不变。\n2026-10-02 17:35+0800 子代理 B 本轮完成：①Q7 2018/2019/2025 替代源尝试三季全部成功——2018 FBref 日程页（venue-schedule-2018-alt.csv 306/306 join，每轮 9 场，0 mismatch）、2019 FBref 日程页（venue-schedule-2019-alt.csv 306/306 join，补赛归位验证 0 round mismatch；2019-12-14 升级附加赛行已排除）、2025 JLeague.jp 另一 PDF 模式（schedule_j1_2025_0412.pdf，venue-schedule-2025-alt.csv 380/380 join，R29–38 初版 98 场 kickoff TBD、43 行名义日期差 caveat 标记）；venue 覆盖 1678/2670→2670/2670 全覆盖，UQ-15R2-05 CLOSED（小结 q7-venue-alt-sources-note.md）。②Q2 对账完成（q2-reconciliation.md）：矩阵 token 实测 b365_opening_true=2670、b365_closing=1509、pinnacle_closing=10、pinnacle_pre_match_ticks=1590、wh_any=1600，请求 486 口径（bet365 opening 6/closing 6、pinnacle opening 156、WH opening 159/closing 159）属旧快照口径、当前快照不可复现——详见 q4-reconciliation.md 的快照断裂结论，486 不再作为剩余缺口引用，当前可审计缺口以 Q1 P0–P4 为准。③coverage-manifest.md（分季 2670 expected→discovered→identity_matched→各维度 complete/partial/unavailable）与最终报告骨架草稿 final-report-draft.md（data.report/data.audit/data.unresolved_queue）已写；unresolved_queue 沿用 UQ-15R2-01..07：01/02/03/05 CLOSED，04 H2H 余 77 轮 OPEN（rank 区间 resolved=FALSE），06 OPEN（Q1 简报已纳入 OddsPortal Pinnacle 地理定位阻塞结论：改走 nowscore 初指/即时行 002 证据链、betexplorer/TotalCorner/Bettors.club/唯彩），07 5Dollar 48 id 仍 blocked。未触碰德甲/德国数据；未写 ok（仍 processing）；未 git commit（主代理统一提交）。request_sha 不变。\n2026-10-02 17:05+0800 子代理 B 收官：①P0 事实已纳入 unresolved_queue（UQ-15R2-06 重写，P0 标 COMPLETED）与报告草稿 final-report-draft.md；②source 优先级按批次改写：P2(1590 Pinnacle tick)/P0(10 双真空) → betexplorer/TotalCorner/Bettors.club/唯彩 逐场尝试；P4(1600 WH) → nowscore 初指/即时行主力(002 证据链 1070 场已有 page_displayed)+alt 源；P1(17 bet365)/P3(1509 bet365 closing) → OddsPortal 第一尝试（bet365.us 在库，需实测覆盖 J1）。③落盘：coverage-manifest.md、final-report-draft.md、q2-reconciliation.md、venue-schedule-raw-2019-fbref.txt（2019 venue 替代源 FBref 文本层 309 行）。④q1-browser-task-brief.md 主代理已按新路由修订。⑤主代理派发 P1 浏览器任务（17 场 bet365，含前 2 页 bet365.us 行存在性先行验证、缺失则整批停止）。status=processing，request_sha 不变。", "request_sha": "4c8c05f0668423d9"}
+{
+  "id": "req-20261002-015",
+  "status": "ok",
+  "data": {
+    "report": "# req-20261002-015 FINAL REPORT — Japan J1 League 2018–2025 row-level gap supplement\nrequest_sha_prefix: 4c8c05f0668423d9 (verified unchanged at write time)\ncompetition_key=j1_league | country=Japan | seasons=2018–2025 | expected=2670 fixtures\nReport written: 2026-10-02 (Asia/Shanghai). All evidence files local at ~/workspace/ai-inbox/work-j1-015/.\n\n## Q1 — SCOPE GATE (verdict first)\nPASS. Every source row used in this response was verified J1-only (Japan). No Bundesliga, no German competition,\nno J2/J3, no cup rows were touched or returned. scope_mismatch: NONE (0 rows).\n\n## Season coverage manifest (Q2) — expected → discovered → identity_matched\n| season | expected | discovered | identity_matched | fixture structure |\n|---|---|---|---|---|\n| 2018 | 306 | 306 | 306 | 34 rounds × 9 |\n| 2019 | 306 | 306 | 306 | 34 rounds × 9 |\n| 2020 | 306 | 306 | 306 | 34 rounds × 9 |\n| 2021 | 380 | 380 | 380 | 38 rounds × 10 |\n| 2022 | 306 | 306 | 306 | 34 rounds × 9 |\n| 2023 | 306 | 306 | 306 | 34 rounds × 9 |\n| 2024 | 380 | 380 | 380 | 38 rounds × 10 |\n| 2025 | 380 | 380 | 380 | 38 rounds × 10 (R29–38 official preliminary) |\n| TOTAL | 2670 | 2670 | 2670 | 0 missing fixtures |\nCanonical identity key: stable_key = j1_<season>_<home_slug>_vs_<away_slug> (unique across all 2670).\n\n## Q1/Q3 — ODDS ENDPOINTS (Bet365 / Pinnacle / William Hill, 1X2)\nSemantics preserved as distinct: opening (true, timestamped) / earliest verified pre-match / latest verified pre-match /\npre-closing / closing. A single closing anchor is NOT an interval (O_INTERVAL requires earliest+latest from the SAME\nbookmaker on the SAME fixture).\n\n- TRUE OPENING WITH TIMESTAMP via offline channels: 0/2670 (structurally absent everywhere offline).\n  Football-Data has NO opening columns; nowscore 初指/即时 rows are page_displayed with NO timestamps —\n  they are never renamed to opening/closing (semantics audit: work-j1-015/q3-odds-semantics-report.md).\n- Browser check P0 (2026-10-02, 10/10 fixtures of the 2025 R36 Pinnacle double-vacuum): OddsPortal serves the\n  US EDITION from this egress IP — bookmaker catalog = {bet365.us, BetMGM.us, DraftKings, Fanduel}, NO Pinnacle,\n  no region switcher. Pinnacle is therefore SYSTEMATICALLY UNAVAILABLE on OddsPortal from here; not a fixture-matching\n  problem; no values fabricated. Evidence: work-j1-015/q1-p0-browser-evidence-20261002.json.\n- Live-browser routing (per-fixture, see work-j1-015/q1-browser-task-brief.md):\n  * P0 (10 fixtures, 2025 R36, dual-source vacuum): try betexplorer / TotalCorner / Bettors.club / 唯彩.\n  * P1 (17 bet365 fixtures): parent-dispatched OddsPortal browser task — RESULT PENDING at write time; bet365.us is in\n    the US catalog but J1 coverage on the US edition is unverified; stop-batch if bet365.us rows absent on first pages.\n  * P2 (1590 fixtures needing Pinnacle earliest/latest verified pre-match ticks): betexplorer / TotalCorner /\n    Bettors.club / 唯彩 per-fixture (nowscore has NO Pinnacle row for these 1590 — not a fallback).\n  * P3 (1509 fixtures, bet365 closing dual-source vacuum): OddsPortal first attempt, then alt sources per-fixture.\n  * P4 (1600 fixtures, William Hill zero-evidence): WH not in US catalog → OddsPortal likely unusable; primary =\n    nowscore 初指/即时 rows (002 evidence chain: 1070 fixtures already page_displayed, 0 gaps inside coverage)\n    + per-fixture alt sources.\n\n## Q2/Q4 — ODDS GAP AUDIT (fixture-level matrix: work-j1-015/q2-odds-gap-audit-matrix.csv, 2670 rows)\nneeds_browser tokens measured against Football-Data snapshot sha ba8c31c4b1f9226b + nowscore coverage:\n| token | fixtures | meaning |\n|---|---|---|\n| b365_opening_true | 2670 | FD has no opening column → true timestamped opening unavailable for ALL fixtures offline |\n| b365_closing | 1509 | FD B365CH/CD/CA all empty AND no nowscore bet365 row (dual-source vacuum) |\n| pinnacle_closing | 10 | FD PSCH/CD/CA all empty, 2025 R36, 2025-11-08/09, no nowscore Pinnacle row either |\n| pinnacle_pre_match_ticks | 1590 | FD Pinnacle closing present but nowscore has no Pinnacle row → needs earliest/latest tick evidence |\n| wh_any | 1600 | FD has no WH columns and nowscore has no WH row (WH zero-evidence) |\nCell-level (FD side): Bet365 closing MISSING for 2540 fixtures (7620 cells); Pinnacle closing MISSING for 10 fixtures\n(30 cells). Full cell list: work-j1-015/q4-footballdata-gaps.csv (7650 rows).\nnowscore page_displayed: 1070/2670 fixtures (0 gaps inside coverage; entire 2019 and 2023 seasons absent).\nCoverage union (any of bet365/Pinnacle/WH closing or page_displayed): 2670/2670 fixtures have ≥1 evidence.\n\n### The \"486 remaining odds cells\" claim in the request — RECONCILIATION\nThe request's 486 figure (Bet365 opening 6 / closing 6, Pinnacle opening 156, WH opening 159 / closing 159;\n\"156 Pinnacle closing candidates = 52 fixtures\") is NOT reproducible against the current snapshot. It belongs to the\nprior snapshot (sha c1c80401a40edd11). Against the current snapshot: Bet365 closing is missing for 2540 fixtures\n(not 6); FD has no opening/WH columns so Pinnacle opening 156 / WH 159+159 are structurally unlocatable;\nPinnacle closing is now present for 2660 fixtures. The 486 caliber must NOT be cited as the remaining gap —\ncurrent auditable gaps are the Q1 P0–P4 batches above. Detail: work-j1-015/q2-reconciliation.md,\nwork-j1-015/q4-reconciliation.md.\n\n## Q5 — 48 5Dollar provider_fixture_id — BLOCKED, 0 returned, none fabricated\n(1) The 48-row per-fixture checklist (season/date/home/away) never entered the repo — it exists only on the upstream\nrequester's local machine; the request's \"existing local canonical keys were matched for all 48\" is an upstream-side\nclaim not re-verifiable here (local canonical crosswalk j1_<season>_<home_slug>_vs_<away_slug>, 2670 unique keys, is ready).\n(2) 5DollarFootballAPI docs (fetched 2026-10-02, https://5dollarfootballapi.com/docs): EVERY request requires an API key;\nfree tier covers only big-5 leagues + 3-month history; 2018–2025 J1 needs an Ultra ($25) key. No key available; no\nunauthenticated endpoint exists. Attempt log + downstream join method (incl. postponed-match new-id behavior:\nrescheduled matches get a NEW fixture id — only status=finished rows count; Tokushima Vortis alias handling):\nwork-j1-015/q5-5dollar-report.md, work-j1-015/q5-unresolved-48.csv.\n\n## Q6 — STANDINGS SNAPSHOTS (pre-match points / played / rank)\nMethod: earlier-kickoff accumulation (never infer rank from post-kickoff outcomes). Official tie-break order verified\nfrom 3 consistent official sources: points → goal difference → goals scored → head-to-head (points → GD → GF) →\ndisciplinary points (fewer first) → draw. Evidence: work-j1-015/q6-tiebreak-official-evidence.md.\n\n- 2021–2025 full rebuilds: 3504 side-rows (760×3 + 612×2), one CSV per season\n  (work-j1-015/q6-standings-2021..2025-rebuild.csv), from transcribed Wikipedia result matrices\n  (wiki-2021..2025-results-matrix.txt; 2021 Urawa vs Shonan corrected to the official 0–3 forfeit).\n  points/played cross-checked against legacy values: 93/93 agree. Pre-final-round snapshots agree with known final\n  tables in all 5 seasons.\n- H2H mini-table adjudication (2021–2025): 93 side-rows = 76 fixtures; 16 side-rows / 15 fixtures resolved to a single\n  rank (2021: 2/13, 2022: 4/15, 2023: 5/16, 2024: 3/20, 2025: 1/12 fixtures); remaining 77 side-rows / 61 fixtures\n  recorded as rank_low–rank_high intervals with rank_resolved=FALSE (discipline points/draw unavailable — not guessed).\n  Adjudication detail: work-j1-015/q6-h2h-2021..2025-adjudication.csv. Unresolved list: q6-rank-unresolved.csv (93 rows).\n- 2018/2019: 1224 legacy side-rows verified (R1 all-zero check passed; counts 612+612).\n  Postponed-fixture recompute (25 fixtures, 50/50 side-rows, earlier-kickoff method):\n  work-j1-015/q6-postponed-recompute-2018-2019.csv — 46 side-rows confirm old values; 4 REAL CHANGES:\n  * j1_2019_sanfrecce_hiroshima_vs_kawasaki_frontale: H points 26→29, played 18→19; A points 37→38, played 18→19\n  * j1_2019_urawa_red_diamonds_vs_kashima_antlers: H points 24→27, played 18→19; A points 34→37, played 18→19\n- 2020: legacy round tables cover only 28/34 rounds (504 rows; rounds 23–26, 29, 32, 33 absent in the legacy source);\n  per-fixture 2020 pre-match side-rows were NOT re-verified this round → recorded as partial.\n\n## Q7 — VENUE / KICKOFF / TIMEZONE\n2670/2670 fixtures joined to stable_key. One CSV per season: work-j1-015/venue-schedule-{2018..2025}*.csv (+ raw dumps).\nSources: 2020–2024 official J.League schedule PDFs (text layer); 2018/2019 FBref J1 schedule pages\n(2019 promotion-playoff row excluded; 2018/2019 official PDFs returned HTTP 403 upstream_access_rejected — not retried,\nsee alt-source note); 2025 JLeague.jp alternate PDF pattern (2025-04-12 release).\n- Venue name TBD: 38 rows (2021: 32, 2023: 4, 2020: 1, 2024: 1).\n- Kickoff time EMPTY in source: 545 rows (2020: 90 R25–34; 2021: 115; 2022: 71; 2023: 81; 2024: 90 R30–38; 2025: 98 R29–38).\n- Date TBD: 2023: 9, 2024: 1, 2025: 7. 2025: 43 rows carry nominal-date-vs-canonical caveat flags.\n- TIMEZONE: no source carried a timezone → kickoff_timezone recorded as unknown for ALL 2670 rows; kickoff times\n  preserved as source-local, timezone never guessed. 2020 dates are the pre-pandemic original schedule (nominal values, caveat flagged).\n- Alt-source verification: 2018/2019 FBref rows cross-checked against canonical dates/rounds with 0 mismatch;\n  2025 alt PDF 0 round mismatch. Note: work-j1-015/q7-venue-alt-sources-note.md. FBref venue labels are English\n  originals (venue_verbatim_fbref_en).\n\n## EVIDENCE FILE INDEX (machine-readable rows; local paths)\n- q2-odds-gap-audit-matrix.csv (2670×fixture odds tokens) | q4-footballdata-gaps.csv (7650 cells) |\n  q4-pinnacle-closing-no-nowscore.csv (1590 rows) | q4-nowscore-coverage.md\n- venue-schedule-{2018,2019,2020,2021,2022,2023,2024,2025}*.csv (2670 rows total) + venue-schedule-raw-*.txt\n- q6-standings-2021..2025-rebuild.csv (3504 side-rows) | q6-postponed-recompute-2018-2019.csv (50) |\n  q6-h2h-2021..2025-adjudication.csv (93) | q6-rank-unresolved.csv (93) |\n  q6-tiebreak-official-evidence.md | wiki-2021..2025-results-matrix.txt\n- q5-5dollar-report.md | q5-unresolved-48.csv (48) | q1-browser-task-brief.md |\n  q1-p0-browser-evidence-20261002.json | q2-reconciliation.md | q4-reconciliation.md |\n  q3-odds-semantics-report.md | coverage-manifest.md\n(2018/2019 base snapshot side-rows and 2020 round tables: ~/workspace/ai-inbox/work-003/j1-standings-before-2018-2019.csv,\nj1-standings-jleague-2020.csv — legacy evidence reused, re-verified counts this round.)\n\n## CLOSED DURING THIS REQUEST\nUQ-15R2-01 postponed recompute ✓ | UQ-15R2-02 2023 rebuild ✓ | UQ-15R2-03 2025 rescheduled rounds ✓ |\nUQ-15R2-05 venue backfill via alt sources (2670/2670) ✓ | UQ-15R2-06 P0 browser check COMPLETED ✓\n\n## HONESTY STATEMENT\nNo value was fabricated. Conflicting/competing values were kept, not auto-selected. Every row carries source_url and\nfetched_at; rows with unclear provenance were excluded. Bundesliga/German data was never touched. True timestamped\nopenings and O_INTERVAL endpoints could not be produced through available channels — they are listed as unresolved\nwith reasons, not approximated.",
+    "audit": {
+      "identity": {
+        "expected": 2670,
+        "discovered": 2670,
+        "identity_matched": 2670,
+        "complete": 2670,
+        "partial": 0,
+        "missing": 0
+      },
+      "by_season": [
+        {
+          "season": 2018,
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306
+        },
+        {
+          "season": 2019,
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306
+        },
+        {
+          "season": 2020,
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306
+        },
+        {
+          "season": 2021,
+          "expected": 380,
+          "discovered": 380,
+          "identity_matched": 380
+        },
+        {
+          "season": 2022,
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306
+        },
+        {
+          "season": 2023,
+          "expected": 306,
+          "discovered": 306,
+          "identity_matched": 306
+        },
+        {
+          "season": 2024,
+          "expected": 380,
+          "discovered": 380,
+          "identity_matched": 380
+        },
+        {
+          "season": 2025,
+          "expected": 380,
+          "discovered": 380,
+          "identity_matched": 380
+        }
+      ],
+      "by_dimension": {
+        "venue_name": {
+          "complete": 2632,
+          "partial": 38,
+          "unavailable": 0,
+          "note": "38 rows stadium_tbd (2021:32, 2023:4, 2020:1, 2024:1)"
+        },
+        "kickoff_time": {
+          "complete": 2125,
+          "partial": 545,
+          "unavailable": 0,
+          "note": "545 rows kickoff empty in source"
+        },
+        "kickoff_timezone": {
+          "complete": 0,
+          "partial": 0,
+          "unavailable": 2670,
+          "note": "no source carried timezone; never guessed"
+        },
+        "standings_snapshot_points_played": {
+          "complete": 2364,
+          "partial": 306,
+          "unavailable": 0,
+          "note": "2020 partial: legacy round tables 28/34 rounds"
+        },
+        "prematch_rank": {
+          "complete": 2609,
+          "partial": 61,
+          "unavailable": 0,
+          "note": "61 fixtures rank interval unresolved (H2H still tied); 2020 rank basis partial"
+        },
+        "odds_closing_or_page_displayed_any_bookmaker": {
+          "complete": 2670,
+          "partial": 0,
+          "unavailable": 0,
+          "note": "union over bet365/Pinnacle/WH"
+        },
+        "odds_true_opening_timestamped": {
+          "complete": 0,
+          "partial": 0,
+          "unavailable": 2670,
+          "note": "structurally absent in all offline sources"
+        },
+        "provider_5dollar_fixture_id": {
+          "complete": 0,
+          "partial": 0,
+          "unavailable": 48,
+          "note": "checklist never delivered; API key required (Ultra tier)"
+        }
+      }
+    },
+    "unresolved_queue": [
+      {
+        "id": "UQ-15R2-04",
+        "target": "H2H mini-table adjudication for 61/76 tie fixtures (2021–2025); rank recorded as rank_low–rank_high interval, rank_resolved=FALSE (77/93 side-rows)",
+        "reason": "discipline-points and draw data unavailable through text channels; needs official fair-play data. Files: q6-rank-unresolved.csv, q6-h2h-2021..2025-adjudication.csv"
+      },
+      {
+        "id": "UQ-15R2-06",
+        "target": "Q1 odds interval endpoints: P0 COMPLETED (OddsPortal US edition has no Pinnacle); P1 (17 bet365 fixtures) parent-dispatched browser task RESULT PENDING at write time; P2 (1590 Pinnacle earliest/latest ticks), P3 (1509 bet365 closing), P4 (1600 WH) need per-fixture live-browser attempts (betexplorer/TotalCorner/Bettors.club/唯彩/nowscore)",
+        "reason": "text channels exhausted: FD has no opening columns, nowscore rows have no timestamps, OddsPortal US catalog excludes Pinnacle/WH. Brief: q1-browser-task-brief.md; P0 evidence: q1-p0-browser-evidence-20261002.json"
+      },
+      {
+        "id": "UQ-15R2-07",
+        "target": "48 5Dollar provider_fixture_ids",
+        "reason": "48-row per-fixture checklist never delivered to repo (upstream-local only); 5DollarFootballAPI requires API key on every request and 2018–2025 J1 needs Ultra tier — no key available. Report: q5-5dollar-report.md"
+      },
+      {
+        "id": "UQ-15R2-08",
+        "target": "2020 pre-match snapshots: legacy round tables cover only 28/34 rounds (rounds 23–26, 29, 32, 33 absent); 2020 per-fixture side-rows not re-verified",
+        "reason": "source gap in legacy evidence (~/workspace/ai-inbox/work-003/j1-standings-jleague-2020.csv, 504 rows)"
+      },
+      {
+        "id": "UQ-15R2-09",
+        "target": "Venue name TBD for 38 rows (2021: 32, 2023: 4, 2020: 1, 2024: 1)",
+        "reason": "source-marked TBD; no alternative source carried a venue name"
+      },
+      {
+        "id": "UQ-15R2-10",
+        "target": "Kickoff time empty for 545 rows (2020: 90, 2021: 115, 2022: 71, 2023: 81, 2024: 90, 2025: 98); kickoff timezone unknown for all 2670 rows",
+        "reason": "later-round schedules were preliminary in source; no source carried a timezone (never guessed)"
+      },
+      {
+        "id": "UQ-15R2-11",
+        "target": "2025 R29–38 preliminary schedule: 98 kickoff TBD, 7 date TBD, 43 nominal-date-vs-canonical caveat flags",
+        "reason": "official PDF is the 2025-04-12 preliminary release; needs the final schedule when published"
+      }
+    ]
+  },
+  "fetched_at": "2026-10-02T17:33:21+08:00",
+  "request_sha": "4c8c05f0668423d9",
+  "note": "Final receipt written by dedicated subagent 2026-10-02 ~17:3x CST. Text-channel work complete and re-verified this session (counts: venue 2670/2670 joined, 3504 rebuild side-rows 2021–2025, H2H 16/93 side-rows resolved, postponed recompute 50/50 with 4 real changes, odds matrix 2670 rows). 486-caliber from request Q4 shown non-reproducible (old snapshot). Browser-only remainder (Q1 P1–P4, P1 result pending) and blocked items (5Dollar, H2H intervals) recorded in unresolved_queue with reasons. No Bundesliga/German data touched. No commit/push performed — parent handles."
+}
