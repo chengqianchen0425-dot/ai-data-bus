@@ -2,15 +2,28 @@
   "id": "req-20261002-002",
   "type": "deep_research",
   "params": {
-    "topic": "Bundesliga near-eight-season row-level historical fixture and bookmaker odds supplement for incremental Qimen shadow research",
+    "topic": "J1 2018–2025 四类缺口的逐场证据补充：赔率区间、642赔率缺口、48场身份对账、赛前积分",
     "questions": [
-      "For Bundesliga seasons 2018-19 through 2025-26, collect or assess row-level public sources for every match using exact identity keys season, match_date, home_team, away_team, including 90-minute result and home/away goals.",
-      "For each match, collect separate Bet365, Pinnacle, and William Hill 1X2 fields when directly evidenced, plus total-goals/OU fields where available. If a page contains a bookmaker label resembling Belle or another alias, report the exact displayed label and do not map it silently.",
-      "Keep opening, pre-closing, closing, and historical-tick semantics separate. If true opening is unavailable, return pre-closing and/or closing as separate fields with O_PRE_CLOSE or O_CLOSE semantics; never rename them opening.",
-      "Return structured row-level data or a machine-readable coverage manifest with source_url, final_url, fetched_at, source_hash when possible, bookmaker, market, field semantics, and evidence notes. Do not infer Qimen palace, Q/F/G/I tokens, model direction, or predictions from scores, standings, odds, or prose.",
-      "Report season-by-season audit totals: expected matches, discovered, identity-matched, complete, partial, unavailable, conflicts, and unresolved_queue. Explicitly separate the five currently available local seasons from the three seasons missing in the local SQ database.",
-      "Assess whether the returned data is suitable for an incremental O_INTERVAL odds structure screen. If true opening is unavailable, state the exact safe fallback as pre-closing-to-closing interval and identify which seasons/bookmakers/markets remain unavailable."
+      "对 J1 2018–2025 2,670 场逐场查找同一博彩公司 earliest verified pre-match 与 latest verified pre-match 赔率 tick，Bet365、Pinnacle、William Hill 分开返回；每行必须有 recorded_at、pre_match_marker、market、home/draw/away、source_url、field_locator、source_sha256。找不到就逐场返回 unavailable，不要用 closing 冒充 opening。",
+      "针对已映射 J1 2021–2025 的 642 个 5DollarFootballAPI unavailable odds fields，尝试 NowScore、Titan007、OddsPortal、500.com、zgzcw 或其他明确来源逐场补充；Bet365/Pinnacle/William Hill 和 opening/closing 或 interval 语义必须分列，冲突不得自动覆盖。",
+      "针对本地没有 provider fixture id 的 48 场 J1 比赛，按 season/date/home/away 建立公开来源 crosswalk，返回唯一 provider id 或 stable_match_key；歧义行保留 unresolved。",
+      "针对 J1 2018–2025 逐场返回 rank_before、points_before、played_before；优先 Transfermarkt 逐轮页面或其他明确赛前快照。API-Football season standings 只能作为终态参考，不能代替赛前积分。首轮 rank、同分并列和无法确认的快照时点必须标记 unavailable。",
+      "不要返回或推导 qimen_output、F关系、G能量、I周期战意、Miss标签、预测概率或赛果驱动字段；这些只保留 unavailable。"
     ]
   },
-  "created_at": "2026-10-02T09:10:00+08:00"
+  "created_at": "2026-10-02T09:00:00+08:00",
+  "scope": {
+    "competition_key": "j1_league",
+    "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "league_only": true,
+    "exclude_competitions": ["j2_league", "j3_league", "emperor_cup", "league_cup"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
 }
