@@ -1,1 +1,81 @@
-{"id":"req-20261002-008","status":"processing","note":"研究进行中：La Liga SP1 fixture-gap 对账","request_sha":"e288ad591fcb7a5b"}
+{
+  "id": "req-20261002-008",
+  "status": "ok",
+  "data": {
+    "report": "# La Liga SP1 Incremental Fixture-Gap Reconciliation — Evidence Report (req-20261002-008)\n\nScope: La Liga seasons 2018/19, 2024/25, 2025/26. Retrieval window: 2026-10-02 09:42–10:05 CST.\nRole: evidence collector only. No Qimen palaces, F/I/G tokens, model directions, or conclusions were generated (per request §4d).\n\n## Q(a) 2018/19 — row-level schedule with local kickoff time + official round\n\n### Primary schedule source (rounds + local kickoff times)\n- **URL:** https://raw.githubusercontent.com/openfootball/es-espana/master/2018-19/1-liga.txt\n- **final_url:** https://raw.githubusercontent.com/openfootball/es-espana/master/2018-19/1-liga.txt (direct file; no redirects)\n- **retrieved_at:** 2026-10-02T09:45+08:00\n- **field_locator:** text blocks `▪ Matchday N` → `  <Weekday> <Mon> <DD> [(<YYYY>)]` → `    <HH:MM>  <Home>  v  <Away>  <HG>-<AG> (<HTHG>-<HTAG>)`. Rows sharing a kickoff slot omit the time (inherit previous line's time). Times are Spain-local (CEST in Aug–Oct/Mar–May; CET in Nov–Feb).\n- **source_sha256:** 01121b41832cdd3349771de9e2bfc8c656b35961555f1198254f0648253a14fc\n- **coverage:** 38 matchdays × 10 = 380 fixtures.\n\n### Corroborating source (dates + results identity)\n- **URL / final_url:** https://www.football-data.co.uk/mmz4281/1819/SP1.csv\n- **retrieved_at:** 2026-10-02T09:44+08:00\n- **field_locator:** CSV header `Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,...` (no `Time` column in the 1819 format). Crosswalk key = (Date, canon(Home), canon(Away)) with NFKD accent normalization + alias map {Athletic Club/Ath Bilbao→bilbao, Rayo Vallecano→vallecano, Atlético/Ath Madrid→madrid, Real Sociedad→sociedad, Espanyol (Español)→espanol, etc.}\n- **source_sha256:** 9b8cece2c85e90e382b30dc4fc5046534f12c6d2b0efa74cd7d1d52e90a0c201\n- **crosswalk result:** matched=380 / unmatched=0 / score_mismatch=0. Every OpenFootball row found in football-data SP1_1819 on (date, home, away) and full-time scores agree on all 380.\n- Full row-level crosswalk artifact: generated locally during research (not pushed to repo): `/tmp/req008/crosswalk_1819.csv` — 380 rows [matchday, date, time_cet, of_home, of_away, canon_home, canon_away, in_fd, score_match].\n\n### Timezone caveat (verified)\n- Verified against Athletic Club official match pack: Athletic Bilbao v Getafe, 15/08/2024, official kickoff **19:00 CEST** (https://www.athletic-club.eus/en/news/2024/08/15/match-pack-athletic-club-vs-getafe-cf/). football-data.co.uk `Time` column for the same fixture reads **18:00** → football-data `Time` is **UK-local (BST/GMT), NOT Spain-local**. OpenFootball 20:15/22:15-style times are Spain-local (CEST). Q(b) does not require kickoff times, but do not treat the two sources' time columns as the same timezone.\n\n## Q(b) 2024/25 + 2025/26 — API5 odds gap queue (Bet365 / Pinnacle / William Hill 1X2 only)\n\nAll row-level odds below come from one stable source; no API-Football and no true-opening substitution was made.\n\n### Source & semantics\n- **2024/25 URL / final_url:** https://www.football-data.co.uk/mmz4281/2425/SP1.csv — retrieved 2026-10-02T09:44+08:00 — sha256 c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36\n- **2025/26 URL / final_url:** https://www.football-data.co.uk/mmz4281/2526/SP1.csv — retrieved 2026-10-02T09:44+08:00 — sha256 4ca2e285f3ee0702f6bc55fcaa4f5a15cb3aef6220735a1d15398131e21d63f5\n- **Bookmaker column keys** (per https://www.football-data.co.uk/notes.txt, retrieved 2026-10-02T09:45+08:00): Bet365 = `B365H/B365D/B365A`; Pinnacle = `PSH/PSD/PSA`; William Hill = `WHH/WHD/WHA`.\n- **Time semantics (from notes.txt, verbatim):** base odds columns are **pre-closing** — \"Betting odds for weekend games are collected Friday afternoons, and on Tuesday afternoons for midweek games.\" Columns with a `C` suffix (`B365CH/B365CD/B365CA`, `PSCH/PSCD/PSCA`, `WHCH/WHCD/WHCA`) are **closing** odds. Neither is a **true opening** quote; the base columns must NOT be relabeled as opening.\n- **Live odds:** not published by this source → no evidence.\n\n### 2024/25 — 380 fixtures, all played (15/08/2024–25/05/2025)\n| bookmaker | tier | columns | fixtures with values | gap |\n|---|---|---|---|---|\n| Bet365 | pre-closing | B365H/B365D/B365A | 380/380 | 0 |\n| Bet365 | closing | B365CH/B365CD/B365CA | 380/380 | 0 |\n| Pinnacle | pre-closing | PSH/PSD/PSA | 380/380 | 0 |\n| Pinnacle | closing | PSCH/PSCD/PSCA | 380/380 | 0 |\n| William Hill | pre-closing | WHH/WHD/WHA | 279/380 | 101 fixtures NULL (rows preserved) |\n| William Hill | closing | WHCH/WHCD/WHCA | 278/380 | 102 fixtures NULL |\nSample row (fixture: 2024-08-15, Ath Bilbao v Getafe): B365=(1.48, 4.00, 8.00), PS=(1.48, 4.12, 8.24), WH=(1.44, 4.00, 8.50) — pre-closing tier.\n\n### 2025/26 — 380 fixtures listed; all 380 played (15/08/2025–24/05/2026)\nNote: the request assumes 2025/26 is in progress; the data shows all 380 fixtures have full-time scores through 24/05/2026, i.e. the season is complete in this source. expected was therefore set to 380 completed fixtures, not a partial round count.\n| bookmaker | tier | columns | fixtures with values | gap |\n|---|---|---|---|---|\n| Bet365 | pre-closing | B365H/B365D/B365A | 380/380 | 0 |\n| Bet365 | closing | B365CH/B365CD/B365CA | 380/380 | 0 |\n| Pinnacle | pre-closing | PSH/PSD/PSA | 189/380 | 191 fixtures NULL (supply stops after 2026-01-12 Sevilla v Celta; nothing from 2026-01-16 onward) |\n| Pinnacle | closing | PSCH/PSCD/PSCA | 188/380 | 192 fixtures NULL |\n| William Hill | pre-closing | WHH/WHD/WHA | 0/380 — columns **absent** from 2526 file format | all |\n| William Hill | closing | WHCH/WHCD/WHCA | 0/380 — columns **absent** | all |\n\n### Fixture IDs for gap rows\nRows are keyed (Div=SP1, Date dd/mm/yyyy, HomeTeam, AwayTeam) in the CSVs. The William Hill gap rows (2024/25, 101 pre-close / 102 closing) and the post-2026-01-12 Pinnacle gap rows (2025/26) are all preserved as NULL rows in the source files; exact date/home/away lists can be extracted from the CSVs by filtering empty `WHH` / `PSH` fields. No conflicts observed: 0 (no second source provided row-level odds for the same fixtures).\n\n## Q(c) 103-match provenance pack\nNo entity file for a \"103-match provenance pack\" exists anywhere in the repo (only the request texts mention it). Per instructions it was used only as an audit reference; no venue, true-solar, team-lifecycle, Qimen, relation, direction, result, or odds fields were recreated or inferred from it. → recorded in unresolved_queue.\n\n## Per-season audit summary\n| season | expected | discovered | complete | partial | missing | unmatched | conflict |\n|---|---|---|---|---|---|---|---|\n| 2018/19 schedule | 380 | 380 | 380 (round+local time+date, crosswalked) | 0 | 0 | 0 | 0 |\n| 2024/25 odds (3 bookmakers) | 380 | 380 | 279 (all 3 bookmakers both tiers) | 101 (William Hill NULL) | 0 | 0 | 0 |\n| 2025/26 odds (3 bookmakers) | 380 | 380 | 189 (WH absent from format) | 191 (Pinnacle NULL / WH absent) | 0 | 0 | 0 |\n| TOTAL | 1140 | 1140 | 848 | 292 | 0 | 0 | 0 |\n",
+    "audit": {
+      "expected": 1140,
+      "discovered": 1140,
+      "complete": 848,
+      "partial": 292,
+      "missing": 0,
+      "unmatched": 0,
+      "conflict": 0,
+      "unavailable": "true-opening rows (no static public source); live odds; William Hill columns absent from 2526 file format; 103-match provenance pack entity file",
+      "blocked": [
+        "Soccerway 2018/19 matches page (JS-render shell only)",
+        "worldfootball.net all_matches 2018-2019 (HTTP 403)",
+        "rsssf.org tablesp spa2019.html (HTTP 404)",
+        "oddsportal.com laliga-2024-2025 results (fetch transport timeout)"
+      ]
+    },
+    "unresolved_queue": [
+      {
+        "item": "True opening 1X2 odds (Bet365/Pinnacle/William Hill) for La Liga 2024/25 + 2025/26",
+        "status": "not-queried",
+        "reason": "No static public source reachable via text fetch. BetExplorer and OddsPortal require JS rendering; OddsPortal fetch timed out this round. Win007/NowScore, zgzcw.cn, 500.com require match-ID mapping (not attempted). football-data base columns are pre-closing (Friday/Tuesday afternoon collection) and must not be relabeled as opening.",
+        "next": "needs live-browser task to read BetExplorer/OddsPortal match pages"
+      },
+      {
+        "item": "Live in-play 1X2 odds rows",
+        "status": "not-queried",
+        "reason": "football-data.co.uk does not publish live odds; no other static source attempted.",
+        "next": "live data feed, out of scope for static evidence"
+      },
+      {
+        "item": "William Hill 1X2 rows for 2025/26 (380 fixtures)",
+        "status": "unavailable",
+        "reason": "WHH/WHD/WHA and WHCH/WHCD/WHCA columns do not exist in the SP1 2526 file format (131 columns, no William Hill). Not a row-level gap — a format gap.",
+        "next": "alternative row-level source (BetExplorer JS / OddsPortal) via live browser"
+      },
+      {
+        "item": "Pinnacle 1X2 rows for 2025/26 fixtures from 2026-01-16 onward (~191 fixtures pre-close, ~192 closing)",
+        "status": "unavailable",
+        "reason": "PSH/PSD/PSA (189/380) and PSCH/PSCD/PSCA (188/380) stop after 2026-01-12 Sevilla v Celta in the source file.",
+        "next": "alternative source via live browser"
+      },
+      {
+        "item": "William Hill 1X2 rows for 2024/25: 101 fixtures pre-close NULL / 102 closing NULL",
+        "status": "unavailable",
+        "reason": "Rows preserved with empty WHH/WHD/WHA (WHCH/WHCD/WHCA) fields in source CSV; not reconstructed.",
+        "next": "alternative source via live browser"
+      },
+      {
+        "item": "103-match provenance pack cross-check",
+        "status": "not-queried",
+        "reason": "No entity file found in repo (only mentioned in request text of req-20261001-004 and req-20261002-008). Not recreated per instructions.",
+        "next": "requester to supply the pack file"
+      },
+      {
+        "item": "Soccerway 2018/19 schedule corroboration",
+        "status": "blocked",
+        "reason": "Page returns JS-render shell ('Loading...') to text fetch.",
+        "next": "live browser"
+      },
+      {
+        "item": "WorldFootball.net 2018/19 schedule corroboration",
+        "status": "blocked",
+        "reason": "HTTP 403 access denied; not retried per policy.",
+        "next": "live browser with different route or drop"
+      },
+      {
+        "item": "2025/26 season completion assumption",
+        "status": "conflict",
+        "reason": "Request assumes 2025/26 in progress; source data shows all 380 fixtures played through 24/05/2026. Expected set to 380 completed fixtures, flagged for validator.",
+        "next": "validator to confirm season calendar"
+      }
+    ]
+  },
+  "fetched_at": "2026-10-02T10:05:00+08:00",
+  "request_sha": "e288ad591fcb7a5b"
+}
