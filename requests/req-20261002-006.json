@@ -1,0 +1,30 @@
+{
+  "id": "req-20261002-006",
+  "type": "deep_research",
+  "params": {
+    "topic": "日本 J1 League 2018-2025 only: corrected scope retry after Bundesliga/J1 collision",
+    "questions": [
+      "MANDATORY SCOPE CHECK: This request is ONLY for Japan J1 League (日本 J1 / J.League Division 1), seasons 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025. Before any research, return scope_confirmation with competition_key=j1_league, country=Japan, seasons=[2018,2019,2020,2021,2022,2023,2024,2025].",
+      "Do not research, cite, summarize, or return any Bundesliga/Germany/D1 data. Exclude J2, J3, Emperor's Cup, Levain Cup and all non-J1 competitions.",
+      "After scope confirmation, recover only J1 row-level gaps: same-bookmaker earliest verified pre-match to latest verified pre-match 1X2 observations for Bet365/Pinnacle/William Hill separately; the 642 known unavailable 5Dollar fields; the 48 unmapped J1 fixture identities; and pre-kickoff rank_before/points_before/played_before.",
+      "Each returned row must include season, date, home, away, bookmaker/market/phase, value or NULL, source_url, final_url, retrieved_at, field_locator and source_sha256. Preserve unavailable and conflicts; never relabel closing or pre-closing as true opening.",
+      "Do not infer qimen_output, Qimen palaces, F relation, G energy, I cycle/intent, Miss labels, probabilities or outcome-derived fields."
+    ]
+  },
+  "created_at": "2026-10-02T09:20:00+08:00",
+  "scope": {
+    "competition_key": "j1_league",
+    "country": "Japan",
+    "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "league_only": true,
+    "exclude_competitions": ["bundesliga", "germany_d1", "j2_league", "j3_league", "emperor_cup", "levain_cup"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_scope_confirmation_plus_row_level_evidence_and_unresolved_queue",
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
