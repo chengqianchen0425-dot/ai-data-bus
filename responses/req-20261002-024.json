@@ -1,0 +1,8 @@
+{
+ "id": "req-20261002-024",
+ "status": "processing",
+ "request_sha": "55f6803093fd13fe",
+ "dp_used": false,
+ "note": "研究进行中：从 worldfootball.net all_matches 页面按(日期,主客队,90分钟比分) join 补 844 场 official_round、2018/19 306 场 kickoff_local；venue 仅当有明确逐场来源时补，否则保留 null",
+ "fetched_at": "2026-10-02T15:45:00Z"
+}
