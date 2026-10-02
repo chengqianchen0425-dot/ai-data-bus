@@ -1,0 +1,33 @@
+{
+  "id": "req-20261002-004",
+  "type": "deep_research",
+  "params": {
+    "topic": "MLS 2018-2025 八个已完成赛季历史逐场数据与赔率缺口恢复，只限 MLS 联赛",
+    "questions": [
+      "范围确认：只处理 MLS 2018、2019、2020、2021、2022、2023、2024、2025 八个完整赛季；排除 USL、MLS Next Pro、杯赛、季前赛和其他联赛。先返回每赛季理论场次、实际发现行数和赛程覆盖。",
+      "逐场恢复比赛身份：season、date、kickoff、home_team、away_team、provider_fixture_id 或 stable_match_key、90分钟比分（若来源明确提供）；每行保留 source_url、final_url、retrieved_at、field_locator 和 source_sha256。",
+      "赔率按博彩公司和时间语义分开查找：Pinnacle、William Hill、Bet365 优先，其他可验证公司也可单列；尽可能返回 true opening、earliest verified pre-match、pre-closing、latest verified pre-match、closing，并分别给出 1X2 和总进球 OU2.5。能取得哪一种就返回哪一种，不要求必须有 opening；绝不把 pre-closing 或 closing 改名为 opening。",
+      "优先使用可批量核验的公开来源；批量来源不足时，尝试明确的逐场来源。逐场值必须带比赛身份、博彩公司、market、phase、recorded_at 或时间语义、home/draw/away（或 over/under）、source_url、field_locator 和 source_sha256；找不到、页面空、访问失败、字段无法解析分别标记 unavailable、blocked 或解析失败，不猜值。",
+      "检查 Football-Data、API-Football、5DollarFootballAPI、OddsPortal、NowScore、500.com、足彩网和其他明确来源是否覆盖 MLS 八年；报告每个来源的真实字段语义、按赛季和博彩公司 coverage、complete/partial/unavailable/blocked/conflict 数量。不得把 API-Football 的赛程接口当成赔率接口。",
+      "如不同来源或同一比赛出现冲突，逐条保留冲突值和来源，进入 unresolved_queue，不自动覆盖；输出可直接供本地 crosswalk 和 Shadow 区间研究使用的行级数据或分批结果。",
+      "不要推导 qimen_output、九宫宫位、F关系、G能量、I周期、模型第一方向、Miss 标签、结构候选、正式概率、Outcome、Review 或 Gold；这些字段不返回或保持 unavailable。"
+    ]
+  },
+  "created_at": "2026-10-02T10:00:00+08:00",
+  "scope": {
+    "competition_key": "mls",
+    "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "league_only": true,
+    "exclude_competitions": ["usl_championship", "mls_next_pro", "concacaf_champions_cup", "us_open_cup", "leagues_cup", "preseason"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "row_level_data_preferred": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
