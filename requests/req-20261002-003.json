@@ -1,0 +1,29 @@
+{
+  "id": "req-20261002-003",
+  "type": "deep_research",
+  "params": {
+    "topic": "ONLY Japan J1 League 2018-2025: row-level odds interval, fixture crosswalk, and pre-match standings gap recovery",
+    "questions": [
+      "Scope gate: Japan J1 League only, seasons 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025; exclude J2/J3 and all cups. Return scope confirmation first.",
+      "For each available fixture, find same-bookmaker earliest verified pre-match and latest verified pre-match 1X2 observations. Keep Bet365, Pinnacle, William Hill separate. Each row must include recorded_at, pre_match_marker, market, home/draw/away, source_url, field_locator, retrieved_at and source_sha256. If unavailable, preserve NULL/unavailable; never relabel closing as opening.",
+      "For the 642 known 5DollarFootballAPI unavailable bookmaker fields and 48 unmapped J1 fixture identities, attempt row-level fallback sources and return unique stable keys, bookmaker, phase and exact values only when directly evidenced. Ambiguous rows remain unresolved.",
+      "For every J1 fixture, find rank_before, points_before and played_before from a dated pre-kickoff or previous-round snapshot. Do not use final standings or API-Football season snapshots as pre-match values. Mark first-round rank, tied-rank ambiguity and unverified snapshot timing as unavailable.",
+      "Do not infer or return qimen_output, Qimen palaces, F relation, G energy, I cycle/intent, Miss labels, probabilities or outcome-derived fields."
+    ]
+  },
+  "created_at": "2026-10-02T09:10:00+08:00",
+  "scope": {
+    "competition_key": "j1_league",
+    "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "league_only": true,
+    "exclude_competitions": ["j2_league", "j3_league", "emperor_cup", "league_cup"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
