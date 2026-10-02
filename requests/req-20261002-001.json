@@ -1,0 +1,32 @@
+{
+  "id": "req-20261002-001",
+  "type": "deep_research",
+  "params": {
+    "topic": "日本 J1 League 最近八个已完成赛季（2018–2025）历史逐场数据与赔率来源恢复，严格排除 J2",
+    "questions": [
+      "确认 J1 2018、2019、2020、2021、2022、2023、2024、2025 的逐场总数、赛程、日期、当地开球时间、主客队、官方轮次、场馆和时区；保留每行来源 URL、字段定位、覆盖数和缺失原因。",
+      "为每场尽可能寻找 Bet365、Pinnacle、William Hill 的 1X2 赔率，并分别标明 true opening、pre-closing、closing、latest 或 unavailable；不要把 pre-closing 或 closing 改名为 opening。",
+      "为每场尽可能寻找 Bet365/Pinnacle/William Hill 的总进球赔率（优先 OU2.5，若来源提供其他总进球盘口也单列），保留 bookmaker、market、phase 和时间语义；缺失保持 NULL/unavailable。",
+      "寻找每场开球前的 rank_before、points_before、played_before；只能使用明确的赛前或上一轮结束快照，不能用最终积分榜倒推。记录赛季、轮次、快照时点和来源。",
+      "整理 2018–2025 在 J1 出现的球队注册信息：club-lineage natal_year、首次进入 J1 的 competition_entry_year、别名/更名/升降级和来源；不含 J2 参赛年替代值。",
+      "核验各候选来源是否真正覆盖八年 J1，分别报告 complete、partial、unavailable、blocked、conflict；返回 unresolved_queue。",
+      "不要推导或猜测 qimen_output、宫位、F 关系、G 能量、I 周期战意、Miss 1/Miss 2、赛果标签或正式预测；这些字段只返回明确来源证据或 unavailable。"
+    ]
+  },
+  "created_at": "2026-10-02T08:40:00+08:00",
+  "scope": {
+    "competition_key": "j1_league",
+    "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "league_only": true,
+    "exclude_competitions": ["j2_league", "j3_league", "emperor_cup", "league_cup"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_unresolved_queue",
+    "row_level_data_preferred": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
