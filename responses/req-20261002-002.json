@@ -1,6 +1,6 @@
 {
   "id": "req-20261002-002",
   "status": "processing",
-  "note": "研究进行中：J1 2018-2025 四类缺口逐场证据补充。10:24 轮接管后复核 crosswalk 2670/2670 全对。worldfootball.net 日期抓取第一轮失败：我给的 URL 模式 /all_matches/jpn-j-league-YYYY/ 在真浏览器返回 404（模式错误），且浏览器会话中途崩溃，8 季 0 行提取。已用文本搜索找到正确模式：https://www.worldfootball.net/competition/co48/japan-j1-league/se63746/2024/results-and-standings/（2024 页已验证，含按轮分组的日期+对阵）。重试方案：从该 2024 页用站内赛季选择器切到 2018–2023、2025（不再猜 slug）；注意站内时间疑似 CET 显示、日期原样抄录即可。合并脚本 build_dates.py 已就绪（含别名表，新增 fc machida zelvia→machida_zelvia）。赔率 earliest/latest tick 仍 0/16020；赛前积分 4/2670；642 缺失字段/48 fixture id 上游清单仍不可见（B-UQ-01/02）。request_sha 不变。",
+  "note": "研究进行中：J1 2018-2025 四类缺口逐场证据补充。10:24 轮接管后复核 crosswalk 2670/2670 全对。worldfootball.net 日期抓取第一轮失败：我给的 URL 模式 /all_matches/jpn-j-league-YYYY/ 在真浏览器返回 404（模式错误），且浏览器会话中途崩溃，8 季 0 行提取。已用文本搜索找到正确模式：https://www.worldfootball.net/competition/co48/japan-j1-league/se63746/2024/results-and-standings/（2024 页已验证，含按轮分组的日期+对阵）。重试已派发：从验证过的 2024 页用站内赛季选择器切 2018–2023、2025（不再猜 slug）；时间疑似 CET 显示、日期原样抄录。结果回传后跑 build_dates.py 合并。合并脚本 build_dates.py 已就绪（含别名表，新增 fc machida zelvia→machida_zelvia）。赔率 earliest/latest tick 仍 0/16020；赛前积分 4/2670；642 缺失字段/48 fixture id 上游清单仍不可见（B-UQ-01/02）。request_sha 不变。",
   "request_sha": "cb7ee5725d870106"
 }
