@@ -2,17 +2,16 @@
   "id": "req-20261002-007",
   "type": "deep_research",
   "params": {
-    "topic": "Bundesliga near-eight-season row-level historical fixture and bookmaker odds supplement for incremental Qimen shadow research",
+    "topic": "Ligue 1 France 2018/19-2020/21 row-level fixture, 90-minute result, team metadata, and bookmaker odds recovery",
     "questions": [
-      "For Bundesliga seasons 2018-19 through 2025-26, collect or assess row-level public sources for every match using exact identity keys season, match_date, home_team, away_team, including 90-minute result and home/away goals.",
-      "For each match, collect separate Bet365, Pinnacle, and William Hill 1X2 fields when directly evidenced, plus total-goals/OU fields where available. If a page contains a bookmaker label resembling Belle or another alias, report the exact displayed label and do not map it silently.",
-      "Keep opening, pre-closing, closing, and historical-tick semantics separate. If true opening is unavailable, return pre-closing and/or closing as separate fields with O_PRE_CLOSE or O_CLOSE semantics; never rename them opening.",
-      "Return structured row-level data or a machine-readable coverage manifest with source_url, final_url, fetched_at, source_hash when possible, bookmaker, market, field semantics, and evidence notes. Do not infer Qimen palace, Q/F/G/I tokens, model direction, or predictions from scores, standings, odds, or prose.",
-      "Report season-by-season audit totals: expected matches, discovered, identity-matched, complete, partial, unavailable, conflicts, and unresolved_queue. Explicitly separate the five currently available local seasons from the three seasons missing in the local SQ database.",
-      "Assess whether the returned data is suitable for an incremental O_INTERVAL odds structure screen. If true opening is unavailable, state the exact safe fallback as pre-closing-to-closing interval and identify which seasons/bookmakers/markets remain unavailable."
-    ],
-    "note": "Re-issued with fresh id: original req-20261002-002 was overwritten by a J1 request (id reuse); Bundesliga task restored from git history commit 9aca6ae.",
-    "note_to_codex": "情况说明：你 09:06 发的德甲八季单（req-20261002-002）之后被你自己的 J1 请求覆盖了 id，导致德甲任务丢失。我已把德甲原请求从 git 历史恢复，以新 id req-20261002-007 重新发出；002 现在是 J1 缺口补充单（已 ok）。以后新任务请用新 id，不要复用已发过的 id，协议 v2.3 已明确。"
+      "仅处理法国 Ligue 1（F1）2018/19、2019/20、2020/21，排除杯赛、友谊赛和其他联赛。逐场返回 season、match_date、kickoff（含时区时保留）、home_team、away_team、home_score_ft、away_score_ft、result_90m、venue、稳定比赛键或 provider_fixture_id，并保留 source_url、final_url、retrieved_at、field_locator、source_sha256。赛果只记录90分钟含伤停补时，不把加时、点球或晋级结果替代90分钟赛果。",
+      "查找三季可核验的逐场赛程和赛果来源，并与 football-data.co.uk F1.csv 或其他公开逐场来源交叉核验。若 local case_id 无法直接匹配，返回确定性的 season+date+normalized_home+normalized_away crosswalk_key，不要按年份猜 fixture_id。",
+      "逐场查找 Bet365、Pinnacle、William Hill 的 1X2 和可获得的 total-goals/OU 赔率；博彩公司和市场必须分开。每个字段分别标注 true opening、earliest verified pre-match/pre-closing、latest verified pre-match、closing 或 unavailable。不要把 football-data 非 C 列改名为 opening；不要把 API-Football 当作博彩公司赔率。",
+      "优先使用可审计的行级或单场来源（football-data、NowScore/Win007、500.com、BetExplorer、OddsPortal 等），记录每个来源的 URL、最终 URL、抓取时间、字段定位和 SHA-256。来源只显示快照而没有 opening/closing 语义时，保留为 unknown 或 unavailable，不要推断。",
+      "统计每一季、每个字段和每家 bookmaker 的 expected、discovered、complete、partial、matched、unmatched、duplicate、conflict、unavailable、blocked；返回 unresolved_queue，逐项列出缺失赛季、比赛身份、bookmaker、market、field 和原因。保留 NULL 缺口，不编造数值。",
+      "评估这些数据是否足以与本地 case_id 和完整赛前 qimen_output.json 做严格 crosswalk。不得从赛果、赔率、球队关系文字或外部说明反推 Qimen 九宫、Q/F/I/G/M token、模型方向或盘面解释；Qimen 来源门禁保持为本地验证。",
+      "结果只能作为补充台账和 Shadow 研究证据，不得修改 Snapshot、Outcome、Review、Gold、正式模型、正式检索 SQLite 或已有报告。"
+    ]
   },
-  "created_at": "2026-10-02T09:21:00+08:00"
+  "created_at": "2026-10-02T10:30:00+08:00"
 }
