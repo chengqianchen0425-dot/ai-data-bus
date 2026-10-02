@@ -1,1 +1,6 @@
-{"id": "req-20261002-016", "status": "processing", "note": "2026-10-02 17:32 CST：子代理交付完成——2018 391/2019 408/2020 292（+8取消），missing=0，audit定稿，行级文件在work-mls-016/。2020年77行缺kickoff（文本渠道FBref被403/worldfootball 403，均已按指示停手），真浏览器任务已派发读取mlssoccer.com 2020官方赛程归档补开球时间。待结果回来写最终ok回执。", "request_sha": "f60a11332058133d"}
+{
+  "id": "req-20261002-016",
+  "status": "processing",
+  "note": "2026-10-02 17:47 CST：子代理接手重建——work-016/ 行级证据已重建（ESPN 公开 API 独立重建）：2018 391 行全 complete、2019 408 行全 complete、2020 292 full_time 全 complete + 3 postponed + 7 canceled（10 行 partial，见 unresolved-queue.md）。前轮 77 缺 kickoff 已用 ESPN 恢复（0 缺失）；待母代理转发 mlssoccer.com 2020 官方归档开球时间后做交叉核对，再写最终 ok。注意：AGENTS.md 提醒本轮接手基于 mtime 时区误读——上一轮 17:23 CST 刚更新过（非停滞），其 note 称行级文件在 work-mls-016/（该目录不存在），本轮已实际重建。",
+  "request_sha": "f60a11332058133d"
+}

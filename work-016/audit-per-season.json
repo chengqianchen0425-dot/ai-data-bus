@@ -1,0 +1,29 @@
+{
+ "2018": {
+  "discovered": 391,
+  "full_time": 391,
+  "postponed": 0,
+  "canceled": 0,
+  "fulltime_missing_kickoff": 0,
+  "fulltime_missing_tz": 0,
+  "venue_override_notes": 3
+ },
+ "2019": {
+  "discovered": 408,
+  "full_time": 408,
+  "postponed": 0,
+  "canceled": 0,
+  "fulltime_missing_kickoff": 0,
+  "fulltime_missing_tz": 0,
+  "venue_override_notes": 1
+ },
+ "2020": {
+  "discovered": 302,
+  "full_time": 292,
+  "postponed": 3,
+  "canceled": 7,
+  "fulltime_missing_kickoff": 0,
+  "fulltime_missing_tz": 0,
+  "venue_override_notes": 55
+ }
+}
