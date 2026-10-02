@@ -1,6 +1,6 @@
 {
   "id": "req-20261002-002",
   "status": "processing",
-  "note": "赛前积分 Q4：2022+2023 已完成 1224/1224 行（audit: expected 612场→complete 1224行，unresolved 0）。方法变更：Transfermarkt per-matchday 页 browser.open 返回 HTTP 403，改用 Wikipedia 赛季比分矩阵＋j1-dates.csv 开球时间严格排序逐场重建 before 值（终榜仅校验转录）；发现并三方印证修正 Wikipedia 2023 矩阵 1 格错误（Gamba vs Sanfrecce 实为 1–2）；2022 轮次错位（第9轮提前/第2轮延期）用开球时间排序天然处理；58 行 rank_before=unavailable（36 首轮＋22 三项全同并列歧义）。交付物：work-003/j1-standings-before-2022-2023.csv、part-c-2022-2023.md、68 份 evidence、build_standings_2022_2023.py。2018+19 / 2020+21 / 2024+25 三组子代理进行中。赔率：捷报 pilot 通过（威廉希尔显示形式纠正为“威廉希*”），4 个并行 live browser 任务做 8 赛季 1x2 URL 发现。642 字段/48 fixture 上游 gap 文件仍不在仓库（B-UQ-01/02 阻塞）。request_sha 不变。",
+  "note": "赛前积分 Q4：2022+2023 已完成 1224/1224 行（audit 全过，unresolved 0；Transfermarkt 403 后改用 Wikipedia 矩阵＋开球时间排序重建，修正 2023 矩阵 1 格比分错误）。2018+19 / 2020+21 / 2024+25 三组进行中。赔率：捷报 pilot 通过；阶段 U（8 赛季 1x2 URL 发现）4 个并行 live browser 任务中，2018+19 组因模型流超时 errored 已重派，其余 3 组进行中。642 字段/48 fixture 上游 gap 文件仍不在仓库（B-UQ-01/02 阻塞）。request_sha 不变。",
   "request_sha": "cb7ee5725d870106"
 }
