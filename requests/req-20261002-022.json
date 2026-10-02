@@ -1,0 +1,50 @@
+{
+  "id": "req-20261002-022",
+  "type": "deep_research",
+  "params": {
+    "topic": "Eredivisie 荷甲缺失四季增量补充并核对八季覆盖",
+    "questions": [
+      "请只补荷甲 Eredivisie 常规联赛缺失赛季 2018/19、2019/20、2020/21、2021/22；逐场整理稳定比赛身份、北京时间/当地开球时间、主客队官方名称、官方轮次、场地、90分钟主客进球和 full_time_result。2019/20 因提前终止只能返回实际已赛场次（约225场），未完赛、取消或未举行比赛保留状态，不按理论306场补造。对本地已有 2022/23、2023/24、2024/25、2025/26 只做赛季/场次覆盖审计，不重复抓取。",
+      "请在可验证来源支持时补充逐场赛前赔率，严格分开 bookmaker=Bet365、Pinnacle、William Hill，market=1X2 和 total_goals，分别标记 pre-closing、closing、interval；不得把 closing 或 pre-closing 改名为 true opening。若无逐场来源，保留 null 并列入 unresolved_queue。",
+      "请核对八季覆盖：本地基线 D:/奇门斗数/足球历史数据库/真历史数据库/staging/eredivisie-football-data-20260904 下已有 2022/23、2023/24、2024/25、2025/26 四季各306场，共1224场；缺失四季理论/实际目标为 2018/19=306、2019/20=实际已赛约225、2020/21=306、2021/22=306，八季实际目标约2367场。按 fixture_key 列出重复、主客队/日期冲突和字段缺失；已有本地数据只用于身份对账，不重复抓取或覆盖；不能补造 Qimen 九宫、宫位 token、qimen_first_direction、Miss 1/Miss 2、Review、Gold 或任何模型字段。",
+      "请为每条可用字段保留 source_url、final_url、retrieved_at、field_locator、source_sha256、字段语义和赛季；多来源不同值进入 conflict_queue，不自动裁决。返回 JSON 报告、逐场证据行和 unresolved_queue。"
+    ]
+  },
+  "created_at": "2026-10-02T22:20:00+08:00",
+  "scope": {
+    "competition_key": "eredivisie",
+    "competition_name": "Eredivisie",
+    "seasons": [2018, 2019, 2020, 2021],
+    "season_labels": ["2018/19", "2019/20", "2020/21", "2021/22"],
+    "coverage_audit_seasons": ["2018/19", "2019/20", "2020/21", "2021/22", "2022/23", "2023/24", "2024/25", "2025/26"],
+    "known_local_context": {
+      "division": "N1",
+      "baseline_path": "D:/奇门斗数/足球历史数据库/真历史数据库/staging/eredivisie-football-data-20260904",
+      "existing_seasons": ["2022/23", "2023/24", "2024/25", "2025/26"],
+      "existing_match_count": 1224,
+      "missing_actual_targets": {"2018/19": 306, "2019/20": 225, "2020/21": 306, "2021/22": 306},
+      "eight_season_actual_target": 2367
+    },
+    "source_candidates": [
+      "https://www.football-data.co.uk/mmz4281/1819/N1.csv",
+      "https://www.football-data.co.uk/mmz4281/1920/N1.csv",
+      "https://www.football-data.co.uk/mmz4281/2021/N1.csv",
+      "https://www.football-data.co.uk/mmz4281/2122/N1.csv"
+    ],
+    "league_only": true,
+    "incremental_only": true,
+    "football_facts_only": true,
+    "exclude": ["qimen", "qimen_output", "palace", "qimen_first_direction", "model_first_direction", "miss", "probability", "outcome", "review", "gold", "formal_structure"],
+    "existing_local_data_must_be_identity_deduplicated": true
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256", "field_semantics"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false,
+    "status_policy": "processing_then_ok_or_error; incomplete rows remain unresolved"
+  }
+}
