@@ -1,7 +1,108 @@
 {
  "id": "req-20261002-020",
- "status": "processing",
- "note": "2026-10-02 19:54+08 本轮取件（新请求）。研究进行中：MLS 2020-08-21 Toronto FC vs Vancouver Whitecaps 单场 Pinnacle 1X2 收盘赔率，先做 live-browser 溯源（OddsPortal 历史页优先）。",
+ "status": "ok",
  "request_sha": "07db409372e682af",
- "fetched_at": "2026-10-02T11:54:09Z"
+ "fetched_at": "2026-10-02T12:35:00Z",
+ "note": "最终回执：单场比赛身份三源交叉确认；Pinnacle 1X2 收盘赔率 unavailable（两条独立证据线：OddsPortal 真浏览器该场页 bookmaker 列表无 Pinnacle；文本层四源均无 Pinnacle 本场开盘证据）。bet365.us 数值仅作上下文留存，明确不替代 Pinnacle。",
+ "data": {
+  "report": "# req-20261002-020 最终报告（2026-10-02T12:35Z）\n\n## 比赛身份（确定，三源交叉）\n- Toronto FC 1–0 Vancouver Whitecaps FC（HT 1–0），进球 Richie Laryea 15'\n- 开球：2020-08-21 周五 20:00 EDT（多伦多当地）；OddsPortal 归档按 UTC 显示为 22 Aug 2020 08:00\n- 场地：BMO Field, Toronto, ON；裁判 Silviu Petrescu；空场\n- 赛事：2020 MLS Regular Season 重启 Phase 1（加三队互战 = 2020 Canadian Championship 资格赛）\n- 混淆锚点：2020-08-18 同对手同场地另有一场 3–0，本场以 1-0 / Laryea 15' / 8-21 区分\n\n## Pinnacle 1X2 收盘：unavailable\n- 证据线 A（真浏览器，OddsPortal）：比赛页 https://www.oddsportal.com/football/h2h/toronto-fc-zsdfgnmL/vancouver-whitecaps-K2dlua5N/ 的 1X2 表格仅列一家博彩公司 bet365.us（1: 1.22 / X: 6.50 / 2: 11.00，Payout 93.9%），无 Pinnacle / Pinnacle Sports 条目；页面未对任何数值标注 opening/closing，无时间戳；无\"显示更多公司\"选项。\n- 证据线 B（文本层）：Telefootball（id 257045）仅列 bet365 + 平均赔率；TipsterArea（613617）5 家公司未具名；DocSports 赛前美式赔率未指明公司；SoccerPunter 的 Pinnacle Sports 仅出现在未来场次页面，非本场证据。\n- 背景一致：此前已证实 OddsPortal 美国版 bookmaker 列表无 Pinnacle。\n- 结论：按请求 Q2 规则返回 unavailable，不用 bet365 或任何其他公司替代。\n\n## 上下文留存（非 Pinnacle，不得替代）\n- bet365.us 1X2 快照：1=1.22（下跌箭头），X=6.50（上涨），2=11.00（上涨），Payout 93.9%，retrieved 2026-10-02T12:33:00Z\n\n## 漏抓审计\n- expected 1 fixture → discovered 1 → identity complete → pinnacle_closing unavailable（2 条独立证据线）→ missing 0\n",
+  "match_identity": {
+   "home": "Toronto FC",
+   "away": "Vancouver Whitecaps FC",
+   "score_ft": "1-0",
+   "score_ht": "1-0",
+   "goal": "Richie Laryea 15'",
+   "kickoff_local": "2020-08-21 20:00 EDT",
+   "kickoff_oddsportal_display": "22 Aug 2020 08:00 (UTC)",
+   "venue": "BMO Field, Toronto, ON",
+   "competition": "2020 MLS Regular Season Phase 1 (Canadian Championship qualifying)",
+   "referee": "Silviu Petrescu",
+   "attendance": "behind closed doors"
+  },
+  "crosswalk": [
+   {
+    "provider": "telefootball",
+    "provider_fixture_id": "257045"
+   },
+   {
+    "provider": "espn",
+    "provider_fixture_id": "577574",
+    "caveat": "577573 is the 2020-08-18 3-0 fixture, do not confuse"
+   },
+   {
+    "provider": "eurosport_tnt",
+    "provider_fixture_id": "mtc1213156",
+    "caveat": "mtc1170802 is the 2020-08-18 fixture"
+   },
+   {
+    "provider": "sportsmole",
+    "provider_fixture_id": "game_120145",
+    "caveat": "game_120094 is the 2020-08-18 fixture"
+   },
+   {
+    "provider": "tipsterarea",
+    "provider_fixture_id": "613617"
+   },
+   {
+    "provider": "mls_official",
+    "provider_fixture_id": "matchcenter/torvsvan-08-21-2020",
+    "source_url": "https://www.mlssoccer.com/matchcenter/torvsvan-08-21-2020/"
+   },
+   {
+    "provider": "worldfootball_net",
+    "provider_fixture_id": "unavailable",
+    "reason": "no verbatim single-match page found via search"
+   }
+  ],
+  "pinnacle_1x2_closing": {
+   "status": "unavailable",
+   "home": null,
+   "draw": null,
+   "away": null,
+   "reason": "Pinnacle not listed on OddsPortal match page (only bet365.us shown); no text source evidences Pinnacle offering this fixture",
+   "evidence": [
+    {
+     "source": "OddsPortal live browser",
+     "source_url": "https://www.oddsportal.com/football/h2h/toronto-fc-zsdfgnmL/vancouver-whitecaps-K2dlua5N/",
+     "retrieved_at": "2026-10-02T12:33:00Z",
+     "field_locator": "1X2 bookmakers table; full bookmaker list = bet365.us only; no opening/closing labels; no timestamps",
+     "finding": "no Pinnacle / Pinnacle Sports row"
+    },
+    {
+     "source": "text sources (Telefootball/TipsterArea/DocSports/SoccerPunter)",
+     "retrieved_at": "2026-10-02T12:32:00Z",
+     "field_locator": "see /tmp/req-20261002-020-preresearch.md",
+     "finding": "no source names Pinnacle for this fixture"
+    }
+   ]
+  },
+  "context_not_substitute": {
+   "bookmaker": "bet365.us",
+   "home": "1.22",
+   "draw": "6.50",
+   "away": "11.00",
+   "payout": "93.9%",
+   "source_url": "https://www.oddsportal.com/football/h2h/toronto-fc-zsdfgnmL/vancouver-whitecaps-K2dlua5N/",
+   "retrieved_at": "2026-10-02T12:33:00Z",
+   "warning": "context only; MUST NOT be used as a Pinnacle substitute"
+  },
+  "audit": {
+   "fixtures_expected": 1,
+   "fixtures_discovered": 1,
+   "identity_complete": 1,
+   "pinnacle_closing_available": 0,
+   "pinnacle_closing_unavailable_with_evidence": 1,
+   "missing": 0
+  },
+  "unresolved_queue": [
+   {
+    "target": "worldfootball.net single-match page verbatim URL",
+    "reason": "multi-round search returned no worldfootball page for this fixture; crosswalk uses ESPN/Eurosport/Sportsmole/Telefootball ids instead"
+   },
+   {
+    "target": "whether Pinnacle offered this fixture at all",
+    "reason": "zero positive evidence in any checked source; OddsPortal US bookmaker list has no Pinnacle (consistent with earlier US-edition finding)"
+   }
+  ]
+ }
 }
