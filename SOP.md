@@ -73,3 +73,26 @@ to_codex 纪律（2026-10-03 教训）：to_codex 字段只转达用户原话或
 
 ## 时区教训（2026-10-02）
 VM 本地时区是 UTC，`stat` 显示的是 UTC 时间；用户在 Asia/Shanghai。比较"15 分钟阈值"必须先换算——曾误把 09:26 UTC 当成 09:26 CST 判定为停滞，实际上一轮在 17:26 CST 刚更新过。校验用 `date -u` 对照。
+
+## 真开盘不可达转筛选（用户 2026-10-03 18:02 长期规则，已授权）
+某联赛/赛季的真开盘赔率经检索确认拿不到（命中下方"已证伪登记"）时，不要无限期等待：在回执 `to_codex` 明确告知 Codex——以当前已交付的赔率做赔率区间筛选，执行 Codex 工作流；缺口记入 `unresolved_queue`，不阻塞筛选。本条为用户明确授权，适用时 worker 可直接写入 `to_codex`，不受"to_codex 纪律"中"先请示"限制（仅限本条所述情形）。
+
+## 已证伪数据源登记（DEAD-END REGISTRY，用户 2026-10-03 18:02 要求维护）
+命中登记项的子项直接记 unavailable / 记入 `unresolved_queue`，不再开新一轮重试。新条目入库需两轮独立验证或用户确认；每条注明证伪日期与证据。
+
+真开盘 tick 历史（true opening /逐公司 tick）：
+- NowScore/捷报网（live.nowscore.com 1x2 单场页）：仅 init/current 快照，无 tick 历史；live 页赔率表 JS 渲染，文本层仅骨架（2026-10-03 文本试点证伪）
+- Tipsme(.hk)：Close 列多为滚球终场赔率，不当赛前 closing；5 场试点后降级（2026-10-02）
+- OddsPortal 单场页：文本层只回 SEO 模板+隐私横幅，0 赔率行，需真浏览器（2026-10-02）
+- TotalCorner：完整逐公司赔率需 VIP（禁登录）；h2h 比分链接文本层与跳转均被重定向到 /user/choose_timezone；连 h2h 触发 403 疑似限流，已停手保 IP（2026-10-02/03）
+- Betfair：地区限制，US 出口 IP 被拒（2026-10-02）
+- Bettors.club：文本层仅 tipster 预测页，无赔率历史/移动页（2026-10-03 证伪）
+- telefootball.net：仅 bet365 单一快照，无开/即分列、无时间戳（2026-10-02）
+- 500.com：本环境连接层被拒（TencentEdgeOne 567）（2026-10-02）
+- betexplorer：文本层只回骨架，赔率表 JS 渲染（2026-10-02）
+- Wayback：NowScore 1x2 页直快照 upstream 500，CDX+直链双通道死（2026-10-03）
+- Football-Data MLS 2020 CSV：服务器无此文件（2026-10-02）
+
+上游依赖（非我方能解决，记入 unresolved_queue 不再空转）：
+- 002-Q2 642 赔率缺口清单：上游从未交付（B-UQ-01；2026-10-03 12:00 deadline 已过，Codex 约 24h 无回音）
+- 002-Q3 48 场 provider fixture ID：需 5Dollar Ultra-tier API key，公开端点不可得
