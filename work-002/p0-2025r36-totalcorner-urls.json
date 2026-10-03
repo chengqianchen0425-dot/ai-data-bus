@@ -1,0 +1,80 @@
+{
+ "task": "P0 真浏览器 URL 发现：J1 2025 R36 10 场 TotalCorner 单场 /odds/ URL",
+ "done_at": "2026-10-03T10:35:00+08:00",
+ "method": "live browser（搜索引擎+镜站交叉验证）；totalcorner.com 本站被 Cloudflare 人机验证拦截，按风控规则未绕过；browser.open 文本层对 totalcorner.com 返回 403（此前可用，现已收紧），已停手",
+ "id_range_note": "本轮 10 场 ID 集中在 183400125–183400150；totalcorner.com 与镜站 jinleme.com / jq007.com 共享比赛数字 ID",
+ "matches": [
+  {
+   "fixture": "Kashima Antlers vs Yokohama FC",
+   "date_csv": "2025-11-08",
+   "url": "https://www.totalcorner.com/odds/Kashima-Antlers-vs-Yokohama-FC/183400125",
+   "verify": "jq007 镜站确认 2025-11-08，比分 2-1"
+  },
+  {
+   "fixture": "Kashiwa Reysol vs Nagoya Grampus",
+   "date_csv": "2025-11-08",
+   "url": "https://www.totalcorner.com/odds/Kashiwa-Reysol-vs-Nagoya-Grampus/183400133",
+   "verify": "jq007 镜站确认 2025-11-08 15:00"
+  },
+  {
+   "fixture": "Kawasaki Frontale vs Fagiano Okayama",
+   "date_csv": "2025-11-08",
+   "url": "https://www.totalcorner.com/odds/Kawasaki-Frontale-vs-Fagiano-Okayama/183400129",
+   "verify": "jinleme 镜站确认 2025-11-08 14:00"
+  },
+  {
+   "fixture": "Sanfrecce Hiroshima vs Urawa Red Diamonds",
+   "date_csv": "2025-11-08",
+   "date_verified": "2025-11-09",
+   "date_discrepancy": "CSV 为 11-08，镜站确认为 11-09（比分 3-0），疑改期",
+   "url": "https://www.totalcorner.com/odds/Sanfrecce-Hiroshima-vs-Urawa-Red-Diamonds/183400135",
+   "verify": "jinleme 镜站确认 2025-11-09，比分 3-0"
+  },
+  {
+   "fixture": "Shonan Bellmare vs Albirex Niigata",
+   "date_csv": "2025-11-08",
+   "url": "https://www.totalcorner.com/odds/Shonan-Bellmare-vs-Albirex-Niigata/183400131",
+   "verify": "Bing 'odds dropping' 命中该 ID 的 /stats/ 页（1x2: 2.88/3.30/2.45）；旧场次页 54009654 已排除"
+  },
+  {
+   "fixture": "Tokyo Verdy vs Avispa Fukuoka",
+   "date_csv": "2025-11-08",
+   "url": "https://www.totalcorner.com/odds/Tokyo-Verdy-vs-Avispa-Fukuoka/183400127",
+   "verify": "Bing 命中 /live/ 页 ID 落在 1834001xx 段；2019 J2 旧场次页已排除"
+  },
+  {
+   "fixture": "Gamba Osaka vs Vissel Kobe",
+   "date_csv": "2025-11-09",
+   "url": "https://www.totalcorner.com/odds/Gamba-Osaka-vs-Vissel-Kobe/183400145",
+   "verify": "totalcorner /live/ 与 jinleme 镜站同 ID，确认 2025-11-09，比分 1-1"
+  },
+  {
+   "fixture": "Kyoto Sanga vs Yokohama F. Marinos",
+   "date_csv": "2025-11-09",
+   "url": "https://www.totalcorner.com/odds/Kyoto-Sanga-vs-Yokohama-F-Marinos/183400138",
+   "verify": "jinleme 镜站确认 2025-11-09，比分 0-3"
+  },
+  {
+   "fixture": "Machida Zelvia vs FC Tokyo",
+   "date_csv": "2025-11-09",
+   "url": null,
+   "status": "NOT_FOUND",
+   "tried": [
+    "Bing 英文搜 totalcorner 'Machida Zelvia vs FC Tokyo'（仅索引到 2026-04-01 场次）",
+    "Bing 中文搜'町田泽维亚 东京FC 2025年11月9日'（无镜站结果）",
+    "Bing 英文加日期搜（无 2025-11-09 原站页）",
+    "Bing jinleme 站内式搜（无结果）",
+    "Bing 'odds dropping' 搜（命中 183850704 日本FA杯场次，非目标）"
+   ],
+   "note": "该场确认存在（2025-11-09 町田 0-1 FC东京），但其 1834001xx 段页面未被索引"
+  },
+  {
+   "fixture": "Shimizu S-Pulse vs Cerezo Osaka",
+   "date_csv": "2025-11-09",
+   "url": "https://www.totalcorner.com/odds/Shimizu-S-Pulse-vs-Cerezo-Osaka/183400150",
+   "verify": "Bing 直接索引到 /odds/ 原页，标注 2025年11月9日"
+  }
+ ],
+ "odds_tables": "未提取——totalcorner.com /odds/ 页在真浏览器被 Cloudflare 拦截、文本层 403，按风控规则停手；拿到可访问通道后走文本层提 'Major bookmakers' 表即可",
+ "dp_used": false
+}
