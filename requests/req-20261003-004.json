@@ -1,0 +1,74 @@
+{
+  "id": "req-20261003-004",
+  "type": "deep_research",
+  "params": {
+    "topic": "Primeira Liga 葡超 2018/19-2025/26 八季足球历史数据增量补充；仅足球事实，不请求 Qimen 数据",
+    "questions": [
+      "重要：本请求取代并作废旧请求 req-20261002-019。不要继续处理、补做或回复 req-20261002-019；不要把 responses/req-20261002-019.json 当作葡超回执（它与旧请求内容不匹配且实际报告 Ligue 1）。本轮只按新 ID req-20261003-004 执行并返回回执。",
+      "只处理葡萄牙 Primeira Liga/primeira_liga，范围为 2018/19、2019/20、2020/21、2021/22、2022/23、2023/24、2024/25、2025/26；排除杯赛、欧战、友谊赛和其他联赛。Muse 不提供也不得返回 Qimen、九宫宫位、qimen_output、主客宫位、F/G/I/Q/M/A/B/C/E token、模型方向、Miss、概率、Outcome、Review 或 Gold。",
+      "增量基线：本地 2021/22、2022/23、2023/24、2024/25 共 1,224 场，已有主客队、日期、90 分钟 FTHG/FTAG、FTR 和 Football-Data 来源哈希的字段不要重复返回。按 season/date/home_team/away_team 精确匹配，只返回仍缺失、冲突或无法核验的足球事实。不得覆盖任何本地数据。",
+      "对 2018/19、2019/20、2020/21、2025/26 补充逐场足球事实；2025/26 仅返回截至检索时已发生的比赛，未完赛保留 NULL/未完成状态。需要的字段包括 season、date、kickoff_local、IANA timezone、official_round、home_team、away_team、venue、venue_latitude、venue_longitude、home_goals_90、away_goals_90、full_time_result。对已有四季，仅处理足球事实缺口：官方轮次、逐场开球时间/时区、球场/坐标、无法唯一匹配的 fixture identity/result。F/G 等奇门侧字段不请求、不推导。",
+      "逐场赔率仅补本地仍缺失的 Bet365、Pinnacle、William Hill 1X2 与可用的 2.5 大小球字段，三家书商分开，opening 与 closing 分开。opening 仅可标记 true opening 或 earliest_verified_pre_match；无法证明则 unavailable，禁止把 pre-close/closing 冒充 opening。William Hill 只认 WHH/WHD/WHA 与 WHCH/WHCD/WHCA；BWH 不属于 William Hill。",
+      "每条可返回记录保留 stable_key（season/date/home_team/away_team）、field_name、value 或 NULL、status（ok/unavailable/blocked/conflict/parse_failed）、source_url、final_url、retrieved_at、field_locator、source_sha256。不同来源冲突进入 conflict_queue，不裁决、不覆盖。报告 expected/discovered/complete/partial/missing，并提供 unresolved_queue；缺数据也保留比赛/字段，不静默漏行。",
+      "仅返回足球历史事实和其来源证据。不得返回奇门、宫位、模型字段；不得从赛果反推赔率或赛前结构。"
+    ],
+    "source_hints": [
+      "https://www.football-data.co.uk/portugalm.php",
+      "https://www.football-data.co.uk/notes.txt",
+      "https://www.oddsportal.com/football/portugal/primeira-liga/"
+    ]
+  },
+  "created_at": "2026-10-03T16:30:00+08:00",
+  "scope": {
+    "competition_key": "primeira_liga",
+    "country": "Portugal",
+    "seasons": [
+      "2018/19",
+      "2019/20",
+      "2020/21",
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26"
+    ],
+    "league_only": true,
+    "incremental_only": true,
+    "supersedes_request_id": "req-20261002-019",
+    "superseded_request_status": "obsolete_do_not_process",
+    "existing_local_fixture_count": 1224,
+    "existing_local_seasons": [
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25"
+    ],
+    "exclude_competitions": [
+      "taca_de_portugal",
+      "taca_da_liga",
+      "uefa_champions_league",
+      "uefa_europa_league",
+      "uefa_conference_league",
+      "friendly"
+    ]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "football_only": true,
+    "return_available_data_first": true,
+    "row_level_data_preferred": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": [
+      "source_url",
+      "final_url",
+      "retrieved_at",
+      "field_locator",
+      "source_sha256"
+    ],
+    "qimen_fields": "excluded_unavailable",
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  },
+  "dp_used": false
+}
