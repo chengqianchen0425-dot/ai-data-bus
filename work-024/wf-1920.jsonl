@@ -1,0 +1,232 @@
+{"a":"Willem II","d":"2019-08-02","hg":1,"h":"Zwolle","r":1,"ag":3,"t":"19:00"}
+{"a":"Ajax","d":"2019-08-03","hg":2,"h":"Vitesse","r":1,"ag":2,"t":"17:30"}
+{"a":"Groningen","d":"2019-08-03","hg":0,"h":"FC Emmen","r":1,"ag":1,"t":"17:30"}
+{"a":"Waalwijk","d":"2019-08-03","hg":3,"h":"VVV Venlo","r":1,"ag":1,"t":"19:45"}
+{"a":"PSV Eindhoven","d":"2019-08-03","hg":1,"h":"Twente","r":1,"ag":1,"t":"19:45"}
+{"a":"Heerenveen","d":"2019-08-04","hg":0,"h":"Heracles","r":1,"ag":4,"t":"11:15"}
+{"a":"Sparta Rotterdam","d":"2019-08-04","hg":2,"h":"Feyenoord","r":1,"ag":2,"t":"13:30"}
+{"a":"Utrecht","d":"2019-08-04","hg":2,"h":"Den Haag","r":1,"ag":4,"t":"15:45"}
+{"a":"For Sittard","d":"2019-08-04","hg":4,"h":"AZ Alkmaar","r":1,"ag":0,"t":"19:00"}
+{"a":"VVV Venlo","d":"2019-08-09","hg":4,"h":"Sparta Rotterdam","r":2,"ag":1,"t":"19:00"}
+{"a":"Twente","d":"2019-08-10","hg":1,"h":"Groningen","r":2,"ag":3,"t":"17:30"}
+{"a":"FC Emmen","d":"2019-08-10","hg":5,"h":"Ajax","r":2,"ag":0,"t":"18:45"}
+{"a":"Vitesse","d":"2019-08-10","hg":0,"h":"Willem II","r":2,"ag":2,"t":"19:45"}
+{"a":"Heracles","d":"2019-08-11","hg":1,"h":"For Sittard","r":2,"ag":1,"t":"11:15"}
+{"a":"Feyenoord","d":"2019-08-11","hg":1,"h":"Heerenveen","r":2,"ag":1,"t":"13:30"}
+{"a":"AZ Alkmaar","d":"2019-08-11","hg":0,"h":"Waalwijk","r":2,"ag":2,"t":"13:30"}
+{"a":"Zwolle","d":"2019-08-11","hg":3,"h":"Utrecht","r":2,"ag":1,"t":"15:45"}
+{"a":"Den Haag","d":"2019-08-11","hg":3,"h":"PSV Eindhoven","r":2,"ag":1,"t":"19:00"}
+{"a":"Zwolle","d":"2019-08-16","hg":3,"h":"Vitesse","r":3,"ag":0,"t":"19:00"}
+{"a":"Sparta Rotterdam","d":"2019-08-17","hg":1,"h":"Den Haag","r":3,"ag":2,"t":"17:30"}
+{"a":"Ajax","d":"2019-08-17","hg":1,"h":"VVV Venlo","r":3,"ag":4,"t":"17:30"}
+{"a":"Heerenveen","d":"2019-08-17","hg":2,"h":"FC Emmen","r":3,"ag":0,"t":"19:45"}
+{"a":"Willem II","d":"2019-08-18","hg":2,"h":"For Sittard","r":3,"ag":3,"t":"11:15"}
+{"a":"Waalwijk","d":"2019-08-18","hg":3,"h":"Twente","r":3,"ag":3,"t":"13:30"}
+{"a":"Utrecht","d":"2019-08-18","hg":1,"h":"Feyenoord","r":3,"ag":1,"t":"15:45"}
+{"a":"Groningen","d":"2019-08-18","hg":0,"h":"AZ Alkmaar","r":3,"ag":0,"t":"15:45"}
+{"a":"PSV Eindhoven","d":"2019-08-18","hg":0,"h":"Heracles","r":3,"ag":2,"t":"19:00"}
+{"a":"FC Emmen","d":"2019-08-24","hg":2,"h":"Willem II","r":4,"ag":1,"t":"17:30"}
+{"a":"Vitesse","d":"2019-08-24","hg":1,"h":"Heracles","r":4,"ag":1,"t":"18:45"}
+{"a":"Twente","d":"2019-08-24","hg":0,"h":"Heerenveen","r":4,"ag":0,"t":"19:45"}
+{"a":"Den Haag","d":"2019-08-25","hg":0,"h":"Waalwijk","r":4,"ag":3,"t":"11:15"}
+{"a":"VVV Venlo","d":"2019-08-25","hg":1,"h":"Utrecht","r":4,"ag":2,"t":"13:30"}
+{"a":"Sparta Rotterdam","d":"2019-08-25","hg":2,"h":"Zwolle","r":4,"ag":2,"t":"15:45"}
+{"a":"Groningen","d":"2019-09-25","hg":3,"h":"PSV Eindhoven","r":4,"ag":1,"t":"17:30"}
+{"a":"For Sittard","d":"2019-09-25","hg":5,"h":"Ajax","r":4,"ag":0,"t":"19:45"}
+{"a":"AZ Alkmaar","d":"2019-09-26","hg":0,"h":"Feyenoord","r":4,"ag":3,"t":"19:00"}
+{"a":"Zwolle","d":"2019-08-30","hg":1,"h":"FC Emmen","r":5,"ag":3,"t":"19:00"}
+{"a":"For Sittard","d":"2019-08-31","hg":1,"h":"Heerenveen","r":5,"ag":1,"t":"17:30"}
+{"a":"Heracles","d":"2019-08-31","hg":1,"h":"Groningen","r":5,"ag":2,"t":"18:45"}
+{"a":"VVV Venlo","d":"2019-08-31","hg":1,"h":"Den Haag","r":5,"ag":0,"t":"19:45"}
+{"a":"Utrecht","d":"2019-09-01","hg":3,"h":"Twente","r":5,"ag":1,"t":"11:15"}
+{"a":"Ajax","d":"2019-09-01","hg":1,"h":"Sparta Rotterdam","r":5,"ag":4,"t":"13:30"}
+{"a":"Feyenoord","d":"2019-09-01","hg":0,"h":"Willem II","r":5,"ag":1,"t":"15:45"}
+{"a":"AZ Alkmaar","d":"2019-09-01","hg":2,"h":"Vitesse","r":5,"ag":1,"t":"15:45"}
+{"a":"PSV Eindhoven","d":"2019-09-01","hg":1,"h":"Waalwijk","r":5,"ag":3,"t":"19:00"}
+{"a":"Sparta Rotterdam","d":"2019-09-14","hg":5,"h":"AZ Alkmaar","r":6,"ag":1,"t":"17:30"}
+{"a":"Heerenveen","d":"2019-09-14","hg":4,"h":"Ajax","r":6,"ag":1,"t":"17:30"}
+{"a":"Groningen","d":"2019-09-14","hg":2,"h":"VVV Venlo","r":6,"ag":1,"t":"18:45"}
+{"a":"Vitesse","d":"2019-09-14","hg":5,"h":"PSV Eindhoven","r":6,"ag":0,"t":"19:45"}
+{"a":"FC Emmen","d":"2019-09-14","hg":3,"h":"Utrecht","r":6,"ag":1,"t":"19:45"}
+{"a":"Waalwijk","d":"2019-09-15","hg":6,"h":"Zwolle","r":6,"ag":2,"t":"11:15"}
+{"a":"Den Haag","d":"2019-09-15","hg":3,"h":"Feyenoord","r":6,"ag":2,"t":"13:30"}
+{"a":"Willem II","d":"2019-09-15","hg":4,"h":"Heracles","r":6,"ag":1,"t":"13:30"}
+{"a":"Twente","d":"2019-09-15","hg":2,"h":"For Sittard","r":6,"ag":3,"t":"15:45"}
+{"a":"Heracles","d":"2019-09-20","hg":2,"h":"Twente","r":7,"ag":3,"t":"19:00"}
+{"a":"Waalwijk","d":"2019-09-21","hg":4,"h":"Sparta Rotterdam","r":7,"ag":0,"t":"17:30"}
+{"a":"Zwolle","d":"2019-09-21","hg":2,"h":"Groningen","r":7,"ag":0,"t":"18:45"}
+{"a":"VVV Venlo","d":"2019-09-21","hg":1,"h":"Willem II","r":7,"ag":0,"t":"18:45"}
+{"a":"For Sittard","d":"2019-09-21","hg":4,"h":"Vitesse","r":7,"ag":2,"t":"19:45"}
+{"a":"Utrecht","d":"2019-09-22","hg":1,"h":"Heerenveen","r":7,"ag":1,"t":"11:15"}
+{"a":"Feyenoord","d":"2019-09-22","hg":3,"h":"FC Emmen","r":7,"ag":3,"t":"13:30"}
+{"a":"AZ Alkmaar","d":"2019-09-22","hg":0,"h":"Den Haag","r":7,"ag":1,"t":"15:45"}
+{"a":"Ajax","d":"2019-09-22","hg":1,"h":"PSV Eindhoven","r":7,"ag":1,"t":"15:45"}
+{"a":"Den Haag","d":"2019-09-27","hg":3,"h":"FC Emmen","r":8,"ag":0,"t":"19:00"}
+{"a":"Heerenveen","d":"2019-09-28","hg":0,"h":"VVV Venlo","r":8,"ag":3,"t":"17:30"}
+{"a":"Groningen","d":"2019-09-28","hg":2,"h":"Ajax","r":8,"ag":0,"t":"18:45"}
+{"a":"Sparta Rotterdam","d":"2019-09-28","hg":0,"h":"For Sittard","r":8,"ag":0,"t":"19:45"}
+{"a":"Vitesse","d":"2019-09-29","hg":1,"h":"Waalwijk","r":8,"ag":2,"t":"11:15"}
+{"a":"PSV Eindhoven","d":"2019-09-29","hg":0,"h":"Zwolle","r":8,"ag":4,"t":"13:30"}
+{"a":"Willem II","d":"2019-09-29","hg":2,"h":"Utrecht","r":8,"ag":0,"t":"13:30"}
+{"a":"Heracles","d":"2019-09-29","hg":2,"h":"AZ Alkmaar","r":8,"ag":0,"t":"15:45"}
+{"a":"Twente","d":"2019-09-29","hg":5,"h":"Feyenoord","r":8,"ag":1,"t":"15:45"}
+{"a":"Waalwijk","d":"2019-10-04","hg":3,"h":"Groningen","r":9,"ag":0,"t":"19:00"}
+{"a":"FC Emmen","d":"2019-10-05","hg":2,"h":"Heracles","r":9,"ag":0,"t":"17:30"}
+{"a":"Twente","d":"2019-10-05","hg":2,"h":"Sparta Rotterdam","r":9,"ag":1,"t":"18:45"}
+{"a":"Utrecht","d":"2019-10-05","hg":2,"h":"Vitesse","r":9,"ag":1,"t":"18:45"}
+{"a":"Zwolle","d":"2019-10-05","hg":1,"h":"Heerenveen","r":9,"ag":0,"t":"19:45"}
+{"a":"Ajax","d":"2019-10-06","hg":0,"h":"Den Haag","r":9,"ag":2,"t":"11:15"}
+{"a":"Feyenoord","d":"2019-10-06","hg":4,"h":"For Sittard","r":9,"ag":2,"t":"13:30"}
+{"a":"VVV Venlo","d":"2019-10-06","hg":4,"h":"PSV Eindhoven","r":9,"ag":1,"t":"15:45"}
+{"a":"AZ Alkmaar","d":"2019-10-06","hg":1,"h":"Willem II","r":9,"ag":1,"t":"15:45"}
+{"a":"Heerenveen","d":"2019-10-19","hg":2,"h":"AZ Alkmaar","r":10,"ag":4,"t":"17:30"}
+{"a":"Ajax","d":"2019-10-19","hg":1,"h":"Waalwijk","r":10,"ag":2,"t":"17:30"}
+{"a":"Willem II","d":"2019-10-19","hg":0,"h":"Twente","r":10,"ag":1,"t":"18:45"}
+{"a":"PSV Eindhoven","d":"2019-10-19","hg":3,"h":"Utrecht","r":10,"ag":0,"t":"19:45"}
+{"a":"Vitesse","d":"2019-10-19","hg":0,"h":"VVV Venlo","r":10,"ag":4,"t":"19:45"}
+{"a":"Den Haag","d":"2019-10-20","hg":3,"h":"Zwolle","r":10,"ag":1,"t":"11:15"}
+{"a":"For Sittard","d":"2019-10-20","hg":2,"h":"FC Emmen","r":10,"ag":1,"t":"13:30"}
+{"a":"Sparta Rotterdam","d":"2019-10-20","hg":2,"h":"Groningen","r":10,"ag":0,"t":"13:30"}
+{"a":"Heracles","d":"2019-10-20","hg":1,"h":"Feyenoord","r":10,"ag":1,"t":"15:45"}
+{"a":"FC Emmen","d":"2019-10-25","hg":4,"h":"Twente","r":11,"ag":1,"t":"19:00"}
+{"a":"Waalwijk","d":"2019-10-26","hg":2,"h":"Willem II","r":11,"ag":1,"t":"17:30"}
+{"a":"VVV Venlo","d":"2019-10-26","hg":4,"h":"For Sittard","r":11,"ag":1,"t":"18:45"}
+{"a":"Den Haag","d":"2019-10-26","hg":0,"h":"Vitesse","r":11,"ag":2,"t":"18:45"}
+{"a":"Zwolle","d":"2019-10-26","hg":4,"h":"Heracles","r":11,"ag":0,"t":"19:45"}
+{"a":"Groningen","d":"2019-10-27","hg":1,"h":"Heerenveen","r":11,"ag":1,"t":"11:15"}
+{"a":"AZ Alkmaar","d":"2019-10-27","hg":0,"h":"PSV Eindhoven","r":11,"ag":4,"t":"13:30"}
+{"a":"Utrecht","d":"2019-10-27","hg":1,"h":"Sparta Rotterdam","r":11,"ag":2,"t":"13:30"}
+{"a":"Feyenoord","d":"2019-10-27","hg":4,"h":"Ajax","r":11,"ag":0,"t":"15:45"}
+{"a":"Ajax","d":"2019-11-01","hg":2,"h":"Zwolle","r":12,"ag":4,"t":"19:00"}
+{"a":"Heracles","d":"2019-11-02","hg":2,"h":"Waalwijk","r":12,"ag":0,"t":"17:30"}
+{"a":"PSV Eindhoven","d":"2019-11-02","hg":2,"h":"Sparta Rotterdam","r":12,"ag":2,"t":"18:45"}
+{"a":"Twente","d":"2019-11-02","hg":3,"h":"AZ Alkmaar","r":12,"ag":0,"t":"19:45"}
+{"a":"Vitesse","d":"2019-11-03","hg":2,"h":"FC Emmen","r":12,"ag":1,"t":"11:15"}
+{"a":"For Sittard","d":"2019-11-03","hg":6,"h":"Utrecht","r":12,"ag":0,"t":"13:30"}
+{"a":"Feyenoord","d":"2019-11-03","hg":0,"h":"VVV Venlo","r":12,"ag":3,"t":"13:30"}
+{"a":"Willem II","d":"2019-11-03","hg":2,"h":"Groningen","r":12,"ag":0,"t":"13:30"}
+{"a":"Heerenveen","d":"2019-11-03","hg":1,"h":"Den Haag","r":12,"ag":1,"t":"15:45"}
+{"a":"Groningen","d":"2019-11-08","hg":1,"h":"Vitesse","r":13,"ag":2,"t":"19:00"}
+{"a":"Sparta Rotterdam","d":"2019-11-09","hg":2,"h":"Heerenveen","r":13,"ag":1,"t":"17:30"}
+{"a":"Den Haag","d":"2019-11-09","hg":1,"h":"For Sittard","r":13,"ag":0,"t":"18:45"}
+{"a":"VVV Venlo","d":"2019-11-09","hg":6,"h":"Heracles","r":13,"ag":1,"t":"19:45"}
+{"a":"Utrecht","d":"2019-11-10","hg":4,"h":"Ajax","r":13,"ag":0,"t":"11:15"}
+{"a":"PSV Eindhoven","d":"2019-11-10","hg":2,"h":"Willem II","r":13,"ag":1,"t":"13:30"}
+{"a":"Zwolle","d":"2019-11-10","hg":2,"h":"Twente","r":13,"ag":1,"t":"13:30"}
+{"a":"Waalwijk","d":"2019-11-10","hg":3,"h":"Feyenoord","r":13,"ag":2,"t":"15:45"}
+{"a":"FC Emmen","d":"2019-11-10","hg":3,"h":"AZ Alkmaar","r":13,"ag":0,"t":"19:00"}
+{"a":"Heracles","d":"2019-11-23","hg":4,"h":"Ajax","r":14,"ag":1,"t":"18:45"}
+{"a":"Willem II","d":"2019-11-23","hg":3,"h":"Den Haag","r":14,"ag":3,"t":"19:45"}
+{"a":"Feyenoord","d":"2019-11-24","hg":1,"h":"Groningen","r":14,"ag":1,"t":"11:15"}
+{"a":"Heerenveen","d":"2019-11-24","hg":2,"h":"PSV Eindhoven","r":14,"ag":1,"t":"13:30"}
+{"a":"FC Emmen","d":"2019-11-24","hg":1,"h":"Waalwijk","r":14,"ag":1,"t":"13:30"}
+{"a":"Twente","d":"2019-11-24","hg":2,"h":"VVV Venlo","r":14,"ag":1,"t":"15:45"}
+{"a":"Vitesse","d":"2019-11-24","hg":2,"h":"Sparta Rotterdam","r":14,"ag":0,"t":"15:45"}
+{"a":"Vitesse","d":"2019-11-29","hg":3,"h":"Heerenveen","r":15,"ag":2,"t":"19:00"}
+{"a":"Sparta Rotterdam","d":"2019-11-30","hg":4,"h":"Willem II","r":15,"ag":0,"t":"17:30"}
+{"a":"Groningen","d":"2019-11-30","hg":1,"h":"For Sittard","r":15,"ag":0,"t":"18:45"}
+{"a":"Den Haag","d":"2019-11-30","hg":4,"h":"Heracles","r":15,"ag":0,"t":"19:45"}
+{"a":"Ajax","d":"2019-12-01","hg":2,"h":"Twente","r":15,"ag":5,"t":"11:15"}
+{"a":"Waalwijk","d":"2019-12-01","hg":0,"h":"Utrecht","r":15,"ag":1,"t":"13:30"}
+{"a":"Zwolle","d":"2019-12-01","hg":1,"h":"Feyenoord","r":15,"ag":0,"t":"15:45"}
+{"a":"VVV Venlo","d":"2019-12-01","hg":1,"h":"AZ Alkmaar","r":15,"ag":0,"t":"15:45"}
+{"a":"PSV Eindhoven","d":"2019-12-01","hg":1,"h":"FC Emmen","r":15,"ag":1,"t":"19:00"}
+{"a":"Willem II","d":"2019-12-06","hg":0,"h":"Ajax","r":16,"ag":2,"t":"19:15"}
+{"a":"Twente","d":"2019-12-07","hg":0,"h":"Den Haag","r":16,"ag":0,"t":"17:30"}
+{"a":"For Sittard","d":"2019-12-07","hg":5,"h":"PSV Eindhoven","r":16,"ag":0,"t":"18:45"}
+{"a":"FC Emmen","d":"2019-12-07","hg":2,"h":"VVV Venlo","r":16,"ag":0,"t":"18:45"}
+{"a":"AZ Alkmaar","d":"2019-12-07","hg":0,"h":"Zwolle","r":16,"ag":3,"t":"19:45"}
+{"a":"Feyenoord","d":"2019-12-08","hg":0,"h":"Vitesse","r":16,"ag":0,"t":"11:15"}
+{"a":"Utrecht","d":"2019-12-08","hg":0,"h":"Groningen","r":16,"ag":1,"t":"13:30"}
+{"a":"Heerenveen","d":"2019-12-08","hg":1,"h":"Waalwijk","r":16,"ag":3,"t":"13:30"}
+{"a":"Heracles","d":"2019-12-08","hg":0,"h":"Sparta Rotterdam","r":16,"ag":0,"t":"15:45"}
+{"a":"Willem II","d":"2019-12-13","hg":1,"h":"Heerenveen","r":17,"ag":2,"t":"19:00"}
+{"a":"Groningen","d":"2019-12-14","hg":1,"h":"Den Haag","r":17,"ag":1,"t":"17:30"}
+{"a":"Waalwijk","d":"2019-12-14","hg":3,"h":"For Sittard","r":17,"ag":2,"t":"18:45"}
+{"a":"Zwolle","d":"2019-12-14","hg":1,"h":"VVV Venlo","r":17,"ag":2,"t":"18:45"}
+{"a":"Vitesse","d":"2019-12-14","hg":0,"h":"Twente","r":17,"ag":3,"t":"19:45"}
+{"a":"Sparta Rotterdam","d":"2019-12-15","hg":2,"h":"FC Emmen","r":17,"ag":0,"t":"11:15"}
+{"a":"PSV Eindhoven","d":"2019-12-15","hg":3,"h":"Feyenoord","r":17,"ag":1,"t":"13:30"}
+{"a":"Ajax","d":"2019-12-15","hg":1,"h":"AZ Alkmaar","r":17,"ag":0,"t":"15:45"}
+{"a":"Utrecht","d":"2019-12-15","hg":1,"h":"Heracles","r":17,"ag":3,"t":"15:45"}
+{"a":"Twente","d":"2019-12-20","hg":3,"h":"Waalwijk","r":18,"ag":0,"t":"19:00"}
+{"a":"Heracles","d":"2019-12-21","hg":1,"h":"Heerenveen","r":18,"ag":1,"t":"17:30"}
+{"a":"Zwolle","d":"2019-12-21","hg":4,"h":"PSV Eindhoven","r":18,"ag":1,"t":"18:45"}
+{"a":"AZ Alkmaar","d":"2019-12-21","hg":3,"h":"Sparta Rotterdam","r":18,"ag":0,"t":"18:45"}
+{"a":"For Sittard","d":"2019-12-21","hg":0,"h":"Willem II","r":18,"ag":0,"t":"19:45"}
+{"a":"Den Haag","d":"2019-12-22","hg":6,"h":"Ajax","r":18,"ag":1,"t":"11:15"}
+{"a":"FC Emmen","d":"2019-12-22","hg":2,"h":"Groningen","r":18,"ag":0,"t":"13:30"}
+{"a":"Feyenoord","d":"2019-12-22","hg":1,"h":"Utrecht","r":18,"ag":2,"t":"13:30"}
+{"a":"VVV Venlo","d":"2019-12-22","hg":3,"h":"Vitesse","r":18,"ag":0,"t":"15:45"}
+{"a":"Utrecht","d":"2020-01-17","hg":3,"h":"Zwolle","r":19,"ag":3,"t":"19:00"}
+{"a":"Vitesse","d":"2020-01-18","hg":1,"h":"For Sittard","r":19,"ag":3,"t":"17:30"}
+{"a":"Groningen","d":"2020-01-18","hg":0,"h":"Twente","r":19,"ag":0,"t":"18:45"}
+{"a":"Heerenveen","d":"2020-01-18","hg":3,"h":"Feyenoord","r":19,"ag":1,"t":"18:45"}
+{"a":"Willem II","d":"2020-01-18","hg":1,"h":"AZ Alkmaar","r":19,"ag":3,"t":"19:45"}
+{"a":"PSV Eindhoven","d":"2020-01-19","hg":1,"h":"VVV Venlo","r":19,"ag":1,"t":"11:15"}
+{"a":"Sparta Rotterdam","d":"2020-01-19","hg":2,"h":"Ajax","r":19,"ag":1,"t":"13:30"}
+{"a":"Heracles","d":"2020-01-19","hg":1,"h":"FC Emmen","r":19,"ag":0,"t":"13:30"}
+{"a":"Waalwijk","d":"2020-01-19","hg":2,"h":"Den Haag","r":19,"ag":0,"t":"15:45"}
+{"a":"Den Haag","d":"2020-01-24","hg":4,"h":"Utrecht","r":20,"ag":0,"t":"19:00"}
+{"a":"AZ Alkmaar","d":"2020-01-25","hg":1,"h":"Heerenveen","r":20,"ag":2,"t":"17:30"}
+{"a":"Feyenoord","d":"2020-01-25","hg":2,"h":"Heracles","r":20,"ag":3,"t":"18:45"}
+{"a":"VVV Venlo","d":"2020-01-25","hg":1,"h":"Waalwijk","r":20,"ag":2,"t":"18:45"}
+{"a":"For Sittard","d":"2020-01-25","hg":1,"h":"Sparta Rotterdam","r":20,"ag":1,"t":"19:45"}
+{"a":"FC Emmen","d":"2020-01-26","hg":1,"h":"Vitesse","r":20,"ag":1,"t":"11:15"}
+{"a":"Ajax","d":"2020-01-26","hg":2,"h":"Groningen","r":20,"ag":1,"t":"13:30"}
+{"a":"Zwolle","d":"2020-01-26","hg":0,"h":"Willem II","r":20,"ag":0,"t":"13:30"}
+{"a":"Twente","d":"2020-01-26","hg":1,"h":"PSV Eindhoven","r":20,"ag":1,"t":"15:45"}
+{"a":"Waalwijk","d":"2020-01-31","hg":4,"h":"AZ Alkmaar","r":21,"ag":0,"t":"19:00"}
+{"a":"Vitesse","d":"2020-02-01","hg":0,"h":"Den Haag","r":21,"ag":0,"t":"17:30"}
+{"a":"FC Emmen","d":"2020-02-01","hg":3,"h":"Feyenoord","r":21,"ag":0,"t":"18:45"}
+{"a":"Sparta Rotterdam","d":"2020-02-01","hg":2,"h":"Twente","r":21,"ag":0,"t":"18:45"}
+{"a":"Groningen","d":"2020-02-01","hg":1,"h":"Zwolle","r":21,"ag":0,"t":"19:45"}
+{"a":"Heracles","d":"2020-02-02","hg":1,"h":"Willem II","r":21,"ag":0,"t":"11:15"}
+{"a":"Heerenveen","d":"2020-02-02","hg":2,"h":"For Sittard","r":21,"ag":1,"t":"13:30"}
+{"a":"Utrecht","d":"2020-02-02","hg":1,"h":"VVV Venlo","r":21,"ag":1,"t":"13:30"}
+{"a":"PSV Eindhoven","d":"2020-02-02","hg":1,"h":"Ajax","r":21,"ag":0,"t":"15:45"}
+{"a":"For Sittard","d":"2020-02-07","hg":2,"h":"Heracles","r":22,"ag":0,"t":"19:00"}
+{"a":"Vitesse","d":"2020-02-08","hg":1,"h":"Groningen","r":22,"ag":0,"t":"17:30"}
+{"a":"VVV Venlo","d":"2020-02-08","hg":1,"h":"Heerenveen","r":22,"ag":1,"t":"18:45"}
+{"a":"Willem II","d":"2020-02-08","hg":3,"h":"PSV Eindhoven","r":22,"ag":0,"t":"18:45"}
+{"a":"Zwolle","d":"2020-02-08","hg":0,"h":"Waalwijk","r":22,"ag":0,"t":"19:45"}
+{"a":"Twente","d":"2020-02-11","hg":2,"h":"FC Emmen","r":22,"ag":0,"t":"17:30"}
+{"a":"Den Haag","d":"2020-02-11","hg":4,"h":"Sparta Rotterdam","r":22,"ag":2,"t":"19:45"}
+{"a":"Heracles","d":"2020-02-14","hg":1,"h":"VVV Venlo","r":23,"ag":0,"t":"19:00"}
+{"a":"AZ Alkmaar","d":"2020-02-15","hg":2,"h":"Twente","r":23,"ag":0,"t":"17:30"}
+{"a":"PSV Eindhoven","d":"2020-02-15","hg":0,"h":"Den Haag","r":23,"ag":3,"t":"18:45"}
+{"a":"FC Emmen","d":"2020-02-15","hg":0,"h":"For Sittard","r":23,"ag":0,"t":"19:45"}
+{"a":"Heerenveen","d":"2020-02-16","hg":4,"h":"Vitesse","r":23,"ag":2,"t":"11:15"}
+{"a":"Waalwijk","d":"2020-02-16","hg":3,"h":"Ajax","r":23,"ag":0,"t":"13:30"}
+{"a":"Groningen","d":"2020-02-16","hg":1,"h":"Sparta Rotterdam","r":23,"ag":2,"t":"13:30"}
+{"a":"Utrecht","d":"2020-02-16","hg":1,"h":"Willem II","r":23,"ag":1,"t":"15:45"}
+{"a":"Feyenoord","d":"2020-02-16","hg":3,"h":"Zwolle","r":23,"ag":4,"t":"15:45"}
+{"a":"Sparta Rotterdam","d":"2020-02-21","hg":0,"h":"Waalwijk","r":24,"ag":1,"t":"19:00"}
+{"a":"Willem II","d":"2020-02-22","hg":4,"h":"FC Emmen","r":24,"ag":2,"t":"17:30"}
+{"a":"For Sittard","d":"2020-02-22","hg":2,"h":"Feyenoord","r":24,"ag":1,"t":"18:45"}
+{"a":"Den Haag","d":"2020-02-22","hg":2,"h":"Heerenveen","r":24,"ag":2,"t":"18:45"}
+{"a":"VVV Venlo","d":"2020-02-22","hg":0,"h":"Groningen","r":24,"ag":1,"t":"19:45"}
+{"a":"Twente","d":"2020-02-23","hg":2,"h":"Utrecht","r":24,"ag":1,"t":"11:15"}
+{"a":"Zwolle","d":"2020-02-23","hg":2,"h":"AZ Alkmaar","r":24,"ag":0,"t":"13:30"}
+{"a":"PSV Eindhoven","d":"2020-02-23","hg":1,"h":"Vitesse","r":24,"ag":2,"t":"13:30"}
+{"a":"Ajax","d":"2020-02-23","hg":1,"h":"Heracles","r":24,"ag":0,"t":"15:45"}
+{"a":"Groningen","d":"2020-02-28","hg":3,"h":"Willem II","r":25,"ag":1,"t":"19:00"}
+{"a":"Heracles","d":"2020-02-29","hg":0,"h":"Den Haag","r":25,"ag":0,"t":"17:30"}
+{"a":"For Sittard","d":"2020-02-29","hg":0,"h":"VVV Venlo","r":25,"ag":0,"t":"18:45"}
+{"a":"Vitesse","d":"2020-02-29","hg":4,"h":"Zwolle","r":25,"ag":3,"t":"18:45"}
+{"a":"Heerenveen","d":"2020-02-29","hg":2,"h":"Twente","r":25,"ag":3,"t":"19:45"}
+{"a":"Utrecht","d":"2020-03-01","hg":2,"h":"Waalwijk","r":25,"ag":1,"t":"11:15"}
+{"a":"Feyenoord","d":"2020-03-01","hg":1,"h":"PSV Eindhoven","r":25,"ag":1,"t":"13:30"}
+{"a":"FC Emmen","d":"2020-03-01","hg":5,"h":"Sparta Rotterdam","r":25,"ag":1,"t":"15:45"}
+{"a":"AZ Alkmaar","d":"2020-03-01","hg":0,"h":"Ajax","r":25,"ag":2,"t":"19:00"}
+{"a":"Zwolle","d":"2020-03-06","hg":1,"h":"For Sittard","r":26,"ag":1,"t":"19:00"}
+{"a":"Den Haag","d":"2020-03-07","hg":4,"h":"AZ Alkmaar","r":26,"ag":0,"t":"17:30"}
+{"a":"VVV Venlo","d":"2020-03-07","hg":3,"h":"FC Emmen","r":26,"ag":0,"t":"18:45"}
+{"a":"Twente","d":"2020-03-07","hg":1,"h":"Vitesse","r":26,"ag":0,"t":"18:45"}
+{"a":"Ajax","d":"2020-03-07","hg":1,"h":"Heerenveen","r":26,"ag":3,"t":"19:45"}
+{"a":"Sparta Rotterdam","d":"2020-03-08","hg":5,"h":"Utrecht","r":26,"ag":1,"t":"11:15"}
+{"a":"Willem II","d":"2020-03-08","hg":2,"h":"Feyenoord","r":26,"ag":0,"t":"13:30"}
+{"a":"Waalwijk","d":"2020-03-08","hg":4,"h":"Heracles","r":26,"ag":2,"t":"13:30"}
+{"a":"PSV Eindhoven","d":"2020-03-08","hg":0,"h":"Groningen","r":26,"ag":1,"t":"15:45"}
+{"a":"AZ Alkmaar","d":"2019-11-23","hg":0,"h":"Utrecht","r":14,"ag":3,"t":"17:30"}
+{"a":"For Sittard","d":"2019-11-23","hg":3,"h":"Zwolle","r":14,"ag":1,"t":"18:45"}
