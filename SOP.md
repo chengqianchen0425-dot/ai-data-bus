@@ -197,3 +197,20 @@ Football-Data + Bettors.club + TotalCorner + OddsPortal + BetExplorer → 历史
 Muse 只负责虚线之前：**拼命找、拼命抓、尽量不漏、保留原始证据**。
 Muse 禁止：自己选哪场可买、自己做奇门预测、自己定 H/D/A、自己判断赔率合理性、自己改规则、因字段冲突删掉比赛。
 预测数据（主胜概率/总进球区间/RESULT_UPSET/GOALS_UPSET 等）是后处理和模型的事，不是抓取职责——网页抓的是原始输入，不从网页"抄预测"。
+
+### 九、速度分档与四轮扫法（2026-10-03 用户定义，替代 2026-10-02 线性顺序）
+**核心原则**：不一开始每场比赛开 10 个站。先用 3–4 个高速源把 80%–95% 数据一次扫回来，数据库自动生成 Missing Queue，只对缺字段的比赛去慢站定点补。
+**四个高速主入口**：Football-Data + OpenFootball + API-Football + Nowscore/ZGZCW。
+
+- **第一档（最快，优先全量扫）**：Football-Data.co.uk（CSV，比赛/赛果/时间/赔率批量）；OpenFootball（GitHub/JSON，程序批量下载）；API-Football（有 key 时 fixture/round/UTC kickoff/venue 补缺最快，不拿几十年历史赔率）；schochastics/football-data（百万场级，扩样本最快）。
+- **第二档（近期比赛快）**：Sofascore（fixture/kickoff/status/venue，核对延期改期）；Nowscore/Nowgoal（未来比赛池）；ZGZCW（竞彩清单确认快）。
+- **第三档（历史赔率，免费排序）**：Football-Data > TotalCorner > OddsPortal > BetExplorer > Bettors.club。其中**真正适合批量自动抓的只有 Football-Data > TotalCorner**；OddsPortal/BetExplorer/Bettors.club 适合前面源缺数据后按比赛定点补。
+- **第四档（慢，只进 Missing Queue 定点补洞，不参加第一轮）**：RSSSF、WorldFootball、Transfermarkt、各联赛官网、球队官网、OddsPortal 单场深挖、BetExplorer 单场走势、地图网站、Wikidata 复杂查询。
+
+**四轮流程**：
+1. 极速批量：Football-Data + OpenFootball + schochastics + Nowscore + ZGZCW
+2. 结构化补缺：API-Football + Sofascore
+3. 历史赔率缺口：TotalCorner → OddsPortal → BetExplorer → Bettors.club
+4. 难字段：RSSSF → WorldFootball → Transfermarkt → 官方联赛 → 球队官网
+
+**缺口**：第二轮依赖 API-Football key，目前未配——配之前第二轮用 Sofascore + 第一档重扫顶。

@@ -1,1 +1,78 @@
-{"country":"France","done":["2018-2021 增量缺字段证据已补（req-20261003-006，2026-10-03，ok）"],"fixtures_per_season":380,"known_gaps":[],"league_key":"ligue-1","name_zh":"法甲","quirks":[],"seasons_in_scope":["2018-19","2019-20","2020-21"],"source_chain":[{"note":"批量 CSV，先扫","source":"football-data"},{"note":"Historical/Archived","source":"oddsportal"},{"note":"单场约回 2014","source":"totalcorner"},{"note":"Opening vs Current","source":"bettors-club"},{"note":"historical movement","source":"betexplorer"},{"note":"能看就抓","source":"tipsme"},{"note":"最后","source":"oddschecker"}]}
+{
+ "country": "France",
+ "done": [
+  "2018-2021 增量缺字段证据已补（req-20261003-006，2026-10-03，ok）"
+ ],
+ "fixtures_per_season": 380,
+ "known_gaps": [],
+ "league_key": "ligue-1",
+ "name_zh": "法甲",
+ "quirks": [],
+ "seasons_in_scope": [
+  "2018-19",
+  "2019-20",
+  "2020-21"
+ ],
+ "source_chain": [
+  {
+   "source": "football-data",
+   "round": 1,
+   "note": "极速批量：CSV，比赛/赛果/时间/赔率"
+  },
+  {
+   "source": "openfootball",
+   "round": 1,
+   "note": "极速批量：GitHub/JSON，程序批量下载"
+  },
+  {
+   "source": "schochastics",
+   "round": 1,
+   "note": "极速批量：百万场级历史数据集"
+  },
+  {
+   "source": "nowscore",
+   "round": 1,
+   "note": "未来比赛池/即时数据"
+  },
+  {
+   "source": "zgzcw",
+   "round": 1,
+   "note": "竞彩身份确认"
+  },
+  {
+   "source": "api-football",
+   "round": 2,
+   "note": "结构化补缺（需 API key，未配时跳过）"
+  },
+  {
+   "source": "sofascore",
+   "round": 2,
+   "note": "近期核验：延期/改期/kickoff"
+  },
+  {
+   "source": "totalcorner",
+   "round": 3,
+   "note": "历史赔率批量自动抓"
+  },
+  {
+   "source": "oddsportal",
+   "round": 3,
+   "note": "历史赔率定点补（JS，需真浏览器）"
+  },
+  {
+   "source": "betexplorer",
+   "round": 3,
+   "note": "历史赔率定点补（JS，需真浏览器）"
+  },
+  {
+   "source": "bettors-club",
+   "round": 3,
+   "note": "Opening vs Current 定点补"
+  },
+  {
+   "source": "rsssf/worldfootball/transfermarkt/官方/球队官网",
+   "round": 4,
+   "note": "难字段：只进 Missing Queue 定点补"
+  }
+ ]
+}
