@@ -1,0 +1,1 @@
+{"dp_used":false,"id":"req-20261003-004","note":"研究进行中：Primeira Liga 2018/19-2025/26 增量补充（取代 req-20261002-019，旧单不再处理）。计划：football-data CSV 全取 8 季逐场足球事实（日期/时间/比分/FTR/关闭赔率 B365-Pinnacle-William Hill/2.5 大小球）；opening 赔率须先验证是否可证 true opening；球场/坐标/官方轮次从 worldfootball.net 等补。","request_sha":"2d632999b2cec4ad","status":"processing"}
