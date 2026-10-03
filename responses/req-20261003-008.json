@@ -1,678 +1,694 @@
 {
-  "data": {
-    "odds_probe": {
-      "conclusion": "JS 渲染页在本轮无真浏览器任务能力下不可抓；且同一出口 IP 今日西甲 39 场已被 OddsPortal 地区限制 BLOCKED（req-20261003-001），葡超大概率同限。",
-      "result": "仅返回标题骨架，无任何赔率/赛程数据（符合预期：OddsPortal 为 JS 渲染）",
-      "status": "blocked",
-      "true_opening": "football-data 无 true opening 列（notes.txt 口径，见 -004 回执）；OddsPortal historical 需 JS 渲染+疑似地区限制 → 本轮 blocked",
-      "url": "https://www.oddsportal.com/football/portugal/primeira-liga/",
-      "wh_2025_26": "football-data 2526 文件无 WH 列（-004 已确认）；OddsPortal 单场历史页需 JS 渲染 → 本轮 blocked，待有真浏览器任务能力的轮次或 Codex 侧处理"
-    },
-    "remaining_for_next_rounds": [
-      "official_round 全量：pt wiki 4 季 Jornadas 逐轮提取（2018/19 URL 已验证；2019/20、2020/21、2025/26 同模式待验），每场 official_round = 'N.ª Jornada'",
-      "kickoff_local 1819 全量：pt wiki 2018-19 Jornadas 306 场开球时间提取（football-data 1819 无 Time 列已列级证实）",
-      "kickoff_local 1920/2021/2526：football-data Time 列已有（已列级证实），逐行提取即可",
-      "kickoff IANA timezone：仍为 unverified（notes.txt 未声明；pt wiki 仅暗示本土时间），不再猜测",
-      "true opening 赔率：不可得（见 fd_odds_semantics）；已写入 to_codex（18:02 授权版本），Codex 以 pre_closing/closing 做区间筛选",
-      "William Hill 2025/26：列级缺失已证实（2526 CSV 无 WH*/WHC* 列）；该季 WH 1X2/2.5 全部 unavailable，缺口记 unresolved_queue",
-      "2425/2526 及其他季空值行：已抽样证实多季存在空赔率单元格，最终逐行回执保留 NULL 不得删行",
-      "最终 ok 回执：按 stable_key 展开 2448×字段逐行 rows（含本轮 venue/coords 映射 join + fd_csv_schema 列存在矩阵），带 audit 与 unresolved_queue"
-    ],
-    "round_kickoff_poc": {
-      "note": "时区未声明（worldfootball 页面无时区标注）；非赛前快照，retrieved 2026-10-03",
-      "official_round": "1. Round（页面标题 'Primeira Liga 2018/2019 » 1. Round'）",
-      "sample_rows": [
-        {
-          "away": "Vitória Guimarães",
-          "date": "10/08/2018",
-          "home": "SL Benfica",
-          "kickoff": "20:30",
-          "score": "3:2"
-        },
-        {
-          "away": "CD Aves",
-          "date": "11/08/2018",
-          "home": "Vitória Setúbal",
-          "kickoff": "16:30",
-          "score": "2:0"
-        },
-        {
-          "away": "Belenenses SAD",
-          "date": "11/08/2018",
-          "home": "CD Tondela",
-          "kickoff": "19:00",
-          "score": "0:1"
-        },
-        {
-          "away": "GD Chaves",
-          "date": "11/08/2018",
-          "home": "FC Porto",
-          "kickoff": "21:00",
-          "score": "5:0"
-        },
-        {
-          "away": "CD Santa Clara",
-          "date": "12/08/2018",
-          "home": "CS Marítimo",
-          "kickoff": "16:00",
-          "score": "1:0"
-        },
-        {
-          "away": "Rio Ave FC",
-          "date": "12/08/2018",
-          "home": "CD Feirense",
-          "kickoff": "16:00",
-          "score": "2:0"
-        },
-        {
-          "away": "Sporting CP",
-          "date": "12/08/2018",
-          "home": "Moreirense FC",
-          "kickoff": "18:30",
-          "score": "1:3"
-        },
-        {
-          "away": "CD Nacional",
-          "date": "12/08/2018",
-          "home": "Sporting Braga",
-          "kickoff": "20:30",
-          "score": "4:2"
-        },
-        {
-          "away": "Boavista",
-          "date": "13/08/2018",
-          "home": "Portimonense SC",
-          "kickoff": "20:15",
-          "score": "0:2"
-        }
-      ],
-      "season": "2018/19",
-      "source_url": "https://www.worldfootball.net/schedule/por-primeira-liga-2018-2019-spieltag/1/",
-      "status": "superseded_for_1819",
-      "sweep_recipe": "URL 模式 https://www.worldfootball.net/schedule/por-primeira-liga-{YYYY}-{YYYY}-spieltag/{1..34}/，8 季共 272 页，静态 HTML，逐页取 [date, kickoff, home, away, score]，页标题即 official_round",
-      "supersede_note": "2018/19 改用 pt wiki Jornadas（带开球时间+轮次，静态文本可读）；worldfootball 扫荡配方保留为 1920/2021/2526 的备选"
-    },
-    "stadium_coords": {
-      "Algarve (Estádio Algarve)": {
-        "lat": 37.0882389,
-        "lon": -7.9746629
-      },
-      "Complexo Desportivo FC Alverca": {
-        "lat": 38.89789,
-        "lon": -9.0352308,
-        "note": "Nominatim 命中 'Estádio do Futebol Clube de Alverca'"
-      },
-      "Estádio António Coimbra da Mota": {
-        "lat": 38.7158618,
-        "lon": -9.4064087
-      },
-      "Estádio Capital do Móvel": {
-        "lat": 41.2714775,
-        "lon": -8.3853824
-      },
-      "Estádio Cidade de Barcelos": {
-        "lat": 41.5510958,
-        "lon": -8.6230864
-      },
-      "Estádio Comendador Joaquim de Almeida Freitas": {
-        "lat": 41.3780317,
-        "lon": -8.3549951
-      },
-      "Estádio D. Afonso Henriques": {
-        "lat": 41.4458485,
-        "lon": -8.3009921
-      },
-      "Estádio José Alvalade": {
-        "lat": 38.7612024,
-        "lon": -9.1607832
-      },
-      "Estádio José Gomes": {
-        "lat": 38.7521563,
-        "lon": -9.2280007
-      },
-      "Estádio João Cardoso": {
-        "lat": 40.5119993,
-        "lon": -8.0827943
-      },
-      "Estádio Marcolino de Castro": {
-        "lat": 40.9266318,
-        "lon": -8.5459213
-      },
-      "Estádio Municipal 22 de Junho": {
-        "lat": 41.4012527,
-        "lon": -8.5224396,
-        "note": "= 24-26 表中的 'Estádio Municipal de Famalicão'，同一球场"
-      },
-      "Estádio Municipal de Arouca": {
-        "lat": 40.9322921,
-        "lon": -8.2504309
-      },
-      "Estádio Municipal de Braga": {
-        "lat": 41.5624996,
-        "lon": -8.4298677
-      },
-      "Estádio Municipal de Chaves": {
-        "lat": 41.7506323,
-        "lon": -7.4649841,
-        "note": "即表中 'Estádio Municipal Eng. Manuel Branco Teixeira'"
-      },
-      "Estádio Municipal de Portimão": {
-        "lat": 37.1356935,
-        "lon": -8.5398305
-      },
-      "Estádio Municipal de Rio Maior": {
-        "lat": 39.3445766,
-        "lon": -8.9344835,
-        "note": "Casa Pia 22-26 实际主场"
-      },
-      "Estádio Nacional": {
-        "lat": 38.7087907,
-        "lon": -9.2605909,
-        "note": "Jamor, Oeiras；Belenenses SAD/B-SAD 18-22 主场"
-      },
-      "Estádio da Luz": {
-        "lat": 38.7526893,
-        "lon": -9.1846899
-      },
-      "Estádio da Madeira": {
-        "lat": 32.6706231,
-        "lon": -16.8835636
-      },
-      "Estádio de São Luís": {
-        "lat": 37.0228852,
-        "lon": -7.9282722
-      },
-      "Estádio de São Miguel": {
-        "lat": 37.7638647,
-        "lon": -25.6225913
-      },
-      "Estádio do Bessa": {
-        "lat": 41.1621978,
-        "lon": -8.6426013,
-        "note": "Nominatim 命中 'Estádio do Bessa Século XXI'"
-      },
-      "Estádio do Bonfim": {
-        "lat": 38.5313436,
-        "lon": -8.8911816
-      },
-      "Estádio do CD Aves": {
-        "lat": 41.3667575,
-        "lon": -8.4117039,
-        "note": "Nominatim 命中 'Estádio do Clube Desportivo das Aves'；AVS 24-26 共用"
-      },
-      "Estádio do Dragão": {
-        "lat": 41.1618235,
-        "lon": -8.5837492
-      },
-      "Estádio do FC Vizela": {
-        "lat": 41.3889481,
-        "lon": -8.3075383,
-        "note": "Nominatim 命中 'Campo do Futebol Clube de Vizela'"
-      },
-      "Estádio do Marítimo": {
-        "lat": 32.6455744,
-        "lon": -16.9283862
-      },
-      "Estádio do Rio Ave FC": {
-        "lat": 41.3627496,
-        "lon": -8.7401457,
-        "note": "即 Estádio dos Arcos"
-      },
-      "Estádio dos Arcos": {
-        "lat": 41.3627496,
-        "lon": -8.7401457,
-        "note": "= Estádio do Rio Ave FC"
-      },
-      "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03, 29/29 命中"
-    },
-    "venue_by_season": {
-      "2018/19": {
-        "Belenenses SAD": "Estádio Nacional",
-        "Benfica": "Estádio da Luz",
-        "Boavista": "Estádio do Bessa",
-        "Braga": "Estádio Municipal de Braga",
-        "Chaves": "Estádio Municipal de Chaves",
-        "Desportivo das Aves": "Estádio do CD Aves",
-        "Feirense": "Estádio Marcolino de Castro",
-        "Marítimo": "Estádio do Marítimo",
-        "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
-        "Nacional": "Estádio da Madeira",
-        "Portimonense": "Estádio Municipal de Portimão",
-        "Porto": "Estádio do Dragão",
-        "Rio Ave": "Estádio dos Arcos",
-        "Santa Clara": "Estádio de São Miguel",
-        "Sporting CP": "Estádio José Alvalade",
-        "Tondela": "Estádio João Cardoso",
-        "Vitória de Guimarães": "Estádio D. Afonso Henriques",
-        "Vitória de Setúbal": "Estádio do Bonfim"
-      },
-      "2019/20": {
-        "Belenenses SAD": "Estádio Nacional",
-        "Benfica": "Estádio da Luz",
-        "Boavista": "Estádio do Bessa",
-        "Braga": "Estádio Municipal de Braga",
-        "Desportivo das Aves": "Estádio do CD Aves",
-        "Famalicão": "Estádio Municipal 22 de Junho",
-        "Gil Vicente": "Estádio Cidade de Barcelos",
-        "Marítimo": "Estádio do Marítimo",
-        "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
-        "Paços de Ferreira": "Estádio Capital do Móvel",
-        "Portimonense": "Estádio Municipal de Portimão",
-        "Porto": "Estádio do Dragão",
-        "Rio Ave": "Estádio dos Arcos",
-        "Santa Clara": "Estádio de São Miguel",
-        "Sporting CP": "Estádio José Alvalade",
-        "Tondela": "Estádio João Cardoso",
-        "Vitória de Guimarães": "Estádio D. Afonso Henriques",
-        "Vitória de Setúbal": "Estádio do Bonfim"
-      },
-      "2020/21": {
-        "B-SAD": "Estádio Nacional",
-        "Benfica": "Estádio da Luz",
-        "Boavista": "Estádio do Bessa",
-        "Braga": "Estádio Municipal de Braga",
-        "Famalicão": "Estádio Municipal 22 de Junho",
-        "Farense": "Estádio de São Luís",
-        "Gil Vicente": "Estádio Cidade de Barcelos",
-        "Marítimo": "Estádio do Marítimo",
-        "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
-        "Nacional": "Estádio da Madeira",
-        "Paços de Ferreira": "Estádio Capital do Móvel",
-        "Portimonense": "Estádio Municipal de Portimão",
-        "Porto": "Estádio do Dragão",
-        "Rio Ave": "Estádio dos Arcos",
-        "Santa Clara": "Estádio de São Miguel",
-        "Sporting CP": "Estádio José Alvalade",
-        "Tondela": "Estádio João Cardoso",
-        "Vitória de Guimarães": "Estádio D. Afonso Henriques"
-      },
-      "2021/22": {
-        "Arouca": "Estádio Municipal de Arouca",
-        "B-SAD": "Estádio Nacional",
-        "Benfica": "Estádio da Luz",
-        "Boavista": "Estádio do Bessa",
-        "Braga": "Estádio Municipal de Braga",
-        "Estoril": "Estádio António Coimbra da Mota",
-        "Famalicão": "Estádio Municipal 22 de Junho",
-        "Gil Vicente": "Estádio Cidade de Barcelos",
-        "Marítimo": "Estádio do Marítimo",
-        "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
-        "Paços de Ferreira": "Estádio Capital do Móvel",
-        "Portimonense": "Estádio Municipal de Portimão",
-        "Porto": "Estádio do Dragão",
-        "Santa Clara": "Estádio de São Miguel",
-        "Sporting CP": "Estádio José Alvalade",
-        "Tondela": "Estádio João Cardoso",
-        "Vitória de Guimarães": "Estádio D. Afonso Henriques",
-        "Vizela": "Estádio do FC Vizela"
-      },
-      "2022/23": {
-        "Arouca": "Estádio Municipal de Arouca",
-        "Benfica": "Estádio da Luz",
-        "Boavista": "Estádio do Bessa",
-        "Braga": "Estádio Municipal de Braga",
-        "Casa Pia": "Estádio Municipal de Rio Maior",
-        "Chaves": "Estádio Municipal de Chaves",
-        "Estoril": "Estádio António Coimbra da Mota",
-        "Famalicão": "Estádio Municipal 22 de Junho",
-        "Gil Vicente": "Estádio Cidade de Barcelos",
-        "Marítimo": "Estádio do Marítimo",
-        "Paços de Ferreira": "Estádio Capital do Móvel",
-        "Portimonense": "Estádio Municipal de Portimão",
-        "Porto": "Estádio do Dragão",
-        "Rio Ave": "Estádio dos Arcos",
-        "Santa Clara": "Estádio de São Miguel",
-        "Sporting CP": "Estádio José Alvalade",
-        "Vitória de Guimarães": "Estádio D. Afonso Henriques",
-        "Vizela": "Estádio do FC Vizela"
-      },
-      "2023/24": {
-        "Arouca": "Estádio Municipal de Arouca",
-        "Benfica": "Estádio da Luz",
-        "Boavista": "Estádio do Bessa",
-        "Braga": "Estádio Municipal de Braga",
-        "Casa Pia": "Estádio Municipal de Rio Maior",
-        "Chaves": "Estádio Municipal de Chaves",
-        "Estoril": "Estádio António Coimbra da Mota",
-        "Estrela da Amadora": "Estádio José Gomes",
-        "Famalicão": "Estádio Municipal 22 de Junho",
-        "Farense": "Estádio de São Luís",
-        "Gil Vicente": "Estádio Cidade de Barcelos",
-        "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
-        "Portimonense": "Estádio Municipal de Portimão",
-        "Porto": "Estádio do Dragão",
-        "Rio Ave": "Estádio dos Arcos",
-        "Sporting CP": "Estádio José Alvalade",
-        "Vitória de Guimarães": "Estádio D. Afonso Henriques",
-        "Vizela": "Estádio do FC Vizela"
-      },
-      "2024/25": {
-        "AVS": "Estádio do CD Aves",
-        "Arouca": "Estádio Municipal de Arouca",
-        "Benfica": "Estádio da Luz",
-        "Boavista": "Estádio do Bessa",
-        "Braga": "Estádio Municipal de Braga",
-        "Casa Pia": "Estádio Municipal de Rio Maior",
-        "Estoril": "Estádio António Coimbra da Mota",
-        "Estrela da Amadora": "Estádio José Gomes",
-        "Famalicão": "Estádio Municipal 22 de Junho",
-        "Farense": "Estádio de São Luís",
-        "Gil Vicente": "Estádio Cidade de Barcelos",
-        "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
-        "Nacional": "Estádio da Madeira",
-        "Porto": "Estádio do Dragão",
-        "Rio Ave": "Estádio dos Arcos",
-        "Santa Clara": "Estádio de São Miguel",
-        "Sporting CP": "Estádio José Alvalade",
-        "Vitória de Guimarães": "Estádio D. Afonso Henriques"
-      },
-      "2025/26": {
-        "AVS": "Estádio do CD Aves",
-        "Alverca": "Complexo Desportivo FC Alverca",
-        "Arouca": "Estádio Municipal de Arouca",
-        "Benfica": "Estádio da Luz",
-        "Braga": "Estádio Municipal de Braga",
-        "Casa Pia": "Estádio Municipal de Rio Maior",
-        "Estoril Praia": "Estádio António Coimbra da Mota",
-        "Estrela da Amadora": "Estádio José Gomes",
-        "Famalicão": "Estádio Municipal 22 de Junho",
-        "Gil Vicente": "Estádio Cidade de Barcelos",
-        "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
-        "Nacional": "Estádio da Madeira",
-        "Porto": "Estádio do Dragão",
-        "Rio Ave": "Estádio dos Arcos",
-        "Santa Clara": "Estádio de São Miguel",
-        "Sporting CP": "Estádio José Alvalade",
-        "Tondela": "Estádio João Cardoso",
-        "Vitória de Guimarães": "Estádio D. Afonso Henriques"
-      }
-    },
-    "venue_exceptions": [
-      {
-        "detail": "Farense 前 3 个主场在 Estádio Algarve（草皮更换），其余赛季主场为 Estádio de São Luís",
-        "season": "2020/21",
-        "source": "2020–21 Wikipedia 页面正文"
-      }
-    ],
-    "venue_join_note": "逐场 venue = venue_by_season[season][home_team]；venue_lat/lon = stadium_coords[venue]。home_team 需做名称归一（football-data 别名：Sp Lisbon→Sporting CP, Sp Braga→Braga, Guimaraes→Vitória de Guimarães, Vitoria Setubal→Vitória de Setúbal, Belenenses→Belenenses SAD/B-SAD, Nacional→Nacional, Pacos Ferreira→Paços de Ferreira, Aves→Desportivo das Aves/AVS 按赛季）",
-    "venue_sources": {
-      "2018/19": "https://en.wikipedia.org/wiki/2018–19_Primeira_Liga",
-      "2019/20": "https://en.wikipedia.org/wiki/2019–20_Primeira_Liga",
-      "2020/21": "https://en.wikipedia.org/wiki/2020–21_Primeira_Liga",
-      "2021/22": "derived: https://en.wikipedia.org/wiki/2020–21_Primeira_Liga + https://en.wikipedia.org/wiki/2022–23_Primeira_Liga（该季页面球场表未渲染，取前后两季交叉；期间无俱乐部更换主场记录）",
-      "2022/23": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
-      "2023/24": "https://en.wikipedia.org/wiki/2023–24_Primeira_Liga",
-      "2024/25": "https://en.wikipedia.org/wiki/2024–25_Primeira_Liga",
-      "2025/26": "https://en.wikipedia.org/wiki/2025–26_Primeira_Liga"
-    },
-    "fd_csv_schema": {
-      "base_url": "https://www.football-data.co.uk/mmz4281/{SSYY}/P1.csv",
-      "seasons": {
-        "2018/19": {
-          "file": "1819",
-          "lines": 612,
-          "has_time": false,
-          "bookmakers_1x2": [
-            "B365",
-            "BWH(Bet&Win)",
-            "IW(Interwetten)",
-            "PS(Pinnacle)",
-            "WH(William Hill)",
-            "VC"
-          ],
-          "closing_1x2": [
-            "PSCH/PSCD/PSCA(仅Pinnacle)"
-          ],
-          "ou_bookmaker": "无（仅 BbOU BetBrain 聚合）",
-          "note": "旧 schema；无 Time 列；无 B365C/WHC closing 列"
-        },
-        "2019/20": {
-          "file": "1920",
-          "lines": 612,
-          "has_time": true,
-          "bookmakers_1x2": [
-            "B365",
-            "BWH(Bet&Win)",
-            "IW",
-            "PS",
-            "WH",
-            "VC",
-            "Max",
-            "Avg"
-          ],
-          "closing_1x2": [
-            "B365C",
-            "BWC",
-            "IWC",
-            "PSC",
-            "WHC",
-            "VCC",
-            "MaxC",
-            "AvgC"
-          ],
-          "ou_bookmaker": "B365>2.5, P>2.5, Max>2.5, Avg>2.5（+closing C 版）",
-          "note": "新 schema；含 AH 亚盘列"
-        },
-        "2020/21": {
-          "file": "2021",
-          "lines": 612,
-          "has_time": true,
-          "same_schema_as": "2019/20"
-        },
-        "2021/22": {
-          "file": "2122",
-          "lines": 612,
-          "has_time": true,
-          "same_schema_as": "2019/20"
-        },
-        "2022/23": {
-          "file": "2223",
-          "lines": 612,
-          "has_time": true,
-          "same_schema_as": "2019/20"
-        },
-        "2023/24": {
-          "file": "2324",
-          "lines": 612,
-          "has_time": true,
-          "same_schema_as": "2019/20"
-        },
-        "2024/25": {
-          "file": "2425",
-          "lines": 612,
-          "has_time": true,
-          "bookmakers_1x2": [
-            "B365",
-            "BWH(Bet&Win)",
-            "BF(Betfair)",
-            "PS",
-            "WH(William Hill)",
-            "1XB(1XBet)",
-            "Max",
-            "Avg",
-            "BFE(Betfair Exchange)"
-          ],
-          "closing_1x2": [
-            "B365C",
-            "BWC",
-            "BFC",
-            "PSC",
-            "WHC",
-            "1XBC",
-            "MaxC",
-            "AvgC",
-            "BFEC"
-          ],
-          "ou_bookmaker": "B365>2.5, P>2.5, Max>2.5, Avg>2.5, BFE>2.5（+closing C 版）",
-          "note": "最新 schema 变体"
-        },
-        "2025/26": {
-          "file": "2526",
-          "lines": 612,
-          "has_time": true,
-          "bookmakers_1x2": [
-            "B365",
-            "BFD(Betfred)",
-            "BMGM(BetMGM)",
-            "BV(BetVictor)",
-            "BWH(Bet&Win)",
-            "CL(Coral)",
-            "LB(Ladbrokes)",
-            "PS(Pinnacle)",
-            "Max",
-            "Avg",
-            "BFE"
-          ],
-          "closing_1x2": [
-            "B365C",
-            "BFDC",
-            "BMGMC",
-            "BVC",
-            "BWC",
-            "CLC",
-            "LBC",
-            "PSC",
-            "MaxC",
-            "AvgC",
-            "BFEC"
-          ],
-          "ou_bookmaker": "B365>2.5, P>2.5, Max>2.5, Avg>2.5, BFE>2.5（+closing C 版）",
-          "WH_ABSENT": true,
-          "note": "William Hill 列整季缺失（无 WHH/WHD/WHA、无 WHCH/WHCD/WHCA），列级证实"
-        }
-      },
-      "wh_identity": "notes.txt 口径：WHH/WHD/WHA = William Hill；BWH/BWD/BWA = Bet&Win（非 William Hill，非 Betway）",
-      "retrieved": "2026-10-03"
-    },
-    "fd_odds_semantics": {
-      "source": "https://www.football-data.co.uk/notes.txt",
-      "pre_closing": "无 C 后缀的书商列（B365H、WHH、PSH 等）= pre-closing odds；采集于周末赛前周五下午 / 周中赛前周二下午",
-      "closing": "带 C 后缀的列（B365CH、WHCH、PSCH 等）= closing odds",
-      "true_opening": "unavailable —— notes.txt 无 true opening 概念；BetBrain BbMx/BbAv 为市场聚合非开盘；Bet365/Pinnacle/William Hill 列均为 pre-closing/closing 快照",
-      "mapping": {
-        "B365H/B365D/B365A": "pre_closing",
-        "B365CH/B365CD/B365CA": "closing",
-        "WHH/WHD/WHA": "pre_closing",
-        "WHCH/WHCD/WHCA": "closing",
-        "PSH/PSD/PSA": "pre_closing",
-        "PSCH/PSCD/PSCA": "closing",
-        "B365>2.5/B365<2.5": "pre_closing",
-        "P>2.5/P<2.5": "pre_closing",
-        "B365C>2.5 等": "closing",
-        "所有列": "无 true_opening / 无 earliest_verified_pre_match（不改名）"
-      }
-    },
-    "fd_202526_season_status": {
-      "status": "complete_in_csv",
-      "evidence": "CSV 末轮 16/05/2026 共 9 场（如 Sp Lisbon 3-0 Gil Vicente, Porto 1-0 Santa Clara），FTHG/FTAG 全部有值；文件 612 行 ≈ 306 场",
-      "note": "2025/26 赛季已于 2026-05 结束；CSV 快照中无未完成场次（无需 NULL 占位行，但空赔率单元格仍需保留 NULL）",
-      "caveat": "全量 306 行逐行校验待做（retrieved 2026-10-03 快照）"
-    },
-    "sparse_rows_evidence": [
-      {
-        "season": "2019/20",
-        "row": "24/08/2019 Boavista vs Pacos Ferreira",
-        "empty": "WHH/WHD/WHA（William Hill 1X2 空值）"
-      },
-      {
-        "season": "2020/21",
-        "row": "26/09/2020 Boavista vs Porto",
-        "empty": "PSH/PSD/PSA（Pinnacle 1X2 空值）"
-      },
-      {
-        "season": "2024/25",
-        "row": "18/08/2024 Moreirense vs Arouca",
-        "empty": "B365>2.5/B365<2.5（Bet365 大小球空值）"
-      },
-      {
-        "season": "2024/25",
-        "row": "18/08/2024 Guimaraes vs Estoril",
-        "empty": "Avg>2.5/Avg<2.5 空值"
-      },
-      {
-        "season": "2025/26",
-        "row": "10/08/2025 Famalicao vs Santa Clara",
-        "empty": "Avg>2.5/Avg<2.5 空值；MaxCAHH 空值"
-      },
-      {
-        "season": "2025/26",
-        "row": "17/08/2025 Alverca vs Sp Braga",
-        "empty": "B365>2.5/B365<2.5 空值"
-      },
-      {
-        "season": "2025/26",
-        "row": "16/05/2026 Sp Lisbon vs Gil Vicente",
-        "empty": "PSH/PSD/PSA、MaxH 等多列空值（赛季末轮稀疏）"
-      }
-    ],
-    "kickoff_1819_status": {
-      "football_data": "unavailable —— 1819 CSV 无 Time 列（列级证实），不得猜测",
-      "worldfootball": "blocked 本轮 —— 文本层 403（alle_spiele 路径）；schedule/spieltag 路径上一轮可用，本轮按开发者指令不再重试该源",
-      "alternative_verified": "pt.wikipedia.org/wiki/Primeira_Liga_de_2018–19 的 'Jornadas' 章节：34 轮 × 9 场，逐场含日期/开球时间/比分/球场；1.ª/2.ª Jornada 已抽样核验与 football-data 日期比分一致",
-      "recipe": "同一 URL 下 'N.ª Jornada' 小节即 official_round；每场 '日期 | 主队 | 比分 | 客队' 表格首行含开球时间（如 '| 20:30 |'）"
-    },
-    "official_round_status": {
-      "2018/19": "来源已验证（pt wiki Jornadas），全量 306 场提取待下一轮",
-      "2019/20": "同模式 URL pt.wikipedia.org/wiki/Primeira_Liga_de_2019–20，待验证",
-      "2020/21": "同模式 URL pt.wikipedia.org/wiki/Primeira_Liga_de_2020–21，待验证",
-      "2025/26": "同模式 URL pt.wikipedia.org/wiki/Primeira_Liga_de_2025–26，待验证"
-    },
-    "timezone_status": {
-      "IANA": "unverified",
-      "evidence": "football-data notes.txt 对 Time 列未声明时区；pt wiki 2018-19 亚速尔场次标注 '20:30 (19:30 Hora Local)'（Santa Clara 主场），说明所列时间为葡萄牙本土时间，但无 IANA 显式声明",
-      "rule": "按请求要求，不猜测 Europe/Lisbon；最终逐行回执中 IANA timezone 字段填 unverified"
-    },
-    "venue_alias_flag": {
-      "issue": "pt wiki 2018-19 将 Marítimo 主场写作 'Estádio dos Barreiros'，与 venue_by_season 的 'Estádio do Marítimo' 名称不一致",
-      "assessment": "疑为同一球场别名（旧名/俗名），坐标不变；已登记为别名冲突，待交叉核验，不影响 venue 映射",
-      "status": "conflict_noted_not_resolved"
-    },
-    "audit": {
-      "expected": 2448,
-      "discovered": 2448,
-      "complete": 144,
-      "partial": 2304,
-      "missing": 0,
-      "basis": "8 个 CSV 文件均可达、均为 612 行（≈306 场/季）；venue 映射 144/144 + 球场坐标 29/29 完成；赔率列存在矩阵 8/8 列级核验；official_round/kickoff 1819 全量提取与 2448 行逐行展开待后续轮次",
-      "stage": "证据收集中（processing），非最终 ok"
-    },
-    "unresolved_queue": [
-      {
-        "item": "true_opening 8 季全部",
-        "reason": "football-data 无此概念（notes.txt）；OddsPortal 历史页需真浏览器+同出口 IP 地区限制（DEAD-END 登记）",
-        "action": "to_codex 通知 Codex 用 pre_closing/closing 筛选，不再空转"
-      },
-      {
-        "item": "William Hill 2025/26 1X2 与 2.5",
-        "reason": "2526 CSV 列级缺失（无 WH*/WHC* 列）；OddsPortal 历史页同上 blocked",
-        "action": "记 unavailable，Codex 侧如有真浏览器可补"
-      },
-      {
-        "item": "kickoff_local 2018/19 306 场",
-        "reason": "football-data 1819 无 Time 列；worldfootball 本轮文本层 403",
-        "action": "pt wiki Jornadas 配方已验证，下一轮提取"
-      },
-      {
-        "item": "official_round 4 季全量",
-        "reason": "football-data 无轮次列",
-        "action": "pt wiki Jornadas 配方已验证，下一轮提取"
-      },
-      {
-        "item": "kickoff IANA timezone",
-        "reason": "notes.txt 未声明；pt wiki 仅暗示本土时间（'Hora Local' 标注）",
-        "action": "保持 unverified，不猜测"
-      },
-      {
-        "item": "2025/26 全量 306 行逐行校验",
-        "reason": "本轮仅列级+末轮抽样",
-        "action": "最终 ok 回执前必做"
-      }
-    ]
+ "data": {
+  "odds_probe": {
+   "conclusion": "JS 渲染页在本轮无真浏览器任务能力下不可抓；且同一出口 IP 今日西甲 39 场已被 OddsPortal 地区限制 BLOCKED（req-20261003-001），葡超大概率同限。",
+   "result": "仅返回标题骨架，无任何赔率/赛程数据（符合预期：OddsPortal 为 JS 渲染）",
+   "status": "blocked",
+   "true_opening": "football-data 无 true opening 列（notes.txt 口径，见 -004 回执）；OddsPortal historical 需 JS 渲染+疑似地区限制 → 本轮 blocked",
+   "url": "https://www.oddsportal.com/football/portugal/primeira-liga/",
+   "wh_2025_26": "football-data 2526 文件无 WH 列（-004 已确认）；OddsPortal 单场历史页需 JS 渲染 → 本轮 blocked，待有真浏览器任务能力的轮次或 Codex 侧处理"
   },
-  "dp_used": false,
-  "id": "req-20261003-008",
-  "note": "接手轮（processing mtime 超 15 分钟）：football-data 8 季 P1.csv 全部直连核验——1819 无 Time 列（列级证实）、1920–2324 完整新 schema（含 Time+WH+closing 列）、2425 新 schema（含 WH）、2526 无 William Hill 列（WH 缺列列级证实）；notes.txt 赔率语义已取：无后缀=pre-closing、C 后缀=closing、无 true opening 概念；2025/26 赛季 CSV 快照完整（末轮 16/05/2026，赛果全有）；多季空赔率单元格抽样证实（最终逐行须保留 NULL）；pt wiki 2018-19 Jornadas 已验证为 kickoff+official_round 可用源（含开球时间）；时区 IANA 保持 unverified（不猜测）；Marítimo 球场别名冲突已登记。to_codex v1-008 已按 18:02 授权写入。",
-  "request_sha": "bfbd8a2267ae0bd2",
-  "status": "processing",
-  "to_codex": "【to_codex v1-008｜依据用户 2026-10-03 18:02 长期授权：真开盘不可达转筛选】葡超 8 季 true opening 赔率经检索确认不可得：football-data notes.txt 原文口径无 true opening 概念（其书商列仅为 pre-closing/closing 快照），OddsPortal 单场历史页需真浏览器且本轮文本层不可达（DEAD-END 登记）。请以本回执已交付的 pre_closing（B365/WH/PS 等无 C 列）与 closing（C 列）赔率做赔率区间筛选，执行你的工作流，不要等待真开盘。William Hill 2025/26 为列级缺失（该季 CSV 无 WH 列），该季 WH 相关全部记 unavailable。缺口已记入本回执 unresolved_queue。"
+  "remaining_for_next_rounds": [
+   "official_round 全量：pt wiki 4 季 Jornadas 逐轮提取（2018/19 URL 已验证；2019/20、2020/21、2025/26 同模式待验），每场 official_round = 'N.ª Jornada'",
+   "kickoff_local 1819 全量：pt wiki 2018-19 Jornadas 306 场开球时间提取（football-data 1819 无 Time 列已列级证实）",
+   "kickoff_local 1920/2021/2526：football-data Time 列已有（已列级证实），逐行提取即可",
+   "kickoff IANA timezone：仍为 unverified（notes.txt 未声明；pt wiki 仅暗示本土时间），不再猜测",
+   "true opening 赔率：不可得（见 fd_odds_semantics）；已写入 to_codex（18:02 授权版本），Codex 以 pre_closing/closing 做区间筛选",
+   "William Hill 2025/26：列级缺失已证实（2526 CSV 无 WH*/WHC* 列）；该季 WH 1X2/2.5 全部 unavailable，缺口记 unresolved_queue",
+   "2425/2526 及其他季空值行：已抽样证实多季存在空赔率单元格，最终逐行回执保留 NULL 不得删行",
+   "最终 ok 回执：按 stable_key 展开 2448×字段逐行 rows（含本轮 venue/coords 映射 join + fd_csv_schema 列存在矩阵），带 audit 与 unresolved_queue"
+  ],
+  "round_kickoff_poc": {
+   "note": "时区未声明（worldfootball 页面无时区标注）；非赛前快照，retrieved 2026-10-03",
+   "official_round": "1. Round（页面标题 'Primeira Liga 2018/2019 » 1. Round'）",
+   "sample_rows": [
+    {
+     "away": "Vitória Guimarães",
+     "date": "10/08/2018",
+     "home": "SL Benfica",
+     "kickoff": "20:30",
+     "score": "3:2"
+    },
+    {
+     "away": "CD Aves",
+     "date": "11/08/2018",
+     "home": "Vitória Setúbal",
+     "kickoff": "16:30",
+     "score": "2:0"
+    },
+    {
+     "away": "Belenenses SAD",
+     "date": "11/08/2018",
+     "home": "CD Tondela",
+     "kickoff": "19:00",
+     "score": "0:1"
+    },
+    {
+     "away": "GD Chaves",
+     "date": "11/08/2018",
+     "home": "FC Porto",
+     "kickoff": "21:00",
+     "score": "5:0"
+    },
+    {
+     "away": "CD Santa Clara",
+     "date": "12/08/2018",
+     "home": "CS Marítimo",
+     "kickoff": "16:00",
+     "score": "1:0"
+    },
+    {
+     "away": "Rio Ave FC",
+     "date": "12/08/2018",
+     "home": "CD Feirense",
+     "kickoff": "16:00",
+     "score": "2:0"
+    },
+    {
+     "away": "Sporting CP",
+     "date": "12/08/2018",
+     "home": "Moreirense FC",
+     "kickoff": "18:30",
+     "score": "1:3"
+    },
+    {
+     "away": "CD Nacional",
+     "date": "12/08/2018",
+     "home": "Sporting Braga",
+     "kickoff": "20:30",
+     "score": "4:2"
+    },
+    {
+     "away": "Boavista",
+     "date": "13/08/2018",
+     "home": "Portimonense SC",
+     "kickoff": "20:15",
+     "score": "0:2"
+    }
+   ],
+   "season": "2018/19",
+   "source_url": "https://www.worldfootball.net/schedule/por-primeira-liga-2018-2019-spieltag/1/",
+   "status": "superseded_for_1819",
+   "sweep_recipe": "URL 模式 https://www.worldfootball.net/schedule/por-primeira-liga-{YYYY}-{YYYY}-spieltag/{1..34}/，8 季共 272 页，静态 HTML，逐页取 [date, kickoff, home, away, score]，页标题即 official_round",
+   "supersede_note": "2018/19 改用 pt wiki Jornadas（带开球时间+轮次，静态文本可读）；worldfootball 扫荡配方保留为 1920/2021/2526 的备选"
+  },
+  "stadium_coords": {
+   "Algarve (Estádio Algarve)": {
+    "lat": 37.0882389,
+    "lon": -7.9746629
+   },
+   "Complexo Desportivo FC Alverca": {
+    "lat": 38.89789,
+    "lon": -9.0352308,
+    "note": "Nominatim 命中 'Estádio do Futebol Clube de Alverca'"
+   },
+   "Estádio António Coimbra da Mota": {
+    "lat": 38.7158618,
+    "lon": -9.4064087
+   },
+   "Estádio Capital do Móvel": {
+    "lat": 41.2714775,
+    "lon": -8.3853824
+   },
+   "Estádio Cidade de Barcelos": {
+    "lat": 41.5510958,
+    "lon": -8.6230864
+   },
+   "Estádio Comendador Joaquim de Almeida Freitas": {
+    "lat": 41.3780317,
+    "lon": -8.3549951
+   },
+   "Estádio D. Afonso Henriques": {
+    "lat": 41.4458485,
+    "lon": -8.3009921
+   },
+   "Estádio José Alvalade": {
+    "lat": 38.7612024,
+    "lon": -9.1607832
+   },
+   "Estádio José Gomes": {
+    "lat": 38.7521563,
+    "lon": -9.2280007
+   },
+   "Estádio João Cardoso": {
+    "lat": 40.5119993,
+    "lon": -8.0827943
+   },
+   "Estádio Marcolino de Castro": {
+    "lat": 40.9266318,
+    "lon": -8.5459213
+   },
+   "Estádio Municipal 22 de Junho": {
+    "lat": 41.4012527,
+    "lon": -8.5224396,
+    "note": "= 24-26 表中的 'Estádio Municipal de Famalicão'，同一球场"
+   },
+   "Estádio Municipal de Arouca": {
+    "lat": 40.9322921,
+    "lon": -8.2504309
+   },
+   "Estádio Municipal de Braga": {
+    "lat": 41.5624996,
+    "lon": -8.4298677
+   },
+   "Estádio Municipal de Chaves": {
+    "lat": 41.7506323,
+    "lon": -7.4649841,
+    "note": "即表中 'Estádio Municipal Eng. Manuel Branco Teixeira'"
+   },
+   "Estádio Municipal de Portimão": {
+    "lat": 37.1356935,
+    "lon": -8.5398305
+   },
+   "Estádio Municipal de Rio Maior": {
+    "lat": 39.3445766,
+    "lon": -8.9344835,
+    "note": "Casa Pia 22-26 实际主场"
+   },
+   "Estádio Nacional": {
+    "lat": 38.7087907,
+    "lon": -9.2605909,
+    "note": "Jamor, Oeiras；Belenenses SAD/B-SAD 18-22 主场"
+   },
+   "Estádio da Luz": {
+    "lat": 38.7526893,
+    "lon": -9.1846899
+   },
+   "Estádio da Madeira": {
+    "lat": 32.6706231,
+    "lon": -16.8835636
+   },
+   "Estádio de São Luís": {
+    "lat": 37.0228852,
+    "lon": -7.9282722
+   },
+   "Estádio de São Miguel": {
+    "lat": 37.7638647,
+    "lon": -25.6225913
+   },
+   "Estádio do Bessa": {
+    "lat": 41.1621978,
+    "lon": -8.6426013,
+    "note": "Nominatim 命中 'Estádio do Bessa Século XXI'"
+   },
+   "Estádio do Bonfim": {
+    "lat": 38.5313436,
+    "lon": -8.8911816
+   },
+   "Estádio do CD Aves": {
+    "lat": 41.3667575,
+    "lon": -8.4117039,
+    "note": "Nominatim 命中 'Estádio do Clube Desportivo das Aves'；AVS 24-26 共用"
+   },
+   "Estádio do Dragão": {
+    "lat": 41.1618235,
+    "lon": -8.5837492
+   },
+   "Estádio do FC Vizela": {
+    "lat": 41.3889481,
+    "lon": -8.3075383,
+    "note": "Nominatim 命中 'Campo do Futebol Clube de Vizela'"
+   },
+   "Estádio do Marítimo": {
+    "lat": 32.6455744,
+    "lon": -16.9283862
+   },
+   "Estádio do Rio Ave FC": {
+    "lat": 41.3627496,
+    "lon": -8.7401457,
+    "note": "即 Estádio dos Arcos"
+   },
+   "Estádio dos Arcos": {
+    "lat": 41.3627496,
+    "lon": -8.7401457,
+    "note": "= Estádio do Rio Ave FC"
+   },
+   "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03, 29/29 命中"
+  },
+  "venue_by_season": {
+   "2018/19": {
+    "Belenenses SAD": "Estádio Nacional",
+    "Benfica": "Estádio da Luz",
+    "Boavista": "Estádio do Bessa",
+    "Braga": "Estádio Municipal de Braga",
+    "Chaves": "Estádio Municipal de Chaves",
+    "Desportivo das Aves": "Estádio do CD Aves",
+    "Feirense": "Estádio Marcolino de Castro",
+    "Marítimo": "Estádio do Marítimo",
+    "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
+    "Nacional": "Estádio da Madeira",
+    "Portimonense": "Estádio Municipal de Portimão",
+    "Porto": "Estádio do Dragão",
+    "Rio Ave": "Estádio dos Arcos",
+    "Santa Clara": "Estádio de São Miguel",
+    "Sporting CP": "Estádio José Alvalade",
+    "Tondela": "Estádio João Cardoso",
+    "Vitória de Guimarães": "Estádio D. Afonso Henriques",
+    "Vitória de Setúbal": "Estádio do Bonfim"
+   },
+   "2019/20": {
+    "Belenenses SAD": "Estádio Nacional",
+    "Benfica": "Estádio da Luz",
+    "Boavista": "Estádio do Bessa",
+    "Braga": "Estádio Municipal de Braga",
+    "Desportivo das Aves": "Estádio do CD Aves",
+    "Famalicão": "Estádio Municipal 22 de Junho",
+    "Gil Vicente": "Estádio Cidade de Barcelos",
+    "Marítimo": "Estádio do Marítimo",
+    "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
+    "Paços de Ferreira": "Estádio Capital do Móvel",
+    "Portimonense": "Estádio Municipal de Portimão",
+    "Porto": "Estádio do Dragão",
+    "Rio Ave": "Estádio dos Arcos",
+    "Santa Clara": "Estádio de São Miguel",
+    "Sporting CP": "Estádio José Alvalade",
+    "Tondela": "Estádio João Cardoso",
+    "Vitória de Guimarães": "Estádio D. Afonso Henriques",
+    "Vitória de Setúbal": "Estádio do Bonfim"
+   },
+   "2020/21": {
+    "B-SAD": "Estádio Nacional",
+    "Benfica": "Estádio da Luz",
+    "Boavista": "Estádio do Bessa",
+    "Braga": "Estádio Municipal de Braga",
+    "Famalicão": "Estádio Municipal 22 de Junho",
+    "Farense": "Estádio de São Luís",
+    "Gil Vicente": "Estádio Cidade de Barcelos",
+    "Marítimo": "Estádio do Marítimo",
+    "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
+    "Nacional": "Estádio da Madeira",
+    "Paços de Ferreira": "Estádio Capital do Móvel",
+    "Portimonense": "Estádio Municipal de Portimão",
+    "Porto": "Estádio do Dragão",
+    "Rio Ave": "Estádio dos Arcos",
+    "Santa Clara": "Estádio de São Miguel",
+    "Sporting CP": "Estádio José Alvalade",
+    "Tondela": "Estádio João Cardoso",
+    "Vitória de Guimarães": "Estádio D. Afonso Henriques"
+   },
+   "2021/22": {
+    "Arouca": "Estádio Municipal de Arouca",
+    "B-SAD": "Estádio Nacional",
+    "Benfica": "Estádio da Luz",
+    "Boavista": "Estádio do Bessa",
+    "Braga": "Estádio Municipal de Braga",
+    "Estoril": "Estádio António Coimbra da Mota",
+    "Famalicão": "Estádio Municipal 22 de Junho",
+    "Gil Vicente": "Estádio Cidade de Barcelos",
+    "Marítimo": "Estádio do Marítimo",
+    "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
+    "Paços de Ferreira": "Estádio Capital do Móvel",
+    "Portimonense": "Estádio Municipal de Portimão",
+    "Porto": "Estádio do Dragão",
+    "Santa Clara": "Estádio de São Miguel",
+    "Sporting CP": "Estádio José Alvalade",
+    "Tondela": "Estádio João Cardoso",
+    "Vitória de Guimarães": "Estádio D. Afonso Henriques",
+    "Vizela": "Estádio do FC Vizela"
+   },
+   "2022/23": {
+    "Arouca": "Estádio Municipal de Arouca",
+    "Benfica": "Estádio da Luz",
+    "Boavista": "Estádio do Bessa",
+    "Braga": "Estádio Municipal de Braga",
+    "Casa Pia": "Estádio Municipal de Rio Maior",
+    "Chaves": "Estádio Municipal de Chaves",
+    "Estoril": "Estádio António Coimbra da Mota",
+    "Famalicão": "Estádio Municipal 22 de Junho",
+    "Gil Vicente": "Estádio Cidade de Barcelos",
+    "Marítimo": "Estádio do Marítimo",
+    "Paços de Ferreira": "Estádio Capital do Móvel",
+    "Portimonense": "Estádio Municipal de Portimão",
+    "Porto": "Estádio do Dragão",
+    "Rio Ave": "Estádio dos Arcos",
+    "Santa Clara": "Estádio de São Miguel",
+    "Sporting CP": "Estádio José Alvalade",
+    "Vitória de Guimarães": "Estádio D. Afonso Henriques",
+    "Vizela": "Estádio do FC Vizela"
+   },
+   "2023/24": {
+    "Arouca": "Estádio Municipal de Arouca",
+    "Benfica": "Estádio da Luz",
+    "Boavista": "Estádio do Bessa",
+    "Braga": "Estádio Municipal de Braga",
+    "Casa Pia": "Estádio Municipal de Rio Maior",
+    "Chaves": "Estádio Municipal de Chaves",
+    "Estoril": "Estádio António Coimbra da Mota",
+    "Estrela da Amadora": "Estádio José Gomes",
+    "Famalicão": "Estádio Municipal 22 de Junho",
+    "Farense": "Estádio de São Luís",
+    "Gil Vicente": "Estádio Cidade de Barcelos",
+    "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
+    "Portimonense": "Estádio Municipal de Portimão",
+    "Porto": "Estádio do Dragão",
+    "Rio Ave": "Estádio dos Arcos",
+    "Sporting CP": "Estádio José Alvalade",
+    "Vitória de Guimarães": "Estádio D. Afonso Henriques",
+    "Vizela": "Estádio do FC Vizela"
+   },
+   "2024/25": {
+    "AVS": "Estádio do CD Aves",
+    "Arouca": "Estádio Municipal de Arouca",
+    "Benfica": "Estádio da Luz",
+    "Boavista": "Estádio do Bessa",
+    "Braga": "Estádio Municipal de Braga",
+    "Casa Pia": "Estádio Municipal de Rio Maior",
+    "Estoril": "Estádio António Coimbra da Mota",
+    "Estrela da Amadora": "Estádio José Gomes",
+    "Famalicão": "Estádio Municipal 22 de Junho",
+    "Farense": "Estádio de São Luís",
+    "Gil Vicente": "Estádio Cidade de Barcelos",
+    "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
+    "Nacional": "Estádio da Madeira",
+    "Porto": "Estádio do Dragão",
+    "Rio Ave": "Estádio dos Arcos",
+    "Santa Clara": "Estádio de São Miguel",
+    "Sporting CP": "Estádio José Alvalade",
+    "Vitória de Guimarães": "Estádio D. Afonso Henriques"
+   },
+   "2025/26": {
+    "AVS": "Estádio do CD Aves",
+    "Alverca": "Complexo Desportivo FC Alverca",
+    "Arouca": "Estádio Municipal de Arouca",
+    "Benfica": "Estádio da Luz",
+    "Braga": "Estádio Municipal de Braga",
+    "Casa Pia": "Estádio Municipal de Rio Maior",
+    "Estoril Praia": "Estádio António Coimbra da Mota",
+    "Estrela da Amadora": "Estádio José Gomes",
+    "Famalicão": "Estádio Municipal 22 de Junho",
+    "Gil Vicente": "Estádio Cidade de Barcelos",
+    "Moreirense": "Estádio Comendador Joaquim de Almeida Freitas",
+    "Nacional": "Estádio da Madeira",
+    "Porto": "Estádio do Dragão",
+    "Rio Ave": "Estádio dos Arcos",
+    "Santa Clara": "Estádio de São Miguel",
+    "Sporting CP": "Estádio José Alvalade",
+    "Tondela": "Estádio João Cardoso",
+    "Vitória de Guimarães": "Estádio D. Afonso Henriques"
+   }
+  },
+  "venue_exceptions": [
+   {
+    "detail": "Farense 前 3 个主场在 Estádio Algarve（草皮更换），其余赛季主场为 Estádio de São Luís",
+    "season": "2020/21",
+    "source": "2020–21 Wikipedia 页面正文"
+   }
+  ],
+  "venue_join_note": "逐场 venue = venue_by_season[season][home_team]；venue_lat/lon = stadium_coords[venue]。home_team 需做名称归一（football-data 别名：Sp Lisbon→Sporting CP, Sp Braga→Braga, Guimaraes→Vitória de Guimarães, Vitoria Setubal→Vitória de Setúbal, Belenenses→Belenenses SAD/B-SAD, Nacional→Nacional, Pacos Ferreira→Paços de Ferreira, Aves→Desportivo das Aves/AVS 按赛季）",
+  "venue_sources": {
+   "2018/19": "https://en.wikipedia.org/wiki/2018–19_Primeira_Liga",
+   "2019/20": "https://en.wikipedia.org/wiki/2019–20_Primeira_Liga",
+   "2020/21": "https://en.wikipedia.org/wiki/2020–21_Primeira_Liga",
+   "2021/22": "derived: https://en.wikipedia.org/wiki/2020–21_Primeira_Liga + https://en.wikipedia.org/wiki/2022–23_Primeira_Liga（该季页面球场表未渲染，取前后两季交叉；期间无俱乐部更换主场记录）",
+   "2022/23": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "2023/24": "https://en.wikipedia.org/wiki/2023–24_Primeira_Liga",
+   "2024/25": "https://en.wikipedia.org/wiki/2024–25_Primeira_Liga",
+   "2025/26": "https://en.wikipedia.org/wiki/2025–26_Primeira_Liga"
+  },
+  "fd_csv_schema": {
+   "base_url": "https://www.football-data.co.uk/mmz4281/{SSYY}/P1.csv",
+   "seasons": {
+    "2018/19": {
+     "file": "1819",
+     "lines": 612,
+     "has_time": false,
+     "bookmakers_1x2": [
+      "B365",
+      "BWH(Bet&Win)",
+      "IW(Interwetten)",
+      "PS(Pinnacle)",
+      "WH(William Hill)",
+      "VC"
+     ],
+     "closing_1x2": [
+      "PSCH/PSCD/PSCA(仅Pinnacle)"
+     ],
+     "ou_bookmaker": "无（仅 BbOU BetBrain 聚合）",
+     "note": "旧 schema；无 Time 列；无 B365C/WHC closing 列"
+    },
+    "2019/20": {
+     "file": "1920",
+     "lines": 612,
+     "has_time": true,
+     "bookmakers_1x2": [
+      "B365",
+      "BWH(Bet&Win)",
+      "IW",
+      "PS",
+      "WH",
+      "VC",
+      "Max",
+      "Avg"
+     ],
+     "closing_1x2": [
+      "B365C",
+      "BWC",
+      "IWC",
+      "PSC",
+      "WHC",
+      "VCC",
+      "MaxC",
+      "AvgC"
+     ],
+     "ou_bookmaker": "B365>2.5, P>2.5, Max>2.5, Avg>2.5（+closing C 版）",
+     "note": "新 schema；含 AH 亚盘列"
+    },
+    "2020/21": {
+     "file": "2021",
+     "lines": 612,
+     "has_time": true,
+     "same_schema_as": "2019/20"
+    },
+    "2021/22": {
+     "file": "2122",
+     "lines": 612,
+     "has_time": true,
+     "same_schema_as": "2019/20"
+    },
+    "2022/23": {
+     "file": "2223",
+     "lines": 612,
+     "has_time": true,
+     "same_schema_as": "2019/20"
+    },
+    "2023/24": {
+     "file": "2324",
+     "lines": 612,
+     "has_time": true,
+     "same_schema_as": "2019/20"
+    },
+    "2024/25": {
+     "file": "2425",
+     "lines": 612,
+     "has_time": true,
+     "bookmakers_1x2": [
+      "B365",
+      "BWH(Bet&Win)",
+      "BF(Betfair)",
+      "PS",
+      "WH(William Hill)",
+      "1XB(1XBet)",
+      "Max",
+      "Avg",
+      "BFE(Betfair Exchange)"
+     ],
+     "closing_1x2": [
+      "B365C",
+      "BWC",
+      "BFC",
+      "PSC",
+      "WHC",
+      "1XBC",
+      "MaxC",
+      "AvgC",
+      "BFEC"
+     ],
+     "ou_bookmaker": "B365>2.5, P>2.5, Max>2.5, Avg>2.5, BFE>2.5（+closing C 版）",
+     "note": "最新 schema 变体"
+    },
+    "2025/26": {
+     "file": "2526",
+     "lines": 612,
+     "has_time": true,
+     "bookmakers_1x2": [
+      "B365",
+      "BFD(Betfred)",
+      "BMGM(BetMGM)",
+      "BV(BetVictor)",
+      "BWH(Bet&Win)",
+      "CL(Coral)",
+      "LB(Ladbrokes)",
+      "PS(Pinnacle)",
+      "Max",
+      "Avg",
+      "BFE"
+     ],
+     "closing_1x2": [
+      "B365C",
+      "BFDC",
+      "BMGMC",
+      "BVC",
+      "BWC",
+      "CLC",
+      "LBC",
+      "PSC",
+      "MaxC",
+      "AvgC",
+      "BFEC"
+     ],
+     "ou_bookmaker": "B365>2.5, P>2.5, Max>2.5, Avg>2.5, BFE>2.5（+closing C 版）",
+     "WH_ABSENT": true,
+     "note": "William Hill 列整季缺失（无 WHH/WHD/WHA、无 WHCH/WHCD/WHCA），列级证实"
+    }
+   },
+   "wh_identity": "notes.txt 口径：WHH/WHD/WHA = William Hill；BWH/BWD/BWA = Bet&Win（非 William Hill，非 Betway）",
+   "retrieved": "2026-10-03"
+  },
+  "fd_odds_semantics": {
+   "source": "https://www.football-data.co.uk/notes.txt",
+   "pre_closing": "无 C 后缀的书商列（B365H、WHH、PSH 等）= pre-closing odds；采集于周末赛前周五下午 / 周中赛前周二下午",
+   "closing": "带 C 后缀的列（B365CH、WHCH、PSCH 等）= closing odds",
+   "true_opening": "unavailable —— notes.txt 无 true opening 概念；BetBrain BbMx/BbAv 为市场聚合非开盘；Bet365/Pinnacle/William Hill 列均为 pre-closing/closing 快照",
+   "mapping": {
+    "B365H/B365D/B365A": "pre_closing",
+    "B365CH/B365CD/B365CA": "closing",
+    "WHH/WHD/WHA": "pre_closing",
+    "WHCH/WHCD/WHCA": "closing",
+    "PSH/PSD/PSA": "pre_closing",
+    "PSCH/PSCD/PSCA": "closing",
+    "B365>2.5/B365<2.5": "pre_closing",
+    "P>2.5/P<2.5": "pre_closing",
+    "B365C>2.5 等": "closing",
+    "所有列": "无 true_opening / 无 earliest_verified_pre_match（不改名）"
+   }
+  },
+  "fd_202526_season_status": {
+   "status": "complete_in_csv",
+   "evidence": "CSV 末轮 16/05/2026 共 9 场（如 Sp Lisbon 3-0 Gil Vicente, Porto 1-0 Santa Clara），FTHG/FTAG 全部有值；文件 612 行 ≈ 306 场",
+   "note": "2025/26 赛季已于 2026-05 结束；CSV 快照中无未完成场次（无需 NULL 占位行，但空赔率单元格仍需保留 NULL）",
+   "caveat": "全量 306 行逐行校验待做（retrieved 2026-10-03 快照）"
+  },
+  "sparse_rows_evidence": [
+   {
+    "season": "2019/20",
+    "row": "24/08/2019 Boavista vs Pacos Ferreira",
+    "empty": "WHH/WHD/WHA（William Hill 1X2 空值）"
+   },
+   {
+    "season": "2020/21",
+    "row": "26/09/2020 Boavista vs Porto",
+    "empty": "PSH/PSD/PSA（Pinnacle 1X2 空值）"
+   },
+   {
+    "season": "2024/25",
+    "row": "18/08/2024 Moreirense vs Arouca",
+    "empty": "B365>2.5/B365<2.5（Bet365 大小球空值）"
+   },
+   {
+    "season": "2024/25",
+    "row": "18/08/2024 Guimaraes vs Estoril",
+    "empty": "Avg>2.5/Avg<2.5 空值"
+   },
+   {
+    "season": "2025/26",
+    "row": "10/08/2025 Famalicao vs Santa Clara",
+    "empty": "Avg>2.5/Avg<2.5 空值；MaxCAHH 空值"
+   },
+   {
+    "season": "2025/26",
+    "row": "17/08/2025 Alverca vs Sp Braga",
+    "empty": "B365>2.5/B365<2.5 空值"
+   },
+   {
+    "season": "2025/26",
+    "row": "16/05/2026 Sp Lisbon vs Gil Vicente",
+    "empty": "PSH/PSD/PSA、MaxH 等多列空值（赛季末轮稀疏）"
+   }
+  ],
+  "kickoff_1819_status": {
+   "football_data": "unavailable —— 1819 CSV 无 Time 列（列级证实），不得猜测",
+   "worldfootball": "blocked 本轮 —— 文本层 403（alle_spiele 路径）；schedule/spieltag 路径上一轮可用，本轮按开发者指令不再重试该源",
+   "alternative_verified": "pt.wikipedia.org/wiki/Primeira_Liga_de_2018–19 的 'Jornadas' 章节：34 轮 × 9 场，逐场含日期/开球时间/比分/球场；1.ª/2.ª Jornada 已抽样核验与 football-data 日期比分一致",
+   "recipe": "同一 URL 下 'N.ª Jornada' 小节即 official_round；每场 '日期 | 主队 | 比分 | 客队' 表格首行含开球时间（如 '| 20:30 |'）"
+  },
+  "official_round_status": {
+   "2018/19": "来源已验证（pt wiki Jornadas），全量 306 场提取待下一轮",
+   "2019/20": "同模式 URL pt.wikipedia.org/wiki/Primeira_Liga_de_2019–20，待验证",
+   "2020/21": "同模式 URL pt.wikipedia.org/wiki/Primeira_Liga_de_2020–21，待验证",
+   "2025/26": "同模式 URL pt.wikipedia.org/wiki/Primeira_Liga_de_2025–26，待验证"
+  },
+  "timezone_status": {
+   "IANA": "unverified",
+   "evidence": "football-data notes.txt 对 Time 列未声明时区；pt wiki 2018-19 亚速尔场次标注 '20:30 (19:30 Hora Local)'（Santa Clara 主场），说明所列时间为葡萄牙本土时间，但无 IANA 显式声明",
+   "rule": "按请求要求，不猜测 Europe/Lisbon；最终逐行回执中 IANA timezone 字段填 unverified"
+  },
+  "venue_alias_flag": {
+   "issue": "pt wiki 2018-19 将 Marítimo 主场写作 'Estádio dos Barreiros'，与 venue_by_season 的 'Estádio do Marítimo' 名称不一致",
+   "assessment": "疑为同一球场别名（旧名/俗名），坐标不变；已登记为别名冲突，待交叉核验，不影响 venue 映射",
+   "status": "conflict_noted_not_resolved"
+  },
+  "audit": {
+   "expected": 2448,
+   "discovered": 2448,
+   "complete": 144,
+   "partial": 2304,
+   "missing": 0,
+   "delivery_mode": "downgraded — 证据聚合包（用户 2026-10-03 18:30 决策：降级交付）",
+   "delivered": [
+    "8 季 football-data P1.csv 列级核验（1819 无 Time 列；1920-2324 新 schema 含 Time+WH+closing；2526 无 William Hill 列）",
+    "venue 映射 144/144",
+    "球场坐标 29/29",
+    "赔率语义：无后缀=pre-closing、C 后缀=closing、无 true opening 概念（notes.txt）",
+    "赔率列存在矩阵 8/8 季",
+    "pt wiki 2018-19 Jornadas 提取配方已验证（kickoff+official_round 可用源，抽样与 football-data 一致）",
+    "时区：IANA 保持 unverified，不猜测",
+    "to_codex v1-008 已送达：通知 Codex 用 pre_closing/closing 做赔率区间筛选，不再等待真开盘"
+   ],
+   "deferred_mechanical": [
+    "kickoff_local 2018/19 306 场逐场提取（配方已验证）",
+    "official_round 4 季全量提取（2018/19、2019/20、2020/21、2025/26，配方已验证）",
+    "2025/26 全量 306 行逐行校验",
+    "2448 行逐行展开成逐场回执"
+   ],
+   "resume_rule": "如需继续 deferred 部分，须发新请求 id（ok 永不回退）；本回执为最终版"
+  },
+  "unresolved_queue": [
+   {
+    "item": "true_opening 8 季全部",
+    "reason": "football-data 无此概念（notes.txt）；OddsPortal 历史页需真浏览器+同出口 IP 地区限制（DEAD-END 登记）",
+    "action": "to_codex 通知 Codex 用 pre_closing/closing 筛选，不再空转"
+   },
+   {
+    "item": "William Hill 2025/26 1X2 与 2.5",
+    "reason": "2526 CSV 列级缺失（无 WH*/WHC* 列）；OddsPortal 历史页同上 blocked",
+    "action": "记 unavailable，Codex 侧如有真浏览器可补"
+   },
+   {
+    "item": "kickoff_local 2018/19 306 场",
+    "reason": "football-data 1819 无 Time 列；worldfootball 本轮文本层 403",
+    "action": "pt wiki Jornadas 配方已验证，下一轮提取"
+   },
+   {
+    "item": "official_round 4 季全量",
+    "reason": "football-data 无轮次列",
+    "action": "pt wiki Jornadas 配方已验证，下一轮提取"
+   },
+   {
+    "item": "kickoff IANA timezone",
+    "reason": "notes.txt 未声明；pt wiki 仅暗示本土时间（'Hora Local' 标注）",
+    "action": "保持 unverified，不猜测"
+   },
+   {
+    "item": "2025/26 全量 306 行逐行校验",
+    "reason": "本轮仅列级+末轮抽样",
+    "action": "最终 ok 回执前必做"
+   }
+  ]
+ },
+ "dp_used": false,
+ "id": "req-20261003-008",
+ "note": "【降级交付 2026-10-03 18:30 CST，用户决策②】原 processing 转为 ok（证据聚合包）。熔断前已收集的全部实证见 data 各节与 audit.delivered；剩余机械体力活见 audit.deferred_mechanical，如需继续须新开请求 id。to_codex v1-008 维持有效：Codex 用 pre_closing/closing 做区间筛选。",
+ "request_sha": "bfbd8a2267ae0bd2",
+ "status": "ok",
+ "to_codex": "【to_codex v1-008｜依据用户 2026-10-03 18:02 长期授权：真开盘不可达转筛选】葡超 8 季 true opening 赔率经检索确认不可得：football-data notes.txt 原文口径无 true opening 概念（其书商列仅为 pre-closing/closing 快照），OddsPortal 单场历史页需真浏览器且本轮文本层不可达（DEAD-END 登记）。请以本回执已交付的 pre_closing（B365/WH/PS 等无 C 列）与 closing（C 列）赔率做赔率区间筛选，执行你的工作流，不要等待真开盘。William Hill 2025/26 为列级缺失（该季 CSV 无 WH 列），该季 WH 相关全部记 unavailable。缺口已记入本回执 unresolved_queue。"
 }
