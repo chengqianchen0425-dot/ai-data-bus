@@ -1,0 +1,7 @@
+{
+  "id": "req-20261003-005",
+  "status": "processing",
+  "note": "研究进行中：Q1 MLS官方matches端点批量拉取1101场逐场键；Q2 球队lifecycle补缺（读021回执定位缺失球队）；Q3 8个历史场馆城市/坐标/IANA时区；Q4 unresolved_queue。",
+  "request_sha": "524982bc3d444331",
+  "dp_used": false
+}
