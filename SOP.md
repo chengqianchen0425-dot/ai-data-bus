@@ -16,12 +16,12 @@ Muse 定位（用户明确）：Muse = 抓取器 / 搜索器，不是判断器�
 
 高召回执行标准：
 1. 目标比赛不能漏：先确定理论比赛总数（联赛×赛季）；抓完核对实际行数；分页翻到底；多赛季逐赛季检查；指定日期范围逐日核对；不能只抓搜索引擎能搜到的比赛。
-2. 数据源不能只抓一个：Football-Data、OpenFootball、API-Football、Soccerway、Sofascore、WorldFootball、RSSSF、Transfermarkt、官方联赛/俱乐部、schochastics historical dataset、Sporttery/zgzcw/唯彩/NowScore，赔率任务再加历史赔率源。A 源没找到 ≠ 数据不存在，必须继续 B/C/D。
+2. 数据源不能只抓一个：Football-Data、OpenFootball、API-Football、Soccerway、Sofascore、WorldFootball、RSSSF、Transfermarkt、官方联赛/俱乐部、schochastics historical dataset、Sporttery/zgzcw/唯彩/NowScore，赔率任务再加历史赔率源。A 源没找到 ≠ 数据不存在，必须继续 B/C/D（已证伪登记项除外，见 DEAD-END REGISTRY）。
 3. 字段缺失不删比赛：缺字段保留整行，登记如 venue_missing=TRUE，绝不能因缺字段让比赛从结果集消失。
 4. 冲突带回但设上限：不判断对错，但同一字段的冲突证据去重后最多带回 3-5 个来源（按权威性排序），格式为 source/value/source_url；超出部分只记 conflict_overflow_count 和来源名单，不逐条展开。禁止带回几十条近乎重复的冲突值刷屏。
 5. 名称别名主动搜：历史旧名、本国语言名、英文名、缩写、重音字符版本（如 Manchester United / Man United / Man Utd），宁可多抓候选，不因名称映射失败丢掉。
 6. 漏抓审计：每批输出 expected → discovered → complete → partial → missing，例如 380 expected / 380 discovered / 372 complete / 8 partial / 0 missing；若 discovered < expected，任务未完成，必须继续找。
-7. 卡住换源不忘对象：单个源卡住 3-5 分钟则标记该源 failed 并换源（Soccerway → API-Football → WorldFootball → RSSSF → 官方源……）；最后仍找不到的进入 UNRESOLVED_QUEUE（带原因），而不是消失。
+7. 卡住换源不忘对象：单个源卡住 3-5 分钟则标记该源 failed 并换源（Soccerway → API-Football → WorldFootball → RSSSF → 官方源……）；遇 403 / 频率限制 / 重定向循环 / 疑似 IP 被封，立即停手保 IP，不硬刷；最后仍找不到的进入 UNRESOLVED_QUEUE（带原因），而不是消失。
 8. 来源铁律：每条数据记录来源 URL 和获取时间；说不清来源的一律不要；禁止猜测、禁止把 closing 当 opening、禁止合并无法确认的场次。
 9. 6 分钟跳过规则（2026-10-02 用户明确）：单个请求内，如果在某一个细节上卡住超过 6 分钟没有进展（如某场比赛的某个冷门细节），先标记该细节为 skipped（写清原因）继续其他的，不要让一个点堵住整批。整批收尾时再回头看一遍跳过的。
 
@@ -33,7 +33,7 @@ Muse 定位（用户明确）：Muse = 抓取器 / 搜索器，不是判断器�
 
 空转熔断（2026-10-03 用户长期规则，002 事件教训）：同一请求连续 3 轮被接手仍无实质进展、只剩外部依赖（等 Codex 上游/等真浏览器/等外部 key）时，停止接手、不再静默空转，直接向用户预警风险（卡点+已空转时长+可能长期无结果），请用户决定（继续等/降级/关闭）。
 
-to_codex 纪律（2026-10-03 教训）：to_codex 字段只转达用户原话或 hook 明确授权的内容；worker 不得自行编造给 Codex 的新指令。2026-10-03 一轮 worker 曾自作主张发布 to_codex v3（让 Codex 转赔率区间筛选），事后经用户追认才生效——今后一律先请示用户。
+to_codex 纪律（2026-10-03 教训）：to_codex 字段只转达用户原话或 hook 明确授权的内容；worker 不得自行编造给 Codex 的新指令。2026-10-03 一轮 worker 曾自作主张发布 to_codex v3（让 Codex 转赔率区间筛选），事后经用户追认才生效。已授权可直接写入的情形（正面清单，写入时注明版本）：①命中 DEAD-END REGISTRY 的真开盘转筛选通知（用户 2026-10-03 18:02 授权）。清单外一律先请示用户。
 
 防降级（一旦 ok 永不回退）：`responses/<id>.json` 一旦 `status=ok`，绝不覆盖为 `processing` 或 `error`。若发现 `requests/<id>.json` 的内容在回执完成后发生实质变化（Codex 复用了旧 id 发新任务，违反 id 全局唯一），先将旧回执备份为 `responses/<id>.archived-YYYYMMDD-HHMMSS.json` 再为新任务写 `processing`，并在 note 注明 id 被复用。
 
@@ -69,16 +69,16 @@ to_codex 纪律（2026-10-03 教训）：to_codex 字段只转达用户原话或
 3. 每个回执必须声明 `dp_used: true/false`；为 true 时必须写 `dp_reason`，说明触发了上面第 2 条中的哪一种情况。
 
 ## 给 Codex 的指令字段（2026-10-02 新增）
-回执顶层 `to_codex` 字段是用户经 Muse 转给 Codex 的指令。更新回执时必须原样保留该字段，不得删除或改写；Codex 的回复会以新需求单形式出现在 `requests/`。
+回执顶层 `to_codex` 字段是用户经 Muse 转给 Codex 的指令。更新回执时不得擅自删除或改写用户原话；用户授权的新指令可追加写入并注明版本（见 to_codex 纪律正面清单）；Codex 的回复会以新需求单形式出现在 `requests/`。
 
 ## 时区教训（2026-10-02）
 VM 本地时区是 UTC，`stat` 显示的是 UTC 时间；用户在 Asia/Shanghai。比较"15 分钟阈值"必须先换算——曾误把 09:26 UTC 当成 09:26 CST 判定为停滞，实际上一轮在 17:26 CST 刚更新过。校验用 `date -u` 对照。
 
 ## 真开盘不可达转筛选（用户 2026-10-03 18:02 长期规则，已授权）
-某联赛/赛季的真开盘赔率经检索确认拿不到（命中下方"已证伪登记"）时，不要无限期等待：在回执 `to_codex` 明确告知 Codex——以当前已交付的赔率做赔率区间筛选，执行 Codex 工作流；缺口记入 `unresolved_queue`，不阻塞筛选。本条为用户明确授权，适用时 worker 可直接写入 `to_codex`，不受"to_codex 纪律"中"先请示"限制（仅限本条所述情形）。
+某联赛/赛季的真开盘赔率经检索确认拿不到（命中下方"已证伪登记"）时，不要无限期等待：在回执 `to_codex` 明确告知 Codex——以当前已交付的赔率做赔率区间筛选，执行 Codex 工作流；缺口记入 `unresolved_queue`，不阻塞筛选。本条属 to_codex 纪律正面清单第 ① 项已授权情形，适用时 worker 可直接写入 `to_codex`（注明版本）。触发条件为命中登记项；登记未覆盖的新源，文本层 1 次实测 + 1 次复核仍无结果即算证伪完成，可提名入库（两轮独立验证后正式入库）。
 
 ## 已证伪数据源登记（DEAD-END REGISTRY，用户 2026-10-03 18:02 要求维护）
-命中登记项的子项直接记 unavailable / 记入 `unresolved_queue`，不再开新一轮重试。新条目入库需两轮独立验证或用户确认；每条注明证伪日期与证据。
+命中登记项的子项直接记 unavailable / 记入 `unresolved_queue`，不再开新一轮重试——命中即采信，不因"万一这次能行"而重试；重试需用户明确指令。新条目入库需两轮独立验证或用户确认；每条注明证伪日期与证据。登记项按"源×数据形态"生效，不分联赛/赛季（有反例单独备注）。注：登记为"需真浏览器"的条目，hook worker/子代理无真浏览器能力，标准动作是记入 unresolved_queue 并注明"待主代理真浏览器"，严禁硬试（TotalCorner 曾因硬试触发 403）。
 
 真开盘 tick 历史（true opening /逐公司 tick）：
 - NowScore/捷报网（live.nowscore.com 1x2 单场页）：仅 init/current 快照，无 tick 历史；live 页赔率表 JS 渲染，文本层仅骨架（2026-10-03 文本试点证伪）
