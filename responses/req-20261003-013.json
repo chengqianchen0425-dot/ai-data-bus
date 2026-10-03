@@ -1,0 +1,8 @@
+{
+  "id": "req-20261003-013",
+  "status": "processing",
+  "from": "muse",
+  "dp_used": false,
+  "request_sha": "6f563c765cb6d212",
+  "note": "研究进行中：5 个去重 source_url 抓取并计算 SHA-256，回填 306 行。"
+}
