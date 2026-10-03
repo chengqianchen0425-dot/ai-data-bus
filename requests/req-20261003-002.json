@@ -1,0 +1,44 @@
+{
+  "id": "req-20261003-002",
+  "type": "deep_research",
+  "params": {
+    "topic": "英超历史足球数据增量：指定博彩公司逐场赔率缺口",
+    "questions": [
+      "只处理 England Premier League，范围为 2018/19、2021/22、2024/25、2025/26；排除杯赛、季前赛和其他联赛。逐行返回 season、date、kickoff（如来源提供）、home_team、away_team、provider_fixture_id 或稳定比赛键，并保留 source_url、final_url、retrieved_at、field_locator、source_sha256。",
+      "补充 2018/19 全部缺失的 Bet365 1X2 closing、William Hill 1X2 closing、Bet365 over/under 2.5 closing。若来源没有字段，逐场标记 unavailable 或 blocked，并保留检查过的来源，不使用跨博彩公司平均值替代。",
+      "补充 2021/22 Newcastle vs Man City 两场 Bet365 over/under true opening；区分真实价格、空值、0/0 伪影和无法确认的阶段。",
+      "补充 2024/25 William Hill 1X2 后半程缺失比赛、2025/26 Pinnacle 1X2 后半程缺失比赛，以及 2025/26 William Hill true opening 全季缺口。按逐场比赛身份返回。",
+      "每条赔率分别标记 bookmaker、market、phase、recorded_at 或时间语义，以及 home/draw/away 或 over/under。允许的 phase 只有 true opening、earliest verified pre-match、pre-closing、latest verified pre-match、closing。字段无法解析标记 parse_failed；多来源不同值列入 unresolved_queue。",
+      "本请求只收集比赛身份、赛程、球队、场馆、轮次和博彩公司赔率等足球事实；不得返回任何模型、盘面或赛后评价字段。"
+    ],
+    "source_hints": [
+      "https://www.football-data.co.uk/mmz4281/1819/E0.csv",
+      "https://www.football-data.co.uk/mmz4281/2122/E0.csv",
+      "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+      "https://www.football-data.co.uk/mmz4281/2526/E0.csv",
+      "https://www.football-data.co.uk/notes.txt",
+      "https://www.oddsportal.com/football/england/premier-league/"
+    ]
+  },
+  "created_at": "2026-10-03T14:00:00+08:00",
+  "scope": {
+    "competition_key": "premier_league",
+    "seasons": ["2018/19", "2021/22", "2024/25", "2025/26"],
+    "league_only": true,
+    "incremental_only": true,
+    "exclude_competitions": ["fa_cup", "efl_cup", "community_shield", "preseason", "champions_league", "europa_league"]
+  },
+  "excluded_fields": [
+    "qimen_output", "palace_tokens", "model_direction", "miss_labels", "total_goals_target", "btts_target", "outcome", "review", "gold"
+  ],
+  "output_contract": {
+    "format": "json_report_plus_row_level_football_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "row_level_data_preferred": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
