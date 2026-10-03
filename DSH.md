@@ -2,23 +2,39 @@
 
 > 镜像 Codex 的对接方式：同一个 GitHub 私有仓库 `ai-data-bus` 做中转，`requests/` 发单、`responses/` 收单。用 `target` 字段分 lane，互不干扰。
 
-## 协议
+## 部署步骤（4 步）
+
+1. **clone 仓库到本地**（建议单独一个目录，别和 Codex 的 clone 共用，避免互相踩）：
+   `git clone https://github.com/chengqianchen0425-dot/ai-data-bus.git d:\ai-data-bus-dsh`
+2. **git 免密推送**：本机如已给 Codex 配过 credential helper，直接复用；没有就配一次。
+3. **DSH 里新建定时任务**：
+   - 名称：`ai-data-bus-dsh-lane`；周期：每 2 分钟；工作区：上一步的目录
+   - 模式：极简模式（纯终端，最省 token）；文件写入授权给该目录
+   - 提示词用下面这段（原样贴）：
+4. **测试**：让 Muse 发一个 `target=dsh` 的测试单，看 DSH 能不能接住、写回执、push。
+
+## 定时任务提示词（原样贴进 DSH）
+
+```
+你是 ai-data-bus 的 DSH 取件员，每轮只做以下事：
+
+1. cd 到工作区，git pull --rebase
+2. 扫描 requests/*.json：找 target=dsh 且（responses/<id>.json 不存在，或 status=processing 且超过 15 分钟没更新）的单
+3. 没活 → 直接结束，不做任何多余事
+4. 有活 → 读请求全文 → 干活 → 写 responses/<id>.json（顶层 from: dsh；先写 status=processing 占位并 push，完工改 ok/error；data.audit 给 expected/discovered/complete/partial/missing 五个数）
+5. git add/commit/push
+
+铁律：id 全网唯一不复用；ok 永不回退；缺字段记 NULL 不猜测；说不清来源的数据不要；同一单连续 3 轮无实质进展就停手，回执写清卡点，不静默空转。
+```
+
+## 协议（备查）
 
 - **发单**：写 `requests/req-YYYYMMDD-NNN.json`，`id` 全网唯一（不许复用 Codex/Muse 用过的）。
   - 给 Muse 干活：`"target": "muse"`（或不写，默认 muse），可加 `"from": "dsh"`。
-  - 只是记录/不需要 Muse：不用发。
-- **接单**：轮询 `requests/*.json`，找 `"target": "dsh"` 且 `responses/<id>.json` 不存在或状态非 ok/error 的单。
-- **回执**：写 `responses/<id>.json`，顶层带 `"from": "dsh"`、`"status": "processing"` 起步，完工改 `"ok"` 或 `"error"`，`data.audit` 给 expected/discovered/complete/partial/missing。
-- **Muse 派给 DSH 的单**：Muse 会写 `target=dsh` 的请求并在回执/请求里用 `to_dsh` 字段传指令，DSH 照做、结果写回 `responses/`。
+- **回执**：`responses/<id>.json`，顶层带 `"from": "dsh"`。
+- **Muse 派给 DSH 的单**：Muse 会写 `target=dsh` 的请求，指令放 `to_dsh` 字段，DSH 照做、结果写回 `responses/`。
 
-## 轮询（建议）
+## 省 token 说明
 
-每 2 分钟：`git pull --rebase` → 扫 `target=dsh` 的新单 → 干活 → 写回执 → `git add/commit/push`。
-全部终态（ok/error）后当批任务结束；想省事就做成定时任务，做完自删（参考 Codex watcher 方案）。
-
-## 铁律（和 Codex 一样）
-
-- id 全网唯一，严禁复用。
-- 回执一旦 ok 永不回退；需求变了开新 id。
-- 缺字段记 NULL，不猜测；说不清来源的数据不要。
-- 卡住换源，3 次无进展停手并在回执里写清卡点，不静默空转。
+- 没活的轮次只有一次 git pull + 目录扫描，极简模式下 token 开销极小。
+- 有活才进入正常干活流程；任务切小，一单一回执。
