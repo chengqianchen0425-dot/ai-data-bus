@@ -1,0 +1,31 @@
+{
+  "id": "req-20261003-005",
+  "type": "deep_research",
+  "params": {
+    "topic": "MLS 2018-2020 逐场 Method Context 与球队/场馆足球事实增量补缺",
+    "questions": [
+      "只处理 MLS 常规赛 2018、2019、2020；不要重复抓取已有 ESPN 赛果，也不要把 postponed/canceled 改成 full_time。对已有 1091 场 full_time 和 10 场 postponed/canceled，尽可能用可验证的 MLS 官方 matches 端点按比赛日期返回逐场 stable_match_key、official provider match_id、season_id、match_day、match_day_id、match_type/official_round、planned_kickoff_time、match_status、home/away team_id 与名称、stadium_id 与名称，并保留 source_url、final_url、retrieved_at、field_locator、source_sha256。",
+      "对 2018-2020 参赛球队中 021 回执仍未给出 competition_entry_year 或谱系 founding/natal_year 的球队，逐队补充可直接来源证明的 first MLS regular-season entry year、founding/lineage year、历史别名/更名；不要从赛果、赔率、默认主场或当前名称推断，找不到就逐项标 unavailable 或 unresolved。",
+      "对 2018-2020 方向增量审计列出的历史场馆 ESPN Wide World of Sports Complex、Maryland SoccerPlex、Navy-Marine Corps Memorial Stadium、Nippert Stadium、Nissan Stadium, Nashville、Pratt & Whitney Stadium at Rentschler Field、Stade Olympique (Montreal)、TCF Bank Stadium，补充比赛使用时的城市/国家、经度、纬度、IANA 时区和可核验来源；若同一场馆有多个候选值，全部保留为 conflict，不自动裁决。",
+      "明确列出无法确认的 official_round、meeting_number/second_cycle、球队生命周期、场馆坐标/时区和逐场比赛键，并按 record_key 返回 unresolved_queue。只返回足球事实和证据，不返回 Qimen、九宫、宫位、关系、模型方向、Miss、概率、Outcome、Review、Gold 或任何结构结论。"
+    ]
+  },
+  "created_at": "2026-10-03T15:20:00+08:00",
+  "scope": {
+    "competition_key": "mls",
+    "seasons": [2018, 2019, 2020],
+    "league_only": true,
+    "incremental_only": true,
+    "football_facts_only": true,
+    "exclude": ["qimen", "palace", "relation", "model_first_direction", "miss", "probability", "outcome", "review", "gold"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
