@@ -49,6 +49,7 @@ def main():
         seasons = scope.get("seasons") or ["?"]
         seasons_s = ", ".join(str(s).replace("/", "-") for s in seasons)
         rtype = q.get("type", "?")
+        tgt = q.get("target", "muse")
         rp = os.path.join(res_dir, fn)
         status, upd, agg = "no-response", "", {"complete": "", "missing": ""}
         if os.path.exists(rp):
@@ -63,15 +64,15 @@ def main():
             except Exception:
                 status = "read-error"
         by_league.setdefault(league, []).append(
-            (seasons_s, rid, rtype, status, agg["complete"], agg["missing"], upd))
+            (seasons_s, rid, rtype, tgt, status, agg["complete"], agg["missing"], upd))
 
     out = ["# 联赛完成度矩阵", "", "_自动生成：`bin/league-matrix.py --write`；审计数字为 best-effort 汇总_", ""]
     for league in sorted(by_league):
         out += ["## " + league, "",
-                "| 赛季 | 请求 | 类型 | 状态 | complete | missing | 更新 |",
-                "|---|---|---|---|---|---|---|"]
-        for seasons_s, rid, rtype, status, c, m, upd in by_league[league]:
-            out.append(f"| {seasons_s} | {rid} | {rtype} | {status} | {c} | {m} | {upd} |")
+                "| 赛季 | 请求 | 类型 | lane | 状态 | complete | missing | 更新 |",
+                "|---|---|---|---|---|---|---|---|"]
+        for seasons_s, rid, rtype, tgt, status, c, m, upd in by_league[league]:
+            out.append(f"| {seasons_s} | {rid} | {rtype} | {tgt} | {status} | {c} | {m} | {upd} |")
         out.append("")
     text = "\n".join(out)
     if write:

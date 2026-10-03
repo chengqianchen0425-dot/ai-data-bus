@@ -68,6 +68,13 @@ to_codex 纪律（2026-10-03 教训）：to_codex 字段只转达用户原话或
 2. 只在以下情况调用：自己处理过久、连续两次失败或明确不确定；多 AI 辩论时担任跨厂商反方；用户明确要求调用。
 3. 每个回执必须声明 `dp_used: true/false`；为 true 时必须写 `dp_reason`，说明触发了上面第 2 条中的哪一种情况。
 
+## DSH lane（用户 2026-10-03 新增：DeepSeek Harness 对接，镜像 Codex 方式）
+- 请求增加 `target` 字段：`"muse"`（默认，含所有历史请求）或 `"dsh"`。`target=dsh` 的请求由用户本地 DSH 执行，Muse 侧 hook 自动跳过（不叫醒、不接手）。
+- 请求可带 `from` 表明来源：`"codex"` / `"dsh"` / `"user"`；回执带 `from`：`"muse"` / `"dsh"`。
+- id 全网唯一规则不变，DSH 不得复用 Codex/Muse 用过的 id。
+- 双向：Muse 可发 `target=dsh` 的单把活派给 DSH（如调用筛选大师/回测大师）；DSH 也可发 `target=muse` 的单请 Muse 干活。
+- DSH 侧轮询办法见 `DSH.md`。
+
 ## 给 Codex 的指令字段（2026-10-02 新增）
 回执顶层 `to_codex` 字段是用户经 Muse 转给 Codex 的指令。更新回执时不得擅自删除或改写用户原话；用户授权的新指令可追加写入并注明版本（见 to_codex 纪律正面清单）；Codex 的回复会以新需求单形式出现在 `requests/`。
 
