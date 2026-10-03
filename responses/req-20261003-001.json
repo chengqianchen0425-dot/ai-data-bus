@@ -1,0 +1,1 @@
+{"dp_used":false,"id":"req-20261003-001","note":"研究进行中：西甲 2018/19 39 场赔率端点增量补充（Bet365/WilliamHill 1X2 closing；Bet365/Pinnacle O/U 2.5 早期端点+closing）。计划：Football-Data CSV 批量取列→OddsPortal 历史逐场抓 closing/opening 端点→TotalCorner/BetExplorer 交叉。","request_sha":"c5af829e693d3fa6","status":"processing"}
