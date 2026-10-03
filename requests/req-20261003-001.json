@@ -1,0 +1,71 @@
+{
+  "id": "req-20261003-001",
+  "type": "deep_research",
+  "params": {
+    "topic": "西甲 La Liga 2018/19 39 场足球赔率端点增量补充",
+    "questions": [
+      "只处理 competition_key=la_liga、season=2018/19 的下列 39 场；只返回逐场足球赔率事实和来源证据。",
+      "补充 Bet365 1X2 closing 字段 B365CH/B365CD/B365CA；William Hill 1X2 closing 字段 WHCH/WHCD/WHCA；Bet365 O/U 2.5 的早期可验证赛前端点与 closing 字段 B365>2.5/B365<2.5/B365C>2.5/B365C<2.5；Pinnacle O/U 2.5 的早期可验证赛前端点与 closing 字段 P>2.5/P<2.5/PC>2.5/PC<2.5。",
+      "opening、earliest_verified_pre_match、pre-closing、latest_verified_pre_match、closing 必须分开标注；不得把 Football-Data 非 C 列或 closing 改名为 true opening。没有可验证端点就逐场保留 unavailable 或 blocked。",
+      "每条记录必须保留 stable_match_key、season、date、home_team、away_team、bookmaker、market、phase、home/draw/away 或 over/under、source_url、final_url、retrieved_at、field_locator、source_sha256。多来源冲突保留 conflict，不自动裁决。",
+      "明确排除 qimen_output、九宫、宫位、主客落宫、Q/F/G/I/A/B/C/E/M token、模型方向、Miss 1、Miss 2、总进球目标、BTTS1、Outcome、Review、Gold 和任何模型结论。"
+    ],
+    "targets": [
+      "la_liga|2018/19|2018-08-19|eibar|huesca",
+      "la_liga|2018/19|2018-08-27|athbilbao|huesca",
+      "la_liga|2018/19|2018-09-02|barcelona|huesca",
+      "la_liga|2018/19|2018-09-14|huesca|vallecano",
+      "la_liga|2018/19|2018-09-21|huesca|sociedad",
+      "la_liga|2018/19|2018-09-25|athmadrid|huesca",
+      "la_liga|2018/19|2018-09-30|huesca|girona",
+      "la_liga|2018/19|2018-10-07|valladolid|huesca",
+      "la_liga|2018/19|2018-10-21|huesca|espanol",
+      "la_liga|2018/19|2018-10-28|sevilla|huesca",
+      "la_liga|2018/19|2018-11-04|huesca|getafe",
+      "la_liga|2018/19|2018-11-11|alaves|huesca",
+      "la_liga|2018/19|2018-11-24|huesca|levante",
+      "la_liga|2018/19|2018-12-01|celta|huesca",
+      "la_liga|2018/19|2018-12-09|huesca|realmadrid",
+      "la_liga|2018/19|2018-12-16|huesca|villarreal",
+      "la_liga|2018/19|2018-12-23|valencia|huesca",
+      "la_liga|2018/19|2019-01-05|huesca|betis",
+      "la_liga|2018/19|2019-01-12|leganes|huesca",
+      "la_liga|2018/19|2019-01-19|huesca|athmadrid",
+      "la_liga|2018/19|2019-01-27|sociedad|huesca",
+      "la_liga|2018/19|2019-02-01|huesca|valladolid",
+      "la_liga|2018/19|2019-02-09|girona|huesca",
+      "la_liga|2018/19|2019-02-18|huesca|athbilbao",
+      "la_liga|2018/19|2019-02-22|espanol|huesca",
+      "la_liga|2018/19|2019-03-02|huesca|sevilla",
+      "la_liga|2018/19|2019-03-09|getafe|huesca",
+      "la_liga|2018/19|2019-03-16|huesca|alaves",
+      "la_liga|2018/19|2019-03-17|eibar|valladolid",
+      "la_liga|2018/19|2019-03-31|realmadrid|huesca",
+      "la_liga|2018/19|2019-04-03|huesca|celta",
+      "la_liga|2018/19|2019-04-07|levante|huesca",
+      "la_liga|2018/19|2019-04-13|huesca|barcelona",
+      "la_liga|2018/19|2019-04-20|vallecano|huesca",
+      "la_liga|2018/19|2019-04-23|huesca|eibar",
+      "la_liga|2018/19|2019-04-28|villarreal|huesca",
+      "la_liga|2018/19|2019-05-05|huesca|valencia",
+      "la_liga|2018/19|2019-05-12|betis|huesca",
+      "la_liga|2018/19|2019-05-18|huesca|leganes"
+    ]
+  },
+  "created_at": "2026-10-03T12:00:00+08:00",
+  "scope": {
+    "competition_key": "la_liga",
+    "season": "2018/19",
+    "incremental_only": true,
+    "league_only": true,
+    "exclude": ["qimen", "palace", "model", "outcome", "review", "gold"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
