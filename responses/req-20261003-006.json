@@ -1,8 +1,3054 @@
 {
  "id": "req-20261003-006",
- "status": "processing",
+ "status": "ok",
  "request_sha": "05f95462700f66b7",
  "dp_used": false,
- "note": "2026-10-03 16:40+08:00 取件中：法甲 2018/19-2020/21 增量缺字段证据（俱乐部静态注册×5、2019/20+2020/21逐场时区、10 club-season逐场venue/经纬度、Lyon-ASSE 2018-11-23冲突复核、14个赔率空单元格）",
- "fetched_at": "2026-10-03T16:40:00+08:00"
+ "note": "2026-10-03 增量回执：5家俱乐部静态注册 5/5；2019/20+2020/21 共659场时区规则推导 complete；10个club-season 175场 venue（28行Amiens坐标partial）；Lyon-ASSE 2018-11-23 冲突保留未裁决；赔率缺口全部 unavailable（诚实记录，无编造）；Qimen门禁全程执行",
+ "fetched_at": "2026-10-03T16:45:00+08:00",
+ "data": {
+  "report": "# 法甲 Ligue 1 2018/19–2020/21 增量缺字段证据回执 — req-20261003-006\n\n> 类型：增量 deep_research（替代被判无效的 req-20261002-019，重做全部子主题；req-007/009/011 已有来源哈希的字段未重复）。\n> 角色：只抓证据、不做判断；允许 NULL；绝不编造。Qimen 门禁全程执行。\n\n## 1. 俱乐部静态注册（5/5 complete）\n\n| 俱乐部 | 适用赛季 | founding | first top-division entry | 别名 |\n|---|---|---|---|---|\n| Amiens SC | 18/19, 19/20 | 1901（1901-10-06 as Amiens Athlétic Club） | 2017（2017-18 赛季，队史首次） | Amiens Sporting Club / Amiens SC / Amiens / Les Licornes |\n| Dijon FCO | 18/19, 19/20, 20/21 | 1998（两家本地俱乐部合并） | 2011（2011-12 赛季，队史首次） | Dijon Football Côte-d'Or / Dijon FCO / Dijon / DFCO / Les rouges |\n| Nîmes Olympique | 18/19, 19/20, 20/21 | 1937-04-12（前身 SC Nîmois 1901 已于 1935 解散，为独立实体） | 1950（1949-50 赛季升入 Division 1，1950-51 首次征战顶级） | Nîmes Olympique / Nîmes / Les Crocodiles / le NO |\n| SM Caen | 18/19 | 1913-11-17（Club Malherbe Caennais + Club Sportif Caennais 合并） | 1988（1988-89 赛季，队史首次） | Stade Malherbe Caen / SM Caen / SMC / Malherbe / Caen |\n| EA Guingamp | 18/19 | 1912（timeline 明确 1912 建队；\"1918\" 说法无来源支持，已纠正） | 1995（1995-96 赛季，队史首次） | En Avant (de) Guingamp / EA Guingamp / EAG / Guingamp / Les Guingampais 等 |\n\n全部为来源原文直接陈述，未从赛果/赔率/注册表推断。每条证据带 source_url、field_locator、原文引用与引用段落 sha256（见 `club_registration`）。\n\n## 2. 逐场时区（659/659 complete，规则推导）\n\n- **IANA**：法国本土全部 `Europe/Paris`；摩纳哥主场 33 场为 `Europe/Monaco`（与 Europe/Paris 钟面完全一致）。\n- **DST 证据**：法国官方 service-public.gouv.fr（欧盟统一：三月最后一个周日进夏令时、十月最后一个周日出）；timeanddate：2019-03-31→2019-10-27、2020-03-29→2020-10-25、2021-03-28→2021-10-31。\n- **推导规则**：逐场 `match_date`（req-007 已匹配+哈希的日期）落在 [夏令开始, 夏令结束) → CEST (UTC+2)，否则 CET (UTC+1)。2019/20：107 CEST / 172 CET；2020/21：153 CEST / 227 CET。\n- **跨越夏令切换的轮次**（逐场核实）：2019/20 第 12 轮（2019-10-25/26→CEST，10-27→CET；Nîmes-Rennes 推迟至 2020-01-15→CET）；2020/21 第 8 轮（10-23/24→CEST；10-25 的 6 场→CET，逐场表见 `timezone.transition_windows`）。其余轮次无一场落在切换窗口内（已用 659 个日期全量校验）。\n\n## 3. 逐场 venue/经纬度（175 行：147 complete + 28 partial，0 missing）\n\n10 个 club-season 全部映射到当季主场（175 场主场比赛逐行生成，见 `venue_rows`）；**0 主场迁移 / 0 中立场**（英法双语检索阴性；2019–20 与 2020–21 赛季球场表交叉确认；2020/21 的 huis clos 只是空场措施非换球场；Amiens 球场在 FBref 写作 \"Stade Crédit Agricole la Licorne\" 系冠名变体，同一物理球场）。\n28 个 Amiens 行标 partial：Stade de la Licorne 经纬度有两个 geocoder 候选（49.90605,2.27111 / 49.89217,2.25939），未裁决。\n\n## 4. Lyon vs Saint-Étienne 2018-11-23 冲突（未裁决）\n\n- 法国来源（fr.wikipedia OL 2018-19 赛季页）：**2018 年 11 月 23 日星期五 20:45（当地）**，第 14 轮，Groupama Stadium，1-0（Denayer 62'），55,701 人，Canal+。\n- 竞争值：forebet 标 \"21:00 GMT\"（=22:00 CET，周五法甲时段不合理，疑似时区标注错误），保留未裁决。\n- IANA：Europe/Paris（11 月 → CET）。\n\n## 5. 赔率缺口（全部 unavailable，诚实记录）\n\n目标单元格在 football-data 中确为空（逐格核对 req-007 数据）：PSG-Nice 2019-05-04 的 Pinnacle pre-close 1X2；Rennes-PSG 2019-08-18 的 Pinnacle OU pre-close；2020/21 六场（Brest-Marseille、PSG-Marseille、Monaco-Montpellier、Bordeaux-Reims、Lyon-Nantes、Montpellier-Lille）的 Bet365/Pinnacle/WH pre-close 或 closing 空格。WH 的 OU 列在 football-data 全赛季结构性缺失（req-009 已记）。\n尝试：SoccerPunter live-odds 页文本抓取无书商行数据（需 JS）；本运行环境无 live browser（browser.spawn_task），OddsPortal/BetExplorer/TotalCorner/Bettors.club 均不可达；Bettors.club/Tipsme 无这些场次的历史页索引。严格区分 true opening / pre-close / closing：**closing 值未被改名填充**（仅作 reference 列出）；BetBrain 聚合未替代指定书商。\n\n## 6. 审计与未解决队列\n\n见 `audit` 与 `unresolved_queue`。Qimen 门禁：本回执无任何九宫/模型字段。\n",
+  "audit": {
+   "club_registration": {
+    "expected_clubs": 5,
+    "discovered": 5,
+    "complete": 5,
+    "partial": 0,
+    "missing": 0,
+    "note": "founding/first-top-division-entry/aliases all directly sourced per club; Nîmes 1901 predecessor noted as distinct dissolved entity; Guingamp 1918 claim corrected to 1912"
+   },
+   "timezone_2019_20_2020_21": {
+    "expected": 659,
+    "discovered": 659,
+    "complete": 659,
+    "partial": 0,
+    "missing": 0,
+    "note": "279+380 classified by deterministic rule over req-007 match_dates + EU DST evidence; transition rounds documented per-match; IANA Europe/Paris (33 Monaco home games = Europe/Monaco, same wall time)"
+   },
+   "venue_10_club_seasons": {
+    "expected_matches": 175,
+    "discovered": 175,
+    "complete": 147,
+    "partial": 28,
+    "missing": 0,
+    "relocation_searches": 2,
+    "relocations_found": 0,
+    "note": "28 Amiens rows partial (lat/lon two geocoder candidates); all venues = club-season home stadium; 0 relocations/neutral venues found; huis clos noted as attendance-only"
+   },
+   "lyon_asse_conflict": {
+    "conflicting_values": 2,
+    "adjudicated": false,
+    "note": "fr.wikipedia OL 2018-19 season page: 20:45 local, round 14, Groupama Stadium; forebet 21:00 GMT kept as competing value, not adjudicated"
+   },
+   "odds_gaps": {
+    "targets": "14+ cells (8 target groups)",
+    "found": 0,
+    "unavailable": "all",
+    "note": "all cells verified empty in football-data; no second static source reachable in this runtime; nothing renamed or inferred"
+   },
+   "qimen_gate": {
+    "status": "held",
+    "note": "no Qimen/九宫/F/G/I/Q/M/模型方向/Miss/概率/Outcome/Review/Gold fields returned or inferred anywhere"
+   }
+  },
+  "unresolved_queue": [
+   {
+    "item": "Amiens Stade de la Licorne lat/lon",
+    "reason": "two geocoder candidates (49.90605,2.27111 FULL_ADDRESS rel.75 vs 49.89217,2.25939 street-level rel.61); Wikipedia gives address Rue du Chapitre without coordinates in extracted text",
+    "rows_affected": 28
+   },
+   {
+    "item": "14+ odds gap cells",
+    "reason": "pre-close per bookmaker not in football-data; JS odds archives unreachable in this runtime (no live browser task)",
+    "rows_affected": 8
+   },
+   {
+    "item": "Lyon-ASSE 2018-11-23 kickoff conflict",
+    "reason": "forebet 21:00 GMT vs French sources 20:45 local; not auto-adjudicated per request",
+    "rows_affected": 1
+   }
+  ],
+  "club_registration": [
+   {
+    "club": "Amiens SC",
+    "seasons_applicable": [
+     "2018/19",
+     "2019/20"
+    ],
+    "founding_year": 1901,
+    "founding_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/Amiens_SC",
+     "final_url": "https://en.wikipedia.org/wiki/Amiens_SC",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "infobox > Founded; lead paragraph",
+     "quote": "Founded | 6 October 1901 (1901-10-06) as Amiens Athlétic Club // Amiens Sporting Club ... commonly referred to as Amiens SC or simply Amiens ... The club was formed in 1901",
+     "source_sha256": "eaba027bb34dcc1543ee11131b38e1992e5a15dcab77c190a4eaf337696c28a9",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "first_top_division_entry": "2017 (2017-18 season)",
+    "entry_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/Amiens_SC",
+     "final_url": "https://en.wikipedia.org/wiki/Amiens_SC",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "lead paragraph; History section",
+     "quote": "The 2017–18 Ligue 1 season was the first in the club’s 116-year history, where they finished in 13th place. // Their first season back in Ligue 2 was the most successful ever, as they finished runners-up and were promoted to top-tier Ligue 1 for the first time ever.",
+     "source_sha256": "5a2fd2a6a9c49721f12299be2e9ae547fd38d8de89b3e4f93552affe053aefc9",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "aliases": [
+     "Amiens Sporting Club",
+     "Amiens SC",
+     "Amiens",
+     "Les Licornes (the Unicorns)"
+    ],
+    "aliases_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/Amiens_SC",
+     "final_url": "https://en.wikipedia.org/wiki/Amiens_SC",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "infobox > Full name, Nickname; lead paragraph",
+     "quote": "Full name | Amiens Sporting Club // Nickname | Les Licornes (the Unicorns) // commonly referred to as Amiens SC or simply Amiens",
+     "source_sha256": "6a800089b1a0f24ebfc942c42209a6abaa424c47c723f69963a8039339349a11",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "unavailable_fields": []
+   },
+   {
+    "club": "Dijon FCO",
+    "seasons_applicable": [
+     "2018/19",
+     "2019/20",
+     "2020/21"
+    ],
+    "founding_year": 1998,
+    "founding_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/Dijon_FCO",
+     "final_url": "https://en.wikipedia.org/wiki/Dijon_FCO",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "infobox > Founded; lead paragraph",
+     "quote": "Founded | 1998 (1998) // The club was founded in 1998 as a result of a merger between two local clubs in the city",
+     "source_sha256": "75f56d9c3f6766ae6b00771c5ea80544f93aeb0adfe26df0341e4c7169f3c49b",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "first_top_division_entry": "2011 (2011-12 season)",
+    "entry_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/Dijon_FCO",
+     "final_url": "https://en.wikipedia.org/wiki/Dijon_FCO",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "History section: Ligue 2 (2005–2011), Ligue 1 (2011–2012)",
+     "quote": "DFCO was promoted to Ligue 1 at the end of the 2010–11 season for the first time in its history, thanks to finishing third in Ligue 2. // Dijon played in Ligue 1 for the first time in its history during the 2011–12 season.",
+     "source_sha256": "a84de9d3d56219a216a1fb5aee673aa295c3b24e325d30329cc4905c3dd6d452",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "aliases": [
+     "Dijon Football Côte-d’Or",
+     "Dijon FCO",
+     "Dijon",
+     "DFCO",
+     "Les rouges (The reds)"
+    ],
+    "aliases_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/Dijon_FCO",
+     "final_url": "https://en.wikipedia.org/wiki/Dijon_FCO",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "infobox > Full name, Nickname; lead paragraph",
+     "quote": "Full name | Dijon Football Côte-d’Or // Nickname | Les rouges (The reds) // commonly referred to as Dijon FCO, Dijon or simply as DFCO",
+     "source_sha256": "a76120ba52714bd072ebdbf4e16d58e01f0ccbd3b562eb290e0e8980b5d41c05",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "unavailable_fields": []
+   },
+   {
+    "club": "Nîmes Olympique",
+    "seasons_applicable": [
+     "2018/19",
+     "2019/20",
+     "2020/21"
+    ],
+    "founding_year": 1937,
+    "founding_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/N%C3%AEmes_Olympique",
+     "final_url": "https://en.wikipedia.org/wiki/N%C3%AEmes_Olympique",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "infobox > Founded; lead paragraph; History section",
+     "quote": "Founded | 12 April 1937 (1937-04-12) // The club was founded on 12 April 1937 // Sporting Club Nîmois was dissolved in 1935 before a continuation of the club in Nîmes Olympique was established on April 12, 1937. NOTE: predecessor Sporting Club Nîmois founded 1901 is a distinct dissolved entity, not merged into the founding year.",
+     "source_sha256": "e4356838703c96ad43a75a61c946a9f56299f70b924e0eecdeff3fca7e7e1275",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "first_top_division_entry": "1950 (1950-51 season; promoted during 1949-50)",
+    "entry_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/N%C3%AEmes_Olympique",
+     "final_url": "https://en.wikipedia.org/wiki/N%C3%AEmes_Olympique",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "History section; corroborated by rowdie.co.uk team profile",
+     "quote": "In the years following World War 2, Nîmes were promoted to the French Division 1 during the 1949-1950 season and finishing fifth in Division 1 the following season. // rowdie.co.uk: First Season in Ligue 1: 1950-51",
+     "source_sha256": "e75094ddcfff800646797c040287fe73c01f2182bc2ddfa98d8cc69690f62066",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "aliases": [
+     "Nîmes Olympique",
+     "Nîmes",
+     "Les Crocodiles (The Crocodiles)",
+     "le NO"
+    ],
+    "aliases_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/N%C3%AEmes_Olympique",
+     "final_url": "https://en.wikipedia.org/wiki/N%C3%AEmes_Olympique",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "infobox > Full name, Nickname; lead paragraph",
+     "quote": "Full name | Nîmes Olympique // Nickname | Les Crocodiles (The Crocodiles) // commonly referred to as simply Nîmes",
+     "source_sha256": "93bc21e8ce43582a7a7ed65bb75a9e0524fbfce1d4564c20ecd54ea9bb73f5d7",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "unavailable_fields": []
+   },
+   {
+    "club": "SM Caen",
+    "seasons_applicable": [
+     "2018/19"
+    ],
+    "founding_year": 1913,
+    "founding_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/SM_Caen",
+     "final_url": "https://en.wikipedia.org/wiki/SM_Caen",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "infobox > Founded; lead paragraph; History > First years",
+     "quote": "Founded | 17 November 1913 (17 November 1913) // The club was founded on 17 November 1913 by the merger of Club Malherbe Caennais and Club Sportif Caennais. // The Stade Malherbe Caennais was officially founded on 17 November 1913 from the merger of Club Sportif Caennais and Club Malherbe Caennais.",
+     "source_sha256": "4adae30c352878a04432914bf79f43867f6e7c4428b22719d5bb385315724ac7",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "first_top_division_entry": "1988 (1988-89 season)",
+    "entry_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/SM_Caen",
+     "final_url": "https://en.wikipedia.org/wiki/SM_Caen",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "lead paragraph; History > From D2 to the European Cup; Domestic record table",
+     "quote": "Three seasons later, it was promoted for the first time to the first division. // In 1988 Stade Malherbe made Division 1. // Domestic record: 1988–89 | First League | 16th",
+     "source_sha256": "365539c11ea3f8a35774034f48a9e53a06c3730011b0e99e2c22b37ef7ac470e",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "aliases": [
+     "Stade Malherbe Caen",
+     "SM Caen",
+     "SMC",
+     "Malherbe",
+     "Caen"
+    ],
+    "aliases_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/SM_Caen",
+     "final_url": "https://en.wikipedia.org/wiki/SM_Caen",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "infobox > Full name, Nickname, Short name; lead paragraph",
+     "quote": "Full name | Stade Malherbe Caen // Nickname | Malherbe // Short name | SMC // commonly known as SM Caen, Malherbe, or simply Caen",
+     "source_sha256": "9f2b836257c950ba719586d8d7238e4a9717dd6761bb8a809ac4e48d7c6995f3",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "unavailable_fields": []
+   },
+   {
+    "club": "EA Guingamp",
+    "seasons_applicable": [
+     "2018/19"
+    ],
+    "founding_year": 1912,
+    "founding_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/En_Avant_de_Guingamp",
+     "final_url": "https://en.wikipedia.org/wiki/En_Avant_de_Guingamp",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "infobox > Founded; lead paragraph; Timeline",
+     "quote": "Founded | 1912 (1912) // The club was founded in 1912 // Timeline: 1912: Foundation of the club. NOTE: the value 1918 appearing in some queries is not supported by this source.",
+     "source_sha256": "75de295f0b5358def5a4b13e52656118a35cd21c08a2c2cda9d1be4b112f7800",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "first_top_division_entry": "1995 (1995-96 season)",
+    "entry_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/En_Avant_de_Guingamp",
+     "final_url": "https://en.wikipedia.org/wiki/En_Avant_de_Guingamp",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "History section; Timeline",
+     "quote": "The club has played in the French top flight before, having gained promotion only three times: 1995, 2000 and 2013. // Timeline: 1995: First promotion to Ligue 1.",
+     "source_sha256": "0f9ea3b8aa51286f8685c6af37beb2f92b95ca6b0411974e97d5b54e6c9114ba",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "aliases": [
+     "En Avant Guingamp",
+     "En Avant de Guingamp",
+     "EA Guingamp",
+     "EAG",
+     "Guingamp",
+     "Les Guingampais",
+     "Les Costarmoricains",
+     "Les Rouge et Noir",
+     "L'En-Avant"
+    ],
+    "aliases_evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/En_Avant_de_Guingamp",
+     "final_url": "https://en.wikipedia.org/wiki/En_Avant_de_Guingamp",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "infobox > Full name, Nicknames, Short name; lead paragraph",
+     "quote": "Full name | En Avant Guingamp // Nicknames | Les Guingampais, Les Costarmoricains (The Costamoricans), Les Rouge et Noir (The Red and Blacks), L’En-Avant // Short name | EAG // commonly referred to as EA Guingamp, EAG, or simply Guingamp",
+     "source_sha256": "12225eb759c81df70767f884450833d95f248a668e72d38663694632a39b79b1",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "unavailable_fields": []
+   }
+  ],
+  "timezone": {
+   "scope": "2019/20 (279 played) + 2020/21 (380) = 659 matches; all venues in metropolitan France or Monaco",
+   "iana_default": "Europe/Paris",
+   "iana_monaco_note": "Monaco home matches (33 in scope) are IANA Europe/Monaco; wall-clock identical to Europe/Paris (same EU DST rules)",
+   "dst_evidence": [
+    {
+     "source_url": "https://www.service-public.gouv.fr/telecharger-pdf?path=aHR0cHM6Ly93d3cuc2VydmljZS1wdWJsaWMuZnIvcGFydGljdWxpZXJzL2FjdHVhbGl0ZXMvQTE1MjYz",
+     "final_url": "https://www.service-public.gouv.fr/telecharger-pdf?path=aHR0cHM6Ly93d3cuc2VydmljZS1wdWJsaWMuZnIvcGFydGljdWxpZXJzL2FjdHVhbGl0ZXMvQTE1MjYz",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "Passage à l’heure d’hiver (DILA, 2025-10-22)",
+     "quote": "Depuis 1998, les dates de changement d’heure ont été harmonisées au sein de l’Union européenne. Dans tous les pays membres, le passage à l’heure d’hiver s’effectue le dernier dimanche d’octobre et le passage à l’heure d’été, le dernier dimanche de mars.",
+     "source_sha256": "eb188e0797a3b4b2983476b00e8d8d0f46c0823ae77c4673a12e2477ef34e7a1",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    {
+     "source_url": "https://www.timeanddate.com/time/zone/france/strasbourg?year=2019",
+     "final_url": "https://www.timeanddate.com/time/zone/france/strasbourg?year=2019",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "Time Zone & Clock Changes 2019, Strasbourg (France)",
+     "quote": "2019 | Sun, Mar 31 at 2:00 am | CET → CEST | +1 hour (DST start) | UTC+2h // Sun, Oct 27 at 3:00 am | CEST → CET | -1 hour (DST end) | UTC+1h",
+     "source_sha256": "e413718b503a04835a75a9a45041731645379317932ecd9215d8c2175bafb6fc",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    {
+     "source_url": "https://www.timeanddate.com/time/change/@44.63417,2.17983?year=2021",
+     "final_url": "https://www.timeanddate.com/time/change/@44.63417,2.17983?year=2021",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "Daylight Saving Time Changes 2021, France (44°38′03.0″N)",
+     "quote": "2020 | Sunday, March 29, 2:00 am | Sunday, October 25, 3:00 am // 2021 | Sunday, March 28, 2:00 am | Sunday, October 31, 3:00 am",
+     "source_sha256": "1db5dd6ee2b16ecd6ee038e05ff09a450e1ee6797f97ae46c45a5f5d516466a7",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    }
+   ],
+   "mapping_rule": "local_timezone derived deterministically per match: match_date within [last-Sunday-of-March, last-Sunday-of-October) → CEST (UTC+2); otherwise CET (UTC+1); iana_timezone Europe/Paris (Europe/Monaco for Monaco home games). Per-match dates are the already-matched req-007 fixture dates (source hashes in req-007).",
+   "classification_from_req007_dates": {
+    "2019/20": {
+     "n": 279,
+     "CEST": 107,
+     "CET": 172,
+     "span": "2019-08-09 → 2020-03-08"
+    },
+    "2020/21": {
+     "n": 380,
+     "CEST": 153,
+     "CET": 227,
+     "span": "2020-08-21 → 2021-05-23"
+    }
+   },
+   "transition_windows": [
+    {
+     "window": "2019-10-25..27 (2019/20 round 12)",
+     "dst_change": "2019-10-27 03:00 local CEST→CET",
+     "matches_2019_10_25_26": "CEST",
+     "matches_2019_10_27": "CET (after 03:00)",
+     "postponed": "Nîmes-Rennes postponed to 2020-01-15 (CET)",
+     "sources": [
+      "https://www.transfermarkt.co.za/ligue-1/spieltag/wettbewerb/FR1/saison_id/2019/spieltag/12 (Nîmes 0:1 Rennes, Wednesday 15/01/2020)",
+      "http://www.eigenrankings.com/Posters/Ligue_1/2019-20.pdf (round date row: 20/10/2019 27/10/2019)"
+     ]
+    },
+    {
+     "window": "2020-10-23..25 (2020/21 round 8)",
+     "dst_change": "2020-10-25 03:00 local CEST→CET",
+     "per_match": [
+      {
+       "date": "2020-10-23",
+       "match": "Rennes vs Angers",
+       "tz": "CEST"
+      },
+      {
+       "date": "2020-10-24",
+       "match": "PSG vs Dijon",
+       "tz": "CEST"
+      },
+      {
+       "date": "2020-10-24",
+       "match": "Lorient vs Marseille",
+       "tz": "CEST"
+      },
+      {
+       "date": "2020-10-25",
+       "match": "Lyon vs Monaco",
+       "tz": "CET"
+      },
+      {
+       "date": "2020-10-25",
+       "match": "Nice vs Lille",
+       "tz": "CET"
+      },
+      {
+       "date": "2020-10-25",
+       "match": "Bordeaux vs Nîmes",
+       "tz": "CET"
+      },
+      {
+       "date": "2020-10-25",
+       "match": "Brest vs Strasbourg",
+       "tz": "CET"
+      },
+      {
+       "date": "2020-10-25",
+       "match": "Metz vs Saint-Étienne",
+       "tz": "CET"
+      },
+      {
+       "date": "2020-10-25",
+       "match": "Montpellier vs Reims",
+       "tz": "CET"
+      },
+      {
+       "date": "2020-10-31/11-01",
+       "note": "round 9 onward → CET",
+       "tz": "CET"
+      }
+     ],
+     "sources": [
+      "https://m.football-lineups.com/tourn/Ligue-1-2020--2021/ (per-match dates for matchday 8)"
+     ]
+    }
+   ],
+   "granularity_note": "Per-match rows not individually page-verified this round; each match’s (local_timezone, iana_timezone) is fully determined by its req-007 match_date under the EU rule above. Validator can re-derive per row. No match in the 659 falls in an ambiguous window other than the two transition rounds documented."
+  },
+  "venue_evidence": [
+   {
+    "club_season": "Amiens SC 2018/19 + 2019/20",
+    "venue": "Stade de la Licorne",
+    "evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/Amiens_SC",
+     "final_url": "https://en.wikipedia.org/wiki/Amiens_SC",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "lead paragraph",
+     "quote": "The club plays its home matches at the Stade de la Licorne located within the city.",
+     "source_sha256": "23c04be677c44f4baf24a37dada82388b81203935b7308f9fb7009e0eaf4e058",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "evidence2": {
+     "source_url": "https://fr.wikipedia.org/wiki/Saison_2019-2020_de_l%27Amiens_SC",
+     "final_url": "https://fr.wikipedia.org/wiki/Saison_2019-2020_de_l%27Amiens_SC",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "Généralités infobox",
+     "quote": "| Stade | Stade de la Licorne |",
+     "source_sha256": "807b4c3be9c85bb91954d2a711771326b4f2ab60a2daafd05392bc1ea48af247",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "coords": {
+     "lat": "49.90605",
+     "lon": "2.27111",
+     "geocoder_match": "FULL_ADDRESS relevance 75",
+     "conflict": "street-level alternative 49.89217, 2.25939 (Rue du Chapitre, relevance 61); venue row marked partial",
+     "wikipedia_address": "Rue du Chapitre, Amiens (https://en.wikipedia.org/wiki/Stade_de_la_Licorne)"
+    },
+    "name_variant": "FBref 2019-20 lists \"Stade Crédit Agricole la Licorne\" — sponsor name, same venue"
+   },
+   {
+    "club_season": "Dijon FCO 2018/19 + 2019/20 + 2020/21",
+    "venue": "Stade Gaston Gérard",
+    "evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/Dijon_FCO",
+     "final_url": "https://en.wikipedia.org/wiki/Dijon_FCO",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "lead paragraph",
+     "quote": "Dijon plays its home matches at the Stade Gaston Gérard.",
+     "source_sha256": "7fc3262ebfd294223856c006e81c672492a834a6f44fcf23610171edc3bdb2ae",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "evidence2": {
+     "source_url": "https://en.wikipedia.org/wiki/2019–20_Ligue_1",
+     "final_url": "https://en.wikipedia.org/wiki/2019–20_Ligue_1",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "Stadium and locations table",
+     "quote": "| Dijon | Dijon | Stade Gaston Gérard | 15,995 | 18th |",
+     "source_sha256": "981439c43465a7c8c8bebee7888adca651eab07395b353fc9f35aa506ae03492",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "coords": {
+     "lat": "47.32438",
+     "lon": "5.06831",
+     "geocoder_match": "FULL_ADDRESS relevance 100"
+    }
+   },
+   {
+    "club_season": "Nîmes Olympique 2018/19 + 2019/20 + 2020/21",
+    "venue": "Stade des Costières",
+    "evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_N%C3%AEmes_Olympique_season",
+     "final_url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_N%C3%AEmes_Olympique_season",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "season infobox",
+     "quote": "| Stadium | Stade des Costières, Nîmes |",
+     "source_sha256": "a41b017f86dc1b9daf00ee4611064ffc1a760e8048ae3c20a8cf92705d160980",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "evidence2": {
+     "source_url": "https://en.wikipedia.org/wiki/2020–21_Ligue_1",
+     "final_url": "https://en.wikipedia.org/wiki/2020–21_Ligue_1",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "Stadiums and locations table",
+     "quote": "| Nîmes | Nîmes | Stade des Costières | 18,482 | 18th |",
+     "source_sha256": "0f86732b53b30b315c68594552e24b3206e8311cfaf25605650d5956d0251127",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "coords": {
+     "lat": "43.81632",
+     "lon": "4.36288",
+     "geocoder_match": "FULL_ADDRESS relevance 100"
+    },
+    "note": "Club moved to Stade des Antonins in Nov 2022 — outside scope; all in-scope seasons at Costières"
+   },
+   {
+    "club_season": "SM Caen 2018/19",
+    "venue": "Stade Michel d'Ornano",
+    "evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/SM_Caen",
+     "final_url": "https://en.wikipedia.org/wiki/SM_Caen",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "lead paragraph",
+     "quote": "SM Caen has been playing since 1993 at the Stade Michel d'Ornano.",
+     "source_sha256": "d1416a28865a875f41e3af0ca9f90029d4686825bc384fb1e8c72d8a8e1e74ee",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "coords": {
+     "lat": "49.17946",
+     "lon": "-0.39689",
+     "geocoder_match": "FULL_ADDRESS relevance 100"
+    }
+   },
+   {
+    "club_season": "EA Guingamp 2018/19",
+    "venue": "Stade de Roudourou",
+    "evidence": {
+     "source_url": "https://en.wikipedia.org/wiki/En_Avant_de_Guingamp",
+     "final_url": "https://en.wikipedia.org/wiki/En_Avant_de_Guingamp",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "Stadium section",
+     "quote": "Guingamp plays its home matches at the Stade de Roudourou in the city.",
+     "source_sha256": "c9f775f1dc04c5fba3c7707f9d5aa941b21356973b5197eb682c433fbd64778e",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "evidence2": {
+     "source_url": "https://fr.wikipedia.org/wiki/Saison_2018-2019_de_l%27En_avant_de_Guingamp",
+     "final_url": "https://fr.wikipedia.org/wiki/Saison_2018-2019_de_l%27En_avant_de_Guingamp",
+     "retrieved_at": "2026-10-03T16:45:00+08:00",
+     "field_locator": "Généralités infobox",
+     "quote": "| Stade | Stade de Roudourou (19033 places) |",
+     "source_sha256": "b3ebe5612a65bb07f93a6367202a95c26ae6a92f56c2654478af361cc57d4581",
+     "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+    },
+    "coords": {
+     "lat": "48.5661",
+     "lon": "-3.1644",
+     "geocoder_match": "FULL_ADDRESS relevance 100"
+    }
+   }
+  ],
+  "relocation_search_log": [
+   {
+    "query": "FR: Amiens Dijon Nîmes Caen Guingamp déménagement stade domicile 2018 2019 2020 Ligue 1",
+    "result": "negative — no relocation hits; only season pages confirming home stadiums"
+   },
+   {
+    "query": "EN: Ligue 1 2019-20 2020-21 match played at neutral venue stadium relocation Amiens Dijon Nimes Caen Guingamp",
+    "result": "negative — stadium tables (2019–20 & 2020–21 Ligue 1 Wikipedia) confirm the same venues; FBref per-match venues match (sponsor-name variant only)"
+   },
+   {
+    "note": "2020/21 played largely behind closed doors (huis clos) — attendance measure, not a venue change. 2019/20 suspended 2020-03-13, never resumed; no huis-clos Ligue 1 matches."
+   },
+   {
+    "note": "Amiens stadium appears as \"Stade Crédit Agricole la Licorne\" on FBref — naming-rights variant of Stade de la Licorne, same physical venue."
+   }
+  ],
+  "venue_rows": [
+   {
+    "season": "2018/19",
+    "match_date": "2018-08-18",
+    "home": "Amiens",
+    "away": "Montpellier",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-08-18",
+    "home": "Caen",
+    "away": "Nice",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-08-18",
+    "home": "Dijon",
+    "away": "Nantes",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-08-18",
+    "home": "Guingamp",
+    "away": "Paris SG",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-08-19",
+    "home": "Nimes",
+    "away": "Marseille",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-08-25",
+    "home": "Amiens",
+    "away": "Reims",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-09-01",
+    "home": "Dijon",
+    "away": "Caen",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-09-01",
+    "home": "Guingamp",
+    "away": "Toulouse",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-09-01",
+    "home": "Nimes",
+    "away": "Paris SG",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-09-15",
+    "home": "Amiens",
+    "away": "Lille",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-09-15",
+    "home": "Caen",
+    "away": "Lyon",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-09-15",
+    "home": "Dijon",
+    "away": "Angers",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-09-23",
+    "home": "Guingamp",
+    "away": "Bordeaux",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-09-26",
+    "home": "Amiens",
+    "away": "Rennes",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-09-26",
+    "home": "Caen",
+    "away": "Montpellier",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-09-26",
+    "home": "Dijon",
+    "away": "Lyon",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-09-26",
+    "home": "Nimes",
+    "away": "Guingamp",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-09-29",
+    "home": "Caen",
+    "away": "Amiens",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-10-06",
+    "home": "Amiens",
+    "away": "Dijon",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-10-06",
+    "home": "Guingamp",
+    "away": "Montpellier",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-10-06",
+    "home": "Nimes",
+    "away": "Reims",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-10-20",
+    "home": "Caen",
+    "away": "Guingamp",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-10-20",
+    "home": "Dijon",
+    "away": "Lille",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-10-26",
+    "home": "Nimes",
+    "away": "St Etienne",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-10-27",
+    "home": "Amiens",
+    "away": "Nantes",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-10-27",
+    "home": "Guingamp",
+    "away": "Strasbourg",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-11-03",
+    "home": "Caen",
+    "away": "Rennes",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-11-03",
+    "home": "Dijon",
+    "away": "Nimes",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-11-10",
+    "home": "Guingamp",
+    "away": "Lyon",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-11-10",
+    "home": "Nimes",
+    "away": "Nice",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-11-24",
+    "home": "Caen",
+    "away": "Monaco",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-11-24",
+    "home": "Dijon",
+    "away": "Bordeaux",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-11-25",
+    "home": "Amiens",
+    "away": "Marseille",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-12-01",
+    "home": "Guingamp",
+    "away": "Nice",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-12-01",
+    "home": "Nimes",
+    "away": "Amiens",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-12-04",
+    "home": "Amiens",
+    "away": "Monaco",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-12-05",
+    "home": "Caen",
+    "away": "Nimes",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-12-05",
+    "home": "Dijon",
+    "away": "Guingamp",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-12-08",
+    "home": "Guingamp",
+    "away": "Amiens",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-12-16",
+    "home": "Nimes",
+    "away": "Lille",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2018-12-18",
+    "home": "Caen",
+    "away": "Toulouse",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-08",
+    "home": "Amiens",
+    "away": "Angers",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-11",
+    "home": "Caen",
+    "away": "Lille",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-12",
+    "home": "Amiens",
+    "away": "Paris SG",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-12",
+    "home": "Guingamp",
+    "away": "St Etienne",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-13",
+    "home": "Dijon",
+    "away": "Montpellier",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-16",
+    "home": "Guingamp",
+    "away": "Rennes",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-16",
+    "home": "Nimes",
+    "away": "Nantes",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-19",
+    "home": "Nimes",
+    "away": "Toulouse",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-20",
+    "home": "Caen",
+    "away": "Marseille",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-23",
+    "home": "Nimes",
+    "away": "Angers",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-26",
+    "home": "Dijon",
+    "away": "Monaco",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-26",
+    "home": "Guingamp",
+    "away": "Reims",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-01-27",
+    "home": "Amiens",
+    "away": "Lyon",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-02-03",
+    "home": "Nimes",
+    "away": "Montpellier",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-02-08",
+    "home": "Dijon",
+    "away": "Marseille",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-02-09",
+    "home": "Amiens",
+    "away": "Caen",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-02-10",
+    "home": "Guingamp",
+    "away": "Lille",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-02-13",
+    "home": "Caen",
+    "away": "Nantes",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-02-15",
+    "home": "Nimes",
+    "away": "Dijon",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-02-17",
+    "home": "Caen",
+    "away": "Strasbourg",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-02-22",
+    "home": "Dijon",
+    "away": "St Etienne",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-02-23",
+    "home": "Amiens",
+    "away": "Nice",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-02-23",
+    "home": "Guingamp",
+    "away": "Angers",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-03-02",
+    "home": "Caen",
+    "away": "Paris SG",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-03-03",
+    "home": "Guingamp",
+    "away": "Nantes",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-03-09",
+    "home": "Amiens",
+    "away": "Nimes",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-03-09",
+    "home": "Dijon",
+    "away": "Reims",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-03-12",
+    "home": "Dijon",
+    "away": "Paris SG",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-03-16",
+    "home": "Caen",
+    "away": "St Etienne",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-03-16",
+    "home": "Guingamp",
+    "away": "Dijon",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-03-16",
+    "home": "Nimes",
+    "away": "Strasbourg",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-03-31",
+    "home": "Amiens",
+    "away": "Bordeaux",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-03-31",
+    "home": "Dijon",
+    "away": "Nice",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-04-06",
+    "home": "Amiens",
+    "away": "St Etienne",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-04-06",
+    "home": "Guingamp",
+    "away": "Monaco",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-04-06",
+    "home": "Nimes",
+    "away": "Caen",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-04-09",
+    "home": "Nimes",
+    "away": "Rennes",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-04-12",
+    "home": "Dijon",
+    "away": "Amiens",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-04-13",
+    "home": "Caen",
+    "away": "Angers",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-04-19",
+    "home": "Dijon",
+    "away": "Rennes",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-04-20",
+    "home": "Guingamp",
+    "away": "Marseille",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-04-20",
+    "home": "Nimes",
+    "away": "Bordeaux",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-04-28",
+    "home": "Amiens",
+    "away": "Strasbourg",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-04-28",
+    "home": "Caen",
+    "away": "Dijon",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-05-04",
+    "home": "Guingamp",
+    "away": "Caen",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-05-11",
+    "home": "Amiens",
+    "away": "Toulouse",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-05-11",
+    "home": "Caen",
+    "away": "Reims",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-05-11",
+    "home": "Dijon",
+    "away": "Strasbourg",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-05-11",
+    "home": "Nimes",
+    "away": "Monaco",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-05-18",
+    "home": "Guingamp",
+    "away": "Nimes",
+    "venue": "Stade de Roudourou",
+    "latitude": "48.5661",
+    "longitude": "-3.1644",
+    "venue_evidence_ref": "GUINGAMP 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-05-24",
+    "home": "Amiens",
+    "away": "Guingamp",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-05-24",
+    "home": "Caen",
+    "away": "Bordeaux",
+    "venue": "Stade Michel d'Ornano",
+    "latitude": "49.17946",
+    "longitude": "-0.39689",
+    "venue_evidence_ref": "CAEN 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-05-24",
+    "home": "Dijon",
+    "away": "Toulouse",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2018/19",
+    "match_date": "2019-05-24",
+    "home": "Nimes",
+    "away": "Lyon",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2018/19 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-08-10",
+    "home": "Dijon",
+    "away": "St Etienne",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-08-17",
+    "home": "Amiens",
+    "away": "Lille",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-08-17",
+    "home": "Nimes",
+    "away": "Nice",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-08-24",
+    "home": "Amiens",
+    "away": "Nantes",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-08-24",
+    "home": "Dijon",
+    "away": "Bordeaux",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-08-31",
+    "home": "Nimes",
+    "away": "Brest",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-09-13",
+    "home": "Amiens",
+    "away": "Lyon",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-09-14",
+    "home": "Dijon",
+    "away": "Nimes",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-09-21",
+    "home": "Nimes",
+    "away": "Toulouse",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-09-24",
+    "home": "Dijon",
+    "away": "Marseille",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-09-25",
+    "home": "Amiens",
+    "away": "Bordeaux",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-09-29",
+    "home": "Nimes",
+    "away": "St Etienne",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-10-04",
+    "home": "Amiens",
+    "away": "Marseille",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-10-05",
+    "home": "Dijon",
+    "away": "Strasbourg",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-10-19",
+    "home": "Nimes",
+    "away": "Amiens",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-11-01",
+    "home": "Dijon",
+    "away": "Paris SG",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-11-02",
+    "home": "Amiens",
+    "away": "Brest",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-11-23",
+    "home": "Amiens",
+    "away": "Strasbourg",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-11-23",
+    "home": "Dijon",
+    "away": "Rennes",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-11-30",
+    "home": "Nimes",
+    "away": "Metz",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-12-04",
+    "home": "Dijon",
+    "away": "Montpellier",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-12-06",
+    "home": "Nimes",
+    "away": "Lyon",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-12-14",
+    "home": "Amiens",
+    "away": "Dijon",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-12-14",
+    "home": "Nimes",
+    "away": "Nantes",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2019-12-21",
+    "home": "Dijon",
+    "away": "Metz",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-01-11",
+    "home": "Amiens",
+    "away": "Montpellier",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-01-11",
+    "home": "Nimes",
+    "away": "Reims",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-01-12",
+    "home": "Dijon",
+    "away": "Lille",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-01-15",
+    "home": "Amiens",
+    "away": "Reims",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-01-15",
+    "home": "Nimes",
+    "away": "Rennes",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-02-01",
+    "home": "Amiens",
+    "away": "Toulouse",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-02-01",
+    "home": "Dijon",
+    "away": "Brest",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-02-01",
+    "home": "Nimes",
+    "away": "Monaco",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-02-05",
+    "home": "Nimes",
+    "away": "Dijon",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-02-08",
+    "home": "Amiens",
+    "away": "Monaco",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-02-08",
+    "home": "Dijon",
+    "away": "Nantes",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-02-15",
+    "home": "Amiens",
+    "away": "Paris SG",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-02-15",
+    "home": "Nimes",
+    "away": "Angers",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-02-22",
+    "home": "Dijon",
+    "away": "Monaco",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-02-28",
+    "home": "Nimes",
+    "away": "Marseille",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-02-29",
+    "home": "Amiens",
+    "away": "Metz",
+    "venue": "Stade de la Licorne",
+    "latitude": "49.90605",
+    "longitude": "2.27111",
+    "venue_evidence_ref": "AMIENS 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "partial",
+    "row_note": "Amiens lat/lon has two geocoder candidates; see venue_evidence conflict note"
+   },
+   {
+    "season": "2019/20",
+    "match_date": "2020-03-07",
+    "home": "Dijon",
+    "away": "Toulouse",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2019/20 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-08-22",
+    "home": "Dijon",
+    "away": "Angers",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-08-23",
+    "home": "Nimes",
+    "away": "Brest",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-09-13",
+    "home": "Dijon",
+    "away": "Brest",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-09-13",
+    "home": "Nimes",
+    "away": "Rennes",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-09-27",
+    "home": "Dijon",
+    "away": "Montpellier",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-09-27",
+    "home": "Nimes",
+    "away": "Lens",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-10-16",
+    "home": "Dijon",
+    "away": "Rennes",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-10-16",
+    "home": "Nimes",
+    "away": "Paris SG",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-11-01",
+    "home": "Dijon",
+    "away": "Lorient",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-11-01",
+    "home": "Nimes",
+    "away": "Metz",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-11-08",
+    "home": "Nimes",
+    "away": "Angers",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-11-22",
+    "home": "Dijon",
+    "away": "Lens",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-12-04",
+    "home": "Nimes",
+    "away": "Marseille",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-12-06",
+    "home": "Dijon",
+    "away": "St Etienne",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-12-16",
+    "home": "Dijon",
+    "away": "Lille",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-12-16",
+    "home": "Nimes",
+    "away": "Nice",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-12-20",
+    "home": "Dijon",
+    "away": "Monaco",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2020-12-23",
+    "home": "Nimes",
+    "away": "Dijon",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-01-09",
+    "home": "Dijon",
+    "away": "Marseille",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-01-09",
+    "home": "Nimes",
+    "away": "Lille",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-01-24",
+    "home": "Dijon",
+    "away": "Strasbourg",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-02-03",
+    "home": "Dijon",
+    "away": "Lyon",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-02-07",
+    "home": "Nimes",
+    "away": "Monaco",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-02-14",
+    "home": "Dijon",
+    "away": "Nimes",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-02-21",
+    "home": "Nimes",
+    "away": "Bordeaux",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-02-24",
+    "home": "Nimes",
+    "away": "Lorient",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-02-27",
+    "home": "Dijon",
+    "away": "Paris SG",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-02-28",
+    "home": "Nimes",
+    "away": "Nantes",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-03-14",
+    "home": "Nimes",
+    "away": "Montpellier",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-03-14",
+    "home": "Dijon",
+    "away": "Bordeaux",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-03-21",
+    "home": "Dijon",
+    "away": "Reims",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-04-04",
+    "home": "Nimes",
+    "away": "St Etienne",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-04-18",
+    "home": "Dijon",
+    "away": "Nice",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-04-18",
+    "home": "Nimes",
+    "away": "Strasbourg",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-05-02",
+    "home": "Dijon",
+    "away": "Metz",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-05-02",
+    "home": "Nimes",
+    "away": "Reims",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-05-16",
+    "home": "Dijon",
+    "away": "Nantes",
+    "venue": "Stade Gaston Gérard",
+    "latitude": "47.32438",
+    "longitude": "5.06831",
+    "venue_evidence_ref": "DIJON 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   },
+   {
+    "season": "2020/21",
+    "match_date": "2021-05-16",
+    "home": "Nimes",
+    "away": "Lyon",
+    "venue": "Stade des Costières",
+    "latitude": "43.81632",
+    "longitude": "4.36288",
+    "venue_evidence_ref": "NIMES 2020/21 → club-season stadium (see venue_evidence)",
+    "relocation_flag": false,
+    "row_status": "complete",
+    "row_note": ""
+   }
+  ],
+  "venue_row_count": 175,
+  "lyon_asse_conflict": {
+   "match": "Olympique Lyonnais vs AS Saint-Étienne",
+   "date": "2018-11-23",
+   "season": "2018/19",
+   "round": 14,
+   "venue": "Groupama Stadium, Décines-Charpieu",
+   "conflict_queue": [
+    {
+     "value": "local kickoff 20:45 (CET)",
+     "sources": [
+      {
+       "source_url": "https://fr.wikipedia.org/wiki/Saison_2018-2019_de_l%27Olympique_lyonnais",
+       "final_url": "https://fr.wikipedia.org/wiki/Saison_2018-2019_de_l%27Olympique_lyonnais",
+       "retrieved_at": "2026-10-03T16:45:00+08:00",
+       "field_locator": "Novembre > Récapitulatif Journées 12 à 14, Journée 14 row",
+       "quote": "Journée 14 | Olympique lyonnais 1 - 0 AS Saint-Étienne | Vendredi 23 novembre 2018 20:45 | Denayer 62e | Groupama Stadium, Décines-Charpieu | Spectateurs : 55 701 | Diffuseur : Canal+ | Arbitrage : Antony Gautier",
+       "source_sha256": "8b56206e0f1bdc1d2573eb4291f730136ca1f4a6ffcc8f0f8615fd32d623b298",
+       "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+      },
+      {
+       "source_url": "https://fr.wikipedia.org/wiki/Olympique_lyonnais_-_AS_Saint-Étienne_en_football",
+       "final_url": "https://fr.wikipedia.org/wiki/Olympique_lyonnais_-_AS_Saint-Étienne_en_football",
+       "retrieved_at": "2026-10-03T16:45:00+08:00",
+       "field_locator": "derby list, 117e",
+       "quote": "| 23 novembre 2018 | 117e (Cent dix-septième) | OL - ASSE | 1 - 0 | Ligue 1 (J14) | Denayer 62e | | 55 701 |",
+       "source_sha256": "6c38f83186cf33f6fdf334f1b08be40a0a6c9a4ca08dba6f02bc3fd90459c05f",
+       "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+      }
+     ],
+     "iana": "Europe/Paris"
+    },
+    {
+     "value": "21:00 GMT (forebet)",
+     "sources": [
+      {
+       "source_url": "https://www.forebet.com/fr/football/matches/lyon-as-saint-Étienne-801306",
+       "final_url": "https://www.forebet.com/fr/football/matches/lyon-as-saint-Étienne-801306",
+       "retrieved_at": "2026-10-03T16:45:00+08:00",
+       "field_locator": "match header",
+       "quote": "Lyon - AS Saint-Etienne | 23/11/2018 21:00 GMT | 1 - 0 FT",
+       "source_sha256": "4f7e6465812be88444afb6d6ef89c2ba72d4c1a96fef36b2ded3a0a1d894a5e3",
+       "sha_note": "引用段落文本快照 sha256（quoted-passage snapshot）；整页字节快照本轮未取"
+      }
+     ],
+     "note": "21:00 GMT = 22:00 CET — implausible for a Friday Ligue 1 slot; likely mislabeled timezone on forebet. Kept as competing value, NOT adjudicated."
+    }
+   ],
+   "adjudicated": false,
+   "note": "No auto-adjudication per request. Direct French sources (OL season page) support 20:45 local, round 14."
+  },
+  "odds_gaps": [
+   {
+    "match": "Paris SG vs Nice",
+    "date": "2019-05-04",
+    "season": "2018/19",
+    "cell": "pinnacle pre-close 1X2 (PSCH/PSCD/PSCA)",
+    "status": "unavailable",
+    "reason": "football-data 1819/F1.csv has PSH/PSD/PSA closing (1.17/9.03/14.05) but pre-close columns empty; no second static source with Pinnacle pre-close for this date",
+    "closing_reference_only": [
+     1.17,
+     9.03,
+     14.05
+    ]
+   },
+   {
+    "match": "Rennes vs Paris SG",
+    "date": "2019-08-18",
+    "season": "2019/20",
+    "cell": "pinnacle OU pre-close over/under",
+    "status": "unavailable",
+    "reason": "football-data has Pinnacle OU closing (1.6/2.46) but pre-close empty; bookmaker-specific pre-close OU not published by football-data",
+    "closing_reference_only": {
+     "over": 1.6,
+     "under": 2.46
+    }
+   },
+   {
+    "match": "Brest vs Marseille",
+    "date": "2020-08-30",
+    "season": "2020/21",
+    "cells": [
+     "william_hill 1X2 pre-close",
+     "pinnacle 1X2 pre-close",
+     "bet365 OU pre-close over/under",
+     "pinnacle OU pre-close over/under"
+    ],
+    "status": "unavailable",
+    "reason": "football-data pre-close cells empty (closings exist); WH OU columns structurally absent from F1.csv",
+    "closing_reference_only": {
+     "wh_1x2": [
+      3.6,
+      3.1,
+      2.2
+     ],
+     "pin_1x2": [
+      3.67,
+      3.26,
+      2.23
+     ],
+     "b365_ou": [
+      2.37,
+      1.57
+     ],
+     "pin_ou": [
+      2.41,
+      1.63
+     ]
+    }
+   },
+   {
+    "match": "Paris SG vs Marseille",
+    "date": "2020-09-13",
+    "season": "2020/21",
+    "cells": [
+     "bet365 1X2 pre-close",
+     "william_hill 1X2 pre-close",
+     "pinnacle 1X2 pre-close",
+     "bet365 OU pre-close over/under",
+     "pinnacle OU pre-close over/under"
+    ],
+    "status": "unavailable",
+    "reason": "football-data pre-close cells empty (closings exist); WH OU columns structurally absent",
+    "closing_reference_only": {
+     "b365_1x2": [
+      1.36,
+      5.0,
+      7.5
+     ],
+     "wh_1x2": [
+      1.36,
+      5.0,
+      8.0
+     ],
+     "pin_1x2": [
+      1.41,
+      5.51,
+      7.39
+     ],
+     "b365_ou": [
+      1.53,
+      2.5
+     ],
+     "pin_ou": [
+      1.55,
+      2.61
+     ]
+    }
+   },
+   {
+    "match": "Monaco vs Montpellier",
+    "date": "2020-10-18",
+    "season": "2020/21",
+    "cells": [
+     "bet365 1X2 pre-close",
+     "bet365 1X2 closing"
+    ],
+    "status": "unavailable",
+    "reason": "both pre-close AND closing empty in football-data for bet365 on this match; no second static source",
+    "closing_reference_only": null
+   },
+   {
+    "match": "Bordeaux vs Reims",
+    "date": "2020-12-23",
+    "season": "2020/21",
+    "cells": [
+     "bet365 OU pre-close over/under"
+    ],
+    "status": "unavailable",
+    "reason": "football-data pre-close empty (closing 2.2/1.66 exists); WH OU structurally absent",
+    "closing_reference_only": {
+     "over": 2.2,
+     "under": 1.66
+    }
+   },
+   {
+    "match": "Lyon vs Nantes",
+    "date": "2020-12-23",
+    "season": "2020/21",
+    "cells": [
+     "bet365 OU pre-close over/under"
+    ],
+    "status": "unavailable",
+    "reason": "football-data pre-close empty (closing 1.53/2.5 exists); WH OU structurally absent",
+    "closing_reference_only": {
+     "over": 1.53,
+     "under": 2.5
+    }
+   },
+   {
+    "match": "Montpellier vs Lille",
+    "date": "2020-12-23",
+    "season": "2020/21",
+    "cells": [
+     "bet365 OU pre-close over/under"
+    ],
+    "status": "unavailable",
+    "reason": "football-data pre-close empty (closing 2.1/1.72 exists); WH OU structurally absent",
+    "closing_reference_only": {
+     "over": 2.1,
+     "under": 1.72
+    }
+   }
+  ],
+  "odds_attempt_log": [
+   "SoccerPunter live-odds/18463143/Paris-Saint-Germain-vs-Nice opened via text fetch: no bookmaker odds rows rendered (only explanatory text); history requires JS mouseover — dead end.",
+   "No browser.spawn_task (live browser) available in this runtime; OddsPortal / BetExplorer / TotalCorner / Bettors.club per-match pages are JS-rendered — unreachable.",
+   "Bettors.club / Tipsme: no indexed historical pages for these fixtures found via search.",
+   "Semantics held: closing values NOT renamed as pre-close/opening; BetBrain aggregates NOT used as bookmaker OU; BWH is Bet&Win not William Hill (WH cells use WHH/WHD/WHA + WHCH/WHCD/WHCA only).",
+   "WH OU: structurally absent from football-data F1.csv all seasons (already recorded in req-009) — not a fillable gap."
+  ],
+  "supersedes": "req-20261002-019 (invalid)"
+ }
 }
