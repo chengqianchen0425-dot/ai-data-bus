@@ -1,0 +1,387 @@
+{
+ "task": "P0 赔率表提取：J1 2025 R36 9 场 TotalCorner 1X2 Major bookmakers（用户手动过 Cloudflare 验证）",
+ "extracted_at": "2026-10-03T11:10:00+08:00",
+ "source": "totalcorner.com /odds/ 单场页（live browser）",
+ "semantics": "每家两组值：oldest=本站最早赛前记录，recent=本站最新赛前记录；顺序 [home, draw, away]",
+ "matches": [
+  {
+   "fixture": "Kashima Antlers vs Yokohama FC",
+   "date": "2025-11-08 13:00",
+   "score": "2-1 (HT 0-0)",
+   "url": "https://www.totalcorner.com/odds/Kashima-Antlers-vs-Yokohama-FC/183400125",
+   "bet365": {
+    "oldest": [
+     1.7,
+     3.6,
+     5.25
+    ],
+    "recent": [
+     1.67,
+     3.6,
+     5.5
+    ]
+   },
+   "pinnacle": {
+    "oldest": [
+     1.7,
+     3.67,
+     4.93
+    ],
+    "recent": [
+     1.68,
+     3.71,
+     5.82
+    ]
+   },
+   "williamhill": {
+    "oldest": [
+     1.7,
+     3.4,
+     5.0
+    ],
+    "recent": [
+     1.67,
+     3.5,
+     5.0
+    ]
+   }
+  },
+  {
+   "fixture": "Kashiwa Reysol vs Nagoya Grampus",
+   "date": "2025-11-08 15:00",
+   "score": "1-0 (HT 0-0)",
+   "url": "https://www.totalcorner.com/odds/Kashiwa-Reysol-vs-Nagoya-Grampus/183400133",
+   "bet365": {
+    "oldest": [
+     1.65,
+     3.9,
+     5.0
+    ],
+    "recent": [
+     1.53,
+     3.9,
+     6.25
+    ]
+   },
+   "pinnacle": {
+    "oldest": [
+     1.71,
+     3.76,
+     4.72
+    ],
+    "recent": [
+     1.56,
+     4.08,
+     6.66
+    ]
+   },
+   "williamhill": {
+    "oldest": [
+     1.65,
+     3.6,
+     5.0
+    ],
+    "recent": [
+     1.55,
+     3.6,
+     6.0
+    ]
+   }
+  },
+  {
+   "fixture": "Kawasaki Frontale vs Fagiano Okayama",
+   "date": "2025-11-08 14:00",
+   "score": "1-1 (HT 0-0)",
+   "url": "https://www.totalcorner.com/odds/Kawasaki-Frontale-vs-Fagiano-Okayama/183400129",
+   "bet365": {
+    "oldest": [
+     1.67,
+     4.2,
+     4.5
+    ],
+    "recent": [
+     1.62,
+     4.33,
+     4.75
+    ]
+   },
+   "pinnacle": {
+    "oldest": [
+     1.63,
+     4.17,
+     4.8
+    ],
+    "recent": [
+     1.65,
+     4.28,
+     5.11
+    ]
+   },
+   "williamhill": {
+    "oldest": [
+     1.6,
+     4.0,
+     4.8
+    ],
+    "recent": [
+     1.65,
+     3.8,
+     4.75
+    ]
+   }
+  },
+  {
+   "fixture": "Sanfrecce Hiroshima vs Urawa Red Diamonds",
+   "date": "2025-11-09 12:00",
+   "score": "3-0 (HT 1-0)",
+   "url": "https://www.totalcorner.com/odds/Sanfrecce-Hiroshima-vs-Urawa-Red-Diamonds/183400135",
+   "bet365": {
+    "oldest": [
+     1.7,
+     3.7,
+     4.75
+    ],
+    "recent": [
+     1.7,
+     3.7,
+     4.75
+    ]
+   },
+   "pinnacle": {
+    "oldest": [
+     1.65,
+     3.79,
+     5.16
+    ],
+    "recent": [
+     1.72,
+     3.87,
+     5.1
+    ]
+   },
+   "williamhill": {
+    "oldest": [
+     1.67,
+     3.5,
+     4.8
+    ],
+    "recent": [
+     1.7,
+     3.5,
+     4.6
+    ]
+   }
+  },
+  {
+   "fixture": "Shonan Bellmare vs Albirex Niigata",
+   "date": "2025-11-08 14:00",
+   "score": "5-2 (HT 2-0)",
+   "url": "https://www.totalcorner.com/odds/Shonan-Bellmare-vs-Albirex-Niigata/183400131",
+   "bet365": {
+    "oldest": [
+     2.88,
+     3.3,
+     2.45
+    ],
+    "recent": [
+     2.88,
+     3.25,
+     2.45
+    ]
+   },
+   "pinnacle": {
+    "oldest": [
+     2.89,
+     3.2,
+     2.51
+    ],
+    "recent": [
+     2.99,
+     3.32,
+     2.52
+    ]
+   },
+   "williamhill": {
+    "oldest": [
+     2.75,
+     3.1,
+     2.45
+    ],
+    "recent": [
+     2.75,
+     3.1,
+     2.45
+    ]
+   }
+  },
+  {
+   "fixture": "Tokyo Verdy vs Avispa Fukuoka",
+   "date": "2025-11-08 13:00",
+   "score": "0-0 (HT 0-0)",
+   "url": "https://www.totalcorner.com/odds/Tokyo-Verdy-vs-Avispa-Fukuoka/183400127",
+   "bet365": {
+    "oldest": [
+     2.7,
+     3.0,
+     2.8
+    ],
+    "recent": [
+     2.8,
+     2.9,
+     2.75
+    ]
+   },
+   "pinnacle": {
+    "oldest": [
+     2.52,
+     2.8,
+     3.28
+    ],
+    "recent": [
+     3.01,
+     2.85,
+     2.84
+    ]
+   },
+   "williamhill": {
+    "oldest": [
+     2.75,
+     2.75,
+     2.8
+    ],
+    "recent": [
+     2.8,
+     2.75,
+     2.75
+    ]
+   }
+  },
+  {
+   "fixture": "Gamba Osaka vs Vissel Kobe",
+   "date": "2025-11-09 14:00",
+   "score": "1-1 (HT 0-0)",
+   "url": "https://www.totalcorner.com/odds/Gamba-Osaka-vs-Vissel-Kobe/183400145",
+   "bet365": {
+    "oldest": [
+     3.3,
+     3.4,
+     2.15
+    ],
+    "recent": [
+     3.4,
+     3.5,
+     2.05
+    ]
+   },
+   "pinnacle": {
+    "oldest": [
+     3.34,
+     3.36,
+     2.17
+    ],
+    "recent": [
+     3.97,
+     3.69,
+     1.95
+    ]
+   },
+   "williamhill": {
+    "oldest": [
+     3.25,
+     3.3,
+     2.15
+    ],
+    "recent": [
+     3.75,
+     3.3,
+     1.95
+    ]
+   }
+  },
+  {
+   "fixture": "Kyoto Sanga vs Yokohama F. Marinos",
+   "date": "2025-11-09 13:00",
+   "score": "0-3 (HT 0-1)",
+   "url": "https://www.totalcorner.com/odds/Kyoto-Sanga-vs-Yokohama-F-Marinos/183400138",
+   "bet365": {
+    "oldest": [
+     2.1,
+     3.6,
+     3.2
+    ],
+    "recent": [
+     2.0,
+     3.5,
+     3.6
+    ]
+   },
+   "pinnacle": {
+    "oldest": [
+     2.14,
+     3.58,
+     3.21
+    ],
+    "recent": [
+     2.15,
+     3.54,
+     3.5
+    ]
+   },
+   "williamhill": {
+    "oldest": [
+     2.15,
+     3.3,
+     3.1
+    ],
+    "recent": [
+     2.1,
+     3.3,
+     3.3
+    ]
+   }
+  },
+  {
+   "fixture": "Shimizu S-Pulse vs Cerezo Osaka",
+   "date": "2025-11-09 14:00",
+   "score": "1-4 (HT 0-3)",
+   "url": "https://www.totalcorner.com/odds/Shimizu-S-Pulse-vs-Cerezo-Osaka/183400150",
+   "bet365": {
+    "oldest": [
+     2.88,
+     3.5,
+     2.35
+    ],
+    "recent": [
+     2.8,
+     3.6,
+     2.3
+    ]
+   },
+   "pinnacle": {
+    "oldest": [
+     2.81,
+     3.56,
+     2.37
+    ],
+    "recent": [
+     2.91,
+     3.8,
+     2.35
+    ]
+   },
+   "williamhill": {
+    "oldest": [
+     2.7,
+     3.4,
+     2.4
+    ],
+    "recent": [
+     2.8,
+     3.4,
+     2.3
+    ]
+   }
+  }
+ ],
+ "dp_used": false
+}
