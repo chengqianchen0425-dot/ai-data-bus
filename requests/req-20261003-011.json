@@ -1,0 +1,34 @@
+{
+  "id": "req-20261003-011",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "scope": {
+    "football_only": true,
+    "competition_key": "veikkausliiga",
+    "competition_name": "Finland Veikkausliiga",
+    "country": "Finland",
+    "timezone": "Europe/Helsinki",
+    "seasons": ["2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
+    "incremental_only": true
+  },
+  "params": {
+    "topic": "Finland Veikkausliiga 2019-2026 historical fixture and pre-match odds gap supplement",
+    "questions": [
+      "For every identifiable fixture in seasons 2019 through 2026, return stable fixture identity: season, date, home team, away team, official round when explicitly stated, venue when explicitly stated, and 90-minute final score/result when explicitly stated.",
+      "For every identifiable fixture, retrieve bookmaker-labelled 1X2 pre-match odds only when the source explicitly distinguishes opening/initial and closing/latest semantics. Return opening_home, opening_draw, opening_away, closing_home, closing_draw, closing_away, bookmaker, market, source_url, source_name, fetched_at, and source field locator.",
+      "Preserve rows with missing values and report expected, discovered, complete, partial, and unmatched counts by season. Preserve competing source values as conflicts; do not choose a winner."
+    ],
+    "output_contract": {
+      "format": "json_report_plus_row_level_rows_plus_unresolved_queue",
+      "row_fields": [
+        "competition_key", "season", "fixture_key", "date", "home_team", "away_team", "official_round", "venue", "home_goals", "away_goals", "full_time_result", "bookmaker", "market", "opening_home", "opening_draw", "opening_away", "closing_home", "closing_draw", "closing_away", "source_name", "source_url", "fetched_at", "field_locator", "status"
+      ],
+      "status_values": ["ready", "partial", "unavailable", "conflict", "unmatched"],
+      "audit_fields": ["expected", "discovered", "complete", "partial", "missing"],
+      "exclude": ["qimen", "palace", "five_element", "model_direction", "gold", "outcome", "review", "formal_probability", "weight"]
+    }
+  },
+  "created_at": "2026-10-03T20:00:00+08:00",
+  "notes": "Evidence-only supplement. Do not infer opening odds from latest odds, do not infer rounds or venue from date/order, and do not write formal Snapshot/Outcome/Review/Gold or registry records."
+}
