@@ -1,0 +1,3006 @@
+{
+  "id": "req-20261003-009",
+  "type": "deep_research",
+  "params": {
+    "topic": "Serie A 2018/19-2020/21 incremental non-Qimen gap supplement for local chart inputs",
+    "questions": [
+      "仅处理意甲 Serie A（I1）2018/19、2019/20、2020/21 下列逐场缺口。按 season + match_date + home_team + away_team 精确匹配，不要按行号推断。",
+      "仅补充 venue_city、venue_latitude、venue_longitude（WGS84）及其 source_url；优先使用可核验的 OpenStreetMap/Nominatim 或官方场馆来源。场馆名称不确定时保留 unavailable，不猜坐标。",
+      "仅补充 home/away 的 natal_year 与 competition_entry_year 及 source_url；优先 RSSSF、俱乐部官方历史页和明确的 Serie A club history 来源。不同来源冲突进入 conflict_queue，不自动选择。",
+      "返回机器可读逐场 rows；每个值必须有 source_url、final_url、fetched_at、source_hash/SHA-256（可得时）、field_semantics 和 evidence_notes。抓不到写 NULL 并标记 missing/unavailable。",
+      "严禁收集、推断或重建 Qimen、九宫、宫位、Q/F/G/I/M、模型方向、Miss、赔率结构、Outcome、Review、Gold 或任何赛后模型字段。"
+    ],
+    "known_local_context": {
+      "competition_key": "serie_a",
+      "competition_code": "I1",
+      "seasons": [
+        "2018/19",
+        "2019/20",
+        "2020/21"
+      ],
+      "source_manifest": "D:\\奇门斗数\\work\\ai-data-bus\\responses\\req-20261002-012.json",
+      "gap_manifest": "D:\\奇门斗数\\work\\serie_a_incremental_qimen_odds_screen_20261003\\remaining_missing_charts.csv",
+      "fixture_gap_count": 161,
+      "field_scope": [
+        "venue_city",
+        "venue_latitude",
+        "venue_longitude",
+        "home_natal_year",
+        "home_competition_entry_year",
+        "away_natal_year",
+        "away_competition_entry_year"
+      ],
+      "fixture_gaps": [
+        {
+          "fixture_key": "2018/19|2019-01-19|Udinese|Parma",
+          "season": "2018/19",
+          "home_team": "Udinese",
+          "away_team": "Parma",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-01-20|Napoli|Lazio",
+          "season": "2018/19",
+          "home_team": "Napoli",
+          "away_team": "Lazio",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-01-20|Spal|Bologna",
+          "season": "2018/19",
+          "home_team": "Spal",
+          "away_team": "Bologna",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-01-21|Juventus|Chievo",
+          "season": "2018/19",
+          "home_team": "Juventus",
+          "away_team": "Chievo",
+          "venue": "Allianz Stadium",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-01-27|Chievo|Fiorentina",
+          "season": "2018/19",
+          "home_team": "Chievo",
+          "away_team": "Fiorentina",
+          "venue": "Stadio Marc'Antonio Bentegodi",
+          "missing_fields": [
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-01-27|Parma|Spal",
+          "season": "2018/19",
+          "home_team": "Parma",
+          "away_team": "Spal",
+          "venue": "Stadio Ennio Tardini",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-02-02|Empoli|Chievo",
+          "season": "2018/19",
+          "home_team": "Empoli",
+          "away_team": "Chievo",
+          "venue": "Stadio Carlo Castellani",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-02-02|Napoli|Sampdoria",
+          "season": "2018/19",
+          "home_team": "Napoli",
+          "away_team": "Sampdoria",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-02-03|Spal|Torino",
+          "season": "2018/19",
+          "home_team": "Spal",
+          "away_team": "Torino",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-02-08|Chievo|Roma",
+          "season": "2018/19",
+          "home_team": "Chievo",
+          "away_team": "Roma",
+          "venue": "Stadio Marc'Antonio Bentegodi",
+          "missing_fields": [
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-02-10|Atalanta|Spal",
+          "season": "2018/19",
+          "home_team": "Atalanta",
+          "away_team": "Spal",
+          "venue": "Stadio Atleti Azzurri d'Italia",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-02-17|Napoli|Torino",
+          "season": "2018/19",
+          "home_team": "Napoli",
+          "away_team": "Torino",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-02-17|Spal|Fiorentina",
+          "season": "2018/19",
+          "home_team": "Spal",
+          "away_team": "Fiorentina",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-02-17|Udinese|Chievo",
+          "season": "2018/19",
+          "home_team": "Udinese",
+          "away_team": "Chievo",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-02-24|Chievo|Genoa",
+          "season": "2018/19",
+          "home_team": "Chievo",
+          "away_team": "Genoa",
+          "venue": "Stadio Marc'Antonio Bentegodi",
+          "missing_fields": [
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-02-24|Sassuolo|Spal",
+          "season": "2018/19",
+          "home_team": "Sassuolo",
+          "away_team": "Spal",
+          "venue": "Stadio Città del Tricolore",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-03-03|Napoli|Juventus",
+          "season": "2018/19",
+          "home_team": "Napoli",
+          "away_team": "Juventus",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-03-03|Spal|Sampdoria",
+          "season": "2018/19",
+          "home_team": "Spal",
+          "away_team": "Sampdoria",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-03-03|Torino|Chievo",
+          "season": "2018/19",
+          "home_team": "Torino",
+          "away_team": "Chievo",
+          "venue": "Stadio Olimpico di Torino",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-03-03|Udinese|Bologna",
+          "season": "2018/19",
+          "home_team": "Udinese",
+          "away_team": "Bologna",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-03-09|Chievo|Milan",
+          "season": "2018/19",
+          "home_team": "Chievo",
+          "away_team": "Milan",
+          "venue": "Stadio Marc'Antonio Bentegodi",
+          "missing_fields": [
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-03-10|Inter|Spal",
+          "season": "2018/19",
+          "home_team": "Inter",
+          "away_team": "Spal",
+          "venue": "Stadio Giuseppe Meazza",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-03-16|Spal|Roma",
+          "season": "2018/19",
+          "home_team": "Spal",
+          "away_team": "Roma",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-03-17|Atalanta|Chievo",
+          "season": "2018/19",
+          "home_team": "Atalanta",
+          "away_team": "Chievo",
+          "venue": "Stadio Atleti Azzurri d'Italia",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-03-17|Napoli|Udinese",
+          "season": "2018/19",
+          "home_team": "Napoli",
+          "away_team": "Udinese",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-03-29|Chievo|Cagliari",
+          "season": "2018/19",
+          "home_team": "Chievo",
+          "away_team": "Cagliari",
+          "venue": "Stadio Marc'Antonio Bentegodi",
+          "missing_fields": [
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-03-30|Udinese|Genoa",
+          "season": "2018/19",
+          "home_team": "Udinese",
+          "away_team": "Genoa",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-03-31|Frosinone|Spal",
+          "season": "2018/19",
+          "home_team": "Frosinone",
+          "away_team": "Spal",
+          "venue": "Stadio Benito Stirpe",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-03|Spal|Lazio",
+          "season": "2018/19",
+          "home_team": "Spal",
+          "away_team": "Lazio",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-04|Sassuolo|Chievo",
+          "season": "2018/19",
+          "home_team": "Sassuolo",
+          "away_team": "Chievo",
+          "venue": "Stadio Città del Tricolore",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-07|Cagliari|Spal",
+          "season": "2018/19",
+          "home_team": "Cagliari",
+          "away_team": "Spal",
+          "venue": "Sardegna Arena",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-07|Napoli|Genoa",
+          "season": "2018/19",
+          "home_team": "Napoli",
+          "away_team": "Genoa",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-07|Udinese|Empoli",
+          "season": "2018/19",
+          "home_team": "Udinese",
+          "away_team": "Empoli",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-08|Bologna|Chievo",
+          "season": "2018/19",
+          "home_team": "Bologna",
+          "away_team": "Chievo",
+          "venue": "Stadio Renato Dall'Ara",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-13|Spal|Juventus",
+          "season": "2018/19",
+          "home_team": "Spal",
+          "away_team": "Juventus",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-14|Chievo|Napoli",
+          "season": "2018/19",
+          "home_team": "Chievo",
+          "away_team": "Napoli",
+          "venue": "Stadio Marc'Antonio Bentegodi",
+          "missing_fields": [
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-20|Empoli|Spal",
+          "season": "2018/19",
+          "home_team": "Empoli",
+          "away_team": "Spal",
+          "venue": "Stadio Carlo Castellani",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-20|Lazio|Chievo",
+          "season": "2018/19",
+          "home_team": "Lazio",
+          "away_team": "Chievo",
+          "venue": "Stadio Olimpico",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-20|Udinese|Sassuolo",
+          "season": "2018/19",
+          "home_team": "Udinese",
+          "away_team": "Sassuolo",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-22|Napoli|Atalanta",
+          "season": "2018/19",
+          "home_team": "Napoli",
+          "away_team": "Atalanta",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-28|Chievo|Parma",
+          "season": "2018/19",
+          "home_team": "Chievo",
+          "away_team": "Parma",
+          "venue": "Stadio Marc'Antonio Bentegodi",
+          "missing_fields": [
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-04-28|Spal|Genoa",
+          "season": "2018/19",
+          "home_team": "Spal",
+          "away_team": "Genoa",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-05-04|Chievo|Spal",
+          "season": "2018/19",
+          "home_team": "Chievo",
+          "away_team": "Spal",
+          "venue": "Stadio Marc'Antonio Bentegodi",
+          "missing_fields": [
+            "home.natal_year",
+            "home.competition_entry_year",
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year",
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-05-04|Udinese|Inter",
+          "season": "2018/19",
+          "home_team": "Udinese",
+          "away_team": "Inter",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-05-05|Napoli|Cagliari",
+          "season": "2018/19",
+          "home_team": "Napoli",
+          "away_team": "Cagliari",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-05-12|Spal|Napoli",
+          "season": "2018/19",
+          "home_team": "Spal",
+          "away_team": "Napoli",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-05-13|Inter|Chievo",
+          "season": "2018/19",
+          "home_team": "Inter",
+          "away_team": "Chievo",
+          "venue": "Stadio Giuseppe Meazza",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-05-18|Udinese|Spal",
+          "season": "2018/19",
+          "home_team": "Udinese",
+          "away_team": "Spal",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-05-19|Chievo|Sampdoria",
+          "season": "2018/19",
+          "home_team": "Chievo",
+          "away_team": "Sampdoria",
+          "venue": "Stadio Marc'Antonio Bentegodi",
+          "missing_fields": [
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-05-19|Napoli|Inter",
+          "season": "2018/19",
+          "home_team": "Napoli",
+          "away_team": "Inter",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-05-25|Frosinone|Chievo",
+          "season": "2018/19",
+          "home_team": "Frosinone",
+          "away_team": "Chievo",
+          "venue": "Stadio Benito Stirpe",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2018/19|2019-05-26|Spal|Milan",
+          "season": "2018/19",
+          "home_team": "Spal",
+          "away_team": "Milan",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-01-18|Napoli|Fiorentina",
+          "season": "2019/20",
+          "home_team": "Napoli",
+          "away_team": "Fiorentina",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-01-19|Brescia|Cagliari",
+          "season": "2019/20",
+          "home_team": "Brescia",
+          "away_team": "Cagliari",
+          "venue": "Stadio Mario Rigamonti",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-01-20|Atalanta|Spal",
+          "season": "2019/20",
+          "home_team": "Atalanta",
+          "away_team": "Spal",
+          "venue": "Stadio Atleti Azzurri d'Italia",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-01-24|Brescia|Milan",
+          "season": "2019/20",
+          "home_team": "Brescia",
+          "away_team": "Milan",
+          "venue": "Stadio Mario Rigamonti",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-01-25|Spal|Bologna",
+          "season": "2019/20",
+          "home_team": "Spal",
+          "away_team": "Bologna",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-01-26|Napoli|Juventus",
+          "season": "2019/20",
+          "home_team": "Napoli",
+          "away_team": "Juventus",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-02-01|Bologna|Brescia",
+          "season": "2019/20",
+          "home_team": "Bologna",
+          "away_team": "Brescia",
+          "venue": "Stadio Renato Dall'Ara",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-02-02|Lazio|Spal",
+          "season": "2019/20",
+          "home_team": "Lazio",
+          "away_team": "Spal",
+          "venue": "Stadio Olimpico",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-02-02|Udinese|Inter",
+          "season": "2019/20",
+          "home_team": "Udinese",
+          "away_team": "Inter",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-02-09|Spal|Sassuolo",
+          "season": "2019/20",
+          "home_team": "Spal",
+          "away_team": "Sassuolo",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-02-09|Brescia|Udinese",
+          "season": "2019/20",
+          "home_team": "Brescia",
+          "away_team": "Udinese",
+          "venue": "Stadio Mario Rigamonti",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-02-09|Napoli|Lecce",
+          "season": "2019/20",
+          "home_team": "Napoli",
+          "away_team": "Lecce",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-02-15|Lecce|Spal",
+          "season": "2019/20",
+          "home_team": "Lecce",
+          "away_team": "Spal",
+          "venue": "Stadio Comunale Via Del Mare",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-02-16|Udinese|Verona",
+          "season": "2019/20",
+          "home_team": "Udinese",
+          "away_team": "Verona",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-02-16|Juventus|Brescia",
+          "season": "2019/20",
+          "home_team": "Juventus",
+          "away_team": "Brescia",
+          "venue": "Allianz Stadium",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-02-21|Brescia|Napoli",
+          "season": "2019/20",
+          "home_team": "Brescia",
+          "away_team": "Napoli",
+          "venue": "Stadio Mario Rigamonti",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-02-22|Spal|Juventus",
+          "season": "2019/20",
+          "home_team": "Spal",
+          "away_team": "Juventus",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-02-29|Napoli|Torino",
+          "season": "2019/20",
+          "home_team": "Napoli",
+          "away_team": "Torino",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-03-08|Parma|Spal",
+          "season": "2019/20",
+          "home_team": "Parma",
+          "away_team": "Spal",
+          "venue": "Stadio Ennio Tardini",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-03-08|Udinese|Fiorentina",
+          "season": "2019/20",
+          "home_team": "Udinese",
+          "away_team": "Fiorentina",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-03-09|Sassuolo|Brescia",
+          "season": "2019/20",
+          "home_team": "Sassuolo",
+          "away_team": "Brescia",
+          "venue": "Mapei Stadium - Città del Tricolore",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-06-22|Fiorentina|Brescia",
+          "season": "2019/20",
+          "home_team": "Fiorentina",
+          "away_team": "Brescia",
+          "venue": "Stadio Artemio Franchi",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-06-23|Spal|Cagliari",
+          "season": "2019/20",
+          "home_team": "Spal",
+          "away_team": "Cagliari",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-06-27|Brescia|Genoa",
+          "season": "2019/20",
+          "home_team": "Brescia",
+          "away_team": "Genoa",
+          "venue": "Stadio Mario Rigamonti",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-06-28|Napoli|Spal",
+          "season": "2019/20",
+          "home_team": "Napoli",
+          "away_team": "Spal",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-06-28|Udinese|Atalanta",
+          "season": "2019/20",
+          "home_team": "Udinese",
+          "away_team": "Atalanta",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-01|Inter|Brescia",
+          "season": "2019/20",
+          "home_team": "Inter",
+          "away_team": "Brescia",
+          "venue": "Stadio Giuseppe Meazza",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-01|Spal|Milan",
+          "season": "2019/20",
+          "home_team": "Spal",
+          "away_team": "Milan",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-05|Brescia|Verona",
+          "season": "2019/20",
+          "home_team": "Brescia",
+          "away_team": "Verona",
+          "venue": "Stadio Mario Rigamonti",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-05|Sampdoria|Spal",
+          "season": "2019/20",
+          "home_team": "Sampdoria",
+          "away_team": "Spal",
+          "venue": "Stadio Comunale Luigi Ferraris",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-05|Udinese|Genoa",
+          "season": "2019/20",
+          "home_team": "Udinese",
+          "away_team": "Genoa",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-05|Napoli|Roma",
+          "season": "2019/20",
+          "home_team": "Napoli",
+          "away_team": "Roma",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-08|Torino|Brescia",
+          "season": "2019/20",
+          "home_team": "Torino",
+          "away_team": "Brescia",
+          "venue": "Stadio Olimpico di Torino",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-09|Spal|Udinese",
+          "season": "2019/20",
+          "home_team": "Spal",
+          "away_team": "Udinese",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-11|Brescia|Roma",
+          "season": "2019/20",
+          "home_team": "Brescia",
+          "away_team": "Roma",
+          "venue": "Stadio Mario Rigamonti",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-12|Genoa|Spal",
+          "season": "2019/20",
+          "home_team": "Genoa",
+          "away_team": "Spal",
+          "venue": "Stadio Comunale Luigi Ferraris",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-12|Udinese|Sampdoria",
+          "season": "2019/20",
+          "home_team": "Udinese",
+          "away_team": "Sampdoria",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-12|Napoli|Milan",
+          "season": "2019/20",
+          "home_team": "Napoli",
+          "away_team": "Milan",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-14|Atalanta|Brescia",
+          "season": "2019/20",
+          "home_team": "Atalanta",
+          "away_team": "Brescia",
+          "venue": "Stadio Atleti Azzurri d'Italia",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-15|Udinese|Lazio",
+          "season": "2019/20",
+          "home_team": "Udinese",
+          "away_team": "Lazio",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-16|Spal|Inter",
+          "season": "2019/20",
+          "home_team": "Spal",
+          "away_team": "Inter",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-19|Brescia|Spal",
+          "season": "2019/20",
+          "home_team": "Brescia",
+          "away_team": "Spal",
+          "venue": "Stadio Mario Rigamonti",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year",
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year",
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-19|Napoli|Udinese",
+          "season": "2019/20",
+          "home_team": "Napoli",
+          "away_team": "Udinese",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-22|Lecce|Brescia",
+          "season": "2019/20",
+          "home_team": "Lecce",
+          "away_team": "Brescia",
+          "venue": "Stadio Comunale Via Del Mare",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-22|Spal|Roma",
+          "season": "2019/20",
+          "home_team": "Spal",
+          "away_team": "Roma",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-23|Udinese|Juventus",
+          "season": "2019/20",
+          "home_team": "Udinese",
+          "away_team": "Juventus",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-25|Brescia|Parma",
+          "season": "2019/20",
+          "home_team": "Brescia",
+          "away_team": "Parma",
+          "venue": "Stadio Mario Rigamonti",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-25|Napoli|Sassuolo",
+          "season": "2019/20",
+          "home_team": "Napoli",
+          "away_team": "Sassuolo",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-26|Spal|Torino",
+          "season": "2019/20",
+          "home_team": "Spal",
+          "away_team": "Torino",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-29|Lazio|Brescia",
+          "season": "2019/20",
+          "home_team": "Lazio",
+          "away_team": "Brescia",
+          "venue": "Stadio Olimpico",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-29|Udinese|Lecce",
+          "season": "2019/20",
+          "home_team": "Udinese",
+          "away_team": "Lecce",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-07-29|Verona|Spal",
+          "season": "2019/20",
+          "home_team": "Verona",
+          "away_team": "Spal",
+          "venue": "Stadio Marc'Antonio Bentegodi",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-08-01|Brescia|Sampdoria",
+          "season": "2019/20",
+          "home_team": "Brescia",
+          "away_team": "Sampdoria",
+          "venue": "Stadio Mario Rigamonti",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-08-01|Napoli|Lazio",
+          "season": "2019/20",
+          "home_team": "Napoli",
+          "away_team": "Lazio",
+          "venue": "Stadio San Paolo",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2019/20|2020-08-02|Spal|Fiorentina",
+          "season": "2019/20",
+          "home_team": "Spal",
+          "away_team": "Fiorentina",
+          "venue": "Stadio Paolo Mazza",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-01-30|Inter|Benevento",
+          "season": "2020/21",
+          "home_team": "Inter",
+          "away_team": "Benevento",
+          "venue": "Stadio Giuseppe Meazza",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-01-31|Spezia|Udinese",
+          "season": "2020/21",
+          "home_team": "Spezia",
+          "away_team": "Udinese",
+          "venue": "Stadio Dino Manuzzi",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-01-31|Crotone|Genoa",
+          "season": "2020/21",
+          "home_team": "Crotone",
+          "away_team": "Genoa",
+          "venue": "Stadio Ezio Scida",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-02-07|Benevento|Sampdoria",
+          "season": "2020/21",
+          "home_team": "Benevento",
+          "away_team": "Sampdoria",
+          "venue": "Stadio Ciro Vigorito",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-02-07|Milan|Crotone",
+          "season": "2020/21",
+          "home_team": "Milan",
+          "away_team": "Crotone",
+          "venue": "Stadio Giuseppe Meazza",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-02-07|Udinese|Verona",
+          "season": "2020/21",
+          "home_team": "Udinese",
+          "away_team": "Verona",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-02-12|Bologna|Benevento",
+          "season": "2020/21",
+          "home_team": "Bologna",
+          "away_team": "Benevento",
+          "venue": "Stadio Renato Dall'Ara",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-02-13|Spezia|Milan",
+          "season": "2020/21",
+          "home_team": "Spezia",
+          "away_team": "Milan",
+          "venue": "Stadio Dino Manuzzi",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-02-14|Crotone|Sassuolo",
+          "season": "2020/21",
+          "home_team": "Crotone",
+          "away_team": "Sassuolo",
+          "venue": "Stadio Ezio Scida",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-02-21|Benevento|Roma",
+          "season": "2020/21",
+          "home_team": "Benevento",
+          "away_team": "Roma",
+          "venue": "Stadio Ciro Vigorito",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-02-22|Juventus|Crotone",
+          "season": "2020/21",
+          "home_team": "Juventus",
+          "away_team": "Crotone",
+          "venue": "Allianz Stadium",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-02-27|Spezia|Parma",
+          "season": "2020/21",
+          "home_team": "Spezia",
+          "away_team": "Parma",
+          "venue": "Stadio Dino Manuzzi",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-02-28|Crotone|Cagliari",
+          "season": "2020/21",
+          "home_team": "Crotone",
+          "away_team": "Cagliari",
+          "venue": "Stadio Ezio Scida",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-02-28|Udinese|Fiorentina",
+          "season": "2020/21",
+          "home_team": "Udinese",
+          "away_team": "Fiorentina",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-02-28|Napoli|Benevento",
+          "season": "2020/21",
+          "home_team": "Napoli",
+          "away_team": "Benevento",
+          "venue": "Stadio Diego Armando Maradona",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-03-03|Atalanta|Crotone",
+          "season": "2020/21",
+          "home_team": "Atalanta",
+          "away_team": "Crotone",
+          "venue": "Stadio Atleti Azzurri d'Italia",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-03-03|Benevento|Verona",
+          "season": "2020/21",
+          "home_team": "Benevento",
+          "away_team": "Verona",
+          "venue": "Stadio Ciro Vigorito",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-03-06|Spezia|Benevento",
+          "season": "2020/21",
+          "home_team": "Spezia",
+          "away_team": "Benevento",
+          "venue": "Stadio Dino Manuzzi",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-03-06|Udinese|Sassuolo",
+          "season": "2020/21",
+          "home_team": "Udinese",
+          "away_team": "Sassuolo",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-03-07|Crotone|Torino",
+          "season": "2020/21",
+          "home_team": "Crotone",
+          "away_team": "Torino",
+          "venue": "Stadio Ezio Scida",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-03-12|Lazio|Crotone",
+          "season": "2020/21",
+          "home_team": "Lazio",
+          "away_team": "Crotone",
+          "venue": "Stadio Olimpico",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-03-13|Benevento|Fiorentina",
+          "season": "2020/21",
+          "home_team": "Benevento",
+          "away_team": "Fiorentina",
+          "venue": "Stadio Ciro Vigorito",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-03-20|Crotone|Bologna",
+          "season": "2020/21",
+          "home_team": "Crotone",
+          "away_team": "Bologna",
+          "venue": "Stadio Ezio Scida",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-03-20|Spezia|Cagliari",
+          "season": "2020/21",
+          "home_team": "Spezia",
+          "away_team": "Cagliari",
+          "venue": "Stadio Dino Manuzzi",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-03-21|Juventus|Benevento",
+          "season": "2020/21",
+          "home_team": "Juventus",
+          "away_team": "Benevento",
+          "venue": "Allianz Stadium",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-03-21|Udinese|Lazio",
+          "season": "2020/21",
+          "home_team": "Udinese",
+          "away_team": "Lazio",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-03|Benevento|Parma",
+          "season": "2020/21",
+          "home_team": "Benevento",
+          "away_team": "Parma",
+          "venue": "Stadio Ciro Vigorito",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-03|Napoli|Crotone",
+          "season": "2020/21",
+          "home_team": "Napoli",
+          "away_team": "Crotone",
+          "venue": "Stadio Diego Armando Maradona",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-10|Spezia|Crotone",
+          "season": "2020/21",
+          "home_team": "Spezia",
+          "away_team": "Crotone",
+          "venue": "Stadio Dino Manuzzi",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-10|Udinese|Torino",
+          "season": "2020/21",
+          "home_team": "Udinese",
+          "away_team": "Torino",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-12|Benevento|Sassuolo",
+          "season": "2020/21",
+          "home_team": "Benevento",
+          "away_team": "Sassuolo",
+          "venue": "Stadio Ciro Vigorito",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-17|Crotone|Udinese",
+          "season": "2020/21",
+          "home_team": "Crotone",
+          "away_team": "Udinese",
+          "venue": "Stadio Ezio Scida",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-18|Lazio|Benevento",
+          "season": "2020/21",
+          "home_team": "Lazio",
+          "away_team": "Benevento",
+          "venue": "Stadio Olimpico",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-21|Crotone|Sampdoria",
+          "season": "2020/21",
+          "home_team": "Crotone",
+          "away_team": "Sampdoria",
+          "venue": "Stadio Ezio Scida",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-21|Genoa|Benevento",
+          "season": "2020/21",
+          "home_team": "Genoa",
+          "away_team": "Benevento",
+          "venue": "Stadio Comunale Luigi Ferraris",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-21|Spezia|Inter",
+          "season": "2020/21",
+          "home_team": "Spezia",
+          "away_team": "Inter",
+          "venue": "Stadio Dino Manuzzi",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-21|Udinese|Cagliari",
+          "season": "2020/21",
+          "home_team": "Udinese",
+          "away_team": "Cagliari",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-24|Parma|Crotone",
+          "season": "2020/21",
+          "home_team": "Parma",
+          "away_team": "Crotone",
+          "venue": "Stadio Ennio Tardini",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-04-25|Benevento|Udinese",
+          "season": "2020/21",
+          "home_team": "Benevento",
+          "away_team": "Udinese",
+          "venue": "Stadio Ciro Vigorito",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-01|Crotone|Inter",
+          "season": "2020/21",
+          "home_team": "Crotone",
+          "away_team": "Inter",
+          "venue": "Stadio Ezio Scida",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-01|Milan|Benevento",
+          "season": "2020/21",
+          "home_team": "Milan",
+          "away_team": "Benevento",
+          "venue": "Stadio Giuseppe Meazza",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-02|Udinese|Juventus",
+          "season": "2020/21",
+          "home_team": "Udinese",
+          "away_team": "Juventus",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-08|Spezia|Napoli",
+          "season": "2020/21",
+          "home_team": "Spezia",
+          "away_team": "Napoli",
+          "venue": "Stadio Dino Manuzzi",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-08|Udinese|Bologna",
+          "season": "2020/21",
+          "home_team": "Udinese",
+          "away_team": "Bologna",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-09|Benevento|Cagliari",
+          "season": "2020/21",
+          "home_team": "Benevento",
+          "away_team": "Cagliari",
+          "venue": "Stadio Ciro Vigorito",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-09|Roma|Crotone",
+          "season": "2020/21",
+          "home_team": "Roma",
+          "away_team": "Crotone",
+          "venue": "Stadio Olimpico",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-12|Atalanta|Benevento",
+          "season": "2020/21",
+          "home_team": "Atalanta",
+          "away_team": "Benevento",
+          "venue": "Stadio Atleti Azzurri d'Italia",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-13|Crotone|Verona",
+          "season": "2020/21",
+          "home_team": "Crotone",
+          "away_team": "Verona",
+          "venue": "Stadio Ezio Scida",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-15|Spezia|Torino",
+          "season": "2020/21",
+          "home_team": "Spezia",
+          "away_team": "Torino",
+          "venue": "Stadio Dino Manuzzi",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-16|Benevento|Crotone",
+          "season": "2020/21",
+          "home_team": "Benevento",
+          "away_team": "Crotone",
+          "venue": "Stadio Ciro Vigorito",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year",
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year",
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-16|Udinese|Sampdoria",
+          "season": "2020/21",
+          "home_team": "Udinese",
+          "away_team": "Sampdoria",
+          "venue": "Dacia Arena",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-22|Crotone|Fiorentina",
+          "season": "2020/21",
+          "home_team": "Crotone",
+          "away_team": "Fiorentina",
+          "venue": "Stadio Ezio Scida",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude",
+            "home.natal_year",
+            "home.competition_entry_year"
+          ],
+          "requested_fields": [
+            "home_competition_entry_year",
+            "home_lifecycle_source_url",
+            "home_natal_year",
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-23|Spezia|Roma",
+          "season": "2020/21",
+          "home_team": "Spezia",
+          "away_team": "Roma",
+          "venue": "Stadio Dino Manuzzi",
+          "missing_fields": [
+            "venue_latitude",
+            "venue_longitude"
+          ],
+          "requested_fields": [
+            "venue_city",
+            "venue_latitude",
+            "venue_longitude",
+            "venue_source_url"
+          ]
+        },
+        {
+          "fixture_key": "2020/21|2021-05-23|Torino|Benevento",
+          "season": "2020/21",
+          "home_team": "Torino",
+          "away_team": "Benevento",
+          "venue": "Stadio Olimpico di Torino",
+          "missing_fields": [
+            "away.natal_year",
+            "away.competition_entry_year"
+          ],
+          "requested_fields": [
+            "away_competition_entry_year",
+            "away_lifecycle_source_url",
+            "away_natal_year"
+          ]
+        }
+      ]
+    },
+    "note_to_muse": "足球非奇门增量补充请求。不得返回或推断宫位；不得把结果写入 SQLite；保留 unresolved_queue 和 conflicts。"
+  },
+  "created_at": "2026-10-03T19:10:29.942489+08:00",
+  "source_gap_sha256": "3fee297ace49bbba75682b4b19ad714fac21158a7dcdd2cc89675d1c745b80c4",
+  "source_input_sha256": "dedba0278c4539819570e921f3d2a6925a0ed13400cdd426eae41a12ef6dd0e1"
+}
