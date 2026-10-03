@@ -29,8 +29,8 @@ Muse 定位（用户明确）：Muse = 抓取器 / 搜索器，不是判断器�
 
 多请求并行（按联赛分工）：若一轮内有 2 个以上待处理请求（尤其 Codex 几分钟内连发的多个联赛 deep_research，如德甲、英超、西甲各一单），必须用 subagent.spawn 为每个请求开一个并行子代理（按联赛分工，一单一代理），各代理独立执行高召回标准并写各自回执；本轮主代理只负责分发、等结果、统一 git add/commit/push，不自己串行逐个做。子代理写回执必须遵守防降级规则。
 
-多站并行抓取（用户 2026-10-03 明确要求）：批量赔率任务需要多个源时，为**每个源开一个独立的 browser.spawn_task 并行执行**（如 NowScore / OddsPortal / BetExplorer / zgzcw / Bettors.club 各一任务），替代"串行逐个换源"。主代理负责分发、等各站 handoff、合并结果后写回执。
-- 单站最多 2 个任务：同一网站最多派 2 个并行任务（需错峰启动、按场次/联赛区间切分不重叠、站内保持类人工低频）；3 个及以上禁止——同一出口 IP 对单站的高频请求会触发限流/封禁（TotalCorner 403 教训）。
+多站并行抓取（用户 2026-10-03 明确要求，2026-10-03 晚收紧）：批量赔率任务需要多个源时，为**每个源开一个独立的 browser.spawn_task 并行执行**（如 NowScore / OddsPortal / BetExplorer / zgzcw / Bettors.club 各一任务），替代"串行逐个换源"。主代理负责分发、等各站 handoff、合并结果后写回执。
+- 禁止单站多 agent：一站一任务，同一出口 IP 对单站的高频请求必触发限流/封禁（TotalCorner 403 教训）。原"单站最多 2 个"口径作废。
 - 站级熔断：某站遇到 403 / 人机验证 / 重定向循环 / 疑似封 IP，只停该站任务，其他站继续；不因一站失败停掉整批。熔断的站按"卡住换源"记 failed。
 - 站内节奏：每个任务站内保持类人工低频（每场间隔 10-15 秒）；单页最多重试 2 次。
 - 合并规则：同一比赛多源结果去重保留，冲突按高召回标准带回多源（不判断）；每条记录来源 URL 和获取时间。
@@ -119,3 +119,75 @@ J1（日本）、MLS（美职联）、英超、西甲、德甲、法甲、意甲
 上游依赖（非我方能解决，记入 unresolved_queue 不再空转）：
 - 002-Q2 642 赔率缺口清单：上游从未交付（B-UQ-01；2026-10-03 12:00 deadline 已过，Codex 约 24h 无回音）
 - 002-Q3 48 场 provider fixture ID：需 5Dollar Ultra-tier API key，公开端点不可得
+
+## 数据源分层与职责（2026-10-03 用户整理，ChatGPT 协作版）
+
+### 一、竞彩身份层（中国竞彩销售确认）
+- **中国足彩网 ZGZCW（cp.zgzcw.com）**：确认"这场比赛是不是竞彩实际销售比赛"。字段：竞彩编号、联赛中文名、主队中文名、客队中文名、比赛日期、北京时间、销售状态、部分数据入口、平均欧赔/相关入口、总进球玩法身份。
+- **Sporttery 中国体育彩票（官方身份核验源）**：竞彩编号、主客队、赛事、开球时间、是否销售。理论优先级比民间竞彩站高；但曾遇到 SOURCE_UNAVAILABLE/接口无返回——不卡死，用 Sporttery + ZGZCW + 第二竞彩源交叉。
+- **500 彩票网/500 竞彩足球**：第二销售清单（竞彩编号、比赛、主客队、开球时间、中文队名），解决"ZGZCW 有没有漏比赛"。
+- **竞彩猫等第二来源**：非核心库，检查国内竞彩清单漏抓。
+- **交叉对账**：Sporttery ↕ ZGZCW ↕ 500 做竞彩比赛集合对账，不信单一网站。
+
+### 双池纪律（铁律）
+明确分成两层，**不能混**：
+- **Foreign Fixture Pool**：国外网站抓到的原始 fixture（如 Arsenal vs Chelsea）
+- **Sporttery/JCZQ Pool**：经竞彩身份核验的销售比赛池
+国外抓到的比赛必须再去 ZGZCW/Sporttery 判断是不是当天实际销售的竞彩比赛。
+
+### 二、赛事官方源层
+- **UEFA**：欧冠/欧联的 stage、round、leg、kickoff、venue、aggregate、晋级结构。
+- **CONMEBOL**：解放者杯分组/淘汰结构、round、leg、kickoff、venue。
+- **J.League 官方**：J1 轮次、开球、实际场馆、赛程变更。
+- **MLS 官方**：fixture、开球、场馆、赛程、比赛状态。
+- **各联赛/足协官网**（英超、西甲、德甲、意甲、法甲、荷甲、挪超、芬超、瑞典超等）：**official_round 必须从官方拿，不能靠日期猜**。
+- **球队官网**：确认 **actual_matchday_venue**——数据库常写默认主场，但实际可能临时换场/中立场/杯赛换场/施工/安全原因，俱乐部官网是最可靠的确认处。
+
+### 三、核验与结构化补洞层
+- **Sofascore**：fixture、kickoff、status、result、venue、比赛 ID、是否延期/改期。用于近期比赛核验（"这场还踢不踢、几点、在哪"），不是找赛事元年。
+- **API-Football**：fixture（fixture_id、league、season、round、kickoff UTC、主客 team_id、status、score、venue_id/name/city）；/teams 补 team（id、name、country、founded）；/venues 补场馆（address、city、capacity、surface）。承担结构化补洞，不是预测源。
+
+### 四、球队/赛事元数据层
+- **Wikidata**：球队成立年、球场、城市、国家、球队 identity，适合自动化结构化查询。
+- **Transfermarkt**：team founded year、stadium、city、club history、名称变更、球队身份。好用但不能单独作为最终事实。
+- **RSSSF**：老历史——联赛最早年份、赛事元年、老赛季、升降级、更名、合并、成立年份、历史首次参赛。"足球元年"最重要的来源之一。
+- **WorldFootball.net**：反查历史赛季、球队参赛赛季、首次参赛、赛事历史。**competition_entry_year ≠ 成立年**，不能简单等同。
+
+### 五、地理与时间层（奇门硬字段）
+- **OSM / OpenStreetMap**：球场 latitude/longitude、city、venue location（奇门排盘需要真实比赛地点）。
+- **Mapcarta / LatLong 类**：OSM 无准确坐标时用地理编码确认经纬度。
+- **timezonefinder + IANA**：自己计算，不是网站。lat/lon → timezonefinder → Europe/London 等 → zoneinfo 转 kickoff UTC → kickoff local → UTC offset → DST。预测输入要的是比赛所在地当地法定时间，不是简单"中国时间"。
+- **真太阳时**：自己生成。链：实际球场 → longitude → 当地时间 → 经度修正 → 真太阳时。
+- **硬字段铁律**：venue → lat/lon → timezone 三个全要，少一个奇门输入就可能错。
+
+### 六、历史比赛与历史赔率层
+- **Football-Data.co.uk**：历史回测母库核心。Date/Time/HomeTeam/AwayTeam/FTHG/FTAG/FTR + Bet365/Pinnacle/William Hill/Betfair 等大量赔率。解决"历史比赛快速入库"。
+- **OpenFootball**：round、date、time、home、away、score，JSON 适合程序抓，与 Football-Data 交叉。
+- **schochastics/football-data**：百万场级历史数据集，扩大历史样本（先给比赛/日期/主客/赛果，再补 venue/timezone/round/team year）。
+- **历史赔率源**：
+  - Bettors.club：Opening vs Current，找明确标 Opening 的赔率；
+  - TotalCorner：1X2/亚盘/大小球/odds movement；
+  - Football-Data：历史赔率批量主力（Bet365/Pinnacle）；
+  - OddsPortal：历史赔率网页查找补充；
+  - BetExplorer：赔率历史/走势辅助。
+
+### 七、完整数据链（备查）
+```
+Nowscore → 未来 D0-D14 比赛池
+Sporttery + ZGZCW + 500 → 竞彩身份交叉核验
+官方联赛 / UEFA / CONMEBOL / 俱乐部 → stage / round / kickoff / actual venue
+Sofascore + API-Football → fixture / status / venue / 补洞
+Wikidata + Transfermarkt + RSSSF + WorldFootball → 球队成立 / 首次参赛 / 赛事元年
+OSM + Mapcarta + LatLong → 球场经纬度
+timezonefinder + zoneinfo → IANA timezone / 当地时间 / DST
+longitude + local time → 真太阳时
+Football-Data + OpenFootball + schochastics → 历史比赛 / 赛果 / 回测样本
+Football-Data + Bettors.club + TotalCorner + OddsPortal + BetExplorer → 历史赔率
+── ── ── ── ── ── ── ── ── ──（虚线）
+所有数据冻结 → PRE-MATCH SNAPSHOT → 奇门/结构模型 → 主/平/客 + 总进球等预测
+```
+
+### 八、Muse 定位红线（虚线之前）
+Muse 只负责虚线之前：**拼命找、拼命抓、尽量不漏、保留原始证据**。
+Muse 禁止：自己选哪场可买、自己做奇门预测、自己定 H/D/A、自己判断赔率合理性、自己改规则、因字段冲突删掉比赛。
+预测数据（主胜概率/总进球区间/RESULT_UPSET/GOALS_UPSET 等）是后处理和模型的事，不是抓取职责——网页抓的是原始输入，不从网页"抄预测"。
