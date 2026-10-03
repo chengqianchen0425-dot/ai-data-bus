@@ -1,0 +1,71 @@
+{
+  "id": "req-20261003-008",
+  "type": "deep_research",
+  "params": {
+    "topic": "Primeira Liga 葡超逐场 row-level 足球事实与赔率证据补充；跟进 req-20261003-004",
+    "questions": [
+      "这是 req-20261003-004 的增量跟进。req-20261003-004 回执只有汇总和样例，没有 2448 场逐行记录；本请求必须返回逐行 rows，不接受只有 report、field_coverage 或 sample_rows 的汇总回执。",
+      "只处理葡萄牙 Primeira Liga，赛季为 2018/19 至 2025/26，排除杯赛、欧战、友谊赛和其他联赛。不得处理或返回 Qimen、九宫、qimen_output、宫位、F/G/I/Q/M/A/B/C/E token、模型方向、Miss、概率、Outcome、Review 或 Gold。",
+      "每条 row 必须至少包含 stable_key（season/date/home_team/away_team）、field_name、value 或 NULL、status（ok/unavailable/blocked/conflict/parse_failed）、source_url、final_url、retrieved_at、field_locator、source_sha256。相同 stable_key 的多个来源保留为多行；冲突进入 conflict_queue，不自动裁决。",
+      "逐行补充 2018/19、2019/20、2020/21、2025/26 的足球事实：date、kickoff_local、IANA timezone、official_round、home_team、away_team、venue、venue_latitude、venue_longitude、home_goals_90、away_goals_90、full_time_result。2025/26 未完成比赛必须保留 NULL/未完成状态。已有本地 2021/22-2024/25 的身份和 90 分钟赛果不要重复，除非用于精确匹配冲突审计。",
+      "逐行补充 8 个赛季缺失的 venue、official_round、venue_latitude、venue_longitude；逐行核验 kickoff_local 与 IANA timezone。2018/19 无 Time 列的 306 场必须明确返回 unavailable 或找到直接赛前来源，不能猜测 Europe/Lisbon。",
+      "逐行返回本地仍缺的 Bet365、Pinnacle、William Hill 1X2 与 2.5 大小球赔率，三家书商分开。必须分别标 semantic= true_opening、earliest_verified_pre_match、pre_closing、closing 或 unavailable。没有证据的 true opening 必须返回 unavailable；不得把 pre-closing 或 closing 改名 opening。William Hill 只认 WHH/WHD/WHA 和 WHCH/WHCD/WHCA，BWH 不属于 William Hill。重点覆盖 2018/19 缺列、2024/25/2025/26 空值行和 2025/26 William Hill 缺列。",
+      "若某字段找不到，仍返回该 stable_key + field_name + value=null + status=unavailable/blocked，并写清原因；不得删除比赛或静默漏行。返回 audit.expected/discovered/complete/partial/missing，unresolved_queue，以及 row_level_data=true 和 rows 数量。",
+      "只返回足球历史事实及来源证据。不得从赛果反推赔率、Qimen、F/G/I 或结构。"
+    ],
+    "source_hints": [
+      "https://www.football-data.co.uk/portugalm.php",
+      "https://www.football-data.co.uk/notes.txt",
+      "https://www.oddsportal.com/football/portugal/primeira-liga/",
+      "https://www.worldfootball.net/schedule/por-primeira-liga-"
+    ]
+  },
+  "created_at": "2026-10-03T17:00:00+08:00",
+  "scope": {
+    "competition_key": "primeira_liga",
+    "country": "Portugal",
+    "seasons": [
+      "2018/19",
+      "2019/20",
+      "2020/21",
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26"
+    ],
+    "league_only": true,
+    "incremental_only": true,
+    "follow_up_to_request_id": "req-20261003-004",
+    "existing_local_fixture_count": 1224,
+    "expected_fixture_count": 2448,
+    "row_level_required": true,
+    "qimen_fields": "excluded",
+    "exclude_competitions": [
+      "taca_de_portugal",
+      "taca_da_liga",
+      "uefa_champions_league",
+      "uefa_europa_league",
+      "uefa_conference_league",
+      "friendly"
+    ]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_rows_and_unresolved_queue",
+    "football_only": true,
+    "row_level_data": true,
+    "return_available_data_first": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": [
+      "source_url",
+      "final_url",
+      "retrieved_at",
+      "field_locator",
+      "source_sha256"
+    ],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  },
+  "dp_used": false
+}
