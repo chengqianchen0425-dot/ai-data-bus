@@ -35,6 +35,8 @@ Muse 定位（用户明确）：Muse = 抓取器 / 搜索器，不是判断器�
 
 to_codex 纪律（2026-10-03 教训）：to_codex 字段只转达用户原话或 hook 明确授权的内容；worker 不得自行编造给 Codex 的新指令。2026-10-03 一轮 worker 曾自作主张发布 to_codex v3（让 Codex 转赔率区间筛选），事后经用户追认才生效。已授权可直接写入的情形（正面清单，写入时注明版本）：①命中 DEAD-END REGISTRY 的真开盘转筛选通知（用户 2026-10-03 18:02 授权）。清单外一律先请示用户。
 
+长轮心跳（2026-10-03 010 误判教训）：单轮预计超过 15 分钟的任务，worker 必须每 10 分钟更新一次 processing 回执的 note（写清当前进度）并 push。心跳让 mtime 保持新鲜，避免被看门狗误判停滞而重复叫醒。回执文件实质增大（≥1KB）会被记为实质进展、清零停滞计数；纯心跳 note 不计入。
+
 防降级（一旦 ok 永不回退）：`responses/<id>.json` 一旦 `status=ok`，绝不覆盖为 `processing` 或 `error`。若发现 `requests/<id>.json` 的内容在回执完成后发生实质变化（Codex 复用了旧 id 发新任务，违反 id 全局唯一），先将旧回执备份为 `responses/<id>.archived-YYYYMMDD-HHMMSS.json` 再为新任务写 `processing`，并在 note 注明 id 被复用。
 
 防错位（请求与回执必须同主题）：写最终 ok 回执前，必须重新 `git pull` 并读取 `requests/<id>.json` 的当前内容，确认回执主题与请求 topic 一致；禁止凭上一轮记忆或缓存的请求内容写回执。若发现请求在你工作期间被改过，先按防降级规则归档旧回执，再按新请求重做。
