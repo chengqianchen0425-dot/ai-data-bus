@@ -1,0 +1,59 @@
+{
+  "id": "req-20261003-010",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "params": {
+    "topic": "MLS 2018-2025 incremental fixture competition-cycle facts",
+    "questions": [
+      "Only process MLS regular season fixtures for 2018, 2019, 2020, 2021, 2022, 2023, 2024 and 2025. Exclude MLS Cup/playoffs, USL, MLS Next Pro, cups, friendlies and other competitions. Use the local fixture identity as the join key: season + local date + home_team + away_team, and preserve stable_match_key/provider_match_id when available.",
+      "For every expected fixture row, return meeting_number: the number of the meeting between the same two teams in that MLS regular season. Prefer a direct official or schedule field. If it is derived only from a complete source schedule, label field_semantics=derived_from_complete_source_schedule and include derivation_rule, source_schedule_url and the ordered source rows; do not infer from a partial list or from odds/results alone.",
+      "For every expected fixture row, return second_cycle, return_leg and cycle_route when explicitly supported. Values must distinguish first meeting/first cycle from second meeting/return leg and preserve NULL when MLS scheduling is unbalanced or the source does not support the distinction. Do not assume every season is double round robin.",
+      "For each season, verify whether the competition was double round robin. Return a season-level record with season, value=true/false/unknown, definition, expected schedule rule, source_url, final_url, retrieved_at, field_locator and source_sha256. Only map the value to fixture rows when the season-level evidence and complete schedule support it; otherwise keep the row field unavailable.",
+      "Use high-recall football sources including the official MLS stats matches endpoint, MLS Fact and Record Book or official schedule pages, and cross-check with WorldFootball, Soccerway, FBref or another explicit schedule source. Preserve source conflicts instead of choosing silently. The official match_day is not a substitute for meeting_number.",
+      "Return row-level data even when a field is missing. Each row must include stable_match_key, season, date, home_team, away_team, field_name, value or NULL, status (ok/unavailable/blocked/conflict/parse_failed), source_url, final_url, retrieved_at, field_locator, source_sha256, field_semantics and evidence_notes. Include audit.expected, discovered, complete, partial, missing and unresolved_queue.",
+      "Only return football facts and provenance. Do not return or derive Qimen, nine-palace, palace relations, model direction, Miss labels, odds structures, probabilities, Outcome, Review, Gold or SQLite writes."
+    ],
+    "source_hints": [
+      "https://stats-api.mlssoccer.com/matches/seasons/{season_id}?match_date=YYYY-MM-DD",
+      "https://www.mlssoccer.com/standings/2025",
+      "https://www.worldfootball.net/schedule/usa-major-league-soccer-2025/",
+      "https://int.soccerway.com/national/united-states/mls/"
+    ],
+    "known_local_scope": {
+      "competition_key": "mls",
+      "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+      "expected_rows_by_season": {
+        "2018": 391,
+        "2019": 408,
+        "2020": 302,
+        "2021": 459,
+        "2022": 476,
+        "2023": 493,
+        "2024": 493,
+        "2025": 510
+      },
+      "expected_total_rows": 3532,
+      "existing_context_2018_2020": "D:\\奇门斗数\\work\\mls_incremental_gap_20261003\\context_2018_2020\\context_2018_2020_muse_req005_enriched.csv",
+      "existing_context_2021_2025": "D:\\奇门斗数\\work\\mls_2021_2025_supplement_20260922",
+      "prior_gap_report": "D:\\奇门斗数\\work\\mls_incremental_gap_20261003\\muse_req005_shadow_projection_report.json"
+    }
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_rows_plus_season_level_rows_and_unresolved_queue",
+    "football_only": true,
+    "row_level_data": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": [
+      "source_url",
+      "final_url",
+      "retrieved_at",
+      "field_locator",
+      "source_sha256"
+    ],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  },
+  "created_at": "2026-10-03T20:00:00+08:00"
+}
