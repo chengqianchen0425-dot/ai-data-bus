@@ -1,0 +1,40 @@
+{
+  "id": "req-20261003-006",
+  "type": "deep_research",
+  "params": {
+    "topic": "Ligue 1 France 2018/19-2020/21 football-only incremental missing-field evidence",
+    "questions": [
+      "只处理法国 Ligue 1/F1 的 2018/19、2019/20、2020/21，只返回本地已有数据仍缺失或冲突的足球字段；不要重复 req-007/009/011 已逐场匹配且已有来源哈希的字段。",
+      "补充球队静态注册字段：Amiens（18/19、19/20）、Dijon（18/19、19/20、20/21）、Nimes（18/19、19/20、20/21）、Caen（18/19）、Guingamp（18/19）。仅返回可直接来源证明的 founding/natal year、first top-division entry/competition_entry_year 及别名；不能从赛果、赔率或当前注册表推断。Bordeaux 已有字段不要重复。",
+      "补充起盘事实缺口：2019/20 和 2020/21 逐场 local_timezone/IANA timezone，以及缺失球队对应赛季的逐场 venue、latitude、longitude、主场迁移/中立场证据。只返回缺字段比赛，保留 season、date、round、home、away、source_url、final_url、retrieved_at、field_locator、source_sha256；不能用联赛常规时区或赛季主场表替代逐场证据。",
+      "复核唯一冲突：2018-11-23 Lyon vs Saint-Etienne（2018/19）的当地开球时间、IANA timezone、round 和直接来源；竞争值保留 conflict_queue，不自动裁决。",
+      "只补已知赔率缺口：2018/19 Paris SG-Nice 的 Pinnacle pre-close 1X2；2019/20 Rennes-Paris SG 的 Pinnacle OU pre-close；2020/21 PSG-Marseille、Monaco-Montpellier、Brest-Marseille、Bordeaux-Reims、Lyon-Nantes、Montpellier-Lille 的已知 Bet365/Pinnacle/William Hill pre-close 或 closing 空单元格。按书商逐场返回，若可得则标 earliest_verified_pre_match/latest_verified_pre_match。",
+      "严格区分 true opening、pre-close、closing；找不到同书商两个赛前端点就返回 unavailable，不把 closing/pre-close 改名 opening。BWH 是 Bet&Win，不是 William Hill；William Hill 只用 WHH/WHD/WHA 与 WHCH/WHCD/WHCA；BetBrain aggregate 不代替指定书商 OU。",
+      "不要返回或推导 Qimen、qimen_output、九宫、宫位、F/G/I/Q/M、模型方向、Miss、概率、Outcome、Review、Gold 或任何赛果驱动模型字段；这些只保留 unavailable。"
+    ],
+    "exclude": [
+      "跳过赛前积分、排名、played_before；用户已豁免。",
+      "不重复抓取已有 1039 场身份、90 分钟赛果和已确认开球时间。",
+      "不处理 J1、MLS、德甲、Primeira Liga 或其他联赛。"
+    ]
+  },
+  "created_at": "2026-10-03T10:00:00+08:00",
+  "scope": {
+    "competition_key": "ligue_1",
+    "country": "France",
+    "seasons": [2018, 2019, 2020],
+    "league_only": true,
+    "expected_fixtures": 1039,
+    "incremental_only": true,
+    "supersedes_invalid_response_id": "req-20261002-019"
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
