@@ -1,0 +1,35 @@
+{
+  "id": "req-20261002-025",
+  "type": "deep_research",
+  "params": {
+    "topic": "Eredivisie 荷甲 2018/19、2019/20、2020/21 赔率区间增量补充",
+    "questions": [
+      "只处理荷甲 Eredivisie 2018/19、2019/20、2020/21 三个已完成事实补充且身份可对账的赛季，共844场；按 fixture_key 与 parent response req-20261002-023/024 的日期、主客队、90分钟比分精确匹配。已有 2021/22–2025/26 本地赔率不重抓，只做覆盖说明。",
+      "严格分开 bookmaker=Bet365、Pinnacle、William Hill；严格分开 market=1X2 和 total_goals_2_5。每组赔率分别标记 phase=pre_closing、closing、interval 或 unavailable；只有来源明确写明 true opening 才能标记 true_opening，不能把 pre-closing、history-derived open-close 或 closing 改名为 true opening。",
+      "优先返回逐场最早可证赛前值与收盘值；若只有单一来源快照，标记 as_published/interval 并保留原始语义。缺失、来源不可用、无法精确匹配或冲突全部进入 unresolved_queue/conflict_queue，不跨博彩公司替代。",
+      "返回每个 bookmaker/market/phase 的 expected、discovered、complete、partial、missing，并提供逐场 odds evidence、source_url、final_url、retrieved_at、field_locator、source_sha256、field_semantics。不得补造 Qimen、宫位、qimen_first_direction、Miss 1/Miss 2、Review、Gold。"
+    ]
+  },
+  "created_at": "2026-10-03T00:10:00+08:00",
+  "scope": {
+    "competition_key": "eredivisie",
+    "division": "N1",
+    "season_labels": ["2018/19", "2019/20", "2020/21"],
+    "fixture_count": 844,
+    "parent_fact_requests": ["req-20261002-023", "req-20261002-024"],
+    "incremental_only": true,
+    "bookmakers": ["Bet365", "Pinnacle", "William Hill"],
+    "markets": ["1X2", "total_goals_2_5"],
+    "phases": ["true_opening", "pre_closing", "closing", "interval", "unavailable"],
+    "exclude": ["qimen", "qimen_output", "palace", "qimen_first_direction", "model_first_direction", "miss", "probability", "outcome", "review", "gold", "formal_structure"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_odds_evidence_and_unresolved_queue",
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256", "field_semantics"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false,
+    "status_policy": "processing_then_ok_or_error; incomplete_odds_remain_unresolved"
+  }
+}
