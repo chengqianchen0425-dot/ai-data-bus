@@ -7,7 +7,9 @@
       "只处理 England Premier League，范围为 2018/19、2021/22、2024/25、2025/26；排除杯赛、季前赛和其他联赛。逐行返回 season、date、kickoff（如来源提供）、home_team、away_team、provider_fixture_id 或稳定比赛键，并保留 source_url、final_url、retrieved_at、field_locator、source_sha256。",
       "补充 2018/19 全部缺失的 Bet365 1X2 closing、William Hill 1X2 closing、Bet365 over/under 2.5 closing。若来源没有字段，逐场标记 unavailable 或 blocked，并保留检查过的来源，不使用跨博彩公司平均值替代。",
       "补充 2021/22 Newcastle vs Man City 两场 Bet365 over/under true opening；区分真实价格、空值、0/0 伪影和无法确认的阶段。",
-      "补充 2024/25 William Hill 1X2 后半程缺失比赛、2025/26 Pinnacle 1X2 后半程缺失比赛，以及 2025/26 William Hill true opening 全季缺口。按逐场比赛身份返回。",
+      "本请求不处理 2024/25 William Hill、2025/26 Pinnacle、2025/26 William Hill 的既有 API 补充交集；这些 1002 条逐场记录已在本地完成 Qimen crosswalk 和结构筛选，不要重复返回。",
+      "仅补 2018/19 Bet365 1X2 closing 380 场、2018/19 William Hill 1X2 closing 380 场、2018/19 Bet365 over/under 2.5 closing 380 场，以及 2021/22 Newcastle vs Man City 两场 Bet365 over/under true opening。每个目标必须逐场返回数据或明确 unavailable/blocked/parse_failed。",
+      "Muse 上一轮已返回的 2018/19 380 场身份、kickoff、Cardiff/Huddersfield 注册和场馆材料不在本次重抓范围；仅当赔率行需要身份连接时复用稳定比赛键，不重复抓赛程或球队注册资料。",
       "每条赔率分别标记 bookmaker、market、phase、recorded_at 或时间语义，以及 home/draw/away 或 over/under。允许的 phase 只有 true opening、earliest verified pre-match、pre-closing、latest verified pre-match、closing。字段无法解析标记 parse_failed；多来源不同值列入 unresolved_queue。",
       "本请求只收集比赛身份、赛程、球队、场馆、轮次和博彩公司赔率等足球事实；不得返回任何模型、盘面或赛后评价字段。"
     ],
@@ -23,7 +25,7 @@
   "created_at": "2026-10-03T14:00:00+08:00",
   "scope": {
     "competition_key": "premier_league",
-    "seasons": ["2018/19", "2021/22", "2024/25", "2025/26"],
+    "seasons": ["2018/19", "2021/22"],
     "league_only": true,
     "incremental_only": true,
     "exclude_competitions": ["fa_cup", "efl_cup", "community_shield", "preseason", "champions_league", "europa_league"]
