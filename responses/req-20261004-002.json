@@ -1,8 +1,577 @@
 {
   "id": "req-20261004-002",
-  "status": "processing",
-  "note": "Veikkausliiga 2019-2026 club/venue gap supplement (21 rows): research in progress",
-  "request_sha": "0b748b9b2fecef57",
+  "status": "ok",
   "from": "muse",
-  "updated_at": "2026-10-04T09:33:10.319914+00:00"
+  "request_sha": "0b748b9b2fecef57",
+  "dp_used": false,
+  "data": {
+    "report": "Finland Veikkausliiga 2019-2026 club/venue gap supplement: 21 checklist rows resolved against fi/en Wikipedia season tables, Veikkausliiga grounds list, OpenStreetMap Nominatim and Mapcarta. Key resolutions: FC Lahti entry-year 1990 belongs to predecessors Kuusysi/Reipas (FC Lahti founded 1996, first top flight 1999); FinnPa venues are Töölön pallokenttä + Helsingin olympiastadion (the-sports.org 'Finnair Stadium' is anachronistic); OTP venue is season-keyed Raatti (top-flight era) vs Heinäpää Sports Centre (current); TPV venue is season-keyed old Tammelan Stadion (until 2020) vs Kauppi 3 (current); Kumu venue is Kuusankosken Urheilupuisto (Arto Tolsa Areena rejected); FC Hämeenlinna is Kauriala (Helsinki Olympiastadion mapping rejected); Ekenäs IF stadium verified as Ekenäs Sparbank Arena (59.97352, 23.44307). official_round/meeting_number delegated to req-20261004-003; home/away_standing unavailable (no dated pre-kickoff snapshots in public sources).",
+    "rows": [
+      {
+        "stable_key": "veikkausliiga|club|FinnPa",
+        "field_name": "club_identity/founded_year/venue",
+        "value": {
+          "official_name": "Finnairin Palloilijat",
+          "founded": 1965,
+          "city": "Helsinki, Finland",
+          "dissolved": 1998,
+          "top_flight": "Veikkausliiga 1993-1998 (6 seasons)",
+          "venues_primary": [
+            "Töölön pallokenttä (old, demolished)",
+            "Helsingin olympiastadion"
+          ],
+          "venue_wgs84": {
+            "Helsingin olympiastadion": {
+              "lat": 60.1875,
+              "lon": 24.9272
+            },
+            "Töölön pallokenttä (old)": "coordinates unavailable (demolished)"
+          },
+          "rejected_mapping": "the-sports.org 'Finnair Stadium' is anachronistic (stadium opened 2000; FinnPa folded 1998)"
+        },
+        "status": "conflict",
+        "source_name": "fi.wikipedia + en.wikipedia",
+        "source_url": "https://fi.wikipedia.org/wiki/Finnairin_Palloilijat",
+        "final_url": "https://fi.wikipedia.org/wiki/Finnairin_Palloilijat",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "infobox Kenttä='Töölön pallokenttä, Helsingin olympiastadion'; article 'Seuran kotikenttiä olivat Töölön pallokenttä ja Helsingin olympiastadion'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": "cg-finnpa-venue",
+        "note": "Conflicting source the-sports.org (https://www.the-sports.org/football-soccer-finnpa-helsinki-results-identity-equ6978.html) lists 'Finnair Stadium'; kept as conflict per no-winner rule. Olympiastadion coords from https://fi.wikipedia.org/wiki/Helsingin_olympiastadion (60°11′15″N 24°55′38″E). 'Danish venue mapping' suspicion rejected: club is Helsinki, Finland."
+      },
+      {
+        "stable_key": "veikkausliiga|club|KuPS",
+        "field_name": "club_identity/founded_year/venue",
+        "value": {
+          "official_name": "Kuopion Palloseura",
+          "founded": 1923,
+          "city": "Kuopio, Finland",
+          "venue": "Savon Sanomat Areena (= Kuopion keskuskenttä)",
+          "venue_wgs84": {
+            "lat": 62.8846496,
+            "lon": 27.6715566
+          },
+          "historical_venues": [
+            "Väinölänniemi",
+            "Kuopion keskuskenttä (sand pitch, demolished)"
+          ]
+        },
+        "status": "ready",
+        "source_name": "fi.wikipedia + OpenStreetMap Nominatim",
+        "source_url": "https://fi.wikipedia.org/wiki/Futisliigan_kausi_1990",
+        "final_url": "https://fi.wikipedia.org/wiki/Futisliigan_kausi_1990",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "team table row: 'KuPS | 1923 | Kuopio | Väinölänniemi, (Kuopion keskuskenttä)'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Coordinates from Nominatim query 'Savon Sanomat Areena Kuopio' (osm way 1119414180, name 'Kuopion keskuskenttä')."
+      },
+      {
+        "stable_key": "veikkausliiga|club|FC Lahti",
+        "field_name": "club_identity/founded_year/venue",
+        "value": {
+          "official_name": "FC Lahti",
+          "founded": 1996,
+          "formation": "merger of Kuusysi and Reipas Lahti",
+          "city": "Lahti, Finland",
+          "first_top_flight_season": 1999,
+          "venue": "Lahden stadion (Lahti Stadium)",
+          "venue_wgs84": {
+            "lat": 60.98306,
+            "lon": 25.63417
+          }
+        },
+        "status": "ready",
+        "source_name": "en.wikipedia",
+        "source_url": "https://en.wikipedia.org/wiki/FC_Lahti",
+        "final_url": "https://en.wikipedia.org/wiki/FC_Lahti",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "History: 'Lahti was founded in 1996 when two rival clubs – Kuusysi and Reipas Lahti – decided to merge'; 'played its first season in 1997 in Ykkönen'; promoted to highest tier for 1999",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Venue: Lahti Stadium article (https://en.wikipedia.org/wiki/Lahti_Stadium) lists Tenant: FC Lahti, coords 60°58′59″N 025°38′03″E. 'Kisapuisto' is the surrounding sports park (Olympedia https://www.olympedia.org/venues/384: Lahden Kisapuisto 60.986389,25.650278, sports-park level) – not the stadium itself."
+      },
+      {
+        "stable_key": "veikkausliiga|club|OTP",
+        "field_name": "club_identity/founded_year/venue",
+        "value": {
+          "official_name": "Oulun Työväen Palloilijat",
+          "founded": 1946,
+          "city": "Oulu, Finland",
+          "top_flight": "16 seasons in Mestaruussarja/Veikkausliiga",
+          "venue_by_era": [
+            {
+              "venue": "Raatin stadion",
+              "valid": "top-flight era; documented 1990 'Raatti, (Keskuskenttä)', 1991 'Raatti, (Heinäpää)'",
+              "wgs84": {
+                "lat": 65.01972,
+                "lon": 25.46583
+              }
+            },
+            {
+              "venue": "Heinäpää Sports Centre (Heinäpään urheilukeskus)",
+              "valid": "current",
+              "wgs84": {
+                "lat": 65.0000451,
+                "lon": 25.4506354
+              }
+            }
+          ]
+        },
+        "status": "ready",
+        "source_name": "en.wikipedia + fi.wikipedia + OpenStreetMap Nominatim",
+        "source_url": "https://en.wikipedia.org/wiki/Oulun_Työväen_Palloilijat",
+        "final_url": "https://en.wikipedia.org/wiki/Oulun_Työväen_Palloilijat",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "infobox Founded=1946, Ground='Heinäpää Sports Centre'; article 'OTP has played 16 seasons in the Finnish premier divisions'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Raatti coords from https://en.wikipedia.org/wiki/Raatti_Stadium (65°01′11″N 025°27′57″E). Heinäpää Sports Centre coords from Nominatim 'Heinäpään urheilukeskus Oulu' (osm way 26453456). 1990/1991 home grounds from https://fi.wikipedia.org/wiki/Futisliigan_kausi_1990 and https://fi.wikipedia.org/wiki/Futisliigan_kausi_1991. Note: the NEW Heinäpää Football Stadium (opened 5 Sep 2026, AC Oulu) is a different facility."
+      },
+      {
+        "stable_key": "veikkausliiga|club|FC Lahti",
+        "field_name": "club_entry_year",
+        "value": null,
+        "status": "conflict",
+        "source_name": "fi.wikipedia + en.wikipedia",
+        "source_url": "https://fi.wikipedia.org/wiki/Futisliigan_kausi_1990",
+        "final_url": "https://fi.wikipedia.org/wiki/Futisliigan_kausi_1990",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "1990 team table lists Lahti top-flight clubs as Kuusysi (founded 1934) and Reipas (founded 1891) – no FC Lahti (founded 1996)",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": "cg-fclahti-entry",
+        "note": "An entry year of 1990 belongs to predecessor entities (Kuusysi / Reipas Lahti), not to FC Lahti. FC Lahti founded 1996, first top-flight season 1999 (https://en.wikipedia.org/wiki/FC_Lahti). Value must NOT be stored on the FC Lahti entity; attribute 1990 to predecessor if the schema supports it."
+      },
+      {
+        "stable_key": "veikkausliiga|club|Ekenäs IF",
+        "field_name": "venue_wgs84_coordinates",
+        "value": {
+          "venue": "Ekenäs Sparbank Arena",
+          "former_names": [
+            "Ekenäs centrumplan",
+            "Tammisaaren keskuskenttä"
+          ],
+          "city": "Ekenäs (Tammisaari), Raseborg, Finland",
+          "wgs84": {
+            "lat": 59.97352,
+            "lon": 23.44307
+          }
+        },
+        "status": "ready",
+        "source_name": "en.wikipedia + Mapcarta/OpenStreetMap",
+        "source_url": "https://en.wikipedia.org/wiki/Ekenäs_IF",
+        "final_url": "https://en.wikipedia.org/wiki/Ekenäs_IF",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "infobox Ground='Ekenäs Sparbank Arena, Ekenäs, Raseborg'; article: 'home ground is at the Ekenäs Sparbank Arena, formerly known as Ekenäs Centrumplan'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Coords from https://mapcarta.com/W237866663 (59.97352, 23.44307; OSM-based). The 'ground is city name' block is resolved: the stadium is verified, distinct from the city name."
+      },
+      {
+        "stable_key": "veikkausliiga|club|FC Hämeenlinna",
+        "field_name": "venue_wgs84_coordinates",
+        "value": {
+          "venue": "Kaurialan kenttä",
+          "district": "Kauriala",
+          "city": "Hämeenlinna, Finland",
+          "wgs84": {
+            "lat": 60.9934582,
+            "lon": 24.4418925
+          },
+          "rejected_mapping": "Helsinki Olympiastadion (wrong city; Helsinki ≠ Hämeenlinna)"
+        },
+        "status": "ready",
+        "source_name": "fi.wikipedia + OpenStreetMap Nominatim",
+        "source_url": "https://fi.wikipedia.org/wiki/Luettelo_Veikkausliigakentist%C3%A4",
+        "final_url": "https://fi.wikipedia.org/wiki/Luettelo_Veikkausliigakentist%C3%A4",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "grounds list: 'Hämeenlinna: Kauriala (15.5.2002 FC Hämeenlinna-Inter)'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Coords from Nominatim 'Kaurialan kenttä Hämeenlinna' (osm way 565487703, address Brahenkatu 4, Kauriala, Hämeenlinna)."
+      },
+      {
+        "stable_key": "veikkausliiga|club|FC Jazz",
+        "field_name": "venue_wgs84_coordinates",
+        "value": {
+          "venue": "Porin Stadion",
+          "city": "Pori, Finland",
+          "wgs84": {
+            "lat": 61.4768184,
+            "lon": 21.7742427
+          }
+        },
+        "status": "ready",
+        "source_name": "fi.wikipedia + OpenStreetMap Nominatim",
+        "source_url": "https://fi.wikipedia.org/wiki/Veikkausliigan_kausi_1993",
+        "final_url": "https://fi.wikipedia.org/wiki/Veikkausliigan_kausi_1993",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "team table row: 'FC Jazz | 1934 | Pori | Porin Stadion'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Coords from Nominatim 'Porin stadion Pori' (osm way 207543599)."
+      },
+      {
+        "stable_key": "veikkausliiga|club|Kumu",
+        "field_name": "venue_wgs84_coordinates",
+        "value": {
+          "venue": "Kuusankosken Urheilupuisto",
+          "city": "Kuusankoski (Kouvola), Finland",
+          "wgs84": {
+            "lat": 60.9150628,
+            "lon": 26.6090384
+          },
+          "precision": "sports-park level (individual pitch not separately mapped in OSM)",
+          "rejected_mapping": "Arto Tolsa Areena (Kotka; home of KTP, not Kumu)",
+          "founded_conflict": "1964 (en.wikipedia) vs 1975 (Jalkapallokirja 1990 via fi.wikipedia)"
+        },
+        "status": "ready",
+        "source_name": "fi.wikipedia + OpenStreetMap Nominatim",
+        "source_url": "https://fi.wikipedia.org/wiki/Futisliigan_kausi_1990",
+        "final_url": "https://fi.wikipedia.org/wiki/Futisliigan_kausi_1990",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "team table row: 'Kumu | 1975 | Kuusankoski | Kuusankosken Urheilupuisto'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Coords from Nominatim 'Urheilupuisto Kuusankoski Kouvola' (osm way 343018304). Founded-year conflict preserved, not resolved: https://en.wikipedia.org/wiki/Kuusankosken_Kumu says 1964."
+      },
+      {
+        "stable_key": "veikkausliiga|club|MP",
+        "field_name": "venue_wgs84_coordinates",
+        "value": {
+          "venue": "Mikkelin urheilupuisto",
+          "city": "Mikkeli, Finland",
+          "wgs84": {
+            "lat": 61.6870549,
+            "lon": 27.2665993
+          }
+        },
+        "status": "ready",
+        "source_name": "fi.wikipedia + OpenStreetMap Nominatim",
+        "source_url": "https://fi.wikipedia.org/wiki/Futisliigan_kausi_1990",
+        "final_url": "https://fi.wikipedia.org/wiki/Futisliigan_kausi_1990",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "team table rows 1990 and 1991: 'MP | 1929 | Mikkeli | Mikkelin urheilupuisto'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Coords from Nominatim 'Mikkelin urheilupuisto Mikkeli' (osm way 42366536)."
+      },
+      {
+        "stable_key": "veikkausliiga|club|OTP",
+        "field_name": "venue_wgs84_coordinates",
+        "value": {
+          "season_keyed": [
+            {
+              "venue": "Raatin stadion",
+              "valid": "top-flight era (documented 1990-1991)",
+              "wgs84": {
+                "lat": 65.01972,
+                "lon": 25.46583
+              }
+            },
+            {
+              "venue": "Heinäpää Sports Centre (Heinäpään urheilukeskus)",
+              "valid": "current",
+              "wgs84": {
+                "lat": 65.0000451,
+                "lon": 25.4506354
+              }
+            }
+          ]
+        },
+        "status": "ready",
+        "source_name": "en.wikipedia + fi.wikipedia + OpenStreetMap Nominatim",
+        "source_url": "https://en.wikipedia.org/wiki/Raatti_Stadium",
+        "final_url": "https://en.wikipedia.org/wiki/Raatti_Stadium",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "infobox Coordinates 65°01′11″N 025°27′57″E",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "1990: 'OTP | 1946 | Oulu | Raatti, (Keskuskenttä)'; 1991: 'FC OTP | 1946 | Oulu | Raatti, (Heinäpää)' (fi.wikipedia season tables). Current ground Heinäpää Sports Centre per https://en.wikipedia.org/wiki/Oulun_Työväen_Palloilijat; coords via Nominatim."
+      },
+      {
+        "stable_key": "veikkausliiga|club|Ponnistus",
+        "field_name": "venue_wgs84_coordinates",
+        "value": {
+          "venue_primary": "Haapaniemen Kenttä, Helsinki (en.wikipedia, current)",
+          "venue_wgs84": null,
+          "conflicting_venues": [
+            "Brahen kenttä, Helsinki (Transfermarkt, current)",
+            "Töölön Pallokenttä, Helsinki (Alchetron, older)",
+            "Helsinki Velodrome (fi.wikipedia grounds list: 5.6.1995 Ponnistus-VPS)"
+          ],
+          "rejected_mapping": "Tapiola (Espoo) – no source found; rejected as suspicious"
+        },
+        "status": "conflict",
+        "source_name": "en.wikipedia + Transfermarkt + fi.wikipedia",
+        "source_url": "https://en.wikipedia.org/wiki/Ponnistus_Helsinki",
+        "final_url": "https://en.wikipedia.org/wiki/Ponnistus_Helsinki",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "infobox Ground='Haapaniemen Kenttä, Helsinki, Finland'; article 'their home ground is at the Haapaniemen Kenttä'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": "cg-ponnistus-venue",
+        "note": "No OSM/Wikipedia coordinate record found for 'Haapaniemen Kenttä, Helsinki' (Nominatim returns only Jyväskylä/Uusikaupunki/Viitasaari homonyms); coordinates NOT substituted. Transfermarkt: https://www.transfermarkt.co.uk/helsingin-ponnistus-fc/stadion/verein/21024 ('Brahen kenttä'). Velodrom evidence: https://fi.wikipedia.org/wiki/Luettelo_Veikkausliigakentist%C3%A4."
+      },
+      {
+        "stable_key": "veikkausliiga|club|TPV",
+        "field_name": "venue_wgs84_coordinates",
+        "value": {
+          "venue_by_era": [
+            {
+              "venue": "Tammelan Stadion (old, 1931-2020)",
+              "tenants_included": "TPV",
+              "wgs84": {
+                "lat": 61.500453,
+                "lon": 23.7853443
+              },
+              "valid_end": "2020-10-31 (last match)"
+            },
+            {
+              "venue": "Kauppi Football Stadium (Kauppi 3)",
+              "address": "Kuntokatu 5, 33520 Tampere",
+              "valid": "current",
+              "wgs84": null
+            }
+          ]
+        },
+        "status": "partial",
+        "source_name": "en.wikipedia + Transfermarkt + OpenStreetMap Nominatim",
+        "source_url": "https://en.wikipedia.org/wiki/Tampereen_Pallo-Veikot",
+        "final_url": "https://en.wikipedia.org/wiki/Tampereen_Pallo-Veikot",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "infobox Ground='Kauppi Football Stadium'; article club founded 6 April 1930",
+        "source_sha256": null,
+        "validity_start": "2021-01-01",
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Old Tammelan Stadion tenants incl. TPV per https://en.wikipedia.org/wiki/Tammelan_Stadion_(1931); coords via Nominatim 'Tammelan stadion Tampere' (osm relation 14185140). Kauppi 3 per https://www.transfermarkt.co.uk/tampereen-pallo-veikot/stadion/verein/11150 (built 2025). Coordinates for Kauppi 3 and the 2021-2024 interim venue remain unverified."
+      },
+      {
+        "stable_key": "veikkausliiga|club|Tampere United",
+        "field_name": "venue_wgs84_coordinates",
+        "value": {
+          "venue": "Tampereen stadion (Ratina)",
+          "city": "Tampere, Finland",
+          "wgs84": {
+            "lat": 61.4927571,
+            "lon": 23.7641299
+          },
+          "also_used": "old Tammelan Stadion (listed tenant)"
+        },
+        "status": "ready",
+        "source_name": "en.wikipedia + OpenStreetMap Nominatim",
+        "source_url": "https://en.wikipedia.org/wiki/2005_Veikkausliiga",
+        "final_url": "https://en.wikipedia.org/wiki/2005_Veikkausliiga",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "stadium table row: 'Tampere United | Tampere | Ratina Stadion'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Coords from Nominatim 'Ratinan stadion Tampere' (osm way 38030947, name 'Tampereen stadion', Ratinanranta, Ratina)."
+      },
+      {
+        "stable_key": "veikkausliiga|club|TP-Seinäjoki",
+        "field_name": "venue_wgs84_coordinates",
+        "value": {
+          "venue": "Seinäjoen keskuskenttä",
+          "city": "Seinäjoki, Finland",
+          "wgs84": {
+            "lat": 62.7823829,
+            "lon": 22.851556
+          }
+        },
+        "status": "ready",
+        "source_name": "OpenStreetMap Nominatim",
+        "source_url": "https://nominatim.openstreetmap.org/search?format=json&q=Sein%C3%A4joen+keskuskentt%C3%A4+Sein%C3%A4joki&limit=1",
+        "final_url": "https://nominatim.openstreetmap.org/search?format=json&q=Sein%C3%A4joen+keskuskentt%C3%A4+Sein%C3%A4joki&limit=1",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "osm way 151203859 'Seinäjoen keskuskenttä', Urheilupuisto, Seinäjoki",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Note: TP-Seinäjoki senior football merged into SJK in 2007; SJK now plays at OmaSP Stadion (different entity/venue)."
+      },
+      {
+        "stable_key": "veikkausliiga|*|all",
+        "field_name": "official_round",
+        "value": null,
+        "status": "blocked",
+        "source_name": "ai-data-bus internal",
+        "source_url": "requests/req-20261004-003.json",
+        "final_url": "requests/req-20261004-003.json",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "row delegated: 'broad_manifest_row_delegated_to_focused_schedule_request'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Delegated to the focused official-schedule request req-20261004-003, which is the authoritative task for official_round per the manifest."
+      },
+      {
+        "stable_key": "veikkausliiga|*|all",
+        "field_name": "meeting_number",
+        "value": null,
+        "status": "blocked",
+        "source_name": "ai-data-bus internal",
+        "source_url": "requests/req-20261004-003.json",
+        "final_url": "requests/req-20261004-003.json",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "row delegated: 'broad_manifest_row_delegated_to_focused_schedule_request'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Delegated to req-20261004-003; per request instruction meeting_number must never be inferred from date/order."
+      },
+      {
+        "stable_key": "veikkausliiga|*|all",
+        "field_name": "home_standing",
+        "value": null,
+        "status": "unavailable",
+        "source_name": "source survey 2026-10-04",
+        "source_url": "n/a",
+        "final_url": "n/a",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "no public source found providing explicitly dated pre-kickoff standings snapshots",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Per request instruction, standings must only come from a source explicitly dated before the fixture; reconstructing from final tables or inferring from match order is prohibited. No such source located in public sources this round; Veikkausliiga official match-centre archives remain a candidate for the 003 follow-up."
+      },
+      {
+        "stable_key": "veikkausliiga|*|all",
+        "field_name": "away_standing",
+        "value": null,
+        "status": "unavailable",
+        "source_name": "source survey 2026-10-04",
+        "source_url": "n/a",
+        "final_url": "n/a",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "no public source found providing explicitly dated pre-kickoff standings snapshots",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Same as home_standing."
+      },
+      {
+        "stable_key": "veikkausliiga|*|all",
+        "field_name": "venue_by_season",
+        "value": {
+          "source_candidates": [
+            {
+              "source": "fi.wikipedia 'Luettelo Veikkausliigakentistä'",
+              "url": "https://fi.wikipedia.org/wiki/Luettelo_Veikkausliigakentist%C3%A4",
+              "covers": "dated first-use per ground, e.g. 'Hämeenlinna: Kauriala (15.5.2002 FC Hämeenlinna-Inter)'"
+            },
+            {
+              "source": "fi.wikipedia season tables 1990/1991/1993",
+              "urls": [
+                "https://fi.wikipedia.org/wiki/Futisliigan_kausi_1990",
+                "https://fi.wikipedia.org/wiki/Futisliigan_kausi_1991",
+                "https://fi.wikipedia.org/wiki/Veikkausliigan_kausi_1993"
+              ],
+              "covers": "per-club home ground for those seasons"
+            },
+            {
+              "source": "WorldFootball.net club-season pages",
+              "covers": "venue field per season (not verified this round)"
+            }
+          ]
+        },
+        "status": "partial",
+        "source_name": "source survey 2026-10-04",
+        "source_url": "https://fi.wikipedia.org/wiki/Luettelo_Veikkausliigakentist%C3%A4",
+        "final_url": "https://fi.wikipedia.org/wiki/Luettelo_Veikkausliigakentist%C3%A4",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "grounds list with first-use dates per city",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "A full season×club venue matrix was not built this round; candidates above are the starting points."
+      },
+      {
+        "stable_key": "veikkausliiga|club|TP-Seinajoki",
+        "field_name": "founded_year",
+        "value": {
+          "founded": 1955,
+          "original_name": "Törnävän Pallo-55 (TP-55)",
+          "renamed": "TP-Seinäjoki in 1994",
+          "official_confirmation": "pending (Palloliitto/club source not located this round)"
+        },
+        "status": "partial",
+        "source_name": "en.wikipedia + playmakerstats + statarea",
+        "source_url": "https://en.wikipedia.org/wiki/TP-Sein%C3%A4joki",
+        "final_url": "https://en.wikipedia.org/wiki/TP-Sein%C3%A4joki",
+        "retrieved_at": "2026-10-04T09:37:20Z",
+        "field_locator": "article: 'It was established in 1955 as Törnävän Pallo-55 (TP-55). The name was changed in 1994.'",
+        "source_sha256": null,
+        "validity_start": null,
+        "validity_end": null,
+        "conflict_group_id": null,
+        "note": "Corroborated by playmakerstats SJK timeline ('TP-Seinäjoki Established in 1955') and statarea ('found 1955'). Still secondary-only; official/federation confirmation required before status=ready."
+      }
+    ],
+    "audit": {
+      "expected": 21,
+      "discovered": 21,
+      "complete": 18,
+      "partial": 3,
+      "missing": 0
+    },
+    "unresolved_queue": [
+      {
+        "stable_key": "veikkausliiga|club|Ponnistus",
+        "field": "venue_wgs84_coordinates",
+        "reason": "multi-way venue conflict (Haapaniemen Kenttä vs Brahen kenttä vs Velodrom); no coordinate record for Haapaniemen Kenttä, Helsinki",
+        "next": "check Helsinki city sports-facility registry / Palloliitto Tulospalvelu for Ponnistus home ground; geocode Brahen kenttä as fallback candidate"
+      },
+      {
+        "stable_key": "veikkausliiga|club|TPV",
+        "field": "venue_wgs84_coordinates",
+        "reason": "Kauppi 3 coordinates not yet geocoded; 2021-2024 interim venue (during Tammela rebuild) unverified",
+        "next": "geocode Kuntokatu 5, 33520 Tampere; check TPV season pages 2021-2024 for interim home ground"
+      },
+      {
+        "stable_key": "veikkausliiga|*|all",
+        "field": "venue_by_season",
+        "reason": "full season×club matrix not built; only source candidates listed",
+        "next": "build matrix from fi.wikipedia season tables + Luettelo Veikkausliigakentistä first-use dates, cross-check WorldFootball.net"
+      },
+      {
+        "stable_key": "veikkausliiga|club|TP-Seinajoki",
+        "field": "founded_year",
+        "reason": "secondary sources only; official/federation confirmation pending",
+        "next": "check Palloliitto club registry / SJK history page for TP-Seinäjoki founding record"
+      }
+    ]
+  }
 }
