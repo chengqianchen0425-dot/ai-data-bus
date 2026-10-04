@@ -1,8 +1,158 @@
 {
   "id": "req-20261004-003",
-  "status": "processing",
+  "status": "ok",
   "from": "muse",
   "request_sha": "dd795bba91757439",
-  "updated_at": "2026-10-04T09:39:06Z",
-  "note": "Progress 09:45Z. Expected fixture counts established (format basis, 2020 COVID season to be re-verified): 2019=162 (22+5 rounds x6), 2020=96 (11+5 x6), 2021=162, 2022=162, 2023=162, 2024=162, 2025=162, 2026=162 scheduled (~150 played as of 2026-10-04; regular season ended 2026-08-31, championship/relegation series from 2026-09-08, season ends 2026-11-08). Total expected at completion: 1230. Extraction pilot: WorldFootball round-grouped pages ARE text-fetchable (e.g. fin-veikkausliiga-2024-championship shows '5. Round' headers) but text-layer capture is lossy (only last round table returned) – full ~1230-row extraction needs true-browser task(s), recommended next: one browser task per season on WorldFootball + official veikkausliiga.com schedule cross-check for official_round (Kierros) labelling. meeting_number: no official source defines first/second meeting semantics (004 audit) – will be returned NULL/unavailable, never inferred. Next round: continue extraction; heartbeat maintained."
+  "dp_used": false,
+  "updated_at": "2026-10-04T10:43:21Z",
+  "data": {
+    "report": "# req-20261004-003 交付报告：Veikkausliiga 2019–2026 official_round 与 meeting_number 源补充\n\n## 1. 核心结论（Q1：official_round 官方源已确认）\n\n官方源 = **veikkausliiga.com（联赛官网）赛程公告中的 `KIERROS` 列**。2026 赛季官方公告（2025-12-19 发布）全文抓取验证：每场比赛官方标注一个 KIERROS（轮次）编号。\n\n**轮次语义（官方证据确立）：**\n- 连续编号：常规赛 Kierros 1–22，延续系列赛（jatkosarjat）Kierros 23–32，编号跨阶段连续。\n- 延续系列赛分 Mestaruussarja（MS，冠军组，前 6 名双循环 10 轮）与 Karsintasarja（KS，保级组，7–12 名单循环 5 轮），两组共享同一套轮次编号（KS 于第 27 轮结束，MS 到第 32 轮）。\n- **轮次 ≠ 时间顺序**：标注 `(siirretty)`（延期/改期）的比赛保留原轮次号（如 Kierros 14 的 KuPS–AC Oulu 于 4.4 轮次周之外、4.22 补赛，仍记为第 14 轮）。下游摄入时不得按日期推断轮次。\n\n**赛制变更（影响场次总数，证据确立）：**\n- 2025 赛季起冠军组改为双循环：HJK 官网确认\"上半区球队 2025 联赛场次 32 场（比 2024 多 5 场）\"，故 **2025 = 177 场**（132 + 冠军组 30 + 保级组 15）。\n- 2026 同赛制，官方公告确认 1–22 常规赛 + 23–32 延续系列赛，**2026 = 177 场**（已赛约 150，常规赛 8.31 结束，延续系列赛 9.8 起）。\n- 2019–2024 为 22+5 单循环延续系列赛 = **162 场/季**（2023 经 fi.wikipedia 赛季页验证：12 队各赛 27 场；2024 经上一轮试点验证）；**2020 疫情季 96 场**（11+5 轮×6，待逐场提取时复核）。\n- 修正后 8 季理论总数：**1260 场**（162×5 + 96 + 177×2）。\n\n## 2. meeting_number（Q2）\n\n**NULL / unavailable**。req-20261004-004 源映射审计已确认：联赛官网、足协 Tulospalvelu、俱乐部渠道均无\"第几次交锋 / first-second meeting\"语义定义。按请求规则绝不从日期、CSV 行序、主客队顺序或积分榜推断。三行样例全部记 NULL。\n\n## 3. fixture_key 构造规则\n\n`veikkausliiga-{season}-k{round:02d}-{home-slug}-vs-{away-slug}`（slug = 队名小写去空格/特殊字符），纯确定性标识，非事实断言。\n\n## 4. 样例行（checklist 2 行 + 1 证据行）\n\n见 data.rows。Row1：第 1 轮 FC Inter–VPS（2026-04-04 13:00）；Row2：第 22 轮 Ilves–HJK（2026-08-31 19:00）；Row3（证据行）：(siirretty) 第 14 轮 KuPS–AC Oulu（2026-04-22 18:00 补赛，保留轮次号 14）。开球时间为 Europe/Helsinki 当地时间。\n\n## 5. 审计（Q4）\n\n- checklist：2 expected / 2 discovered / 2 complete / 0 partial / 0 missing。\n- 场次清单：1260 expected / 132 discovered（2026 常规赛 1–22 轮官方全表已捕获）/ 2 complete（样例行全字段）/ 130 partial（在捕获表中，未逐行输出）/ 1128 missing（2019–2025 共 1083 场 + 2026 延续系列赛 23–32 轮 45 场——官方公告仅给了延续系列赛基准日，无对阵）。\n- 交叉核验：WorldFootball round-grouped 页面（上一轮试点：'5. Round' 等分组标题文本层可见）可作交叉源；fi.wikipedia 赛季页（2023/2024/2025）可作赛制验证。\n- 收尾复查：①已抓完——checklist 2 行完成，官方轮次语义+赛制变更证据闭环；②抓得怎么样——官方源 URL、抓取时间、文本哈希均已记录；③有没有抓少——用 fi.wikipedia 赛季页（2023/2025）与 hjk.fi 交叉验证了赛制与场次总数，无新增遗漏。\n\n## 6. 交接说明\n\n本轮为第 2 轮（第 1 轮完成试点+场次总数确立，有实质进展；本轮完成源补充闭环）。剩余 1128 场行级提取需真浏览器任务（WorldFootball 分轮页面 + 各赛季官方赛程公告），hook worker 无 browser.spawn_task 能力，已记入 unresolved_queue 待主代理真浏览器。不属于空转。\n",
+    "rows": [
+      {
+        "competition_key": "veikkausliiga",
+        "season": "2026",
+        "fixture_key": "veikkausliiga-2026-k01-fc-inter-vs-vps",
+        "date": "2026-04-04",
+        "kickoff": "13:00",
+        "kickoff_timezone": "Europe/Helsinki",
+        "home_team": "FC Inter",
+        "away_team": "VPS",
+        "official_round": 1,
+        "meeting_number": null,
+        "meeting_number_note": "unavailable — no official/federation/club source defines first/second meeting semantics (audit req-20261004-004); never inferred per request rule",
+        "status": "ready",
+        "source_name": "veikkausliiga.com (official league site)",
+        "source_url": "https://www.veikkausliiga.com/uutiset/2025/12/19/veikkausliigan-runkosarjan-2026-otteluohjelma-julkaistaan-ennatyksellisen-varhain-avauspaiva-44-aivan-taynna-otteluita",
+        "final_url": "https://www.veikkausliiga.com/uutiset/2025/12/19/veikkausliigan-runkosarjan-2026-otteluohjelma-julkaistaan-ennatyksellisen-varhain-avauspaiva-44-aivan-taynna-otteluita",
+        "retrieved_at": "2026-10-04T10:43:21Z",
+        "field_locator": "article body table, header 'KIERROS | PV | PVM | KLO | KOTI | VIERAS', round-1 block, first row",
+        "source_sha256": "aeff766ea4a84471",
+        "conflict_group_id": null,
+        "row_note": "checklist row 1: season opener, official round 1"
+      },
+      {
+        "competition_key": "veikkausliiga",
+        "season": "2026",
+        "fixture_key": "veikkausliiga-2026-k22-ilves-vs-hjk",
+        "date": "2026-08-31",
+        "kickoff": "19:00",
+        "kickoff_timezone": "Europe/Helsinki",
+        "home_team": "Ilves",
+        "away_team": "HJK",
+        "official_round": 22,
+        "meeting_number": null,
+        "meeting_number_note": "unavailable — no official/federation/club source defines first/second meeting semantics (audit req-20261004-004); never inferred per request rule",
+        "status": "ready",
+        "source_name": "veikkausliiga.com (official league site)",
+        "source_url": "https://www.veikkausliiga.com/uutiset/2025/12/19/veikkausliigan-runkosarjan-2026-otteluohjelma-julkaistaan-ennatyksellisen-varhain-avauspaiva-44-aivan-taynna-otteluita",
+        "final_url": "https://www.veikkausliiga.com/uutiset/2025/12/19/veikkausliigan-runkosarjan-2026-otteluohjelma-julkaistaan-ennatyksellisen-varhain-avauspaiva-44-aivan-taynna-otteluita",
+        "retrieved_at": "2026-10-04T10:43:21Z",
+        "field_locator": "article body table, round-22 block, row 6 of 6",
+        "source_sha256": "aeff766ea4a84471",
+        "conflict_group_id": null,
+        "row_note": "checklist row 2: last regular-season round"
+      },
+      {
+        "competition_key": "veikkausliiga",
+        "season": "2026",
+        "fixture_key": "veikkausliiga-2026-k14-kups-vs-ac-oulu",
+        "date": "2026-04-22",
+        "kickoff": "18:00",
+        "kickoff_timezone": "Europe/Helsinki",
+        "home_team": "KuPS",
+        "away_team": "AC Oulu",
+        "official_round": 14,
+        "meeting_number": null,
+        "meeting_number_note": "unavailable — no official/federation/club source defines first/second meeting semantics (audit req-20261004-004); never inferred per request rule",
+        "status": "ready",
+        "source_name": "veikkausliiga.com (official league site)",
+        "source_url": "https://www.veikkausliiga.com/uutiset/2025/12/19/veikkausliigan-runkosarjan-2026-otteluohjelma-julkaistaan-ennatyksellisen-varhain-avauspaiva-44-aivan-taynna-otteluita",
+        "final_url": "https://www.veikkausliiga.com/uutiset/2025/12/19/veikkausliigan-runkosarjan-2026-otteluohjelma-julkaistaan-ennatyksellisen-varhain-avauspaiva-44-aivan-taynna-otteluita",
+        "retrieved_at": "2026-10-04T10:43:21Z",
+        "field_locator": "article body table, row labeled '(siirretty) 14' between round-3 and round-4 blocks",
+        "source_sha256": "aeff766ea4a84471",
+        "conflict_group_id": null,
+        "row_note": "evidence row: moved match (siirretty) retains official round number 14 despite being played out of chronological order — round must not be inferred from date"
+      }
+    ],
+    "record_count": 3,
+    "audit": {
+      "checklist": {
+        "expected": 2,
+        "discovered": 2,
+        "complete": 2,
+        "partial": 0,
+        "missing": 0
+      },
+      "fixture_inventory": {
+        "2019": {
+          "expected": 162,
+          "basis": "prior round; 22+5 single-RR continuation format"
+        },
+        "2020": {
+          "expected": 96,
+          "basis": "prior round; COVID season, TO BE RE-VERIFIED during extraction"
+        },
+        "2021": {
+          "expected": 162,
+          "basis": "prior round; 22+5 format"
+        },
+        "2022": {
+          "expected": 162,
+          "basis": "prior round; 22+5 format"
+        },
+        "2023": {
+          "expected": 162,
+          "basis": "fi.wikipedia 2023 season page: all 12 teams played 27 matches"
+        },
+        "2024": {
+          "expected": 162,
+          "basis": "prior-round pilot; fi.wikipedia 2024 season page"
+        },
+        "2025": {
+          "expected": 177,
+          "basis": "format change verified: hjk.fi official — upper-series teams play 32 matches in 2025 (5 more than 2024); 132+30+15"
+        },
+        "2026": {
+          "expected": 177,
+          "basis": "official veikkausliiga.com 2026 schedule article: rounds 1-22 regular + 23-32 continuation (MS double RR, KS single RR)"
+        },
+        "total_expected": 1260,
+        "discovered": 132,
+        "discovered_basis": "full 2026 regular-season KIERROS table (rounds 1-22) captured from official veikkausliiga.com article (text layer)",
+        "complete": 2,
+        "partial": 130,
+        "partial_basis": "inside the captured official table; not individually emitted as evidence rows",
+        "missing": 1128,
+        "missing_basis": "2019-2025: 1083 fixtures; 2026 continuation series rounds 23-32: 45 fixtures (official article gave only base days, no pairings)"
+      }
+    },
+    "unresolved_queue": [
+      {
+        "id": "UQ-01",
+        "item": "2019–2025 逐场 official_round 行级提取（1083 场）+ 2026 延续系列赛第 23–32 轮（45 场）",
+        "reason": "官方轮次语义已确认（KIERROS 连续编号；(siirretty) 比赛保留原轮次号，轮次不得按日期推断）。逐场抓取需真浏览器：WorldFootball round-grouped 页面（上一轮试点文本层可见分组标题）交叉核验 + veikkausliiga.com 各赛季官方赛程公告。hook worker 无 browser.spawn_task 能力。",
+        "status": "待主代理真浏览器",
+        "suggested_next": "主代理按赛季派 browser 任务（每赛季 1 个），WorldFootball 分轮页 + 官方公告双源"
+      },
+      {
+        "id": "UQ-02",
+        "item": "meeting_number 全赛季",
+        "reason": "联赛官网、足协 Tulospalvelu、俱乐部渠道均无 first/second meeting 语义定义（004 源映射审计）。按请求规则保持 NULL，绝不推断。",
+        "status": "unavailable"
+      },
+      {
+        "id": "UQ-03",
+        "item": "2020 疫情季场次总数 96（11+5 轮×6）复核",
+        "reason": "上一轮试点确立，待逐场提取时以官方赛程复核。",
+        "status": "pending"
+      },
+      {
+        "id": "UQ-04",
+        "item": "API-Football 结构化补洞",
+        "reason": "004 审计：无 key 被 blocked；若后续配 key，可加速 fixture/round/kickoff 结构化补缺。",
+        "status": "blocked"
+      }
+    ]
+  }
 }
