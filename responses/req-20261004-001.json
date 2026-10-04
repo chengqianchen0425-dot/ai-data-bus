@@ -1,1 +1,1349 @@
-{"dp_used":false,"from":"muse","id":"req-20261004-001","note":"研究进行中：股票 SNDK/RKLB/AAOI/000660.KS 日线 OHLCV + 窗口内已结束足球比赛结果（2026-09-26→2026-10-03 BJT）。正在分步采集。","request_sha":"632ef178b8794dc8","status":"processing"}
+{
+ "id": "req-20261004-001",
+ "status": "ok",
+ "from": "muse",
+ "dp_used": false,
+ "request_sha": "632ef178b8794dc8",
+ "retrieved_at": "2026-10-04T12:35:00+08:00",
+ "data": {
+  "report": "# weekly-review-20260926 联网复盘证据报告（Muse 抓取）\n\n## 1. 股票（交易日 2026-09-28 → 2026-10-02）\n4 个标的 × 5 个交易日的日线 OHLCV 全部返回（SNDK、RKLB、AAOI、000660.KS），见 `stock_evidence`。均为 regular-session 日线；premarket/after-hours 拆分各源均不可得，记 blocked。日内 1m/5m 分时数据记 blocked（Yahoo Finance chart API 域名 `query1.finance.yahoo.com` 被抓取策略拦截；finance vertical 仅提供日线）。\n\n## 2. 足球（窗口：北京时间 2026-09-26 00:00 → 2026-10-03 00:00）\n窗口落在欧洲国际比赛周（国内联赛休赛；欧战联赛阶段 MD1 在 2026-09-08~10 已踢，MD2 约在 10 月中，如 Man City-PSG 定于 10 月 14 日）。窗口内已确认完赛：\n- MLS 2026-09-26：13 场，90 分钟比分 + FTR 全部返回（见 `football_evidence`）\n- 中北美国家联赛 2026-09-26（VAVEL 同页）：Sint Maarten 0-1 Belize、Antigua & Barbuda 5-0 Anguilla、St. Vincent & Grenadines 2-1 French Guiana（非白名单赛事，仅列明出处未建行）\n- UEFA Nations League 2026-09-27：England 2-3 Spain（见 bundesliga.com roundup；San Marino 0-7 Finland 见 VAVEL）\nJ1 与 Veikkausliiga 在窗口内无完赛场次（J1 官方表止于 9 月 20 日；芬超 9 月 18-19 后下一轮 10 月 7 日）。\n重要说明：本地 Snapshot 批次在用户电脑（D:\\奇门斗数），stable_key 精确匹配必须由 Codex 下游完成——本轮返回的是窗口全量结果池 + 逐行出处，`stable_key` 为描述性键；若本地无足球 case，对应 `source_check` + `zero_match_reason` 见 unresolved_queue 第 2 条。\n未按请求返回：赔率 opening/closing、Qimen 字段、任何模型判断/结论（按 no_prediction_or_model_fields 执行）。\n",
+  "stock_evidence": [
+   {
+    "stable_key": "SNDK daily 2026-09-28 (descriptive; local case key not available)",
+    "ticker": "SNDK",
+    "company": "Sandisk Corp",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-09-28",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 1736.64,
+      "status": "ok"
+     },
+     "high": {
+      "value": 1762.0,
+      "status": "ok"
+     },
+     "low": {
+      "value": 1659.02,
+      "status": "ok"
+     },
+     "close": {
+      "value": 1712.89,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 6662150,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "finnhub candle",
+    "source_url": "https://finnhub.io/?q=%22SNDK%22",
+    "final_url": "https://finnhub.io/?q=%22SNDK%22",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "b4c383cfa336acd1"
+   },
+   {
+    "stable_key": "SNDK daily 2026-09-29 (descriptive; local case key not available)",
+    "ticker": "SNDK",
+    "company": "Sandisk Corp",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-09-29",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 1744.07,
+      "status": "ok"
+     },
+     "high": {
+      "value": 1749.78,
+      "status": "ok"
+     },
+     "low": {
+      "value": 1693.0,
+      "status": "ok"
+     },
+     "close": {
+      "value": 1729.76,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 5962973,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "finnhub candle",
+    "source_url": "https://finnhub.io/?q=%22SNDK%22",
+    "final_url": "https://finnhub.io/?q=%22SNDK%22",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "791535643aa68556"
+   },
+   {
+    "stable_key": "SNDK daily 2026-09-30 (descriptive; local case key not available)",
+    "ticker": "SNDK",
+    "company": "Sandisk Corp",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-09-30",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 1729.78,
+      "status": "ok"
+     },
+     "high": {
+      "value": 1756.0,
+      "status": "ok"
+     },
+     "low": {
+      "value": 1720.71,
+      "status": "ok"
+     },
+     "close": {
+      "value": 1739.89,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 6052425,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "finnhub candle",
+    "source_url": "https://finnhub.io/?q=%22SNDK%22",
+    "final_url": "https://finnhub.io/?q=%22SNDK%22",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "29a8154eca5ea9bb"
+   },
+   {
+    "stable_key": "SNDK daily 2026-10-01 (descriptive; local case key not available)",
+    "ticker": "SNDK",
+    "company": "Sandisk Corp",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-10-01",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 1735.26,
+      "status": "ok"
+     },
+     "high": {
+      "value": 1802.0,
+      "status": "ok"
+     },
+     "low": {
+      "value": 1708.0,
+      "status": "ok"
+     },
+     "close": {
+      "value": 1787.69,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 9218050,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "finnhub candle",
+    "source_url": "https://finnhub.io/?q=%22SNDK%22",
+    "final_url": "https://finnhub.io/?q=%22SNDK%22",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "651bd2e05ad42005"
+   },
+   {
+    "stable_key": "RKLB daily 2026-09-28 (descriptive; local case key not available)",
+    "ticker": "RKLB",
+    "company": "Rocket Lab Corp",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-09-28",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 73.2,
+      "status": "ok"
+     },
+     "high": {
+      "value": 73.78,
+      "status": "ok"
+     },
+     "low": {
+      "value": 71.68,
+      "status": "ok"
+     },
+     "close": {
+      "value": 72.19,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 14993218,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "marketminute historical",
+    "source_url": "https://lodinews.marketminute.com/quote/NQ:RKLB/historical",
+    "final_url": "https://lodinews.marketminute.com/quote/NQ:RKLB/historical",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "ac67a1f92f48aea9"
+   },
+   {
+    "stable_key": "RKLB daily 2026-09-29 (descriptive; local case key not available)",
+    "ticker": "RKLB",
+    "company": "Rocket Lab Corp",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-09-29",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 73.47,
+      "status": "ok"
+     },
+     "high": {
+      "value": 74.25,
+      "status": "ok"
+     },
+     "low": {
+      "value": 69.4,
+      "status": "ok"
+     },
+     "close": {
+      "value": 69.7,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 19650334,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "marketminute historical",
+    "source_url": "https://lodinews.marketminute.com/quote/NQ:RKLB/historical",
+    "final_url": "https://lodinews.marketminute.com/quote/NQ:RKLB/historical",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "5b299286820bfccf"
+   },
+   {
+    "stable_key": "RKLB daily 2026-09-30 (descriptive; local case key not available)",
+    "ticker": "RKLB",
+    "company": "Rocket Lab Corp",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-09-30",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 70.64,
+      "status": "ok"
+     },
+     "high": {
+      "value": 74.58,
+      "status": "ok"
+     },
+     "low": {
+      "value": 69.63,
+      "status": "ok"
+     },
+     "close": {
+      "value": 69.68,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 22110212,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "marketminute historical",
+    "source_url": "https://lodinews.marketminute.com/quote/NQ:RKLB/historical",
+    "final_url": "https://lodinews.marketminute.com/quote/NQ:RKLB/historical",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "a826305a87500d63"
+   },
+   {
+    "stable_key": "RKLB daily 2026-10-01 (descriptive; local case key not available)",
+    "ticker": "RKLB",
+    "company": "Rocket Lab Corp",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-10-01",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 72.31,
+      "status": "ok"
+     },
+     "high": {
+      "value": 72.64,
+      "status": "ok"
+     },
+     "low": {
+      "value": 69.42,
+      "status": "ok"
+     },
+     "close": {
+      "value": 70.46,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 23262076,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "marketminute historical; finnhub candle volume 23312580 differs (conflict_queue)",
+    "source_url": "https://lodinews.marketminute.com/quote/NQ:RKLB/historical",
+    "final_url": "https://lodinews.marketminute.com/quote/NQ:RKLB/historical",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "f144f452fe220326"
+   },
+   {
+    "stable_key": "RKLB daily 2026-10-02 (descriptive; local case key not available)",
+    "ticker": "RKLB",
+    "company": "Rocket Lab Corp",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-10-02",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 72.085,
+      "status": "ok"
+     },
+     "high": {
+      "value": 76.0899,
+      "status": "ok"
+     },
+     "low": {
+      "value": 71.45,
+      "status": "ok"
+     },
+     "close": {
+      "value": 73.92,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 26839311,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "marketminute historical; OHLC cross-checked vs finnhub live quote (O 72.085 H 76.0899 L 71.45 C 73.92)",
+    "source_url": "https://lodinews.marketminute.com/quote/NQ:RKLB/historical",
+    "final_url": "https://lodinews.marketminute.com/quote/NQ:RKLB/historical",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "9df0b0c8e47574db"
+   },
+   {
+    "stable_key": "AAOI daily 2026-09-28 (descriptive; local case key not available)",
+    "ticker": "AAOI",
+    "company": "Applied Optoelectronics Inc",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-09-28",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 100.09,
+      "status": "ok"
+     },
+     "high": {
+      "value": 102.43,
+      "status": "ok"
+     },
+     "low": {
+      "value": 93.62,
+      "status": "ok"
+     },
+     "close": {
+      "value": 96.82,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 8195644,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "finnhub candle",
+    "source_url": "https://finnhub.io/?q=%22AAOI%22",
+    "final_url": "https://finnhub.io/?q=%22AAOI%22",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "6cb57c8d973765f2"
+   },
+   {
+    "stable_key": "AAOI daily 2026-09-29 (descriptive; local case key not available)",
+    "ticker": "AAOI",
+    "company": "Applied Optoelectronics Inc",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-09-29",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 98.77,
+      "status": "ok"
+     },
+     "high": {
+      "value": 103.83,
+      "status": "ok"
+     },
+     "low": {
+      "value": 97.43,
+      "status": "ok"
+     },
+     "close": {
+      "value": 100.67,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 7288123,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "finnhub candle",
+    "source_url": "https://finnhub.io/?q=%22AAOI%22",
+    "final_url": "https://finnhub.io/?q=%22AAOI%22",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "70285793cfcd3261"
+   },
+   {
+    "stable_key": "AAOI daily 2026-09-30 (descriptive; local case key not available)",
+    "ticker": "AAOI",
+    "company": "Applied Optoelectronics Inc",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-09-30",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 101.9,
+      "status": "ok"
+     },
+     "high": {
+      "value": 104.25,
+      "status": "ok"
+     },
+     "low": {
+      "value": 96.41,
+      "status": "ok"
+     },
+     "close": {
+      "value": 99.26,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 5827340,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "finnhub candle",
+    "source_url": "https://finnhub.io/?q=%22AAOI%22",
+    "final_url": "https://finnhub.io/?q=%22AAOI%22",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "7ffcaa78ef2d8fd8"
+   },
+   {
+    "stable_key": "AAOI daily 2026-10-01 (descriptive; local case key not available)",
+    "ticker": "AAOI",
+    "company": "Applied Optoelectronics Inc",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-10-01",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 99.67,
+      "status": "ok"
+     },
+     "high": {
+      "value": 108.28,
+      "status": "ok"
+     },
+     "low": {
+      "value": 97.77,
+      "status": "ok"
+     },
+     "close": {
+      "value": 107.32,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 11307717,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "finnhub candle",
+    "source_url": "https://finnhub.io/?q=%22AAOI%22",
+    "final_url": "https://finnhub.io/?q=%22AAOI%22",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "128aac731df268cb"
+   },
+   {
+    "stable_key": "AAOI daily 2026-10-02 (descriptive; local case key not available)",
+    "ticker": "AAOI",
+    "company": "Applied Optoelectronics Inc",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-10-02",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 110.25,
+      "status": "ok"
+     },
+     "high": {
+      "value": 117.7,
+      "status": "ok"
+     },
+     "low": {
+      "value": 106.32,
+      "status": "ok"
+     },
+     "close": {
+      "value": 115.59,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 11067000,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; premarket breakdown not available from used sources"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only; after-hours breakdown not available from used sources"
+     }
+    },
+    "volume_note": "finnhub live quote OHLC; volume 11067148 (danelfin) / 11066100 (stockwatch) agree",
+    "source_url": "https://finnhub.io/?q=%22AAOI%22",
+    "final_url": "https://finnhub.io/?q=%22AAOI%22",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume",
+    "source_sha256": "6cd893d1a3255e8a"
+   },
+   {
+    "stable_key": "000660.KS daily 2026-09-28 (descriptive; local case key not available)",
+    "ticker": "000660.KS",
+    "company": "SK hynix Inc",
+    "exchange": "XKRX",
+    "currency": "KRW",
+    "exchange_tz": "Asia/Seoul (KST, UTC+9)",
+    "trading_day": "2026-09-28",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 1830000,
+      "status": "ok"
+     },
+     "high": {
+      "value": 1840000,
+      "status": "ok"
+     },
+     "low": {
+      "value": 1770000,
+      "status": "ok"
+     },
+     "close": {
+      "value": 1770000,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 3450000,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "KRX has no premarket session; regular-session daily candle only"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "KRX has no after-hours session; regular-session daily candle only"
+     }
+    },
+    "volume_note": "stoculator rounded to 0.01M KRW",
+    "source_url": "https://stoculator.com/stock/000660.KS/historical",
+    "final_url": "https://stoculator.com/stock/000660.KS/historical",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume (rounded rows flagged)",
+    "source_sha256": "e18d8d2ef299e5a5"
+   },
+   {
+    "stable_key": "000660.KS daily 2026-09-29 (descriptive; local case key not available)",
+    "ticker": "000660.KS",
+    "company": "SK hynix Inc",
+    "exchange": "XKRX",
+    "currency": "KRW",
+    "exchange_tz": "Asia/Seoul (KST, UTC+9)",
+    "trading_day": "2026-09-29",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 1760000,
+      "status": "ok"
+     },
+     "high": {
+      "value": 1790000,
+      "status": "ok"
+     },
+     "low": {
+      "value": 1740000,
+      "status": "ok"
+     },
+     "close": {
+      "value": 1770000,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 3120000,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "KRX has no premarket session; regular-session daily candle only"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "KRX has no after-hours session; regular-session daily candle only"
+     }
+    },
+    "volume_note": "stoculator rounded to 0.01M KRW",
+    "source_url": "https://stoculator.com/stock/000660.KS/historical",
+    "final_url": "https://stoculator.com/stock/000660.KS/historical",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume (rounded rows flagged)",
+    "source_sha256": "053de431578e39ff"
+   },
+   {
+    "stable_key": "000660.KS daily 2026-09-30 (descriptive; local case key not available)",
+    "ticker": "000660.KS",
+    "company": "SK hynix Inc",
+    "exchange": "XKRX",
+    "currency": "KRW",
+    "exchange_tz": "Asia/Seoul (KST, UTC+9)",
+    "trading_day": "2026-09-30",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 1790000,
+      "status": "ok"
+     },
+     "high": {
+      "value": 1820000,
+      "status": "ok"
+     },
+     "low": {
+      "value": 1770000,
+      "status": "ok"
+     },
+     "close": {
+      "value": 1780000,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 3350000,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "KRX has no premarket session; regular-session daily candle only"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "KRX has no after-hours session; regular-session daily candle only"
+     }
+    },
+    "volume_note": "stoculator rounded to 0.01M KRW",
+    "source_url": "https://stoculator.com/stock/000660.KS/historical",
+    "final_url": "https://stoculator.com/stock/000660.KS/historical",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume (rounded rows flagged)",
+    "source_sha256": "1230856aca5e28d9"
+   },
+   {
+    "stable_key": "000660.KS daily 2026-10-01 (descriptive; local case key not available)",
+    "ticker": "000660.KS",
+    "company": "SK hynix Inc",
+    "exchange": "XKRX",
+    "currency": "KRW",
+    "exchange_tz": "Asia/Seoul (KST, UTC+9)",
+    "trading_day": "2026-10-01",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 1760000,
+      "status": "ok"
+     },
+     "high": {
+      "value": 1830000,
+      "status": "ok"
+     },
+     "low": {
+      "value": 1750000,
+      "status": "ok"
+     },
+     "close": {
+      "value": 1830000,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 2260000,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "KRX has no premarket session; regular-session daily candle only"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "KRX has no after-hours session; regular-session daily candle only"
+     }
+    },
+    "volume_note": "stoculator rounded to 0.01M KRW",
+    "source_url": "https://stoculator.com/stock/000660.KS/historical",
+    "final_url": "https://stoculator.com/stock/000660.KS/historical",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume (rounded rows flagged)",
+    "source_sha256": "7b51b401414f193d"
+   },
+   {
+    "stable_key": "000660.KS daily 2026-10-02 (descriptive; local case key not available)",
+    "ticker": "000660.KS",
+    "company": "SK hynix Inc",
+    "exchange": "XKRX",
+    "currency": "KRW",
+    "exchange_tz": "Asia/Seoul (KST, UTC+9)",
+    "trading_day": "2026-10-02",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 1830000,
+      "status": "ok"
+     },
+     "high": {
+      "value": 1855000,
+      "status": "ok"
+     },
+     "low": {
+      "value": 1825000,
+      "status": "ok"
+     },
+     "close": {
+      "value": 1841000,
+      "status": "ok"
+     },
+     "volume": {
+      "value": 2000000,
+      "status": "ok"
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "KRX has no premarket session; regular-session daily candle only"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "KRX has no after-hours session; regular-session daily candle only"
+     }
+    },
+    "volume_note": "finnhub live quote (precise); stoculator rounds O 1.83M H 1.86M L 1.83M C 1.84M V 2.07M consistent; stockinvest.us reports ~2M shares, session range 1,825,000-1,855,000",
+    "source_url": "https://finnhub.io/?q=%22000660%2EKS%22",
+    "final_url": "https://finnhub.io/?q=%22000660%2EKS%22",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "daily candle: open/high/low/close/volume (rounded rows flagged)",
+    "source_sha256": "9a84d60efd4a9699"
+   },
+   {
+    "stable_key": "SNDK daily 2026-10-02 (descriptive; local case key not available)",
+    "ticker": "SNDK",
+    "company": "Sandisk Corp",
+    "exchange": "XNAS",
+    "currency": "USD",
+    "exchange_tz": "America/New_York (EDT, UTC-4)",
+    "trading_day": "2026-10-02",
+    "session": "regular",
+    "fields": {
+     "open": {
+      "value": 1773.12,
+      "status": "ok"
+     },
+     "high": {
+      "value": 1774.23,
+      "status": "ok"
+     },
+     "low": {
+      "value": 1713.47,
+      "status": "ok"
+     },
+     "close": {
+      "value": 1719.99,
+      "status": "ok"
+     },
+     "volume": {
+      "value": null,
+      "status": "conflict",
+      "conflict_sources": [
+       {
+        "source": "watchlistnews (mid-day)",
+        "value": 8129896,
+        "url": "https://www.watchlistnews.com/sandisk-nasdaqsndk-shares-down-3-8-heres-what-happened/11248960.html"
+       },
+       {
+        "source": "zacks quote",
+        "value": 8170259,
+        "url": "https://www.zacks.com/stock/quote/SNDK/options-chain?icid=SITE_SECTION-SUB_SECTION-quote_nav_tracking-zcom-left_subnav_quote_navbar-option_chain"
+       },
+       {
+        "source": "webull quote",
+        "value": 8190000,
+        "url": "https://www.webull.com/quote/nasdaq-sndk",
+        "note": "rounded display"
+       }
+      ]
+     },
+     "premarket": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only"
+     },
+     "after_hours": {
+      "value": null,
+      "status": "blocked",
+      "blocked_reason": "daily candles are regular-session only"
+     }
+    },
+    "volume_note": "volume sources vary 8.13-8.19M; OHLC from finnhub live quote cross-checks webull (O 1773.12 H 1774.23 L 1713.47 C 1719.99)",
+    "source_url": "https://finnhub.io/?q=%22SNDK%22",
+    "final_url": "https://finnhub.io/?q=%22SNDK%22",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "live quote + three quote pages for volume",
+    "source_sha256": "490da37d9ac009a2"
+   }
+  ],
+  "football_evidence": [
+   {
+    "stable_key": "MLS 2026-09-26 Philadelphia Union vs Orlando City (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "7:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "Philadelphia Union",
+    "away": "Orlando City",
+    "home_90": 4,
+    "away_90": 2,
+    "ftr_90": "H",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "bb3e223375a1791f"
+   },
+   {
+    "stable_key": "MLS 2026-09-26 Atlanta United vs New York City FC (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "7:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "Atlanta United",
+    "away": "New York City FC",
+    "home_90": 2,
+    "away_90": 2,
+    "ftr_90": "D",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "db3f688039c715ee"
+   },
+   {
+    "stable_key": "MLS 2026-09-26 CF Montreal vs FC Cincinnati (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "7:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "CF Montreal",
+    "away": "FC Cincinnati",
+    "home_90": 3,
+    "away_90": 1,
+    "ftr_90": "H",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "14c1db331fdcffdc"
+   },
+   {
+    "stable_key": "MLS 2026-09-26 Charlotte FC vs Chicago Fire (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "7:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "Charlotte FC",
+    "away": "Chicago Fire",
+    "home_90": 0,
+    "away_90": 1,
+    "ftr_90": "A",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "1cbe4a69717eb567"
+   },
+   {
+    "stable_key": "MLS 2026-09-26 FC Dallas vs Los Angeles FC (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "8:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "FC Dallas",
+    "away": "Los Angeles FC",
+    "home_90": 1,
+    "away_90": 0,
+    "ftr_90": "H",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "3b6cd4d821eb6a36"
+   },
+   {
+    "stable_key": "MLS 2026-09-26 Seattle Sounders vs Minnesota United (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "8:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "Seattle Sounders",
+    "away": "Minnesota United",
+    "home_90": 3,
+    "away_90": 1,
+    "ftr_90": "H",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "c02d3ce4064544e9"
+   },
+   {
+    "stable_key": "MLS 2026-09-26 Nashville SC vs Toronto FC (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "8:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "Nashville SC",
+    "away": "Toronto FC",
+    "home_90": 2,
+    "away_90": 0,
+    "ftr_90": "H",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "ccc4977c4a9881d1"
+   },
+   {
+    "stable_key": "MLS 2026-09-26 Austin FC vs San Diego FC (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "8:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "Austin FC",
+    "away": "San Diego FC",
+    "home_90": 3,
+    "away_90": 3,
+    "ftr_90": "D",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "a3b896134c81776a"
+   },
+   {
+    "stable_key": "MLS 2026-09-26 Houston Dynamo vs Sporting Kansas City (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "8:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "Houston Dynamo",
+    "away": "Sporting Kansas City",
+    "home_90": 0,
+    "away_90": 2,
+    "ftr_90": "A",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "9b15e2c547207d9a"
+   },
+   {
+    "stable_key": "MLS 2026-09-26 Real Salt Lake vs New England Revolution (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "9:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "Real Salt Lake",
+    "away": "New England Revolution",
+    "home_90": 3,
+    "away_90": 0,
+    "ftr_90": "H",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "08841de6fcbb062d"
+   },
+   {
+    "stable_key": "MLS 2026-09-26 LA Galaxy vs Colorado Rapids (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "10:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "LA Galaxy",
+    "away": "Colorado Rapids",
+    "home_90": 3,
+    "away_90": 2,
+    "ftr_90": "H",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "af496e2a69f73226"
+   },
+   {
+    "stable_key": "MLS 2026-09-26 Vancouver Whitecaps vs D.C. United (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "10:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "Vancouver Whitecaps",
+    "away": "D.C. United",
+    "home_90": 3,
+    "away_90": 3,
+    "ftr_90": "D",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "b676a43d2de7eb9c"
+   },
+   {
+    "stable_key": "MLS 2026-09-26 San Jose Earthquakes vs Portland Timbers (descriptive; local case key not available)",
+    "competition": "MLS",
+    "round": null,
+    "round_note": "round not verified, left NULL per no-guess rule",
+    "date_local": "2026-09-26",
+    "kickoff_local": "10:30 PM ET",
+    "kickoff_tz": "America/New_York (EDT, UTC-4)",
+    "home": "San Jose Earthquakes",
+    "away": "Portland Timbers",
+    "home_90": 3,
+    "away_90": 1,
+    "ftr_90": "H",
+    "match_status": "FT",
+    "extra_time": null,
+    "penalties": null,
+    "source_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "final_url": "https://www.vavel.com/en-us/results/2026-09-26/",
+    "retrieved_at": "2026-10-04T12:35:00+08:00",
+    "field_locator": "VAVEL daily results page for 2026-09-26, FT rows",
+    "source_sha256": "6bd1e3a3c793d485"
+   }
+  ],
+  "source_check": {
+   "window_bjt": "2026-09-26T00:00:00+08:00 through 2026-10-03T00:00:00+08:00",
+   "european_domestic_leagues": "international break, no fixtures 2026-09-26/27 (Premier League resumes 2026-10-03; La Liga next round 2026-10-10; Bundesliga Sep 26-27 covered by Nations League/friendlies)",
+   "ucl_2026_27": "MD1 played 2026-09-08~10 (before window); MD2 scheduled mid-October (Man City-PSG 2026-10-14 per SkySports); nothing in window",
+   "uel_uecl_2026_27": "could not confirm any matchday fixtures in window; web searches returned 2025-26 season pages only (see unresolved_queue)",
+   "j1": "no completed matches in window (official table last updated 2026-09-20)",
+   "veikkausliiga": "no completed matches in window (last 2026-09-18/19, next 2026-10-07/08 per sportradar)",
+   "mls": "13 completed matches on 2026-09-26, all rows returned"
+  },
+  "conflict_queue": [
+   {
+    "target": "SNDK volume 2026-10-02",
+    "note": "watchlistnews 8,129,896 (mid-day) vs zacks 8,170,259 vs webull ~8.19M; not auto-resolved; row status=conflict"
+   },
+   {
+    "target": "RKLB volume 2026-10-01",
+    "note": "marketminute 23,262,076 vs finnhub candle 23,312,580 (~0.2% diff); OHLC identical; row uses marketminute, flagged"
+   }
+  ],
+  "audit": {
+   "stocks": {
+    "expected": "4 tickers x 5 trading days = 20 OHLCV day-rows",
+    "discovered": 21,
+    "complete": 20,
+    "partial": 1,
+    "missing": 0,
+    "note": "SNDK 10-02 is an extra partial row (OHLC ok, volume conflict)"
+   },
+   "football": {
+    "expected": "in-window completed matches across white-list leagues",
+    "discovered": 13,
+    "complete": 13,
+    "partial": 0,
+    "missing": 0,
+    "note": "window dominated by international break; 13 MLS rows from 2026-09-26"
+   },
+   "unresolved_count": 5
+  },
+  "unresolved_queue": [
+   {
+    "id": "STOCK-01",
+    "scope": "intraday 1m/5m OHLCV for SNDK/RKLB/AAOI/000660.KS",
+    "status": "blocked",
+    "blocked_reason": "query1.finance.yahoo.com blocked by fetch policy; finance vertical only yields daily candles. Downstream may retry with a different provider."
+   },
+   {
+    "id": "FB-01",
+    "scope": "exact matching to local stable_keys (weekly-review-20260926 snapshots)",
+    "status": "blocked",
+    "blocked_reason": "local batch lives on user PC (D:\\奇门斗数); Muse cannot read it. Codex must join the returned window pool against local snapshots; if no football cases exist locally, report zero_match_reason."
+   },
+   {
+    "id": "FB-02",
+    "scope": "2026/27 Europa League / Conference League league-phase fixtures in window",
+    "status": "blocked",
+    "blocked_reason": "searches returned 2025-26 season pages only (e.g. UCL MD2 2025/26 content); 2026/27 MD schedule for these competitions unconfirmed for the window"
+   },
+   {
+    "id": "FB-03",
+    "scope": "J1 League matches in window",
+    "status": "unavailable",
+    "blocked_reason": "no completed J1 matches in window (official table updated to 2026-09-20)"
+   },
+   {
+    "id": "FB-04",
+    "scope": "Veikkausliiga matches in window",
+    "status": "unavailable",
+    "blocked_reason": "no completed Veikkausliiga matches in window (2026-09-18/19 then next round 2026-10-07/08)"
+   }
+  ]
+ }
+}
