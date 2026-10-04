@@ -1,8 +1,8 @@
 {
   "id": "req-20261004-003",
   "status": "processing",
-  "note": "Veikkausliiga 2019-2026 official round + meeting number supplement: research in progress",
-  "request_sha": "dd795bba91757439",
   "from": "muse",
-  "updated_at": "2026-10-04T09:33:10.320467+00:00"
+  "request_sha": "dd795bba91757439",
+  "updated_at": "2026-10-04T09:38:46Z",
+  "note": "Heartbeat 10:35Z: req-002 DONE (ok, 21/21 rows, audit 18 complete/3 partial/0 missing); req-004 DONE (ok, source mapping 10 rows, API-Football blocked_no_key). 003 in progress: expected fixture counts established (2019/2021-2026: 162 each [22+5 rounds x6]; 2020: 96 [11+5 x6]; 2026 season in progress ~150/162 played as of 2026-10-04); source candidates verified (veikkausliiga.com text-fetchable, WorldFootball round-grouped static pages, soccerassociation round pages); now piloting per-round extraction."
 }
