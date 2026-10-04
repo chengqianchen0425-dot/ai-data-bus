@@ -1,0 +1,186 @@
+{
+  "id": "req-20261004-005",
+  "status": "ok",
+  "from": "muse",
+  "request_sha": "e3757d5394a553b5",
+  "dp_used": false,
+  "fetched_at": "2026-10-04T18:25:00+08:00",
+  "data": {
+    "report": "# req-20261004-005 · Ligue 1 conflict_queue 证据跟进报告（五项冲突，证据-only）\n\n范围：competition_key=ligue_1，seasons 2018/19–2020/21，incremental_only（仅处理 conflict_queue 中的五项，不重复抓取已 resolved 普通字段）。以下不含任何 Qimen/九宫/宫位/模型/概率/Outcome/Review/Gold 字段，未推导结构结论。\n\n## Q1 · Stade de la Licorne 坐标候选复核（33 场相同主场记录）\n\n006 venue_rows 中 33 个 Amiens 主场行（2018/19 ×19 + 2019/20 ×14 = 33，主场全在 Stade de la Licorne）全部标 partial。五个候选逐项核对如下（距离为 haversine 实测）：\n\n| 候选 | 坐标 | 正式场馆名 | 地址 | 来源 | 来源优先级 | 有效期 | 备注 |\n|---|---|---|---|---|---|---|---|\n| C | 49.893889, 2.263611 | Stade de la Licorne / Stade Crédit Agricole La Licorne（naming 自 2018） | 25, rue du Chapitre, 80000 Amiens | fr.wikipedia infobox（Coordonnées: 49°53′38″N, 2°15′49″E → 小数恰为 49.8938889, 2.2636111，与候选 C 逐位吻合） | 高（百科 infobox，可逐字复核） | 场馆 1999-07-24 启用，Amiens SC 自 1999 起主场；覆盖 2018/19–2020/21 全程 | **与候选 C 数学上同一值** |\n| D | 49.89422, 2.26337 | Stade de la Licorne（同上） | 同上（OSM feature 归属 Amiens） | mapcarta W140166446（基于 OpenStreetMap leisure=stadium 节点：49°53′39″N, 2°15′48″E） | 中高（OSM 社区数据经 mapcarta 呈现） | OSM 当前快照；场馆本体未迁移 | 距 C 约 41 m（同一场馆 footprint 内） |\n| E | 49.894208, 2.263311 | Stade de la Licorne（同上） | 同上 | latitude.to（49°53′39.15″N, 2°15′47.92″E → 小数恰为 49.8942083, 2.2633111，与候选 E 逐位吻合） | 中（聚合站，疑源自 en.wikipedia/OSM） | 同上 | 距 D 约 4.4 m，距 C 约 42 m |\n| A | 49.90605, 2.27111 | 未验证（无场馆名证据） | 未验证 | 006 轮 geocoder FULL_ADDRESS relevance 75 | 低（自动 geocoder，无场馆级证据） | 未确立 | 距 C 约 1455 m——**不在场馆位置**，疑为 geocoder 误命中；行内 lat/lon 即用此值 |\n| B | 49.89217, 2.25939 | 未验证（无场馆名证据） | Rue du Chapitre（街道级） | 006 轮 geocoder street-level relevance 61 | 低 | 未确立 | 距 C 约 358 m，疑为 Rue du Chapitre 街道质心，非场馆点 |\n\n来源定位（本轮实测 2026-10-04）：\n- fr.wikipedia Stade_de_la_Licorne：infobox 行「| Adresse | 25, rue du Chapitre 80000 Amiens |」「| Coordonnées | 49° 53′ 38″ N, 2° 15′ 49″ E |」；正文「Le stade de la Licorne, appelé stade Crédit Agricole la Licorne par contrat de naming… depuis 2018」「Il accueille les matches à domicile… l'Amiens SC」；naming 公告 2018-07-20（France Bleu Picardie），为期三季 → 覆盖 2018/19、2019/20、2020/21。\n- mapcarta W140166446：Latitude 49.89422° (49°53′39″N) / Longitude 2.26337° (2°15′48″E)，注 \"based on OpenStreetMap, Wikidata, Wikimedia Commons, Wikipedia\"。\n- latitude.to articles/34736：Latitude 49°53'39.15\"N / Longitude 2°15'47.92\"E。\n- 命名一致性：FBref 2019-20 所列 \"Stade Crédit Agricole la Licorne\" 即同一场馆 sponsor 名（006 已记录）。\n\n裁决状态：**不自动裁决，保留 conflict**。C/D/E 三者互相印证为同一场馆（42 m 内），但权威来源未唯一指定其中一个小数点位；A/B 无场馆级证据支撑，建议后续将其从\"候选\"降级为 geocoder 误命中记录。33 行行级 lat/lon 目前为 A 值（49.90605, 2.27111），与场馆实际位置偏差约 1.5 km——此为 row-level 部分性（partial）的实质原因。\n\n## Q2 · Lyon vs Saint-Étienne 2018-11-23 开球时间复核\n\n- 官方轮次：Ligue 1 2018/19 第 14 轮（fr.wikipedia OL 赛季页 \"Journée 14\"；forebet \"Tour 14, Regular Season\"）。\n- 球场：Groupama Stadium, Décines-Charpieu（fr.wikipedia OL 赛季页原文；观众 55 701；裁判 Antony Gautier；Denayer 62′；比分 1-0）。\n- IANA：Europe/Paris。2018-11-23 法国实行 CET（UTC+1；夏令时已于 2018-10-28 结束）。\n\n两个竞争值（均保留，不裁决）：\n\n| 值 | 来源原文定位 | 换算 UTC |\n|---|---|---|\n| 20:45 CET（当地） | fr.wikipedia \"Saison 2018-2019 de l'Olympique lyonnais\"：Novembre > Récapitulatif Journées 12 à 14, Journée 14 行——\"Vendredi 23 novembre 2018 20:45\"（006 轮已取 quote + sha；fr.wikipedia derby 页 \"Olympique_lyonnais_-_AS_Saint-Étienne_en_football\" 117e 行确认 2018-11-23、Ligue 1 (J14)、1-0） | 20:45 CET = **19:45 UTC** |\n| 21:00 GMT | forebet.com/fr/football/matches/lyon-as-saint-Étienne-801306，本轮 2026-10-04 实测页面头部原文：\"23/11/2018 21:00 GMT\"（另有 FT 1-0；页面头部含 \"Fuseau horaire\" 显示设置项） | 21:00 GMT = **21:00 UTC**（= 22:00 CET） |\n\n解释：**两者不是同一时刻**（相差 75 分钟），因此不属于\"页面显示时区不同\"可解释的情形——没有任何标准时区偏移能把 19:45 UTC 显示成 21:00 GMT。可能性只剩：(a) forebet 时区标注错误（若其内部真实意图是 21:00 当地=CET，则仍与 20:45 相差 15 分钟）；(b) forebet 数据本身错误。周五 20:45 CET 是 2018/19 赛季法甲周五晚 Canal+ 黄金档常规开球时段，与法语百科一致；forebet 的 21:00 GMT（= 当地 22:00）非常规。worldfootball.net 尝试取第三源时 403 被拒（已按 SOP 停手，记 failed 源，不硬刷）。\n\n## Q3 · venue_rows 审计计数差异核查（req-20261003-006）\n\n- 行级直接计数（venue_rows 数组，175 行）：row_status=complete **142**，partial **33**，missing 0。33 个 partial 全部为 Amiens 行（2018/19 19 场 + 2019/20 14 场 = 33；其 home/venue 字段含 Amiens/Stade de la Licorne，row_note 均为 \"Amiens lat/lon has two geocoder candidates\"）。\n- 审计摘要（006 data.audit.venue_10_club_seasons + report §3）：complete **147**，partial **28**（note：\"28 Amiens rows partial\"）。\n- 两边各自自洽（142+33=175；147+28=175），但 split 相差 5 行。\n- 去重核查：复合键 (season, match_date, home, away) 在 175 行中 175/175 唯一，**无重复行**。\n- partial 判定规则（行级证据）：仅 Amiens 行因经纬度 geocoder 冲突标 partial；其余全部 complete。\n- 可复核行级 stable_key（建议）：`season|match_date|home|away`（已验证全文件唯一）。\n- 结论：**audit 侧的 147/28 无法用行级数据复现**——Amiens 行实为 33 而非 28（006 的 audit note 漏数 5 行）。行级 142/33 为可复核事实；差异原因未找到除\"审计计数笔误/过期\"之外的解释，**保留 audit conflict**。\n\n## Q4 · odds_gaps 计数差异核查（req-20261003-006）\n\n- 行级直接计数（odds_gaps 数组）：**8 个比赛组，16 个单元格**，逐组如下（bookmaker / market / field_name / status 均逐行核对）：\n  1. Paris SG vs Nice 2019-05-04：pinnacle 1X2 pre-close (PSCH/PSCD/PSCA) — unavailable\n  2. Rennes vs Paris SG 2019-08-18：pinnacle OU pre-close over/under — unavailable\n  3. Brest vs Marseille 2020-08-30：william_hill 1X2 pre-close / pinnacle 1X2 pre-close / bet365 OU pre-close over/under / pinnacle OU pre-close over/under — unavailable\n  4. Paris SG vs Marseille 2020-09-13：bet365 1X2 pre-close / william_hill 1X2 pre-close / pinnacle 1X2 pre-close / bet365 OU pre-close over/under / pinnacle OU pre-close over/under — unavailable\n  5. Monaco vs Montpellier 2020-10-18：bet365 1X2 pre-close / bet365 1X2 closing — unavailable\n  6. Bordeaux vs Reims 2020-12-23：bet365 OU pre-close over/under — unavailable\n  7. Lyon vs Nantes 2020-12-23：bet365 OU pre-close over/under — unavailable\n  8. Montpellier vs Lille 2020-12-23：bet365 OU pre-close over/under — unavailable\n  - 其中 pre-close 单元格 15 个，closing 单元格 1 个（第 5 组 bet365 1X2 closing）；全部 status=unavailable；closing 值仅作 closing_reference_only 保留，**未改名为 true opening，未填充任何无法验证的赔率**。\n- 审计摘要（006 data.audit.odds_gaps）：targets \"14+ cells (8 target groups)\"。\n- 结论：组数一致（8）；\"14+\" 为约数下界写法，行级精确计数为 16，未找到能把 16 归约为 14 的计数口径（即使剔除唯一的 closing 单元格仍为 15），**保留 audit conflict**（审计侧少计 2 单元格）。\n\n## 收尾漏抓审计（本轮五项）\n\n- expected 5 项冲突 → discovered 5 → complete 4（Q1 候选证据齐、Q2 双方证据+UTC 换算齐、Q3 行级复核齐、Q4 行级复核齐）→ partial 1（Q2 缺第三独立源：worldfootball.net 403，记 failed 源）→ missing 0。\n- 抓得怎么样：fr.wikipedia/mapcarta/latitude.to/forebet 均为本轮 2026-10-04 实测原文定位；坐标小数与候选值逐位核对一致（C、E）；距离为实测 haversine。\n- 有没有抓少：候选 A/B 追溯为 006 轮 geocoder 产物、无场馆级证据，已注明降级建议；Q2 尝试第三源失败已记录，不静默。\n",
+    "audit": {
+      "conflict_items": {
+        "expected": 5,
+        "discovered": 5,
+        "complete": 4,
+        "partial": 1,
+        "missing": 0,
+        "note": "Q2 partial: third independent kickoff source (worldfootball.net) 403, recorded as failed source; both competing values kept with UTC conversions"
+      },
+      "amiens_venue_rows": {
+        "expected_rows": 33,
+        "discovered": 33,
+        "complete": 0,
+        "partial": 33,
+        "missing": 0,
+        "note": "19 (2018/19) + 14 (2019/20) home rows, all Stade de la Licorne; all partial pending coordinate resolution"
+      },
+      "coordinate_candidates": {
+        "A": "unverified geocoder, ~1455m off venue",
+        "B": "unverified street-level, ~358m off",
+        "C": "fr.wikipedia infobox DMS decode exact match",
+        "D": "mapcarta/OSM node",
+        "E": "latitude.to decode exact match",
+        "adjudicated": false
+      },
+      "venue_rows_count_audit_006": {
+        "row_level": "142 complete / 33 partial",
+        "audit_summary": "147 complete / 28 partial",
+        "verdict": "audit conflict kept - audit side undercounts Amiens partial rows by 5, no reconciling rule found"
+      },
+      "odds_gaps_count_audit_006": {
+        "row_level": "16 cells / 8 groups (15 pre-close + 1 closing)",
+        "audit_summary": "14+ cells / 8 groups",
+        "verdict": "audit conflict kept - audit side undercounts by 2 cells, no reconciling rule found"
+      },
+      "qimen_gate": {
+        "status": "held",
+        "note": "no Qimen/九宫/宫位/Q/F/G/I/M/模型方向/Miss/概率/Outcome/Review/Gold fields returned or inferred anywhere in this receipt"
+      }
+    },
+    "unresolved_queue": [
+      {
+        "item": "Amiens Stade de la Licorne final coordinate selection",
+        "reason": "5 candidates kept as conflicts per instruction (no auto-adjudication); C/D/E mutually consistent within 42m, A/B lack venue-level evidence",
+        "blocked_on": "Codex/validator decision"
+      },
+      {
+        "item": "Lyon vs ASSE 2018-11-23 kickoff: 20:45 CET vs 21:00 GMT",
+        "reason": "75-minute instant difference; not explainable as display-timezone artifact; third source (worldfootball.net) 403 on text fetch",
+        "blocked_on": "true-browser check or LFP official archive"
+      },
+      {
+        "item": "006 audit count discrepancies (venue_rows 5 rows, odds_gaps 2 cells)",
+        "reason": "audit summaries not reproducible from row-level data; kept as audit conflicts",
+        "blocked_on": "none - row-level evidence is authoritative"
+      }
+    ],
+    "row_level_evidence": {
+      "stadium_candidates": [
+        {
+          "candidate": "C",
+          "lat": 49.893889,
+          "lon": 2.263611,
+          "venue_name": "Stade de la Licorne / Stade Crédit Agricole La Licorne",
+          "address": "25, rue du Chapitre, 80000 Amiens",
+          "source_url": "https://fr.wikipedia.org/wiki/Stade_de_la_Licorne",
+          "final_url": "https://fr.wikipedia.org/wiki/Stade_de_la_Licorne",
+          "retrieved_at": "2026-10-04T18:25:00+08:00",
+          "field_locator": "infobox Coordonnées: 49° 53′ 38″ N, 2° 15′ 49″ E; Adresse row; naming paragraph (depuis 2018)",
+          "source_priority": "high",
+          "validity": "stadium opened 1999-07-24, Amiens SC home since 1999; covers 2018/19-2020/21",
+          "dist_to_D_m": 40.7
+        },
+        {
+          "candidate": "D",
+          "lat": 49.89422,
+          "lon": 2.26337,
+          "venue_name": "Stade de la Licorne",
+          "address": "Amiens (OSM feature)",
+          "source_url": "https://mapcarta.com/W140166446",
+          "final_url": "https://mapcarta.com/W140166446",
+          "retrieved_at": "2026-10-04T18:25:00+08:00",
+          "field_locator": "Latitude 49.89422° (49°53′39″N) / Longitude 2.26337° (2°15′48″E); OpenStreetMap leisure=stadium node",
+          "source_priority": "medium-high",
+          "validity": "current OSM snapshot; venue not relocated"
+        },
+        {
+          "candidate": "E",
+          "lat": 49.894208,
+          "lon": 2.263311,
+          "venue_name": "Stade de la Licorne",
+          "address": "Amiens (aggregator)",
+          "source_url": "https://latitude.to/map/fr/france/regions/region-picardie/departement-de-la-somme/cities/ailly-sur-somme/articles/34736/stade-de-la-licorne",
+          "final_url": "https://latitude.to/map/fr/france/regions/region-picardie/departement-de-la-somme/cities/ailly-sur-somme/articles/34736/stade-de-la-licorne",
+          "retrieved_at": "2026-10-04T18:25:00+08:00",
+          "field_locator": "Latitude 49°53'39.15\"N / Longitude 2°15'47.92\"E",
+          "source_priority": "medium",
+          "validity": "aggregator; likely derived from en.wikipedia/OSM",
+          "dist_to_D_m": 4.4
+        },
+        {
+          "candidate": "A",
+          "lat": 49.90605,
+          "lon": 2.27111,
+          "venue_name": "UNVERIFIED",
+          "address": "UNVERIFIED",
+          "source_url": "req-20261003-006 venue_evidence (geocoder FULL_ADDRESS relevance 75)",
+          "final_url": null,
+          "retrieved_at": "2026-10-03T16:45:00+08:00",
+          "field_locator": "venue_evidence.coords",
+          "source_priority": "low",
+          "validity": "not established; ~1455m from venue; likely geocoder mis-hit",
+          "note": "currently used as row lat/lon in 006 venue_rows - 1.5km off venue"
+        },
+        {
+          "candidate": "B",
+          "lat": 49.89217,
+          "lon": 2.25939,
+          "venue_name": "UNVERIFIED",
+          "address": "Rue du Chapitre (street-level)",
+          "source_url": "req-20261003-006 venue_evidence (geocoder street-level relevance 61)",
+          "final_url": null,
+          "retrieved_at": "2026-10-03T16:45:00+08:00",
+          "field_locator": "venue_evidence.coords.conflict",
+          "source_priority": "low",
+          "validity": "not established; ~358m from venue; likely street centroid"
+        }
+      ],
+      "lyon_asse_20181123": [
+        {
+          "value": "20:45 CET",
+          "utc": "2018-11-23T19:45:00Z",
+          "iana": "Europe/Paris",
+          "round": 14,
+          "venue": "Groupama Stadium, Décines-Charpieu",
+          "source_url": "https://fr.wikipedia.org/wiki/Saison_2018-2019_de_l%27Olympique_lyonnais",
+          "field_locator": "Novembre > Récapitulatif Journées 12 à 14, Journée 14 row",
+          "quote": "Vendredi 23 novembre 2018 20:45"
+        },
+        {
+          "value": "21:00 GMT",
+          "utc": "2018-11-23T21:00:00Z",
+          "iana": null,
+          "round": 14,
+          "venue": null,
+          "source_url": "https://www.forebet.com/fr/football/matches/lyon-as-saint-%C3%89tienne-801306",
+          "field_locator": "match header (live re-fetch 2026-10-04)",
+          "quote": "23/11/2018 21:00 GMT",
+          "note": "75 min later than 20:45 CET as instants; not a display-timezone artifact; kept competing, not adjudicated"
+        }
+      ],
+      "venue_rows_recount_006": {
+        "rows": 175,
+        "complete": 142,
+        "partial": 33,
+        "missing": 0,
+        "all_partial_are_amiens": true,
+        "dup_rows": 0,
+        "composite_key_unique": "175/175",
+        "recommended_stable_key": "season|match_date|home|away",
+        "audit_summary_claim": "147 complete / 28 partial",
+        "reconciled": false
+      },
+      "odds_gaps_recount_006": {
+        "groups": 8,
+        "cells": 16,
+        "pre_close_cells": 15,
+        "closing_cells": 1,
+        "all_status_unavailable": true,
+        "audit_summary_claim": "14+ cells / 8 groups",
+        "reconciled": false,
+        "no_odds_filled": true,
+        "no_closing_renamed_to_opening": true
+      }
+    }
+  }
+}
