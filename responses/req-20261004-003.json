@@ -3,6 +3,6 @@
   "status": "processing",
   "from": "muse",
   "request_sha": "dd795bba91757439",
-  "updated_at": "2026-10-04T09:38:46Z",
-  "note": "Heartbeat 10:35Z: req-002 DONE (ok, 21/21 rows, audit 18 complete/3 partial/0 missing); req-004 DONE (ok, source mapping 10 rows, API-Football blocked_no_key). 003 in progress: expected fixture counts established (2019/2021-2026: 162 each [22+5 rounds x6]; 2020: 96 [11+5 x6]; 2026 season in progress ~150/162 played as of 2026-10-04); source candidates verified (veikkausliiga.com text-fetchable, WorldFootball round-grouped static pages, soccerassociation round pages); now piloting per-round extraction."
+  "updated_at": "2026-10-04T09:39:06Z",
+  "note": "Progress 09:45Z. Expected fixture counts established (format basis, 2020 COVID season to be re-verified): 2019=162 (22+5 rounds x6), 2020=96 (11+5 x6), 2021=162, 2022=162, 2023=162, 2024=162, 2025=162, 2026=162 scheduled (~150 played as of 2026-10-04; regular season ended 2026-08-31, championship/relegation series from 2026-09-08, season ends 2026-11-08). Total expected at completion: 1230. Extraction pilot: WorldFootball round-grouped pages ARE text-fetchable (e.g. fin-veikkausliiga-2024-championship shows '5. Round' headers) but text-layer capture is lossy (only last round table returned) – full ~1230-row extraction needs true-browser task(s), recommended next: one browser task per season on WorldFootball + official veikkausliiga.com schedule cross-check for official_round (Kierros) labelling. meeting_number: no official source defines first/second meeting semantics (004 audit) – will be returned NULL/unavailable, never inferred. Next round: continue extraction; heartbeat maintained."
 }
