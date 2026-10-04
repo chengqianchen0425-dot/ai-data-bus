@@ -1,0 +1,22 @@
+{
+  "id": "req-20261004-006",
+  "type": "data_task",
+  "target": "muse",
+  "from": "user-direct",
+  "scope": {
+    "competition": "Veikkausliiga (Finland)",
+    "seasons": [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    "task": "UQ-01 multi-site browser recon: assess fixture-data availability per site before row-level extraction of 1128 remaining matches",
+    "follows": "req-20261004-003",
+    "matches_remaining": 1128
+  },
+  "params": {
+    "mode": "recon",
+    "sites": ["worldfootball.net", "veikkausliiga.com", "transfermarkt.com", "soccerway.com"]
+  },
+  "output_contract": {
+    "per_site": ["url_pattern", "season_coverage", "extractable_fields", "blocks"]
+  },
+  "created_at": "2026-10-04T18:52:00+08:00",
+  "dp_used": false
+}
