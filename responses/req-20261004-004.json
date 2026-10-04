@@ -1,8 +1,261 @@
 {
   "id": "req-20261004-004",
-  "status": "processing",
-  "note": "Veikkausliiga source mapping + API-Football config audit: research in progress",
-  "request_sha": "3452d0d4bcf9164b",
+  "status": "ok",
   "from": "muse",
-  "updated_at": "2026-10-04T09:33:10.320691+00:00"
+  "request_sha": "3452d0d4bcf9164b",
+  "dp_used": false,
+  "data": {
+    "report": "Veikkausliiga 2019-2026 source-mapping + API-Football audit. (1) muse_response: req-20261003-011 response hash MATCHES its request hash (e1ae0f228db7b546) → valid for ingestion (466 rows, per-season audits, 5 unresolved). (2) api_football: BLOCKED – no API_FOOTBALL_KEY in current process; non-secret config delivered (env var, base URL, /leagues + /fixtures endpoint family, field mapping); league id 244 commonly documented but UNVERIFIED; historical seasons likely need paid plan. (3) Source mapping: 10 rows – veikkausliiga.com is text-fetchable (server-rendered; schedule subpage URL + round labelling still to confirm), Palloliitto Tulospalvelu (federation, Kierros grouping, fetch untested), WorldFootball.net (static round-grouped pages, cross-check only), soccerassociation.com (round pages, cross-check), RSSSF (tables only), Wikipedia season pages (results matrix), fi.wikipedia season tables + Veikkausliiga grounds list (venue_by_season candidates, verified for 1990s), OSM Nominatim (coordinates, verified working). meeting_number: no official source defines it – expect NULL.",
+    "targets": {
+      "muse_response": {
+        "target": "muse_response",
+        "status": "ready",
+        "prior_request": "req-20261003-011",
+        "request_sha_match": true,
+        "request_sha_request": "e1ae0f228db7b546",
+        "request_sha_response": "e1ae0f228db7b546",
+        "valid_for_ingestion": true,
+        "summary": "req-20261003-011 response hash MATCHES its current request hash, so the conditional invalidation in req-20261004-004 Q2 does NOT trigger: the response is valid for ingestion. Contents: status=ok, from=muse, 466 row-level evidence rows (data.rows), per-season audit (seasons audited: 2019-2022, 2023, 2024, 2025, 2026; e.g. 2023: expected 167 / discovered 167 / complete 167 from openfootball 'europe finland/2023_fi1.txt' source_sha256_16 693f5157e8077c55), unresolved_queue with 5 items.",
+        "what_a_fresh_valid_response_must_contain": "Only relevant if a future request_sha mismatch occurs. A fresh valid response must contain: id, status=ok, from=muse, request_sha = sha256(requests/<id>.json)[:16] computed at write time, data.rows (row-level evidence with source_url/final_url/retrieved_at/field_locator), data.audit (expected/discovered/complete/partial/missing per season), data.unresolved_queue (missing/blocked stay listed with reasons), dp_used declaration. It must NOT treat any old processing/error/unavailable response as data.",
+        "retrieved_at": "2026-10-04T09:38:34Z",
+        "source_sha256": null
+      },
+      "api_football": {
+        "target": "api_football",
+        "status": "blocked_missing_API_FOOTBALL_KEY",
+        "config_required_non_secret": {
+          "environment_variable": "API_FOOTBALL_KEY",
+          "key_present_in_current_process": false,
+          "base_url": "https://v3.football.api-sports.io",
+          "auth_method": "x-apisports-key header (value never returned, requested, or stored by Muse)",
+          "endpoints": [
+            {
+              "method": "GET",
+              "path": "/leagues",
+              "params": {
+                "code": "FI"
+              },
+              "purpose": "verify Finland Veikkausliiga league id (commonly documented as 244 – UNVERIFIED without key)"
+            },
+            {
+              "method": "GET",
+              "path": "/fixtures",
+              "params": {
+                "league": "{verified_id}",
+                "season": "YYYY (2019..2026)"
+              },
+              "purpose": "schedule/round/venue cross-check"
+            }
+          ],
+          "response_field_mapping": {
+            "fixture_identity": "response[].fixture.id + response[].teams.home/away.name",
+            "kickoff_utc": "response[].fixture.date",
+            "venue": "response[].fixture.venue {id, name, city}",
+            "round_label": "response[].league.round (semantics vs official 'Kierros' to be verified, not assumed)",
+            "status": "response[].fixture.status.short"
+          }
+        },
+        "caveats": [
+          "Historical seasons 2019-2026 likely require a paid plan; the free tier is current-season-oriented – verify against the plan on the key owner's dashboard before relying on it for backfill.",
+          "league.round semantics must be verified against the official schedule, never assumed to equal official_round.",
+          "No API key, password, Bearer value, or credential was returned, requested, or invented in this audit."
+        ],
+        "retrieved_at": "2026-10-04T09:38:34Z",
+        "source_sha256": null
+      }
+    },
+    "source_mapping_rows": [
+      {
+        "source_name": "Veikkausliiga official site (veikkausliiga.com)",
+        "url_template": "https://www.veikkausliiga.com/ (+ schedule subpage, URL to confirm via site nav)",
+        "field_mapping": {
+          "official_round": "candidate – if schedule page labels rounds (Kierros)",
+          "kickoff": "yes (homepage shows date/time/team pairs server-rendered)",
+          "venue": "match pages may list stadium",
+          "fixture_identity": "yes"
+        },
+        "language_alias_requirements": "Finnish (Kierros=round); team names in Finnish (KuPS, FC Inter, HJK, Ilves, SJK, Gnistan, VPS, AC Oulu, FC Lahti, TPS, FF Jaro, IFK Mariehamn)",
+        "season_coverage": "2019-2026 (current season fully; archives depend on subpage)",
+        "page_type": "static-ish: homepage returned full fixture/standings/news text via plain text fetch on 2026-10-04 (server-rendered, not JS-only)",
+        "status": "ready",
+        "retrieved_at": "2026-10-04T09:38:34Z",
+        "source_sha256": null,
+        "note": "Verified fetchable 2026-10-04: homepage text included dated fixtures (e.g. 'La 2.5. 17:00 FF Jaro – TPS'), live standings table, season stats ('Pelatut ottelut 26'). Schedule subpage still needs URL confirmation; round labelling not yet verified."
+      },
+      {
+        "source_name": "Palloliitto Tulospalvelu (federation result service)",
+        "url_template": "https://tulospalvelu.palloliitto.fi/ (competition pages, e.g. Veikkausliiga season view)",
+        "field_mapping": {
+          "official_round": "candidate – Tulospalvelu groups fixtures by Kierros",
+          "kickoff": "yes",
+          "venue": "sometimes",
+          "fixture_identity": "yes"
+        },
+        "language_alias_requirements": "Finnish; club names as registered",
+        "season_coverage": "2019-2026 (federation archive)",
+        "page_type": "dynamic (JS result service); text-layer fetch not yet attempted",
+        "status": "partial",
+        "retrieved_at": "2026-10-04T09:38:34Z",
+        "source_sha256": null,
+        "note": "Official federation source; fetchability via text layer untested this round – try browser.open before assuming JS-only."
+      },
+      {
+        "source_name": "WorldFootball.net",
+        "url_template": "https://www.worldfootball.net/competition/fin-veikkausliiga-{YYYY}/ (+ -championship / -relegation variants)",
+        "field_mapping": {
+          "official_round": "no – provides its own round numbering ('5. Round' headers); cross-check only",
+          "kickoff": "date+time yes",
+          "venue": "no (team pages have stadium, not per-fixture)",
+          "fixture_identity": "yes (date, teams, score)"
+        },
+        "language_alias_requirements": "English team names (Kuopion PS, HJK Helsinki, Ilves Tampere, SJK Seinäjoki, Haka Valkeakoski, Vaasan PS…)",
+        "season_coverage": "2019-2026",
+        "page_type": "static HTML; round-grouped schedule tables",
+        "status": "ready",
+        "retrieved_at": "2026-10-04T09:38:34Z",
+        "source_sha256": null,
+        "note": "Verified pattern 2026-10-04 via search snippet: 'Finland » Veikkausliiga 2024 Championship' page shows '| 5. Round |' headers with dated fixtures. Example URL: https://www.worldfootball.net/competition/fin-veikkausliiga-2024-championship/. NOT an official-round source – round semantics are WorldFootball's own."
+      },
+      {
+        "source_name": "soccerassociation.com",
+        "url_template": "https://www.soccerassociation.com/ (round pages, e.g. /21/2324/A20240825.htm)",
+        "field_mapping": {
+          "official_round": "no – own round numbering (ROUND 1..27); cross-check only",
+          "kickoff": "date yes",
+          "venue": "no",
+          "fixture_identity": "yes"
+        },
+        "language_alias_requirements": "English",
+        "season_coverage": "2019-2026 (archive)",
+        "page_type": "static",
+        "status": "ready",
+        "retrieved_at": "2026-10-04T09:38:34Z",
+        "source_sha256": null,
+        "note": "Round-indexed fixture pages observed (ROUND 1..27 selector). Cross-check only."
+      },
+      {
+        "source_name": "RSSSF",
+        "url_template": "https://www.rsssf.org/tablesf/fin{YYYY}.html",
+        "field_mapping": {
+          "official_round": "no – final tables only",
+          "kickoff": "no",
+          "venue": "no",
+          "fixture_identity": "partial (results, no per-fixture identity rows)"
+        },
+        "language_alias_requirements": "English",
+        "season_coverage": "2019-2026",
+        "page_type": "static text",
+        "status": "ready",
+        "retrieved_at": "2026-10-04T09:38:34Z",
+        "source_sha256": null,
+        "note": "Useful for season structure/promotion-relegation verification, not for round/venue fields."
+      },
+      {
+        "source_name": "Wikipedia season pages (EN)",
+        "url_template": "https://en.wikipedia.org/wiki/{YYYY}_Veikkausliiga",
+        "field_mapping": {
+          "official_round": "no – results matrix without round labels",
+          "kickoff": "no",
+          "venue": "stadium column for some matches",
+          "fixture_identity": "yes (results matrix)"
+        },
+        "language_alias_requirements": "English",
+        "season_coverage": "2019-2026",
+        "page_type": "static",
+        "status": "ready",
+        "retrieved_at": "2026-10-04T09:38:34Z",
+        "source_sha256": null,
+        "note": "Good for fixture existence cross-check; not a round source."
+      },
+      {
+        "source_name": "fi.wikipedia season tables (1990/1991/1993 verified)",
+        "url_template": "https://fi.wikipedia.org/wiki/Futisliigan_kausi_1990 etc.",
+        "field_mapping": {
+          "venue_by_season": "yes – per-club Kotikenttä column",
+          "club_founded": "yes – 'Seura perustettu' column",
+          "official_round": "no"
+        },
+        "language_alias_requirements": "Finnish; historical spellings (Futisliiga, Mestaruussarja)",
+        "season_coverage": "historical (1990s verified); 2019-2026 coverage not checked",
+        "page_type": "static",
+        "status": "partial",
+        "retrieved_at": "2026-10-04T09:38:34Z",
+        "source_sha256": null,
+        "note": "Verified 2026-10-04 for 1990/1991/1993 (used in req-20261004-002). Extend to 2019-2026 season pages if they carry Kotikenttä columns."
+      },
+      {
+        "source_name": "fi.wikipedia 'Luettelo Veikkausliigakentistä'",
+        "url_template": "https://fi.wikipedia.org/wiki/Luettelo_Veikkausliigakentist%C3%A4",
+        "field_mapping": {
+          "venue_by_season": "partial – dated first-use per ground, e.g. 'Hämeenlinna: Kauriala (15.5.2002 FC Hämeenlinna-Inter)'"
+        },
+        "language_alias_requirements": "Finnish",
+        "season_coverage": "all Veikkausliiga history",
+        "page_type": "static",
+        "status": "ready",
+        "retrieved_at": "2026-10-04T09:38:34Z",
+        "source_sha256": null,
+        "note": "Verified 2026-10-04. Ground-level first-use dates; combine with season tables for club×season matrix."
+      },
+      {
+        "source_name": "OpenStreetMap Nominatim",
+        "url_template": "https://nominatim.openstreetmap.org/search?format=json&q={venue}+{city}&limit=1",
+        "field_mapping": {
+          "venue_wgs84_coordinates": "yes – lat/lon, osm_type/id, display_name, boundingbox"
+        },
+        "language_alias_requirements": "Finnish/Swedish venue names; try both spellings",
+        "season_coverage": "n/a (current map data)",
+        "page_type": "JSON API",
+        "status": "ready",
+        "retrieved_at": "2026-10-04T09:38:34Z",
+        "source_sha256": null,
+        "note": "Verified working 2026-10-04 (9 venues geocoded for req-20261004-002). Licence: ODbL, cite '© OpenStreetMap contributors'."
+      },
+      {
+        "source_name": "API-Football",
+        "url_template": "https://v3.football.api-sports.io (+ dashboard)",
+        "field_mapping": {
+          "official_round": "league.round field (verify semantics after key present)",
+          "kickoff": "fixture.date (UTC)",
+          "venue": "fixture.venue {name, city}",
+          "fixture_identity": "fixture.id + teams"
+        },
+        "language_alias_requirements": "API team/league ids; league id commonly documented as 244 – UNVERIFIED without key",
+        "season_coverage": "2019-2026 subject to plan limits",
+        "page_type": "REST JSON (key required)",
+        "status": "blocked",
+        "retrieved_at": "2026-10-04T09:38:34Z",
+        "source_sha256": null,
+        "note": "See api_football target detail below."
+      }
+    ],
+    "audit": {
+      "targets_expected": 2,
+      "targets_ready": 1,
+      "targets_blocked": 1,
+      "source_mapping_rows": 10
+    },
+    "unresolved_queue": [
+      {
+        "target": "api_football",
+        "reason": "blocked_missing_API_FOOTBALL_KEY – key_present=false in current process; endpoint/field mapping above is configuration-only, no fixture fact may be claimed from endpoint existence",
+        "next": "user/Codex provides API_FOOTBALL_KEY in the execution environment (never via chat/memory); then verify league id via /leagues and round semantics via /fixtures"
+      },
+      {
+        "target": "muse_response/official_round",
+        "reason": "no official source yet verified to label per-fixture official rounds (Kierros) for 2019-2026",
+        "next": "confirm veikkausliiga.com schedule subpage URL and check round labelling; fallback Palloliitto Tulospalvelu Kierros grouping; WorldFootball/soccerassociation as cross-checks only"
+      },
+      {
+        "target": "meeting_number",
+        "reason": "no official source found defining first/second meeting semantics; Veikkausliiga does not publish it",
+        "next": "keep NULL/unavailable in req-20261004-003; never infer from date/order"
+      },
+      {
+        "target": "dated pre-kickoff standings",
+        "reason": "no public source found with explicitly dated pre-kickoff snapshots",
+        "next": "check Veikkausliiga official match-centre archives; otherwise stays unavailable"
+      }
+    ]
+  }
 }
