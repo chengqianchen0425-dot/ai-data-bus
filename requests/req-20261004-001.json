@@ -1,0 +1,53 @@
+{
+  "id": "req-20261004-001",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "params": {
+    "topic": "weekly review evidence for stocks and recent football results",
+    "questions": [
+      "这是独立的每周联网复盘数据请求，不是历史联赛补充请求。复盘日期为 2026-10-04 Asia/Shanghai，目标批次为 weekly-review-20260926；只处理本项目复盘所需的外部事实。",
+      "股票复盘：对本地批次中已到期或正在复盘的股票 case，逐标的返回交易所、ticker、交易日、当地时区、预测窗口覆盖的日线 OHLCV，并尽可能返回 1m 或 5m 分时数据。优先处理 SNDK、RKLB、AAOI、000660.KS；若本地批次有其他股票 case，也按同一格式补充。必须区分 regular session、premarket、after-hours；没有有效成交或 OHLC 的字段保留 NULL 并标 unavailable/blocked。",
+      "股票复盘：每个标的按预测窗口拆出可复核的 window_open、window_close、window_high、window_low、volume、数据时间戳和交易所本地时间；不得根据缺失数据估算，不得返回买卖建议、新闻判断、概率、Qimen 判断或 Review 结论。",
+      "最近足球复盘：只处理本项目复盘窗口内已结束的足球比赛（北京时间 2026-09-26 00:00 至 2026-10-03 00:00；若实际批次窗口不同，以请求中的 weekly_review_id 对应窗口为准）。按本地已有 Snapshot/预测中的联赛、日期、主队、客队精确匹配，返回 90 分钟完场比分、FTR、比赛状态、开球时间、联赛、轮次和官方或可靠结果来源；加时、点球、晋级另列，不能替代 90 分钟结果。若本地没有足球 case，也返回 source_check 和 zero_match_reason。",
+      "最近足球复盘：不得抓取或返回历史联赛全量数据、赔率 opening/closing、Qimen 字段、宫位、关系、概率、模型方向、Outcome、Review、Gold 或胜率；本请求只服务于本周末事后核验。",
+      "所有返回行必须保留 stable_key、field_name、value 或 NULL、status（ok/unavailable/blocked/conflict/parse_failed）、source_url、final_url、retrieved_at、field_locator、source_sha256。不同来源的值不得自动裁决，进入 conflict_queue；没有来源证据的字段不得填写。",
+      "对每个目标给出 audit：expected、discovered、complete、partial、missing，并提供 unresolved_queue。缺失目标必须保留在 unresolved_queue，不得静默省略；如果来源受限，明确写 blocked_reason。"
+    ],
+    "local_scope": {
+      "project_root": "D:\\奇门斗数",
+      "weekly_review_id": "weekly-review-20260926",
+      "review_date_bjt": "2026-10-04",
+      "stock_window_bjt": "2026-09-28 through 2026-10-02",
+      "football_window_bjt": "2026-09-26T00:00:00+08:00 through 2026-10-03T00:00:00+08:00",
+      "local_case_index": "Numerologist_skills-main/hindsight/indexes/case_index.json",
+      "local_snapshot_dir": "Numerologist_skills-main/hindsight/cases/snapshots"
+    },
+    "source_hints": [
+      "Yahoo Finance or yfinance-compatible historical market data for stock evidence",
+      "exchange or official market source when Yahoo fields are incomplete",
+      "official league/club result pages",
+      "Sofascore or API-Football for recent fixture/result cross-check",
+      "Football-Data only as a fallback for already completed matches, not as a substitute for an official result when an official source is available"
+    ]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "football_90_minute_separate_from_extra_time_and_penalties": true,
+    "no_prediction_or_model_fields": true,
+    "required_provenance": [
+      "source_url",
+      "final_url",
+      "retrieved_at",
+      "field_locator",
+      "source_sha256"
+    ],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  },
+  "created_at": "2026-10-04T11:58:53+08:00",
+  "dp_used": false
+}
