@@ -1,0 +1,48 @@
+{
+  "id": "req-20261004-005",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "scope": {
+    "football_only": true,
+    "competition_key": "ligue_1",
+    "competition_name": "France Ligue 1 / F1",
+    "country": "France",
+    "seasons": ["2018/19", "2019/20", "2020/21"],
+    "incremental_only": true,
+    "conflict_source": "D:/奇门斗数/work/ligue1_incremental_supplement_20261003/ledger/conflict_queue.csv"
+  },
+  "params": {
+    "topic": "Ligue 1 unresolved conflict queue evidence follow-up",
+    "questions": [
+      "只处理当前 conflict_queue 中的五项冲突，不重复抓取已经 resolved 的普通字段。返回逐字段证据，不返回模型或结构结论。",
+      "Amiens Stade de la Licorne：复核 33 场相同主场记录的 venue_latitude/venue_longitude。核对候选 C=49.893889,2.263611、D=49.89422,2.26337、E=49.894208,2.263311 以及已有 A/B 候选分别对应的正式场馆名称、地址、WGS84 坐标、来源优先级和有效期。若无法由权威来源唯一确定，保留每个候选及 conflict，不自动裁决。",
+      "Lyon vs Saint-Etienne 2018-11-23：复核官方法国当地开球时间、UTC/GMT 表示、IANA Europe/Paris 时区、官方轮次和球场。重点解释 20:45 CET 与 21:00 GMT 是否是时区标注错误、页面显示时区不同或确有不同开球时间。返回各来源原文定位和转换后的 UTC，不自动选胜者。",
+      "核对 req-20261003-006 回执中 venue_rows 的 audit=147 complete/28 partial 与逐行 142 complete/33 partial 的计数差异。返回计数口径、去重/重复行、partial 判定规则和可复核行级 stable_key；无法解释则保留 audit conflict。",
+      "核对 odds_gaps 的 audit_note=14+ cells 与逐行 16 cells/8 groups 的差异。只核对缺口计数、比赛组、bookmaker、market、field_name 和 status；不要把 closing、pre-closing 或任何其他书商值改成 true opening，不要填充无法验证的赔率。",
+      "不得返回或推导 Qimen、qimen_output、九宫、宫位、Q/F/G/I/M token、模型方向、Miss、概率、Outcome、Review、Gold 或结构筛选结果。"
+    ],
+    "source_hints": [
+      "https://fr.wikipedia.org/wiki/Saison_2018-2019_de_l%27Olympique_lyonnais",
+      "https://fr.wikipedia.org/wiki/Olympique_lyonnais_-_AS_Saint-%C3%89tienne_en_football",
+      "https://www.forebet.com/fr/football/matches/lyon-as-saint-%C3%89tienne-801306",
+      "https://fr.wikipedia.org/wiki/Stade_de_la_Licorne",
+      "https://mapcarta.com/W140166446",
+      "https://latitude.to/map/fr/france/regions/region-picardie/departement-de-la-somme/cities/ailly-sur-somme/articles/34736/stade-de-la-licorne",
+      "https://football-data.co.uk/notes.txt"
+    ]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "return_available_data_first": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "audit_fields": ["expected", "discovered", "complete", "partial", "missing"],
+    "football_only": true,
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  },
+  "created_at": "2026-10-04T18:10:00+08:00",
+  "dp_used": false
+}
