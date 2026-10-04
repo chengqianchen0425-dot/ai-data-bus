@@ -1,0 +1,38 @@
+{
+  "id": "req-20261004-003",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "scope": {
+    "football_only": true,
+    "competition_key": "veikkausliiga",
+    "competition_name": "Finland Veikkausliiga",
+    "country": "Finland",
+    "timezone": "Europe/Helsinki",
+    "seasons": ["2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
+    "fixture_scope": "all identifiable fixtures in these seasons",
+    "checklist_rows_expected": 2
+  },
+  "params": {
+    "topic": "Finland Veikkausliiga official round and meeting number source supplement 2019-2026",
+    "questions": [
+      "Find an explicit official league, federation, club, or official schedule source that identifies each fixture's official round for Veikkausliiga seasons 2019 through 2026. Return one row per identifiable fixture with exact stable fixture identity: season, date, kickoff, home_team, away_team, and official_round.",
+      "Find an explicit source or clearly documented schedule semantics for meeting_number. Return 1 or 2 only when the source explicitly identifies first/second meeting or an equivalent round-robin fixture sequence. If the source does not define it, return NULL with status unavailable or blocked; never infer it from date, CSV row order, team order, standings, or the number of prior matches.",
+      "Use official schedule pages first, then federation or club schedule archives, then a reliable cross-check. Preserve multiple source values as conflicts and do not select a winner. If an API source is used, retain the endpoint URL, query parameters excluding credentials, response field locator, and source hash.",
+      "Audit every season and compare expected fixtures with discovered rows. Return expected, discovered, complete, partial, missing, and unresolved_queue. Missing fixtures must stay listed rather than being dropped.",
+      "This is an evidence-only task. Do not return odds, Qimen fields, model direction, probability, Outcome, Review, Gold, or any formal prediction result. Do not request, expose, or invent API keys."
+    ],
+    "required_fields": ["competition_key","season","fixture_key","date","kickoff","home_team","away_team","official_round","meeting_number","status","source_name","source_url","final_url","retrieved_at","field_locator","source_sha256","conflict_group_id"]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_schedule_evidence_plus_unresolved_queue",
+    "status_values": ["ready","partial","unavailable","blocked","conflict","unmatched"],
+    "audit_fields": ["expected","discovered","complete","partial","missing"],
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  },
+  "created_at": "2026-10-04T17:29:34+08:00",
+  "dp_used": false
+}

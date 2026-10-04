@@ -1,0 +1,65 @@
+{
+  "id": "req-20261004-002",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "scope": {
+    "football_only": true,
+    "competition_key": "veikkausliiga",
+    "competition_name": "Finland Veikkausliiga",
+    "country": "Finland",
+    "timezone": "Europe/Helsinki",
+    "seasons": ["2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
+    "incremental_only": true,
+    "checklist_rows_expected": 21,
+    "local_gap_manifest": "D:/奇门斗数/work/veikkausliiga-fin-20260927/incremental_2019_2026/human_review_checklist_current_20261004.csv"
+  },
+  "params": {
+    "topic": "Finland Veikkausliiga 2019-2026 club, venue and related pre-match metadata gap supplement",
+    "questions": [
+      "Resolve the 21 checklist rows below using official club, federation, league, venue, municipal, or dated historical schedule sources. Return row-level facts only; preserve NULL when unresolved and keep conflicts instead of choosing a winner.",
+      "For club identity and founded/entry fields, distinguish the legal/current club from predecessor clubs, mergers, renamed entities, and same-name clubs. FC Lahti must explicitly test whether an entry year earlier than 1996 belongs to a predecessor or a different entity. FinnPa must be checked as the Helsinki club, not a Danish venue mapping. TP-Seinäjoki founded year needs an official or federation confirmation, not only a secondary source.",
+      "For venues, return canonical venue name, former names/aliases, city or district, WGS84 latitude/longitude, source URL, and the season/date validity interval. Do not substitute a city centre for a missing stadium. OTP must be season/date keyed for Raatti versus later Heinäpää usage. Ponnistus must test Haapaniemi against the suspicious Tapiola mapping. Conflicting venues remain separate evidence rows.",
+      "For home_standing and away_standing, only return a dated pre-kickoff standings snapshot when the source explicitly dates it before the fixture; do not reconstruct standings from final tables or infer from match order.",
+      "For official_round and meeting_number rows included in this broad 21-row manifest, report only source candidates and explicit semantics if encountered; do not derive either field from date, CSV order, or fixture index. The focused official schedule request is the authoritative task for these two fields.",
+      "Use multilingual aliases and historical spellings: FinnPa/FinnPA, KuPS/Kuopion Palloseura, FC Lahti/Lahti, OTP/Oulun Työväen Palloilijat, Ekenäs IF/EIF/Tammisaari, FC Hämeenlinna, FC Jazz/Pori, Kumu/Kuusankoski, MP/Mikkelin Palloilijat, Ponnistus/Haapaniemi, TPV/Tampereen Pallo-Veikot, Tampere United, TP-Seinäjoki/Törnävän Pallo-55/TP-55.",
+      "For each target return stable_key, field_name, value or NULL, status, source_name, source_url, final_url, retrieved_at, field_locator, source_sha256, validity_start, validity_end, and conflict_group_id when applicable.",
+      "Return audit counts expected/discovered/complete/partial/missing and an unresolved_queue. A missing or blocked field must remain in the output with a reason. Do not return Qimen, model, probability, odds, Outcome, Review, Gold, or any formal prediction field. Do not write or request credentials."
+    ],
+    "checklist_rows": [
+      {"record_key":"veikkausliiga|club|FinnPa","field":"club_identity/founded_year/venue","status":"manual_review_required","reason":"entity_venue_mapping_blocked"},
+      {"record_key":"veikkausliiga|club|KuPS","field":"club_identity/founded_year/venue","status":"manual_review_required","reason":"coordinate_validation_pending"},
+      {"record_key":"veikkausliiga|club|FC Lahti","field":"club_identity/founded_year/venue","status":"manual_review_required","reason":"entry_year_before_founded_year"},
+      {"record_key":"veikkausliiga|club|OTP","field":"club_identity/founded_year/venue","status":"manual_review_required","reason":"season_dimension_required"},
+      {"record_key":"veikkausliiga|club|FC Lahti","field":"club_entry_year","status":"manual_review_required","reason":"entry_year_1990_before_founded_year_1996"},
+      {"record_key":"veikkausliiga|club|Ekenäs IF","field":"venue_wgs84_coordinates","status":"unavailable","reason":"ground_is_city_name_and_stadium_not_verified"},
+      {"record_key":"veikkausliiga|club|FC Hämeenlinna","field":"venue_wgs84_coordinates","status":"manual_review_required","reason":"Kauriala_vs_Helsinki_Olympiastadion_mapping_conflict"},
+      {"record_key":"veikkausliiga|club|FC Jazz","field":"venue_wgs84_coordinates","status":"manual_review_required","reason":"Porin_stadion_mapping_not_verified"},
+      {"record_key":"veikkausliiga|club|Kumu","field":"venue_wgs84_coordinates","status":"manual_review_required","reason":"Arto_Tolsa_Areena_vs_Kuusankoski_mapping_not_verified"},
+      {"record_key":"veikkausliiga|club|MP","field":"venue_wgs84_coordinates","status":"manual_review_required","reason":"Mikkelin_urheilupuisto_mapping_not_verified"},
+      {"record_key":"veikkausliiga|club|OTP","field":"venue_wgs84_coordinates","status":"manual_review_required","reason":"Raatti_vs_Heinäpää_requires_season_date_dimension"},
+      {"record_key":"veikkausliiga|club|Ponnistus","field":"venue_wgs84_coordinates","status":"manual_review_required","reason":"Haapaniemi_primary_vs_Tapiola_suspicious_mapping"},
+      {"record_key":"veikkausliiga|club|TPV","field":"venue_wgs84_coordinates","status":"manual_review_required","reason":"Kauppi_vs_Tammela_historical_mapping_not_verified"},
+      {"record_key":"veikkausliiga|club|Tampere United","field":"venue_wgs84_coordinates","status":"manual_review_required","reason":"Kauppi_vs_Tampereen_stadion_mapping_not_verified"},
+      {"record_key":"veikkausliiga|club|TP-Seinäjoki","field":"venue_wgs84_coordinates","status":"manual_review_required","reason":"Seinäjoen_keskuskenttä_mapping_not_verified"},
+      {"record_key":"veikkausliiga|*|all","field":"official_round","status":"missing_source","reason":"broad_manifest_row_delegated_to_focused_schedule_request"},
+      {"record_key":"veikkausliiga|*|all","field":"meeting_number","status":"blocked_no_official_schedule","reason":"broad_manifest_row_delegated_to_focused_schedule_request"},
+      {"record_key":"veikkausliiga|*|all","field":"home_standing","status":"missing_source","reason":"dated_pre_kickoff_snapshot_required"},
+      {"record_key":"veikkausliiga|*|all","field":"away_standing","status":"missing_source","reason":"dated_pre_kickoff_snapshot_required"},
+      {"record_key":"veikkausliiga|*|all","field":"venue_by_season","status":"missing_source","reason":"season_specific_venue_source_required"},
+      {"record_key":"veikkausliiga|club|TP-Seinajoki","field":"founded_year","status":"manual_review_required","reason":"secondary_source_only_official_confirmation_required"}
+    ]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_plus_unresolved_queue",
+    "row_fields": ["stable_key","field_name","value","status","source_name","source_url","final_url","retrieved_at","field_locator","source_sha256","validity_start","validity_end","conflict_group_id"],
+    "status_values": ["ready","partial","unavailable","blocked","conflict","parse_failed"],
+    "audit_fields": ["expected","discovered","complete","partial","missing"],
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  },
+  "created_at": "2026-10-04T17:29:34+08:00",
+  "dp_used": false
+}

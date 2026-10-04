@@ -1,0 +1,42 @@
+{
+  "id": "req-20261004-004",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "scope": {
+    "football_only": true,
+    "competition_key": "veikkausliiga",
+    "competition_name": "Finland Veikkausliiga",
+    "country": "Finland",
+    "seasons": ["2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
+    "checklist_rows_expected": 2
+  },
+  "params": {
+    "topic": "Finland Veikkausliiga 2019-2026 source mapping and API configuration audit",
+    "questions": [
+      "Audit which concrete public source mappings can provide Veikkausliiga official schedule, official_round, meeting_number, venue_by_season, dated pre-kickoff standings, club founded/entry metadata, and row-level fixture identity. Return source name, exact URL or URL template, field locator, language/alias requirements, season coverage, and whether the page is static or dynamic.",
+      "Audit the existing Muse source mapping state without treating any old processing, error, unavailable, or request_sha-mismatched response as data. In particular, report that the prior request req-20261003-011 is not valid for ingestion if its response hash does not match its current request, and identify what a fresh valid response must contain.",
+      "Audit API-Football as a possible schedule/round/venue cross-check. Return the public competition/league identifier and endpoint/field mapping only if verifiable. If authentication is required or the API key is absent, return status blocked_missing_API_FOOTBALL_KEY and list the exact non-secret configuration needed (environment variable name, endpoint family, requested fields). Never return or ask for an API key, password, bearer token, or credential value.",
+      "Separate source mapping facts from actual retrieved fixture facts. Do not claim a field is filled merely because an endpoint exists. Do not infer official_round or meeting_number from date/order. Preserve conflicts and unavailable states with source evidence.",
+      "Return two top-level audit targets: muse_response and api_football. For each include status, source URL/config reference, field mapping, retrieved_at, source_sha256 when a document was fetched, and unresolved reasons. Do not return odds, Qimen fields, model direction, probability, Outcome, Review, Gold, or formal predictions."
+    ],
+    "local_configuration_state": {
+      "api_key_environment_variable": "API_FOOTBALL_KEY",
+      "key_present_in_current_process": false,
+      "prior_muse_request": "req-20261003-011",
+      "prior_muse_request_must_be_hash_checked": true
+    }
+  },
+  "output_contract": {
+    "format": "json_report_plus_source_mapping_rows_plus_unresolved_queue",
+    "targets": ["muse_response","api_football"],
+    "status_values": ["ready","partial","unavailable","blocked","conflict","parse_failed"],
+    "required_provenance": ["source_url","final_url","retrieved_at","field_locator","source_sha256"],
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  },
+  "created_at": "2026-10-04T17:29:34+08:00",
+  "dp_used": false
+}
