@@ -1,0 +1,60 @@
+{
+  "id": "req-20261006-005",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "scope": {
+    "football_only": true,
+    "competition_key": "serie_a",
+    "competition_code": "I1",
+    "competition_name": "Italy Serie A",
+    "country": "Italy",
+    "timezone": "Europe/Rome",
+    "seasons": ["2018/19", "2019/20", "2020/21"],
+    "target_second_cycle_fixtures": 570,
+    "target_first_cycle_partner_fixtures": 570,
+    "incremental_only": true,
+    "exclude_qimen_and_model_fields": true
+  },
+  "params": {
+    "topic": "Serie A 2018/19-2020/21 first-cycle results, official schedule verification, and official historical pre-kickoff standings snapshots for the 570 second-cycle fixtures",
+    "known_local_target": {
+      "fixture_input": "D:\\奇门斗数\\work\\serie_a_incremental_qimen_odds_screen_20261003\\incremental_fixture_input.jsonl",
+      "method_context_audit": "D:\\奇门斗数\\work\\serie_a_method_context_increment_20261006\\audit_report.json",
+      "existing_non_qimen_receipt": "D:\\奇门斗数\\work\\ai-data-bus\\responses\\req-20261002-012.json",
+      "existing_receipt_scope": "second_cycle_rows_only; first_cycle_is_coverage_only",
+      "join_key": "season|match_date|home_team|away_team"
+    },
+    "questions": [
+      "Only process Italy Serie A I1 regular-season fixtures in 2018/19, 2019/20 and 2020/21. The local target is the 570 second-cycle fixtures (official Wk/round 20-38) and the first meeting of the same unordered team pair in that season. Return only missing, newly evidenced, or conflicting rows; do not repeat the existing second-cycle odds rows.",
+      "For each target second-cycle fixture, identify the corresponding first-cycle fixture by season plus unordered team pair. Return first_cycle_result with first_fixture_date, first_fixture_round, first_fixture_home_team, first_fixture_away_team, first_fixture_home_goals_90m, first_fixture_away_goals_90m, first_fixture_result_90m, and a stable first_fixture_key. Do not use row order, final standings, odds, Qimen fields, or team occurrence counts to identify the meeting.",
+      "Verify the official schedule for both the second-cycle target and its first-cycle partner using an explicit league schedule or official round/matchday source. Return official_round/matchday, date, local kickoff and venue when directly evidenced. Preserve the published round for postponed matches. Never derive official_round from date order or CSV row order. If only a complete secondary schedule is available, label it secondary and retain the official-source gap as unresolved.",
+      "For the second-cycle kickoff, obtain an official historical pre-kickoff standings snapshot for both teams when available. For each team return rank, points, matches_played, wins, draws, losses, goals_for, goals_against, goal_difference, snapshot_as_of, snapshot_round, source_url, final_url, field_locator, source_sha256, and field_semantics. The snapshot must be before kickoff and tied to a dated official table or matchday position; final season tables, post-match tables, or values reconstructed only from final results are prohibited.",
+      "Prioritize official Lega Serie A, FIGC, or club/league archive pages for standings and schedule. If an official historical snapshot is not available, return NULL with status=unavailable or blocked and explain the source limitation. A secondary source may be returned as a separately labelled cross-check, but it must not be promoted to official.",
+      "Every row must contain stable_match_key, season, target_cycle, field_name, value or NULL, status (ok/unavailable/blocked/conflict/parse_failed), source_url, final_url, retrieved_at, field_locator, source_sha256 when available, field_semantics, and evidence_notes. Keep unresolved rows in unresolved_queue and do not collapse conflicts.",
+      "Return audit totals by season and field: expected, discovered, identity_matched, complete, partial, unavailable, blocked, conflicts, and unresolved. Include exact counts for first_cycle_result, official_schedule_round, official_schedule_identity, and standings_before_kickoff_home/away.",
+      "This is football evidence only. Do not return Qimen charts, palaces, Q/F/G/I/M tokens, chase_relation, draw_value, odds, probabilities, Miss labels, Outcome, Review, Gold, or SQLite writes. Do not claim Method Context completeness merely because a source endpoint exists."
+    ],
+    "source_hints": [
+      "https://www.legaseriea.it/",
+      "https://www.figc.it/",
+      "https://fbref.com/en/comps/11/2018-2019/schedule/",
+      "https://fbref.com/en/comps/11/2019-2020/schedule/",
+      "https://fbref.com/en/comps/11/2020-2021/schedule/",
+      "https://www.worldfootball.net/schedule/ita-serie-a-2018-2019/",
+      "https://www.worldfootball.net/schedule/ita-serie-a-2019-2020/",
+      "https://www.worldfootball.net/schedule/ita-serie-a-2020-2021/"
+    ]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_context_rows_plus_unresolved_queue",
+    "football_only": true,
+    "row_level_data": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  },
+  "created_at": "2026-10-06T00:00:00+08:00"
+}
