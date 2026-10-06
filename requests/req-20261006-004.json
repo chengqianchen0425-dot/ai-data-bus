@@ -1,0 +1,42 @@
+{
+  "id": "req-20261006-004",
+  "type": "deep_research",
+  "target": "muse",
+  "scope": {
+    "football_only": true,
+    "competition_key": "veikkausliiga",
+    "competition_name": "Finland Veikkausliiga",
+    "timezone": "Europe/Helsinki",
+    "seasons": ["2019", "2020", "2021", "2022", "2023", "2024", "2025"],
+    "incremental_only": true,
+    "exclude_all_2026": true
+  },
+  "params": {
+    "topic": "Veikkausliiga 2019-2025 row-level official round, fixture identity, venue, kickoff and timezone evidence",
+    "questions": [
+      "Return row-level evidence for every 2019-2025 fixture, including official_round when an explicit round or matchday source exists, fixture identity, date, local kickoff, venue, city, venue coordinates and IANA timezone when explicitly evidenced.",
+      "Prioritize explicit round or matchday groupings from official Veikkausliiga or Palloliitto sources. Playmakerstats edition and team match pages may be used as a cross-check or fallback only when the page visibly labels Matchday/round; preserve the page URL, locator, retrieval time and SHA-256.",
+      "Never derive official_round from date order, CSV row order, scores, standings, odds, or team occurrence count. Preserve NULL/unavailable for rows without explicit round evidence.",
+      "For every row include competition_key, season, fixture_key, date, kickoff, kickoff_timezone, home_team, away_team, official_round, venue, city, venue_latitude, venue_longitude, venue_timezone, status, source_name, source_url, final_url, retrieved_at, field_locator, source_sha256, and evidence_notes.",
+      "Do not infer meeting_number, first/second meeting, double_round_robin, Qimen charts, palaces, relations, odds, probabilities, Outcome, Review, Gold, or model conclusions. meeting_number must remain NULL/unavailable unless an authoritative definition is explicitly found.",
+      "Return audit totals separately for each season and distinguish complete row-level evidence, partial rows, unavailable fields and unresolved rows. Do not include any 2026 fixture in the audit or unresolved queue."
+    ],
+    "known_local_scope": {
+      "remaining_missing": "D:\\奇门斗数\\work\\veikkausliiga-fin-20260927\\incremental_2019_2026\\human_review_checklist_current_20261004.csv",
+      "prior_request": "req-20261006-003",
+      "known_gap": "2019-2025 official_round remains unresolved for about 1131 fixtures; fixture identity and venue evidence are partial/secondary in prior rows",
+      "excluded_scope": ["all 2026 fixtures"]
+    }
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_rows_plus_unresolved_queue",
+    "row_level_data": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  },
+  "created_at": "2026-10-06T16:30:00+08:00",
+  "notes": "This request narrows the active work to 2019-2025. It supersedes 2026 work for current prioritization without deleting or rewriting req-20261006-002 or req-20261006-003. Evidence-only supplement; do not write formal Snapshot/Outcome/Review/Gold or SQLite records."
+}
