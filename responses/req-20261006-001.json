@@ -1,10 +1,115 @@
 {
   "id": "req-20261006-001",
-  "status": "processing",
+  "status": "ok",
   "from": "muse",
   "request_sha": "fa5c6818464f7c73",
-  "note": "研究进行中：拉取 WorldFootball/FBref 三赛季 MLS 常规赛全赛程 + 核验 2018/2019/2020 赛制规则（是否为双循环/不平衡赛程），逐场导出 meeting_number 等 cycle 字段证据。",
   "dp_used": false,
-  "to_codex": "",
-  "started_at_utc": "2026-10-06T06:12:00Z"
+  "data": {
+    "summary": "MLS 2018-2020 regular-season cycle facts complete. 1091 fixtures x 5 fields = 5455 rows. meeting_number/return_leg/official_round ok (3273); second_cycle/matchday unavailable (2182) — no double round robin exists in any of the three seasons, MLS publishes no numbered matchdays.",
+    "season_rules": [
+      {
+        "season": "2018",
+        "double_round_robin": false,
+        "definition": "Unbalanced schedule: 23 teams, 34 games each. Full double round robin would require 44 games per team. Pairs met 1-3 times (104 pairs twice, 132 once, 17 pairs three times).",
+        "expected_schedule_rule": "Home-and-away vs most conference opponents plus selected cross-conference opponents; 17 pairs (rivalries/additional) met a third time.",
+        "supports_second_cycle_mapping": false,
+        "cycle_route_note": "No defined competition cycles; cycle_route not applicable.",
+        "source_url": "https://fbref.com/en/comps/22/2018/schedule/"
+      },
+      {
+        "season": "2019",
+        "double_round_robin": false,
+        "definition": "Unbalanced schedule: 24 teams (12 East + 12 West), 34 games each. Full double round robin would require 46 games per team. All 132 intra-conference pairs met exactly twice (home and away); all 144 cross-conference pairs met exactly once.",
+        "expected_schedule_rule": "Home-and-away vs each of 11 conference opponents (22 games) + single game vs each of 12 cross-conference opponents (12 games) = 34.",
+        "supports_second_cycle_mapping": false,
+        "cycle_route_note": "No defined competition cycles; cycle_route not applicable.",
+        "source_url": "https://fbref.com/en/comps/22/2019/schedule/"
+      },
+      {
+        "season": "2020",
+        "double_round_robin": false,
+        "definition": "COVID-shortened regionalized unbalanced schedule: 26 teams, 18-23 games each (mode 23). Full double round robin would require 50 games per team. Pairs met 1-4 times (62 once, 48 twice, 22 three times, 17 four times; 4-meeting pairs are regional rivalries). Includes 36 MLS is Back Tournament group-stage games which counted toward regular-season standings; excludes 15 MIBT knockout games and 17 playoff games.",
+        "expected_schedule_rule": "Pre-shutdown (2 games/team) + MIBT group stage (3 games/team, counted as regular season) + regionalized resume schedule (Aug 12-Nov 8); no balanced home-away structure.",
+        "supports_second_cycle_mapping": false,
+        "cycle_route_note": "No defined competition cycles; cycle_route not applicable.",
+        "source_url": "https://fbref.com/en/comps/22/2020/schedule/"
+      }
+    ],
+    "audit_totals": {
+      "by_season": {
+        "2018": {
+          "fixtures": 391,
+          "fields_ok": 1173,
+          "fields_unavailable": 782,
+          "fields_total": 1955
+        },
+        "2019": {
+          "fixtures": 408,
+          "fields_ok": 1224,
+          "fields_unavailable": 816,
+          "fields_total": 2040
+        },
+        "2020": {
+          "fixtures": 292,
+          "fields_ok": 876,
+          "fields_unavailable": 584,
+          "fields_total": 1460
+        }
+      },
+      "total_rows": 5455
+    },
+    "unresolved_queue": [
+      {
+        "season": "2018",
+        "field": "second_cycle",
+        "count": 391,
+        "reason": "Season is not a double round robin (unbalanced schedule); no defined cycle boundary."
+      },
+      {
+        "season": "2018",
+        "field": "matchday",
+        "count": 391,
+        "reason": "MLS does not publish official numbered matchdays."
+      },
+      {
+        "season": "2019",
+        "field": "second_cycle",
+        "count": 408,
+        "reason": "Season is not a double round robin (unbalanced schedule); no defined cycle boundary."
+      },
+      {
+        "season": "2019",
+        "field": "matchday",
+        "count": 408,
+        "reason": "MLS does not publish official numbered matchdays."
+      },
+      {
+        "season": "2020",
+        "field": "second_cycle",
+        "count": 292,
+        "reason": "Season is not a double round robin (unbalanced schedule); no defined cycle boundary."
+      },
+      {
+        "season": "2020",
+        "field": "matchday",
+        "count": 292,
+        "reason": "MLS does not publish official numbered matchdays."
+      }
+    ],
+    "row_data_file": "work-req-20261006-001/req-20261006-001-rows.json",
+    "row_data_rows": 5455,
+    "row_data_sha256": "95e1ee4bfab52c39eb768c6d7a26470cd136a923f6f629ba7fe95f16f8eda35d",
+    "key_findings": [
+      "double_round_robin=false for 2018, 2019, 2020 (unbalanced schedules; 2020 COVID-shortened). No cycle boundary exists; supports_second_cycle_mapping=false.",
+      "2018: 391 fixtures, 23 teams x 34 games; pairs met 1-3x (17 pairs x3, e.g. NYCFC-Orlando).",
+      "2019: 408 fixtures, 24 teams x 34 games; clean: 132 intra-conference pairs x2 (home/away), 144 cross-conference pairs x1.",
+      "2020: 292 fixtures, 26 teams, 18-23 games each; includes 36 MLS is Back group-stage games (counted in regular-season standings); excludes 15 MIBT knockout + 17 playoff games.",
+      "meeting_number derived chronologically per pair from complete schedule (field_semantics=derived_from_complete_source_schedule).",
+      "return_leg=true iff venue reversed vs pair's immediately previous meeting.",
+      "matchday unavailable: MLS publishes no numbered matchdays; fbref has no matchday column.",
+      "Caveat: worldfootball.net fetch failed; fbref used for round-label verification (Regular Season vs Playoffs/MIBT boundaries verified). football-data dates appear ~1 day timezone-shifted vs US-local; chronological order internally consistent."
+    ]
+  },
+  "fetched_at": "2026-10-06T14:20:00+08:00",
+  "note": "Football evidence only. No Qimen/model content. Row-level data in work-req-20261006-001/req-20261006-001-rows.json (5455 rows with full provenance per row)."
 }
