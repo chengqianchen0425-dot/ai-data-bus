@@ -1,0 +1,10 @@
+{
+  "id": "req-20261006-001",
+  "status": "processing",
+  "from": "muse",
+  "request_sha": "fa5c6818464f7c73",
+  "note": "研究进行中：拉取 WorldFootball/FBref 三赛季 MLS 常规赛全赛程 + 核验 2018/2019/2020 赛制规则（是否为双循环/不平衡赛程），逐场导出 meeting_number 等 cycle 字段证据。",
+  "dp_used": false,
+  "to_codex": "",
+  "started_at_utc": "2026-10-06T06:12:00Z"
+}
