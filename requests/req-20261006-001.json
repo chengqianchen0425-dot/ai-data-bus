@@ -1,0 +1,46 @@
+{
+  "id": "req-20261006-001",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "params": {
+    "topic": "MLS 2018-2020 only: fill the remaining per-fixture competition-cycle facts needed for Shadow Q+F+I and Q+F+I+M",
+    "questions": [
+      "Only process MLS regular-season fixtures in seasons 2018, 2019 and 2020. Exclude playoffs, MLS Cup, USL, MLS Next Pro, cups, friendlies and any fixture already complete in the local ledger.",
+      "Use the local stable_match_key join key season + local date + home_team + away_team. For every locally unresolved row, seek directly evidenced meeting_number, second_cycle, return_leg, cycle_route and official_round/matchday when available. Return only missing or conflicting rows; do not repeat rows already resolved unless needed to show a conflict.",
+      "Prefer official MLS schedule/MLS Fact and Record Book or official schedule pages. Cross-check with a complete explicit schedule source such as FBref, WorldFootball or Soccerway. A field derived from a complete schedule is allowed only when the response states field_semantics=derived_from_complete_source_schedule, gives the derivation_rule, ordered source rows or an auditable locator, and source URL. Never infer from partial lists, odds, standings, result order, or row index.",
+      "Verify the season-level competition rule for 2018, 2019 and 2020: double_round_robin true/false/unknown, definition, expected schedule rule, and whether it supports mapping second_cycle or return_leg. Preserve NULL for unbalanced schedules, third meetings, same-venue repeat meetings, or unsupported rows.",
+      "Return row-level data even when unresolved. Each row must contain stable_match_key, season, date, home_team, away_team, field_name, value or NULL, status (ok/unavailable/blocked/conflict/parse_failed), source_url, final_url, retrieved_at, field_locator, source_sha256 when available, field_semantics, and evidence_notes. Include audit totals and unresolved_queue by season and field.",
+      "This is football evidence only. Do not return Qimen charts, palaces, relations, model directions, odds structures, probabilities, Miss labels, Outcome, Review, Gold, or SQLite writes. Do not claim that a field is complete merely because an endpoint exists."
+    ],
+    "source_hints": [
+      "https://www.mlssoccer.com/",
+      "https://www.worldfootball.net/schedule/usa-major-league-soccer-2018/",
+      "https://www.worldfootball.net/schedule/usa-major-league-soccer-2019/",
+      "https://www.worldfootball.net/schedule/usa-major-league-soccer-2020/",
+      "https://fbref.com/en/comps/22/2018/schedule/",
+      "https://fbref.com/en/comps/22/2019/schedule/",
+      "https://fbref.com/en/comps/22/2020/schedule/"
+    ],
+    "known_local_scope": {
+      "competition_key": "mls",
+      "seasons": [2018, 2019, 2020],
+      "local_context_csv": "D:\\奇门斗数\\work\\mls_incremental_gap_20261003\\context_2018_2020\\context_2018_2020_muse_req005_enriched.csv",
+      "local_relation_ledger_csv": "D:\\奇门斗数\\work\\mls_incremental_gap_20261003\\context_2018_2020\\relation_ledger_2018_2020_shadow_candidate.csv",
+      "local_gap_report": "D:\\奇门斗数\\work\\mls_incremental_gap_20261003\\context_2018_2020\\relation_shadow_structure_report_20261004.json",
+      "target_layers": ["Q+F+I", "Q+F+I+M"],
+      "known_gap_fields": ["meeting_number", "second_cycle", "return_leg", "cycle_route", "official_round", "matchday", "double_round_robin"]
+    }
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_missing_conflict_rows_plus_season_level_rules_and_unresolved_queue",
+    "football_only": true,
+    "row_level_data": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  },
+  "created_at": "2026-10-06T00:00:00+08:00"
+}
