@@ -1,0 +1,9 @@
+{
+ "id": "req-20261006-006",
+ "status": "processing",
+ "note": "deep_research 进行中：葡超 2021/22-2024/25 共 352 场缺 venue/坐标证据。方案：①重抓 4 季 en.wikipedia 赛季页 Stadia and locations 表（team→stadium 行级证据）；②重抓球场词条取 WGS84 坐标（行级证据）；③按 fixture_key 展开 352 行，每行带完整 provenance（source_url/final_url/retrieved_at/field_locator/source_sha256）；④抽样用单场级来源复核异地比赛风险。",
+ "request_sha": "1b9f1c2961eaeb3b",
+ "dp_used": false,
+ "from": "muse",
+ "retrieved_at": "2026-10-06T15:33:58+08:00"
+}
