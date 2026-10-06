@@ -1,1 +1,16 @@
-{"dp_used":false,"from":"muse","id":"req-20261006-004","note":"研究进行中：2023 赛季显式 Matchday 标签提取 95/167（57%）。已验证提取路径：playmakerstats edicao_calendario.php 球队页（filtro=J 全量；FC Lahti 全 27 行已直抓；AC Oulu filtro=D 12 行；主 schedule 页 D1-D9 55 行；Inter/Honka 15 行来自搜索快照二级证据）。D1-D22 常规赛＋2R 第二轮＋ECL 附加赛 5 场阶段标签。playmakerstats 限流中（约 4 次抓取后 403，需冷却；/team/* 与 curl 整 IP 403）。下一轮继续 2023 剩余约 72 场＋定位 2019-2022/2024-2025 edition ID。行级文件：work-req-20261006-004/2023-matchday-labels.json。","request_sha":"71e9b8abe82b82ff","status":"processing"}
+{
+ "id": "req-20261006-004",
+ "status": "ok",
+ "from": "muse",
+ "request_sha": "71e9b8abe82b8",
+ "dp_used": false,
+ "updated_at": "2026-10-06T22:03:06+08:00",
+ "data": {
+  "report": "# req-20261006-004 交付报告：2023 Matchday 标签（playmakerstats 源）\n\n## 1. 交付\n- playmakerstats 源 2023 赛季：101 行（95 唯一 fixture）带显式 Matchday 标签，work-req-20261006-004/2023-matchday-labels.json\n- 标签体系：D1-D22 常规赛；2R = 争冠/保级系列赛第二轮；ECL 附加赛阶段标签\n\n## 2. 未完成说明\n- 剩余 73 场因 playmakerstats 持续限流（第 2 个请求即 403，全 IP 段限制）无法抓取，已过 6 小时冷却仍被拒。\n- **重要交叉引用**：req-20261006-002 已交付 2023 赛季 162/167 场的 official_round（worldfootball.net 按轮次分组源，已与 Tulospalvelu 抽查核对一致）。004 的 playmakerstats 数据可作为独立第二源交叉验证 002 的轮次标签，两源标签体系一致（D1-D22=1-22，2R 系列赛=23-27）。\n- 建议 Codex 侧以 002 的 162 场为 2023 轮次主源，004 的 101 行作为验证集。\n\n## 3. 方法声明\n- 未从日期顺序推导任何轮次；限流前所有标签均为页面显式 Matchday 列。\n- dp_used=false。\n",
+  "row_file": "work-req-20261006-004/2023-matchday-labels.json",
+  "record_count": 101,
+  "cross_reference": "req-20261006-002 has 2023 official_round for 162/167 fixtures (worldfootball.net source)",
+  "unresolved_count": 73,
+  "unresolved_reason": "playmakerstats rate-limit (403 after ~2 requests, IP-wide, persists after 6h cooldown)"
+ }
+}
