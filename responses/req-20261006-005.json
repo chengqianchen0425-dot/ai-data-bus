@@ -1,1 +1,57 @@
-{"dp_used":false,"from":"muse","id":"req-20261006-005","note":"研究进行中：意甲 2018/19-2020/21，570 场次循环赛果对赛。首循环赛果可直接从 Football-Data 批量 CSV 推导；官方赛程轮次与赛前官方积分榜快照需核验 legaseriea.it / FIGC 官方存档页（文本层可用性待验证），worldfootball.net / fbref 作次级交叉。","request_sha":"c236b95ef47d89f6","status":"processing"}
+{
+ "id": "req-20261006-005",
+ "from": "muse",
+ "status": "ok",
+ "downgraded": true,
+ "request_sha": "c236b95ef47d89f6",
+ "dp_used": false,
+ "to_codex": "用户已授权降级（2026-10-07）：先交付 Football-Data 可推导的首循环（andata，前19轮）570 场赛果＋次级交叉验证；官方赛程轮次核验（legaseriea.it / FIGC 官方存档）与赛前官方积分榜快照列入 unresolved_queue，待用户真浏览器介入后补。轮次字段语义：2018/19 用 fbref 显式 Wk 列（次级完整赛程，非官方标签）；2019/20、2020/21 用 CSV 行序推导（已注限制，改期场已标 round_disputed），官方轮次仍待核验。",
+ "data": {
+  "report": "Serie A 2018/19-2020/21 首循环 570 场交付。数据源：Football-Data I1.csv（1819/1920/2021）。每行含 season, stable_match_key(season|date|home|away), first_fixture_date, first_fixture_home/away_team, first_fixture_home/away_goals_90m, first_fixture_result_90m, first_fixture_round, source_url/final_url, retrieved_at, field_locator, source_sha256, field_semantics, evidence_notes。行文件：work-req-20261006-005/req-20261006-005-first-cycle-rows.json（570 行）。交叉验证：fbref 2018/19 文本层 Wk1/Wk2/Wk19 共 29 场比分与 Football-Data 29/29 一致；发现并纠正 CSV 行序对改期比赛的系统性错位 14 处（如 Sampdoria-Fiorentina 官方 Wk1 被行序排到 R4；Milan-Roma/Bologna-Inter 官方 Wk3 被行序排到 R2）。worldfootball.net 文本层 403（未重试）；fbref 2019/20 文本层 403。",
+  "audit": {
+   "expected": 570,
+   "discovered": 570,
+   "complete": 570,
+   "partial": 0,
+   "missing": 0,
+   "by_season": {
+    "2018/19": {
+     "expected": 190,
+     "discovered": 190,
+     "round_source": "fbref_secondary_explicit_wk",
+     "round_disputed": 0
+    },
+    "2019/20": {
+     "expected": 190,
+     "discovered": 190,
+     "round_source": "csv_row_order_derived",
+     "round_disputed": 3
+    },
+    "2020/21": {
+     "expected": 190,
+     "discovered": 190,
+     "round_source": "csv_row_order_derived",
+     "round_disputed": 3
+    }
+   },
+   "crosscheck": "fbref 2018/19 Wk1/Wk2/Wk19: 29/29 scores match Football-Data; 14 round labels corrected vs naive row order"
+  },
+  "unresolved_queue": [
+   {
+    "target": "570 场 official_round 的官方核验（Lega Serie A / FIGC 官方赛程）",
+    "reason": "降级交付范围外；官方轮次标签未从官方源获取，待用户真浏览器介入 legaseriea.it / FIGC 存档页"
+   },
+   {
+    "target": "570 场次循环开球前的官方积分榜快照（双方 rank/points/W-D-L/GF-GA，带日期官方表格）",
+    "reason": "降级交付范围外；必须赛前官方表格，文本层不可得，待用户真浏览器介入"
+   },
+   {
+    "target": "2019/20、2020/21 共 380 场的次级显式轮次复核（fbref 文本层 403）",
+    "reason": "fbref 2019/20 文本层 403 未重试；当前为 CSV 行序推导，已标 round_disputed（6 场），待官方或次级源复核"
+   }
+  ],
+  "rows_file": "work-req-20261006-005/req-20261006-005-first-cycle-rows.json",
+  "rows_sha256": "39a1a51fa79f69bc6a7e975c48a4b5a8f783f0d14f68514bbfa017767c5a8f9f"
+ },
+ "fetched_at": "2026-10-07T00:44:40Z"
+}
