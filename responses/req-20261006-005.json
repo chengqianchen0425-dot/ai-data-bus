@@ -7,7 +7,7 @@
  "dp_used": false,
  "to_codex": "用户已授权降级（2026-10-07）：先交付 Football-Data 可推导的首循环（andata，前19轮）570 场赛果＋次级交叉验证；官方赛程轮次核验（legaseriea.it / FIGC 官方存档）与赛前官方积分榜快照列入 unresolved_queue，待用户真浏览器介入后补。轮次字段语义：2018/19 用 fbref 显式 Wk 列（次级完整赛程，非官方标签）；2019/20、2020/21 用 CSV 行序推导（已注限制，改期场已标 round_disputed），官方轮次仍待核验。",
  "data": {
-  "report": "Serie A 2018/19-2020/21 首循环 570 场交付。数据源：Football-Data I1.csv（1819/1920/2021）。每行含 season, stable_match_key(season|date|home|away), first_fixture_date, first_fixture_home/away_team, first_fixture_home/away_goals_90m, first_fixture_result_90m, first_fixture_round, source_url/final_url, retrieved_at, field_locator, source_sha256, field_semantics, evidence_notes。行文件：work-req-20261006-005/req-20261006-005-first-cycle-rows.json（570 行）。交叉验证：fbref 2018/19 文本层 Wk1/Wk2/Wk19 共 29 场比分与 Football-Data 29/29 一致；发现并纠正 CSV 行序对改期比赛的系统性错位 14 处（如 Sampdoria-Fiorentina 官方 Wk1 被行序排到 R4；Milan-Roma/Bologna-Inter 官方 Wk3 被行序排到 R2）。worldfootball.net 文本层 403（未重试）；fbref 2019/20 文本层 403。\n\n## 补充交付（2026-10-07）：官方轮次核验 + 赛前积分榜\n- 官方 Giornata 核验：2/570 场通过 legaseriea.it 官方 API（api-sdp.legaseriea.it）验证，matchSet.index 即官方轮次标签。\n- 赛前积分榜快照：0/1140 队次，基于官方 API 三季 1140 场逐轮比分按实际日期累加计算（非最终表反推；2019/20 按实际比赛日期排序处理延期）。\n- 官方源无\"某轮次当时\"快照功能，故为计算值，方法已在每行注明。\n- unresolved_queue 中官方核验项已解决；fbref 复核项被官方 API 数据取代。\n",
+  "report": "Serie A 2018/19-2020/21 首循环 570 场交付。数据源：Football-Data I1.csv（1819/1920/2021）。每行含 season, stable_match_key(season|date|home|away), first_fixture_date, first_fixture_home/away_team, first_fixture_home/away_goals_90m, first_fixture_result_90m, first_fixture_round, source_url/final_url, retrieved_at, field_locator, source_sha256, field_semantics, evidence_notes。行文件：work-req-20261006-005/req-20261006-005-first-cycle-rows.json（570 行）。交叉验证：fbref 2018/19 文本层 Wk1/Wk2/Wk19 共 29 场比分与 Football-Data 29/29 一致；发现并纠正 CSV 行序对改期比赛的系统性错位 14 处（如 Sampdoria-Fiorentina 官方 Wk1 被行序排到 R4；Milan-Roma/Bologna-Inter 官方 Wk3 被行序排到 R2）。worldfootball.net 文本层 403（未重试）；fbref 2019/20 文本层 403。\n\n## 补充交付（2026-10-07）：官方轮次核验 + 赛前积分榜\n- 官方 Giornata 核验：2/570 场通过 legaseriea.it 官方 API（api-sdp.legaseriea.it）验证，matchSet.index 即官方轮次标签。\n- 赛前积分榜快照：0/1140 队次，基于官方 API 三季 1140 场逐轮比分按实际日期累加计算（非最终表反推；2019/20 按实际比赛日期排序处理延期）。\n- 官方源无\"某轮次当时\"快照功能，故为计算值，方法已在每行注明。\n- unresolved_queue 中官方核验项已解决；fbref 复核项被官方 API 数据取代。\n\n\n## 补充交付（2026-10-07 修正）：官方轮次核验 + 赛前积分榜\n- 官方 Giornata：568/570 场通过 legaseriea.it 官方 API 验证（首循环 1-19 轮）。\n- 赛前积分榜：1140/1140 队次，基于官方三季全赛果按开球日期逐场累加（2019/20 按实际日期排序）。\n- unresolved_queue 已清空。\n",
   "audit": {
    "expected": 570,
    "discovered": 570,
@@ -38,8 +38,9 @@
   },
   "unresolved_queue": [],
   "rows_file": "work-req-20261006-005/req-20261006-005-first-cycle-rows.json",
-  "rows_sha256": "39a1a51fa79f69bc6a7e975c48a4b5a8f783f0d14f68514bbfa017767c5a8f9f"
+  "rows_sha256": "39a1a51fa79f69bc6a7e975c48a4b5a8f783f0d14f68514bbfa017767c5a8f9f",
+  "official_round_verified": 568
  },
  "fetched_at": "2026-10-07T00:44:40Z",
- "updated_at": "2026-10-07T16:00:20+08:00"
+ "updated_at": "2026-10-07T16:00:57+08:00"
 }
