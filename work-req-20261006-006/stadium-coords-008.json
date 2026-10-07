@@ -1,0 +1,133 @@
+{
+ "Algarve (Estádio Algarve)": {
+  "lat": 37.0882389,
+  "lon": -7.9746629
+ },
+ "Complexo Desportivo FC Alverca": {
+  "lat": 38.89789,
+  "lon": -9.0352308,
+  "note": "Nominatim 命中 'Estádio do Futebol Clube de Alverca'"
+ },
+ "Estádio António Coimbra da Mota": {
+  "lat": 38.7158618,
+  "lon": -9.4064087
+ },
+ "Estádio Capital do Móvel": {
+  "lat": 41.2714775,
+  "lon": -8.3853824
+ },
+ "Estádio Cidade de Barcelos": {
+  "lat": 41.5510958,
+  "lon": -8.6230864
+ },
+ "Estádio Comendador Joaquim de Almeida Freitas": {
+  "lat": 41.3780317,
+  "lon": -8.3549951
+ },
+ "Estádio D. Afonso Henriques": {
+  "lat": 41.4458485,
+  "lon": -8.3009921
+ },
+ "Estádio José Alvalade": {
+  "lat": 38.7612024,
+  "lon": -9.1607832
+ },
+ "Estádio José Gomes": {
+  "lat": 38.7521563,
+  "lon": -9.2280007
+ },
+ "Estádio João Cardoso": {
+  "lat": 40.5119993,
+  "lon": -8.0827943
+ },
+ "Estádio Marcolino de Castro": {
+  "lat": 40.9266318,
+  "lon": -8.5459213
+ },
+ "Estádio Municipal 22 de Junho": {
+  "lat": 41.4012527,
+  "lon": -8.5224396,
+  "note": "= 24-26 表中的 'Estádio Municipal de Famalicão'，同一球场"
+ },
+ "Estádio Municipal de Arouca": {
+  "lat": 40.9322921,
+  "lon": -8.2504309
+ },
+ "Estádio Municipal de Braga": {
+  "lat": 41.5624996,
+  "lon": -8.4298677
+ },
+ "Estádio Municipal de Chaves": {
+  "lat": 41.7506323,
+  "lon": -7.4649841,
+  "note": "即表中 'Estádio Municipal Eng. Manuel Branco Teixeira'"
+ },
+ "Estádio Municipal de Portimão": {
+  "lat": 37.1356935,
+  "lon": -8.5398305
+ },
+ "Estádio Municipal de Rio Maior": {
+  "lat": 39.3445766,
+  "lon": -8.9344835,
+  "note": "Casa Pia 22-26 实际主场"
+ },
+ "Estádio Nacional": {
+  "lat": 38.7087907,
+  "lon": -9.2605909,
+  "note": "Jamor, Oeiras；Belenenses SAD/B-SAD 18-22 主场"
+ },
+ "Estádio da Luz": {
+  "lat": 38.7526893,
+  "lon": -9.1846899
+ },
+ "Estádio da Madeira": {
+  "lat": 32.6706231,
+  "lon": -16.8835636
+ },
+ "Estádio de São Luís": {
+  "lat": 37.0228852,
+  "lon": -7.9282722
+ },
+ "Estádio de São Miguel": {
+  "lat": 37.7638647,
+  "lon": -25.6225913
+ },
+ "Estádio do Bessa": {
+  "lat": 41.1621978,
+  "lon": -8.6426013,
+  "note": "Nominatim 命中 'Estádio do Bessa Século XXI'"
+ },
+ "Estádio do Bonfim": {
+  "lat": 38.5313436,
+  "lon": -8.8911816
+ },
+ "Estádio do CD Aves": {
+  "lat": 41.3667575,
+  "lon": -8.4117039,
+  "note": "Nominatim 命中 'Estádio do Clube Desportivo das Aves'；AVS 24-26 共用"
+ },
+ "Estádio do Dragão": {
+  "lat": 41.1618235,
+  "lon": -8.5837492
+ },
+ "Estádio do FC Vizela": {
+  "lat": 41.3889481,
+  "lon": -8.3075383,
+  "note": "Nominatim 命中 'Campo do Futebol Clube de Vizela'"
+ },
+ "Estádio do Marítimo": {
+  "lat": 32.6455744,
+  "lon": -16.9283862
+ },
+ "Estádio do Rio Ave FC": {
+  "lat": 41.3627496,
+  "lon": -8.7401457,
+  "note": "即 Estádio dos Arcos"
+ },
+ "Estádio dos Arcos": {
+  "lat": 41.3627496,
+  "lon": -8.7401457,
+  "note": "= Estádio do Rio Ave FC"
+ },
+ "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03, 29/29 命中"
+}

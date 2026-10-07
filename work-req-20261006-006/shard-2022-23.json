@@ -1,0 +1,2943 @@
+[
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-08-06|rioave|vizela",
+  "season": "2022/23",
+  "date": "2022-08-06",
+  "home_team_key": "rioave",
+  "away_team_key": "vizela",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-08-07|chaves|guimaraes",
+  "season": "2022/23",
+  "date": "2022-08-07",
+  "home_team_key": "chaves",
+  "away_team_key": "guimaraes",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-08-13|casapia|benfica",
+  "season": "2022/23",
+  "date": "2022-08-13",
+  "home_team_key": "casapia",
+  "away_team_key": "benfica",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-08-14|vizela|fcporto",
+  "season": "2022/23",
+  "date": "2022-08-14",
+  "home_team_key": "vizela",
+  "away_team_key": "fcporto",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-08-15|maritimo|chaves",
+  "season": "2022/23",
+  "date": "2022-08-15",
+  "home_team_key": "maritimo",
+  "away_team_key": "chaves",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-08-15|pacosferreira|portimonense",
+  "season": "2022/23",
+  "date": "2022-08-15",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "portimonense",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-08-20|chaves|vizela",
+  "season": "2022/23",
+  "date": "2022-08-20",
+  "home_team_key": "chaves",
+  "away_team_key": "vizela",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-08-21|casapia|boavista",
+  "season": "2022/23",
+  "date": "2022-08-21",
+  "home_team_key": "casapia",
+  "away_team_key": "boavista",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-08-26|pacosferreira|estoril",
+  "season": "2022/23",
+  "date": "2022-08-26",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "estoril",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-08-27|maritimo|portimonense",
+  "season": "2022/23",
+  "date": "2022-08-27",
+  "home_team_key": "maritimo",
+  "away_team_key": "portimonense",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-08-28|rioave|fcporto",
+  "season": "2022/23",
+  "date": "2022-08-28",
+  "home_team_key": "rioave",
+  "away_team_key": "fcporto",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-08-29|vizela|gilvicente",
+  "season": "2022/23",
+  "date": "2022-08-29",
+  "home_team_key": "vizela",
+  "away_team_key": "gilvicente",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-09-04|casapia|arouca",
+  "season": "2022/23",
+  "date": "2022-09-04",
+  "home_team_key": "casapia",
+  "away_team_key": "arouca",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-09-05|chaves|rioave",
+  "season": "2022/23",
+  "date": "2022-09-05",
+  "home_team_key": "chaves",
+  "away_team_key": "rioave",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-09-11|pacosferreira|casapia",
+  "season": "2022/23",
+  "date": "2022-09-11",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "casapia",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-09-11|maritimo|gilvicente",
+  "season": "2022/23",
+  "date": "2022-09-11",
+  "home_team_key": "maritimo",
+  "away_team_key": "gilvicente",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-09-11|rioave|braga",
+  "season": "2022/23",
+  "date": "2022-09-11",
+  "home_team_key": "rioave",
+  "away_team_key": "braga",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-09-12|vizela|estoril",
+  "season": "2022/23",
+  "date": "2022-09-12",
+  "home_team_key": "vizela",
+  "away_team_key": "estoril",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-09-18|casapia|famalicao",
+  "season": "2022/23",
+  "date": "2022-09-18",
+  "home_team_key": "casapia",
+  "away_team_key": "famalicao",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-01|vizela|portimonense",
+  "season": "2022/23",
+  "date": "2022-10-01",
+  "home_team_key": "vizela",
+  "away_team_key": "portimonense",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-01|chaves|estoril",
+  "season": "2022/23",
+  "date": "2022-10-01",
+  "home_team_key": "chaves",
+  "away_team_key": "estoril",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-02|rioave|santaclara",
+  "season": "2022/23",
+  "date": "2022-10-02",
+  "home_team_key": "rioave",
+  "away_team_key": "santaclara",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-02|pacosferreira|arouca",
+  "season": "2022/23",
+  "date": "2022-10-02",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "arouca",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-03|maritimo|casapia",
+  "season": "2022/23",
+  "date": "2022-10-03",
+  "home_team_key": "maritimo",
+  "away_team_key": "casapia",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-08|pacosferreira|guimaraes",
+  "season": "2022/23",
+  "date": "2022-10-08",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "guimaraes",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-09|casapia|vizela",
+  "season": "2022/23",
+  "date": "2022-10-09",
+  "home_team_key": "casapia",
+  "away_team_key": "vizela",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-23|vizela|santaclara",
+  "season": "2022/23",
+  "date": "2022-10-23",
+  "home_team_key": "vizela",
+  "away_team_key": "santaclara",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-23|maritimo|arouca",
+  "season": "2022/23",
+  "date": "2022-10-23",
+  "home_team_key": "maritimo",
+  "away_team_key": "arouca",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-23|chaves|gilvicente",
+  "season": "2022/23",
+  "date": "2022-10-23",
+  "home_team_key": "chaves",
+  "away_team_key": "gilvicente",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-24|rioave|portimonense",
+  "season": "2022/23",
+  "date": "2022-10-24",
+  "home_team_key": "rioave",
+  "away_team_key": "portimonense",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-28|pacosferreira|maritimo",
+  "season": "2022/23",
+  "date": "2022-10-28",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "maritimo",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-10-30|casapia|rioave",
+  "season": "2022/23",
+  "date": "2022-10-30",
+  "home_team_key": "casapia",
+  "away_team_key": "rioave",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-11-05|vizela|arouca",
+  "season": "2022/23",
+  "date": "2022-11-05",
+  "home_team_key": "vizela",
+  "away_team_key": "arouca",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-11-06|rioave|boavista",
+  "season": "2022/23",
+  "date": "2022-11-06",
+  "home_team_key": "rioave",
+  "away_team_key": "boavista",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-11-06|maritimo|famalicao",
+  "season": "2022/23",
+  "date": "2022-11-06",
+  "home_team_key": "maritimo",
+  "away_team_key": "famalicao",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-11-07|chaves|santaclara",
+  "season": "2022/23",
+  "date": "2022-11-07",
+  "home_team_key": "chaves",
+  "away_team_key": "santaclara",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-11-13|pacosferreira|vizela",
+  "season": "2022/23",
+  "date": "2022-11-13",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "vizela",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-11-13|casapia|chaves",
+  "season": "2022/23",
+  "date": "2022-11-13",
+  "home_team_key": "casapia",
+  "away_team_key": "chaves",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-12-23|rioave|maritimo",
+  "season": "2022/23",
+  "date": "2022-12-23",
+  "home_team_key": "rioave",
+  "away_team_key": "maritimo",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-12-30|chaves|famalicao",
+  "season": "2022/23",
+  "date": "2022-12-30",
+  "home_team_key": "chaves",
+  "away_team_key": "famalicao",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2022-12-30|vizela|guimaraes",
+  "season": "2022/23",
+  "date": "2022-12-30",
+  "home_team_key": "vizela",
+  "away_team_key": "guimaraes",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-07|casapia|fcporto",
+  "season": "2022/23",
+  "date": "2023-01-07",
+  "home_team_key": "casapia",
+  "away_team_key": "fcporto",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-08|pacosferreira|chaves",
+  "season": "2022/23",
+  "date": "2023-01-08",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "chaves",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-08|maritimo|sportingcp",
+  "season": "2022/23",
+  "date": "2023-01-08",
+  "home_team_key": "maritimo",
+  "away_team_key": "sportingcp",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-14|vizela|maritimo",
+  "season": "2022/23",
+  "date": "2023-01-14",
+  "home_team_key": "vizela",
+  "away_team_key": "maritimo",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-14|rioave|pacosferreira",
+  "season": "2022/23",
+  "date": "2023-01-14",
+  "home_team_key": "rioave",
+  "away_team_key": "pacosferreira",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-15|chaves|arouca",
+  "season": "2022/23",
+  "date": "2023-01-15",
+  "home_team_key": "chaves",
+  "away_team_key": "arouca",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-21|pacosferreira|braga",
+  "season": "2022/23",
+  "date": "2023-01-21",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "braga",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-22|maritimo|estoril",
+  "season": "2022/23",
+  "date": "2023-01-22",
+  "home_team_key": "maritimo",
+  "away_team_key": "estoril",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-22|casapia|gilvicente",
+  "season": "2022/23",
+  "date": "2023-01-22",
+  "home_team_key": "casapia",
+  "away_team_key": "gilvicente",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-29|vizela|rioave",
+  "season": "2022/23",
+  "date": "2023-01-29",
+  "home_team_key": "vizela",
+  "away_team_key": "rioave",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-29|casapia|santaclara",
+  "season": "2022/23",
+  "date": "2023-01-29",
+  "home_team_key": "casapia",
+  "away_team_key": "santaclara",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-31|pacosferreira|gilvicente",
+  "season": "2022/23",
+  "date": "2023-01-31",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "gilvicente",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-02-01|maritimo|fcporto",
+  "season": "2022/23",
+  "date": "2023-02-01",
+  "home_team_key": "maritimo",
+  "away_team_key": "fcporto",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-02-05|chaves|maritimo",
+  "season": "2022/23",
+  "date": "2023-02-05",
+  "home_team_key": "chaves",
+  "away_team_key": "maritimo",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-02-06|rioave|sportingcp",
+  "season": "2022/23",
+  "date": "2023-02-06",
+  "home_team_key": "rioave",
+  "away_team_key": "sportingcp",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-01-26|pacosferreira|benfica",
+  "season": "2022/23",
+  "date": "2023-01-26",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "benfica",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-02-10|vizela|chaves",
+  "season": "2022/23",
+  "date": "2023-02-10",
+  "home_team_key": "vizela",
+  "away_team_key": "chaves",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-02-12|maritimo|braga",
+  "season": "2022/23",
+  "date": "2023-02-12",
+  "home_team_key": "maritimo",
+  "away_team_key": "braga",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-02-13|rioave|estoril",
+  "season": "2022/23",
+  "date": "2023-02-13",
+  "home_team_key": "rioave",
+  "away_team_key": "estoril",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-02-19|casapia|guimaraes",
+  "season": "2022/23",
+  "date": "2023-02-19",
+  "home_team_key": "casapia",
+  "away_team_key": "guimaraes",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-02-20|chaves|sportingcp",
+  "season": "2022/23",
+  "date": "2023-02-20",
+  "home_team_key": "chaves",
+  "away_team_key": "sportingcp",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-02-25|maritimo|santaclara",
+  "season": "2022/23",
+  "date": "2023-02-25",
+  "home_team_key": "maritimo",
+  "away_team_key": "santaclara",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-02-25|vizela|benfica",
+  "season": "2022/23",
+  "date": "2023-02-25",
+  "home_team_key": "vizela",
+  "away_team_key": "benfica",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-02-26|rioave|chaves",
+  "season": "2022/23",
+  "date": "2023-02-26",
+  "home_team_key": "rioave",
+  "away_team_key": "chaves",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-02-26|pacosferreira|boavista",
+  "season": "2022/23",
+  "date": "2023-02-26",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "boavista",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-03-04|chaves|fcporto",
+  "season": "2022/23",
+  "date": "2023-03-04",
+  "home_team_key": "chaves",
+  "away_team_key": "fcporto",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-03-06|casapia|pacosferreira",
+  "season": "2022/23",
+  "date": "2023-03-06",
+  "home_team_key": "casapia",
+  "away_team_key": "pacosferreira",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-03-11|chaves|portimonense",
+  "season": "2022/23",
+  "date": "2023-03-11",
+  "home_team_key": "chaves",
+  "away_team_key": "portimonense",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-03-11|pacosferreira|santaclara",
+  "season": "2022/23",
+  "date": "2023-03-11",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "santaclara",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-03-11|vizela|braga",
+  "season": "2022/23",
+  "date": "2023-03-11",
+  "home_team_key": "vizela",
+  "away_team_key": "braga",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-03-12|rioave|gilvicente",
+  "season": "2022/23",
+  "date": "2023-03-12",
+  "home_team_key": "rioave",
+  "away_team_key": "gilvicente",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-03-12|maritimo|benfica",
+  "season": "2022/23",
+  "date": "2023-03-12",
+  "home_team_key": "maritimo",
+  "away_team_key": "benfica",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-03-19|casapia|maritimo",
+  "season": "2022/23",
+  "date": "2023-03-19",
+  "home_team_key": "casapia",
+  "away_team_key": "maritimo",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-01|vizela|casapia",
+  "season": "2022/23",
+  "date": "2023-04-01",
+  "home_team_key": "vizela",
+  "away_team_key": "casapia",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-02|maritimo|boavista",
+  "season": "2022/23",
+  "date": "2023-04-02",
+  "home_team_key": "maritimo",
+  "away_team_key": "boavista",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-02|chaves|braga",
+  "season": "2022/23",
+  "date": "2023-04-02",
+  "home_team_key": "chaves",
+  "away_team_key": "braga",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-02|rioave|benfica",
+  "season": "2022/23",
+  "date": "2023-04-02",
+  "home_team_key": "rioave",
+  "away_team_key": "benfica",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-08|pacosferreira|famalicao",
+  "season": "2022/23",
+  "date": "2023-04-08",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "famalicao",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-09|casapia|sportingcp",
+  "season": "2022/23",
+  "date": "2023-04-09",
+  "home_team_key": "casapia",
+  "away_team_key": "sportingcp",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-15|maritimo|pacosferreira",
+  "season": "2022/23",
+  "date": "2023-04-15",
+  "home_team_key": "maritimo",
+  "away_team_key": "pacosferreira",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-15|chaves|benfica",
+  "season": "2022/23",
+  "date": "2023-04-15",
+  "home_team_key": "chaves",
+  "away_team_key": "benfica",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-16|rioave|casapia",
+  "season": "2022/23",
+  "date": "2023-04-16",
+  "home_team_key": "rioave",
+  "away_team_key": "casapia",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-17|vizela|boavista",
+  "season": "2022/23",
+  "date": "2023-04-17",
+  "home_team_key": "vizela",
+  "away_team_key": "boavista",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-21|casapia|braga",
+  "season": "2022/23",
+  "date": "2023-04-21",
+  "home_team_key": "casapia",
+  "away_team_key": "braga",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-22|pacosferreira|fcporto",
+  "season": "2022/23",
+  "date": "2023-04-22",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "fcporto",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-28|rioave|arouca",
+  "season": "2022/23",
+  "date": "2023-04-28",
+  "home_team_key": "rioave",
+  "away_team_key": "arouca",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-29|maritimo|guimaraes",
+  "season": "2022/23",
+  "date": "2023-04-29",
+  "home_team_key": "maritimo",
+  "away_team_key": "guimaraes",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-29|chaves|casapia",
+  "season": "2022/23",
+  "date": "2023-04-29",
+  "home_team_key": "chaves",
+  "away_team_key": "casapia",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-04-29|vizela|pacosferreira",
+  "season": "2022/23",
+  "date": "2023-04-29",
+  "home_team_key": "vizela",
+  "away_team_key": "pacosferreira",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-05-05|casapia|portimonense",
+  "season": "2022/23",
+  "date": "2023-05-05",
+  "home_team_key": "casapia",
+  "away_team_key": "portimonense",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-05-07|maritimo|rioave",
+  "season": "2022/23",
+  "date": "2023-05-07",
+  "home_team_key": "maritimo",
+  "away_team_key": "rioave",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-05-07|pacosferreira|sportingcp",
+  "season": "2022/23",
+  "date": "2023-05-07",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "sportingcp",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-05-13|chaves|pacosferreira",
+  "season": "2022/23",
+  "date": "2023-05-13",
+  "home_team_key": "chaves",
+  "away_team_key": "pacosferreira",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-05-13|vizela|famalicao",
+  "season": "2022/23",
+  "date": "2023-05-13",
+  "home_team_key": "vizela",
+  "away_team_key": "famalicao",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-05-14|rioave|guimaraes",
+  "season": "2022/23",
+  "date": "2023-05-14",
+  "home_team_key": "rioave",
+  "away_team_key": "guimaraes",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-05-19|maritimo|vizela",
+  "season": "2022/23",
+  "date": "2023-05-19",
+  "home_team_key": "maritimo",
+  "away_team_key": "vizela",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do Marítimo",
+  "venue_city": "Funchal",
+  "venue_latitude": 32.6455744,
+  "venue_longitude": -16.9283862,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Marítimo'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-05-21|casapia|estoril",
+  "season": "2022/23",
+  "date": "2023-05-21",
+  "home_team_key": "casapia",
+  "away_team_key": "estoril",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Rio Maior",
+  "venue_city": "Lisbon",
+  "venue_latitude": 39.3445766,
+  "venue_longitude": -8.9344835,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Casa Pia'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-05-21|pacosferreira|rioave",
+  "season": "2022/23",
+  "date": "2023-05-21",
+  "home_team_key": "pacosferreira",
+  "away_team_key": "rioave",
+  "missing_fields": [
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Capital do Móvel",
+  "venue_city": "Paços de Ferreira",
+  "venue_latitude": 41.2714775,
+  "venue_longitude": -8.3853824,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Paços de Ferreira'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-05-26|rioave|famalicao",
+  "season": "2022/23",
+  "date": "2023-05-26",
+  "home_team_key": "rioave",
+  "away_team_key": "famalicao",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio dos Arcos",
+  "venue_city": "Vila do Conde",
+  "venue_latitude": 41.3627496,
+  "venue_longitude": -8.7401457,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Rio Ave'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-05-26|vizela|sportingcp",
+  "season": "2022/23",
+  "date": "2023-05-26",
+  "home_team_key": "vizela",
+  "away_team_key": "sportingcp",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio do FC Vizela",
+  "venue_city": "Vizela",
+  "venue_latitude": 41.3889481,
+  "venue_longitude": -8.3075383,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": null,
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Vizela'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ },
+ {
+  "fixture_key": "primeira_liga|2022/23|2023-05-27|chaves|boavista",
+  "season": "2022/23",
+  "date": "2023-05-27",
+  "home_team_key": "chaves",
+  "away_team_key": "boavista",
+  "missing_fields": [
+   "venue",
+   "venue_latitude",
+   "venue_longitude"
+  ],
+  "venue": "Estádio Municipal de Chaves",
+  "venue_city": "Chaves",
+  "venue_latitude": 41.7506323,
+  "venue_longitude": -7.4649841,
+  "venue_missing": false,
+  "coords_missing": false,
+  "evidence_tier": "aggregate_season_table",
+  "venue_alias_note": "page name \"Estádio Municipal Eng.º Manuel Branco Teixeira\" (2022/23, 2023/24 pages)",
+  "coords_source": "Nominatim (OpenStreetMap, ODbL), retrieved 2026-10-03",
+  "provenance": {
+   "source_name": "en.wikipedia",
+   "source_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "final_url": "https://en.wikipedia.org/wiki/2022–23_Primeira_Liga",
+   "retrieved_at": "2026-10-07T08:43:19+08:00",
+   "field_locator": "Stadia and locations table, row 'Chaves'",
+   "source_sha256": "fd448f862e0c6e48"
+  }
+ }
+]
