@@ -21,3 +21,8 @@
 - AVS 2024/25→Estádio do CD Aves：wildstat 多场确认（vs Casa Pia/Sporting/Estrela/Benfica，Vila das Aves）。
 - Casa Pia 2024/25→Estádio Municipal de Rio Maior：3 独立源（sportradar/skysports/sportinglife）确认 2024-12-08 vs AVS 在 Rio Maior；wildstat 的 Pina Manique 记录为误标。
 - 结论：映射成立，无需修正。
+
+## 2026-10-07 09:35 +08:00 — 回执已 push
+- responses/req-20261006-006.json status=ok 已推送（commit 79a04f2），352/352 行，audit 全 complete，unresolved_queue 为空。
+- to_codex 已注明用户授权的降级标准；retrieved_at 时区笔误已修正说明。
+- request_sha=1b9f1c2961eaeb3b 写前重验一致。dp_used=false。
