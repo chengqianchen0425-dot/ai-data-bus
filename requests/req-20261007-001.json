@@ -1,0 +1,111 @@
+{
+  "id": "req-20261007-001",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "parent_request_id": "req-20261006-005",
+  "scope": {
+    "football_only": true,
+    "competition_key": "serie_a",
+    "competition_code": "I1",
+    "competition_name": "Italy Serie A",
+    "country": "Italy",
+    "timezone": "Europe/Rome",
+    "seasons": ["2018/19", "2019/20", "2020/21"],
+    "target_fixtures": 570,
+    "incremental_only": true,
+    "exclude_qimen_and_model_fields": true,
+    "exclude_odds": true
+  },
+  "params": {
+    "topic": "补齐意甲 2018/19-2020/21 第二循环 570 场的官方轮次、首循环对应场官方轮次，以及每场开球前官方积分榜快照；同时核验两条首循环赛果身份缺口",
+    "known_local_target": {
+      "target_context": "D:\\奇门斗数\\work\\serie_a_pre_match_context_supplement_20261006\\first_cycle_context.json",
+      "remaining_missing": "D:\\奇门斗数\\work\\serie_a_pre_match_context_supplement_20261006\\remaining_missing.csv",
+      "conflict_queue": "D:\\奇门斗数\\work\\serie_a_pre_match_context_supplement_20261006\\conflict_queue.csv",
+      "join_key": "season|date|home_team|away_team",
+      "parent_receipt": "D:\\奇门斗数\\work\\ai-data-bus\\responses\\req-20261006-005.json"
+    },
+    "requested_fields": {
+      "official_schedule": [
+        "official_round_target",
+        "official_round_first_cycle",
+        "official_round_status",
+        "official_round_source_url",
+        "official_round_final_url",
+        "official_round_retrieved_at",
+        "official_round_field_locator",
+        "official_round_source_sha256",
+        "official_round_field_semantics"
+      ],
+      "standings_before_kickoff_home_and_away": [
+        "rank",
+        "points",
+        "matches_played",
+        "wins",
+        "draws",
+        "losses",
+        "goals_for",
+        "goals_against",
+        "goal_difference",
+        "snapshot_as_of",
+        "snapshot_round",
+        "source_url",
+        "final_url",
+        "retrieved_at",
+        "field_locator",
+        "source_sha256",
+        "field_semantics"
+      ],
+      "identity_conflicts": [
+        "2019/20|2020-07-26|Verona|Lazio|first_cycle_result",
+        "2020/21|2021-02-13|Napoli|Juventus|first_cycle_result"
+      ]
+    },
+    "source_priority": [
+      "official Lega Serie A schedule/archive",
+      "official FIGC schedule/archive",
+      "official historical league table or dated official matchday table",
+      "secondary schedule/standings only as explicitly labelled cross-check"
+    ],
+    "questions": [
+      "For each of the 570 target fixtures, verify the published official round/matchday for the target and for its first-cycle partner. Preserve the published round for postponed matches; do not infer rounds from CSV row order, date order, final standings, team occurrence counts, or scores.",
+      "For each target kickoff, return the historical pre-kickoff standings snapshot for both home and away teams. The snapshot must be dated before kickoff and include rank, points, matches played, wins, draws, losses, goals for, goals against, goal difference, snapshot_as_of and snapshot_round. Final season tables and reconstructed tables are prohibited.",
+      "For the two identity conflicts, search the same-season official or explicitly labelled secondary schedule for the missing first-cycle meeting. Return a row-level first_cycle_result with first_fixture_date, first_fixture_round, both teams, 90-minute goals/result, stable first_fixture_key, and full provenance. If unavailable, return NULL with status=unavailable or blocked and explain why.",
+      "Return one primary row per target fixture and preserve every unresolved or conflicting field. Do not collapse conflicts or replace missing values with estimates."
+    ],
+    "forbidden": [
+      "Qimen charts, palaces, Q/F/G/I/M tokens, chase_relation, draw_value",
+      "opening or closing odds, probabilities, Miss labels, Outcome, Review, Gold",
+      "SQLite, Snapshot, formal model or any project database write",
+      "final-table substitution or result-derived pre-match standings"
+    ]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_context_rows_plus_unresolved_queue",
+    "football_only": true,
+    "row_level_data": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": [
+      "source_url",
+      "final_url",
+      "retrieved_at",
+      "field_locator",
+      "source_sha256",
+      "field_semantics"
+    ],
+    "audit_required": {
+      "target_fixtures": 570,
+      "official_round_target": 570,
+      "official_round_first_cycle": 570,
+      "standings_before_kickoff_home": 570,
+      "standings_before_kickoff_away": 570,
+      "identity_conflicts": 2
+    },
+    "formal_model_unchanged": true,
+    "promotion_allowed": false,
+    "writes_formal_records": false
+  },
+  "created_at": "2026-10-07T13:51:59+08:00"
+}
