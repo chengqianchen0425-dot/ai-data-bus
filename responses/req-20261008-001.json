@@ -1,1 +1,1 @@
-{"dp_used":false,"from":"muse","id":"req-20261008-001","note":"研究进行中：Swiss Super League 2018/19–2025/26 赛季数据源身份与结构审计（四路并行调研中）","request_sha":"1e8f9a63e511ad60","status":"processing"}
+{"dp_used":false,"from":"muse","id":"req-20261008-001","note":"研究进行中：Q3 Football-Data 完成（SWZ.csv，Closing odds only；2012/13–2026/27，异常：2020/21 混入 2 行 Challenge League）。Q2 新模式已获 SFL 官方证实（sfl.ch，12队/33+5轮）。Q1/Q4：openfootball/europe 已验证（ch1=Super League，缺 2021/22、2022/23、2025/26 三季）；API-Football ID 待验证中","request_sha":"1e8f9a63e511ad60","status":"processing"}
