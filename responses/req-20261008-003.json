@@ -1,1 +1,8 @@
-{"dp_used":false,"from":"muse","id":"req-20261008-003","note":"已受理。拆成4路并行子任务执行：Q1 赛程（football-data SWZ.csv + SFL matchcenter 交叉），Q2 赛前积分榜（基于已发布完整赛果的可复现逐场重建），Q3 实际球场（SFL/俱乐部官网为主场馆源 + 独立地理源取坐标），Q4 球队身份（官方俱乐部/SFL + RSSSF/WorldFootball 交叉）。","request_sha":"bf8eb72de2d9d488","status":"processing"}
+{
+  "dp_used": false,
+  "from": "muse",
+  "id": "req-20261008-003",
+  "note": "【本轮接手】上一轮 13:36:57 UTC 写 processing 后 70 分钟无更新、无数据交付，按 SOP 防重规则本轮（22:47 CST）正式接手。执行计划：Q1 football-data SWZ.csv 8 赛季批量抓（含 new/SWZ.csv 当前赛季）+ SFL matchcenter 交叉；Q2 逐场赛前快照由已发布赛果可复现重建（只输出 rank/played/points/WDL，严格排除本场及之后比赛，不输出任何比分/结果字段）；Q3 逐场实际球场以 SFL/俱乐部官网为主源+独立地理源取坐标（无真浏览器时进 unresolved_queue）；Q4 球队身份官方+Wikidata/RSSSF/WorldFootball 交叉。每10分钟心跳更新。",
+  "request_sha": "bf8eb72de2d9d488",
+  "status": "processing"
+}
