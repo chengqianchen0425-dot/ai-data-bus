@@ -1,0 +1,30 @@
+{
+  "id": "req-20261008-003",
+  "type": "deep_research",
+  "params": {
+    "topic": "Swiss Super League 2018/19-2025/26 missing pre-match Method Context, historical venue, and team identity data",
+    "questions": [
+      "For the regular Swiss Super League only, locate and collect the official fixture schedule for 2018/19 through 2025/26. Expected regular-season coverage is 180 fixtures per season for 2018/19-2022/23 and 228 fixtures per season for 2023/24-2025/26 (1,584 total). Exclude Swiss Cup, UEFA, Challenge League, promotion/relegation Barrage, and other competitions. Return fixture-level pre-match fields only: season, stable source fixture ID if available, official local kickoff date/time, timezone or UTC offset, home/away official team names, official round, phase, group, and meeting_number only when a source or auditable official-schedule derivation supports it. Do not return any score, FTHG/FTAG/FTR, Outcome, final standings, or other post-match result field. Provide exact source URL/final URL, retrieval timestamp, HTTP status, field semantics, per-season expected/discovered/complete/partial/missing counts, source SHA-256, and unresolved fixtures.",
+      "For each regular-season fixture, find pre-match standings for both clubs as of kickoff where an official or reproducible historical source supports them: rank, played, points, and W/D/L if available. Do not use the fixture's own result or any later match/result in that snapshot. If the only way to derive a value requires unavailable or ambiguous kickoff ordering, mark it unavailable and explain why. Return no scores or final tables. Preserve source URL, fetch time, extraction locator, source hash, coverage counts, and conflicts.",
+      "Map the actual historical venue for each regular-season fixture, including temporary relocations and neutral venues. Return venue name, city, stable venue ID if available, latitude, longitude, and IANA timezone only when explicitly sourced or resolved from a cited authoritative venue source. Use official SFL/club evidence for the match venue and a separate cited geospatial source for coordinates; do not assume the home club's default stadium. Provide per-season coverage, source URLs, fetch times, field locators, hashes, and unresolved/conflict rows. No scores or results.",
+      "For every club appearing in these seasons, provide official name and canonical identity by season, historical name/alias changes, natal_year (club lineage/founding year), competition_entry_year (first Swiss men's top-flight season start), and historical home venue for each season where verifiable. Keep natal_year separate from competition_entry_year. Use official club/SFL sources first and corroborate with RSSSF/WorldFootball or other explicit sources. Mark unknowns unavailable; provide source URL, fetched_at, field locator, hash, and conflicts. Do not infer club identity or lifecycle from results."
+    ],
+    "constraints": {
+      "competition_key": "swiss_super_league",
+      "seasons": ["2018/19", "2019/20", "2020/21", "2021/22", "2022/23", "2023/24", "2024/25", "2025/26"],
+      "expected_regular_season_fixtures": 1584,
+      "allowed_scope": "pre-match fixture, Method Context, standings-before-kickoff, venue and team identity metadata",
+      "forbidden_output_fields": ["score", "FTHG", "FTAG", "FTR", "Outcome", "Review", "final_standings", "Qimen", "direction", "Gold", "probability", "weight"],
+      "candidate_sources": [
+        "https://sfl.ch/de/cssl_calendar",
+        "https://sfl.ch/de/calendar/spielplan-superleague",
+        "https://matchcenter-sfl.football.ch/default.aspx?ln=11011&lng=1&oid=2&s=<season_end_year>",
+        "https://www.football-data.co.uk/new/SWZ.csv"
+      ],
+      "football_data_candidate_sha256": "1c40b7cebed397a177643b6576f064e3c144b6d719dc9a5719636d88ca040021",
+      "football_data_candidate_policy": "Use Country=Switzerland and League=Super League as identity filters; exclude or separately queue Challenge League and Barrage rows. This file has closing odds only and is not an opening-odds source.",
+      "api_football_league_id_207": "unverified_candidate; do not treat as verified without provider evidence"
+    }
+  },
+  "created_at": "2026-10-08T21:29:32+08:00"
+}
