@@ -1,0 +1,14 @@
+{
+  "id": "req-20261008-002",
+  "type": "deep_research",
+  "params": {
+    "topic": "Follow-up evidence audit for Football-Data Switzerland SWZ.csv candidate, Swiss Super League 2018/19-2025/26",
+    "questions": [
+      "For https://www.football-data.co.uk/new/SWZ.csv, report the exact retrieval timestamp with timezone, HTTP status, final URL, Content-Length, ETag/Last-Modified if present, and SHA-256 of the raw response bytes. Do not return or quote any match-level rows, scores, or odds values. Verify only the file header/schema and aggregate counts grouped by Country, League, and season.",
+      "Reconcile the previously reported season row counts 182, 182, 180, 181, 182, 230, 228, and 228 for 2018/19 through 2025/26 against expected league fixture counts and separately count rows labelled Super League versus Challenge League; report counts only, not fixture identities or results. State whether the two extra rows in seasons with 182/230 entries are relegation playoff fixtures or unresolved extra records, with source evidence; do not assign them to the regular season without evidence.",
+      "Reconcile the previous audit fields expected=8, discovered=8, complete=8, partial=2, missing=0 with the OpenFootball coverage list that names only five verified seasons (2018/19, 2019/20, 2020/21, 2023/24, 2024/25). Provide a per-season source-presence matrix for Football-Data and OpenFootball, distinguishing dataset file presence from fully verified competition identity and coverage. Do not include match-level rows.",
+      "For SFL official archives and the source https://sfl.ch/de/modus-ab-202324-swiss-football-league, provide direct source URLs and acquisition timestamps supporting the season format summary 2018/19-2025/26. Mark any third-party mirrors separately and do not infer official rounds, venue, or pre-match standings from results."
+    ]
+  },
+  "created_at": "2026-10-08T20:53:49+08:00"
+}
