@@ -1,0 +1,14 @@
+{
+  "id": "req-20261008-001",
+  "type": "deep_research",
+  "params": {
+    "topic": "Swiss Super League historical source identity and season structure audit for 2018/19 through 2025/26",
+    "questions": [
+      "Identify authoritative and reproducible source URLs for Swiss men's top-flight fixture datasets and season-specific standings/context covering each season 2018/19, 2019/20, 2020/21, 2021/22, 2022/23, 2023/24, 2024/25, and 2025/26. For each candidate source, report exact competition identity, season coverage, URL, retrieval/access date, fields available, and whether it provides fixture rows, pre-match standings, official round/phase, venue, kickoff timezone, or results. Do not return match-level score/result rows in this request.",
+      "For each of the eight seasons, verify from official league/federation or other primary sources the competition format needed for historical context: team count, league phase rounds, groups/playoffs or relegation phase, number of meetings where determinable, and official round/phase terminology. Give source URLs and quote or summarize the relevant evidence. Mark unknowns and conflicting sources explicitly; do not infer from dates or final standings.",
+      "Assess whether Football-Data.co.uk has a Swiss Super League source code and whether any candidate CSV is demonstrably Swiss top-flight data rather than another Swiss division or competition. Provide source URL and inspectable evidence for country/league identity, available columns, season coverage, and any opening/closing odds semantics. If no suitable code or file is verified, say unavailable; do not borrow another league's code.",
+      "Identify candidate structured providers for Swiss Super League season fixtures and venue/team identifiers (including API-Football league identity if verifiable), with exact URLs or provider documentation, canonical competition identifiers, season coverage, and field semantics. Treat configured numeric IDs as unverified until supported by provider evidence."
+    ]
+  },
+  "created_at": "2026-10-08T20:45:40+08:00"
+}
