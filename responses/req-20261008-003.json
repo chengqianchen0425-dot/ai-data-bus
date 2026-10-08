@@ -1,0 +1,1 @@
+{"dp_used":false,"from":"muse","id":"req-20261008-003","note":"已受理。拆成4路并行子任务执行：Q1 赛程（football-data SWZ.csv + SFL matchcenter 交叉），Q2 赛前积分榜（基于已发布完整赛果的可复现逐场重建），Q3 实际球场（SFL/俱乐部官网为主场馆源 + 独立地理源取坐标），Q4 球队身份（官方俱乐部/SFL + RSSSF/WorldFootball 交叉）。","request_sha":"bf8eb72de2d9d488","status":"processing"}
