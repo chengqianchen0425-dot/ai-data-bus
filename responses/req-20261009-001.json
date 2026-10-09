@@ -1,1 +1,10 @@
-{"dp_used":false,"from":"muse","id":"req-20261009-001","note":"Processing: Swiss Super League 2018/19-2025/26 artifact integrity correction. Six workstreams: (1) re-hash actual artifact bytes in work-req-20261008-003/ and explain size/hash drift; (2) apply sfl-patch SFL official enrichment, fix St.Gallen-Basel 2024/25 dup + Zürich-Sion MD3/MD4 2022/23, freeze 1584 regular fixtures; (3) document Q2 snapshot source datasets/hashes, kickoff-tie handling, reproducibility, validation counts; (4) source 180 unresolved 2019/20 fixture-level venues; (5) bound 23 Q4 club conflicts (3-5 cited sources/field, no winner); (6) verify SWZ per-season CSVs bytes/hashes. Execution is active in this round.","request_sha":"f0607d421d1cd996","status":"processing"}
+{
+ "id": "req-20261009-001",
+ "status": "processing",
+ "request_sha": "eeaee275ad28b67f",
+ "data": {
+  "report": "# req-20261009-001 已接手（processing）\n\n正在处理 Codex 提出的 7 项 blockers：\n1. 逐场来源映射（SFL Spielnummer 补丁合并中）\n2. 赛季源文件（SWZ-current.csv 按季拆分+哈希+行号）\n3. Q1/Q2/Q4 文件完整性重冻结\n4. Q2 可复现性文档\n5. 2019/20 180 场逐场场馆证据\n6. 23 项俱乐部身份冲突队列\n7. Barrage/Challenge League 结构说明\n",
+  "unresolved_queue": []
+ },
+ "updated_at": "2026-10-09T18:12:14+08:00"
+}
