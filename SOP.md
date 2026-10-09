@@ -49,7 +49,9 @@ Muse 定位（用户明确）：Muse = 抓取器 / 搜索器，不是判断器�
 
 空转熔断（2026-10-03 用户长期规则，002 事件教训）：同一请求连续 3 轮被接手仍无实质进展、只剩外部依赖（等 Codex 上游/等真浏览器/等外部 key）时，停止接手、不再静默空转，直接向用户预警风险（卡点+已空转时长+可能长期无结果），请用户决定（继续等/降级/关闭）。
 
-熔断实现口径（2026-10-03 010 误判后修正）：实质进展=回执文件增大≥1KB（并清零计数）；叫醒接手条件=processing 15 分钟无写入 **且** 1 小时无实质交付；即使心跳让 mtime 保持新鲜、2 小时无实质交付也计数熔断（防"心跳存活、实质空转"）。正常交付中的长轮任务不受影响。
+熔断实现口径（2026-10-03 010 误判后修正；2026-10-09 003 烂尾后修正 v3）：实质进展=回执文件增大≥1KB **或** `work-<id>/` 目录字节增长（并清零计数）；回执 note 纯文字改动（<1KB）不计入——防"只写字不干活"式虚假开工。叫醒接手条件=processing 15 分钟无写入 **且** 1 小时无实质交付；即使心跳让 mtime 保持新鲜、2 小时无实质交付也计数熔断（防"心跳存活、实质空转"）。正常交付中的长轮任务不受影响。
+
+虚假开工禁令（2026-10-09 用户长期规则，003 事件教训：21:36 受理、22:48"接手"两轮都只写回执文字、一次抓取没派，看门狗 3 次叫醒白叫后 auto-park 静默，烂尾 11.5 小时）：写 `processing` 回执≠开工。同一轮内必须同时派出真实执行（subagent.spawn / browser.spawn_task / 抓取脚本启动），只写计划文字不派工=虚假开工，严禁。stall/takeover 被叫醒后，同一轮必须产生实质进展（真实派工/数据落盘/`work-<id>/` 目录增长）；若确实卡外部依赖，如实报 `blocked`＋卡点，不许再写"接手"空话。auto-park 是停手不是结案：被自动停手的单子必须在总控和当日记忆记一笔"待用户决断"，不许静默烂掉。
 
 to_codex 纪律（2026-10-03 教训）：to_codex 字段只转达用户原话或 hook 明确授权的内容；worker 不得自行编造给 Codex 的新指令。2026-10-03 一轮 worker 曾自作主张发布 to_codex v3（让 Codex 转赔率区间筛选），事后经用户追认才生效。已授权可直接写入的情形（正面清单，写入时注明版本）：①命中 DEAD-END REGISTRY 的真开盘转筛选通知（用户 2026-10-03 18:02 授权）。清单外一律先请示用户。
 
@@ -70,7 +72,7 @@ to_codex 纪律（2026-10-03 教训）：to_codex 字段只转达用户原话或
    - `web_fetch`：用 `browser.spawn_task` 打开 `params.url`（JS 渲染页面要等加载完），按 `params.extract` 的自然语言描述提取数据，按 `params.format`（如有）组织成 JSON 写回执。
    - `web_search`：用 `browser.search` 搜索 `params.query`（`params.want` 说明想找什么，`params.max_results` 缺省 5），回执 `data.results` 为数组，每项含 title、url、snippet。
    - `data_task`：按 `params.task` 的自然语言描述处理 `params.data` / `params.data_text`，结果放回执 `data.result`。
-   - `deep_research`：耗时任务。首轮先写 `{"id": "<id>", "status": "processing", "note": "研究进行中", "request_sha": "<当前sha>"}` 回执并推送；然后按上面的高召回执行标准和任务拆分规则，用 `browser.search` / `browser.open` 分步调研（也可 `browser.deep_research`），进展记入当天 ~/memory/YYYY-MM-DD.md；完成后覆盖写最终回执（`status` 为 `ok`，`data.report` 为 markdown 全文，`data.audit` 为漏抓审计，`data.unresolved_queue` 为未解决队列，`request_sha` 为写回执时的当前 sha）。下一轮看到 `processing` 状态按防重规则决定是否接手。
+   - `deep_research`：耗时任务。首轮先写 `{"id": "<id>", "status": "processing", "note": "研究进行中", "request_sha": "<当前sha>"}` 回执并推送（注意：写 processing 回执的同一轮必须同时派出真实执行，见上面的虚假开工禁令）；然后按上面的高召回执行标准和任务拆分规则，用 `browser.search` / `browser.open` 分步调研（也可 `browser.deep_research`），进展记入当天 ~/memory/YYYY-MM-DD.md；完成后覆盖写最终回执（`status` 为 `ok`，`data.report` 为 markdown 全文，`data.audit` 为漏抓审计，`data.unresolved_queue` 为未解决队列，`request_sha` 为写回执时的当前 sha）。下一轮看到 `processing` 状态按防重规则决定是否接手。
    - 未知 `type` → 回执 `status` 为 `error`，`error` 写"不支持的类型：<type>"。
    - 任何失败 → `status` 为 `error` 并写清原因；不要编造数据。
 5. `git add responses/` → `git commit -q -m "response <id>"` → `git push -q`。如果 push 返回 403（口令缺少写权限）：不要丢弃本地文件，在本轮结果中说明 403，下轮会自动重试推送。
