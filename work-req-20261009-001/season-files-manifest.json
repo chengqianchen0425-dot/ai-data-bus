@@ -1,0 +1,88 @@
+{
+ "source_file": "work-req-20261008-003/SWZ-current.csv",
+ "source_sha256": "1c40b7cebed397a177643b6576f064e3c144b6d719dc9a5719636d88ca040021",
+ "source_bytes": 344291,
+ "note": "football-data.co.uk 仅发布当季 SWZ.csv，无历史赛季归档；以下 8 季文件为从已验证源文件按 Season 列确定性拆分",
+ "files": [
+  {
+   "season": "2018/2019",
+   "path": "work-req-20261009-001/SWZ-20182019.csv",
+   "sha256": "88399c23dd85dfa1b4cf0375deb2a67b855d913b0d49641ca225c1e0774c3238",
+   "rows": 182,
+   "source_line_range": [
+    1082,
+    1263
+   ]
+  },
+  {
+   "season": "2019/2020",
+   "path": "work-req-20261009-001/SWZ-20192020.csv",
+   "sha256": "39847662afd4ab7e00e3d4ec08e70706a9be8ab77e6eaa9884c6f2eb2efd8069",
+   "rows": 182,
+   "source_line_range": [
+    1264,
+    1445
+   ]
+  },
+  {
+   "season": "2020/2021",
+   "path": "work-req-20261009-001/SWZ-20202021.csv",
+   "sha256": "038383160d276f75e5c1d06b7107f0aed4aa6930abf1620253ec1dc195bbe981",
+   "rows": 182,
+   "source_line_range": [
+    1446,
+    1627
+   ]
+  },
+  {
+   "season": "2021/2022",
+   "path": "work-req-20261009-001/SWZ-20212022.csv",
+   "sha256": "9fd95e43b45c8852b7239c1a5927dc2d9774eadc7bda92ae506ceaaaf2672c6c",
+   "rows": 181,
+   "source_line_range": [
+    1628,
+    1808
+   ]
+  },
+  {
+   "season": "2022/2023",
+   "path": "work-req-20261009-001/SWZ-20222023.csv",
+   "sha256": "ee208bbc3f91d9bcc74a58a8b2d188f0d8fb5fd3381711bc8e8057f05ffde2f5",
+   "rows": 182,
+   "source_line_range": [
+    1809,
+    1990
+   ]
+  },
+  {
+   "season": "2023/2024",
+   "path": "work-req-20261009-001/SWZ-20232024.csv",
+   "sha256": "6cd7997aa3d35cca81e45343f25168cf41b71fc8bdde939e2b957b93b6e83e27",
+   "rows": 230,
+   "source_line_range": [
+    1991,
+    2220
+   ]
+  },
+  {
+   "season": "2024/2025",
+   "path": "work-req-20261009-001/SWZ-20242025.csv",
+   "sha256": "906875d786cfff3a5277b83937b9eb6d9537f3b97f1e6801e07ec79f417c6c78",
+   "rows": 228,
+   "source_line_range": [
+    2221,
+    2448
+   ]
+  },
+  {
+   "season": "2025/2026",
+   "path": "work-req-20261009-001/SWZ-20252026.csv",
+   "sha256": "a80f5daee5376ef58440b948b0c4e824d3d0a8f4da10a15ca945834704b13de1",
+   "rows": 228,
+   "source_line_range": [
+    2449,
+    2676
+   ]
+  }
+ ]
+}

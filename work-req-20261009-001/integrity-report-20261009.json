@@ -1,0 +1,128 @@
+{
+ "request_id": "req-20261009-001",
+ "question": 1,
+ "verified_at": "2026-10-09T19:30:00+08:00 (UTC 11:30)",
+ "method": "sha256sum over committed working-tree bytes; compared with metadata declared in responses/req-20261008-003.json",
+ "declared_vs_actual": {
+  "work-req-20261008-003/SWZ-1819.csv": {
+   "bytes": 1271,
+   "sha256": "008bc8052e2323d4f892dc397bad94bc4fa61295619923fea932915948939c50"
+  },
+  "work-req-20261008-003/SWZ-1920.csv": {
+   "bytes": 1271,
+   "sha256": "008bc8052e2323d4f892dc397bad94bc4fa61295619923fea932915948939c50"
+  },
+  "work-req-20261008-003/SWZ-2021.csv": {
+   "bytes": 1271,
+   "sha256": "008bc8052e2323d4f892dc397bad94bc4fa61295619923fea932915948939c50"
+  },
+  "work-req-20261008-003/SWZ-2223.csv": {
+   "bytes": 1271,
+   "sha256": "008bc8052e2323d4f892dc397bad94bc4fa61295619923fea932915948939c50"
+  },
+  "work-req-20261008-003/SWZ-2324.csv": {
+   "bytes": 1271,
+   "sha256": "008bc8052e2323d4f892dc397bad94bc4fa61295619923fea932915948939c50"
+  },
+  "work-req-20261008-003/SWZ-2425.csv": {
+   "bytes": 1271,
+   "sha256": "008bc8052e2323d4f892dc397bad94bc4fa61295619923fea932915948939c50"
+  },
+  "work-req-20261008-003/SWZ-2526.csv": {
+   "bytes": 1271,
+   "sha256": "008bc8052e2323d4f892dc397bad94bc4fa61295619923fea932915948939c50"
+  },
+  "work-req-20261008-003/SWZ-current.csv": {
+   "bytes": 344291,
+   "sha256": "1c40b7cebed397a177643b6576f064e3c144b6d719dc9a5719636d88ca040021"
+  },
+  "work-req-20261008-003/merged-fixtures.json": {
+   "bytes": 3362975,
+   "sha256": "45e44ac61b43c9279621cbb3b8ce17f3ca3e05ad4a970cc1fb75a13a526e1498"
+  },
+  "work-req-20261008-003/q1-fixtures.json": {
+   "bytes": 1335655,
+   "sha256": "62b24c0ce0882cf9dd4923b1611534fe6b1f9aacf8d767b22cb87f5a37c7e32f"
+  },
+  "work-req-20261008-003/q2-snapshots.json": {
+   "bytes": 710367,
+   "sha256": "e82dd04e7beff5033e1e0bf7aedef3e72361f1e3fe8a1399cb369ba97b31e222"
+  },
+  "work-req-20261008-003/q3-venues.json": {
+   "bytes": 1995320,
+   "sha256": "0255ae44de09049a780ce7d7ebee277dc1eb91e4125ae591710f6277d5bc2eb6"
+  },
+  "work-req-20261008-003/q4-clubs.json": {
+   "bytes": 90194,
+   "sha256": "4f15358b4477c741a043d31fb5665937472b9515916d928ec0c0d373c3106a05"
+  },
+  "work-req-20261008-003/sfl-patch/chunk-1819-1920.csv": {
+   "bytes": 28548,
+   "sha256": "3e5e601ae2493909a52baf2938c45ead150f4f57403b1ebe362e16e63aada7de"
+  },
+  "work-req-20261008-003/sfl-patch/chunk-2021-2122.csv": {
+   "bytes": 25488,
+   "sha256": "4807364122d83a60ed47a7557bfa82983202cf608e18c344f4834bfe03334c4b"
+  },
+  "work-req-20261008-003/sfl-patch/chunk-2223.csv": {
+   "bytes": 11170,
+   "sha256": "196b08e305e6482c9f5340bf62e4e120631c1257e80667addd3b2a5288625c3f"
+  },
+  "work-req-20261008-003/sfl-patch/chunk-2324.csv": {
+   "bytes": 1,
+   "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  "work-req-20261008-003/sfl-patch/chunk-2425-2526.csv": {
+   "bytes": 29511,
+   "sha256": "8f663e0873652899e3cd327afa51db48ba0877bf0227ea95960525c75aae0272"
+  },
+  "work-req-20261009-001/SWZ-20182019.csv": {
+   "bytes": 22435,
+   "sha256": "88399c23dd85dfa1b4cf0375deb2a67b855d913b0d49641ca225c1e0774c3238"
+  },
+  "work-req-20261009-001/SWZ-20192020.csv": {
+   "bytes": 22230,
+   "sha256": "39847662afd4ab7e00e3d4ec08e70706a9be8ab77e6eaa9884c6f2eb2efd8069"
+  },
+  "work-req-20261009-001/SWZ-20202021.csv": {
+   "bytes": 22535,
+   "sha256": "038383160d276f75e5c1d06b7107f0aed4aa6930abf1620253ec1dc195bbe981"
+  },
+  "work-req-20261009-001/SWZ-20212022.csv": {
+   "bytes": 22568,
+   "sha256": "9fd95e43b45c8852b7239c1a5927dc2d9774eadc7bda92ae506ceaaaf2672c6c"
+  },
+  "work-req-20261009-001/SWZ-20222023.csv": {
+   "bytes": 22699,
+   "sha256": "ee208bbc3f91d9bcc74a58a8b2d188f0d8fb5fd3381711bc8e8057f05ffde2f5"
+  },
+  "work-req-20261009-001/SWZ-20232024.csv": {
+   "bytes": 29087,
+   "sha256": "6cd7997aa3d35cca81e45343f25168cf41b71fc8bdde939e2b957b93b6e83e27"
+  },
+  "work-req-20261009-001/SWZ-20242025.csv": {
+   "bytes": 30860,
+   "sha256": "906875d786cfff3a5277b83937b9eb6d9537f3b97f1e6801e07ec79f417c6c78"
+  },
+  "work-req-20261009-001/SWZ-20252026.csv": {
+   "bytes": 30445,
+   "sha256": "a80f5daee5376ef58440b948b0c4e824d3d0a8f4da10a15ca945834704b13de1"
+  },
+  "work-req-20261009-001/season-files-manifest.json": {
+   "bytes": 2219,
+   "sha256": "8f82ae634a36b3cd3ab21f13b2aa67b5192e7a515b68fa69969b05aab1c8846f"
+  },
+  "work-req-20261009-001/sfl-enrichment-joined.json": {
+   "bytes": 504400,
+   "sha256": "5f54345ac00ec39d31afb5a6e75fa84585c9569a5d8c97bc7eee0f72bd7a0cbb"
+  }
+ },
+ "key_findings": [
+  "q1-fixtures.json: 1335655 bytes, sha256 prefix 62b24c0ce0882cf9 == declared in req-20261008-003 response (1,335,655 / 62b24c0ce0882cf9). MATCH.",
+  "q2-snapshots.json: 710367 bytes, prefix e82dd04e7beff503 == declared (710,367 / e82dd04e7beff503). MATCH.",
+  "q4-clubs.json: 90194 bytes, prefix 4f15358b4477c741 == declared (90,194 / 4f15358b4477c741). MATCH.",
+  "Discrepancy explanation: the size/hash drift Codex reported could NOT be reproduced against the committed working tree on 2026-10-09 11:30 UTC — all three declared files verify byte-identical to the response metadata. Possible causes on the Codex side: partial download, transfer encoding, or reading a stale/different copy. No evidence of post-hash modification in this repo (file mtimes 2026-10-09 02:21-02:45 UTC predate the req-20261009-001 request at 02:01 UTC? No: request created 10:01+08:00=02:01 UTC; artifacts written 02:21-02:45 UTC AFTER the request arrived, i.e. by the first processing round dceb643 at 03:13 UTC. The files have not been touched since.)",
+  "SWZ-1819..2526.csv (7 files, 1271 bytes each, identical bytes): HTML error pages from a failed football-data download, NOT source data. See question 6 verdict.",
+  "SWZ-current.csv: 344291 bytes, sha256 1c40b7cebed397a177643b6576f064e3c144b6d719dc9a5719636d88ca040021 == hash reported in req-20261008-003 response. MATCH."
+ ]
+}
