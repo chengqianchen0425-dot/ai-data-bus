@@ -49,9 +49,11 @@ Muse 定位（用户明确）：Muse = 抓取器 / 搜索器，不是判断器�
 
 空转熔断（2026-10-03 用户长期规则，002 事件教训）：同一请求连续 3 轮被接手仍无实质进展、只剩外部依赖（等 Codex 上游/等真浏览器/等外部 key）时，停止接手、不再静默空转，直接向用户预警风险（卡点+已空转时长+可能长期无结果），请用户决定（继续等/降级/关闭）。
 
-熔断实现口径（2026-10-03 010 误判后修正；2026-10-09 003 烂尾后修正 v3）：实质进展=回执文件增大≥1KB **或** `work-<id>/` 目录字节增长（并清零计数）；回执 note 纯文字改动（<1KB）不计入——防"只写字不干活"式虚假开工。叫醒接手条件=processing 15 分钟无写入 **且** 1 小时无实质交付；即使心跳让 mtime 保持新鲜、2 小时无实质交付也计数熔断（防"心跳存活、实质空转"）。正常交付中的长轮任务不受影响。
+熔断实现口径（2026-10-03 010 误判后修正；2026-10-09 003 烂尾后修正 v3）：实质进展三列判据（2026-10-09 v4 代码化）：每轮输出 1) work_delta_bytes（work-<id>/ 字节增量）2) response_data_delta（回执 data 实质数据增量，剔除 note）3) note_text_delta（回执文字变更）；1)2) 任一 >0 视为实质进展并清零计数，仅 3)>0 不计入；连续 2 轮 1)2) 均为 0 则自动上报 blocked＋卡点并停止唤醒（唤醒熔断）。叫醒接手条件=processing 15 分钟无写入 **且** 1 小时无实质交付；即使心跳让 mtime 保持新鲜、2 小时无实质交付也计数熔断（防"心跳存活、实质空转"）。正常交付中的长轮任务不受影响。
 
-虚假开工禁令（2026-10-09 用户长期规则，003 事件教训：21:36 受理、22:48"接手"两轮都只写回执文字、一次抓取没派，看门狗 3 次叫醒白叫后 auto-park 静默，烂尾 11.5 小时）：写 `processing` 回执≠开工。同一轮内必须同时派出真实执行（subagent.spawn / browser.spawn_task / 抓取脚本启动），只写计划文字不派工=虚假开工，严禁。stall/takeover 被叫醒后，同一轮必须产生实质进展（真实派工/数据落盘/`work-<id>/` 目录增长）；若确实卡外部依赖，如实报 `blocked`＋卡点，不许再写"接手"空话。auto-park 是停手不是结案：被自动停手的单子必须在总控和当日记忆记一笔"待用户决断"，不许静默烂掉。
+虚假开工禁令（2026-10-09 用户长期规则，003 事件教训：21:36 受理、22:48"接手"两轮都只写回执文字、一次抓取没派，看门狗 3 次叫醒白叫后 auto-park 静默，烂尾 11.5 小时）：写 `processing` 回执≠开工。同一轮内必须同时派出真实执行（subagent.spawn / browser.spawn_task / 抓取脚本启动），只写计划文字不派工=虚假开工，严禁。stall/takeover 被叫醒后，同一轮必须产生实质进展（真实派工/数据落盘/`work-<id>/` 目录增长）；若确实卡外部依赖，如实报 `blocked`＋卡点，不许再写"接手"空话。auto-park 是停手不是结案：被自动停手的单子必须在总控和当日记忆记一笔"待用户决断"，不许静默烂掉。留遗言格式：回执 note 末尾追加待用户决断段（卡点是什么、已试过哪几种方法、需要用户拍板什么），同时在当日 ~/memory/YYYY-MM-DD.md 记一笔。
+
+processing 回执派工凭证（2026-10-09 用户批复）：写 processing 回执的同一 JSON 必须含 dispatch_id 字段，取值为本次真实执行的标识：subagent 的 spawn id、browser.spawn_task 的 task id、或抓取脚本进程号。缺少 dispatch_id 的 processing 回执 = 虚假开工，看门狗直接标红。
 
 to_codex 纪律（2026-10-03 教训）：to_codex 字段只转达用户原话或 hook 明确授权的内容；worker 不得自行编造给 Codex 的新指令。2026-10-03 一轮 worker 曾自作主张发布 to_codex v3（让 Codex 转赔率区间筛选），事后经用户追认才生效。已授权可直接写入的情形（正面清单，写入时注明版本）：①命中 DEAD-END REGISTRY 的真开盘转筛选通知（用户 2026-10-03 18:02 授权）。清单外一律先请示用户。
 
@@ -63,6 +65,8 @@ to_codex 纪律（2026-10-03 教训）：to_codex 字段只转达用户原话或
 
 请求版本指纹（机械校验，每轮执行）：每个回执带 `request_sha` = 写回执时 `requests/<id>.json` 的 sha256 前 16 位。每轮对每个 id 执行：`sha256sum requests/<id>.json | cut -c1-16`，与 `responses/<id>.json` 中的 `request_sha` 比对。不符 → 请求内容已变 → 按防降级规则归档旧回执、写新 processing（note 注明 sha 变化）。写任何回执（processing/ok/error）时必须写入当前 `request_sha`。`request_sha` 缺失的旧回执：本轮若无其他改动则只补写 sha，不触发归档。
 
+下载即校验（2026-10-09 用户批复）：任何下载/抓取落盘后立即校验文件头魔数、大小、行数；HTML 占位页（如 1,311 字节 404 页）直接丢弃并记入 note，不许进 work-<id>/。
+
 每轮执行步骤：
 1. `cd ~/workspace/ai-inbox/repo && git pull --rebase -q`
 2. 列出 `requests/*.json`（忽略 `.gitkeep`），逐个读出 `id` 和 `type`，按上面的防重规则确定待处理。
@@ -72,7 +76,7 @@ to_codex 纪律（2026-10-03 教训）：to_codex 字段只转达用户原话或
    - `web_fetch`：用 `browser.spawn_task` 打开 `params.url`（JS 渲染页面要等加载完），按 `params.extract` 的自然语言描述提取数据，按 `params.format`（如有）组织成 JSON 写回执。
    - `web_search`：用 `browser.search` 搜索 `params.query`（`params.want` 说明想找什么，`params.max_results` 缺省 5），回执 `data.results` 为数组，每项含 title、url、snippet。
    - `data_task`：按 `params.task` 的自然语言描述处理 `params.data` / `params.data_text`，结果放回执 `data.result`。
-   - `deep_research`：耗时任务。首轮先写 `{"id": "<id>", "status": "processing", "note": "研究进行中", "request_sha": "<当前sha>"}` 回执并推送（注意：写 processing 回执的同一轮必须同时派出真实执行，见上面的虚假开工禁令）；然后按上面的高召回执行标准和任务拆分规则，用 `browser.search` / `browser.open` 分步调研（也可 `browser.deep_research`），进展记入当天 ~/memory/YYYY-MM-DD.md；完成后覆盖写最终回执（`status` 为 `ok`，`data.report` 为 markdown 全文，`data.audit` 为漏抓审计，`data.unresolved_queue` 为未解决队列，`request_sha` 为写回执时的当前 sha）。下一轮看到 `processing` 状态按防重规则决定是否接手。
+   - `deep_research`：耗时任务。首轮先写 `{"id": "<id>", "status": "processing", "note": "研究进行中", "request_sha": "<当前sha>"}` 回执并推送（注意：写 processing 回执的同一轮必须同时派出真实执行，见上面的虚假开工禁令）；然后按上面的高召回执行标准和任务拆分规则，用 `browser.search` / `browser.open` 分步调研（也可 `browser.deep_research`），进展记入当天 ~/memory/YYYY-MM-DD.md；完成后覆盖写最终回执（`status` 为 `ok`，`data.report` 为 markdown 全文，`data.audit` 为漏抓审计，`data.unresolved_queue` 为未解决队列。unresolved_queue 四类单列（2026-10-09 用户批复）：每项必须带 uq_class：permanent_rule（规则不许填，永久留空，诚实非失败）、source_missing（上游根本没有）、access_blocked（被墙/限流/付费墙，带 retry_after）、pending_work（真正待做的活，带下一步动作）；回执顶部汇总四类计数，进度只追 pending_work，`request_sha` 为写回执时的当前 sha）。下一轮看到 `processing` 状态按防重规则决定是否接手。
    - 未知 `type` → 回执 `status` 为 `error`，`error` 写"不支持的类型：<type>"。
    - 任何失败 → `status` 为 `error` 并写清原因；不要编造数据。
 5. `git add responses/` → `git commit -q -m "response <id>"` → `git push -q`。如果 push 返回 403（口令缺少写权限）：不要丢弃本地文件，在本轮结果中说明 403，下轮会自动重试推送。
@@ -115,7 +119,8 @@ J1（日本）、MLS（美职联）、英超、西甲、德甲、法甲、意甲
 3. 若某源只提供加时/点球后比分：换源；无源可换则该字段记 NULL 并在 `unresolved_queue` 注明口径差异，绝不把加时比分混入 `_90m` 字段。
 4. 行政判罚比分（如 3-0 判负）按官方记录为准；与场上比分不一致时双值保留、分别标注（见 req-20261007-001 conflicts 处理）。
 
-## 已证伪数据源登记（DEAD-END REGISTRY，用户 2026-10-03 18:02 要求维护）
+## 已证伪数据源登记
+> 2026-10-09 用户批复：每条登记项必须带 retry_after（YYYY-MM-DD）；到期前 hook 不得因该源再派任务；到期后可做 1 个轻量试点复测，仍失败则续期。（DEAD-END REGISTRY，用户 2026-10-03 18:02 要求维护）
 命中登记项的子项直接记 unavailable / 记入 `unresolved_queue`，不再开新一轮重试——命中即采信，不因"万一这次能行"而重试；重试需用户明确指令。新条目入库需两轮独立验证或用户确认；每条注明证伪日期与证据。登记项按"源×数据形态"生效，不分联赛/赛季（有反例单独备注）。注：登记为"需真浏览器"的条目，hook worker/子代理无真浏览器能力，标准动作是记入 unresolved_queue 并注明"待主代理真浏览器"，严禁硬试（TotalCorner 曾因硬试触发 403）。
 
 真开盘 tick 历史（true opening /逐公司 tick）：
