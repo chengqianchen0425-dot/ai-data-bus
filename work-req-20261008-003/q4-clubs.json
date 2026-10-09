@@ -1,0 +1,2331 @@
+{
+ "request_id": "req-20261008-003",
+ "question": "Q4",
+ "generated_at": "2026-10-09T10:30:00+08:00",
+ "coverage": {
+  "clubs": 16,
+  "seasons": [
+   "2018/19",
+   "2019/20",
+   "2020/21",
+   "2021/22",
+   "2022/23",
+   "2023/24",
+   "2024/25",
+   "2025/26"
+  ],
+  "conflicts_total": 23
+ },
+ "evidence_grading_notes": [
+  "A组2025/26赛季四家主场为B级证据：2025–26赛季页抓取遇上游429，改用俱乐部页infobox+2026–27赛季页球场表+GC 2025–26赛季专页赛程三重交叉验证，locator中已如实注明",
+  "D组source_hash统一记non-versioned：Wikipedia revision API经browser.open抓取失败（upstream_fetch_failed），以fetched_at+field_locator审计",
+  "SFL官网（sfl.ch）为JS站，无真浏览器能力未直接打开；official_name以SFL在Wikipedia引用中的列表名+俱乐部页infobox交叉为准，差异已入conflicts",
+  "输出不含任何比分、赛果、积分、排名；赛季页仅读取Teams/Stadia章节",
+  "下游注意：St. Gallen球场2026年更名Sitterstadion、Lugano 2026/27起搬AIL Arena"
+ ],
+ "clubs": [
+  {
+   "canonical_identity": "FC Basel",
+   "official_name": "FC Basel 1893",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_Swiss_Super_League",
+    "fetched_at": "2026-10-09T10:36:00+08:00",
+    "field_locator": "References 第6条: 'FC Basel 1893- Swiss Football League' (SFL官方注册名引用)",
+    "source_hash": "wiki-revid:1374571783"
+   },
+   "natal_year": 1893,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Basel",
+    "fetched_at": "2026-10-09T10:24:00+08:00",
+    "field_locator": "infobox Founded: 15 November 1893; History 'Early years' 第1段: founding Fussball Club Basel on 15 November 1893",
+    "source_hash": "wiki-revid:1377537246"
+   },
+   "competition_entry_year": 1898,
+   "name_history": [
+    {
+     "from": 1893,
+     "to": null,
+     "name": "Fussball Club Basel",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Basel",
+      "fetched_at": "2026-10-09T10:24:00+08:00",
+      "field_locator": "History 'Early years' 第1段: founding Fussball Club Basel on 15 November 1893",
+      "source_hash": "wiki-revid:1377537246"
+     }
+    }
+   ],
+   "aliases": [
+    "FCB",
+    "Bebbi",
+    "RotBlau"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": true,
+     "official_name": "FC Basel 1893",
+     "home_venue": "St. Jakob-Park",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Basel | Basel | St. Jakob-Park | 37,994",
+      "source_hash": "wiki-revid:1374571783"
+     }
+    },
+    "2019/20": {
+     "participated": true,
+     "official_name": "FC Basel 1893",
+     "home_venue": "St. Jakob-Park",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Basel | Basel | St. Jakob-Park | 37,994",
+      "source_hash": "wiki-revid:1270002926"
+     }
+    },
+    "2020/21": {
+     "participated": true,
+     "official_name": "FC Basel 1893",
+     "home_venue": "St. Jakob-Park",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Basel | Basel | St. Jakob-Park | 37,994",
+      "source_hash": "wiki-revid:1375823179"
+     }
+    },
+    "2021/22": {
+     "participated": true,
+     "official_name": "FC Basel 1893",
+     "home_venue": "St. Jakob-Park",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Basel | Basel | St. Jakob-Park | 37,994",
+      "source_hash": "wiki-revid:1376314426"
+     }
+    },
+    "2022/23": {
+     "participated": true,
+     "official_name": "FC Basel 1893",
+     "home_venue": "St. Jakob-Park",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Basel | Basel | St. Jakob-Park | 37,994",
+      "source_hash": "wiki-revid:1376915115"
+     }
+    },
+    "2023/24": {
+     "participated": true,
+     "official_name": "FC Basel 1893",
+     "home_venue": "St. Jakob-Park",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 地图卡: FC Basel | St. Jakob Park | Basel (注: 该页拼写无连字符, 见conflicts)",
+      "source_hash": "wiki-revid:1377593185"
+     }
+    },
+    "2024/25": {
+     "participated": true,
+     "official_name": "FC Basel 1893",
+     "home_venue": "St. Jakob-Park",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 地图卡: FC Basel | St. Jakob-Park | Basel",
+      "source_hash": "wiki-revid:1378157233"
+     }
+    },
+    "2025/26": {
+     "participated": true,
+     "official_name": "FC Basel 1893",
+     "home_venue": "St. Jakob-Park",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Basel",
+      "fetched_at": "2026-10-09T10:24:00+08:00",
+      "field_locator": "infobox Ground: St. Jakob-Park; 交叉: 2026–27 Swiss Super League赛季页球场表行 'FC Basel | St. Jakob-Park' (2025–26赛季页抓取被429限流, 未直接验证)",
+      "source_hash": "wiki-revid:1377537246"
+     }
+    }
+   },
+   "conflicts": [
+    {
+     "field": "official_name拼写",
+     "claims": [
+      {
+       "source": "en.wikipedia FC_Basel infobox",
+       "value": "Football Club Basel 1893 (英文拼写)"
+      },
+      {
+       "source": "en.wikipedia FC_Basel首段/WorldFootball/SFL引用",
+       "value": "Fussball Club Basel 1893 (德文拼写); SFL注册简称 FC Basel 1893"
+      }
+     ],
+     "note": "英文Wikipedia infobox用Anglicized拼写，德文拼写为俱乐部实际注册名；统一采用SFL风格 'FC Basel 1893'."
+    },
+    {
+     "field": "home_venue拼写",
+     "claims": [
+      {
+       "source": "2023–24赛季页Stadia地图卡",
+       "value": "St. Jakob Park (无连字符)"
+      },
+      {
+       "source": "其余6个赛季页+俱乐部页infobox",
+       "value": "St. Jakob-Park (有连字符)"
+      }
+     ],
+     "note": "同一球场，拼写变体；规范名取St. Jakob-Park."
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/1898%E2%80%9399_FC_Basel_season",
+    "fetched_at": "2026-10-09T10:50:00+08:00",
+    "field_locator": "Overview段落: 未参加1897-98首届(非官方)锦标赛，参加了首届官方版1898-99赛季; History_of_FC_Basel(1893-1918) 'Beginnings of the league (1898–1909)'段: first iteration of the Swiss League took place in the 1898–99 season ... Basel played Old Boys",
+    "source_hash": "non-versioned"
+   }
+  },
+  {
+   "canonical_identity": "BSC Young Boys",
+   "official_name": "BSC Young Boys",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_Swiss_Super_League",
+    "fetched_at": "2026-10-09T10:36:00+08:00",
+    "field_locator": "References 第13条: 'BSC Young Boys- Swiss Football League' (SFL官方注册名引用)",
+    "source_hash": "wiki-revid:1374571783"
+   },
+   "natal_year": 1898,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/BSC_Young_Boys",
+    "fetched_at": "2026-10-09T10:24:00+08:00",
+    "field_locator": "infobox Founded: 14 March 1898; History '1902–1925: The early years' 第1段: The club was founded in 1898",
+    "source_hash": "wiki-revid:1376226644"
+   },
+   "competition_entry_year": 1901,
+   "name_history": [
+    {
+     "from": 1898,
+     "to": 1925,
+     "name": "FC Young Boys",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/BSC_Young_Boys",
+      "fetched_at": "2026-10-09T10:24:00+08:00",
+      "field_locator": "History '1925–1951: New name and new stadium' 第1段: 'In 1925, the association's name was changed from FC Young Boys to Berner Sport Club Young Boys'",
+      "source_hash": "wiki-revid:1376226644"
+     }
+    },
+    {
+     "from": 1925,
+     "to": null,
+     "name": "Berner Sport Club Young Boys",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/BSC_Young_Boys",
+      "fetched_at": "2026-10-09T10:24:00+08:00",
+      "field_locator": "同上1925更名记录; infobox Full name: Berner Sport Club Young Boys",
+      "source_hash": "wiki-revid:1376226644"
+     }
+    }
+   ],
+   "aliases": [
+    "YB",
+    "BSC"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": true,
+     "official_name": "BSC Young Boys",
+     "home_venue": "Stade de Suisse",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Young Boys | Bern | Stade de Suisse | 31,789",
+      "source_hash": "wiki-revid:1374571783"
+     }
+    },
+    "2019/20": {
+     "participated": true,
+     "official_name": "BSC Young Boys",
+     "home_venue": "Stade de Suisse",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Young Boys | Bern | Stade de Suisse | 31,789",
+      "source_hash": "wiki-revid:1270002926"
+     }
+    },
+    "2020/21": {
+     "participated": true,
+     "official_name": "BSC Young Boys",
+     "home_venue": "Stade de Suisse",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Young Boys | Bern | Stade de Suisse | 31,789",
+      "source_hash": "wiki-revid:1375823179"
+     }
+    },
+    "2021/22": {
+     "participated": true,
+     "official_name": "BSC Young Boys",
+     "home_venue": "Stadion Wankdorf",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Young Boys | Bern | Stadion Wankdorf | 31,789 (命名权到期更名, 同一球场)",
+      "source_hash": "wiki-revid:1376314426"
+     }
+    },
+    "2022/23": {
+     "participated": true,
+     "official_name": "BSC Young Boys",
+     "home_venue": "Stadion Wankdorf",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Young Boys | Bern | Stadion Wankdorf | 31,120",
+      "source_hash": "wiki-revid:1376915115"
+     }
+    },
+    "2023/24": {
+     "participated": true,
+     "official_name": "BSC Young Boys",
+     "home_venue": "Stadion Wankdorf",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 地图卡: BSC Young Boys | Stadion Wankdorf | Bern",
+      "source_hash": "wiki-revid:1377593185"
+     }
+    },
+    "2024/25": {
+     "participated": true,
+     "official_name": "BSC Young Boys",
+     "home_venue": "Stadion Wankdorf",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 地图卡: BSC Young Boys | Stadion Wankdorf | Bern",
+      "source_hash": "wiki-revid:1378157233"
+     }
+    },
+    "2025/26": {
+     "participated": true,
+     "official_name": "BSC Young Boys",
+     "home_venue": "Stadion Wankdorf",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Grasshopper_Club_Zurich_season",
+      "fetched_at": "2026-10-09T10:47:00+08:00",
+      "field_locator": "赛季赛程行: 'Young Boys v Grasshopper - 17 December 2025 ... Stadion Wankdorf' (YB主场); 交叉: 2026–27 Swiss Super League赛季页球场表 'BSC Young Boys | Stadion Wankdorf' (2025–26赛季页抓取被429限流)",
+      "source_hash": "non-versioned"
+     }
+    }
+   },
+   "conflicts": [
+    {
+     "field": "home_venue球场名",
+     "claims": [
+      {
+       "source": "2018–19至2020–21赛季页Stadia表格",
+       "value": "Stade de Suisse"
+      },
+      {
+       "source": "2021–22起各赛季页Stadia表格",
+       "value": "Stadion Wankdorf"
+      },
+      {
+       "source": "BSC Young Boys俱乐部页infobox",
+       "value": "Wankdorf Stadium"
+      }
+     ],
+     "note": "同一座球场; 'Stade de Suisse'为2005–2020冠名期名称，冠名结束后改回Wankdorf相关名称. 逐季按当季赛季页写法记录."
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/1901%E2%80%9302_Swiss_Serie_A",
+    "fetched_at": "2026-10-09T10:50:00+08:00",
+    "field_locator": "Central组积分榜(source: rsssf): 首位 'Young Boys Bern' 7赛12分; 对照1900–01 Swiss Serie A页仅有East/West两组且无Young Boys，故1901–02为其首次顶级联赛参赛",
+    "source_hash": "non-versioned"
+   }
+  },
+  {
+   "canonical_identity": "FC Zürich",
+   "official_name": "FC Zürich",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_Swiss_Super_League",
+    "fetched_at": "2026-10-09T10:36:00+08:00",
+    "field_locator": "References 第11条: 'FC Zürich- Swiss Football League' (SFL官方注册名引用)",
+    "source_hash": "wiki-revid:1374571783"
+   },
+   "natal_year": 1896,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Z%C3%BCrich",
+    "fetched_at": "2026-10-09T10:24:00+08:00",
+    "field_locator": "infobox Founded: 1896; History '1896–1924' 第1段: The club was founded in summer 1896 ... official founding date was set at 1 August 1896",
+    "source_hash": "wiki-revid:1377716614"
+   },
+   "competition_entry_year": 1897,
+   "name_history": [
+    {
+     "from": 1896,
+     "to": null,
+     "name": "Fussballclub Zürich",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Z%C3%BCrich",
+      "fetched_at": "2026-10-09T10:24:00+08:00",
+      "field_locator": "infobox Full name: Fussballclub Zürich; History '1896–1924': 1898年FC Excelsior并入FC Zürich, FC Victoria随后加入 (合并, 非更名)",
+      "source_hash": "wiki-revid:1377716614"
+     }
+    }
+   ],
+   "aliases": [
+    "FCZ"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": true,
+     "official_name": "FC Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Zürich | Zürich | Letzigrund | 26,104",
+      "source_hash": "wiki-revid:1374571783"
+     }
+    },
+    "2019/20": {
+     "participated": true,
+     "official_name": "FC Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Zürich | Zürich | Letzigrund | 26,104",
+      "source_hash": "wiki-revid:1270002926"
+     }
+    },
+    "2020/21": {
+     "participated": true,
+     "official_name": "FC Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Zürich | Zürich | Letzigrund | 26,104",
+      "source_hash": "wiki-revid:1375823179"
+     }
+    },
+    "2021/22": {
+     "participated": true,
+     "official_name": "FC Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Zürich | Zürich | Letzigrund | 26,104",
+      "source_hash": "wiki-revid:1376314426"
+     }
+    },
+    "2022/23": {
+     "participated": true,
+     "official_name": "FC Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Zürich | Zürich | Letzigrund | 26,103",
+      "source_hash": "wiki-revid:1376915115"
+     }
+    },
+    "2023/24": {
+     "participated": true,
+     "official_name": "FC Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 地图卡: Grasshopper Club Zürich | FC Zürich 共用 Letzigrund",
+      "source_hash": "wiki-revid:1377593185"
+     }
+    },
+    "2024/25": {
+     "participated": true,
+     "official_name": "FC Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 地图卡: Grasshopper Club Zurich | FC Zürich 共用 Letzigrund",
+      "source_hash": "wiki-revid:1378157233"
+     }
+    },
+    "2025/26": {
+     "participated": true,
+     "official_name": "FC Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Z%C3%BCrich",
+      "fetched_at": "2026-10-09T10:24:00+08:00",
+      "field_locator": "infobox Ground: Letzigrund; 交叉: 2026–27 Swiss Super League赛季页球场表 'FC Zürich | Letzigrund' (2025–26赛季页抓取被429限流)",
+      "source_hash": "wiki-revid:1377716614"
+     }
+    }
+   },
+   "conflicts": [
+    {
+     "field": "Letzigrund容量数字",
+     "claims": [
+      {
+       "source": "FC Zürich俱乐部页infobox",
+       "value": "26,105"
+      },
+      {
+       "source": "2018–19至2021–22赛季页Stadia表格",
+       "value": "26,104"
+      },
+      {
+       "source": "2022–23至2024–25赛季页",
+       "value": "26,103"
+      }
+     ],
+     "note": "容量数字逐年微调/四舍五入差异，不影响主场认定."
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/Grasshopper_Club_Z%C3%BCrich",
+    "fetched_at": "2026-10-09T10:24:00+08:00",
+    "field_locator": "History 第1段: The first Swiss championships (then called 'Serie A') were held in 1897–98; Rivalries 'FC Zurich'段: 'the first derby between the two Zurich clubs was held as part of the first Swiss championship' — FCZ参加了1897–98首届锦标赛; 另见1899–1900 Swiss Serie A East表含FC Zürich",
+    "source_hash": "wiki-revid:1363095002"
+   }
+  },
+  {
+   "canonical_identity": "Grasshopper Club Zürich",
+   "official_name": "Grasshopper Club Zürich",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_Swiss_Super_League",
+    "fetched_at": "2026-10-09T10:36:00+08:00",
+    "field_locator": "References 第7条: 'Grasshopper Club- Swiss Football League' (SFL官方注册名引用); 俱乐部页infobox Full name: Grasshopper Club Zürich",
+    "source_hash": "wiki-revid:1374571783"
+   },
+   "natal_year": 1886,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/Grasshopper_Club_Z%C3%BCrich",
+    "fetched_at": "2026-10-09T10:24:00+08:00",
+    "field_locator": "infobox Founded: 1 September 1886; History 第1段: Grasshopper Club Zurich was founded on 1 September 1886 by Tom E. Griffith",
+    "source_hash": "wiki-revid:1363095002"
+   },
+   "competition_entry_year": 1897,
+   "name_history": [
+    {
+     "from": 1886,
+     "to": null,
+     "name": "Grasshopper Club Zürich",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/Grasshopper_Club_Z%C3%BCrich",
+      "fetched_at": "2026-10-09T10:24:00+08:00",
+      "field_locator": "infobox Full name: Grasshopper Club Zürich; History 第1段创立记录; 备注: 1997年公司化, 2005年5月起足球部门正式组织形式为Neue Grasshopper Fussball AG (非俱乐部更名)",
+      "source_hash": "wiki-revid:1363095002"
+     }
+    }
+   ],
+   "aliases": [
+    "GC",
+    "GCZ",
+    "Grasshoppers",
+    "Hoppers"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": true,
+     "official_name": "Grasshopper Club Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Grasshopper | Zürich | Letzigrund | 26,104 (该季末降级)",
+      "source_hash": "wiki-revid:1374571783"
+     }
+    },
+    "2019/20": {
+     "participated": false
+    },
+    "2020/21": {
+     "participated": false
+    },
+    "2021/22": {
+     "participated": true,
+     "official_name": "Grasshopper Club Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Grasshopper Club Zürich | Zürich | Letzigrund | 26,104; 引言: 2020–21 Swiss Challenge League champions Grasshopper Club Zürich (升级回归)",
+      "source_hash": "wiki-revid:1376314426"
+     }
+    },
+    "2022/23": {
+     "participated": true,
+     "official_name": "Grasshopper Club Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 表格行: Grasshopper | Zürich | Letzigrund | 26,103",
+      "source_hash": "wiki-revid:1376915115"
+     }
+    },
+    "2023/24": {
+     "participated": true,
+     "official_name": "Grasshopper Club Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 地图卡: Grasshopper Club Zürich | Letzigrund",
+      "source_hash": "wiki-revid:1377593185"
+     }
+    },
+    "2024/25": {
+     "participated": true,
+     "official_name": "Grasshopper Club Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:36:00+08:00",
+      "field_locator": "Stadia and locations 地图卡: Grasshopper Club Zurich | Letzigrund (见conflicts: 2025-05-27保级附加赛主场腿在卢加诺Stadio Cornaredo踢, 非联赛主场)",
+      "source_hash": "wiki-revid:1378157233"
+     }
+    },
+    "2025/26": {
+     "participated": true,
+     "official_name": "Grasshopper Club Zürich",
+     "home_venue": "Letzigrund",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Grasshopper_Club_Zurich_season",
+      "fetched_at": "2026-10-09T10:47:00+08:00",
+      "field_locator": "赛季赛程主场行: 21 Dec 2025 / 18 Jan 2026 / 31 Jan 2026 / 07 Feb 2026 均为 'Grasshopper v ... Letzigrund, Zürich'; 交叉: 2026–27 Swiss Super League赛季页球场表 'Grasshopper Club | Letzigrund' (2025–26赛季页抓取被429限流)",
+      "source_hash": "non-versioned"
+     }
+    }
+   },
+   "conflicts": [
+    {
+     "field": "2024/25 home_venue异常单场",
+     "claims": [
+      {
+       "source": "2024–25赛季页Stadia and locations地图卡",
+       "value": "Letzigrund (联赛主场)"
+      },
+      {
+       "source": "2024–25赛季页Relegation play-off / First leg",
+       "value": "2025-05-27 Grasshopper 4–0 Aarau在Stadio Cornaredo, Lugano踢"
+      }
+     ],
+     "note": "联赛主场仍为Letzigrund; 附加赛主场腿因Letzigrund不可用改在卢加诺中立场. 不改变赛季主场认定, 仅记录."
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/Grasshopper_Club_Z%C3%BCrich",
+    "fetched_at": "2026-10-09T10:24:00+08:00",
+    "field_locator": "History 第1段: The first Swiss championships (then called 'Serie A') were held in 1897–98 and were won by the Grasshoppers",
+    "source_hash": "wiki-revid:1363095002"
+   }
+  },
+  {
+   "canonical_identity": "FC Luzern",
+   "official_name": "FC Luzern",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/2018–19_Swiss_Super_League",
+    "fetched_at": "2026-10-09T10:22:00+08:00",
+    "field_locator": "References L365: League, Swiss Football. 'FC Luzern- Swiss Football League'（SFL官方俱乐部页命名）",
+    "source_hash": "wiki-revid:1374571783"
+   },
+   "natal_year": 1901,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Luzern",
+    "fetched_at": "2026-10-09T10:21:00+08:00",
+    "field_locator": "infobox Founded '12 August 1901 (1901-08-12)'（L10）+ History 'The official foundation took place on 12 August 1901'（L72）",
+    "source_hash": "wiki-revid:1376586195"
+   },
+   "competition_entry_year": 1909,
+   "name_history": [
+    {
+     "from": 1901,
+     "to": null,
+     "name": "Fussball-Club Luzern",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Luzern",
+      "fetched_at": "2026-10-09T10:21:00+08:00",
+      "field_locator": "infobox Full name 'Fussball-Club Luzern'（L6）；lead 'commonly abbreviated to FC Luzern'（L36）；无更名记录",
+      "source_hash": "wiki-revid:1376586195"
+     }
+    }
+   ],
+   "aliases": [
+    "FCL",
+    "Die Leuchten"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": true,
+     "official_name": "FC Luzern",
+     "home_venue": "Swissporarena",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2018–19_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L76：Luzern | Lucerne | Swissporarena",
+      "source_hash": "wiki-revid:1374571783"
+     }
+    },
+    "2019/20": {
+     "participated": true,
+     "official_name": "FC Luzern",
+     "home_venue": "Swissporarena",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2019–20_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L60：Luzern | Lucerne | Swissporarena",
+      "source_hash": "wiki-revid:1270002926"
+     }
+    },
+    "2020/21": {
+     "participated": true,
+     "official_name": "FC Luzern",
+     "home_venue": "Swissporarena",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2020–21_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L56：Luzern | Lucerne | Swissporarena",
+      "source_hash": "wiki-revid:1375823179"
+     }
+    },
+    "2021/22": {
+     "participated": true,
+     "official_name": "FC Luzern",
+     "home_venue": "Swissporarena",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2021–22_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L72：Luzern | Lucerne | Swissporarena",
+      "source_hash": "wiki-revid:1376314426"
+     }
+    },
+    "2022/23": {
+     "participated": true,
+     "official_name": "FC Luzern",
+     "home_venue": "Swissporarena",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2022–23_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L101：Luzern | Lucerne | Swissporarena",
+      "source_hash": "wiki-revid:1376915115"
+     }
+    },
+    "2023/24": {
+     "participated": true,
+     "official_name": "FC Luzern",
+     "home_venue": "Swissporarena",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2023–24_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 区块 L114–L120：FC Luzern | Swissporarena | Luzern",
+      "source_hash": "wiki-revid:1377593185"
+     }
+    },
+    "2024/25": {
+     "participated": true,
+     "official_name": "FC Luzern",
+     "home_venue": "Swissporarena",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2024–25_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 区块 L93–L101：FC Luzern | Swissporarena | Luzern",
+      "source_hash": "wiki-revid:1378157233"
+     }
+    },
+    "2025/26": {
+     "participated": true,
+     "official_name": "FC Luzern",
+     "home_venue": "Swissporarena",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2025–26_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 区块 L100–L107：FC Luzern | Swissporarena | Luzern",
+      "source_hash": "wiki-revid:1374049827"
+     }
+    }
+   },
+   "conflicts": [
+    {
+     "field": "home_venue（当前赞助冠名）",
+     "claims": [
+      {
+       "source": "FC_Luzern页面infobox（rev 1376586195）",
+       "value": "Thermoplan Arena, Lucerne"
+      },
+      {
+       "source": "FC_Luzern页面正文（rev 1376586195）",
+       "value": "new Stadion Allmend（2011年建成）"
+      },
+      {
+       "source": "2018/19–2025/26共8个赛季页Stadia and locations表格",
+       "value": "Swissporarena"
+      }
+     ],
+     "note": "赞助冠名随时间变化（Stadion Allmend 2011 → Swissporarena → 现Thermoplan Arena）；赛季数据统一采用各赛季页面记载的Swissporarena。"
+    },
+    {
+     "field": "natal_year（成立日口径）",
+     "claims": [
+      {
+       "source": "FC_Luzern页面History",
+       "value": "12 July 1901首次训练 / 8 July 1901筹备会议"
+      },
+      {
+       "source": "FC_Luzern页面infobox+History",
+       "value": "12 August 1901官方成立"
+      }
+     ],
+     "note": "采用官方成立日12 August 1901为natal_year；7月日期为筹备/首次训练。"
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Luzern",
+    "fetched_at": "2026-10-09T10:21:00+08:00",
+    "field_locator": "History 'Slow start (1903–1918)' 第4段：'Luzern was incorporated into the Serie A by the SFA in 1909'（1909–10赛季首次进入顶级联赛Serie A）",
+    "source_hash": "wiki-revid:1376586195"
+   }
+  },
+  {
+   "canonical_identity": "FC St. Gallen",
+   "official_name": "FC St.Gallen 1879",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/2018–19_Swiss_Super_League",
+    "fetched_at": "2026-10-09T10:22:00+08:00",
+    "field_locator": "References L370: League, Swiss Football. 'FC St.Gallen 1879- Swiss Football League'（SFL官方俱乐部页命名）",
+    "source_hash": "wiki-revid:1374571783"
+   },
+   "natal_year": 1879,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_St._Gallen",
+    "fetched_at": "2026-10-09T10:21:00+08:00",
+    "field_locator": "infobox Founded '19 April 1879 (1879-04-19)'（L12）+ History 'FC St. Gallen was founded on 19 April 1879'（L49）",
+    "source_hash": "wiki-revid:1376670707"
+   },
+   "competition_entry_year": 1899,
+   "name_history": [
+    {
+     "from": 1879,
+     "to": 1903,
+     "name": "FC St. Gallen（1899–1900赛季以合并体 'Vereinigte FC St. Gallen' 名义参赛）",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/1899–1900_Swiss_Serie_A",
+      "fetched_at": "2026-10-09T10:23:00+08:00",
+      "field_locator": "East组表格第5行 'Vereinigte FC St. Gallen'（Source: rsssf.com）",
+      "source_hash": "wiki-revid:1373651209"
+     }
+    },
+    {
+     "from": 1903,
+     "to": null,
+     "name": "FC St. Gallen（全称 Fussballclub St. Gallen 1879；1903年6月22日正式采用）",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_St._Gallen",
+      "fetched_at": "2026-10-09T10:21:00+08:00",
+      "field_locator": "infobox Full name 'Fussballclub St. Gallen 1879'（L8）+ History 'On 22 June 1903, the club officially adopted the name FC St. Gallen'（L53）",
+      "source_hash": "wiki-revid:1376670707"
+     }
+    }
+   ],
+   "aliases": [
+    "FCSG",
+    "Espen",
+    "Die Espen"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": true,
+     "official_name": "FC St.Gallen 1879",
+     "home_venue": "kybunpark",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2018–19_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L80：St. Gallen | St. Gallen | kybunpark",
+      "source_hash": "wiki-revid:1374571783"
+     }
+    },
+    "2019/20": {
+     "participated": true,
+     "official_name": "FC St.Gallen 1879",
+     "home_venue": "Kybunpark",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2019–20_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L68：St. Gallen | St. Gallen | Kybunpark",
+      "source_hash": "wiki-revid:1270002926"
+     }
+    },
+    "2020/21": {
+     "participated": true,
+     "official_name": "FC St.Gallen 1879",
+     "home_venue": "Kybunpark",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2020–21_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L62：St. Gallen | St. Gallen | Kybunpark",
+      "source_hash": "wiki-revid:1375823179"
+     }
+    },
+    "2021/22": {
+     "participated": true,
+     "official_name": "FC St.Gallen 1879",
+     "home_venue": "Kybunpark",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2021–22_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L78：St. Gallen | St. Gallen | Kybunpark",
+      "source_hash": "wiki-revid:1376314426"
+     }
+    },
+    "2022/23": {
+     "participated": true,
+     "official_name": "FC St.Gallen 1879",
+     "home_venue": "Kybunpark",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2022–23_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L107：St. Gallen | St. Gallen | Kybunpark",
+      "source_hash": "wiki-revid:1376915115"
+     }
+    },
+    "2023/24": {
+     "participated": true,
+     "official_name": "FC St.Gallen 1879",
+     "home_venue": "Kybunpark",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2023–24_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 区块 L124–L130：FC St. Gallen | Kybunpark | St. Gallen",
+      "source_hash": "wiki-revid:1377593185"
+     }
+    },
+    "2024/25": {
+     "participated": true,
+     "official_name": "FC St.Gallen 1879",
+     "home_venue": "Kybunpark",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2024–25_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 区块 L105–L111：FC St. Gallen | Kybunpark | St. Gallen",
+      "source_hash": "wiki-revid:1378157233"
+     }
+    },
+    "2025/26": {
+     "participated": true,
+     "official_name": "FC St.Gallen 1879",
+     "home_venue": "Kybunpark",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2025–26_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 区块 L111–L117：FC St. Gallen | Kybunpark | St. Gallen",
+      "source_hash": "wiki-revid:1374049827"
+     }
+    }
+   },
+   "conflicts": [
+    {
+     "field": "home_venue（2026年更名）",
+     "claims": [
+      {
+       "source": "FC_St._Gallen页面Stadium章节（rev 1376670707）",
+       "value": "Sitterstadion（2026年球迷投票由Kybunpark更名而来；2016–2026称Kybunpark）"
+      },
+      {
+       "source": "2025–26赛季页Stadia and locations（rev 1374049827，2026-09-09修订）",
+       "value": "Kybunpark"
+      }
+     ],
+     "note": "窗口内（2018/19–2025/26）8个赛季页全部记载Kybunpark，无赛季内更名；Sitterstadion为2026年赛季结束后的更名，不影响本窗口数据，但下游2026/27起需切换。"
+    },
+    {
+     "field": "name_history（1899年合并体名称）",
+     "claims": [
+      {
+       "source": "1899–1900 Swiss Serie A页面（RSSSF源）",
+       "value": "Vereinigte FC St. Gallen"
+      },
+      {
+       "source": "FC_St._Gallen页面History",
+       "value": "1903年6月22日正式采用FC St. Gallen之名"
+      }
+     ],
+     "note": "1899年顶级联赛参赛名'Vereinigte'（United）反映当时本地球队合并参赛形态；1903年正式定名为FC St. Gallen。两条记录并存于name_history。"
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/1899–1900_Swiss_Serie_A",
+    "fetched_at": "2026-10-09T10:23:00+08:00",
+    "field_locator": "East组表格第5行 'Vereinigte FC St. Gallen'，Source: rsssf.com；交叉印证liberoguide.com/fc-st-gallen/ 'Vereinigte ('United') FC St Gallen joined the Swiss Serie A in 1899'",
+    "source_hash": "wiki-revid:1373651209"
+   }
+  },
+  {
+   "canonical_identity": "FC Sion",
+   "official_name": "FC Sion",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/2018–19_Swiss_Super_League",
+    "fetched_at": "2026-10-09T10:22:00+08:00",
+    "field_locator": "References L368: League, Swiss Football. 'FC Sion- Swiss Football League'（SFL官方俱乐部页命名）",
+    "source_hash": "wiki-revid:1374571783"
+   },
+   "natal_year": 1909,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Sion",
+    "fetched_at": "2026-10-09T10:21:00+08:00",
+    "field_locator": "infobox Founded '1909 (1909)'（L10）+ History 'FC Sion were founded in 1909 by Robert Gilliard'（L42）",
+    "source_hash": "wiki-revid:1375747822"
+   },
+   "competition_entry_year": 1962,
+   "name_history": [
+    {
+     "from": 1909,
+     "to": null,
+     "name": "Football Club de Sion / Football Club Sion（一线队公司实体名为Olympique des Alpes SA）",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Sion",
+      "fetched_at": "2026-10-09T10:21:00+08:00",
+      "field_locator": "infobox Full name 'Football Club de Sion'（L8）+ lead 'also known simply as Sion or formally as Football Club Sion, with the club's first team incorporated as Olympique des Alpes SA'（L34）；无俱乐部更名记录",
+      "source_hash": "wiki-revid:1375747822"
+     }
+    }
+   ],
+   "aliases": [
+    "Sion"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": true,
+     "official_name": "FC Sion",
+     "home_venue": "Stade Tourbillon",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2018–19_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L78：Sion | Sion | Stade Tourbillon",
+      "source_hash": "wiki-revid:1374571783"
+     }
+    },
+    "2019/20": {
+     "participated": true,
+     "official_name": "FC Sion",
+     "home_venue": "Stade Tourbillon",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2019–20_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L66：Sion | Sion | Stade Tourbillon",
+      "source_hash": "wiki-revid:1270002926"
+     }
+    },
+    "2020/21": {
+     "participated": true,
+     "official_name": "FC Sion",
+     "home_venue": "Stade Tourbillon",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2020–21_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L60：Sion | Sion | Stade Tourbillon",
+      "source_hash": "wiki-revid:1375823179"
+     }
+    },
+    "2021/22": {
+     "participated": true,
+     "official_name": "FC Sion",
+     "home_venue": "Stade Tourbillon",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2021–22_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L76：Sion | Sion | Stade Tourbillon",
+      "source_hash": "wiki-revid:1376314426"
+     }
+    },
+    "2022/23": {
+     "participated": true,
+     "official_name": "FC Sion",
+     "home_venue": "Stade Tourbillon",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2022–23_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L105：Sion | Sion | Stade Tourbillon；同页L264确认降级至Challenge League",
+      "source_hash": "wiki-revid:1376915115"
+     }
+    },
+    "2023/24": {
+     "participated": false
+    },
+    "2024/25": {
+     "participated": true,
+     "official_name": "FC Sion",
+     "home_venue": "Stade de Tourbillon",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2024–25_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 区块 L105–L111：FC Sion | Stade de Tourbillon | Sion；同页L74确认2023–24 Challenge League冠军直接升级回归",
+      "source_hash": "wiki-revid:1378157233"
+     }
+    },
+    "2025/26": {
+     "participated": true,
+     "official_name": "FC Sion",
+     "home_venue": "Stade de Tourbillon",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2025–26_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 区块 L111–L117：FC Sion | Stade de Tourbillon | Sion",
+      "source_hash": "wiki-revid:1374049827"
+     }
+    }
+   },
+   "conflicts": [
+    {
+     "field": "home_venue（拼写变体）",
+     "claims": [
+      {
+       "source": "FC_Sion页面infobox（rev 1375747822）",
+       "value": "Stade de Tourbillon"
+      },
+      {
+       "source": "2018/19–2022/23赛季页Stadia and locations表格",
+       "value": "Stade Tourbillon"
+      },
+      {
+       "source": "2024/25、2025/26赛季页Stadia and locations",
+       "value": "Stade de Tourbillon"
+      }
+     ],
+     "note": "同一球场的法语拼写变体（有无de），非两座球场；按各赛季页面原文分别记录。"
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Sion",
+    "fetched_at": "2026-10-09T10:21:00+08:00",
+    "field_locator": "History L46–L48：'followed five years later by promotion to the National League A (now the Swiss Super League) in 1962'（1962–63赛季首次进入顶级联赛）",
+    "source_hash": "wiki-revid:1375747822"
+   }
+  },
+  {
+   "canonical_identity": "FC Lugano",
+   "official_name": "FC Lugano",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/2018–19_Swiss_Super_League",
+    "fetched_at": "2026-10-09T10:22:00+08:00",
+    "field_locator": "References L363: League, Swiss Football. 'FC Lugano- Swiss Football League'（SFL官方俱乐部页命名）",
+    "source_hash": "wiki-revid:1374571783"
+   },
+   "natal_year": 1908,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Lugano",
+    "fetched_at": "2026-10-09T10:21:00+08:00",
+    "field_locator": "infobox Founded '28 July 1908 (28 July 1908)'（L12）+ History 'Football Club Lugano was formed on 28 July 1908'（L48）；lineage连续认定（2004年破产重组视为同一lineage延续）",
+    "source_hash": "wiki-revid:1376584422"
+   },
+   "competition_entry_year": 1922,
+   "name_history": [
+    {
+     "from": 1908,
+     "to": 2004,
+     "name": "Football Club Lugano",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Lugano",
+      "fetched_at": "2026-10-09T10:21:00+08:00",
+      "field_locator": "History L48 'formed on 28 July 1908' + L60 'The club was declared bankrupt in 2003'",
+      "source_hash": "wiki-revid:1376584422"
+     }
+    },
+    {
+     "from": 2004,
+     "to": 2008,
+     "name": "AC Lugano",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Lugano",
+      "fetched_at": "2026-10-09T10:21:00+08:00",
+      "field_locator": "lead L38–L40 'refounded as AC Lugano in 2004' + History L60–L63 'renamed AC Lugano … In 2004, the club merged with Malcantone Agno'",
+      "source_hash": "wiki-revid:1376584422"
+     }
+    },
+    {
+     "from": 2008,
+     "to": null,
+     "name": "Football Club Lugano（2008年6月4日百年庆股东大会投票恢复历史名称）",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Lugano",
+      "fetched_at": "2026-10-09T10:21:00+08:00",
+      "field_locator": "History L67–L68：'On 4 June 2008, the club's centenary year, the general meeting of shareholders voted on a name change. The historical name of Football Club Lugano was reinstated.'",
+      "source_hash": "wiki-revid:1376584422"
+     }
+    }
+   ],
+   "aliases": [
+    "Bianconeri",
+    "V bianche"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": true,
+     "official_name": "FC Lugano",
+     "home_venue": "Stadio Cornaredo",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2018–19_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L74：Lugano | Lugano | Stadio Cornaredo",
+      "source_hash": "wiki-revid:1374571783"
+     }
+    },
+    "2019/20": {
+     "participated": true,
+     "official_name": "FC Lugano",
+     "home_venue": "Stadio Cornaredo",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2019–20_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L58：Lugano | Lugano | Stadio Cornaredo",
+      "source_hash": "wiki-revid:1270002926"
+     }
+    },
+    "2020/21": {
+     "participated": true,
+     "official_name": "FC Lugano",
+     "home_venue": "Stadio Cornaredo",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2020–21_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L54：Lugano | Lugano | Stadio Cornaredo",
+      "source_hash": "wiki-revid:1375823179"
+     }
+    },
+    "2021/22": {
+     "participated": true,
+     "official_name": "FC Lugano",
+     "home_venue": "Stadio Cornaredo",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2021–22_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L70：Lugano | Lugano | Stadio Cornaredo",
+      "source_hash": "wiki-revid:1376314426"
+     }
+    },
+    "2022/23": {
+     "participated": true,
+     "official_name": "FC Lugano",
+     "home_venue": "Stadio Cornaredo",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2022–23_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 表格行 L99：Lugano | Lugano | Stadio Cornaredo",
+      "source_hash": "wiki-revid:1376915115"
+     }
+    },
+    "2023/24": {
+     "participated": true,
+     "official_name": "FC Lugano",
+     "home_venue": "Stadio Cornaredo",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2023–24_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 区块 L112–L120：FC Lugano | Stadio Cornaredo | Lugano",
+      "source_hash": "wiki-revid:1377593185"
+     }
+    },
+    "2024/25": {
+     "participated": true,
+     "official_name": "FC Lugano",
+     "home_venue": "Stadio Cornaredo",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2024–25_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 区块 L81–L89：FC Lugano | Stadio Cornaredo | Lugano；新球场建设中但该季无临时搬迁记录",
+      "source_hash": "wiki-revid:1378157233"
+     }
+    },
+    "2025/26": {
+     "participated": true,
+     "official_name": "FC Lugano",
+     "home_venue": "Stadio Cornaredo",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2025–26_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "Stadia and locations 区块 L88–L96：FC Lugano | Stadio Cornaredo | Lugano；俱乐部页History L77–L78确认 'The 2025–26 season has been the last played at Cornaredo'，赛季结束后才搬AIL Arena",
+      "source_hash": "wiki-revid:1374049827"
+     }
+    }
+   },
+   "conflicts": [
+    {
+     "field": "home_venue（新球场时间线）",
+     "claims": [
+      {
+       "source": "FC_Lugano页面infobox（rev 1376584422）",
+       "value": "AIL Arena, Lugano（当前值）"
+      },
+      {
+       "source": "FC_Lugano页面History（rev 1376584422）",
+       "value": "2025–26是Cornaredo最后一季，之后搬往新建AIL Arena"
+      },
+      {
+       "source": "2024/25、2025/26赛季页Stadia and locations",
+       "value": "Stadio Cornaredo（两季均无临时搬迁记录）"
+      }
+     ],
+     "note": "infobox为前瞻值；窗口内8季（含2025/26）实际主场均为Stadio Cornaredo。下游2026/27起主场应切换为AIL Arena。"
+    },
+    {
+     "field": "name_history（破产/重组年份口径）",
+     "claims": [
+      {
+       "source": "FC_Lugano页面History",
+       "value": "2003年宣告破产并被逐出联赛"
+      },
+      {
+       "source": "FC_Lugano页面lead+History",
+       "value": "2004年以AC Lugano重组（与Malcantone Agno合并）"
+      }
+     ],
+     "note": "破产（2003）与重组更名（2004）为两个事件；name_history以更名生效年2004为AC Lugano段起点。"
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Lugano",
+    "fetched_at": "2026-10-09T10:21:00+08:00",
+    "field_locator": "History L48：'Promotion to the highest Swiss Super League came for the first time in 1922'（1922–23赛季首次进入顶级联赛）",
+    "source_hash": "wiki-revid:1376584422"
+   }
+  },
+  {
+   "canonical_identity": "Servette FC",
+   "official_name": "Servette FC",
+   "official_name_evidence": {
+    "source_url": "https://sfl.ch/articles/la-sfl-fixe-servette-ls-et-la-16e-ronde-de-dcl",
+    "fetched_at": "2026-10-09T10:26:22+08:00",
+    "field_locator": "SFL官方文章正文使用 'le Servette FC' / 'Servette FC'（搜索结果摘要）；俱乐部官网servettefc.ch自称 'Servette FC'",
+    "source_hash": "non-versioned"
+   },
+   "natal_year": 1890,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/Servette_FC",
+    "fetched_at": "2026-10-09T10:26:22+08:00",
+    "field_locator": "lead段 'founded in March 1890 with rugby as its first sporting activity'；History 'Early years to bankruptcy' 第1段 'Founded in 1890'",
+    "source_hash": "wiki-revid:1376654507"
+   },
+   "competition_entry_year": 1900,
+   "name_history": [
+    {
+     "from": 1890,
+     "to": 1900,
+     "name": "Football Club de la Servette",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/Servette_FC",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "History 'Early years to bankruptcy' 第2段 'originally founded as the 'Football Club de la Servette', a rugby football team'",
+      "source_hash": "wiki-revid:1376654507"
+     }
+    },
+    {
+     "from": 1900,
+     "to": null,
+     "name": "Servette FC",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/Servette_FC",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "lead段 'The football section was created on 17 January 1900'；infobox Full name 'Association du Servette Football Club'",
+      "source_hash": "wiki-revid:1376654507"
+     }
+    }
+   ],
+   "aliases": [
+    "Les Grenats",
+    "SFC",
+    "Servette"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": false
+    },
+    "2019/20": {
+     "participated": true,
+     "official_name": "Servette FC",
+     "home_venue": "Stade de Genève",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 表格行 'Servette | Geneva | Stade de Genève | 30,084'",
+      "source_hash": "wiki-revid:1270002926"
+     }
+    },
+    "2020/21": {
+     "participated": true,
+     "official_name": "Servette FC",
+     "home_venue": "Stade de Genève",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 表格行 'Servette | Geneva | Stade de Genève | 30,084'",
+      "source_hash": "wiki-revid:1375823179"
+     }
+    },
+    "2021/22": {
+     "participated": true,
+     "official_name": "Servette FC",
+     "home_venue": "Stade de Genève",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 表格行 'Servette | Geneva | Stade de Genève | 28,833'",
+      "source_hash": "wiki-revid:1376314426"
+     }
+    },
+    "2022/23": {
+     "participated": true,
+     "official_name": "Servette FC",
+     "home_venue": "Stade de Genève",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 表格行 'Servette | Geneva | Stade de Genève | 28,833'",
+      "source_hash": "wiki-revid:1376915115"
+     }
+    },
+    "2023/24": {
+     "participated": true,
+     "official_name": "Servette FC",
+     "home_venue": "Stade de Genève",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 卡片 'Servette FC | Stade de Genève | Geneva | Capacity: 28,833'",
+      "source_hash": "wiki-revid:1377593185"
+     }
+    },
+    "2024/25": {
+     "participated": true,
+     "official_name": "Servette FC",
+     "home_venue": "Stade de Genève",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 卡片 'Servette FC | Stade de Genève | Geneva | Capacity: 28,833'",
+      "source_hash": "wiki-revid:1378157233"
+     }
+    },
+    "2025/26": {
+     "participated": true,
+     "official_name": "Servette FC",
+     "home_venue": "Stade de Genève",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 卡片 'Servette FC | Stade de Genève | Geneva | Capacity: 28,833'",
+      "source_hash": "wiki-revid:1374049827"
+     }
+    }
+   },
+   "conflicts": [
+    {
+     "field": "natal_year",
+     "claims": [
+      {
+       "source": "en.wikipedia.org/wiki/Servette_FC infobox 'Founded'",
+       "value": "17 January 1900（足球部成立日）"
+      },
+      {
+       "source": "en.wikipedia.org/wiki/Servette_FC lead + History",
+       "value": "March 1890（俱乐部成立，初为橄榄球）"
+      },
+      {
+       "source": "fr.wikipedia.org/wiki/Servette_Football_Club_1890 infobox",
+       "value": "20 mars 1890 (club) / 17 janvier 1900 (section football)"
+      }
+     ],
+     "note": "1890=俱乐部lineage（含橄榄球时期），1900=足球部成立日。本档案natal_year取lineage年份1890；俱乐部自有资产亦名'1890 Foundation'。"
+    },
+    {
+     "field": "official_name_full_form",
+     "claims": [
+      {
+       "source": "en.wikipedia.org/wiki/Servette_FC infobox 'Full name'",
+       "value": "Association du Servette Football Club"
+      },
+      {
+       "source": "fr.wikipedia.org/wiki/Servette_Football_Club_1890 infobox 'Nom complet'",
+       "value": "Servette Football Club 1890"
+      }
+     ],
+     "note": "全称写法两源不一致；SFL赛事注册名统一为'Servette FC'，无争议。"
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/1900%E2%80%9301_Swiss_Serie_A",
+    "fetched_at": "2026-10-09T10:26:22+08:00",
+    "field_locator": "West组表格行 'Servette Genf'（首次出现）；对照1899–1900 Swiss Serie A East/West组均无Servette（wiki-revid:1373651209）；两表均标注Source: rsssf.com",
+    "source_hash": "wiki-revid:1340154376"
+   }
+  },
+  {
+   "canonical_identity": "FC Lausanne-Sport",
+   "official_name": "FC Lausanne-Sport",
+   "official_name_evidence": {
+    "source_url": "https://sfl.ch/articles/la-sfl-fixe-servette-ls-et-la-16e-ronde-de-dcl",
+    "fetched_at": "2026-10-09T10:26:22+08:00",
+    "field_locator": "SFL官方文章正文使用 'le FC Lausanne-Sport'（搜索结果摘要）；俱乐部官网lausanne-sport.ch自称 'FC Lausanne-Sport'",
+    "source_hash": "non-versioned"
+   },
+   "natal_year": 1896,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Lausanne-Sport",
+    "fetched_at": "2026-10-09T10:26:22+08:00",
+    "field_locator": "infobox 'Founded 1896'；History '19th century' 第1段 'founded in 1896 under the name of Montriond Lausanne'",
+    "source_hash": "wiki-revid:1378341110"
+   },
+   "competition_entry_year": 1902,
+   "name_history": [
+    {
+     "from": 1896,
+     "to": 1920,
+     "name": "Montriond Lausanne",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Lausanne-Sport",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "History '19th century' 第1段 'founded in 1896 under the name of Montriond Lausanne'",
+      "source_hash": "wiki-revid:1378341110"
+     }
+    },
+    {
+     "from": 1920,
+     "to": 2003,
+     "name": "Lausanne-Sports FC",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Lausanne-Sport",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "History '20th century' 第1段 'took the name Lausanne-Sports FC in 1920 after the football section merged with the Club Hygiénique de Lausanne'",
+      "source_hash": "wiki-revid:1378341110"
+     }
+    },
+    {
+     "from": 2003,
+     "to": null,
+     "name": "FC Lausanne-Sport",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Lausanne-Sport",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "History '21st century' 第1段 'reformed as FC Lausanne-Sport for the 2003–04 season'（破产后重组）",
+      "source_hash": "wiki-revid:1378341110"
+     }
+    }
+   ],
+   "aliases": [
+    "Lausanne-Sports",
+    "LS",
+    "Les bleu et blanc"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": false
+    },
+    "2019/20": {
+     "participated": false
+    },
+    "2020/21": {
+     "participated": true,
+     "official_name": "FC Lausanne-Sport",
+     "home_venue": "Stade Olympique de la Pontaise (赛季初至2020-11-29) → Stade de la Tuilière (2020-11-29起)",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 表格行 'Lausanne-Sport | Lausanne | Stade de la Tuilière[3] (as of 29 November) / Stade Olympique de la Pontaise | 12,544 / 12,500'；注[3]='Super League: la Tuilière a été inaugurée, RTS, 29 November 2020'",
+      "source_hash": "wiki-revid:1375823179"
+     }
+    },
+    "2021/22": {
+     "participated": true,
+     "official_name": "FC Lausanne-Sport",
+     "home_venue": "Stade de la Tuilière",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 表格行 'Lausanne-Sport | Lausanne | Stade de la Tuilière | 12,544'",
+      "source_hash": "wiki-revid:1376314426"
+     }
+    },
+    "2022/23": {
+     "participated": false
+    },
+    "2023/24": {
+     "participated": true,
+     "official_name": "FC Lausanne-Sport",
+     "home_venue": "Stade de la Tuilière",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 卡片 'FC Lausanne-Sport | Stade de la Tuilière | Lausanne | Capacity: 12,544'",
+      "source_hash": "wiki-revid:1377593185"
+     }
+    },
+    "2024/25": {
+     "participated": true,
+     "official_name": "FC Lausanne-Sport",
+     "home_venue": "Stade de la Tuilière",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 卡片 'FC Lausanne-Sport | Stade de la Tuilière | Lausanne | Capacity: 12,544'",
+      "source_hash": "wiki-revid:1378157233"
+     }
+    },
+    "2025/26": {
+     "participated": true,
+     "official_name": "FC Lausanne-Sport",
+     "home_venue": "Stade de la Tuilière",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 卡片 'FC Lausanne-Sport | Stade de la Tuilière | Lausanne | Capacity: 12,544'",
+      "source_hash": "wiki-revid:1374049827"
+     }
+    }
+   },
+   "conflicts": [
+    {
+     "field": "competition_entry_year",
+     "claims": [
+      {
+       "source": "en.wikipedia.org/wiki/FC_Lausanne-Sport lead",
+       "value": "首次顶级联赛1906（'played in Swiss First Division between 1906-1931…'）"
+      },
+      {
+       "source": "RSSSF-derived season tables (1902–03/1903–04/1904–05 Swiss Serie A, West组)",
+       "value": "'Lausanne Sports'已在1902–03赛季西组参赛，1903–04、1904–05连续在列"
+      }
+     ],
+     "note": "俱乐部页lead的'1906-1931'与RSSSF历史积分榜矛盾；按一手积分榜证据，首次顶级联赛参赛为1902–03赛季（entry year 1902）。俱乐部页该句可能有误或指其他口径。"
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/1902%E2%80%9303_Swiss_Serie_A",
+    "fetched_at": "2026-10-09T10:26:22+08:00",
+    "field_locator": "West组表格行 'Lausanne Sports'（首次出现）；对照1901–02 Swiss Serie A三组均无Lausanne（wiki-revid:1340154377）；两表均标注Source: rsssf",
+    "source_hash": "wiki-revid:1340154379"
+   }
+  },
+  {
+   "canonical_identity": "FC Winterthur",
+   "official_name": "FC Winterthur",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Winterthur",
+    "fetched_at": "2026-10-09T10:26:22+08:00",
+    "field_locator": "infobox 'Full name: Fussballclub Winterthur'；官网fcwinterthur.ch；SFL法语文章作 'FC Winterthour'（法语拼写变体）",
+    "source_hash": "wiki-revid:1377242123"
+   },
+   "natal_year": 1896,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Winterthur",
+    "fetched_at": "2026-10-09T10:26:22+08:00",
+    "field_locator": "infobox 'Founded 1896'；History 第1段 'founded in 1896 by students of the local school of engineering'",
+    "source_hash": "wiki-revid:1377242123"
+   },
+   "competition_entry_year": 1902,
+   "name_history": [
+    {
+     "from": 1896,
+     "to": 1929,
+     "name": "FC Winterthur",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Winterthur",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "History 第1段 'founded in 1896 … it was called Vereinigte Fussballclubs Winterthur between 1929 and 1946'",
+      "source_hash": "wiki-revid:1377242123"
+     }
+    },
+    {
+     "from": 1929,
+     "to": 1946,
+     "name": "Vereinigte Fussballclubs Winterthur",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Winterthur",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "History 第1段 'following a fusion with two local teams, it was called Vereinigte Fussballclubs Winterthur between 1929 and 1946'",
+      "source_hash": "wiki-revid:1377242123"
+     }
+    },
+    {
+     "from": 1946,
+     "to": null,
+     "name": "FC Winterthur",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Winterthur",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "History 第1段（1929–1946更名区间结束后恢复现名）；infobox Full name 'Fussballclub Winterthur'",
+      "source_hash": "wiki-revid:1377242123"
+     }
+    }
+   ],
+   "aliases": [
+    "FCW",
+    "Rot-Weiss"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": false
+    },
+    "2019/20": {
+     "participated": false
+    },
+    "2020/21": {
+     "participated": false
+    },
+    "2021/22": {
+     "participated": false
+    },
+    "2022/23": {
+     "participated": true,
+     "official_name": "FC Winterthur",
+     "home_venue": "Stadion Schützenwiese",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:22:00+08:00",
+      "field_locator": "'Stadia and locations' 表格行 'Winterthur | Winterthur | Stadion Schützenwiese | 8,400'",
+      "source_hash": "wiki-revid:1376915115"
+     }
+    },
+    "2023/24": {
+     "participated": true,
+     "official_name": "FC Winterthur",
+     "home_venue": "Stadion Schützenwiese",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 卡片 'FC Winterthur | Stadion Schützenwiese | Winterthur | Capacity: 8,400'",
+      "source_hash": "wiki-revid:1377593185"
+     }
+    },
+    "2024/25": {
+     "participated": true,
+     "official_name": "FC Winterthur",
+     "home_venue": "Stadion Schützenwiese",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 卡片 'FC Winterthur | Stadion Schützenwiese | Winterthur | Capacity: 8,400'",
+      "source_hash": "wiki-revid:1378157233"
+     }
+    },
+    "2025/26": {
+     "participated": true,
+     "official_name": "FC Winterthur",
+     "home_venue": "Stadion Schützenwiese",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 卡片 'FC Winterthur | Stadion Schützenwiese | Winterthur | Capacity: 8,400'",
+      "source_hash": "wiki-revid:1374049827"
+     }
+    }
+   },
+   "conflicts": [
+    {
+     "field": "last_top_flight_relegation_before_2022",
+     "claims": [
+      {
+       "source": "en.wikipedia.org/wiki/FC_Winterthur History 第1段",
+       "value": "'most recently relegated in 1978 following a promotion ten years prior'（即1968升级、1978降级）"
+      },
+      {
+       "source": "en.wikipedia.org/wiki/FC_Winterthur History 第3段",
+       "value": "'first time since 1982 that the team played in the top Swiss football league'（2021–22升级语境）"
+      }
+     ],
+     "note": "同一页面对'上次顶级联赛'给出1978与1982两个不同年份，内部矛盾；且Honours列Challenge League冠军含1981–82（对应1982–83升级），与'1978降级后十年'说法难调和。不影响2022/23–2025/26参赛事实。"
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/1902%E2%80%9303_Swiss_Serie_A",
+    "fetched_at": "2026-10-09T10:26:22+08:00",
+    "field_locator": "East组表格行 'FC Winterthur'（首次出现）；对照1901–02 Swiss Serie A East组无Winterthur（wiki-revid:1340154377）；表格标注Source: rsssf",
+    "source_hash": "wiki-revid:1340154379"
+   }
+  },
+  {
+   "canonical_identity": "Yverdon-Sport FC",
+   "official_name": "Yverdon-Sport FC",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/Yverdon-Sport_FC",
+    "fetched_at": "2026-10-09T10:26:22+08:00",
+    "field_locator": "infobox 'Full name: Yverdon-Sport Football Club'；官网yverdonsport.ch；SFL法语文章作 'Yverdon Sport'（无连字符，法语变体）",
+    "source_hash": "wiki-revid:1377247274"
+   },
+   "natal_year": 1897,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/Yverdon-Sport_FC",
+    "fetched_at": "2026-10-09T10:26:22+08:00",
+    "field_locator": "infobox 'Founded 1897'；History 第1段 'merger of FC Yverdon (originally founded in 1897)'",
+    "source_hash": "wiki-revid:1377247274"
+   },
+   "competition_entry_year": 1993,
+   "name_history": [
+    {
+     "from": 1897,
+     "to": 1948,
+     "name": "FC Yverdon",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/Yverdon-Sport_FC",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "History 第1段 'FC Yverdon (originally founded in 1897)'",
+      "source_hash": "wiki-revid:1377247274"
+     }
+    },
+    {
+     "from": 1948,
+     "to": null,
+     "name": "Yverdon-Sport FC",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/Yverdon-Sport_FC",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "History 第1段 'came about in 1948, due to the merger of FC Yverdon … FC Concordia … and White Star (AGMs July 1948)'",
+      "source_hash": "wiki-revid:1377247274"
+     }
+    }
+   ],
+   "aliases": [
+    "Yverdon-Sport",
+    "YS"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": false
+    },
+    "2019/20": {
+     "participated": false
+    },
+    "2020/21": {
+     "participated": false
+    },
+    "2021/22": {
+     "participated": false
+    },
+    "2022/23": {
+     "participated": false
+    },
+    "2023/24": {
+     "participated": true,
+     "official_name": "Yverdon-Sport FC",
+     "home_venue": "Stade de la Maladière, Neuchâtel (赛季初至2023-09) → Stade Municipal, Yverdon-les-Bains (2023-09起)",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 卡片 'Yverdon-Sport FC | Stade Municipal[b] | Yverdon-les-Bains'；脚注[b]='played their home games at the Stade de la Maladière in Neuchâtel until the end of September 2023… return to their regular home ground on 24 September 2023'；俱乐部页Stadium段：'began the 2023–24 season at the Stade de la Maladière… In September 2023 they returned to … Stade Municipal'（wiki-revid:1377247274）",
+      "source_hash": "wiki-revid:1377593185"
+     }
+    },
+    "2024/25": {
+     "participated": true,
+     "official_name": "Yverdon-Sport FC",
+     "home_venue": "Stade Municipal",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:26:22+08:00",
+      "field_locator": "'Stadia and locations' 卡片 'Yverdon-Sport FC | Stade Municipal | Yverdon-les-Bains | Capacity: 6,600'",
+      "source_hash": "wiki-revid:1378157233"
+     }
+    },
+    "2025/26": {
+     "participated": false
+    }
+   },
+   "conflicts": [
+    {
+     "field": "home_venue_2023_24_return_date",
+     "claims": [
+      {
+       "source": "en.wikipedia.org/wiki/Yverdon-Sport_FC Stadium段",
+       "value": "'In September 2023 they returned to their home stadium, Stade Municipal'（仅到月）"
+      },
+      {
+       "source": "en.wikipedia.org/wiki/2023–24_Swiss_Super_League 脚注[b]",
+       "value": "'until the end of September 2023… return … on 24 September 2023'（精确到日）"
+      }
+     ],
+     "note": "返回Stade Municipal的具体日期两源表述精度不同（'9月' vs '9月24日'/'9月底'）；赛季初在Maladière踢主场的事实两源一致。"
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/Yverdon-Sport_FC",
+    "fetched_at": "2026-10-09T10:26:22+08:00",
+    "field_locator": "History 第2段 'played in the Swiss Super League following promotions in 1993, 1995, 2005 and 2023'（1993为首次升级，对应1993–94赛季）",
+    "source_hash": "wiki-revid:1377247274"
+   }
+  },
+  {
+   "canonical_identity": "Neuchâtel Xamax FCS",
+   "official_name": "Neuchâtel Xamax FCS",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Swiss_Super_League",
+    "fetched_at": "2026-10-09T10:45:00+08:00",
+    "field_locator": "References [7] 标题 'Neuchâtel Xamax FCS | Super League 2019/2020'（Swiss Football League）",
+    "source_hash": "non-versioned"
+   },
+   "natal_year": 1906,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/Neuch%C3%A2tel_Xamax_FCS",
+    "fetched_at": "2026-10-09T10:45:00+08:00",
+    "field_locator": "infobox Founded 1906；History 第1段 'In 1906 the club was founded as FC Cantonal'",
+    "source_hash": "non-versioned"
+   },
+   "competition_entry_year": 1973,
+   "name_history": [
+    {
+     "from": 1906,
+     "to": 1970,
+     "name": "FC Cantonal",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/Neuch%C3%A2tel_Xamax_FCS",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "History 第1段 'In 1906 the club was founded as FC Cantonal'",
+      "source_hash": "non-versioned"
+     }
+    },
+    {
+     "from": 1970,
+     "to": 2012,
+     "name": "Neuchâtel Xamax",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/Neuch%C3%A2tel_Xamax_FCS",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "lead第1段 'created in 1970 through a merger between FC Cantonal, founded in 1906 and Swiss champions of 1916, and FC Xamax founded in 1912'",
+      "source_hash": "non-versioned"
+     }
+    },
+    {
+     "from": 2013,
+     "to": null,
+     "name": "Neuchâtel Xamax FCS",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/Neuch%C3%A2tel_Xamax_FCS",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "lead第1段 'obtained its current name after a merger with FC Serrières, another side from Neuchâtel, in May 2013'",
+      "source_hash": "non-versioned"
+     }
+    }
+   ],
+   "aliases": [
+    "Xamax",
+    "Neuchâtel Xamax"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": true,
+     "official_name": "Neuchâtel Xamax FCS",
+     "home_venue": "Stade de la Maladière",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "Stadia and locations 表格行 'Xamax | Neuchâtel | Stade de la Maladière'",
+      "source_hash": "non-versioned"
+     }
+    },
+    "2019/20": {
+     "participated": true,
+     "official_name": "Neuchâtel Xamax FCS",
+     "home_venue": "Stade de la Maladière",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "Stadia and locations 表格行 'Neuchâtel Xamax | Neuchâtel | Stade de la Maladière'",
+      "source_hash": "non-versioned"
+     }
+    },
+    "2020/21": {
+     "participated": false
+    },
+    "2021/22": {
+     "participated": false
+    },
+    "2022/23": {
+     "participated": false
+    },
+    "2023/24": {
+     "participated": false
+    },
+    "2024/25": {
+     "participated": false
+    },
+    "2025/26": {
+     "participated": false
+    }
+   },
+   "conflicts": [
+    {
+     "field": "natal_year",
+     "claims": [
+      {
+       "source": "club page infobox Founded",
+       "value": "1906"
+      },
+      {
+       "source": "club page lead/History",
+       "value": "current club created 1970 via merger of FC Cantonal (1906) and FC Xamax (1912)"
+      }
+     ],
+     "note": "infobox取lineage起点1906（FC Cantonal）；现行法律实体可溯至1970年合并。natal_year按lineage起点取1906。"
+    },
+    {
+     "field": "competition_entry_year",
+     "claims": [
+      {
+       "source": "1972–73 in Swiss football (RSSSF)",
+       "value": "1973（合并后Neuchâtel Xamax首次进入顶级联赛，1973–74 Nationalliga A）"
+      },
+      {
+       "source": "1906–07 Swiss Serie A (RSSSF)",
+       "value": "1906（lineage前身FC Cantonal已在1906–07 Swiss Serie A West组参赛）"
+      }
+     ],
+     "note": "取合并实体首次进入顶级联赛年份1973；若按lineage最早口径则为1906。"
+    },
+    {
+     "field": "official_name",
+     "claims": [
+      {
+       "source": "SFL listing / 2019–20 season page ref",
+       "value": "Neuchâtel Xamax FCS"
+      },
+      {
+       "source": "club page infobox Full name",
+       "value": "Neuchâtel Xamax Football Club Serrières"
+      }
+     ],
+     "note": "official_name取SFL注册用名；infobox全称为展开形式。"
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/1972%E2%80%9373_in_Swiss_football",
+    "fetched_at": "2026-10-09T10:45:00+08:00",
+    "field_locator": "Nationalliga B表格行 'Xamax — NLB Champions and promoted to 1973–74 Nationalliga A'（Source: rsssf.com）",
+    "source_hash": "non-versioned"
+   }
+  },
+  {
+   "canonical_identity": "FC Thun",
+   "official_name": "FC Thun",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Swiss_Super_League",
+    "fetched_at": "2026-10-09T10:45:00+08:00",
+    "field_locator": "Stadia and locations 卡片 'FC Thun | Stockhorn Arena | Thun'",
+    "source_hash": "non-versioned"
+   },
+   "natal_year": 1898,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Thun",
+    "fetched_at": "2026-10-09T10:45:00+08:00",
+    "field_locator": "infobox Founded '1 May 1898'；History 'Until 1995' 第1段 'FC Thun was founded on 1 May 1898'",
+    "source_hash": "non-versioned"
+   },
+   "competition_entry_year": 1954,
+   "name_history": [
+    {
+     "from": 1898,
+     "to": null,
+     "name": "Fussballclub Thun 1898",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Thun",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "infobox Full name 'Fussballclub Thun 1898'；全页无更名记录",
+      "source_hash": "non-versioned"
+     }
+    }
+   ],
+   "aliases": [
+    "Thun"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": true,
+     "official_name": "FC Thun",
+     "home_venue": "Stockhorn Arena",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "Stadia and locations 表格行 'Thun | Thun | Stockhorn Arena'",
+      "source_hash": "non-versioned"
+     }
+    },
+    "2019/20": {
+     "participated": true,
+     "official_name": "FC Thun",
+     "home_venue": "Stockhorn Arena",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "Stadia and locations 表格行 'Thun | Thun | Stockhorn Arena'",
+      "source_hash": "non-versioned"
+     }
+    },
+    "2020/21": {
+     "participated": false
+    },
+    "2021/22": {
+     "participated": false
+    },
+    "2022/23": {
+     "participated": false
+    },
+    "2023/24": {
+     "participated": false
+    },
+    "2024/25": {
+     "participated": false
+    },
+    "2025/26": {
+     "participated": true,
+     "official_name": "FC Thun",
+     "home_venue": "Stockhorn Arena",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "Stadia and locations 卡片 'FC Thun | Stockhorn Arena | Thun'；Team changes 'FC Thun returned to the top tier after a five-year absence'",
+      "source_hash": "non-versioned"
+     }
+    }
+   },
+   "conflicts": [
+    {
+     "field": "official_name",
+     "claims": [
+      {
+       "source": "club page infobox Full name",
+       "value": "Fussballclub Thun 1898"
+      },
+      {
+       "source": "season pages / SFL usage",
+       "value": "FC Thun"
+      }
+     ],
+     "note": "official_name取SFL/赛季页通用注册名；infobox全称为展开形式。无更名记录。"
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Thun",
+    "fetched_at": "2026-10-09T10:45:00+08:00",
+    "field_locator": "History 'Until 1995' 第1段 'promoted to the first division, the Nationalliga A, for the first time in the club's history'（1953–54赛季末升级，对应1954–55赛季）",
+    "source_hash": "non-versioned"
+   }
+  },
+  {
+   "canonical_identity": "FC Vaduz",
+   "official_name": "FC Vaduz",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Vaduz",
+    "fetched_at": "2026-10-09T10:45:00+08:00",
+    "field_locator": "infobox Full name 'Fussball Club Vaduz'，Short name 'FCV'；官网域名fcvaduz.li",
+    "source_hash": "non-versioned"
+   },
+   "natal_year": 1932,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Vaduz",
+    "fetched_at": "2026-10-09T10:45:00+08:00",
+    "field_locator": "infobox Founded '14 February 1932'；History 第1段 'Fussball Club Vaduz was founded on 14 February 1932 in Vaduz'",
+    "source_hash": "non-versioned"
+   },
+   "competition_entry_year": 2008,
+   "name_history": [
+    {
+     "from": 1932,
+     "to": null,
+     "name": "Fussball Club Vaduz",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Vaduz",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "infobox Full name；全页无更名记录",
+      "source_hash": "non-versioned"
+     }
+    }
+   ],
+   "aliases": [
+    "Vaduz",
+    "FCV"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": false
+    },
+    "2019/20": {
+     "participated": false
+    },
+    "2020/21": {
+     "participated": true,
+     "official_name": "FC Vaduz",
+     "home_venue": "Rheinpark Stadion",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "Stadia and locations 表格行 'Vaduz | Vaduz | Rheinpark Stadion'",
+      "source_hash": "non-versioned"
+     }
+    },
+    "2021/22": {
+     "participated": false
+    },
+    "2022/23": {
+     "participated": false
+    },
+    "2023/24": {
+     "participated": false
+    },
+    "2024/25": {
+     "participated": false
+    },
+    "2025/26": {
+     "participated": false
+    }
+   },
+   "conflicts": [],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Vaduz",
+    "fetched_at": "2026-10-09T10:45:00+08:00",
+    "field_locator": "History 第3段 'In the 2007–08 season, Vaduz secured promotion to the Swiss Super League on 12 May 2008 by winning the Challenge League on the season's final day, giving Liechtenstein a representative at the highest level of Swiss football for the first time'",
+    "source_hash": "non-versioned"
+   }
+  },
+  {
+   "canonical_identity": "FC Stade Lausanne Ouchy",
+   "official_name": "FC Stade Lausanne Ouchy",
+   "official_name_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Stade_Lausanne_Ouchy",
+    "fetched_at": "2026-10-09T10:45:00+08:00",
+    "field_locator": "infobox Full name 'Football Club Stade Lausanne Ouchy'；lead 'FC Stade Lausanne Ouchy, sometimes referred to as SLO'",
+    "source_hash": "non-versioned"
+   },
+   "natal_year": 1901,
+   "natal_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Stade_Lausanne_Ouchy",
+    "fetched_at": "2026-10-09T10:45:00+08:00",
+    "field_locator": "infobox Founded 1901；History 第2段 'founded in 1901 as FC Signal Lausanne, which became Stade Lausanne in 1926'",
+    "source_hash": "non-versioned"
+   },
+   "competition_entry_year": 2023,
+   "name_history": [
+    {
+     "from": 1895,
+     "to": 2001,
+     "name": "FC La Villa Ouchy → FC Ouchy-Olympic",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Stade_Lausanne_Ouchy",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "History 第2段 'FC Ouchy-Olympic's story began in 1895 as FC La Villa Ouchy'",
+      "source_hash": "non-versioned"
+     }
+    },
+    {
+     "from": 1901,
+     "to": 2001,
+     "name": "FC Signal Lausanne → Stade Lausanne (1926)",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Stade_Lausanne_Ouchy",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "History 第2段 'founded in 1901 as FC Signal Lausanne, which became Stade Lausanne in 1926'",
+      "source_hash": "non-versioned"
+     }
+    },
+    {
+     "from": 2001,
+     "to": null,
+     "name": "FC Stade Lausanne Ouchy",
+     "evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/FC_Stade_Lausanne_Ouchy",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "History 第1段 'The club is the result of a merger between FC Ouchy-Olympic and FC Stade Lausanne in 2001'",
+      "source_hash": "non-versioned"
+     }
+    }
+   ],
+   "aliases": [
+    "SLO",
+    "Stade Lausanne Ouchy",
+    "Lausanne Ouchy"
+   ],
+   "seasons": {
+    "2018/19": {
+     "participated": false
+    },
+    "2019/20": {
+     "participated": false
+    },
+    "2020/21": {
+     "participated": false
+    },
+    "2021/22": {
+     "participated": false
+    },
+    "2022/23": {
+     "participated": false
+    },
+    "2023/24": {
+     "participated": true,
+     "official_name": "FC Stade Lausanne Ouchy",
+     "home_venue": "Stade Olympique de la Pontaise",
+     "venue_evidence": {
+      "source_url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Swiss_Super_League",
+      "fetched_at": "2026-10-09T10:45:00+08:00",
+      "field_locator": "Stadia and locations 卡片 'FC Stade Lausanne Ouchy | Stade Olympique' + 脚注1 'SLO will play at the Stade Olympique de la Pontaise in Lausanne'；club page Stadium章节 'have played at Stade Olympique de la Pontaise since 2020'",
+      "source_hash": "non-versioned"
+     }
+    },
+    "2024/25": {
+     "participated": false
+    },
+    "2025/26": {
+     "participated": false
+    }
+   },
+   "conflicts": [
+    {
+     "field": "natal_year",
+     "claims": [
+      {
+       "source": "club page infobox Founded",
+       "value": "1901"
+      },
+      {
+       "source": "club page History (merger)",
+       "value": "2001（FC Ouchy-Olympic与FC Stade Lausanne合并）"
+      },
+      {
+       "source": "club page History (lineage A)",
+       "value": "1895（FC Ouchy-Olympic前身FC La Villa Ouchy）"
+      }
+     ],
+     "note": "infobox取Stade Lausanne一系的1901；Ouchy一系可溯至1895。natal_year按infobox取1901并注明2001年合并。"
+    },
+    {
+     "field": "official_name",
+     "claims": [
+      {
+       "source": "club page infobox Full name",
+       "value": "Football Club Stade Lausanne Ouchy"
+      },
+      {
+       "source": "SFL公告引用（club page ref 10）",
+       "value": "FC Stade-Lausanne-Ouchy（连字符写法）"
+      },
+      {
+       "source": "2023–24 season page表格",
+       "value": "Lausanne Ouchy"
+      }
+     ],
+     "note": "official_name取俱乐部全称；SFL用连字符变体，赛季页表格用简称。"
+    }
+   ],
+   "competition_entry_year_evidence": {
+    "source_url": "https://en.wikipedia.org/wiki/FC_Stade_Lausanne_Ouchy",
+    "fetched_at": "2026-10-09T10:45:00+08:00",
+    "field_locator": "History 第6段 'secured promotion to the Super League for the first time in their history'（2022–23赛季末升级附加赛胜出，对应2023–24赛季）",
+    "source_hash": "non-versioned"
+   }
+  }
+ ]
+}

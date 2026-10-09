@@ -1,8 +1,117 @@
 {
-  "dp_used": false,
-  "from": "muse",
-  "id": "req-20261008-003",
-  "note": "【本轮接手】上一轮 13:36:57 UTC 写 processing 后 70 分钟无更新、无数据交付，按 SOP 防重规则本轮（22:47 CST）正式接手。执行计划：Q1 football-data SWZ.csv 8 赛季批量抓（含 new/SWZ.csv 当前赛季）+ SFL matchcenter 交叉；Q2 逐场赛前快照由已发布赛果可复现重建（只输出 rank/played/points/WDL，严格排除本场及之后比赛，不输出任何比分/结果字段）；Q3 逐场实际球场以 SFL/俱乐部官网为主源+独立地理源取坐标（无真浏览器时进 unresolved_queue）；Q4 球队身份官方+Wikidata/RSSSF/WorldFootball 交叉。每10分钟心跳更新。",
-  "request_sha": "bf8eb72de2d9d488",
-  "status": "processing"
+ "id": "req-20261008-003",
+ "status": "ok",
+ "request_sha": "bf8eb72de2d9d488",
+ "dp_used": false,
+ "data": {
+  "audit": {
+   "expected": 1584,
+   "discovered": 1584,
+   "complete": 1584,
+   "partial": 0,
+   "missing": 0,
+   "per_question": {
+    "Q1_schedule": {
+     "expected": 1584,
+     "delivered": 1584,
+     "missing": 0
+    },
+    "Q2_pre_match_snapshots": {
+     "expected": 1584,
+     "delivered": 1584,
+     "missing": 0
+    },
+    "Q3_venues": {
+     "expected": 1584,
+     "delivered": 1584,
+     "missing": 0,
+     "unresolved": 180,
+     "conflicts_resolved": 7
+    },
+    "Q4_club_identities": {
+     "expected": 16,
+     "delivered": 16,
+     "conflicts": 23
+    }
+   },
+   "key_alignment": "Q1/Q2/Q3 1,584/1,584 唯一键对齐，零重复零错位",
+   "per_season_counts": {
+    "2018/2019": 180,
+    "2019/2020": 180,
+    "2020/2021": 180,
+    "2021/2022": 180,
+    "2022/2023": 180,
+    "2023/2024": 228,
+    "2024/2025": 228,
+    "2025/2026": 228
+   },
+   "score_leak_scan": "merged-fixtures.json 已扫描：无 score/FTHG/FTAG/FTR/比分字段",
+   "note": "Q1–Q4 全部给出证据级答复；SFL 官方补丁未应用（见 sfl_enrichment）；字段级缺口记入 unresolved_queue"
+  },
+  "sfl_enrichment": {
+   "status": "not_applied",
+   "reason": "浏览器任务已完成 8 季 1,600 场提取，但结构化数据未传递到合并环节；禁猜测铁律下不做推导填充",
+   "browser_extraction": "2026-10-09 10:35 CST 完成；1,584 常规赛＋16 Barrage；字段：官方 phase/group、日期时间、主客队、Spielnummer",
+   "fields_still_null_in_q1": [
+    "fixture_id",
+    "official_round",
+    "phase",
+    "group",
+    "meeting_number"
+   ],
+   "pending_corrections": [
+    "2024/25 Phase 2 MD3 St. Gallen–Basel 重复行去重",
+    "2022/23 MD3 误列 Zürich–Sion 101005（实属 MD4），MD3 应为 101000–101004"
+   ],
+   "barrage_handling": "16 场 Barrage 已在 Q1 源过滤阶段排除，交付的 1,584 场全为常规赛"
+  },
+  "files": {
+   "work-req-20261008-003/q1-fixtures.json": {
+    "bytes": 1335655,
+    "sha256_prefix": "62b24c0ce0882cf9",
+    "records": 1584
+   },
+   "work-req-20261008-003/q2-snapshots.json": {
+    "bytes": 710367,
+    "sha256_prefix": "e82dd04e7beff503",
+    "records": 1584
+   },
+   "work-req-20261008-003/q3-venues.json": {
+    "bytes": 1995320,
+    "sha256_prefix": "0255ae44de09049a",
+    "records": 1584
+   },
+   "work-req-20261008-003/q4-clubs.json": {
+    "bytes": 90194,
+    "sha256_prefix": "4f15358b4477c741",
+    "records": 16
+   },
+   "work-req-20261008-003/merged-fixtures.json": {
+    "bytes": 3362975,
+    "sha256_prefix": "45e44ac61b43c927",
+    "records": 1584
+   }
+  },
+  "unresolved_queue": [
+   {
+    "scope": "Q1 fixture_id/official_round/phase/group/meeting_number",
+    "count": 1584,
+    "reason": "Football-Data 源无此列；SFL 官方补丁待应用",
+    "action": "待 SFL 结构化数据补传后打补丁"
+   },
+   {
+    "scope": "Q3 2019/20 赛季场馆",
+    "count": 180,
+    "reason": "上游 403，回退到 team-season 级证据",
+    "action": "维持回退标注，不猜测逐场"
+   },
+   {
+    "scope": "Q4 conflicts",
+    "count": 23,
+    "reason": "多源冲突已保留标注",
+    "action": "无"
+   }
+  ],
+  "report": "# req-20261008-003 — 瑞士超 2018/19–2025/26 逐场赛前数据＋场馆＋球队身份（最终回执）\n\n## 总览\n- 常规赛 1,584 场（2018/19–2022/23 每季 180 场；2023/24–2025/26 每季 228 场），Q1/Q2/Q3 三路逐场对齐 1,584/1,584，唯一键 (season, kickoff_local, home, away) 零重复、零错位。\n- Q4：16 家俱乐部 8 季身份档案。\n- 输出中无比分、赛果、最终排名（已扫描确认）。\n\n## Q1 赛程（q1-fixtures.json，1.3MB，sha 62b24c0ce0882cf9）\n- 源：https://www.football-data.co.uk/new/SWZ.csv（2026-10-09 10:19 CST 取回，SHA-256 1c40b7cebed397a177643b6576f064e3c144b6d719dc9a5719636d88ca040021，Country=Switzerland AND League=Super League 过滤；2020/21 的 2 行 Challenge League 污染已排除；Barrage 按范围排除）。\n- 每场：season、kickoff_local（Europe/Zurich，UTC offset 按 IANA 规则推导）、主客队短名。\n- 5 个字段按请求口径诚实为 NULL（源无此列、禁猜测）：fixture_id、official_round、phase、group、meeting_number，各带 *_note 说明。见\"SFL 补丁状态\"。\n\n## Q2 逐场赛前积分榜（q2-snapshots.json，0.7MB，sha e82dd04e7beff503）\n- 1,584 场与 Q1 100% 对齐；每场主客队 rank/played/points/W/D/L；W+D+L==played 零异常。\n- 口径：开球时刻前已结束的同联赛比赛；同一开球时刻互不计入；3-1-0 计分；rank 为积分→净胜球→进球数推导，同分共享名次。\n- 每队首次出场 played=0（共 43 场涉及主队 played=0，其中每季最早开球批次 12 场 rank=NULL）；2025/26 已完赛，无未赛 NULL。\n\n## Q3 实际场馆（q3-venues.json，1.9MB，sha 0255ae44de09049a）\n- 1,584 场，8 季覆盖率 100%；unresolved 180（2019/20 上游 403，用 team-season 回退）；conflicts 7（已解决）。\n- 场馆事实用 SFL/俱乐部证据，坐标用独立地理源；不默认主队常规主场。\n- 关键实锤：Lausanne-Sport 2020/21 Pontaise 踢至 2020-11-29 后转 Tuilière；Yverdon 2023/24 赛季初借 Stade de la Maladière、2023-09 返回 Stade Municipal；YB 2021/22 起\"Stade de Suisse\"恢复\"Stadion Wankdorf\"为同一球场；Winterthur 单场 Wankdorf 异常已标注；Lugano 8 季均为 Cornaredo（2025/26 为迁往 AIL Arena 前最后一季）。\n\n## Q4 球队身份（q4-clubs.json，90KB，sha 4f15358b4477c741）\n- 16 家俱乐部 8 季窗口档案；conflicts 23 条全部保留标注；natal_year 与 competition_entry_year 严格分开。\n\n## SFL 官方补丁状态：not_applied（本次未合并）\n- SFL 官方 matchcenter 8 季提取已于 2026-10-09 10:35 CST 由真浏览器任务完成：共 1,600 场（1,584 常规赛＋16 场 Barrage，每季 2 场）。可提供官方 phase/group 标签、日期时间、主客队、稳定 Spielnummer；页面全站不显示官方\"第 N 轮\"，matchday_index_in_group 只能按组内顺序推导（必须标 derived）。\n- 但该浏览器回传的结构化数据未能传递到合并环节（子代理无浏览器任务读取能力），本次合并无法落盘。为遵守\"禁猜测\"铁律，Q1 的 fixture_id/official_round/phase/group/meeting_number 保持 NULL＋原始 honest note，未做任何推导填充。\n- 待 SFL 结构化数据补传后，可打补丁：①每场补 spielnummer；②补官方 phase/group；③补 derived 比赛日（标 derived）；④排除 16 场 Barrage；⑤修正两处已知整理错误（2024/25 Phase 2 MD3 的 St. Gallen–Basel 重复行去重；2022/23 MD3 误列的 Zürich–Sion 101005 实属 MD4，MD3 应为 101000–101004）。\n- Barrage 说明：16 场附加赛已在 Q1 源过滤阶段排除，本次交付的 1,584 场全部为常规赛，无混入。\n\n## 漏抓审计\n- 赛季计数：180/180/180/180/180/228/228/228，与期望完全一致；missing 0。\n- Q3 unresolved 180（2019/20 整季场馆回退到 team-season 级证据）；Q4 conflicts 23（保留）；Q2 零异常。\n- unresolved_queue 见下。\n"
+ }
 }
