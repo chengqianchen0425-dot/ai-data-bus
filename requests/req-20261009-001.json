@@ -1,0 +1,26 @@
+{
+  "id": "req-20261009-001",
+  "type": "deep_research",
+  "created_at": "2026-10-09T10:01:10+08:00",
+  "params": {
+    "topic": "Swiss Super League 2018/19-2025/26 Muse artifact integrity correction and unresolved pre-match context",
+    "questions": [
+      "Correct the req-20261008-003 artifact package. Its response declares q1-fixtures.json as 1,335,655 bytes with SHA-256 prefix 62b24c0ce0882cf9, q2-snapshots.json as 710,367 bytes with prefix e82dd04e7beff503, and q4-clubs.json as 90,194 bytes with prefix 4f15358b4477c741. The delivered files currently have different sizes and hashes. Rebuild/freeze the final package, do not modify any artifact after hashing, and return exact bytes plus full SHA-256 for every delivered file. Explain the discrepancy. Ensure the response metadata exactly matches the committed files. Preserve Q1/Q2/Q3 fixture alignment and include source URLs, final URLs, retrieval times, extraction locators, and per-season counts.",
+      "Complete and provide the SFL official schedule enrichment reported as extracted but not applied in req-20261008-003. Return structured fixture-level data for the 1,584 regular fixtures only, with stable Spielnummer, source fixture ID when available, official phase/group, date/time, home/away names, and cited official source. Keep official_round NULL where SFL does not publish it. If a matchday index is derived from schedule order, label it derived and provide the deterministic rule. Fix the reported 2024/25 duplicate St. Gallen-Basel row and the 2022/23 MD3/MD4 Zürich-Sion error. Do not add scores or post-match fields.",
+      "For Q2 pre-match snapshots, document the exact source datasets and SHA-256 hashes used, timezone and kickoff tie handling, and reproducible computation. Confirm each snapshot uses only matches completed strictly before that fixture's kickoff and excludes all score/result fields from the delivered context. Include validation counts and any unavailable values; do not return final tables or result labels.",
+      "Resolve or fully source the 180 unresolved 2019/20 actual venue rows at fixture level; team-season fallback is not a fixture venue. Preserve temporary/neutral venue cases, URLs, retrieval time, locator, coordinates source, and unresolved rows where evidence is unavailable.",
+      "Return the 23 Q4 club identity conflicts as a bounded conflict queue with up to 3-5 distinct cited sources per field, source values, source URLs, retrieval time, and hashes. Keep natal_year separate from competition_entry_year and do not choose a winning value.",
+      "Clarify the eight per-season SWZ-*.csv files in the current package: all are 1,311 bytes and have the same SHA-256, while SWZ-current.csv is 344,291 bytes and matches the previously reported raw source hash. State whether the season files are actual source data or placeholders/manifests. Do not describe them as distinct season CSVs unless their bytes and hashes verify as such."
+    ],
+    "constraints": {
+      "competition_key": "swiss_super_league",
+      "seasons": ["2018/19", "2019/20", "2020/21", "2021/22", "2022/23", "2023/24", "2024/25", "2025/26"],
+      "expected_regular_season_fixtures": 1584,
+      "scope": "supplement-only evidence and pre-match context",
+      "forbidden_output_fields": ["score", "FTHG", "FTAG", "FTR", "Outcome", "Review", "final_standings", "Qimen", "direction", "Gold", "probability", "weight"],
+      "artifact_integrity": "final file bytes and SHA-256 in response must exactly match committed artifacts; freeze files before calculating hashes",
+      "source_conflict_policy": "preserve conflicts; do not choose or overwrite values",
+      "barrage_policy": "exclude promotion/relegation Barrage and all non-regular competitions"
+    }
+  }
+}
