@@ -1,0 +1,58 @@
+{
+  "id": "req-20261010-005",
+  "type": "deep_research",
+  "target": "muse",
+  "created_at": "2026-10-10T17:40:00+08:00",
+  "params": {
+    "topic": "Japan J1 2018-2025 incremental BTTS and 1X2 evidence for fixture-key joins",
+    "scope": {
+      "country": "Japan",
+      "competition": "J1 League",
+      "competition_key": "j1_league",
+      "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+      "fixture_count_expected": 2670
+    },
+    "questions": [
+      "For each discoverable J1 fixture in seasons 2018-2025, return a stable fixture identity with season, official date, home team, away team, kickoff local/UTC when available, round, venue and source URL.",
+      "Return the verified 90-minute result and explicit BTTS target label: btts_1plus_each_90=yes/no/unavailable. Do not use extra time, penalties or aggregate results for the 90-minute BTTS label.",
+      "Return 1X2 bookmaker evidence for Bet365, Pinnacle and William Hill when available, with explicit axis home/draw/away, field semantic opening/pre_closing/closing/earliest_verified_pre_match/latest_verified_pre_match, captured_at, source URL, final URL, locator and raw evidence SHA-256. A snapshot must not be relabeled as true opening or a full interval.",
+      "Report coverage, unavailable fields, source failures and cross-source conflicts separately. Preserve unresolved duplicate or difficult provider pairings with the competing identity keys; do not silently deduplicate.",
+      "Return a machine-readable audit with expected, discovered, complete, partial, missing, conflict counts and an unresolved_queue."
+    ],
+    "required_output": {
+      "format": "json plus markdown audit",
+      "row_schema": [
+        "fixture_key",
+        "season",
+        "official_date",
+        "home_team",
+        "away_team",
+        "kickoff_local",
+        "kickoff_utc",
+        "round",
+        "venue",
+        "btts_1plus_each_90",
+        "bookmaker",
+        "odds_axis",
+        "odds_semantic_phase",
+        "home_odds",
+        "draw_odds",
+        "away_odds",
+        "source_url",
+        "final_url",
+        "captured_at",
+        "evidence_locator",
+        "raw_evidence_sha256",
+        "status",
+        "conflict_id"
+      ]
+    },
+    "prohibited": [
+      "Do not generate Qimen charts, palace/five-element fields, model direction, structure selection, probabilities, Gold, Snapshot, Outcome or Review.",
+      "Do not infer missing odds, BTTS results, round, venue or kickoff values.",
+      "Do not call closing/pre-closing/earliest/latest a true opening or a complete O_INTERVAL without same-bookmaker time evidence."
+    ]
+  },
+  "dp_used": false,
+  "dp_reason": "This request is a bounded historical evidence collection task; Muse should use deterministic source retrieval and return provenance, not DeepSeek judgment."
+}
