@@ -1,0 +1,4272 @@
+{
+  "id": "req-20261010-003",
+  "type": "deep_research",
+  "created_at": "2026-10-10T14:31:40+08:00",
+  "params": {
+    "topic": "荷甲 2018/19-2020/21 BTTS O×Q候选成员的逐场 1X2 开盘赔率来源回执增量补充",
+    "questions": [
+      "仅处理 fixtures 数组中的465个 bookmaker-fixture 组合。逐条精确匹配赛季、日期、主队、客队和指定博彩公司，返回该公司 1X2 主/平/客的原始开盘赔率数值；只在来源明确标记 opening/open/初指或具有可核验开盘时间记录时标为 true_opening。若只能找到当前/收盘/均值或未注明时点的赔率，必须分别标识，不得当作 opening。",
+      "每条观察返回 fixture_key、bookmaker、home/draw/away、phase、recorded_at（含时区）、source_url、final_url、retrieved_at、HTTP 状态、field_locator、field_semantics、source_sha256。保留多来源冲突，不选定最终值。赔率缺失也保留该组合，标 unavailable/blocked 并写原因。",
+      "先查 Football-Data.co.uk（仅使用明确对应各公司 opening 列的字段；不可用收盘列代替），再按缺口定点查 NowScore/Titan007、OddsPortal、BetExplorer 等历史赔率源。检查网站历史页面/接口的原始赔率语义；不得用搜索摘要代替赔率数值证据。遇 403、频率限制或人机验证立即停止该站，不硬刷。",
+      "输出逐条 JSONL 原始证据、覆盖审计和 unresolved_queue。审计 expected=465 bookmaker-fixture pairs，分别统计 discovered、true_opening_complete、partial、unavailable、blocked、conflict；按赛季和博彩公司拆分。Muse 仅采集赔率事实，不计算赔率桶、不判结构有效性、不返回赛果/BTTS/Qimen/结构/概率，不写任何 SQLite。"
+    ],
+    "source_context": {
+      "package_path": "D:\\奇门斗数\\work\\eredivisie_btts_all_cohorts_20261009\\dpdp 筛选大师 需要数据",
+      "fixture_identity_source": "btts_fixture_evidence.csv",
+      "fixture_identity_source_sha256": "65f219e8341e464454c4abef6f5689987746936150eeb4ac11b03fd4eeeac801",
+      "selected_members_source": "btts_candidate_members.csv",
+      "candidate_structures_source": "btts_candidate_structures.csv",
+      "competition_key": "eredivisie",
+      "competition_name": "Eredivisie",
+      "cohort": "2018/19-2020/21",
+      "requested_pairs": 465,
+      "distinct_fixtures": 296,
+      "bookmakers": [
+        "bet365",
+        "pinnacle",
+        "william_hill"
+      ],
+      "source_gap": "The selected structure keys contain O_INTERVAL, but joined fixture evidence in this cohort has only home/away/draw direction tokens; exact bookmaker opening values are not available row by row.",
+      "privacy_boundary": "Fixture list intentionally omits scores, outcome labels, BTTS labels, Qimen data, and selected-structure tokens."
+    },
+    "fixtures": [
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-03-twente-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-08-03",
+        "home_team": "Twente",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-03-vitesse-ajax",
+        "season": "2019/20",
+        "match_date": "2019-08-03",
+        "home_team": "Vitesse",
+        "away_team": "Ajax",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-03-vvvvenlo-waalwijk",
+        "season": "2019/20",
+        "match_date": "2019-08-03",
+        "home_team": "VVV Venlo",
+        "away_team": "Waalwijk",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-04-denhaag-utrecht",
+        "season": "2019/20",
+        "match_date": "2019-08-04",
+        "home_team": "Den Haag",
+        "away_team": "Utrecht",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-09-spartarotterdam-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2019-08-09",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "VVV Venlo",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-10-groningen-twente",
+        "season": "2019/20",
+        "match_date": "2019-08-10",
+        "home_team": "Groningen",
+        "away_team": "Twente",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-11-psveindhoven-denhaag",
+        "season": "2019/20",
+        "match_date": "2019-08-11",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-11-utrecht-zwolle",
+        "season": "2019/20",
+        "match_date": "2019-08-11",
+        "home_team": "Utrecht",
+        "away_team": "Zwolle",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-17-vvvvenlo-ajax",
+        "season": "2019/20",
+        "match_date": "2019-08-17",
+        "home_team": "VVV Venlo",
+        "away_team": "Ajax",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-18-heracles-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-08-18",
+        "home_team": "Heracles",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-24-heerenveen-twente",
+        "season": "2019/20",
+        "match_date": "2019-08-24",
+        "home_team": "Heerenveen",
+        "away_team": "Twente",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-24-heracles-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-08-24",
+        "home_team": "Heracles",
+        "away_team": "Vitesse",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-24-willemii-fcemmen",
+        "season": "2019/20",
+        "match_date": "2019-08-24",
+        "home_team": "Willem II",
+        "away_team": "FC Emmen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-25-zwolle-spartarotterdam",
+        "season": "2019/20",
+        "match_date": "2019-08-25",
+        "home_team": "Zwolle",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-31-heerenveen-forsittard",
+        "season": "2019/20",
+        "match_date": "2019-08-31",
+        "home_team": "Heerenveen",
+        "away_team": "For Sittard",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-01-spartarotterdam-ajax",
+        "season": "2019/20",
+        "match_date": "2019-09-01",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "Ajax",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-01-twente-utrecht",
+        "season": "2019/20",
+        "match_date": "2019-09-01",
+        "home_team": "Twente",
+        "away_team": "Utrecht",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-01-waalwijk-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-09-01",
+        "home_team": "Waalwijk",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-14-ajax-heerenveen",
+        "season": "2019/20",
+        "match_date": "2019-09-14",
+        "home_team": "Ajax",
+        "away_team": "Heerenveen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-14-psveindhoven-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-09-14",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Vitesse",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-15-feyenoord-denhaag",
+        "season": "2019/20",
+        "match_date": "2019-09-15",
+        "home_team": "Feyenoord",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-15-forsittard-twente",
+        "season": "2019/20",
+        "match_date": "2019-09-15",
+        "home_team": "For Sittard",
+        "away_team": "Twente",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-21-groningen-zwolle",
+        "season": "2019/20",
+        "match_date": "2019-09-21",
+        "home_team": "Groningen",
+        "away_team": "Zwolle",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-21-willemii-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2019-09-21",
+        "home_team": "Willem II",
+        "away_team": "VVV Venlo",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-22-fcemmen-feyenoord",
+        "season": "2019/20",
+        "match_date": "2019-09-22",
+        "home_team": "FC Emmen",
+        "away_team": "Feyenoord",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-25-ajax-forsittard",
+        "season": "2019/20",
+        "match_date": "2019-09-25",
+        "home_team": "Ajax",
+        "away_team": "For Sittard",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-25-psveindhoven-groningen",
+        "season": "2019/20",
+        "match_date": "2019-09-25",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Groningen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-26-feyenoord-azalkmaar",
+        "season": "2019/20",
+        "match_date": "2019-09-26",
+        "home_team": "Feyenoord",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-27-fcemmen-denhaag",
+        "season": "2019/20",
+        "match_date": "2019-09-27",
+        "home_team": "FC Emmen",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-29-waalwijk-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-09-29",
+        "home_team": "Waalwijk",
+        "away_team": "Vitesse",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-29-zwolle-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-09-29",
+        "home_team": "Zwolle",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-05-spartarotterdam-twente",
+        "season": "2019/20",
+        "match_date": "2019-10-05",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "Twente",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-06-forsittard-feyenoord",
+        "season": "2019/20",
+        "match_date": "2019-10-06",
+        "home_team": "For Sittard",
+        "away_team": "Feyenoord",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-06-willemii-azalkmaar",
+        "season": "2019/20",
+        "match_date": "2019-10-06",
+        "home_team": "Willem II",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-19-vvvvenlo-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-10-19",
+        "home_team": "VVV Venlo",
+        "away_team": "Vitesse",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-26-forsittard-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2019-10-26",
+        "home_team": "For Sittard",
+        "away_team": "VVV Venlo",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-26-vitesse-denhaag",
+        "season": "2019/20",
+        "match_date": "2019-10-26",
+        "home_team": "Vitesse",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-26-willemii-waalwijk",
+        "season": "2019/20",
+        "match_date": "2019-10-26",
+        "home_team": "Willem II",
+        "away_team": "Waalwijk",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-27-psveindhoven-azalkmaar",
+        "season": "2019/20",
+        "match_date": "2019-10-27",
+        "home_team": "PSV Eindhoven",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-27-spartarotterdam-utrecht",
+        "season": "2019/20",
+        "match_date": "2019-10-27",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "Utrecht",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-02-spartarotterdam-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-11-02",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-03-fcemmen-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-11-03",
+        "home_team": "FC Emmen",
+        "away_team": "Vitesse",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-08-vitesse-groningen",
+        "season": "2019/20",
+        "match_date": "2019-11-08",
+        "home_team": "Vitesse",
+        "away_team": "Groningen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-09-heerenveen-spartarotterdam",
+        "season": "2019/20",
+        "match_date": "2019-11-09",
+        "home_team": "Heerenveen",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-09-heracles-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2019-11-09",
+        "home_team": "Heracles",
+        "away_team": "VVV Venlo",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-10-azalkmaar-fcemmen",
+        "season": "2019/20",
+        "match_date": "2019-11-10",
+        "home_team": "AZ Alkmaar",
+        "away_team": "FC Emmen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-10-feyenoord-waalwijk",
+        "season": "2019/20",
+        "match_date": "2019-11-10",
+        "home_team": "Feyenoord",
+        "away_team": "Waalwijk",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-10-twente-zwolle",
+        "season": "2019/20",
+        "match_date": "2019-11-10",
+        "home_team": "Twente",
+        "away_team": "Zwolle",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-10-willemii-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-11-10",
+        "home_team": "Willem II",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-23-zwolle-forsittard",
+        "season": "2019/20",
+        "match_date": "2019-11-23",
+        "home_team": "Zwolle",
+        "away_team": "For Sittard",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-30-forsittard-groningen",
+        "season": "2019/20",
+        "match_date": "2019-11-30",
+        "home_team": "For Sittard",
+        "away_team": "Groningen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-01-fcemmen-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-12-01",
+        "home_team": "FC Emmen",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-01-twente-ajax",
+        "season": "2019/20",
+        "match_date": "2019-12-01",
+        "home_team": "Twente",
+        "away_team": "Ajax",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-08-spartarotterdam-heracles",
+        "season": "2019/20",
+        "match_date": "2019-12-08",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "Heracles",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-08-waalwijk-heerenveen",
+        "season": "2019/20",
+        "match_date": "2019-12-08",
+        "home_team": "Waalwijk",
+        "away_team": "Heerenveen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-13-heerenveen-willemii",
+        "season": "2019/20",
+        "match_date": "2019-12-13",
+        "home_team": "Heerenveen",
+        "away_team": "Willem II",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-14-forsittard-waalwijk",
+        "season": "2019/20",
+        "match_date": "2019-12-14",
+        "home_team": "For Sittard",
+        "away_team": "Waalwijk",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-21-heerenveen-heracles",
+        "season": "2019/20",
+        "match_date": "2019-12-21",
+        "home_team": "Heerenveen",
+        "away_team": "Heracles",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-01-18-azalkmaar-willemii",
+        "season": "2019/20",
+        "match_date": "2020-01-18",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Willem II",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-01-18-feyenoord-heerenveen",
+        "season": "2019/20",
+        "match_date": "2020-01-18",
+        "home_team": "Feyenoord",
+        "away_team": "Heerenveen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-01-26-psveindhoven-twente",
+        "season": "2019/20",
+        "match_date": "2020-01-26",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Twente",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-02-vvvvenlo-utrecht",
+        "season": "2019/20",
+        "match_date": "2020-02-02",
+        "home_team": "VVV Venlo",
+        "away_team": "Utrecht",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-11-fcemmen-twente",
+        "season": "2019/20",
+        "match_date": "2020-02-11",
+        "home_team": "FC Emmen",
+        "away_team": "Twente",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-22-feyenoord-forsittard",
+        "season": "2019/20",
+        "match_date": "2020-02-22",
+        "home_team": "Feyenoord",
+        "away_team": "For Sittard",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-22-heerenveen-denhaag",
+        "season": "2019/20",
+        "match_date": "2020-02-22",
+        "home_team": "Heerenveen",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-03-01-spartarotterdam-fcemmen",
+        "season": "2019/20",
+        "match_date": "2020-03-01",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "FC Emmen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-03-01-waalwijk-utrecht",
+        "season": "2019/20",
+        "match_date": "2020-03-01",
+        "home_team": "Waalwijk",
+        "away_team": "Utrecht",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-03-07-fcemmen-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2020-03-07",
+        "home_team": "FC Emmen",
+        "away_team": "VVV Venlo",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-13-fcemmen-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2020-09-13",
+        "home_team": "FC Emmen",
+        "away_team": "VVV Venlo",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-13-spartarotterdam-ajax",
+        "season": "2020/21",
+        "match_date": "2020-09-13",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "Ajax",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-18-vvvvenlo-utrecht",
+        "season": "2020/21",
+        "match_date": "2020-09-18",
+        "home_team": "VVV Venlo",
+        "away_team": "Utrecht",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-19-psveindhoven-fcemmen",
+        "season": "2020/21",
+        "match_date": "2020-09-19",
+        "home_team": "PSV Eindhoven",
+        "away_team": "FC Emmen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-19-vitesse-spartarotterdam",
+        "season": "2020/21",
+        "match_date": "2020-09-19",
+        "home_team": "Vitesse",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-20-denhaag-groningen",
+        "season": "2020/21",
+        "match_date": "2020-09-20",
+        "home_team": "Den Haag",
+        "away_team": "Groningen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-20-feyenoord-twente",
+        "season": "2020/21",
+        "match_date": "2020-09-20",
+        "home_team": "Feyenoord",
+        "away_team": "Twente",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-20-willemii-heracles",
+        "season": "2020/21",
+        "match_date": "2020-09-20",
+        "home_team": "Willem II",
+        "away_team": "Heracles",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-26-forsittard-azalkmaar",
+        "season": "2020/21",
+        "match_date": "2020-09-26",
+        "home_team": "For Sittard",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-26-heerenveen-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2020-09-26",
+        "home_team": "Heerenveen",
+        "away_team": "VVV Venlo",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-27-feyenoord-denhaag",
+        "season": "2020/21",
+        "match_date": "2020-09-27",
+        "home_team": "Feyenoord",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-27-heracles-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2020-09-27",
+        "home_team": "Heracles",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-03-twente-fcemmen",
+        "season": "2020/21",
+        "match_date": "2020-10-03",
+        "home_team": "Twente",
+        "away_team": "FC Emmen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-03-vvvvenlo-denhaag",
+        "season": "2020/21",
+        "match_date": "2020-10-03",
+        "home_team": "VVV Venlo",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-04-spartarotterdam-azalkmaar",
+        "season": "2020/21",
+        "match_date": "2020-10-04",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-04-willemii-feyenoord",
+        "season": "2020/21",
+        "match_date": "2020-10-04",
+        "home_team": "Willem II",
+        "away_team": "Feyenoord",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-17-willemii-twente",
+        "season": "2020/21",
+        "match_date": "2020-10-17",
+        "home_team": "Willem II",
+        "away_team": "Twente",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-18-ajax-heerenveen",
+        "season": "2020/21",
+        "match_date": "2020-10-18",
+        "home_team": "Ajax",
+        "away_team": "Heerenveen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-18-fcemmen-forsittard",
+        "season": "2020/21",
+        "match_date": "2020-10-18",
+        "home_team": "FC Emmen",
+        "away_team": "For Sittard",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-21-waalwijk-zwolle",
+        "season": "2020/21",
+        "match_date": "2020-10-21",
+        "home_team": "Waalwijk",
+        "away_team": "Zwolle",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-24-vvvvenlo-ajax",
+        "season": "2020/21",
+        "match_date": "2020-10-24",
+        "home_team": "VVV Venlo",
+        "away_team": "Ajax",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-25-denhaag-azalkmaar",
+        "season": "2020/21",
+        "match_date": "2020-10-25",
+        "home_team": "Den Haag",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-25-waalwijk-feyenoord",
+        "season": "2020/21",
+        "match_date": "2020-10-25",
+        "home_team": "Waalwijk",
+        "away_team": "Feyenoord",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-31-twente-zwolle",
+        "season": "2020/21",
+        "match_date": "2020-10-31",
+        "home_team": "Twente",
+        "away_team": "Zwolle",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-31-willemii-vitesse",
+        "season": "2020/21",
+        "match_date": "2020-10-31",
+        "home_team": "Willem II",
+        "away_team": "Vitesse",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-01-fcemmen-feyenoord",
+        "season": "2020/21",
+        "match_date": "2020-11-01",
+        "home_team": "FC Emmen",
+        "away_team": "Feyenoord",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-01-heracles-utrecht",
+        "season": "2020/21",
+        "match_date": "2020-11-01",
+        "home_team": "Heracles",
+        "away_team": "Utrecht",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-07-denhaag-twente",
+        "season": "2020/21",
+        "match_date": "2020-11-07",
+        "home_team": "Den Haag",
+        "away_team": "Twente",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-08-heerenveen-azalkmaar",
+        "season": "2020/21",
+        "match_date": "2020-11-08",
+        "home_team": "Heerenveen",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-21-willemii-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2020-11-21",
+        "home_team": "Willem II",
+        "away_team": "VVV Venlo",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-22-azalkmaar-fcemmen",
+        "season": "2020/21",
+        "match_date": "2020-11-22",
+        "home_team": "AZ Alkmaar",
+        "away_team": "FC Emmen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-22-forsittard-feyenoord",
+        "season": "2020/21",
+        "match_date": "2020-11-22",
+        "home_team": "For Sittard",
+        "away_team": "Feyenoord",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-28-vvvvenlo-zwolle",
+        "season": "2020/21",
+        "match_date": "2020-11-28",
+        "home_team": "VVV Venlo",
+        "away_team": "Zwolle",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-29-feyenoord-utrecht",
+        "season": "2020/21",
+        "match_date": "2020-11-29",
+        "home_team": "Feyenoord",
+        "away_team": "Utrecht",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-04-spartarotterdam-fcemmen",
+        "season": "2020/21",
+        "match_date": "2020-12-04",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "FC Emmen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-06-azalkmaar-groningen",
+        "season": "2020/21",
+        "match_date": "2020-12-06",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Groningen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-06-feyenoord-heracles",
+        "season": "2020/21",
+        "match_date": "2020-12-06",
+        "home_team": "Feyenoord",
+        "away_team": "Heracles",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-06-heerenveen-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2020-12-06",
+        "home_team": "Heerenveen",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-06-utrecht-denhaag",
+        "season": "2020/21",
+        "match_date": "2020-12-06",
+        "home_team": "Utrecht",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-11-heracles-forsittard",
+        "season": "2020/21",
+        "match_date": "2020-12-11",
+        "home_team": "Heracles",
+        "away_team": "For Sittard",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-12-fcemmen-denhaag",
+        "season": "2020/21",
+        "match_date": "2020-12-12",
+        "home_team": "FC Emmen",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-19-vvvvenlo-twente",
+        "season": "2020/21",
+        "match_date": "2020-12-19",
+        "home_team": "VVV Venlo",
+        "away_team": "Twente",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-20-heerenveen-heracles",
+        "season": "2020/21",
+        "match_date": "2020-12-20",
+        "home_team": "Heerenveen",
+        "away_team": "Heracles",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-22-fcemmen-utrecht",
+        "season": "2020/21",
+        "match_date": "2020-12-22",
+        "home_team": "FC Emmen",
+        "away_team": "Utrecht",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-22-forsittard-waalwijk",
+        "season": "2020/21",
+        "match_date": "2020-12-22",
+        "home_team": "For Sittard",
+        "away_team": "Waalwijk",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-23-azalkmaar-vitesse",
+        "season": "2020/21",
+        "match_date": "2020-12-23",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Vitesse",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-23-denhaag-zwolle",
+        "season": "2020/21",
+        "match_date": "2020-12-23",
+        "home_team": "Den Haag",
+        "away_team": "Zwolle",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-23-willemii-ajax",
+        "season": "2020/21",
+        "match_date": "2020-12-23",
+        "home_team": "Willem II",
+        "away_team": "Ajax",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-09-waalwijk-denhaag",
+        "season": "2020/21",
+        "match_date": "2021-01-09",
+        "home_team": "Waalwijk",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-10-ajax-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2021-01-10",
+        "home_team": "Ajax",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-16-azalkmaar-denhaag",
+        "season": "2020/21",
+        "match_date": "2021-01-16",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-16-spartarotterdam-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2021-01-16",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-27-vvvvenlo-vitesse",
+        "season": "2020/21",
+        "match_date": "2021-01-27",
+        "home_team": "VVV Venlo",
+        "away_team": "Vitesse",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-30-forsittard-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2021-01-30",
+        "home_team": "For Sittard",
+        "away_team": "VVV Venlo",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-30-utrecht-zwolle",
+        "season": "2020/21",
+        "match_date": "2021-01-30",
+        "home_team": "Utrecht",
+        "away_team": "Zwolle",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-30-vitesse-waalwijk",
+        "season": "2020/21",
+        "match_date": "2021-01-30",
+        "home_team": "Vitesse",
+        "away_team": "Waalwijk",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-31-azalkmaar-ajax",
+        "season": "2020/21",
+        "match_date": "2021-01-31",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Ajax",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-14-feyenoord-willemii",
+        "season": "2020/21",
+        "match_date": "2021-02-14",
+        "home_team": "Feyenoord",
+        "away_team": "Willem II",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-20-forsittard-denhaag",
+        "season": "2020/21",
+        "match_date": "2021-02-20",
+        "home_team": "For Sittard",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-21-ajax-spartarotterdam",
+        "season": "2020/21",
+        "match_date": "2021-02-21",
+        "home_team": "Ajax",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-24-willemii-denhaag",
+        "season": "2020/21",
+        "match_date": "2021-02-24",
+        "home_team": "Willem II",
+        "away_team": "Den Haag",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-03-07-ajax-groningen",
+        "season": "2020/21",
+        "match_date": "2021-03-07",
+        "home_team": "Ajax",
+        "away_team": "Groningen",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-03-07-heracles-zwolle",
+        "season": "2020/21",
+        "match_date": "2021-03-07",
+        "home_team": "Heracles",
+        "away_team": "Zwolle",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-04-04-fcemmen-waalwijk",
+        "season": "2020/21",
+        "match_date": "2021-04-04",
+        "home_team": "FC Emmen",
+        "away_team": "Waalwijk",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-04-22-ajax-utrecht",
+        "season": "2020/21",
+        "match_date": "2021-04-22",
+        "home_team": "Ajax",
+        "away_team": "Utrecht",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-13-ajax-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2021-05-13",
+        "home_team": "Ajax",
+        "away_team": "VVV Venlo",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-13-forsittard-vitesse",
+        "season": "2020/21",
+        "match_date": "2021-05-13",
+        "home_team": "For Sittard",
+        "away_team": "Vitesse",
+        "bookmaker": "bet365",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-08-12-denhaag-fcemmen",
+        "season": "2018/19",
+        "match_date": "2018-08-12",
+        "home_team": "Den Haag",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-08-12-vitesse-groningen",
+        "season": "2018/19",
+        "match_date": "2018-08-12",
+        "home_team": "Vitesse",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-08-19-feyenoord-excelsior",
+        "season": "2018/19",
+        "match_date": "2018-08-19",
+        "home_team": "Feyenoord",
+        "away_team": "Excelsior",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-08-19-utrecht-zwolle",
+        "season": "2018/19",
+        "match_date": "2018-08-19",
+        "home_team": "Utrecht",
+        "away_team": "Zwolle",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-08-26-heerenveen-feyenoord",
+        "season": "2018/19",
+        "match_date": "2018-08-26",
+        "home_team": "Heerenveen",
+        "away_team": "Feyenoord",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-08-26-utrecht-vvvvenlo",
+        "season": "2018/19",
+        "match_date": "2018-08-26",
+        "home_team": "Utrecht",
+        "away_team": "VVV Venlo",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-01-forsittard-utrecht",
+        "season": "2018/19",
+        "match_date": "2018-09-01",
+        "home_team": "For Sittard",
+        "away_team": "Utrecht",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-01-psveindhoven-willemii",
+        "season": "2018/19",
+        "match_date": "2018-09-01",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Willem II",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-02-feyenoord-nacbreda",
+        "season": "2018/19",
+        "match_date": "2018-09-02",
+        "home_team": "Feyenoord",
+        "away_team": "NAC Breda",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-02-heracles-azalkmaar",
+        "season": "2018/19",
+        "match_date": "2018-09-02",
+        "home_team": "Heracles",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-15-ajax-groningen",
+        "season": "2018/19",
+        "match_date": "2018-09-15",
+        "home_team": "Ajax",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-15-willemii-excelsior",
+        "season": "2018/19",
+        "match_date": "2018-09-15",
+        "home_team": "Willem II",
+        "away_team": "Excelsior",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-16-azalkmaar-feyenoord",
+        "season": "2018/19",
+        "match_date": "2018-09-16",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Feyenoord",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-16-utrecht-fcemmen",
+        "season": "2018/19",
+        "match_date": "2018-09-16",
+        "home_team": "Utrecht",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-22-forsittard-willemii",
+        "season": "2018/19",
+        "match_date": "2018-09-22",
+        "home_team": "For Sittard",
+        "away_team": "Willem II",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-22-vitesse-denhaag",
+        "season": "2018/19",
+        "match_date": "2018-09-22",
+        "home_team": "Vitesse",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-22-vvvvenlo-nacbreda",
+        "season": "2018/19",
+        "match_date": "2018-09-22",
+        "home_team": "VVV Venlo",
+        "away_team": "NAC Breda",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-30-azalkmaar-zwolle",
+        "season": "2018/19",
+        "match_date": "2018-09-30",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Zwolle",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-30-feyenoord-vitesse",
+        "season": "2018/19",
+        "match_date": "2018-09-30",
+        "home_team": "Feyenoord",
+        "away_team": "Vitesse",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-09-30-graafschap-willemii",
+        "season": "2018/19",
+        "match_date": "2018-09-30",
+        "home_team": "Graafschap",
+        "away_team": "Willem II",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-10-05-utrecht-nacbreda",
+        "season": "2018/19",
+        "match_date": "2018-10-05",
+        "home_team": "Utrecht",
+        "away_team": "NAC Breda",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-10-06-denhaag-groningen",
+        "season": "2018/19",
+        "match_date": "2018-10-06",
+        "home_team": "Den Haag",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-10-07-ajax-azalkmaar",
+        "season": "2018/19",
+        "match_date": "2018-10-07",
+        "home_team": "Ajax",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-10-07-fcemmen-forsittard",
+        "season": "2018/19",
+        "match_date": "2018-10-07",
+        "home_team": "FC Emmen",
+        "away_team": "For Sittard",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-10-20-excelsior-vitesse",
+        "season": "2018/19",
+        "match_date": "2018-10-20",
+        "home_team": "Excelsior",
+        "away_team": "Vitesse",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-10-20-utrecht-azalkmaar",
+        "season": "2018/19",
+        "match_date": "2018-10-20",
+        "home_team": "Utrecht",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-10-21-forsittard-graafschap",
+        "season": "2018/19",
+        "match_date": "2018-10-21",
+        "home_team": "For Sittard",
+        "away_team": "Graafschap",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-10-21-nacbreda-willemii",
+        "season": "2018/19",
+        "match_date": "2018-10-21",
+        "home_team": "NAC Breda",
+        "away_team": "Willem II",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-10-21-vvvvenlo-denhaag",
+        "season": "2018/19",
+        "match_date": "2018-10-21",
+        "home_team": "VVV Venlo",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-11-03-ajax-willemii",
+        "season": "2018/19",
+        "match_date": "2018-11-03",
+        "home_team": "Ajax",
+        "away_team": "Willem II",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-11-03-nacbreda-heracles",
+        "season": "2018/19",
+        "match_date": "2018-11-03",
+        "home_team": "NAC Breda",
+        "away_team": "Heracles",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-11-04-heerenveen-fcemmen",
+        "season": "2018/19",
+        "match_date": "2018-11-04",
+        "home_team": "Heerenveen",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-11-25-utrecht-graafschap",
+        "season": "2018/19",
+        "match_date": "2018-11-25",
+        "home_team": "Utrecht",
+        "away_team": "Graafschap",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-11-25-willemii-vitesse",
+        "season": "2018/19",
+        "match_date": "2018-11-25",
+        "home_team": "Willem II",
+        "away_team": "Vitesse",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-11-30-excelsior-utrecht",
+        "season": "2018/19",
+        "match_date": "2018-11-30",
+        "home_team": "Excelsior",
+        "away_team": "Utrecht",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-12-02-ajax-denhaag",
+        "season": "2018/19",
+        "match_date": "2018-12-02",
+        "home_team": "Ajax",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-12-02-groningen-nacbreda",
+        "season": "2018/19",
+        "match_date": "2018-12-02",
+        "home_team": "Groningen",
+        "away_team": "NAC Breda",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-12-02-heracles-vvvvenlo",
+        "season": "2018/19",
+        "match_date": "2018-12-02",
+        "home_team": "Heracles",
+        "away_team": "VVV Venlo",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-12-08-denhaag-graafschap",
+        "season": "2018/19",
+        "match_date": "2018-12-08",
+        "home_team": "Den Haag",
+        "away_team": "Graafschap",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-12-15-azalkmaar-excelsior",
+        "season": "2018/19",
+        "match_date": "2018-12-15",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Excelsior",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-12-16-groningen-fcemmen",
+        "season": "2018/19",
+        "match_date": "2018-12-16",
+        "home_team": "Groningen",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2018-12-22-nacbreda-heerenveen",
+        "season": "2018/19",
+        "match_date": "2018-12-22",
+        "home_team": "NAC Breda",
+        "away_team": "Heerenveen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-01-20-ajax-heerenveen",
+        "season": "2018/19",
+        "match_date": "2019-01-20",
+        "home_team": "Ajax",
+        "away_team": "Heerenveen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-01-20-fcemmen-psveindhoven",
+        "season": "2018/19",
+        "match_date": "2019-01-20",
+        "home_team": "FC Emmen",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-02-01-graafschap-nacbreda",
+        "season": "2018/19",
+        "match_date": "2019-02-01",
+        "home_team": "Graafschap",
+        "away_team": "NAC Breda",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-02-03-excelsior-feyenoord",
+        "season": "2018/19",
+        "match_date": "2019-02-03",
+        "home_team": "Excelsior",
+        "away_team": "Feyenoord",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-02-09-heerenveen-zwolle",
+        "season": "2018/19",
+        "match_date": "2019-02-09",
+        "home_team": "Heerenveen",
+        "away_team": "Zwolle",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-02-09-vvvvenlo-willemii",
+        "season": "2018/19",
+        "match_date": "2019-02-09",
+        "home_team": "VVV Venlo",
+        "away_team": "Willem II",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-02-16-heerenveen-psveindhoven",
+        "season": "2018/19",
+        "match_date": "2019-02-16",
+        "home_team": "Heerenveen",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-02-17-excelsior-fcemmen",
+        "season": "2018/19",
+        "match_date": "2019-02-17",
+        "home_team": "Excelsior",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-02-24-psveindhoven-feyenoord",
+        "season": "2018/19",
+        "match_date": "2019-02-24",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Feyenoord",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-03-01-graafschap-denhaag",
+        "season": "2018/19",
+        "match_date": "2019-03-01",
+        "home_team": "Graafschap",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-03-08-utrecht-groningen",
+        "season": "2018/19",
+        "match_date": "2019-03-08",
+        "home_team": "Utrecht",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-03-09-denhaag-heerenveen",
+        "season": "2018/19",
+        "match_date": "2019-03-09",
+        "home_team": "Den Haag",
+        "away_team": "Heerenveen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-03-09-willemii-graafschap",
+        "season": "2018/19",
+        "match_date": "2019-03-09",
+        "home_team": "Willem II",
+        "away_team": "Graafschap",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-03-15-forsittard-fcemmen",
+        "season": "2018/19",
+        "match_date": "2019-03-15",
+        "home_team": "For Sittard",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-03-30-heerenveen-excelsior",
+        "season": "2018/19",
+        "match_date": "2019-03-30",
+        "home_team": "Heerenveen",
+        "away_team": "Excelsior",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-03-30-willemii-forsittard",
+        "season": "2018/19",
+        "match_date": "2019-03-30",
+        "home_team": "Willem II",
+        "away_team": "For Sittard",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-03-fcemmen-ajax",
+        "season": "2018/19",
+        "match_date": "2019-04-03",
+        "home_team": "FC Emmen",
+        "away_team": "Ajax",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-03-forsittard-denhaag",
+        "season": "2018/19",
+        "match_date": "2019-04-03",
+        "home_team": "For Sittard",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-06-willemii-ajax",
+        "season": "2018/19",
+        "match_date": "2019-04-06",
+        "home_team": "Willem II",
+        "away_team": "Ajax",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-07-vvvvenlo-feyenoord",
+        "season": "2018/19",
+        "match_date": "2019-04-07",
+        "home_team": "VVV Venlo",
+        "away_team": "Feyenoord",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-12-nacbreda-fcemmen",
+        "season": "2018/19",
+        "match_date": "2019-04-12",
+        "home_team": "NAC Breda",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-13-azalkmaar-denhaag",
+        "season": "2018/19",
+        "match_date": "2019-04-13",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-13-feyenoord-heracles",
+        "season": "2018/19",
+        "match_date": "2019-04-13",
+        "home_team": "Feyenoord",
+        "away_team": "Heracles",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-13-forsittard-vvvvenlo",
+        "season": "2018/19",
+        "match_date": "2019-04-13",
+        "home_team": "For Sittard",
+        "away_team": "VVV Venlo",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-14-psveindhoven-graafschap",
+        "season": "2018/19",
+        "match_date": "2019-04-14",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Graafschap",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-14-utrecht-vitesse",
+        "season": "2018/19",
+        "match_date": "2019-04-14",
+        "home_team": "Utrecht",
+        "away_team": "Vitesse",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-20-vvvvenlo-graafschap",
+        "season": "2018/19",
+        "match_date": "2019-04-20",
+        "home_team": "VVV Venlo",
+        "away_team": "Graafschap",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-21-forsittard-nacbreda",
+        "season": "2018/19",
+        "match_date": "2019-04-21",
+        "home_team": "For Sittard",
+        "away_team": "NAC Breda",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-23-azalkmaar-heracles",
+        "season": "2018/19",
+        "match_date": "2019-04-23",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Heracles",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-23-graafschap-fcemmen",
+        "season": "2018/19",
+        "match_date": "2019-04-23",
+        "home_team": "Graafschap",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-04-29-zwolle-groningen",
+        "season": "2018/19",
+        "match_date": "2019-04-29",
+        "home_team": "Zwolle",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-05-12-ajax-utrecht",
+        "season": "2018/19",
+        "match_date": "2019-05-12",
+        "home_team": "Ajax",
+        "away_team": "Utrecht",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-05-12-groningen-forsittard",
+        "season": "2018/19",
+        "match_date": "2019-05-12",
+        "home_team": "Groningen",
+        "away_team": "For Sittard",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-05-12-heerenveen-nacbreda",
+        "season": "2018/19",
+        "match_date": "2019-05-12",
+        "home_team": "Heerenveen",
+        "away_team": "NAC Breda",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-05-12-heracles-excelsior",
+        "season": "2018/19",
+        "match_date": "2019-05-12",
+        "home_team": "Heracles",
+        "away_team": "Excelsior",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-05-12-vitesse-graafschap",
+        "season": "2018/19",
+        "match_date": "2019-05-12",
+        "home_team": "Vitesse",
+        "away_team": "Graafschap",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-05-12-willemii-fcemmen",
+        "season": "2018/19",
+        "match_date": "2019-05-12",
+        "home_team": "Willem II",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-05-12-zwolle-vvvvenlo",
+        "season": "2018/19",
+        "match_date": "2019-05-12",
+        "home_team": "Zwolle",
+        "away_team": "VVV Venlo",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2018-19-2019-05-15-psveindhoven-heracles",
+        "season": "2018/19",
+        "match_date": "2019-05-15",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Heracles",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-04-denhaag-utrecht",
+        "season": "2019/20",
+        "match_date": "2019-08-04",
+        "home_team": "Den Haag",
+        "away_team": "Utrecht",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-09-spartarotterdam-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2019-08-09",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "VVV Venlo",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-10-ajax-fcemmen",
+        "season": "2019/20",
+        "match_date": "2019-08-10",
+        "home_team": "Ajax",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-11-psveindhoven-denhaag",
+        "season": "2019/20",
+        "match_date": "2019-08-11",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-11-utrecht-zwolle",
+        "season": "2019/20",
+        "match_date": "2019-08-11",
+        "home_team": "Utrecht",
+        "away_team": "Zwolle",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-18-twente-waalwijk",
+        "season": "2019/20",
+        "match_date": "2019-08-18",
+        "home_team": "Twente",
+        "away_team": "Waalwijk",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-24-heracles-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-08-24",
+        "home_team": "Heracles",
+        "away_team": "Vitesse",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-24-willemii-fcemmen",
+        "season": "2019/20",
+        "match_date": "2019-08-24",
+        "home_team": "Willem II",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-25-zwolle-spartarotterdam",
+        "season": "2019/20",
+        "match_date": "2019-08-25",
+        "home_team": "Zwolle",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-14-ajax-heerenveen",
+        "season": "2019/20",
+        "match_date": "2019-09-14",
+        "home_team": "Ajax",
+        "away_team": "Heerenveen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-14-azalkmaar-spartarotterdam",
+        "season": "2019/20",
+        "match_date": "2019-09-14",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-15-feyenoord-denhaag",
+        "season": "2019/20",
+        "match_date": "2019-09-15",
+        "home_team": "Feyenoord",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-15-forsittard-twente",
+        "season": "2019/20",
+        "match_date": "2019-09-15",
+        "home_team": "For Sittard",
+        "away_team": "Twente",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-21-willemii-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2019-09-21",
+        "home_team": "Willem II",
+        "away_team": "VVV Venlo",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-25-ajax-forsittard",
+        "season": "2019/20",
+        "match_date": "2019-09-25",
+        "home_team": "Ajax",
+        "away_team": "For Sittard",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-25-psveindhoven-groningen",
+        "season": "2019/20",
+        "match_date": "2019-09-25",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-29-azalkmaar-heracles",
+        "season": "2019/20",
+        "match_date": "2019-09-29",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Heracles",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-29-waalwijk-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-09-29",
+        "home_team": "Waalwijk",
+        "away_team": "Vitesse",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-05-heerenveen-zwolle",
+        "season": "2019/20",
+        "match_date": "2019-10-05",
+        "home_team": "Heerenveen",
+        "away_team": "Zwolle",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-05-spartarotterdam-twente",
+        "season": "2019/20",
+        "match_date": "2019-10-05",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "Twente",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-06-willemii-azalkmaar",
+        "season": "2019/20",
+        "match_date": "2019-10-06",
+        "home_team": "Willem II",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-19-vvvvenlo-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-10-19",
+        "home_team": "VVV Venlo",
+        "away_team": "Vitesse",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-20-feyenoord-heracles",
+        "season": "2019/20",
+        "match_date": "2019-10-20",
+        "home_team": "Feyenoord",
+        "away_team": "Heracles",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-26-willemii-waalwijk",
+        "season": "2019/20",
+        "match_date": "2019-10-26",
+        "home_team": "Willem II",
+        "away_team": "Waalwijk",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-27-ajax-feyenoord",
+        "season": "2019/20",
+        "match_date": "2019-10-27",
+        "home_team": "Ajax",
+        "away_team": "Feyenoord",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-02-spartarotterdam-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-11-02",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-03-fcemmen-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-11-03",
+        "home_team": "FC Emmen",
+        "away_team": "Vitesse",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-09-heracles-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2019-11-09",
+        "home_team": "Heracles",
+        "away_team": "VVV Venlo",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-10-azalkmaar-fcemmen",
+        "season": "2019/20",
+        "match_date": "2019-11-10",
+        "home_team": "AZ Alkmaar",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-10-feyenoord-waalwijk",
+        "season": "2019/20",
+        "match_date": "2019-11-10",
+        "home_team": "Feyenoord",
+        "away_team": "Waalwijk",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-10-willemii-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-11-10",
+        "home_team": "Willem II",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-23-ajax-heracles",
+        "season": "2019/20",
+        "match_date": "2019-11-23",
+        "home_team": "Ajax",
+        "away_team": "Heracles",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-23-zwolle-forsittard",
+        "season": "2019/20",
+        "match_date": "2019-11-23",
+        "home_team": "Zwolle",
+        "away_team": "For Sittard",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-29-heerenveen-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-11-29",
+        "home_team": "Heerenveen",
+        "away_team": "Vitesse",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-30-forsittard-groningen",
+        "season": "2019/20",
+        "match_date": "2019-11-30",
+        "home_team": "For Sittard",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-06-ajax-willemii",
+        "season": "2019/20",
+        "match_date": "2019-12-06",
+        "home_team": "Ajax",
+        "away_team": "Willem II",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-14-forsittard-waalwijk",
+        "season": "2019/20",
+        "match_date": "2019-12-14",
+        "home_team": "For Sittard",
+        "away_team": "Waalwijk",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-01-18-feyenoord-heerenveen",
+        "season": "2019/20",
+        "match_date": "2020-01-18",
+        "home_team": "Feyenoord",
+        "away_team": "Heerenveen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-01-19-vvvvenlo-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2020-01-19",
+        "home_team": "VVV Venlo",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-01-26-groningen-ajax",
+        "season": "2019/20",
+        "match_date": "2020-01-26",
+        "home_team": "Groningen",
+        "away_team": "Ajax",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-01-26-vitesse-fcemmen",
+        "season": "2019/20",
+        "match_date": "2020-01-26",
+        "home_team": "Vitesse",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-02-willemii-heracles",
+        "season": "2019/20",
+        "match_date": "2020-02-02",
+        "home_team": "Willem II",
+        "away_team": "Heracles",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-15-forsittard-fcemmen",
+        "season": "2019/20",
+        "match_date": "2020-02-15",
+        "home_team": "For Sittard",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-22-heerenveen-denhaag",
+        "season": "2019/20",
+        "match_date": "2020-02-22",
+        "home_team": "Heerenveen",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-28-willemii-groningen",
+        "season": "2019/20",
+        "match_date": "2020-02-28",
+        "home_team": "Willem II",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-03-08-feyenoord-willemii",
+        "season": "2019/20",
+        "match_date": "2020-03-08",
+        "home_team": "Feyenoord",
+        "away_team": "Willem II",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-03-08-heracles-waalwijk",
+        "season": "2019/20",
+        "match_date": "2020-03-08",
+        "home_team": "Heracles",
+        "away_team": "Waalwijk",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-18-vvvvenlo-utrecht",
+        "season": "2020/21",
+        "match_date": "2020-09-18",
+        "home_team": "VVV Venlo",
+        "away_team": "Utrecht",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-19-azalkmaar-zwolle",
+        "season": "2020/21",
+        "match_date": "2020-09-19",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Zwolle",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-19-psveindhoven-fcemmen",
+        "season": "2020/21",
+        "match_date": "2020-09-19",
+        "home_team": "PSV Eindhoven",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-19-vitesse-spartarotterdam",
+        "season": "2020/21",
+        "match_date": "2020-09-19",
+        "home_team": "Vitesse",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-20-ajax-waalwijk",
+        "season": "2020/21",
+        "match_date": "2020-09-20",
+        "home_team": "Ajax",
+        "away_team": "Waalwijk",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-20-denhaag-groningen",
+        "season": "2020/21",
+        "match_date": "2020-09-20",
+        "home_team": "Den Haag",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-20-feyenoord-twente",
+        "season": "2020/21",
+        "match_date": "2020-09-20",
+        "home_team": "Feyenoord",
+        "away_team": "Twente",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-25-twente-groningen",
+        "season": "2020/21",
+        "match_date": "2020-09-25",
+        "home_team": "Twente",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-26-heerenveen-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2020-09-26",
+        "home_team": "Heerenveen",
+        "away_team": "VVV Venlo",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-27-heracles-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2020-09-27",
+        "home_team": "Heracles",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-17-heracles-waalwijk",
+        "season": "2020/21",
+        "match_date": "2020-10-17",
+        "home_team": "Heracles",
+        "away_team": "Waalwijk",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-18-ajax-heerenveen",
+        "season": "2020/21",
+        "match_date": "2020-10-18",
+        "home_team": "Ajax",
+        "away_team": "Heerenveen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-18-feyenoord-spartarotterdam",
+        "season": "2020/21",
+        "match_date": "2020-10-18",
+        "home_team": "Feyenoord",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-25-forsittard-groningen",
+        "season": "2020/21",
+        "match_date": "2020-10-25",
+        "home_team": "For Sittard",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-31-ajax-forsittard",
+        "season": "2020/21",
+        "match_date": "2020-10-31",
+        "home_team": "Ajax",
+        "away_team": "For Sittard",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-01-fcemmen-feyenoord",
+        "season": "2020/21",
+        "match_date": "2020-11-01",
+        "home_team": "FC Emmen",
+        "away_team": "Feyenoord",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-01-heracles-utrecht",
+        "season": "2020/21",
+        "match_date": "2020-11-01",
+        "home_team": "Heracles",
+        "away_team": "Utrecht",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-07-denhaag-twente",
+        "season": "2020/21",
+        "match_date": "2020-11-07",
+        "home_team": "Den Haag",
+        "away_team": "Twente",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-08-heerenveen-azalkmaar",
+        "season": "2020/21",
+        "match_date": "2020-11-08",
+        "home_team": "Heerenveen",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-08-vitesse-fcemmen",
+        "season": "2020/21",
+        "match_date": "2020-11-08",
+        "home_team": "Vitesse",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-21-willemii-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2020-11-21",
+        "home_team": "Willem II",
+        "away_team": "VVV Venlo",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-28-denhaag-heerenveen",
+        "season": "2020/21",
+        "match_date": "2020-11-28",
+        "home_team": "Den Haag",
+        "away_team": "Heerenveen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-29-heracles-azalkmaar",
+        "season": "2020/21",
+        "match_date": "2020-11-29",
+        "home_team": "Heracles",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-05-ajax-twente",
+        "season": "2020/21",
+        "match_date": "2020-12-05",
+        "home_team": "Ajax",
+        "away_team": "Twente",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-06-feyenoord-heracles",
+        "season": "2020/21",
+        "match_date": "2020-12-06",
+        "home_team": "Feyenoord",
+        "away_team": "Heracles",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-06-heerenveen-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2020-12-06",
+        "home_team": "Heerenveen",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-11-heracles-forsittard",
+        "season": "2020/21",
+        "match_date": "2020-12-11",
+        "home_team": "Heracles",
+        "away_team": "For Sittard",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-12-fcemmen-denhaag",
+        "season": "2020/21",
+        "match_date": "2020-12-12",
+        "home_team": "FC Emmen",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-13-psveindhoven-utrecht",
+        "season": "2020/21",
+        "match_date": "2020-12-13",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Utrecht",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-19-vvvvenlo-twente",
+        "season": "2020/21",
+        "match_date": "2020-12-19",
+        "home_team": "VVV Venlo",
+        "away_team": "Twente",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-22-fcemmen-utrecht",
+        "season": "2020/21",
+        "match_date": "2020-12-22",
+        "home_team": "FC Emmen",
+        "away_team": "Utrecht",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-10-ajax-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2021-01-10",
+        "home_team": "Ajax",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-10-heerenveen-forsittard",
+        "season": "2020/21",
+        "match_date": "2021-01-10",
+        "home_team": "Heerenveen",
+        "away_team": "For Sittard",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-16-azalkmaar-denhaag",
+        "season": "2020/21",
+        "match_date": "2021-01-16",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-17-ajax-feyenoord",
+        "season": "2020/21",
+        "match_date": "2021-01-17",
+        "home_team": "Ajax",
+        "away_team": "Feyenoord",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-22-willemii-zwolle",
+        "season": "2020/21",
+        "match_date": "2021-01-22",
+        "home_team": "Willem II",
+        "away_team": "Zwolle",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-23-psveindhoven-waalwijk",
+        "season": "2020/21",
+        "match_date": "2021-01-23",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Waalwijk",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-24-forsittard-ajax",
+        "season": "2020/21",
+        "match_date": "2021-01-24",
+        "home_team": "For Sittard",
+        "away_team": "Ajax",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-28-spartarotterdam-twente",
+        "season": "2020/21",
+        "match_date": "2021-01-28",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "Twente",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-30-heracles-groningen",
+        "season": "2020/21",
+        "match_date": "2021-01-30",
+        "home_team": "Heracles",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-30-utrecht-zwolle",
+        "season": "2020/21",
+        "match_date": "2021-01-30",
+        "home_team": "Utrecht",
+        "away_team": "Zwolle",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-31-feyenoord-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2021-01-31",
+        "home_team": "Feyenoord",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-06-fcemmen-azalkmaar",
+        "season": "2020/21",
+        "match_date": "2021-02-06",
+        "home_team": "FC Emmen",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-20-vvvvenlo-azalkmaar",
+        "season": "2020/21",
+        "match_date": "2021-02-20",
+        "home_team": "VVV Venlo",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-21-heerenveen-groningen",
+        "season": "2020/21",
+        "match_date": "2021-02-21",
+        "home_team": "Heerenveen",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-28-spartarotterdam-willemii",
+        "season": "2020/21",
+        "match_date": "2021-02-28",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "Willem II",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-03-06-heerenveen-denhaag",
+        "season": "2020/21",
+        "match_date": "2021-03-06",
+        "home_team": "Heerenveen",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-03-07-forsittard-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2021-03-07",
+        "home_team": "For Sittard",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-03-13-azalkmaar-twente",
+        "season": "2020/21",
+        "match_date": "2021-03-13",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Twente",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-03-14-psveindhoven-feyenoord",
+        "season": "2020/21",
+        "match_date": "2021-03-14",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Feyenoord",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-03-21-heracles-spartarotterdam",
+        "season": "2020/21",
+        "match_date": "2021-03-21",
+        "home_team": "Heracles",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-04-04-psveindhoven-heracles",
+        "season": "2020/21",
+        "match_date": "2021-04-04",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Heracles",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-04-10-forsittard-fcemmen",
+        "season": "2020/21",
+        "match_date": "2021-04-10",
+        "home_team": "For Sittard",
+        "away_team": "FC Emmen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-04-10-heracles-willemii",
+        "season": "2020/21",
+        "match_date": "2021-04-10",
+        "home_team": "Heracles",
+        "away_team": "Willem II",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-04-11-vvvvenlo-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2021-04-11",
+        "home_team": "VVV Venlo",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-04-25-fcemmen-heracles",
+        "season": "2020/21",
+        "match_date": "2021-04-25",
+        "home_team": "FC Emmen",
+        "away_team": "Heracles",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-01-heracles-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2021-05-01",
+        "home_team": "Heracles",
+        "away_team": "VVV Venlo",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-01-utrecht-willemii",
+        "season": "2020/21",
+        "match_date": "2021-05-01",
+        "home_team": "Utrecht",
+        "away_team": "Willem II",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-01-vitesse-zwolle",
+        "season": "2020/21",
+        "match_date": "2021-05-01",
+        "home_team": "Vitesse",
+        "away_team": "Zwolle",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-02-groningen-spartarotterdam",
+        "season": "2020/21",
+        "match_date": "2021-05-02",
+        "home_team": "Groningen",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-08-vvvvenlo-waalwijk",
+        "season": "2020/21",
+        "match_date": "2021-05-08",
+        "home_team": "VVV Venlo",
+        "away_team": "Waalwijk",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-09-fcemmen-groningen",
+        "season": "2020/21",
+        "match_date": "2021-05-09",
+        "home_team": "FC Emmen",
+        "away_team": "Groningen",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-09-willemii-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2021-05-09",
+        "home_team": "Willem II",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-16-azalkmaar-heracles",
+        "season": "2020/21",
+        "match_date": "2021-05-16",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Heracles",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-16-twente-denhaag",
+        "season": "2020/21",
+        "match_date": "2021-05-16",
+        "home_team": "Twente",
+        "away_team": "Den Haag",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-16-willemii-forsittard",
+        "season": "2020/21",
+        "match_date": "2021-05-16",
+        "home_team": "Willem II",
+        "away_team": "For Sittard",
+        "bookmaker": "pinnacle",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-03-twente-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-08-03",
+        "home_team": "Twente",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-03-vitesse-ajax",
+        "season": "2019/20",
+        "match_date": "2019-08-03",
+        "home_team": "Vitesse",
+        "away_team": "Ajax",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-09-spartarotterdam-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2019-08-09",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-10-groningen-twente",
+        "season": "2019/20",
+        "match_date": "2019-08-10",
+        "home_team": "Groningen",
+        "away_team": "Twente",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-11-psveindhoven-denhaag",
+        "season": "2019/20",
+        "match_date": "2019-08-11",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Den Haag",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-11-utrecht-zwolle",
+        "season": "2019/20",
+        "match_date": "2019-08-11",
+        "home_team": "Utrecht",
+        "away_team": "Zwolle",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-11-waalwijk-azalkmaar",
+        "season": "2019/20",
+        "match_date": "2019-08-11",
+        "home_team": "Waalwijk",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-17-vvvvenlo-ajax",
+        "season": "2019/20",
+        "match_date": "2019-08-17",
+        "home_team": "VVV Venlo",
+        "away_team": "Ajax",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-18-heracles-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-08-18",
+        "home_team": "Heracles",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-18-twente-waalwijk",
+        "season": "2019/20",
+        "match_date": "2019-08-18",
+        "home_team": "Twente",
+        "away_team": "Waalwijk",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-24-heerenveen-twente",
+        "season": "2019/20",
+        "match_date": "2019-08-24",
+        "home_team": "Heerenveen",
+        "away_team": "Twente",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-24-willemii-fcemmen",
+        "season": "2019/20",
+        "match_date": "2019-08-24",
+        "home_team": "Willem II",
+        "away_team": "FC Emmen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-08-31-heerenveen-forsittard",
+        "season": "2019/20",
+        "match_date": "2019-08-31",
+        "home_team": "Heerenveen",
+        "away_team": "For Sittard",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-01-spartarotterdam-ajax",
+        "season": "2019/20",
+        "match_date": "2019-09-01",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "Ajax",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-01-twente-utrecht",
+        "season": "2019/20",
+        "match_date": "2019-09-01",
+        "home_team": "Twente",
+        "away_team": "Utrecht",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-01-waalwijk-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-09-01",
+        "home_team": "Waalwijk",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-14-ajax-heerenveen",
+        "season": "2019/20",
+        "match_date": "2019-09-14",
+        "home_team": "Ajax",
+        "away_team": "Heerenveen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-14-azalkmaar-spartarotterdam",
+        "season": "2019/20",
+        "match_date": "2019-09-14",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-14-psveindhoven-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-09-14",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Vitesse",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-15-feyenoord-denhaag",
+        "season": "2019/20",
+        "match_date": "2019-09-15",
+        "home_team": "Feyenoord",
+        "away_team": "Den Haag",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-15-heracles-willemii",
+        "season": "2019/20",
+        "match_date": "2019-09-15",
+        "home_team": "Heracles",
+        "away_team": "Willem II",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-21-groningen-zwolle",
+        "season": "2019/20",
+        "match_date": "2019-09-21",
+        "home_team": "Groningen",
+        "away_team": "Zwolle",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-21-willemii-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2019-09-21",
+        "home_team": "Willem II",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-22-fcemmen-feyenoord",
+        "season": "2019/20",
+        "match_date": "2019-09-22",
+        "home_team": "FC Emmen",
+        "away_team": "Feyenoord",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-25-ajax-forsittard",
+        "season": "2019/20",
+        "match_date": "2019-09-25",
+        "home_team": "Ajax",
+        "away_team": "For Sittard",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-25-psveindhoven-groningen",
+        "season": "2019/20",
+        "match_date": "2019-09-25",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Groningen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-27-fcemmen-denhaag",
+        "season": "2019/20",
+        "match_date": "2019-09-27",
+        "home_team": "FC Emmen",
+        "away_team": "Den Haag",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-29-azalkmaar-heracles",
+        "season": "2019/20",
+        "match_date": "2019-09-29",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Heracles",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-29-waalwijk-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-09-29",
+        "home_team": "Waalwijk",
+        "away_team": "Vitesse",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-09-29-zwolle-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-09-29",
+        "home_team": "Zwolle",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-05-spartarotterdam-twente",
+        "season": "2019/20",
+        "match_date": "2019-10-05",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "Twente",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-06-forsittard-feyenoord",
+        "season": "2019/20",
+        "match_date": "2019-10-06",
+        "home_team": "For Sittard",
+        "away_team": "Feyenoord",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-06-psveindhoven-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2019-10-06",
+        "home_team": "PSV Eindhoven",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-19-azalkmaar-heerenveen",
+        "season": "2019/20",
+        "match_date": "2019-10-19",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Heerenveen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-19-waalwijk-ajax",
+        "season": "2019/20",
+        "match_date": "2019-10-19",
+        "home_team": "Waalwijk",
+        "away_team": "Ajax",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-26-forsittard-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2019-10-26",
+        "home_team": "For Sittard",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-26-vitesse-denhaag",
+        "season": "2019/20",
+        "match_date": "2019-10-26",
+        "home_team": "Vitesse",
+        "away_team": "Den Haag",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-26-willemii-waalwijk",
+        "season": "2019/20",
+        "match_date": "2019-10-26",
+        "home_team": "Willem II",
+        "away_team": "Waalwijk",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-27-ajax-feyenoord",
+        "season": "2019/20",
+        "match_date": "2019-10-27",
+        "home_team": "Ajax",
+        "away_team": "Feyenoord",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-10-27-psveindhoven-azalkmaar",
+        "season": "2019/20",
+        "match_date": "2019-10-27",
+        "home_team": "PSV Eindhoven",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-02-spartarotterdam-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-11-02",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-03-fcemmen-vitesse",
+        "season": "2019/20",
+        "match_date": "2019-11-03",
+        "home_team": "FC Emmen",
+        "away_team": "Vitesse",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-08-vitesse-groningen",
+        "season": "2019/20",
+        "match_date": "2019-11-08",
+        "home_team": "Vitesse",
+        "away_team": "Groningen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-09-heerenveen-spartarotterdam",
+        "season": "2019/20",
+        "match_date": "2019-11-09",
+        "home_team": "Heerenveen",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-09-heracles-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2019-11-09",
+        "home_team": "Heracles",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-10-azalkmaar-fcemmen",
+        "season": "2019/20",
+        "match_date": "2019-11-10",
+        "home_team": "AZ Alkmaar",
+        "away_team": "FC Emmen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-10-feyenoord-waalwijk",
+        "season": "2019/20",
+        "match_date": "2019-11-10",
+        "home_team": "Feyenoord",
+        "away_team": "Waalwijk",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-10-twente-zwolle",
+        "season": "2019/20",
+        "match_date": "2019-11-10",
+        "home_team": "Twente",
+        "away_team": "Zwolle",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-23-ajax-heracles",
+        "season": "2019/20",
+        "match_date": "2019-11-23",
+        "home_team": "Ajax",
+        "away_team": "Heracles",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-11-23-zwolle-forsittard",
+        "season": "2019/20",
+        "match_date": "2019-11-23",
+        "home_team": "Zwolle",
+        "away_team": "For Sittard",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-01-fcemmen-psveindhoven",
+        "season": "2019/20",
+        "match_date": "2019-12-01",
+        "home_team": "FC Emmen",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-01-twente-ajax",
+        "season": "2019/20",
+        "match_date": "2019-12-01",
+        "home_team": "Twente",
+        "away_team": "Ajax",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-06-ajax-willemii",
+        "season": "2019/20",
+        "match_date": "2019-12-06",
+        "home_team": "Ajax",
+        "away_team": "Willem II",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-13-heerenveen-willemii",
+        "season": "2019/20",
+        "match_date": "2019-12-13",
+        "home_team": "Heerenveen",
+        "away_team": "Willem II",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-14-forsittard-waalwijk",
+        "season": "2019/20",
+        "match_date": "2019-12-14",
+        "home_team": "For Sittard",
+        "away_team": "Waalwijk",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2019-12-21-heerenveen-heracles",
+        "season": "2019/20",
+        "match_date": "2019-12-21",
+        "home_team": "Heerenveen",
+        "away_team": "Heracles",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-01-18-azalkmaar-willemii",
+        "season": "2019/20",
+        "match_date": "2020-01-18",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Willem II",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-01-18-feyenoord-heerenveen",
+        "season": "2019/20",
+        "match_date": "2020-01-18",
+        "home_team": "Feyenoord",
+        "away_team": "Heerenveen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-01-26-psveindhoven-twente",
+        "season": "2019/20",
+        "match_date": "2020-01-26",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Twente",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-02-vvvvenlo-utrecht",
+        "season": "2019/20",
+        "match_date": "2020-02-02",
+        "home_team": "VVV Venlo",
+        "away_team": "Utrecht",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-11-fcemmen-twente",
+        "season": "2019/20",
+        "match_date": "2020-02-11",
+        "home_team": "FC Emmen",
+        "away_team": "Twente",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-15-twente-azalkmaar",
+        "season": "2019/20",
+        "match_date": "2020-02-15",
+        "home_team": "Twente",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-22-feyenoord-forsittard",
+        "season": "2019/20",
+        "match_date": "2020-02-22",
+        "home_team": "Feyenoord",
+        "away_team": "For Sittard",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-02-22-heerenveen-denhaag",
+        "season": "2019/20",
+        "match_date": "2020-02-22",
+        "home_team": "Heerenveen",
+        "away_team": "Den Haag",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-03-01-spartarotterdam-fcemmen",
+        "season": "2019/20",
+        "match_date": "2020-03-01",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "FC Emmen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-03-01-waalwijk-utrecht",
+        "season": "2019/20",
+        "match_date": "2020-03-01",
+        "home_team": "Waalwijk",
+        "away_team": "Utrecht",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2019-20-2020-03-07-fcemmen-vvvvenlo",
+        "season": "2019/20",
+        "match_date": "2020-03-07",
+        "home_team": "FC Emmen",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-13-fcemmen-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2020-09-13",
+        "home_team": "FC Emmen",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-13-spartarotterdam-ajax",
+        "season": "2020/21",
+        "match_date": "2020-09-13",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "Ajax",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-18-vvvvenlo-utrecht",
+        "season": "2020/21",
+        "match_date": "2020-09-18",
+        "home_team": "VVV Venlo",
+        "away_team": "Utrecht",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-19-psveindhoven-fcemmen",
+        "season": "2020/21",
+        "match_date": "2020-09-19",
+        "home_team": "PSV Eindhoven",
+        "away_team": "FC Emmen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-19-vitesse-spartarotterdam",
+        "season": "2020/21",
+        "match_date": "2020-09-19",
+        "home_team": "Vitesse",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-20-feyenoord-twente",
+        "season": "2020/21",
+        "match_date": "2020-09-20",
+        "home_team": "Feyenoord",
+        "away_team": "Twente",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-20-willemii-heracles",
+        "season": "2020/21",
+        "match_date": "2020-09-20",
+        "home_team": "Willem II",
+        "away_team": "Heracles",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-26-forsittard-azalkmaar",
+        "season": "2020/21",
+        "match_date": "2020-09-26",
+        "home_team": "For Sittard",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-26-heerenveen-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2020-09-26",
+        "home_team": "Heerenveen",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-27-feyenoord-denhaag",
+        "season": "2020/21",
+        "match_date": "2020-09-27",
+        "home_team": "Feyenoord",
+        "away_team": "Den Haag",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-09-27-heracles-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2020-09-27",
+        "home_team": "Heracles",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-04-spartarotterdam-azalkmaar",
+        "season": "2020/21",
+        "match_date": "2020-10-04",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-04-willemii-feyenoord",
+        "season": "2020/21",
+        "match_date": "2020-10-04",
+        "home_team": "Willem II",
+        "away_team": "Feyenoord",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-17-azalkmaar-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2020-10-17",
+        "home_team": "AZ Alkmaar",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-17-willemii-twente",
+        "season": "2020/21",
+        "match_date": "2020-10-17",
+        "home_team": "Willem II",
+        "away_team": "Twente",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-18-ajax-heerenveen",
+        "season": "2020/21",
+        "match_date": "2020-10-18",
+        "home_team": "Ajax",
+        "away_team": "Heerenveen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-18-feyenoord-spartarotterdam",
+        "season": "2020/21",
+        "match_date": "2020-10-18",
+        "home_team": "Feyenoord",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-24-vvvvenlo-ajax",
+        "season": "2020/21",
+        "match_date": "2020-10-24",
+        "home_team": "VVV Venlo",
+        "away_team": "Ajax",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-25-waalwijk-feyenoord",
+        "season": "2020/21",
+        "match_date": "2020-10-25",
+        "home_team": "Waalwijk",
+        "away_team": "Feyenoord",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-31-ajax-forsittard",
+        "season": "2020/21",
+        "match_date": "2020-10-31",
+        "home_team": "Ajax",
+        "away_team": "For Sittard",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-10-31-twente-zwolle",
+        "season": "2020/21",
+        "match_date": "2020-10-31",
+        "home_team": "Twente",
+        "away_team": "Zwolle",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-01-fcemmen-feyenoord",
+        "season": "2020/21",
+        "match_date": "2020-11-01",
+        "home_team": "FC Emmen",
+        "away_team": "Feyenoord",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-07-denhaag-twente",
+        "season": "2020/21",
+        "match_date": "2020-11-07",
+        "home_team": "Den Haag",
+        "away_team": "Twente",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-08-vitesse-fcemmen",
+        "season": "2020/21",
+        "match_date": "2020-11-08",
+        "home_team": "Vitesse",
+        "away_team": "FC Emmen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-21-willemii-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2020-11-21",
+        "home_team": "Willem II",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-22-ajax-heracles",
+        "season": "2020/21",
+        "match_date": "2020-11-22",
+        "home_team": "Ajax",
+        "away_team": "Heracles",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-22-azalkmaar-fcemmen",
+        "season": "2020/21",
+        "match_date": "2020-11-22",
+        "home_team": "AZ Alkmaar",
+        "away_team": "FC Emmen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-27-twente-waalwijk",
+        "season": "2020/21",
+        "match_date": "2020-11-27",
+        "home_team": "Twente",
+        "away_team": "Waalwijk",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-29-feyenoord-utrecht",
+        "season": "2020/21",
+        "match_date": "2020-11-29",
+        "home_team": "Feyenoord",
+        "away_team": "Utrecht",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-29-heracles-azalkmaar",
+        "season": "2020/21",
+        "match_date": "2020-11-29",
+        "home_team": "Heracles",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-11-29-psveindhoven-spartarotterdam",
+        "season": "2020/21",
+        "match_date": "2020-11-29",
+        "home_team": "PSV Eindhoven",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-04-spartarotterdam-fcemmen",
+        "season": "2020/21",
+        "match_date": "2020-12-04",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "FC Emmen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-06-azalkmaar-groningen",
+        "season": "2020/21",
+        "match_date": "2020-12-06",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Groningen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-06-feyenoord-heracles",
+        "season": "2020/21",
+        "match_date": "2020-12-06",
+        "home_team": "Feyenoord",
+        "away_team": "Heracles",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-06-heerenveen-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2020-12-06",
+        "home_team": "Heerenveen",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-06-utrecht-denhaag",
+        "season": "2020/21",
+        "match_date": "2020-12-06",
+        "home_team": "Utrecht",
+        "away_team": "Den Haag",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-11-heracles-forsittard",
+        "season": "2020/21",
+        "match_date": "2020-12-11",
+        "home_team": "Heracles",
+        "away_team": "For Sittard",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-12-fcemmen-denhaag",
+        "season": "2020/21",
+        "match_date": "2020-12-12",
+        "home_team": "FC Emmen",
+        "away_team": "Den Haag",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-19-waalwijk-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2020-12-19",
+        "home_team": "Waalwijk",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-20-azalkmaar-willemii",
+        "season": "2020/21",
+        "match_date": "2020-12-20",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Willem II",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-20-heerenveen-heracles",
+        "season": "2020/21",
+        "match_date": "2020-12-20",
+        "home_team": "Heerenveen",
+        "away_team": "Heracles",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-22-fcemmen-utrecht",
+        "season": "2020/21",
+        "match_date": "2020-12-22",
+        "home_team": "FC Emmen",
+        "away_team": "Utrecht",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-22-forsittard-waalwijk",
+        "season": "2020/21",
+        "match_date": "2020-12-22",
+        "home_team": "For Sittard",
+        "away_team": "Waalwijk",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-22-psveindhoven-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2020-12-22",
+        "home_team": "PSV Eindhoven",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-23-azalkmaar-vitesse",
+        "season": "2020/21",
+        "match_date": "2020-12-23",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Vitesse",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-23-denhaag-zwolle",
+        "season": "2020/21",
+        "match_date": "2020-12-23",
+        "home_team": "Den Haag",
+        "away_team": "Zwolle",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2020-12-23-willemii-ajax",
+        "season": "2020/21",
+        "match_date": "2020-12-23",
+        "home_team": "Willem II",
+        "away_team": "Ajax",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-09-waalwijk-denhaag",
+        "season": "2020/21",
+        "match_date": "2021-01-09",
+        "home_team": "Waalwijk",
+        "away_team": "Den Haag",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-10-ajax-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2021-01-10",
+        "home_team": "Ajax",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-14-twente-ajax",
+        "season": "2020/21",
+        "match_date": "2021-01-14",
+        "home_team": "Twente",
+        "away_team": "Ajax",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-16-azalkmaar-denhaag",
+        "season": "2020/21",
+        "match_date": "2021-01-16",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Den Haag",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-16-spartarotterdam-psveindhoven",
+        "season": "2020/21",
+        "match_date": "2021-01-16",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "PSV Eindhoven",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-27-vvvvenlo-vitesse",
+        "season": "2020/21",
+        "match_date": "2021-01-27",
+        "home_team": "VVV Venlo",
+        "away_team": "Vitesse",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-30-forsittard-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2021-01-30",
+        "home_team": "For Sittard",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-30-vitesse-waalwijk",
+        "season": "2020/21",
+        "match_date": "2021-01-30",
+        "home_team": "Vitesse",
+        "away_team": "Waalwijk",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-01-31-azalkmaar-ajax",
+        "season": "2020/21",
+        "match_date": "2021-01-31",
+        "home_team": "AZ Alkmaar",
+        "away_team": "Ajax",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-13-spartarotterdam-forsittard",
+        "season": "2020/21",
+        "match_date": "2021-02-13",
+        "home_team": "Sparta Rotterdam",
+        "away_team": "For Sittard",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-14-feyenoord-willemii",
+        "season": "2020/21",
+        "match_date": "2021-02-14",
+        "home_team": "Feyenoord",
+        "away_team": "Willem II",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-20-forsittard-denhaag",
+        "season": "2020/21",
+        "match_date": "2021-02-20",
+        "home_team": "For Sittard",
+        "away_team": "Den Haag",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-21-ajax-spartarotterdam",
+        "season": "2020/21",
+        "match_date": "2021-02-21",
+        "home_team": "Ajax",
+        "away_team": "Sparta Rotterdam",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-02-24-willemii-denhaag",
+        "season": "2020/21",
+        "match_date": "2021-02-24",
+        "home_team": "Willem II",
+        "away_team": "Den Haag",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-03-06-waalwijk-utrecht",
+        "season": "2020/21",
+        "match_date": "2021-03-06",
+        "home_team": "Waalwijk",
+        "away_team": "Utrecht",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-03-07-ajax-groningen",
+        "season": "2020/21",
+        "match_date": "2021-03-07",
+        "home_team": "Ajax",
+        "away_team": "Groningen",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-03-07-heracles-zwolle",
+        "season": "2020/21",
+        "match_date": "2021-03-07",
+        "home_team": "Heracles",
+        "away_team": "Zwolle",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-04-04-fcemmen-waalwijk",
+        "season": "2020/21",
+        "match_date": "2021-04-04",
+        "home_team": "FC Emmen",
+        "away_team": "Waalwijk",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-04-11-waalwijk-ajax",
+        "season": "2020/21",
+        "match_date": "2021-04-11",
+        "home_team": "Waalwijk",
+        "away_team": "Ajax",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-04-22-ajax-utrecht",
+        "season": "2020/21",
+        "match_date": "2021-04-22",
+        "home_team": "Ajax",
+        "away_team": "Utrecht",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-01-waalwijk-azalkmaar",
+        "season": "2020/21",
+        "match_date": "2021-05-01",
+        "home_team": "Waalwijk",
+        "away_team": "AZ Alkmaar",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      },
+      {
+        "fixture_key": "eredivisie-2020-21-2021-05-13-ajax-vvvvenlo",
+        "season": "2020/21",
+        "match_date": "2021-05-13",
+        "home_team": "Ajax",
+        "away_team": "VVV Venlo",
+        "bookmaker": "william_hill",
+        "timezone": "Europe/Amsterdam"
+      }
+    ],
+    "constraints": {
+      "competition_key": "eredivisie",
+      "seasons": [
+        "2018/19",
+        "2019/20",
+        "2020/21"
+      ],
+      "expected_bookmaker_fixture_pairs": 465,
+      "market": "1X2",
+      "required_phase": "true_opening only when explicitly evidenced; otherwise preserve observed phase and mark unavailable",
+      "required_provenance": [
+        "source_url",
+        "final_url",
+        "retrieved_at",
+        "http_status",
+        "field_locator",
+        "field_semantics",
+        "source_sha256",
+        "recorded_at"
+      ],
+      "forbidden_output_fields": [
+        "result_90m",
+        "home_goals_90",
+        "away_goals_90",
+        "BTTS",
+        "Qimen",
+        "Q",
+        "F",
+        "G",
+        "I",
+        "M",
+        "palace",
+        "candidate_structure",
+        "probability",
+        "Outcome",
+        "Review",
+        "Gold"
+      ],
+      "incremental_only": true,
+      "preserve_nulls": true,
+      "conflicts_not_auto_resolved": true,
+      "formal_model_unchanged": true,
+      "promotion_allowed": false,
+      "dp_used": false
+    }
+  },
+  "output_contract": {
+    "format": "row_level_jsonl_odds_evidence_plus_audit_and_unresolved_queue",
+    "status_policy": "processing_then_ok_or_error; unverifiable values remain unavailable",
+    "dp_used": false,
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
