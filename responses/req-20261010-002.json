@@ -1,1 +1,10 @@
-{"dispatch_id": "exec:proc_ade1d5d3ccb5", "dp_reason": "未调用 DeepSeek：FD 批量下载+覆盖探测为确定性脚本任务", "dp_used": false, "from": "muse", "id": "req-20261010-002", "note": "2026-10-10 15:05 CST FD批量探测完成：P1 2122/2223/2324/2425 四季CSV全部有效（各306行，BOM头已处理）。B365列填充305-306、Pinnacle(PS)305-306、WilliamHill(BW)187-306（2425季BW仅187行有值）。结论：FD列可作 earliest_verified_pre_match 与 closing 证据（快照语义，不冒充opening）；下一步逐行匹配2848个fixture_scope（队名如 Sp Lisbon/Benfica 需映射），填充缺口字段，BW缺行记 source_missing。探测报告 work-req-20261010-002/fd_batch/fd_coverage_report.json。", "request_sha": "97c934bcd56f9871", "status": "processing"}
+{
+ "dispatch_id": "subagent:fd-fill-002-done",
+ "dp_reason": "未调用 DeepSeek：FD 批量下载+覆盖探测为确定性脚本任务",
+ "dp_used": false,
+ "from": "muse",
+ "id": "req-20261010-002",
+ "note": "2026-10-10 15:05 CST FD批量探测完成：P1 2122/2223/2324/2425 四季CSV全部有效（各306行，BOM头已处理）。B365列填充305-306、Pinnacle(PS)305-306、WilliamHill(BW)187-306（2425季BW仅187行有值）。结论：FD列可作 earliest_verified_pre_match 与 closing 证据（快照语义，不冒充opening）；下一步逐行匹配2848个fixture_scope（队名如 Sp Lisbon/Benfica 需映射），填充缺口字段，BW缺行记 source_missing。探测报告 work-req-20261010-002/fd_batch/fd_coverage_report.json。【2026-10-10 14:48 CST FD填充完成】fd_fill.jsonl 已落盘（2849行=1映射头+2848填充记录，3.7MB，脚本fd_fill.py可复跑）：2848/2848组合精确匹配；2722全填、6部分、120全缺（全部source_missing，未编造）；字段级16350/17088。缺失集中在2425季william_hill（684字段/114组合，FD该季仅187/306行有BW列）。语义诚实：FD快照列→snapshot_pre_match、终盘列→closing，绝不冒充true_opening。9个FD CSV已补到本请求fd_batch目录。",
+ "request_sha": "97c934bcd56f9871",
+ "status": "processing"
+}

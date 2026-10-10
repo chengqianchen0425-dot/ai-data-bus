@@ -1,1 +1,10 @@
-{"dispatch_id": "exec:proc_ade1d5d3ccb5", "dp_reason": "未调用 DeepSeek：FD 批量下载+覆盖探测为确定性脚本任务", "dp_used": false, "from": "muse", "id": "req-20261010-004", "note": "2026-10-10 15:05 CST FD批量探测完成：D1 2425(306行，PS全满306，BW仅189行有值)/2526(306行，B365/BW全满，PS仅150行有值)两季CSV有效。关键发现：FD自身即有缺口——2425季WH缺117行、2526季Pinnacle缺156行，因此389个缺口单元只能部分从FD填closing_fallback；FD无值单元记 source_missing（上游FD无此数据），opening语义缺口转真浏览器。下一步逐单元匹配295场fixture（missing_bookmakers字段），先填FD可填部分。探测报告 work-req-20261010-004/fd_batch/fd_coverage_report.json。", "request_sha": "178738576d1109c9", "status": "processing"}
+{
+ "dispatch_id": "subagent:fd-fill-004-done",
+ "dp_reason": "未调用 DeepSeek：FD 批量下载+覆盖探测为确定性脚本任务",
+ "dp_used": false,
+ "from": "muse",
+ "id": "req-20261010-004",
+ "note": "2026-10-10 15:05 CST FD批量探测完成：D1 2425(306行，PS全满306，BW仅189行有值)/2526(306行，B365/BW全满，PS仅150行有值)两季CSV有效。关键发现：FD自身即有缺口——2425季WH缺117行、2526季Pinnacle缺156行，因此389个缺口单元只能部分从FD填closing_fallback；FD无值单元记 source_missing（上游FD无此数据），opening语义缺口转真浏览器。下一步逐单元匹配295场fixture（missing_bookmakers字段），先填FD可填部分。探测报告 work-req-20261010-004/fd_batch/fd_coverage_report.json。【2026-10-10 14:49 CST FD填充完成】结论干净：389单元FD能填0个，全部记source_missing（这批缺口与FD自身缺口完全重合，属诚实确认非失败）。295场fixture在FD中全部精确匹配，零错位。gap清单browser_gap_list.json已就绪（389条：WH×2425=70、WH×2526=225、Pinnacle×2526=94；225条系FD 2526季整季无WH列）。下一步：浏览器补抓——待BetExplorer路线验证通过后按gap清单分片派发（OddsPortal已验证地域死路，SoccerPunter待用户定夺验证码）。",
+ "request_sha": "178738576d1109c9",
+ "status": "processing"
+}
