@@ -1,0 +1,3106 @@
+{
+  "id": "req-20261010-004",
+  "type": "deep_research",
+  "params": {
+    "topic": "德甲 2024/25-2025/26 尚缺 389 个 Pinnacle/William Hill 1X2 fixture-bookmaker 单元的赔率证据增量补充",
+    "questions": [
+      "仅处理 fixtures 清单中标记 missing_bookmakers 的 bookmaker×fixture 组合；不得重抓已有审计通过或本地已 resolved 的单元。目标是 389 个缺口单元，覆盖 295 场；按 fixture_key 精确匹配日期、主客队和赛季。",
+      "对指定 bookmaker 收集 1X2 主/平/客原始赔率，并尽可能保留来源明确标注的 opening 与 closing。若阶段没有独立记录时间戳，只能使用 provider_labelled_opening_closing，不得声称严格 O_INTERVAL；仅有 closing 时单独标 closing_fallback；没有可靠数值则 NULL 并标 unavailable/blocked。",
+      "每个观察值保留 source_url、final_url、retrieved_at、HTTP 状态、field_locator、response SHA-256、fixture identity、bookmaker、market、phase label、原始字段和字段语义。不要将来源/博彩公司混并；来源值冲突并列保留，不自动择值。",
+      "仅返回逐场赔率原始事实及来源审计：expected/discovered/complete/partial/unavailable/blocked/conflict，逐赛季覆盖、缺失、冲突，以及带 uq_class 的 unresolved_queue（permanent_rule/source_missing/access_blocked/pending_work）。不要提供赛果、BTTS、Qimen/宫位、结构判断、概率、Outcome、Review、Gold 或 SQLite 写入。"
+    ],
+    "source_hints": [
+      "优先使用明确展示指定博彩公司历史 1X2 赔率及阶段语义的可核验来源；来源可访问性不足时保留 unresolved，不猜测。",
+      "Football-Data.co.uk 现有 pre-closing/closing 列不是 true opening，且本任务只补指定 bookmaker 的缺失单元；不把其他博彩公司或聚合赔率代替 Pinnacle/William Hill。"
+    ],
+    "constraints": {
+      "competition_key": "bundesliga",
+      "seasons": [
+        "2024-25",
+        "2025-26"
+      ],
+      "fixture_count": 295,
+      "odds_gap_cell_count": 389,
+      "bookmakers": [
+        "Pinnacle",
+        "William Hill"
+      ],
+      "market": "1X2",
+      "required_phases": [
+        "true_opening_if_explicit",
+        "provider_labelled_opening_closing",
+        "closing_fallback",
+        "unavailable"
+      ],
+      "fixture_identity_fields": [
+        "fixture_key",
+        "season",
+        "match_date",
+        "home_team",
+        "away_team"
+      ],
+      "required_provenance": [
+        "source_url",
+        "final_url",
+        "retrieved_at",
+        "http_status",
+        "field_locator",
+        "response_sha256",
+        "field_semantics",
+        "phase_label"
+      ],
+      "incremental_only": true,
+      "preserve_nulls": true,
+      "conflicts_not_auto_resolved": true,
+      "no_result_or_qimen_fields": true,
+      "promotion_allowed": false
+    },
+    "fixtures": [
+      {
+        "fixture_key": "football-fixture-2025-03-28-e0-leverkusen-bochum",
+        "season": "2024-25",
+        "match_date": "2025-03-28",
+        "home_team": "Leverkusen",
+        "away_team": "Bochum",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-03-29-e0-bayern-munich-st-pauli",
+        "season": "2024-25",
+        "match_date": "2025-03-29",
+        "home_team": "Bayern Munich",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-03-29-e0-ein-frankfurt-stuttgart",
+        "season": "2024-25",
+        "match_date": "2025-03-29",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-03-29-e0-hoffenheim-augsburg",
+        "season": "2024-25",
+        "match_date": "2025-03-29",
+        "home_team": "Hoffenheim",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-03-29-e0-holstein-kiel-werder-bremen",
+        "season": "2024-25",
+        "match_date": "2025-03-29",
+        "home_team": "Holstein Kiel",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-03-29-e0-m-gladbach-rb-leipzig",
+        "season": "2024-25",
+        "match_date": "2025-03-29",
+        "home_team": "M'gladbach",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-03-29-e0-wolfsburg-heidenheim",
+        "season": "2024-25",
+        "match_date": "2025-03-29",
+        "home_team": "Wolfsburg",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-03-30-e0-dortmund-mainz",
+        "season": "2024-25",
+        "match_date": "2025-03-30",
+        "home_team": "Dortmund",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-03-30-e0-freiburg-union-berlin",
+        "season": "2024-25",
+        "match_date": "2025-03-30",
+        "home_team": "Freiburg",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-04-e0-augsburg-bayern-munich",
+        "season": "2024-25",
+        "match_date": "2025-04-04",
+        "home_team": "Augsburg",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-05-e0-bochum-stuttgart",
+        "season": "2024-25",
+        "match_date": "2025-04-05",
+        "home_team": "Bochum",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-05-e0-freiburg-dortmund",
+        "season": "2024-25",
+        "match_date": "2025-04-05",
+        "home_team": "Freiburg",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-05-e0-heidenheim-leverkusen",
+        "season": "2024-25",
+        "match_date": "2025-04-05",
+        "home_team": "Heidenheim",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-05-e0-rb-leipzig-hoffenheim",
+        "season": "2024-25",
+        "match_date": "2025-04-05",
+        "home_team": "RB Leipzig",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-05-e0-werder-bremen-ein-frankfurt",
+        "season": "2024-25",
+        "match_date": "2025-04-05",
+        "home_team": "Werder Bremen",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-06-e0-st-pauli-m-gladbach",
+        "season": "2024-25",
+        "match_date": "2025-04-06",
+        "home_team": "St Pauli",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-06-e0-union-berlin-wolfsburg",
+        "season": "2024-25",
+        "match_date": "2025-04-06",
+        "home_team": "Union Berlin",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-11-e0-wolfsburg-rb-leipzig",
+        "season": "2024-25",
+        "match_date": "2025-04-11",
+        "home_team": "Wolfsburg",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-12-e0-bayern-munich-dortmund",
+        "season": "2024-25",
+        "match_date": "2025-04-12",
+        "home_team": "Bayern Munich",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-12-e0-bochum-augsburg",
+        "season": "2024-25",
+        "match_date": "2025-04-12",
+        "home_team": "Bochum",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-12-e0-hoffenheim-mainz",
+        "season": "2024-25",
+        "match_date": "2025-04-12",
+        "home_team": "Hoffenheim",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-12-e0-holstein-kiel-st-pauli",
+        "season": "2024-25",
+        "match_date": "2025-04-12",
+        "home_team": "Holstein Kiel",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-12-e0-leverkusen-union-berlin",
+        "season": "2024-25",
+        "match_date": "2025-04-12",
+        "home_team": "Leverkusen",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-12-e0-m-gladbach-freiburg",
+        "season": "2024-25",
+        "match_date": "2025-04-12",
+        "home_team": "M'gladbach",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-13-e0-ein-frankfurt-heidenheim",
+        "season": "2024-25",
+        "match_date": "2025-04-13",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-13-e0-stuttgart-werder-bremen",
+        "season": "2024-25",
+        "match_date": "2025-04-13",
+        "home_team": "Stuttgart",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-19-e0-freiburg-hoffenheim",
+        "season": "2024-25",
+        "match_date": "2025-04-19",
+        "home_team": "Freiburg",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-19-e0-heidenheim-bayern-munich",
+        "season": "2024-25",
+        "match_date": "2025-04-19",
+        "home_team": "Heidenheim",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-19-e0-mainz-wolfsburg",
+        "season": "2024-25",
+        "match_date": "2025-04-19",
+        "home_team": "Mainz",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-19-e0-rb-leipzig-holstein-kiel",
+        "season": "2024-25",
+        "match_date": "2025-04-19",
+        "home_team": "RB Leipzig",
+        "away_team": "Holstein Kiel",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-19-e0-union-berlin-stuttgart",
+        "season": "2024-25",
+        "match_date": "2025-04-19",
+        "home_team": "Union Berlin",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-19-e0-werder-bremen-bochum",
+        "season": "2024-25",
+        "match_date": "2025-04-19",
+        "home_team": "Werder Bremen",
+        "away_team": "Bochum",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-20-e0-augsburg-ein-frankfurt",
+        "season": "2024-25",
+        "match_date": "2025-04-20",
+        "home_team": "Augsburg",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-20-e0-dortmund-m-gladbach",
+        "season": "2024-25",
+        "match_date": "2025-04-20",
+        "home_team": "Dortmund",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-20-e0-st-pauli-leverkusen",
+        "season": "2024-25",
+        "match_date": "2025-04-20",
+        "home_team": "St Pauli",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-25-e0-stuttgart-heidenheim",
+        "season": "2024-25",
+        "match_date": "2025-04-25",
+        "home_team": "Stuttgart",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-26-e0-bayern-munich-mainz",
+        "season": "2024-25",
+        "match_date": "2025-04-26",
+        "home_team": "Bayern Munich",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-26-e0-ein-frankfurt-rb-leipzig",
+        "season": "2024-25",
+        "match_date": "2025-04-26",
+        "home_team": "Ein Frankfurt",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-26-e0-hoffenheim-dortmund",
+        "season": "2024-25",
+        "match_date": "2025-04-26",
+        "home_team": "Hoffenheim",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-26-e0-holstein-kiel-m-gladbach",
+        "season": "2024-25",
+        "match_date": "2025-04-26",
+        "home_team": "Holstein Kiel",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-26-e0-leverkusen-augsburg",
+        "season": "2024-25",
+        "match_date": "2025-04-26",
+        "home_team": "Leverkusen",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-26-e0-wolfsburg-freiburg",
+        "season": "2024-25",
+        "match_date": "2025-04-26",
+        "home_team": "Wolfsburg",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-27-e0-bochum-union-berlin",
+        "season": "2024-25",
+        "match_date": "2025-04-27",
+        "home_team": "Bochum",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-04-27-e0-werder-bremen-st-pauli",
+        "season": "2024-25",
+        "match_date": "2025-04-27",
+        "home_team": "Werder Bremen",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-02-e0-heidenheim-bochum",
+        "season": "2024-25",
+        "match_date": "2025-05-02",
+        "home_team": "Heidenheim",
+        "away_team": "Bochum",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-03-e0-dortmund-wolfsburg",
+        "season": "2024-25",
+        "match_date": "2025-05-03",
+        "home_team": "Dortmund",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-03-e0-m-gladbach-hoffenheim",
+        "season": "2024-25",
+        "match_date": "2025-05-03",
+        "home_team": "M'gladbach",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-03-e0-rb-leipzig-bayern-munich",
+        "season": "2024-25",
+        "match_date": "2025-05-03",
+        "home_team": "RB Leipzig",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-03-e0-st-pauli-stuttgart",
+        "season": "2024-25",
+        "match_date": "2025-05-03",
+        "home_team": "St Pauli",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-03-e0-union-berlin-werder-bremen",
+        "season": "2024-25",
+        "match_date": "2025-05-03",
+        "home_team": "Union Berlin",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-04-e0-augsburg-holstein-kiel",
+        "season": "2024-25",
+        "match_date": "2025-05-04",
+        "home_team": "Augsburg",
+        "away_team": "Holstein Kiel",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-04-e0-freiburg-leverkusen",
+        "season": "2024-25",
+        "match_date": "2025-05-04",
+        "home_team": "Freiburg",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-04-e0-mainz-ein-frankfurt",
+        "season": "2024-25",
+        "match_date": "2025-05-04",
+        "home_team": "Mainz",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-09-e0-wolfsburg-hoffenheim",
+        "season": "2024-25",
+        "match_date": "2025-05-09",
+        "home_team": "Wolfsburg",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-10-e0-bochum-mainz",
+        "season": "2024-25",
+        "match_date": "2025-05-10",
+        "home_team": "Bochum",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-10-e0-holstein-kiel-freiburg",
+        "season": "2024-25",
+        "match_date": "2025-05-10",
+        "home_team": "Holstein Kiel",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-10-e0-union-berlin-heidenheim",
+        "season": "2024-25",
+        "match_date": "2025-05-10",
+        "home_team": "Union Berlin",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-10-e0-werder-bremen-rb-leipzig",
+        "season": "2024-25",
+        "match_date": "2025-05-10",
+        "home_team": "Werder Bremen",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-11-e0-ein-frankfurt-st-pauli",
+        "season": "2024-25",
+        "match_date": "2025-05-11",
+        "home_team": "Ein Frankfurt",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-11-e0-leverkusen-dortmund",
+        "season": "2024-25",
+        "match_date": "2025-05-11",
+        "home_team": "Leverkusen",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-11-e0-stuttgart-augsburg",
+        "season": "2024-25",
+        "match_date": "2025-05-11",
+        "home_team": "Stuttgart",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-17-e0-augsburg-union-berlin",
+        "season": "2024-25",
+        "match_date": "2025-05-17",
+        "home_team": "Augsburg",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-17-e0-dortmund-holstein-kiel",
+        "season": "2024-25",
+        "match_date": "2025-05-17",
+        "home_team": "Dortmund",
+        "away_team": "Holstein Kiel",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-17-e0-freiburg-ein-frankfurt",
+        "season": "2024-25",
+        "match_date": "2025-05-17",
+        "home_team": "Freiburg",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-17-e0-heidenheim-werder-bremen",
+        "season": "2024-25",
+        "match_date": "2025-05-17",
+        "home_team": "Heidenheim",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-17-e0-hoffenheim-bayern-munich",
+        "season": "2024-25",
+        "match_date": "2025-05-17",
+        "home_team": "Hoffenheim",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-17-e0-m-gladbach-wolfsburg",
+        "season": "2024-25",
+        "match_date": "2025-05-17",
+        "home_team": "M'gladbach",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-17-e0-mainz-leverkusen",
+        "season": "2024-25",
+        "match_date": "2025-05-17",
+        "home_team": "Mainz",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-17-e0-rb-leipzig-stuttgart",
+        "season": "2024-25",
+        "match_date": "2025-05-17",
+        "home_team": "RB Leipzig",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-05-17-e0-st-pauli-bochum",
+        "season": "2024-25",
+        "match_date": "2025-05-17",
+        "home_team": "St Pauli",
+        "away_team": "Bochum",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-22-e0-bayern-munich-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2025-08-22",
+        "home_team": "Bayern Munich",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-23-bundesliga-freiburg-augsburg",
+        "season": "2025-26",
+        "match_date": "2025-08-23",
+        "home_team": "Freiburg",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-23-e0-ein-frankfurt-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2025-08-23",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-23-e0-heidenheim-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2025-08-23",
+        "home_team": "Heidenheim",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-23-e0-leverkusen-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2025-08-23",
+        "home_team": "Leverkusen",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-23-e0-st-pauli-dortmund",
+        "season": "2025-26",
+        "match_date": "2025-08-23",
+        "home_team": "St Pauli",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-23-e0-union-berlin-stuttgart",
+        "season": "2025-26",
+        "match_date": "2025-08-23",
+        "home_team": "Union Berlin",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-24-e0-m-gladbach-hamburg",
+        "season": "2025-26",
+        "match_date": "2025-08-24",
+        "home_team": "M'gladbach",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-24-e0-mainz-fc-koln",
+        "season": "2025-26",
+        "match_date": "2025-08-24",
+        "home_team": "Mainz",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-30-e0-augsburg-bayern-munich",
+        "season": "2025-26",
+        "match_date": "2025-08-30",
+        "home_team": "Augsburg",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-30-e0-hoffenheim-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2025-08-30",
+        "home_team": "Hoffenheim",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-30-e0-rb-leipzig-heidenheim",
+        "season": "2025-26",
+        "match_date": "2025-08-30",
+        "home_team": "RB Leipzig",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-30-e0-stuttgart-m-gladbach",
+        "season": "2025-26",
+        "match_date": "2025-08-30",
+        "home_team": "Stuttgart",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-30-e0-werder-bremen-leverkusen",
+        "season": "2025-26",
+        "match_date": "2025-08-30",
+        "home_team": "Werder Bremen",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-31-e0-dortmund-union-berlin",
+        "season": "2025-26",
+        "match_date": "2025-08-31",
+        "home_team": "Dortmund",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-31-e0-fc-koln-freiburg",
+        "season": "2025-26",
+        "match_date": "2025-08-31",
+        "home_team": "FC Koln",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-08-31-e0-wolfsburg-mainz",
+        "season": "2025-26",
+        "match_date": "2025-08-31",
+        "home_team": "Wolfsburg",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-12-e0-leverkusen-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2025-09-12",
+        "home_team": "Leverkusen",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-13-e0-bayern-munich-hamburg",
+        "season": "2025-26",
+        "match_date": "2025-09-13",
+        "home_team": "Bayern Munich",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-13-e0-heidenheim-dortmund",
+        "season": "2025-26",
+        "match_date": "2025-09-13",
+        "home_team": "Heidenheim",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-13-e0-mainz-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2025-09-13",
+        "home_team": "Mainz",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-13-e0-union-berlin-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2025-09-13",
+        "home_team": "Union Berlin",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-13-e0-wolfsburg-fc-koln",
+        "season": "2025-26",
+        "match_date": "2025-09-13",
+        "home_team": "Wolfsburg",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-14-e0-m-gladbach-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2025-09-14",
+        "home_team": "M'gladbach",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-14-e0-st-pauli-augsburg",
+        "season": "2025-26",
+        "match_date": "2025-09-14",
+        "home_team": "St Pauli",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-19-e0-stuttgart-st-pauli",
+        "season": "2025-26",
+        "match_date": "2025-09-19",
+        "home_team": "Stuttgart",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-20-bundesliga-augsburg-mainz",
+        "season": "2025-26",
+        "match_date": "2025-09-20",
+        "home_team": "Augsburg",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-20-e0-hamburg-heidenheim",
+        "season": "2025-26",
+        "match_date": "2025-09-20",
+        "home_team": "Hamburg",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-20-e0-hoffenheim-bayern-munich",
+        "season": "2025-26",
+        "match_date": "2025-09-20",
+        "home_team": "Hoffenheim",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-20-e0-rb-leipzig-fc-koln",
+        "season": "2025-26",
+        "match_date": "2025-09-20",
+        "home_team": "RB Leipzig",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-20-e0-werder-bremen-freiburg",
+        "season": "2025-26",
+        "match_date": "2025-09-20",
+        "home_team": "Werder Bremen",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-21-e0-dortmund-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2025-09-21",
+        "home_team": "Dortmund",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-21-e0-ein-frankfurt-union-berlin",
+        "season": "2025-26",
+        "match_date": "2025-09-21",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-27-e0-heidenheim-augsburg",
+        "season": "2025-26",
+        "match_date": "2025-09-27",
+        "home_team": "Heidenheim",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-27-e0-m-gladbach-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2025-09-27",
+        "home_team": "M'gladbach",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-27-e0-mainz-dortmund",
+        "season": "2025-26",
+        "match_date": "2025-09-27",
+        "home_team": "Mainz",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-27-e0-st-pauli-leverkusen",
+        "season": "2025-26",
+        "match_date": "2025-09-27",
+        "home_team": "St Pauli",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-27-e0-wolfsburg-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2025-09-27",
+        "home_team": "Wolfsburg",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-28-e0-fc-koln-stuttgart",
+        "season": "2025-26",
+        "match_date": "2025-09-28",
+        "home_team": "FC Koln",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-28-e0-freiburg-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2025-09-28",
+        "home_team": "Freiburg",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-09-28-e0-union-berlin-hamburg",
+        "season": "2025-26",
+        "match_date": "2025-09-28",
+        "home_team": "Union Berlin",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-03-e0-hoffenheim-fc-koln",
+        "season": "2025-26",
+        "match_date": "2025-10-03",
+        "home_team": "Hoffenheim",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-04-e0-augsburg-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2025-10-04",
+        "home_team": "Augsburg",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-04-e0-dortmund-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2025-10-04",
+        "home_team": "Dortmund",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-04-e0-ein-frankfurt-bayern-munich",
+        "season": "2025-26",
+        "match_date": "2025-10-04",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-04-e0-leverkusen-union-berlin",
+        "season": "2025-26",
+        "match_date": "2025-10-04",
+        "home_team": "Leverkusen",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-04-e0-werder-bremen-st-pauli",
+        "season": "2025-26",
+        "match_date": "2025-10-04",
+        "home_team": "Werder Bremen",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-05-e0-hamburg-mainz",
+        "season": "2025-26",
+        "match_date": "2025-10-05",
+        "home_team": "Hamburg",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-05-e0-m-gladbach-freiburg",
+        "season": "2025-26",
+        "match_date": "2025-10-05",
+        "home_team": "M'gladbach",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-05-e0-stuttgart-heidenheim",
+        "season": "2025-26",
+        "match_date": "2025-10-05",
+        "home_team": "Stuttgart",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-17-e0-union-berlin-m-gladbach",
+        "season": "2025-26",
+        "match_date": "2025-10-17",
+        "home_team": "Union Berlin",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-18-e0-bayern-munich-dortmund",
+        "season": "2025-26",
+        "match_date": "2025-10-18",
+        "home_team": "Bayern Munich",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-18-e0-fc-koln-augsburg",
+        "season": "2025-26",
+        "match_date": "2025-10-18",
+        "home_team": "FC Koln",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-18-e0-heidenheim-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2025-10-18",
+        "home_team": "Heidenheim",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-18-e0-mainz-leverkusen",
+        "season": "2025-26",
+        "match_date": "2025-10-18",
+        "home_team": "Mainz",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-18-e0-rb-leipzig-hamburg",
+        "season": "2025-26",
+        "match_date": "2025-10-18",
+        "home_team": "RB Leipzig",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-18-e0-wolfsburg-stuttgart",
+        "season": "2025-26",
+        "match_date": "2025-10-18",
+        "home_team": "Wolfsburg",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-19-e0-freiburg-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2025-10-19",
+        "home_team": "Freiburg",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-19-e0-st-pauli-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2025-10-19",
+        "home_team": "St Pauli",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-25-e0-augsburg-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2025-10-25",
+        "home_team": "Augsburg",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-25-e0-dortmund-fc-koln",
+        "season": "2025-26",
+        "match_date": "2025-10-25",
+        "home_team": "Dortmund",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-25-e0-hamburg-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2025-10-25",
+        "home_team": "Hamburg",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-25-e0-hoffenheim-heidenheim",
+        "season": "2025-26",
+        "match_date": "2025-10-25",
+        "home_team": "Hoffenheim",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-26-e0-leverkusen-freiburg",
+        "season": "2025-26",
+        "match_date": "2025-10-26",
+        "home_team": "Leverkusen",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-10-31-e0-augsburg-dortmund",
+        "season": "2025-26",
+        "match_date": "2025-10-31",
+        "home_team": "Augsburg",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-01-e0-heidenheim-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2025-11-01",
+        "home_team": "Heidenheim",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-01-e0-mainz-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2025-11-01",
+        "home_team": "Mainz",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-01-e0-rb-leipzig-stuttgart",
+        "season": "2025-26",
+        "match_date": "2025-11-01",
+        "home_team": "RB Leipzig",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-01-e0-st-pauli-m-gladbach",
+        "season": "2025-26",
+        "match_date": "2025-11-01",
+        "home_team": "St Pauli",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-01-e0-union-berlin-freiburg",
+        "season": "2025-26",
+        "match_date": "2025-11-01",
+        "home_team": "Union Berlin",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-02-e0-fc-koln-hamburg",
+        "season": "2025-26",
+        "match_date": "2025-11-02",
+        "home_team": "FC Koln",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-02-e0-wolfsburg-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2025-11-02",
+        "home_team": "Wolfsburg",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-07-e0-werder-bremen-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2025-11-07",
+        "home_team": "Werder Bremen",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-08-e0-hamburg-dortmund",
+        "season": "2025-26",
+        "match_date": "2025-11-08",
+        "home_team": "Hamburg",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-08-e0-hoffenheim-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2025-11-08",
+        "home_team": "Hoffenheim",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-08-e0-leverkusen-heidenheim",
+        "season": "2025-26",
+        "match_date": "2025-11-08",
+        "home_team": "Leverkusen",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-08-e0-m-gladbach-fc-koln",
+        "season": "2025-26",
+        "match_date": "2025-11-08",
+        "home_team": "M'gladbach",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-08-e0-union-berlin-bayern-munich",
+        "season": "2025-26",
+        "match_date": "2025-11-08",
+        "home_team": "Union Berlin",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-09-e0-ein-frankfurt-mainz",
+        "season": "2025-26",
+        "match_date": "2025-11-09",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-09-e0-freiburg-st-pauli",
+        "season": "2025-26",
+        "match_date": "2025-11-09",
+        "home_team": "Freiburg",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-09-e0-stuttgart-augsburg",
+        "season": "2025-26",
+        "match_date": "2025-11-09",
+        "home_team": "Stuttgart",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-21-e0-mainz-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2025-11-21",
+        "home_team": "Mainz",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-22-e0-augsburg-hamburg",
+        "season": "2025-26",
+        "match_date": "2025-11-22",
+        "home_team": "Augsburg",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-22-e0-bayern-munich-freiburg",
+        "season": "2025-26",
+        "match_date": "2025-11-22",
+        "home_team": "Bayern Munich",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-22-e0-dortmund-stuttgart",
+        "season": "2025-26",
+        "match_date": "2025-11-22",
+        "home_team": "Dortmund",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-22-e0-fc-koln-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2025-11-22",
+        "home_team": "FC Koln",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-22-e0-heidenheim-m-gladbach",
+        "season": "2025-26",
+        "match_date": "2025-11-22",
+        "home_team": "Heidenheim",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-22-e0-wolfsburg-leverkusen",
+        "season": "2025-26",
+        "match_date": "2025-11-22",
+        "home_team": "Wolfsburg",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-23-e0-rb-leipzig-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2025-11-23",
+        "home_team": "RB Leipzig",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-23-e0-st-pauli-union-berlin",
+        "season": "2025-26",
+        "match_date": "2025-11-23",
+        "home_team": "St Pauli",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-29-e0-hoffenheim-augsburg",
+        "season": "2025-26",
+        "match_date": "2025-11-29",
+        "home_team": "Hoffenheim",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-29-e0-leverkusen-dortmund",
+        "season": "2025-26",
+        "match_date": "2025-11-29",
+        "home_team": "Leverkusen",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-29-e0-werder-bremen-fc-koln",
+        "season": "2025-26",
+        "match_date": "2025-11-29",
+        "home_team": "Werder Bremen",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-30-e0-ein-frankfurt-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2025-11-30",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-30-e0-freiburg-mainz",
+        "season": "2025-26",
+        "match_date": "2025-11-30",
+        "home_team": "Freiburg",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-11-30-e0-hamburg-stuttgart",
+        "season": "2025-26",
+        "match_date": "2025-11-30",
+        "home_team": "Hamburg",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-05-e0-mainz-m-gladbach",
+        "season": "2025-26",
+        "match_date": "2025-12-05",
+        "home_team": "Mainz",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-06-bundesliga-fc-koln-st-pauli",
+        "season": "2025-26",
+        "match_date": "2025-12-06",
+        "home_team": "FC Koln",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-06-bundesliga-heidenheim-freiburg",
+        "season": "2025-26",
+        "match_date": "2025-12-06",
+        "home_team": "Heidenheim",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-06-bundesliga-wolfsburg-union-berlin",
+        "season": "2025-26",
+        "match_date": "2025-12-06",
+        "home_team": "Wolfsburg",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-06-e0-augsburg-leverkusen",
+        "season": "2025-26",
+        "match_date": "2025-12-06",
+        "home_team": "Augsburg",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-06-e0-rb-leipzig-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2025-12-06",
+        "home_team": "RB Leipzig",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-06-e0-stuttgart-bayern-munich",
+        "season": "2025-26",
+        "match_date": "2025-12-06",
+        "home_team": "Stuttgart",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-07-e0-dortmund-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2025-12-07",
+        "home_team": "Dortmund",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-07-e0-hamburg-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2025-12-07",
+        "home_team": "Hamburg",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-12-e0-union-berlin-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2025-12-12",
+        "home_team": "Union Berlin",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-13-e0-ein-frankfurt-augsburg",
+        "season": "2025-26",
+        "match_date": "2025-12-13",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-13-e0-hoffenheim-hamburg",
+        "season": "2025-26",
+        "match_date": "2025-12-13",
+        "home_team": "Hoffenheim",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-13-e0-leverkusen-fc-koln",
+        "season": "2025-26",
+        "match_date": "2025-12-13",
+        "home_team": "Leverkusen",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-13-e0-m-gladbach-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2025-12-13",
+        "home_team": "M'gladbach",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-13-e0-st-pauli-heidenheim",
+        "season": "2025-26",
+        "match_date": "2025-12-13",
+        "home_team": "St Pauli",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-14-e0-freiburg-dortmund",
+        "season": "2025-26",
+        "match_date": "2025-12-14",
+        "home_team": "Freiburg",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-14-e0-werder-bremen-stuttgart",
+        "season": "2025-26",
+        "match_date": "2025-12-14",
+        "home_team": "Werder Bremen",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-19-e0-dortmund-m-gladbach",
+        "season": "2025-26",
+        "match_date": "2025-12-19",
+        "home_team": "Dortmund",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-20-e0-augsburg-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2025-12-20",
+        "home_team": "Augsburg",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-20-e0-fc-koln-union-berlin",
+        "season": "2025-26",
+        "match_date": "2025-12-20",
+        "home_team": "FC Koln",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-20-e0-hamburg-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2025-12-20",
+        "home_team": "Hamburg",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-20-e0-stuttgart-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2025-12-20",
+        "home_team": "Stuttgart",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-20-e0-wolfsburg-freiburg",
+        "season": "2025-26",
+        "match_date": "2025-12-20",
+        "home_team": "Wolfsburg",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2025-12-21-e0-mainz-st-pauli",
+        "season": "2025-26",
+        "match_date": "2025-12-21",
+        "home_team": "Mainz",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-01-09-e0-ein-frankfurt-dortmund",
+        "season": "2025-26",
+        "match_date": "2026-01-09",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-01-10-e0-freiburg-hamburg",
+        "season": "2025-26",
+        "match_date": "2026-01-10",
+        "home_team": "Freiburg",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-01-10-e0-heidenheim-fc-koln",
+        "season": "2025-26",
+        "match_date": "2026-01-10",
+        "home_team": "Heidenheim",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-01-10-e0-leverkusen-stuttgart",
+        "season": "2025-26",
+        "match_date": "2026-01-10",
+        "home_team": "Leverkusen",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-01-10-e0-union-berlin-mainz",
+        "season": "2025-26",
+        "match_date": "2026-01-10",
+        "home_team": "Union Berlin",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-01-11-e0-m-gladbach-augsburg",
+        "season": "2025-26",
+        "match_date": "2026-01-11",
+        "home_team": "M'gladbach",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-01-13-e0-dortmund-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2026-01-13",
+        "home_team": "Dortmund",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-01-13-e0-mainz-heidenheim",
+        "season": "2025-26",
+        "match_date": "2026-01-13",
+        "home_team": "Mainz",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-01-14-bundesliga-wolfsburg-st-pauli",
+        "season": "2025-26",
+        "match_date": "2026-01-14",
+        "home_team": "Wolfsburg",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-01-14-e0-rb-leipzig-freiburg",
+        "season": "2025-26",
+        "match_date": "2026-01-14",
+        "home_team": "RB Leipzig",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-01-15-e0-augsburg-union-berlin",
+        "season": "2025-26",
+        "match_date": "2026-01-15",
+        "home_team": "Augsburg",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-02-28-bundesliga-hoffenheim-st-pauli",
+        "season": "2025-26",
+        "match_date": "2026-02-28",
+        "home_team": "Hoffenheim",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-02-28-bundesliga-leverkusen-mainz",
+        "season": "2025-26",
+        "match_date": "2026-02-28",
+        "home_team": "Leverkusen",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-02-28-bundesliga-m-gladbach-union-berlin",
+        "season": "2025-26",
+        "match_date": "2026-02-28",
+        "home_team": "M'gladbach",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-01-bundesliga-ein-frankfurt-freiburg",
+        "season": "2025-26",
+        "match_date": "2026-03-01",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-01-bundesliga-hamburg-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2026-03-01",
+        "home_team": "Hamburg",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-01-bundesliga-stuttgart-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2026-03-01",
+        "home_team": "Stuttgart",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-04-bundesliga-hamburg-leverkusen",
+        "season": "2025-26",
+        "match_date": "2026-03-04",
+        "home_team": "Hamburg",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-06-bundesliga-bayern-munich-m-gladbach",
+        "season": "2025-26",
+        "match_date": "2026-03-06",
+        "home_team": "Bayern Munich",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-07-bundesliga-fc-koln-dortmund",
+        "season": "2025-26",
+        "match_date": "2026-03-07",
+        "home_team": "FC Koln",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-07-bundesliga-freiburg-leverkusen",
+        "season": "2025-26",
+        "match_date": "2026-03-07",
+        "home_team": "Freiburg",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-07-bundesliga-heidenheim-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2026-03-07",
+        "home_team": "Heidenheim",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-07-bundesliga-mainz-stuttgart",
+        "season": "2025-26",
+        "match_date": "2026-03-07",
+        "home_team": "Mainz",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-07-bundesliga-rb-leipzig-augsburg",
+        "season": "2025-26",
+        "match_date": "2026-03-07",
+        "home_team": "RB Leipzig",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-07-bundesliga-wolfsburg-hamburg",
+        "season": "2025-26",
+        "match_date": "2026-03-07",
+        "home_team": "Wolfsburg",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-08-bundesliga-st-pauli-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2026-03-08",
+        "home_team": "St Pauli",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-08-bundesliga-union-berlin-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2026-03-08",
+        "home_team": "Union Berlin",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-13-bundesliga-m-gladbach-st-pauli",
+        "season": "2025-26",
+        "match_date": "2026-03-13",
+        "home_team": "M'gladbach",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-14-bundesliga-dortmund-augsburg",
+        "season": "2025-26",
+        "match_date": "2026-03-14",
+        "home_team": "Dortmund",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-14-bundesliga-ein-frankfurt-heidenheim",
+        "season": "2025-26",
+        "match_date": "2026-03-14",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-14-bundesliga-hamburg-fc-koln",
+        "season": "2025-26",
+        "match_date": "2026-03-14",
+        "home_team": "Hamburg",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-14-bundesliga-hoffenheim-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2026-03-14",
+        "home_team": "Hoffenheim",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-14-bundesliga-leverkusen-bayern-munich",
+        "season": "2025-26",
+        "match_date": "2026-03-14",
+        "home_team": "Leverkusen",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-15-bundesliga-freiburg-union-berlin",
+        "season": "2025-26",
+        "match_date": "2026-03-15",
+        "home_team": "Freiburg",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-15-bundesliga-stuttgart-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2026-03-15",
+        "home_team": "Stuttgart",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-15-bundesliga-werder-bremen-mainz",
+        "season": "2025-26",
+        "match_date": "2026-03-15",
+        "home_team": "Werder Bremen",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-20-bundesliga-rb-leipzig-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2026-03-20",
+        "home_team": "RB Leipzig",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-21-bundesliga-bayern-munich-union-berlin",
+        "season": "2025-26",
+        "match_date": "2026-03-21",
+        "home_team": "Bayern Munich",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-21-bundesliga-dortmund-hamburg",
+        "season": "2025-26",
+        "match_date": "2026-03-21",
+        "home_team": "Dortmund",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-21-bundesliga-fc-koln-m-gladbach",
+        "season": "2025-26",
+        "match_date": "2026-03-21",
+        "home_team": "FC Koln",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-21-bundesliga-heidenheim-leverkusen",
+        "season": "2025-26",
+        "match_date": "2026-03-21",
+        "home_team": "Heidenheim",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-21-bundesliga-wolfsburg-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2026-03-21",
+        "home_team": "Wolfsburg",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-22-bundesliga-augsburg-stuttgart",
+        "season": "2025-26",
+        "match_date": "2026-03-22",
+        "home_team": "Augsburg",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-03-22-bundesliga-mainz-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2026-03-22",
+        "home_team": "Mainz",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-04-bundesliga-freiburg-bayern-munich",
+        "season": "2025-26",
+        "match_date": "2026-04-04",
+        "home_team": "Freiburg",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-04-bundesliga-hamburg-augsburg",
+        "season": "2025-26",
+        "match_date": "2026-04-04",
+        "home_team": "Hamburg",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-04-bundesliga-hoffenheim-mainz",
+        "season": "2025-26",
+        "match_date": "2026-04-04",
+        "home_team": "Hoffenheim",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-04-bundesliga-leverkusen-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2026-04-04",
+        "home_team": "Leverkusen",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-04-bundesliga-m-gladbach-heidenheim",
+        "season": "2025-26",
+        "match_date": "2026-04-04",
+        "home_team": "M'gladbach",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-04-bundesliga-stuttgart-dortmund",
+        "season": "2025-26",
+        "match_date": "2026-04-04",
+        "home_team": "Stuttgart",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-04-bundesliga-werder-bremen-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2026-04-04",
+        "home_team": "Werder Bremen",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-05-bundesliga-ein-frankfurt-fc-koln",
+        "season": "2025-26",
+        "match_date": "2026-04-05",
+        "home_team": "Ein Frankfurt",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-05-bundesliga-union-berlin-st-pauli",
+        "season": "2025-26",
+        "match_date": "2026-04-05",
+        "home_team": "Union Berlin",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-10-bundesliga-augsburg-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2026-04-10",
+        "home_team": "Augsburg",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-11-bundesliga-dortmund-leverkusen",
+        "season": "2025-26",
+        "match_date": "2026-04-11",
+        "home_team": "Dortmund",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-11-bundesliga-heidenheim-union-berlin",
+        "season": "2025-26",
+        "match_date": "2026-04-11",
+        "home_team": "Heidenheim",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-11-bundesliga-rb-leipzig-m-gladbach",
+        "season": "2025-26",
+        "match_date": "2026-04-11",
+        "home_team": "RB Leipzig",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-11-bundesliga-st-pauli-bayern-munich",
+        "season": "2025-26",
+        "match_date": "2026-04-11",
+        "home_team": "St Pauli",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-11-bundesliga-wolfsburg-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2026-04-11",
+        "home_team": "Wolfsburg",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-12-bundesliga-fc-koln-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2026-04-12",
+        "home_team": "FC Koln",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-12-bundesliga-mainz-freiburg",
+        "season": "2025-26",
+        "match_date": "2026-04-12",
+        "home_team": "Mainz",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-12-bundesliga-stuttgart-hamburg",
+        "season": "2025-26",
+        "match_date": "2026-04-12",
+        "home_team": "Stuttgart",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-17-bundesliga-st-pauli-fc-koln",
+        "season": "2025-26",
+        "match_date": "2026-04-17",
+        "home_team": "St Pauli",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-18-bundesliga-ein-frankfurt-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2026-04-18",
+        "home_team": "Ein Frankfurt",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-18-bundesliga-hoffenheim-dortmund",
+        "season": "2025-26",
+        "match_date": "2026-04-18",
+        "home_team": "Hoffenheim",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-18-bundesliga-leverkusen-augsburg",
+        "season": "2025-26",
+        "match_date": "2026-04-18",
+        "home_team": "Leverkusen",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-18-bundesliga-union-berlin-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2026-04-18",
+        "home_team": "Union Berlin",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-18-bundesliga-werder-bremen-hamburg",
+        "season": "2025-26",
+        "match_date": "2026-04-18",
+        "home_team": "Werder Bremen",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-19-bundesliga-bayern-munich-stuttgart",
+        "season": "2025-26",
+        "match_date": "2026-04-19",
+        "home_team": "Bayern Munich",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-19-bundesliga-freiburg-heidenheim",
+        "season": "2025-26",
+        "match_date": "2026-04-19",
+        "home_team": "Freiburg",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-24-bundesliga-rb-leipzig-union-berlin",
+        "season": "2025-26",
+        "match_date": "2026-04-24",
+        "home_team": "RB Leipzig",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-25-bundesliga-augsburg-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2026-04-25",
+        "home_team": "Augsburg",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-25-bundesliga-fc-koln-leverkusen",
+        "season": "2025-26",
+        "match_date": "2026-04-25",
+        "home_team": "FC Koln",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-25-bundesliga-hamburg-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2026-04-25",
+        "home_team": "Hamburg",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-25-bundesliga-heidenheim-st-pauli",
+        "season": "2025-26",
+        "match_date": "2026-04-25",
+        "home_team": "Heidenheim",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-25-bundesliga-mainz-bayern-munich",
+        "season": "2025-26",
+        "match_date": "2026-04-25",
+        "home_team": "Mainz",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-25-bundesliga-wolfsburg-m-gladbach",
+        "season": "2025-26",
+        "match_date": "2026-04-25",
+        "home_team": "Wolfsburg",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-26-bundesliga-dortmund-freiburg",
+        "season": "2025-26",
+        "match_date": "2026-04-26",
+        "home_team": "Dortmund",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-04-26-bundesliga-stuttgart-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2026-04-26",
+        "home_team": "Stuttgart",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-02-bundesliga-ein-frankfurt-hamburg",
+        "season": "2025-26",
+        "match_date": "2026-05-02",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-02-bundesliga-hoffenheim-stuttgart",
+        "season": "2025-26",
+        "match_date": "2026-05-02",
+        "home_team": "Hoffenheim",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-02-bundesliga-leverkusen-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2026-05-02",
+        "home_team": "Leverkusen",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-02-bundesliga-union-berlin-fc-koln",
+        "season": "2025-26",
+        "match_date": "2026-05-02",
+        "home_team": "Union Berlin",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-02-bundesliga-werder-bremen-augsburg",
+        "season": "2025-26",
+        "match_date": "2026-05-02",
+        "home_team": "Werder Bremen",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-03-bundesliga-freiburg-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2026-05-03",
+        "home_team": "Freiburg",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-03-bundesliga-m-gladbach-dortmund",
+        "season": "2025-26",
+        "match_date": "2026-05-03",
+        "home_team": "M'gladbach",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-03-bundesliga-st-pauli-mainz",
+        "season": "2025-26",
+        "match_date": "2026-05-03",
+        "home_team": "St Pauli",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-08-bundesliga-dortmund-ein-frankfurt",
+        "season": "2025-26",
+        "match_date": "2026-05-08",
+        "home_team": "Dortmund",
+        "away_team": "Ein Frankfurt",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-09-bundesliga-augsburg-m-gladbach",
+        "season": "2025-26",
+        "match_date": "2026-05-09",
+        "home_team": "Augsburg",
+        "away_team": "M'gladbach",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-09-bundesliga-hoffenheim-werder-bremen",
+        "season": "2025-26",
+        "match_date": "2026-05-09",
+        "home_team": "Hoffenheim",
+        "away_team": "Werder Bremen",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-09-bundesliga-rb-leipzig-st-pauli",
+        "season": "2025-26",
+        "match_date": "2026-05-09",
+        "home_team": "RB Leipzig",
+        "away_team": "St Pauli",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-09-bundesliga-stuttgart-leverkusen",
+        "season": "2025-26",
+        "match_date": "2026-05-09",
+        "home_team": "Stuttgart",
+        "away_team": "Leverkusen",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-09-bundesliga-wolfsburg-bayern-munich",
+        "season": "2025-26",
+        "match_date": "2026-05-09",
+        "home_team": "Wolfsburg",
+        "away_team": "Bayern Munich",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-10-bundesliga-fc-koln-heidenheim",
+        "season": "2025-26",
+        "match_date": "2026-05-10",
+        "home_team": "FC Koln",
+        "away_team": "Heidenheim",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-10-bundesliga-hamburg-freiburg",
+        "season": "2025-26",
+        "match_date": "2026-05-10",
+        "home_team": "Hamburg",
+        "away_team": "Freiburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-10-bundesliga-mainz-union-berlin",
+        "season": "2025-26",
+        "match_date": "2026-05-10",
+        "home_team": "Mainz",
+        "away_team": "Union Berlin",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-16-bundesliga-bayern-munich-fc-koln",
+        "season": "2025-26",
+        "match_date": "2026-05-16",
+        "home_team": "Bayern Munich",
+        "away_team": "FC Koln",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-16-bundesliga-ein-frankfurt-stuttgart",
+        "season": "2025-26",
+        "match_date": "2026-05-16",
+        "home_team": "Ein Frankfurt",
+        "away_team": "Stuttgart",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-16-bundesliga-freiburg-rb-leipzig",
+        "season": "2025-26",
+        "match_date": "2026-05-16",
+        "home_team": "Freiburg",
+        "away_team": "RB Leipzig",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-16-bundesliga-heidenheim-mainz",
+        "season": "2025-26",
+        "match_date": "2026-05-16",
+        "home_team": "Heidenheim",
+        "away_team": "Mainz",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-16-bundesliga-leverkusen-hamburg",
+        "season": "2025-26",
+        "match_date": "2026-05-16",
+        "home_team": "Leverkusen",
+        "away_team": "Hamburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-16-bundesliga-m-gladbach-hoffenheim",
+        "season": "2025-26",
+        "match_date": "2026-05-16",
+        "home_team": "M'gladbach",
+        "away_team": "Hoffenheim",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-16-bundesliga-st-pauli-wolfsburg",
+        "season": "2025-26",
+        "match_date": "2026-05-16",
+        "home_team": "St Pauli",
+        "away_team": "Wolfsburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-16-bundesliga-union-berlin-augsburg",
+        "season": "2025-26",
+        "match_date": "2026-05-16",
+        "home_team": "Union Berlin",
+        "away_team": "Augsburg",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      },
+      {
+        "fixture_key": "football-fixture-2026-05-16-bundesliga-werder-bremen-dortmund",
+        "season": "2025-26",
+        "match_date": "2026-05-16",
+        "home_team": "Werder Bremen",
+        "away_team": "Dortmund",
+        "missing_bookmakers": [
+          "Pinnacle",
+          "William Hill"
+        ]
+      }
+    ]
+  },
+  "created_at": "2026-10-10T14:33:04+08:00"
+}
