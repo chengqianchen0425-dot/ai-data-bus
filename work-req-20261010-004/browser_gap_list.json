@@ -1,0 +1,3904 @@
+{
+ "request_id": "req-20261010-004",
+ "gap_count": 389,
+ "per_bookmaker": {
+  "William Hill": 295,
+  "Pinnacle": 94
+ },
+ "per_season": {
+  "2024-25": 70,
+  "2025-26": 319
+ },
+ "gaps": [
+  {
+   "fixture_key": "football-fixture-2025-03-28-e0-leverkusen-bochum",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-03-28",
+   "home_team": "Leverkusen",
+   "away_team": "Bochum",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-03-29-e0-bayern-munich-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-03-29",
+   "home_team": "Bayern Munich",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-03-29-e0-ein-frankfurt-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-03-29",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-03-29-e0-hoffenheim-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-03-29",
+   "home_team": "Hoffenheim",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-03-29-e0-holstein-kiel-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-03-29",
+   "home_team": "Holstein Kiel",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-03-29-e0-m-gladbach-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-03-29",
+   "home_team": "M'gladbach",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-03-29-e0-wolfsburg-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-03-29",
+   "home_team": "Wolfsburg",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-03-30-e0-dortmund-mainz",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-03-30",
+   "home_team": "Dortmund",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-03-30-e0-freiburg-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-03-30",
+   "home_team": "Freiburg",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-04-e0-augsburg-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-04",
+   "home_team": "Augsburg",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-05-e0-bochum-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-05",
+   "home_team": "Bochum",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-05-e0-freiburg-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-05",
+   "home_team": "Freiburg",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-05-e0-heidenheim-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-05",
+   "home_team": "Heidenheim",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-05-e0-rb-leipzig-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-05",
+   "home_team": "RB Leipzig",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-05-e0-werder-bremen-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-05",
+   "home_team": "Werder Bremen",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-06-e0-st-pauli-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-06",
+   "home_team": "St Pauli",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-06-e0-union-berlin-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-06",
+   "home_team": "Union Berlin",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-11-e0-wolfsburg-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-11",
+   "home_team": "Wolfsburg",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-12-e0-bayern-munich-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-12",
+   "home_team": "Bayern Munich",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-12-e0-bochum-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-12",
+   "home_team": "Bochum",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-12-e0-hoffenheim-mainz",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-12",
+   "home_team": "Hoffenheim",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-12-e0-holstein-kiel-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-12",
+   "home_team": "Holstein Kiel",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-12-e0-leverkusen-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-12",
+   "home_team": "Leverkusen",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-12-e0-m-gladbach-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-12",
+   "home_team": "M'gladbach",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-13-e0-ein-frankfurt-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-13",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-13-e0-stuttgart-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-13",
+   "home_team": "Stuttgart",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-19-e0-freiburg-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-19",
+   "home_team": "Freiburg",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-19-e0-heidenheim-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-19",
+   "home_team": "Heidenheim",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-19-e0-mainz-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-19",
+   "home_team": "Mainz",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-19-e0-rb-leipzig-holstein-kiel",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-19",
+   "home_team": "RB Leipzig",
+   "away_team": "Holstein Kiel",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-19-e0-union-berlin-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-19",
+   "home_team": "Union Berlin",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-19-e0-werder-bremen-bochum",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-19",
+   "home_team": "Werder Bremen",
+   "away_team": "Bochum",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-20-e0-augsburg-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-20",
+   "home_team": "Augsburg",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-20-e0-dortmund-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-20",
+   "home_team": "Dortmund",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-20-e0-st-pauli-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-20",
+   "home_team": "St Pauli",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-25-e0-stuttgart-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-25",
+   "home_team": "Stuttgart",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-26-e0-bayern-munich-mainz",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-26",
+   "home_team": "Bayern Munich",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-26-e0-ein-frankfurt-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-26",
+   "home_team": "Ein Frankfurt",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-26-e0-hoffenheim-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-26",
+   "home_team": "Hoffenheim",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-26-e0-holstein-kiel-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-26",
+   "home_team": "Holstein Kiel",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-26-e0-leverkusen-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-26",
+   "home_team": "Leverkusen",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-26-e0-wolfsburg-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-26",
+   "home_team": "Wolfsburg",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-27-e0-bochum-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-27",
+   "home_team": "Bochum",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-04-27-e0-werder-bremen-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-04-27",
+   "home_team": "Werder Bremen",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-02-e0-heidenheim-bochum",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-02",
+   "home_team": "Heidenheim",
+   "away_team": "Bochum",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-03-e0-dortmund-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-03",
+   "home_team": "Dortmund",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-03-e0-m-gladbach-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-03",
+   "home_team": "M'gladbach",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-03-e0-rb-leipzig-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-03",
+   "home_team": "RB Leipzig",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-03-e0-st-pauli-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-03",
+   "home_team": "St Pauli",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-03-e0-union-berlin-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-03",
+   "home_team": "Union Berlin",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-04-e0-augsburg-holstein-kiel",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-04",
+   "home_team": "Augsburg",
+   "away_team": "Holstein Kiel",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-04-e0-freiburg-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-04",
+   "home_team": "Freiburg",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-04-e0-mainz-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-04",
+   "home_team": "Mainz",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-09-e0-wolfsburg-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-09",
+   "home_team": "Wolfsburg",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-10-e0-bochum-mainz",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-10",
+   "home_team": "Bochum",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-10-e0-holstein-kiel-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-10",
+   "home_team": "Holstein Kiel",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-10-e0-union-berlin-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-10",
+   "home_team": "Union Berlin",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-10-e0-werder-bremen-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-10",
+   "home_team": "Werder Bremen",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-11-e0-ein-frankfurt-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-11",
+   "home_team": "Ein Frankfurt",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-11-e0-leverkusen-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-11",
+   "home_team": "Leverkusen",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-11-e0-stuttgart-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-11",
+   "home_team": "Stuttgart",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-17-e0-augsburg-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-17",
+   "home_team": "Augsburg",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-17-e0-dortmund-holstein-kiel",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-17",
+   "home_team": "Dortmund",
+   "away_team": "Holstein Kiel",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-17-e0-freiburg-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-17",
+   "home_team": "Freiburg",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-17-e0-heidenheim-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-17",
+   "home_team": "Heidenheim",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-17-e0-hoffenheim-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-17",
+   "home_team": "Hoffenheim",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-17-e0-m-gladbach-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-17",
+   "home_team": "M'gladbach",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-17-e0-mainz-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-17",
+   "home_team": "Mainz",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-17-e0-rb-leipzig-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-17",
+   "home_team": "RB Leipzig",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-05-17-e0-st-pauli-bochum",
+   "bookmaker": "William Hill",
+   "season": "2024-25",
+   "match_date": "2025-05-17",
+   "home_team": "St Pauli",
+   "away_team": "Bochum",
+   "uq_class": "source_missing",
+   "reason": "FD William Hill closing odds empty (WHCH/WHCD/WHCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-22-e0-bayern-munich-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-22",
+   "home_team": "Bayern Munich",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-23-bundesliga-freiburg-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-23",
+   "home_team": "Freiburg",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-23-e0-ein-frankfurt-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-23",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-23-e0-heidenheim-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-23",
+   "home_team": "Heidenheim",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-23-e0-leverkusen-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-23",
+   "home_team": "Leverkusen",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-23-e0-st-pauli-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-23",
+   "home_team": "St Pauli",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-23-e0-union-berlin-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-23",
+   "home_team": "Union Berlin",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-24-e0-m-gladbach-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-24",
+   "home_team": "M'gladbach",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-24-e0-mainz-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-24",
+   "home_team": "Mainz",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-30-e0-augsburg-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-30",
+   "home_team": "Augsburg",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-30-e0-hoffenheim-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-30",
+   "home_team": "Hoffenheim",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-30-e0-rb-leipzig-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-30",
+   "home_team": "RB Leipzig",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-30-e0-stuttgart-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-30",
+   "home_team": "Stuttgart",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-30-e0-werder-bremen-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-30",
+   "home_team": "Werder Bremen",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-31-e0-dortmund-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-31",
+   "home_team": "Dortmund",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-31-e0-fc-koln-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-31",
+   "home_team": "FC Koln",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-08-31-e0-wolfsburg-mainz",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-08-31",
+   "home_team": "Wolfsburg",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-12-e0-leverkusen-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-12",
+   "home_team": "Leverkusen",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-13-e0-bayern-munich-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-13",
+   "home_team": "Bayern Munich",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-13-e0-heidenheim-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-13",
+   "home_team": "Heidenheim",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-13-e0-mainz-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-13",
+   "home_team": "Mainz",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-13-e0-union-berlin-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-13",
+   "home_team": "Union Berlin",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-13-e0-wolfsburg-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-13",
+   "home_team": "Wolfsburg",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-14-e0-m-gladbach-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-14",
+   "home_team": "M'gladbach",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-14-e0-st-pauli-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-14",
+   "home_team": "St Pauli",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-19-e0-stuttgart-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-19",
+   "home_team": "Stuttgart",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-20-bundesliga-augsburg-mainz",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-20",
+   "home_team": "Augsburg",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-20-e0-hamburg-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-20",
+   "home_team": "Hamburg",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-20-e0-hoffenheim-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-20",
+   "home_team": "Hoffenheim",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-20-e0-rb-leipzig-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-20",
+   "home_team": "RB Leipzig",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-20-e0-werder-bremen-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-20",
+   "home_team": "Werder Bremen",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-21-e0-dortmund-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-21",
+   "home_team": "Dortmund",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-21-e0-ein-frankfurt-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-21",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-27-e0-heidenheim-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-27",
+   "home_team": "Heidenheim",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-27-e0-m-gladbach-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-27",
+   "home_team": "M'gladbach",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-27-e0-mainz-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-27",
+   "home_team": "Mainz",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-27-e0-st-pauli-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-27",
+   "home_team": "St Pauli",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-27-e0-wolfsburg-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-27",
+   "home_team": "Wolfsburg",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-28-e0-fc-koln-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-28",
+   "home_team": "FC Koln",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-28-e0-freiburg-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-28",
+   "home_team": "Freiburg",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-09-28-e0-union-berlin-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-09-28",
+   "home_team": "Union Berlin",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-03-e0-hoffenheim-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-03",
+   "home_team": "Hoffenheim",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-04-e0-augsburg-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-04",
+   "home_team": "Augsburg",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-04-e0-dortmund-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-04",
+   "home_team": "Dortmund",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-04-e0-ein-frankfurt-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-04",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-04-e0-leverkusen-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-04",
+   "home_team": "Leverkusen",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-04-e0-werder-bremen-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-04",
+   "home_team": "Werder Bremen",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-05-e0-hamburg-mainz",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-05",
+   "home_team": "Hamburg",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-05-e0-m-gladbach-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-05",
+   "home_team": "M'gladbach",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-05-e0-stuttgart-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-05",
+   "home_team": "Stuttgart",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-17-e0-union-berlin-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-17",
+   "home_team": "Union Berlin",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-18-e0-bayern-munich-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-18",
+   "home_team": "Bayern Munich",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-18-e0-fc-koln-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-18",
+   "home_team": "FC Koln",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-18-e0-heidenheim-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-18",
+   "home_team": "Heidenheim",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-18-e0-mainz-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-18",
+   "home_team": "Mainz",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-18-e0-rb-leipzig-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-18",
+   "home_team": "RB Leipzig",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-18-e0-wolfsburg-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-18",
+   "home_team": "Wolfsburg",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-19-e0-freiburg-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-19",
+   "home_team": "Freiburg",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-19-e0-st-pauli-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-19",
+   "home_team": "St Pauli",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-25-e0-augsburg-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-25",
+   "home_team": "Augsburg",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-25-e0-dortmund-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-25",
+   "home_team": "Dortmund",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-25-e0-hamburg-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-25",
+   "home_team": "Hamburg",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-25-e0-hoffenheim-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-25",
+   "home_team": "Hoffenheim",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-26-e0-leverkusen-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-26",
+   "home_team": "Leverkusen",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-10-31-e0-augsburg-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-10-31",
+   "home_team": "Augsburg",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-01-e0-heidenheim-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-01",
+   "home_team": "Heidenheim",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-01-e0-mainz-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-01",
+   "home_team": "Mainz",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-01-e0-rb-leipzig-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-01",
+   "home_team": "RB Leipzig",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-01-e0-st-pauli-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-01",
+   "home_team": "St Pauli",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-01-e0-union-berlin-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-01",
+   "home_team": "Union Berlin",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-02-e0-fc-koln-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-02",
+   "home_team": "FC Koln",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-02-e0-wolfsburg-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-02",
+   "home_team": "Wolfsburg",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-07-e0-werder-bremen-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-07",
+   "home_team": "Werder Bremen",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-08-e0-hamburg-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-08",
+   "home_team": "Hamburg",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-08-e0-hoffenheim-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-08",
+   "home_team": "Hoffenheim",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-08-e0-leverkusen-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-08",
+   "home_team": "Leverkusen",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-08-e0-m-gladbach-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-08",
+   "home_team": "M'gladbach",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-08-e0-union-berlin-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-08",
+   "home_team": "Union Berlin",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-09-e0-ein-frankfurt-mainz",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-09",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-09-e0-freiburg-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-09",
+   "home_team": "Freiburg",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-09-e0-stuttgart-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-09",
+   "home_team": "Stuttgart",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-21-e0-mainz-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-21",
+   "home_team": "Mainz",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-22-e0-augsburg-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-22",
+   "home_team": "Augsburg",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-22-e0-bayern-munich-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-22",
+   "home_team": "Bayern Munich",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-22-e0-dortmund-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-22",
+   "home_team": "Dortmund",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-22-e0-fc-koln-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-22",
+   "home_team": "FC Koln",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-22-e0-heidenheim-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-22",
+   "home_team": "Heidenheim",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-22-e0-wolfsburg-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-22",
+   "home_team": "Wolfsburg",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-23-e0-rb-leipzig-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-23",
+   "home_team": "RB Leipzig",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-23-e0-st-pauli-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-23",
+   "home_team": "St Pauli",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-29-e0-hoffenheim-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-29",
+   "home_team": "Hoffenheim",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-29-e0-leverkusen-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-29",
+   "home_team": "Leverkusen",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-29-e0-werder-bremen-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-29",
+   "home_team": "Werder Bremen",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-30-e0-ein-frankfurt-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-30",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-30-e0-freiburg-mainz",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-30",
+   "home_team": "Freiburg",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-11-30-e0-hamburg-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-11-30",
+   "home_team": "Hamburg",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-05-e0-mainz-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-05",
+   "home_team": "Mainz",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-06-bundesliga-fc-koln-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-06",
+   "home_team": "FC Koln",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-06-bundesliga-heidenheim-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-06",
+   "home_team": "Heidenheim",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-06-bundesliga-wolfsburg-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-06",
+   "home_team": "Wolfsburg",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-06-e0-augsburg-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-06",
+   "home_team": "Augsburg",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-06-e0-rb-leipzig-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-06",
+   "home_team": "RB Leipzig",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-06-e0-stuttgart-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-06",
+   "home_team": "Stuttgart",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-07-e0-dortmund-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-07",
+   "home_team": "Dortmund",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-07-e0-hamburg-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-07",
+   "home_team": "Hamburg",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-12-e0-union-berlin-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-12",
+   "home_team": "Union Berlin",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-13-e0-ein-frankfurt-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-13",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-13-e0-hoffenheim-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-13",
+   "home_team": "Hoffenheim",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-13-e0-leverkusen-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-13",
+   "home_team": "Leverkusen",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-13-e0-m-gladbach-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-13",
+   "home_team": "M'gladbach",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-13-e0-st-pauli-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-13",
+   "home_team": "St Pauli",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-14-e0-freiburg-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-14",
+   "home_team": "Freiburg",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-14-e0-werder-bremen-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-14",
+   "home_team": "Werder Bremen",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-19-e0-dortmund-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-19",
+   "home_team": "Dortmund",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-20-e0-augsburg-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-20",
+   "home_team": "Augsburg",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-20-e0-fc-koln-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-20",
+   "home_team": "FC Koln",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-20-e0-hamburg-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-20",
+   "home_team": "Hamburg",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-20-e0-stuttgart-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-20",
+   "home_team": "Stuttgart",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-20-e0-wolfsburg-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-20",
+   "home_team": "Wolfsburg",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2025-12-21-e0-mainz-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2025-12-21",
+   "home_team": "Mainz",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-01-09-e0-ein-frankfurt-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-01-09",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-01-10-e0-freiburg-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-01-10",
+   "home_team": "Freiburg",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-01-10-e0-heidenheim-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-01-10",
+   "home_team": "Heidenheim",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-01-10-e0-leverkusen-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-01-10",
+   "home_team": "Leverkusen",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-01-10-e0-union-berlin-mainz",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-01-10",
+   "home_team": "Union Berlin",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-01-11-e0-m-gladbach-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-01-11",
+   "home_team": "M'gladbach",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-01-13-e0-dortmund-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-01-13",
+   "home_team": "Dortmund",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-01-13-e0-mainz-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-01-13",
+   "home_team": "Mainz",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-01-14-bundesliga-wolfsburg-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-01-14",
+   "home_team": "Wolfsburg",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-01-14-e0-rb-leipzig-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-01-14",
+   "home_team": "RB Leipzig",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-01-15-e0-augsburg-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-01-15",
+   "home_team": "Augsburg",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-02-28-bundesliga-hoffenheim-st-pauli",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-02-28",
+   "home_team": "Hoffenheim",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-02-28-bundesliga-hoffenheim-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-02-28",
+   "home_team": "Hoffenheim",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-02-28-bundesliga-leverkusen-mainz",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-02-28",
+   "home_team": "Leverkusen",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-02-28-bundesliga-leverkusen-mainz",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-02-28",
+   "home_team": "Leverkusen",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-02-28-bundesliga-m-gladbach-union-berlin",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-02-28",
+   "home_team": "M'gladbach",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-02-28-bundesliga-m-gladbach-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-02-28",
+   "home_team": "M'gladbach",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-01-bundesliga-ein-frankfurt-freiburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-01",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-01-bundesliga-ein-frankfurt-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-01",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-01-bundesliga-hamburg-rb-leipzig",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-01",
+   "home_team": "Hamburg",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-01-bundesliga-hamburg-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-01",
+   "home_team": "Hamburg",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-01-bundesliga-stuttgart-wolfsburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-01",
+   "home_team": "Stuttgart",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-01-bundesliga-stuttgart-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-01",
+   "home_team": "Stuttgart",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-04-bundesliga-hamburg-leverkusen",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-04",
+   "home_team": "Hamburg",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-04-bundesliga-hamburg-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-04",
+   "home_team": "Hamburg",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-06-bundesliga-bayern-munich-m-gladbach",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-06",
+   "home_team": "Bayern Munich",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-06-bundesliga-bayern-munich-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-06",
+   "home_team": "Bayern Munich",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-07-bundesliga-fc-koln-dortmund",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-07",
+   "home_team": "FC Koln",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-07-bundesliga-fc-koln-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-07",
+   "home_team": "FC Koln",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-07-bundesliga-freiburg-leverkusen",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-07",
+   "home_team": "Freiburg",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-07-bundesliga-freiburg-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-07",
+   "home_team": "Freiburg",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-07-bundesliga-heidenheim-hoffenheim",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-07",
+   "home_team": "Heidenheim",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-07-bundesliga-heidenheim-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-07",
+   "home_team": "Heidenheim",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-07-bundesliga-mainz-stuttgart",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-07",
+   "home_team": "Mainz",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-07-bundesliga-mainz-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-07",
+   "home_team": "Mainz",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-07-bundesliga-rb-leipzig-augsburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-07",
+   "home_team": "RB Leipzig",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-07-bundesliga-rb-leipzig-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-07",
+   "home_team": "RB Leipzig",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-07-bundesliga-wolfsburg-hamburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-07",
+   "home_team": "Wolfsburg",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-07-bundesliga-wolfsburg-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-07",
+   "home_team": "Wolfsburg",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-08-bundesliga-st-pauli-ein-frankfurt",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-08",
+   "home_team": "St Pauli",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-08-bundesliga-st-pauli-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-08",
+   "home_team": "St Pauli",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-08-bundesliga-union-berlin-werder-bremen",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-08",
+   "home_team": "Union Berlin",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-08-bundesliga-union-berlin-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-08",
+   "home_team": "Union Berlin",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-13-bundesliga-m-gladbach-st-pauli",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-13",
+   "home_team": "M'gladbach",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-13-bundesliga-m-gladbach-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-13",
+   "home_team": "M'gladbach",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-14-bundesliga-dortmund-augsburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-14",
+   "home_team": "Dortmund",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-14-bundesliga-dortmund-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-14",
+   "home_team": "Dortmund",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-14-bundesliga-ein-frankfurt-heidenheim",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-14",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-14-bundesliga-ein-frankfurt-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-14",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-14-bundesliga-hamburg-fc-koln",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-14",
+   "home_team": "Hamburg",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-14-bundesliga-hamburg-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-14",
+   "home_team": "Hamburg",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-14-bundesliga-hoffenheim-wolfsburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-14",
+   "home_team": "Hoffenheim",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-14-bundesliga-hoffenheim-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-14",
+   "home_team": "Hoffenheim",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-14-bundesliga-leverkusen-bayern-munich",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-14",
+   "home_team": "Leverkusen",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-14-bundesliga-leverkusen-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-14",
+   "home_team": "Leverkusen",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-15-bundesliga-freiburg-union-berlin",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-15",
+   "home_team": "Freiburg",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-15-bundesliga-freiburg-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-15",
+   "home_team": "Freiburg",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-15-bundesliga-stuttgart-rb-leipzig",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-15",
+   "home_team": "Stuttgart",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-15-bundesliga-stuttgart-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-15",
+   "home_team": "Stuttgart",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-15-bundesliga-werder-bremen-mainz",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-15",
+   "home_team": "Werder Bremen",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-15-bundesliga-werder-bremen-mainz",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-15",
+   "home_team": "Werder Bremen",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-20-bundesliga-rb-leipzig-hoffenheim",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-20",
+   "home_team": "RB Leipzig",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-20-bundesliga-rb-leipzig-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-20",
+   "home_team": "RB Leipzig",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-21-bundesliga-bayern-munich-union-berlin",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-21",
+   "home_team": "Bayern Munich",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-21-bundesliga-bayern-munich-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-21",
+   "home_team": "Bayern Munich",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-21-bundesliga-dortmund-hamburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-21",
+   "home_team": "Dortmund",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-21-bundesliga-dortmund-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-21",
+   "home_team": "Dortmund",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-21-bundesliga-fc-koln-m-gladbach",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-21",
+   "home_team": "FC Koln",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-21-bundesliga-fc-koln-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-21",
+   "home_team": "FC Koln",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-21-bundesliga-heidenheim-leverkusen",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-21",
+   "home_team": "Heidenheim",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-21-bundesliga-heidenheim-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-21",
+   "home_team": "Heidenheim",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-21-bundesliga-wolfsburg-werder-bremen",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-21",
+   "home_team": "Wolfsburg",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-21-bundesliga-wolfsburg-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-21",
+   "home_team": "Wolfsburg",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-22-bundesliga-augsburg-stuttgart",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-22",
+   "home_team": "Augsburg",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-22-bundesliga-augsburg-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-22",
+   "home_team": "Augsburg",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-22-bundesliga-mainz-ein-frankfurt",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-03-22",
+   "home_team": "Mainz",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-03-22-bundesliga-mainz-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-03-22",
+   "home_team": "Mainz",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-freiburg-bayern-munich",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "Freiburg",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-freiburg-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "Freiburg",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-hamburg-augsburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "Hamburg",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-hamburg-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "Hamburg",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-hoffenheim-mainz",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "Hoffenheim",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-hoffenheim-mainz",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "Hoffenheim",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-leverkusen-wolfsburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "Leverkusen",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-leverkusen-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "Leverkusen",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-m-gladbach-heidenheim",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "M'gladbach",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-m-gladbach-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "M'gladbach",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-stuttgart-dortmund",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "Stuttgart",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-stuttgart-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "Stuttgart",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-werder-bremen-rb-leipzig",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "Werder Bremen",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-04-bundesliga-werder-bremen-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-04",
+   "home_team": "Werder Bremen",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-05-bundesliga-ein-frankfurt-fc-koln",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-05",
+   "home_team": "Ein Frankfurt",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-05-bundesliga-ein-frankfurt-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-05",
+   "home_team": "Ein Frankfurt",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-05-bundesliga-union-berlin-st-pauli",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-05",
+   "home_team": "Union Berlin",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-05-bundesliga-union-berlin-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-05",
+   "home_team": "Union Berlin",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-10-bundesliga-augsburg-hoffenheim",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-10",
+   "home_team": "Augsburg",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-10-bundesliga-augsburg-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-10",
+   "home_team": "Augsburg",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-11-bundesliga-dortmund-leverkusen",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-11",
+   "home_team": "Dortmund",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-11-bundesliga-dortmund-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-11",
+   "home_team": "Dortmund",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-11-bundesliga-heidenheim-union-berlin",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-11",
+   "home_team": "Heidenheim",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-11-bundesliga-heidenheim-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-11",
+   "home_team": "Heidenheim",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-11-bundesliga-rb-leipzig-m-gladbach",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-11",
+   "home_team": "RB Leipzig",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-11-bundesliga-rb-leipzig-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-11",
+   "home_team": "RB Leipzig",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-11-bundesliga-st-pauli-bayern-munich",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-11",
+   "home_team": "St Pauli",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-11-bundesliga-st-pauli-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-11",
+   "home_team": "St Pauli",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-11-bundesliga-wolfsburg-ein-frankfurt",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-11",
+   "home_team": "Wolfsburg",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-11-bundesliga-wolfsburg-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-11",
+   "home_team": "Wolfsburg",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-12-bundesliga-fc-koln-werder-bremen",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-12",
+   "home_team": "FC Koln",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-12-bundesliga-fc-koln-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-12",
+   "home_team": "FC Koln",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-12-bundesliga-mainz-freiburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-12",
+   "home_team": "Mainz",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-12-bundesliga-mainz-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-12",
+   "home_team": "Mainz",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-12-bundesliga-stuttgart-hamburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-12",
+   "home_team": "Stuttgart",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-12-bundesliga-stuttgart-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-12",
+   "home_team": "Stuttgart",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-17-bundesliga-st-pauli-fc-koln",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-17",
+   "home_team": "St Pauli",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-17-bundesliga-st-pauli-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-17",
+   "home_team": "St Pauli",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-18-bundesliga-ein-frankfurt-rb-leipzig",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-18",
+   "home_team": "Ein Frankfurt",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-18-bundesliga-ein-frankfurt-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-18",
+   "home_team": "Ein Frankfurt",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-18-bundesliga-hoffenheim-dortmund",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-18",
+   "home_team": "Hoffenheim",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-18-bundesliga-hoffenheim-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-18",
+   "home_team": "Hoffenheim",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-18-bundesliga-leverkusen-augsburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-18",
+   "home_team": "Leverkusen",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-18-bundesliga-leverkusen-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-18",
+   "home_team": "Leverkusen",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-18-bundesliga-union-berlin-wolfsburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-18",
+   "home_team": "Union Berlin",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-18-bundesliga-union-berlin-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-18",
+   "home_team": "Union Berlin",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-18-bundesliga-werder-bremen-hamburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-18",
+   "home_team": "Werder Bremen",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-18-bundesliga-werder-bremen-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-18",
+   "home_team": "Werder Bremen",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-19-bundesliga-bayern-munich-stuttgart",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-19",
+   "home_team": "Bayern Munich",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-19-bundesliga-bayern-munich-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-19",
+   "home_team": "Bayern Munich",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-19-bundesliga-freiburg-heidenheim",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-19",
+   "home_team": "Freiburg",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-19-bundesliga-freiburg-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-19",
+   "home_team": "Freiburg",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-24-bundesliga-rb-leipzig-union-berlin",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-24",
+   "home_team": "RB Leipzig",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-24-bundesliga-rb-leipzig-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-24",
+   "home_team": "RB Leipzig",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-25-bundesliga-augsburg-ein-frankfurt",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-25",
+   "home_team": "Augsburg",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-25-bundesliga-augsburg-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-25",
+   "home_team": "Augsburg",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-25-bundesliga-fc-koln-leverkusen",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-25",
+   "home_team": "FC Koln",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-25-bundesliga-fc-koln-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-25",
+   "home_team": "FC Koln",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-25-bundesliga-hamburg-hoffenheim",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-25",
+   "home_team": "Hamburg",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-25-bundesliga-hamburg-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-25",
+   "home_team": "Hamburg",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-25-bundesliga-heidenheim-st-pauli",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-25",
+   "home_team": "Heidenheim",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-25-bundesliga-heidenheim-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-25",
+   "home_team": "Heidenheim",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-25-bundesliga-mainz-bayern-munich",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-25",
+   "home_team": "Mainz",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-25-bundesliga-mainz-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-25",
+   "home_team": "Mainz",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-25-bundesliga-wolfsburg-m-gladbach",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-25",
+   "home_team": "Wolfsburg",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-25-bundesliga-wolfsburg-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-25",
+   "home_team": "Wolfsburg",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-26-bundesliga-dortmund-freiburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-26",
+   "home_team": "Dortmund",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-26-bundesliga-dortmund-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-26",
+   "home_team": "Dortmund",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-26-bundesliga-stuttgart-werder-bremen",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-04-26",
+   "home_team": "Stuttgart",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-04-26-bundesliga-stuttgart-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-04-26",
+   "home_team": "Stuttgart",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-02-bundesliga-ein-frankfurt-hamburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-02",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-02-bundesliga-ein-frankfurt-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-02",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-02-bundesliga-hoffenheim-stuttgart",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-02",
+   "home_team": "Hoffenheim",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-02-bundesliga-hoffenheim-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-02",
+   "home_team": "Hoffenheim",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-02-bundesliga-leverkusen-rb-leipzig",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-02",
+   "home_team": "Leverkusen",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-02-bundesliga-leverkusen-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-02",
+   "home_team": "Leverkusen",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-02-bundesliga-union-berlin-fc-koln",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-02",
+   "home_team": "Union Berlin",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-02-bundesliga-union-berlin-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-02",
+   "home_team": "Union Berlin",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-02-bundesliga-werder-bremen-augsburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-02",
+   "home_team": "Werder Bremen",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-02-bundesliga-werder-bremen-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-02",
+   "home_team": "Werder Bremen",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-03-bundesliga-freiburg-wolfsburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-03",
+   "home_team": "Freiburg",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-03-bundesliga-freiburg-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-03",
+   "home_team": "Freiburg",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-03-bundesliga-m-gladbach-dortmund",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-03",
+   "home_team": "M'gladbach",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-03-bundesliga-m-gladbach-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-03",
+   "home_team": "M'gladbach",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-03-bundesliga-st-pauli-mainz",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-03",
+   "home_team": "St Pauli",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-03-bundesliga-st-pauli-mainz",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-03",
+   "home_team": "St Pauli",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-08-bundesliga-dortmund-ein-frankfurt",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-08",
+   "home_team": "Dortmund",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-08-bundesliga-dortmund-ein-frankfurt",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-08",
+   "home_team": "Dortmund",
+   "away_team": "Ein Frankfurt",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-09-bundesliga-augsburg-m-gladbach",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-09",
+   "home_team": "Augsburg",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-09-bundesliga-augsburg-m-gladbach",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-09",
+   "home_team": "Augsburg",
+   "away_team": "M'gladbach",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-09-bundesliga-hoffenheim-werder-bremen",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-09",
+   "home_team": "Hoffenheim",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-09-bundesliga-hoffenheim-werder-bremen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-09",
+   "home_team": "Hoffenheim",
+   "away_team": "Werder Bremen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-09-bundesliga-rb-leipzig-st-pauli",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-09",
+   "home_team": "RB Leipzig",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-09-bundesliga-rb-leipzig-st-pauli",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-09",
+   "home_team": "RB Leipzig",
+   "away_team": "St Pauli",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-09-bundesliga-stuttgart-leverkusen",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-09",
+   "home_team": "Stuttgart",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-09-bundesliga-stuttgart-leverkusen",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-09",
+   "home_team": "Stuttgart",
+   "away_team": "Leverkusen",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-09-bundesliga-wolfsburg-bayern-munich",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-09",
+   "home_team": "Wolfsburg",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-09-bundesliga-wolfsburg-bayern-munich",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-09",
+   "home_team": "Wolfsburg",
+   "away_team": "Bayern Munich",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-10-bundesliga-fc-koln-heidenheim",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-10",
+   "home_team": "FC Koln",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-10-bundesliga-fc-koln-heidenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-10",
+   "home_team": "FC Koln",
+   "away_team": "Heidenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-10-bundesliga-hamburg-freiburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-10",
+   "home_team": "Hamburg",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-10-bundesliga-hamburg-freiburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-10",
+   "home_team": "Hamburg",
+   "away_team": "Freiburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-10-bundesliga-mainz-union-berlin",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-10",
+   "home_team": "Mainz",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-10-bundesliga-mainz-union-berlin",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-10",
+   "home_team": "Mainz",
+   "away_team": "Union Berlin",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-bayern-munich-fc-koln",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Bayern Munich",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-bayern-munich-fc-koln",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Bayern Munich",
+   "away_team": "FC Koln",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-ein-frankfurt-stuttgart",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-ein-frankfurt-stuttgart",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Ein Frankfurt",
+   "away_team": "Stuttgart",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-freiburg-rb-leipzig",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Freiburg",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-freiburg-rb-leipzig",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Freiburg",
+   "away_team": "RB Leipzig",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-heidenheim-mainz",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Heidenheim",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-heidenheim-mainz",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Heidenheim",
+   "away_team": "Mainz",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-leverkusen-hamburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Leverkusen",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-leverkusen-hamburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Leverkusen",
+   "away_team": "Hamburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-m-gladbach-hoffenheim",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "M'gladbach",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-m-gladbach-hoffenheim",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "M'gladbach",
+   "away_team": "Hoffenheim",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-st-pauli-wolfsburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "St Pauli",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-st-pauli-wolfsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "St Pauli",
+   "away_team": "Wolfsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-union-berlin-augsburg",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Union Berlin",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-union-berlin-augsburg",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Union Berlin",
+   "away_team": "Augsburg",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-werder-bremen-dortmund",
+   "bookmaker": "Pinnacle",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Werder Bremen",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD Pinnacle closing odds empty (PSCH/PSCD/PSCA)"
+  },
+  {
+   "fixture_key": "football-fixture-2026-05-16-bundesliga-werder-bremen-dortmund",
+   "bookmaker": "William Hill",
+   "season": "2025-26",
+   "match_date": "2026-05-16",
+   "home_team": "Werder Bremen",
+   "away_team": "Dortmund",
+   "uq_class": "source_missing",
+   "reason": "FD fd_2526_D1.csv has no William Hill columns"
+  }
+ ]
+}

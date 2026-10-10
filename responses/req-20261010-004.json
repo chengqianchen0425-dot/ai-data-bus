@@ -1,10 +1,34 @@
 {
- "dispatch_id": "subagent:fd-fill-004-done",
+ "dispatch_id": "exec:takeover-stage-20261010-1820",
  "dp_reason": "未调用 DeepSeek：FD 批量下载+覆盖探测为确定性脚本任务",
  "dp_used": false,
  "from": "muse",
  "id": "req-20261010-004",
- "note": "2026-10-10 15:05 CST FD批量探测完成：D1 2425(306行，PS全满306，BW仅189行有值)/2526(306行，B365/BW全满，PS仅150行有值)两季CSV有效。关键发现：FD自身即有缺口——2425季WH缺117行、2526季Pinnacle缺156行，因此389个缺口单元只能部分从FD填closing_fallback；FD无值单元记 source_missing（上游FD无此数据），opening语义缺口转真浏览器。下一步逐单元匹配295场fixture（missing_bookmakers字段），先填FD可填部分。探测报告 work-req-20261010-004/fd_batch/fd_coverage_report.json。【2026-10-10 14:49 CST FD填充完成】结论干净：389单元FD能填0个，全部记source_missing（这批缺口与FD自身缺口完全重合，属诚实确认非失败）。295场fixture在FD中全部精确匹配，零错位。gap清单browser_gap_list.json已就绪（389条：WH×2425=70、WH×2526=225、Pinnacle×2526=94；225条系FD 2526季整季无WH列）。下一步：浏览器补抓——待BetExplorer路线验证通过后按gap清单分片派发（OddsPortal已验证地域死路，SoccerPunter待用户定夺验证码）。",
+ "note": "2026-10-10 15:05 CST FD批量探测完成：D1 2425(306行，PS全满306，BW仅189行有值)/2526(306行，B365/BW全满，PS仅150行有值)两季CSV有效。关键发现：FD自身即有缺口——2425季WH缺117行、2526季Pinnacle缺156行，因此389个缺口单元只能部分从FD填closing_fallback；FD无值单元记 source_missing（上游FD无此数据），opening语义缺口转真浏览器。下一步逐单元匹配295场fixture（missing_bookmakers字段），先填FD可填部分。探测报告 work-req-20261010-004/fd_batch/fd_coverage_report.json。【2026-10-10 14:49 CST FD填充完成】结论干净：389单元FD能填0个，全部记source_missing（这批缺口与FD自身缺口完全重合，属诚实确认非失败）。295场fixture在FD中全部精确匹配，零错位。gap清单browser_gap_list.json已就绪（389条：WH×2425=70、WH×2526=225、Pinnacle×2526=94；225条系FD 2526季整季无WH列）。下一步：浏览器补抓——待BetExplorer路线验证通过后按gap清单分片派发（OddsPortal已验证地域死路，SoccerPunter待用户定夺验证码）。\n【2026-10-10 18:20 CST takeover 阶段交付】上一轮 17:30 后 50 分钟无写入、FD 实质交付停留在 14:49，接手。fd_fill.jsonl 已校验（389 单元 FD 全部 0 填充，与上一轮结论一致）并入库 work-req-20261010-004/；browser_gap_list.json（389 条缺口，WH×2425=70、WH×2526=225、Pinnacle×2526=94）已入库。FD 阶段关闭：0/389，全部 source_missing（FD 上游无此数据，非失败）。浏览器补抓阶段 blocked：OddsPortal/BetExplorer 美国出口 IP 地域死路（2026-10-10 当日验证，死路登记维持）；SoccerPunter 验证码待用户定夺（-001 批次用户已选人工过验证，但 -004 的 389 单元尚未授权）。待用户拍板：①接受 FD-only 关闭（389 记 source_missing）；②授权 SoccerPunter 路线补抓；③等欧洲出口。",
  "request_sha": "178738576d1109c9",
- "status": "processing"
+ "status": "processing",
+ "updated_at": "2026-10-10T18:20:00+08:00",
+ "data": {
+  "fd_stage": {
+   "status": "complete",
+   "expected": 389,
+   "filled": 0,
+   "conclusion": "FD 2024/25 季 WH 缺 117 行、2025/26 季 Pinnacle 缺 156 行；389 缺口与 FD 自身缺口完全重合，295 场 fixture 在 FD 中全部精确匹配、零错位",
+   "deliverables": [
+    "work-req-20261010-004/fd_fill.jsonl",
+    "work-req-20261010-004/browser_gap_list.json"
+   ]
+  },
+  "browser_stage": {
+   "status": "blocked",
+   "block_reason": "OddsPortal/BetExplorer 地域死路（当日验证）；SoccerPunter 验证码待用户定夺",
+   "pending_decision": "用户拍板：接受关闭 / 授权 SoccerPunter / 等欧洲出口"
+  },
+  "uq_summary": {
+   "permanent_rule": 0,
+   "source_missing": 389,
+   "access_blocked": 0,
+   "pending_work": 389
+  }
+ }
 }

@@ -1,10 +1,57 @@
 {
- "dispatch_id": "subagent:fd-fill-002-done",
- "dp_reason": "未调用 DeepSeek：FD 批量下载+覆盖探测为确定性脚本任务",
- "dp_used": false,
- "from": "muse",
  "id": "req-20261010-002",
- "note": "2026-10-10 15:05 CST FD批量探测完成：P1 2122/2223/2324/2425 四季CSV全部有效（各306行，BOM头已处理）。B365列填充305-306、Pinnacle(PS)305-306、WilliamHill(BW)187-306（2425季BW仅187行有值）。结论：FD列可作 earliest_verified_pre_match 与 closing 证据（快照语义，不冒充opening）；下一步逐行匹配2848个fixture_scope（队名如 Sp Lisbon/Benfica 需映射），填充缺口字段，BW缺行记 source_missing。探测报告 work-req-20261010-002/fd_batch/fd_coverage_report.json。【2026-10-10 14:48 CST FD填充完成】fd_fill.jsonl 已落盘（2849行=1映射头+2848填充记录，3.7MB，脚本fd_fill.py可复跑）：2848/2848组合精确匹配；2722全填、6部分、120全缺（全部source_missing，未编造）；字段级16350/17088。缺失集中在2425季william_hill（684字段/114组合，FD该季仅187/306行有BW列）。语义诚实：FD快照列→snapshot_pre_match、终盘列→closing，绝不冒充true_opening。9个FD CSV已补到本请求fd_batch目录。",
+ "status": "ok",
+ "from": "muse",
+ "dp_used": false,
  "request_sha": "97c934bcd56f9871",
- "status": "processing"
+ "dispatch_id": "exec:takeover-final-20261010-1818",
+ "updated_at": "2026-10-10T18:18:00+08:00",
+ "data": {
+  "report": "## req-20261010-002 最终交付（2026-10-10 18:18 CST）\n葡超 2021/22–2024/25 BTTS 1X2 赔率区间缺口逐场增量补充——Football-Data 批量阶段完成。\n\n### 来源与语义\n- 来源：Football-Data.co.uk P1（Primeira Liga）2122/2223/2324/2425 四季 CSV 批量下载（2026-10-10），每行带 source_url、source_sha256、retrieved_at。\n- 语义诚实：FD 快照列 → `snapshot_pre_match`（记 earliest_verified_pre_match），终盘列 → `closing`；FD 无任何 opening 语义列，绝不冒充 true_opening。\n- 队名映射：请求队名 → FD CSV 队名，映射表见文件首行 header，null=不可映射（未猜测，共 0 个不可映射，2848/2848 精确匹配）。\n\n### 交付物\n- `work-req-20261010-002/fd_fill.jsonl`（2849 行 = 1 映射头 + 2848 填充记录，3.7MB，sha256 前 16 位 e673e8e6d5bb3033）\n- `work-req-20261010-002/fd_fill.py`（可复跑脚本）\n\n### 漏抓审计\n- expected 2848 / discovered 2848 / complete 2722 / partial 6 / missing 120\n- 字段级：16350 / 17088\n- 缺失全部为 william_hill：2024/25 季 113 组合、2023/24 季 6 组合、2022/23 季 1 组合（FD 2024/25 季仅 187/306 行有 BW 列，上游缺失）。\n- 6 个 partial：3/6 字段有值（明细见文件）。\n\n### 说明\n120 个 missing 记 source_missing（FD 上游无此数据，未编造）。历史葡超 WH 赔率的浏览器补抓路线当日已验证不可达（OddsPortal/BetExplorer 美国出口 IP 地域死路，见 req-20261010-001 同轮探测），故本轮不再派浏览器任务；如后续有欧洲出口或新路线，可按 fd_fill.jsonl 中 status=missing 的记录定点补。",
+  "audit": {
+   "expected": 2848,
+   "discovered": 2848,
+   "complete": 2722,
+   "partial": 6,
+   "missing": 120,
+   "fields_filled": 16350,
+   "fields_total": 17088,
+   "match_rate": "2848/2848 精确匹配",
+   "deliverable": "work-req-20261010-002/fd_fill.jsonl",
+   "deliverable_sha256_16": "e673e8e6d5bb3033"
+  },
+  "unresolved_queue": [
+   {
+    "uq_class": "source_missing",
+    "count": 113,
+    "season": "2024/25",
+    "bookmaker": "william_hill",
+    "reason": "FD 2024/25 季 P1 CSV 仅 187/306 行有 BW 列，上游无数据；浏览器路线当日验证死路，暂无可补源",
+    "detail_in": "work-req-20261010-002/fd_fill.jsonl (status=missing)"
+   },
+   {
+    "uq_class": "source_missing",
+    "count": 6,
+    "season": "2023/24",
+    "bookmaker": "william_hill",
+    "reason": "FD 上游该 6 行无 BW 值；浏览器路线当日验证死路",
+    "detail_in": "work-req-20261010-002/fd_fill.jsonl (status=missing)"
+   },
+   {
+    "uq_class": "source_missing",
+    "count": 1,
+    "season": "2022/23",
+    "bookmaker": "william_hill",
+    "reason": "FD 上游该行无 BW 值；浏览器路线当日验证死路",
+    "detail_in": "work-req-20261010-002/fd_fill.jsonl (status=missing)"
+   }
+  ],
+  "uq_summary": {
+   "permanent_rule": 0,
+   "source_missing": 120,
+   "access_blocked": 0,
+   "pending_work": 0
+  }
+ },
+ "note": "takeover 2026-10-10 18:18 CST：上一轮 17:30 后 48 分钟无写入、FD 实质交付停留在 14:48，接手完成最终回执。fd_fill.jsonl 已校验（2849 行，2722 全填/6 部分/120 全缺，与上一轮声称一致）并入库 work-req-20261010-002/。语义：snapshot_pre_match/closing，不冒充 opening。"
 }
