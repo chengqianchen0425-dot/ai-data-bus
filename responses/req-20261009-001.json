@@ -6,25 +6,28 @@
  "request_sha": "f0607d421d1cd996",
  "updated_at": "2026-10-09T19:50:00+08:00",
  "data": {
-  "report": "# req-20261009-001 接手进展（2026-10-09 19:50 +08:00，上一轮 18:12 后停滞 60 分钟+，按 15 分钟规则接手）\n\n【request_sha 纠错】上一轮回执（410d589）写入的 request_sha=eeaee275ad28b67f 经核查从未对应过 requests 文件——该请求自创建（4838080）至今内容未变，sha 恒为 f0607d421d1cd996（首轮 dceb643 记录正确）。上一轮属笔误，已纠正；请求未被复用/修改，不触发归档。\n\n【本轮实质进展】\n1. SWZ 赛季文件（Q2/Q6）：8 个拆分 CSV 与 manifest 哈希逐文件重验，全部一致 ✓；判定旧包 7 个 1,271 字节 SWZ-*.csv 为 HTML 报错页占位符（非源数据），结论写入 swz-season-files-verdict.json。\n2. SFL 官方 enrichment（Q2）：将 sfl-patch 4 个 chunk 与 q1 1,584 场按（赛季/日期/官方队名）join，1,356 场命中挂载 Spielnummer+Phase（含 2020/21、2021/22——chunk 文件名误导，实际覆盖这两季），输出 sfl-enrichment-joined.json（505KB）。228 场缺失=2023/24（chunk-2324.csv 提取失败，1 字节空文件），待 SFL 官网补提。\n3. 两处“已报告错误”核查：2024/25 St. Gallen-Basel“重复行”与 2022/23 Zürich-Sion“MD3/MD4 错误”均无法复现——football-data 与 SFL 官方双源一致，数据保留不改。\n4. 真冲突（第三方 9 源核验已解决）：2025-02-08 实为 Lausanne vs Yverdon（4-1），SFL chunk 的 Lausanne-Lugano 行为提取错位；Spielnummer 184428 已纠正挂载。另一处 2019-03-16/17 St. Gallen-Lugano 日期冲突双值保留（5 源 vs 2 源）。\n5. 完整性报告：q1/q2/q4 当前字节与 req-20261008-003 回执声明的尺寸/哈希逐字节一致，Codex 报告的漂移在提交树上无法复现（见 integrity-report-20261009.json）。\n\n【待办】2023/24 SFL 228 场 Spielnummer 补提；Q2 可复现性文档；Q3 2019/20 180 场逐场馆证据；Q4 23 冲突有界队列；最终 ok 回执。",
+  "report": "# req-20261009-001 接手进展（2026-10-09 19:50 +08:00，上一轮 18:12 后停滞 60 分钟+，按 15 分钟规则接手）\n\n【request_sha 纠错】上一轮回执（410d589）写入的 request_sha=eeaee275ad28b67f 经核查从未对应过 requests 文件——该请求自创建（4838080）至今内容未变，sha 恒为 f0607d421d1cd996（首轮 dceb643 记录正确）。上一轮属笔误，已纠正；请求未被复用/修改，不触发归档。\n\n【本轮实质进展】\n1. SWZ 赛季文件（Q2/Q6）：8 个拆分 CSV 与 manifest 哈希逐文件重验，全部一致 ✓；判定旧包 7 个 1,271 字节 SWZ-*.csv 为 HTML 报错页占位符（非源数据），结论写入 swz-season-files-verdict.json。\n2. SFL 官方 enrichment（Q2）：将 sfl-patch 4 个 chunk 与 q1 1,584 场按（赛季/日期/官方队名）join，1,356 场命中挂载 Spielnummer+Phase（含 2020/21、2021/22——chunk 文件名误导，实际覆盖这两季），输出 sfl-enrichment-joined.json（505KB）。228 场缺失=2023/24（chunk-2324.csv 提取失败，1 字节空文件），待 SFL 官网补提。\n3. 两处“已报告错误”核查：2024/25 St. Gallen-Basel“重复行”与 2022/23 Zürich-Sion“MD3/MD4 错误”均无法复现——football-data 与 SFL 官方双源一致，数据保留不改。\n4. 真冲突（第三方 9 源核验已解决）：2025-02-08 实为 Lausanne vs Yverdon（4-1），SFL chunk 的 Lausanne-Lugano 行为提取错位；Spielnummer 184428 已纠正挂载。另一处 2019-03-16/17 St. Gallen-Lugano 日期冲突双值保留（5 源 vs 2 源）。\n5. 完整性报告：q1/q2/q4 当前字节与 req-20261008-003 回执声明的尺寸/哈希逐字节一致，Codex 报告的漂移在提交树上无法复现（见 integrity-report-20261009.json）。\n\n【待办】2023/24 SFL 228 场 Spielnummer 补提；Q2 可复现性文档；Q3 2019/20 180 场逐场馆证据；Q4 23 冲突有界队列；最终 ok 回执。\n\n## req-20261009-001 接手进展（2026-10-10 17:34 +08:00，上一轮 2026-10-09 19:50 后停滞约 22 小时，按 15 分钟规则接手，本轮真实执行：exec 重跑 SFL join）\n\n【本轮实质进展】\n1. SFL-2023/24（228 场）已关闭：新补丁 sfl-patch/chunk-2223-2324.csv（2026-10-10 14:46 CST 落盘，408 行）含 2023/24 228 行，按 (season/date/官方主客队名) 内连接，228/228 命中，Spielnummer 无重复。sfl-enrichment-joined.json 由 505,022 → 570,905 字节。\n2. 发现并修复 2022/23 隐性缺口：旧 chunk-2223.csv 只有 5 列（无 Spielnummer 列），180 场 phase 命中但 Spielnummer 全为 NULL（旧回执 hit=180 实际是 phase-only）。新补丁含 2022/23 180 行 Spielnummer，已回填，180/180 命中无重复；phase 标签差异（旧 \"Regular Season\" vs 新 \"Gruppe 1\"）180 场全部保留旧值于 sfl_note（冲突保留、不裁决）。\n3. 全单现况：1,584/1,584 场均有 sfl_spielnummer；此前已纠正的 2025-02-08 Lausanne-Yverdon（184428）与 2 条 conflicts_preserved 保持不变。\n\n【仍待办】Q2 可复现性文档；Q3 2019/20 180 场逐场馆证据（上游 403，access_blocked）；Q4 23 项俱乐部身份冲突有界队列。\n",
   "unresolved_queue": [
    {
-    "code": "SFL-2023/24",
-    "detail": "sfl-patch/chunk-2324.csv 为 1 字节空文件，2023/24 赛季 228 场无 SFL Spielnummer/Phase，需从 sfl.ch 官方赛程补提"
-   },
-   {
     "code": "Q2-doc",
-    "detail": "Q2 快照源数据集/SHA/开球并列处理/可复现计算文档待写"
+    "uq_class": "pending_work",
+    "detail": "Q2 快照源数据集/SHA/开球并列处理/可复现计算文档待写",
+    "next": "按 request Q2 逐项整理文档"
    },
    {
     "code": "Q3-venues-180",
-    "detail": "2019/20 180 场逐场实际场馆证据待搜集（上游 403，team-season 回退非逐场证据）"
+    "uq_class": "access_blocked",
+    "detail": "2019/20 180 场逐场实际场馆证据待搜集（上游 403；team-season 回退非逐场证据）",
+    "retry_after": "2026-10-17"
    },
    {
     "code": "Q4-conflicts-23",
-    "detail": "23 项俱乐部身份冲突有界队列（每字段 3-5 引证源）待组装"
+    "uq_class": "pending_work",
+    "detail": "23 项俱乐部身份冲突有界队列（每字段 3-5 引证源）待组装",
+    "next": "按 conflict policy 组装有界队列"
    }
   ]
  },
- "note": "takeover: corrected bogus request_sha from previous round; SFL join 1356/1584 landed; two reported errors verified as non-errors; 2025-02-08 conflict resolved via 9 third-party sources"
+ "note": "takeover 2026-10-10 17:34 CST：上一轮 2026-10-09 19:50 后停滞约22小时。真实执行：exec 重跑 SFL join——2023/24 228/228 命中（SFL-2023/24 关闭）、2022/23 180 场 Spielnummer 回填（旧 chunk 缺列致全 NULL 的隐性缺口已修复）；sfl-enrichment-joined.json 505,022→570,905 字节。待办：Q2-doc、Q3-venues-180（access_blocked）、Q4-conflicts-23。",
+ "dispatch_id": "exec:takeover-join-20261010-1734"
 }
