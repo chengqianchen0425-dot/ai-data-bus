@@ -1,0 +1,5789 @@
+{
+  "id": "req-20261010-001",
+  "type": "deep_research",
+  "params": {
+    "topic": "意甲 2018/19-2020/21 570场逐场 Bet365/Pinnacle/William Hill 1X2 历史赛前赔率首个可验证时点与赔率时间序列补充",
+    "questions": [
+      "仅对下方 570 场 I1 fixture_key 精确匹配，分别按 Bet365、Pinnacle、William Hill 收集 1X2 的 earliest directly evidenced pre-match observation、true opening（仅当来源明确标注）及所有可取得的赛前历史 tick。返回 home/draw/away、recorded_at、时区、pre-match 证据、source_url、final_url、retrieved_at、field_locator、source_sha256、field_semantics。",
+      "严格区分 true_opening、earliest_verified_pre_match、pre_closing、closing、historical_tick、unavailable。不得把 Football-Data 非 C 列、单一快照、closing 或赛果反推成 O_OPEN；不得从一条 tick 推出独立双端点或 O_INTERVAL。只有同一博彩公司同一场、可核验的最早与赛前最新记录均有来源时间戳时，才可提供两个端点；否则逐项保持 unavailable 并说明原因。",
+      "只返回足球比赛身份和赔率事实，不返回或推导赛果、BTTS 标签、Qimen/Q/F/G/I/M、宫位、模型方向、统计结构、概率、Outcome、Review、Gold 或 SQLite 写入。三家公司不得合并或互相替代。保留冲突并列来源，不自动选值。",
+      "逐场输出一行/每来源观察记录，并提供 expected/discovered/complete/partial/unavailable/conflict 覆盖统计及 unresolved_queue。无法精确匹配时保留 fixture_key 并标 blocked/unavailable，不猜测。"
+    ],
+    "source_hints": [
+      "优先可公开核验、直接展示指定博彩公司历史赔率和时间戳的 NowScore/Titan007、OddsPortal、BetExplorer 页面；动态页面可用浏览器检查。搜索摘要不能作为赔率数值证据。",
+      "本地现有 O_PRE_CLOSE 为 Football-Data/既有来源语义，不要求重复返回；此值不能被重命名为 true opening。"
+    ],
+    "constraints": {
+      "competition_key": "serie_a",
+      "competition_code": "I1",
+      "seasons": [
+        "2018/19",
+        "2019/20",
+        "2020/21"
+      ],
+      "fixture_count": 570,
+      "bookmakers": [
+        "Bet365",
+        "Pinnacle",
+        "William Hill"
+      ],
+      "market": "1X2",
+      "required_phases": [
+        "true_opening",
+        "earliest_verified_pre_match",
+        "pre_closing",
+        "closing",
+        "historical_tick",
+        "unavailable"
+      ],
+      "fixture_identity_fields": [
+        "fixture_key",
+        "season",
+        "match_date",
+        "home_team",
+        "away_team"
+      ],
+      "required_provenance": [
+        "source_url",
+        "final_url",
+        "retrieved_at",
+        "field_locator",
+        "source_sha256",
+        "field_semantics",
+        "recorded_at"
+      ],
+      "forbidden_output_fields": [
+        "result_90m",
+        "home_goals_90",
+        "away_goals_90",
+        "BTTS",
+        "Qimen",
+        "Q",
+        "F",
+        "G",
+        "I",
+        "M",
+        "palace",
+        "probability",
+        "Outcome",
+        "Review",
+        "Gold"
+      ],
+      "incremental_only": true,
+      "preserve_nulls": true,
+      "conflicts_not_auto_resolved": true,
+      "formal_model_unchanged": true,
+      "promotion_allowed": false
+    },
+    "fixtures": [
+      {
+        "fixture_key": "2018/19|2019-01-19|Inter|Sassuolo",
+        "season": "2018/19",
+        "match_date": "2019-01-19",
+        "official_round": 20,
+        "home_team": "Inter",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2019-01-19T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-19|Roma|Torino",
+        "season": "2018/19",
+        "match_date": "2019-01-19",
+        "official_round": 20,
+        "home_team": "Roma",
+        "away_team": "Torino",
+        "kickoff_local": "2019-01-19T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-19|Udinese|Parma",
+        "season": "2018/19",
+        "match_date": "2019-01-19",
+        "official_round": 20,
+        "home_team": "Udinese",
+        "away_team": "Parma",
+        "kickoff_local": "2019-01-19T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-20|Cagliari|Empoli",
+        "season": "2018/19",
+        "match_date": "2019-01-20",
+        "official_round": 20,
+        "home_team": "Cagliari",
+        "away_team": "Empoli",
+        "kickoff_local": "2019-01-20T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-20|Fiorentina|Sampdoria",
+        "season": "2018/19",
+        "match_date": "2019-01-20",
+        "official_round": 20,
+        "home_team": "Fiorentina",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2019-01-20T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-20|Frosinone|Atalanta",
+        "season": "2018/19",
+        "match_date": "2019-01-20",
+        "official_round": 20,
+        "home_team": "Frosinone",
+        "away_team": "Atalanta",
+        "kickoff_local": "2019-01-20T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-20|Napoli|Lazio",
+        "season": "2018/19",
+        "match_date": "2019-01-20",
+        "official_round": 20,
+        "home_team": "Napoli",
+        "away_team": "Lazio",
+        "kickoff_local": "2019-01-20T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-20|Spal|Bologna",
+        "season": "2018/19",
+        "match_date": "2019-01-20",
+        "official_round": 20,
+        "home_team": "Spal",
+        "away_team": "Bologna",
+        "kickoff_local": "2019-01-20T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-21|Genoa|Milan",
+        "season": "2018/19",
+        "match_date": "2019-01-21",
+        "official_round": 20,
+        "home_team": "Genoa",
+        "away_team": "Milan",
+        "kickoff_local": "2019-01-21T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-21|Juventus|Chievo",
+        "season": "2018/19",
+        "match_date": "2019-01-21",
+        "official_round": 20,
+        "home_team": "Juventus",
+        "away_team": "Chievo",
+        "kickoff_local": "2019-01-21T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-26|Milan|Napoli",
+        "season": "2018/19",
+        "match_date": "2019-01-26",
+        "official_round": 21,
+        "home_team": "Milan",
+        "away_team": "Napoli",
+        "kickoff_local": "2019-01-26T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-26|Sampdoria|Udinese",
+        "season": "2018/19",
+        "match_date": "2019-01-26",
+        "official_round": 21,
+        "home_team": "Sampdoria",
+        "away_team": "Udinese",
+        "kickoff_local": "2019-01-26T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-26|Sassuolo|Cagliari",
+        "season": "2018/19",
+        "match_date": "2019-01-26",
+        "official_round": 21,
+        "home_team": "Sassuolo",
+        "away_team": "Cagliari",
+        "kickoff_local": "2019-01-26T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-27|Atalanta|Roma",
+        "season": "2018/19",
+        "match_date": "2019-01-27",
+        "official_round": 21,
+        "home_team": "Atalanta",
+        "away_team": "Roma",
+        "kickoff_local": "2019-01-27T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-27|Bologna|Frosinone",
+        "season": "2018/19",
+        "match_date": "2019-01-27",
+        "official_round": 21,
+        "home_team": "Bologna",
+        "away_team": "Frosinone",
+        "kickoff_local": "2019-01-27T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-27|Chievo|Fiorentina",
+        "season": "2018/19",
+        "match_date": "2019-01-27",
+        "official_round": 21,
+        "home_team": "Chievo",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2019-01-27T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-27|Lazio|Juventus",
+        "season": "2018/19",
+        "match_date": "2019-01-27",
+        "official_round": 21,
+        "home_team": "Lazio",
+        "away_team": "Juventus",
+        "kickoff_local": "2019-01-27T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-27|Parma|Spal",
+        "season": "2018/19",
+        "match_date": "2019-01-27",
+        "official_round": 21,
+        "home_team": "Parma",
+        "away_team": "Spal",
+        "kickoff_local": "2019-01-27T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-27|Torino|Inter",
+        "season": "2018/19",
+        "match_date": "2019-01-27",
+        "official_round": 21,
+        "home_team": "Torino",
+        "away_team": "Inter",
+        "kickoff_local": "2019-01-27T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-01-28|Empoli|Genoa",
+        "season": "2018/19",
+        "match_date": "2019-01-28",
+        "official_round": 21,
+        "home_team": "Empoli",
+        "away_team": "Genoa",
+        "kickoff_local": "2019-01-28T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-02|Empoli|Chievo",
+        "season": "2018/19",
+        "match_date": "2019-02-02",
+        "official_round": 22,
+        "home_team": "Empoli",
+        "away_team": "Chievo",
+        "kickoff_local": "2019-02-02T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-02|Juventus|Parma",
+        "season": "2018/19",
+        "match_date": "2019-02-02",
+        "official_round": 22,
+        "home_team": "Juventus",
+        "away_team": "Parma",
+        "kickoff_local": "2019-02-02T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-02|Napoli|Sampdoria",
+        "season": "2018/19",
+        "match_date": "2019-02-02",
+        "official_round": 22,
+        "home_team": "Napoli",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2019-02-02T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-03|Genoa|Sassuolo",
+        "season": "2018/19",
+        "match_date": "2019-02-03",
+        "official_round": 22,
+        "home_team": "Genoa",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2019-02-03T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-03|Inter|Bologna",
+        "season": "2018/19",
+        "match_date": "2019-02-03",
+        "official_round": 22,
+        "home_team": "Inter",
+        "away_team": "Bologna",
+        "kickoff_local": "2019-02-03T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-03|Roma|Milan",
+        "season": "2018/19",
+        "match_date": "2019-02-03",
+        "official_round": 22,
+        "home_team": "Roma",
+        "away_team": "Milan",
+        "kickoff_local": "2019-02-03T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-03|Spal|Torino",
+        "season": "2018/19",
+        "match_date": "2019-02-03",
+        "official_round": 22,
+        "home_team": "Spal",
+        "away_team": "Torino",
+        "kickoff_local": "2019-02-03T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-03|Udinese|Fiorentina",
+        "season": "2018/19",
+        "match_date": "2019-02-03",
+        "official_round": 22,
+        "home_team": "Udinese",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2019-02-03T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-04|Cagliari|Atalanta",
+        "season": "2018/19",
+        "match_date": "2019-02-04",
+        "official_round": 22,
+        "home_team": "Cagliari",
+        "away_team": "Atalanta",
+        "kickoff_local": "2019-02-04T21:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-04|Frosinone|Lazio",
+        "season": "2018/19",
+        "match_date": "2019-02-04",
+        "official_round": 22,
+        "home_team": "Frosinone",
+        "away_team": "Lazio",
+        "kickoff_local": "2019-02-04T19:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-07|Lazio|Empoli",
+        "season": "2018/19",
+        "match_date": "2019-02-07",
+        "official_round": 23,
+        "home_team": "Lazio",
+        "away_team": "Empoli",
+        "kickoff_local": "2019-02-07T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-08|Chievo|Roma",
+        "season": "2018/19",
+        "match_date": "2019-02-08",
+        "official_round": 23,
+        "home_team": "Chievo",
+        "away_team": "Roma",
+        "kickoff_local": "2019-02-08T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-09|Fiorentina|Napoli",
+        "season": "2018/19",
+        "match_date": "2019-02-09",
+        "official_round": 23,
+        "home_team": "Fiorentina",
+        "away_team": "Napoli",
+        "kickoff_local": "2019-02-09T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-09|Parma|Inter",
+        "season": "2018/19",
+        "match_date": "2019-02-09",
+        "official_round": 23,
+        "home_team": "Parma",
+        "away_team": "Inter",
+        "kickoff_local": "2019-02-09T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-10|Atalanta|Spal",
+        "season": "2018/19",
+        "match_date": "2019-02-10",
+        "official_round": 23,
+        "home_team": "Atalanta",
+        "away_team": "Spal",
+        "kickoff_local": "2019-02-10T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-10|Bologna|Genoa",
+        "season": "2018/19",
+        "match_date": "2019-02-10",
+        "official_round": 23,
+        "home_team": "Bologna",
+        "away_team": "Genoa",
+        "kickoff_local": "2019-02-10T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-10|Milan|Cagliari",
+        "season": "2018/19",
+        "match_date": "2019-02-10",
+        "official_round": 23,
+        "home_team": "Milan",
+        "away_team": "Cagliari",
+        "kickoff_local": "2019-02-10T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-10|Sampdoria|Frosinone",
+        "season": "2018/19",
+        "match_date": "2019-02-10",
+        "official_round": 23,
+        "home_team": "Sampdoria",
+        "away_team": "Frosinone",
+        "kickoff_local": "2019-02-10T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-10|Sassuolo|Juventus",
+        "season": "2018/19",
+        "match_date": "2019-02-10",
+        "official_round": 23,
+        "home_team": "Sassuolo",
+        "away_team": "Juventus",
+        "kickoff_local": "2019-02-10T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-10|Torino|Udinese",
+        "season": "2018/19",
+        "match_date": "2019-02-10",
+        "official_round": 23,
+        "home_team": "Torino",
+        "away_team": "Udinese",
+        "kickoff_local": "2019-02-10T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-15|Juventus|Frosinone",
+        "season": "2018/19",
+        "match_date": "2019-02-15",
+        "official_round": 24,
+        "home_team": "Juventus",
+        "away_team": "Frosinone",
+        "kickoff_local": "2019-02-15T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-16|Atalanta|Milan",
+        "season": "2018/19",
+        "match_date": "2019-02-16",
+        "official_round": 24,
+        "home_team": "Atalanta",
+        "away_team": "Milan",
+        "kickoff_local": "2019-02-16T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-16|Cagliari|Parma",
+        "season": "2018/19",
+        "match_date": "2019-02-16",
+        "official_round": 24,
+        "home_team": "Cagliari",
+        "away_team": "Parma",
+        "kickoff_local": "2019-02-16T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-17|Empoli|Sassuolo",
+        "season": "2018/19",
+        "match_date": "2019-02-17",
+        "official_round": 24,
+        "home_team": "Empoli",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2019-02-17T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-17|Genoa|Lazio",
+        "season": "2018/19",
+        "match_date": "2019-02-17",
+        "official_round": 24,
+        "home_team": "Genoa",
+        "away_team": "Lazio",
+        "kickoff_local": "2019-02-17T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-17|Inter|Sampdoria",
+        "season": "2018/19",
+        "match_date": "2019-02-17",
+        "official_round": 24,
+        "home_team": "Inter",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2019-02-17T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-17|Napoli|Torino",
+        "season": "2018/19",
+        "match_date": "2019-02-17",
+        "official_round": 24,
+        "home_team": "Napoli",
+        "away_team": "Torino",
+        "kickoff_local": "2019-02-17T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-17|Spal|Fiorentina",
+        "season": "2018/19",
+        "match_date": "2019-02-17",
+        "official_round": 24,
+        "home_team": "Spal",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2019-02-17T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-17|Udinese|Chievo",
+        "season": "2018/19",
+        "match_date": "2019-02-17",
+        "official_round": 24,
+        "home_team": "Udinese",
+        "away_team": "Chievo",
+        "kickoff_local": "2019-02-17T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-18|Roma|Bologna",
+        "season": "2018/19",
+        "match_date": "2019-02-18",
+        "official_round": 24,
+        "home_team": "Roma",
+        "away_team": "Bologna",
+        "kickoff_local": "2019-02-18T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-22|Milan|Empoli",
+        "season": "2018/19",
+        "match_date": "2019-02-22",
+        "official_round": 25,
+        "home_team": "Milan",
+        "away_team": "Empoli",
+        "kickoff_local": "2019-02-22T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-23|Frosinone|Roma",
+        "season": "2018/19",
+        "match_date": "2019-02-23",
+        "official_round": 25,
+        "home_team": "Frosinone",
+        "away_team": "Roma",
+        "kickoff_local": "2019-02-23T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-23|Torino|Atalanta",
+        "season": "2018/19",
+        "match_date": "2019-02-23",
+        "official_round": 25,
+        "home_team": "Torino",
+        "away_team": "Atalanta",
+        "kickoff_local": "2019-02-23T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-24|Bologna|Juventus",
+        "season": "2018/19",
+        "match_date": "2019-02-24",
+        "official_round": 25,
+        "home_team": "Bologna",
+        "away_team": "Juventus",
+        "kickoff_local": "2019-02-24T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-24|Chievo|Genoa",
+        "season": "2018/19",
+        "match_date": "2019-02-24",
+        "official_round": 25,
+        "home_team": "Chievo",
+        "away_team": "Genoa",
+        "kickoff_local": "2019-02-24T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-24|Fiorentina|Inter",
+        "season": "2018/19",
+        "match_date": "2019-02-24",
+        "official_round": 25,
+        "home_team": "Fiorentina",
+        "away_team": "Inter",
+        "kickoff_local": "2019-02-24T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-24|Parma|Napoli",
+        "season": "2018/19",
+        "match_date": "2019-02-24",
+        "official_round": 25,
+        "home_team": "Parma",
+        "away_team": "Napoli",
+        "kickoff_local": "2019-02-24T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-24|Sampdoria|Cagliari",
+        "season": "2018/19",
+        "match_date": "2019-02-24",
+        "official_round": 25,
+        "home_team": "Sampdoria",
+        "away_team": "Cagliari",
+        "kickoff_local": "2019-02-24T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-02-24|Sassuolo|Spal",
+        "season": "2018/19",
+        "match_date": "2019-02-24",
+        "official_round": 25,
+        "home_team": "Sassuolo",
+        "away_team": "Spal",
+        "kickoff_local": "2019-02-24T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-01|Cagliari|Inter",
+        "season": "2018/19",
+        "match_date": "2019-03-01",
+        "official_round": 26,
+        "home_team": "Cagliari",
+        "away_team": "Inter",
+        "kickoff_local": "2019-03-01T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-02|Empoli|Parma",
+        "season": "2018/19",
+        "match_date": "2019-03-02",
+        "official_round": 26,
+        "home_team": "Empoli",
+        "away_team": "Parma",
+        "kickoff_local": "2019-03-02T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-02|Lazio|Roma",
+        "season": "2018/19",
+        "match_date": "2019-03-02",
+        "official_round": 26,
+        "home_team": "Lazio",
+        "away_team": "Roma",
+        "kickoff_local": "2019-03-02T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-02|Milan|Sassuolo",
+        "season": "2018/19",
+        "match_date": "2019-03-02",
+        "official_round": 26,
+        "home_team": "Milan",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2019-03-02T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-03|Atalanta|Fiorentina",
+        "season": "2018/19",
+        "match_date": "2019-03-03",
+        "official_round": 26,
+        "home_team": "Atalanta",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2019-03-03T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-03|Genoa|Frosinone",
+        "season": "2018/19",
+        "match_date": "2019-03-03",
+        "official_round": 26,
+        "home_team": "Genoa",
+        "away_team": "Frosinone",
+        "kickoff_local": "2019-03-03T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-03|Napoli|Juventus",
+        "season": "2018/19",
+        "match_date": "2019-03-03",
+        "official_round": 26,
+        "home_team": "Napoli",
+        "away_team": "Juventus",
+        "kickoff_local": "2019-03-03T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-03|Spal|Sampdoria",
+        "season": "2018/19",
+        "match_date": "2019-03-03",
+        "official_round": 26,
+        "home_team": "Spal",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2019-03-03T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-03|Torino|Chievo",
+        "season": "2018/19",
+        "match_date": "2019-03-03",
+        "official_round": 26,
+        "home_team": "Torino",
+        "away_team": "Chievo",
+        "kickoff_local": "2019-03-03T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-03|Udinese|Bologna",
+        "season": "2018/19",
+        "match_date": "2019-03-03",
+        "official_round": 26,
+        "home_team": "Udinese",
+        "away_team": "Bologna",
+        "kickoff_local": "2019-03-03T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-08|Juventus|Udinese",
+        "season": "2018/19",
+        "match_date": "2019-03-08",
+        "official_round": 27,
+        "home_team": "Juventus",
+        "away_team": "Udinese",
+        "kickoff_local": "2019-03-08T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-09|Chievo|Milan",
+        "season": "2018/19",
+        "match_date": "2019-03-09",
+        "official_round": 27,
+        "home_team": "Chievo",
+        "away_team": "Milan",
+        "kickoff_local": "2019-03-09T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-09|Parma|Genoa",
+        "season": "2018/19",
+        "match_date": "2019-03-09",
+        "official_round": 27,
+        "home_team": "Parma",
+        "away_team": "Genoa",
+        "kickoff_local": "2019-03-09T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-10|Bologna|Cagliari",
+        "season": "2018/19",
+        "match_date": "2019-03-10",
+        "official_round": 27,
+        "home_team": "Bologna",
+        "away_team": "Cagliari",
+        "kickoff_local": "2019-03-10T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-10|Fiorentina|Lazio",
+        "season": "2018/19",
+        "match_date": "2019-03-10",
+        "official_round": 27,
+        "home_team": "Fiorentina",
+        "away_team": "Lazio",
+        "kickoff_local": "2019-03-10T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-10|Frosinone|Torino",
+        "season": "2018/19",
+        "match_date": "2019-03-10",
+        "official_round": 27,
+        "home_team": "Frosinone",
+        "away_team": "Torino",
+        "kickoff_local": "2019-03-10T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-10|Inter|Spal",
+        "season": "2018/19",
+        "match_date": "2019-03-10",
+        "official_round": 27,
+        "home_team": "Inter",
+        "away_team": "Spal",
+        "kickoff_local": "2019-03-10T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-10|Sampdoria|Atalanta",
+        "season": "2018/19",
+        "match_date": "2019-03-10",
+        "official_round": 27,
+        "home_team": "Sampdoria",
+        "away_team": "Atalanta",
+        "kickoff_local": "2019-03-10T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-10|Sassuolo|Napoli",
+        "season": "2018/19",
+        "match_date": "2019-03-10",
+        "official_round": 27,
+        "home_team": "Sassuolo",
+        "away_team": "Napoli",
+        "kickoff_local": "2019-03-10T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-11|Roma|Empoli",
+        "season": "2018/19",
+        "match_date": "2019-03-11",
+        "official_round": 27,
+        "home_team": "Roma",
+        "away_team": "Empoli",
+        "kickoff_local": "2019-03-11T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-15|Cagliari|Fiorentina",
+        "season": "2018/19",
+        "match_date": "2019-03-15",
+        "official_round": 28,
+        "home_team": "Cagliari",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2019-03-15T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-16|Sassuolo|Sampdoria",
+        "season": "2018/19",
+        "match_date": "2019-03-16",
+        "official_round": 28,
+        "home_team": "Sassuolo",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2019-03-16T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-16|Spal|Roma",
+        "season": "2018/19",
+        "match_date": "2019-03-16",
+        "official_round": 28,
+        "home_team": "Spal",
+        "away_team": "Roma",
+        "kickoff_local": "2019-03-16T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-16|Torino|Bologna",
+        "season": "2018/19",
+        "match_date": "2019-03-16",
+        "official_round": 28,
+        "home_team": "Torino",
+        "away_team": "Bologna",
+        "kickoff_local": "2019-03-16T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-17|Atalanta|Chievo",
+        "season": "2018/19",
+        "match_date": "2019-03-17",
+        "official_round": 28,
+        "home_team": "Atalanta",
+        "away_team": "Chievo",
+        "kickoff_local": "2019-03-17T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-17|Empoli|Frosinone",
+        "season": "2018/19",
+        "match_date": "2019-03-17",
+        "official_round": 28,
+        "home_team": "Empoli",
+        "away_team": "Frosinone",
+        "kickoff_local": "2019-03-17T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-17|Genoa|Juventus",
+        "season": "2018/19",
+        "match_date": "2019-03-17",
+        "official_round": 28,
+        "home_team": "Genoa",
+        "away_team": "Juventus",
+        "kickoff_local": "2019-03-17T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-17|Lazio|Parma",
+        "season": "2018/19",
+        "match_date": "2019-03-17",
+        "official_round": 28,
+        "home_team": "Lazio",
+        "away_team": "Parma",
+        "kickoff_local": "2019-03-17T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-17|Milan|Inter",
+        "season": "2018/19",
+        "match_date": "2019-03-17",
+        "official_round": 28,
+        "home_team": "Milan",
+        "away_team": "Inter",
+        "kickoff_local": "2019-03-17T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-17|Napoli|Udinese",
+        "season": "2018/19",
+        "match_date": "2019-03-17",
+        "official_round": 28,
+        "home_team": "Napoli",
+        "away_team": "Udinese",
+        "kickoff_local": "2019-03-17T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-29|Chievo|Cagliari",
+        "season": "2018/19",
+        "match_date": "2019-03-29",
+        "official_round": 29,
+        "home_team": "Chievo",
+        "away_team": "Cagliari",
+        "kickoff_local": "2019-03-29T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-30|Juventus|Empoli",
+        "season": "2018/19",
+        "match_date": "2019-03-30",
+        "official_round": 29,
+        "home_team": "Juventus",
+        "away_team": "Empoli",
+        "kickoff_local": "2019-03-30T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-30|Sampdoria|Milan",
+        "season": "2018/19",
+        "match_date": "2019-03-30",
+        "official_round": 29,
+        "home_team": "Sampdoria",
+        "away_team": "Milan",
+        "kickoff_local": "2019-03-30T20:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-30|Udinese|Genoa",
+        "season": "2018/19",
+        "match_date": "2019-03-30",
+        "official_round": 29,
+        "home_team": "Udinese",
+        "away_team": "Genoa",
+        "kickoff_local": "2019-03-30T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-31|Bologna|Sassuolo",
+        "season": "2018/19",
+        "match_date": "2019-03-31",
+        "official_round": 29,
+        "home_team": "Bologna",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2019-03-31T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-31|Fiorentina|Torino",
+        "season": "2018/19",
+        "match_date": "2019-03-31",
+        "official_round": 29,
+        "home_team": "Fiorentina",
+        "away_team": "Torino",
+        "kickoff_local": "2019-03-31T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-31|Frosinone|Spal",
+        "season": "2018/19",
+        "match_date": "2019-03-31",
+        "official_round": 29,
+        "home_team": "Frosinone",
+        "away_team": "Spal",
+        "kickoff_local": "2019-03-31T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-31|Inter|Lazio",
+        "season": "2018/19",
+        "match_date": "2019-03-31",
+        "official_round": 29,
+        "home_team": "Inter",
+        "away_team": "Lazio",
+        "kickoff_local": "2019-03-31T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-31|Parma|Atalanta",
+        "season": "2018/19",
+        "match_date": "2019-03-31",
+        "official_round": 29,
+        "home_team": "Parma",
+        "away_team": "Atalanta",
+        "kickoff_local": "2019-03-31T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-03-31|Roma|Napoli",
+        "season": "2018/19",
+        "match_date": "2019-03-31",
+        "official_round": 29,
+        "home_team": "Roma",
+        "away_team": "Napoli",
+        "kickoff_local": "2019-03-31T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-02|Cagliari|Juventus",
+        "season": "2018/19",
+        "match_date": "2019-04-02",
+        "official_round": 30,
+        "home_team": "Cagliari",
+        "away_team": "Juventus",
+        "kickoff_local": "2019-04-02T21:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-02|Milan|Udinese",
+        "season": "2018/19",
+        "match_date": "2019-04-02",
+        "official_round": 30,
+        "home_team": "Milan",
+        "away_team": "Udinese",
+        "kickoff_local": "2019-04-02T19:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-03|Empoli|Napoli",
+        "season": "2018/19",
+        "match_date": "2019-04-03",
+        "official_round": 30,
+        "home_team": "Empoli",
+        "away_team": "Napoli",
+        "kickoff_local": "2019-04-03T19:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-03|Frosinone|Parma",
+        "season": "2018/19",
+        "match_date": "2019-04-03",
+        "official_round": 30,
+        "home_team": "Frosinone",
+        "away_team": "Parma",
+        "kickoff_local": "2019-04-03T21:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-03|Genoa|Inter",
+        "season": "2018/19",
+        "match_date": "2019-04-03",
+        "official_round": 30,
+        "home_team": "Genoa",
+        "away_team": "Inter",
+        "kickoff_local": "2019-04-03T21:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-03|Roma|Fiorentina",
+        "season": "2018/19",
+        "match_date": "2019-04-03",
+        "official_round": 30,
+        "home_team": "Roma",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2019-04-03T21:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-03|Spal|Lazio",
+        "season": "2018/19",
+        "match_date": "2019-04-03",
+        "official_round": 30,
+        "home_team": "Spal",
+        "away_team": "Lazio",
+        "kickoff_local": "2019-04-03T21:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-03|Torino|Sampdoria",
+        "season": "2018/19",
+        "match_date": "2019-04-03",
+        "official_round": 30,
+        "home_team": "Torino",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2019-04-03T21:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-04|Atalanta|Bologna",
+        "season": "2018/19",
+        "match_date": "2019-04-04",
+        "official_round": 30,
+        "home_team": "Atalanta",
+        "away_team": "Bologna",
+        "kickoff_local": "2019-04-04T21:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-04|Sassuolo|Chievo",
+        "season": "2018/19",
+        "match_date": "2019-04-04",
+        "official_round": 30,
+        "home_team": "Sassuolo",
+        "away_team": "Chievo",
+        "kickoff_local": "2019-04-04T19:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-06|Juventus|Milan",
+        "season": "2018/19",
+        "match_date": "2019-04-06",
+        "official_round": 31,
+        "home_team": "Juventus",
+        "away_team": "Milan",
+        "kickoff_local": "2019-04-06T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-06|Parma|Torino",
+        "season": "2018/19",
+        "match_date": "2019-04-06",
+        "official_round": 31,
+        "home_team": "Parma",
+        "away_team": "Torino",
+        "kickoff_local": "2019-04-06T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-06|Sampdoria|Roma",
+        "season": "2018/19",
+        "match_date": "2019-04-06",
+        "official_round": 31,
+        "home_team": "Sampdoria",
+        "away_team": "Roma",
+        "kickoff_local": "2019-04-06T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-07|Cagliari|Spal",
+        "season": "2018/19",
+        "match_date": "2019-04-07",
+        "official_round": 31,
+        "home_team": "Cagliari",
+        "away_team": "Spal",
+        "kickoff_local": "2019-04-07T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-07|Fiorentina|Frosinone",
+        "season": "2018/19",
+        "match_date": "2019-04-07",
+        "official_round": 31,
+        "home_team": "Fiorentina",
+        "away_team": "Frosinone",
+        "kickoff_local": "2019-04-07T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-07|Inter|Atalanta",
+        "season": "2018/19",
+        "match_date": "2019-04-07",
+        "official_round": 31,
+        "home_team": "Inter",
+        "away_team": "Atalanta",
+        "kickoff_local": "2019-04-07T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-07|Lazio|Sassuolo",
+        "season": "2018/19",
+        "match_date": "2019-04-07",
+        "official_round": 31,
+        "home_team": "Lazio",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2019-04-07T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-07|Napoli|Genoa",
+        "season": "2018/19",
+        "match_date": "2019-04-07",
+        "official_round": 31,
+        "home_team": "Napoli",
+        "away_team": "Genoa",
+        "kickoff_local": "2019-04-07T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-07|Udinese|Empoli",
+        "season": "2018/19",
+        "match_date": "2019-04-07",
+        "official_round": 31,
+        "home_team": "Udinese",
+        "away_team": "Empoli",
+        "kickoff_local": "2019-04-07T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-08|Bologna|Chievo",
+        "season": "2018/19",
+        "match_date": "2019-04-08",
+        "official_round": 31,
+        "home_team": "Bologna",
+        "away_team": "Chievo",
+        "kickoff_local": "2019-04-08T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-13|Milan|Lazio",
+        "season": "2018/19",
+        "match_date": "2019-04-13",
+        "official_round": 32,
+        "home_team": "Milan",
+        "away_team": "Lazio",
+        "kickoff_local": "2019-04-13T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-13|Roma|Udinese",
+        "season": "2018/19",
+        "match_date": "2019-04-13",
+        "official_round": 32,
+        "home_team": "Roma",
+        "away_team": "Udinese",
+        "kickoff_local": "2019-04-13T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-13|Spal|Juventus",
+        "season": "2018/19",
+        "match_date": "2019-04-13",
+        "official_round": 32,
+        "home_team": "Spal",
+        "away_team": "Juventus",
+        "kickoff_local": "2019-04-13T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-14|Chievo|Napoli",
+        "season": "2018/19",
+        "match_date": "2019-04-14",
+        "official_round": 32,
+        "home_team": "Chievo",
+        "away_team": "Napoli",
+        "kickoff_local": "2019-04-14T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-14|Fiorentina|Bologna",
+        "season": "2018/19",
+        "match_date": "2019-04-14",
+        "official_round": 32,
+        "home_team": "Fiorentina",
+        "away_team": "Bologna",
+        "kickoff_local": "2019-04-14T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-14|Frosinone|Inter",
+        "season": "2018/19",
+        "match_date": "2019-04-14",
+        "official_round": 32,
+        "home_team": "Frosinone",
+        "away_team": "Inter",
+        "kickoff_local": "2019-04-14T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-14|Sampdoria|Genoa",
+        "season": "2018/19",
+        "match_date": "2019-04-14",
+        "official_round": 32,
+        "home_team": "Sampdoria",
+        "away_team": "Genoa",
+        "kickoff_local": "2019-04-14T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-14|Sassuolo|Parma",
+        "season": "2018/19",
+        "match_date": "2019-04-14",
+        "official_round": 32,
+        "home_team": "Sassuolo",
+        "away_team": "Parma",
+        "kickoff_local": "2019-04-14T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-14|Torino|Cagliari",
+        "season": "2018/19",
+        "match_date": "2019-04-14",
+        "official_round": 32,
+        "home_team": "Torino",
+        "away_team": "Cagliari",
+        "kickoff_local": "2019-04-14T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-15|Atalanta|Empoli",
+        "season": "2018/19",
+        "match_date": "2019-04-15",
+        "official_round": 32,
+        "home_team": "Atalanta",
+        "away_team": "Empoli",
+        "kickoff_local": "2019-04-15T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-17|Lazio|Udinese",
+        "season": "2018/19",
+        "match_date": "2019-04-17",
+        "official_round": 25,
+        "home_team": "Lazio",
+        "away_team": "Udinese",
+        "kickoff_local": "2019-04-17T19:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-20|Bologna|Sampdoria",
+        "season": "2018/19",
+        "match_date": "2019-04-20",
+        "official_round": 33,
+        "home_team": "Bologna",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2019-04-20T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-20|Cagliari|Frosinone",
+        "season": "2018/19",
+        "match_date": "2019-04-20",
+        "official_round": 33,
+        "home_team": "Cagliari",
+        "away_team": "Frosinone",
+        "kickoff_local": "2019-04-20T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-20|Empoli|Spal",
+        "season": "2018/19",
+        "match_date": "2019-04-20",
+        "official_round": 33,
+        "home_team": "Empoli",
+        "away_team": "Spal",
+        "kickoff_local": "2019-04-20T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-20|Genoa|Torino",
+        "season": "2018/19",
+        "match_date": "2019-04-20",
+        "official_round": 33,
+        "home_team": "Genoa",
+        "away_team": "Torino",
+        "kickoff_local": "2019-04-20T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-20|Inter|Roma",
+        "season": "2018/19",
+        "match_date": "2019-04-20",
+        "official_round": 33,
+        "home_team": "Inter",
+        "away_team": "Roma",
+        "kickoff_local": "2019-04-20T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-20|Juventus|Fiorentina",
+        "season": "2018/19",
+        "match_date": "2019-04-20",
+        "official_round": 33,
+        "home_team": "Juventus",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2019-04-20T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-20|Lazio|Chievo",
+        "season": "2018/19",
+        "match_date": "2019-04-20",
+        "official_round": 33,
+        "home_team": "Lazio",
+        "away_team": "Chievo",
+        "kickoff_local": "2019-04-20T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-20|Parma|Milan",
+        "season": "2018/19",
+        "match_date": "2019-04-20",
+        "official_round": 33,
+        "home_team": "Parma",
+        "away_team": "Milan",
+        "kickoff_local": "2019-04-20T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-20|Udinese|Sassuolo",
+        "season": "2018/19",
+        "match_date": "2019-04-20",
+        "official_round": 33,
+        "home_team": "Udinese",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2019-04-20T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-22|Napoli|Atalanta",
+        "season": "2018/19",
+        "match_date": "2019-04-22",
+        "official_round": 33,
+        "home_team": "Napoli",
+        "away_team": "Atalanta",
+        "kickoff_local": "2019-04-22T19:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-27|Bologna|Empoli",
+        "season": "2018/19",
+        "match_date": "2019-04-27",
+        "official_round": 34,
+        "home_team": "Bologna",
+        "away_team": "Empoli",
+        "kickoff_local": "2019-04-27T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-27|Inter|Juventus",
+        "season": "2018/19",
+        "match_date": "2019-04-27",
+        "official_round": 34,
+        "home_team": "Inter",
+        "away_team": "Juventus",
+        "kickoff_local": "2019-04-27T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-27|Roma|Cagliari",
+        "season": "2018/19",
+        "match_date": "2019-04-27",
+        "official_round": 34,
+        "home_team": "Roma",
+        "away_team": "Cagliari",
+        "kickoff_local": "2019-04-27T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-28|Chievo|Parma",
+        "season": "2018/19",
+        "match_date": "2019-04-28",
+        "official_round": 34,
+        "home_team": "Chievo",
+        "away_team": "Parma",
+        "kickoff_local": "2019-04-28T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-28|Frosinone|Napoli",
+        "season": "2018/19",
+        "match_date": "2019-04-28",
+        "official_round": 34,
+        "home_team": "Frosinone",
+        "away_team": "Napoli",
+        "kickoff_local": "2019-04-28T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-28|Sampdoria|Lazio",
+        "season": "2018/19",
+        "match_date": "2019-04-28",
+        "official_round": 34,
+        "home_team": "Sampdoria",
+        "away_team": "Lazio",
+        "kickoff_local": "2019-04-28T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-28|Spal|Genoa",
+        "season": "2018/19",
+        "match_date": "2019-04-28",
+        "official_round": 34,
+        "home_team": "Spal",
+        "away_team": "Genoa",
+        "kickoff_local": "2019-04-28T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-28|Torino|Milan",
+        "season": "2018/19",
+        "match_date": "2019-04-28",
+        "official_round": 34,
+        "home_team": "Torino",
+        "away_team": "Milan",
+        "kickoff_local": "2019-04-28T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-29|Atalanta|Udinese",
+        "season": "2018/19",
+        "match_date": "2019-04-29",
+        "official_round": 34,
+        "home_team": "Atalanta",
+        "away_team": "Udinese",
+        "kickoff_local": "2019-04-29T19:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-04-29|Fiorentina|Sassuolo",
+        "season": "2018/19",
+        "match_date": "2019-04-29",
+        "official_round": 34,
+        "home_team": "Fiorentina",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2019-04-29T21:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-03|Juventus|Torino",
+        "season": "2018/19",
+        "match_date": "2019-05-03",
+        "official_round": 35,
+        "home_team": "Juventus",
+        "away_team": "Torino",
+        "kickoff_local": "2019-05-03T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-04|Chievo|Spal",
+        "season": "2018/19",
+        "match_date": "2019-05-04",
+        "official_round": 35,
+        "home_team": "Chievo",
+        "away_team": "Spal",
+        "kickoff_local": "2019-05-04T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-04|Udinese|Inter",
+        "season": "2018/19",
+        "match_date": "2019-05-04",
+        "official_round": 35,
+        "home_team": "Udinese",
+        "away_team": "Inter",
+        "kickoff_local": "2019-05-04T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-05|Empoli|Fiorentina",
+        "season": "2018/19",
+        "match_date": "2019-05-05",
+        "official_round": 35,
+        "home_team": "Empoli",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2019-05-05T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-05|Genoa|Roma",
+        "season": "2018/19",
+        "match_date": "2019-05-05",
+        "official_round": 35,
+        "home_team": "Genoa",
+        "away_team": "Roma",
+        "kickoff_local": "2019-05-05T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-05|Lazio|Atalanta",
+        "season": "2018/19",
+        "match_date": "2019-05-05",
+        "official_round": 35,
+        "home_team": "Lazio",
+        "away_team": "Atalanta",
+        "kickoff_local": "2019-05-05T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-05|Napoli|Cagliari",
+        "season": "2018/19",
+        "match_date": "2019-05-05",
+        "official_round": 35,
+        "home_team": "Napoli",
+        "away_team": "Cagliari",
+        "kickoff_local": "2019-05-05T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-05|Parma|Sampdoria",
+        "season": "2018/19",
+        "match_date": "2019-05-05",
+        "official_round": 35,
+        "home_team": "Parma",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2019-05-05T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-05|Sassuolo|Frosinone",
+        "season": "2018/19",
+        "match_date": "2019-05-05",
+        "official_round": 35,
+        "home_team": "Sassuolo",
+        "away_team": "Frosinone",
+        "kickoff_local": "2019-05-05T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-06|Milan|Bologna",
+        "season": "2018/19",
+        "match_date": "2019-05-06",
+        "official_round": 35,
+        "home_team": "Milan",
+        "away_team": "Bologna",
+        "kickoff_local": "2019-05-06T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-11|Atalanta|Genoa",
+        "season": "2018/19",
+        "match_date": "2019-05-11",
+        "official_round": 36,
+        "home_team": "Atalanta",
+        "away_team": "Genoa",
+        "kickoff_local": "2019-05-11T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-11|Cagliari|Lazio",
+        "season": "2018/19",
+        "match_date": "2019-05-11",
+        "official_round": 36,
+        "home_team": "Cagliari",
+        "away_team": "Lazio",
+        "kickoff_local": "2019-05-11T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-11|Fiorentina|Milan",
+        "season": "2018/19",
+        "match_date": "2019-05-11",
+        "official_round": 36,
+        "home_team": "Fiorentina",
+        "away_team": "Milan",
+        "kickoff_local": "2019-05-11T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-12|Frosinone|Udinese",
+        "season": "2018/19",
+        "match_date": "2019-05-12",
+        "official_round": 36,
+        "home_team": "Frosinone",
+        "away_team": "Udinese",
+        "kickoff_local": "2019-05-12T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-12|Roma|Juventus",
+        "season": "2018/19",
+        "match_date": "2019-05-12",
+        "official_round": 36,
+        "home_team": "Roma",
+        "away_team": "Juventus",
+        "kickoff_local": "2019-05-12T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-12|Sampdoria|Empoli",
+        "season": "2018/19",
+        "match_date": "2019-05-12",
+        "official_round": 36,
+        "home_team": "Sampdoria",
+        "away_team": "Empoli",
+        "kickoff_local": "2019-05-12T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-12|Spal|Napoli",
+        "season": "2018/19",
+        "match_date": "2019-05-12",
+        "official_round": 36,
+        "home_team": "Spal",
+        "away_team": "Napoli",
+        "kickoff_local": "2019-05-12T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-12|Torino|Sassuolo",
+        "season": "2018/19",
+        "match_date": "2019-05-12",
+        "official_round": 36,
+        "home_team": "Torino",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2019-05-12T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-13|Bologna|Parma",
+        "season": "2018/19",
+        "match_date": "2019-05-13",
+        "official_round": 36,
+        "home_team": "Bologna",
+        "away_team": "Parma",
+        "kickoff_local": "2019-05-13T19:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-13|Inter|Chievo",
+        "season": "2018/19",
+        "match_date": "2019-05-13",
+        "official_round": 36,
+        "home_team": "Inter",
+        "away_team": "Chievo",
+        "kickoff_local": "2019-05-13T21:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-18|Genoa|Cagliari",
+        "season": "2018/19",
+        "match_date": "2019-05-18",
+        "official_round": 37,
+        "home_team": "Genoa",
+        "away_team": "Cagliari",
+        "kickoff_local": "2019-05-18T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-18|Sassuolo|Roma",
+        "season": "2018/19",
+        "match_date": "2019-05-18",
+        "official_round": 37,
+        "home_team": "Sassuolo",
+        "away_team": "Roma",
+        "kickoff_local": "2019-05-18T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-18|Udinese|Spal",
+        "season": "2018/19",
+        "match_date": "2019-05-18",
+        "official_round": 37,
+        "home_team": "Udinese",
+        "away_team": "Spal",
+        "kickoff_local": "2019-05-18T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-19|Chievo|Sampdoria",
+        "season": "2018/19",
+        "match_date": "2019-05-19",
+        "official_round": 37,
+        "home_team": "Chievo",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2019-05-19T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-19|Empoli|Torino",
+        "season": "2018/19",
+        "match_date": "2019-05-19",
+        "official_round": 37,
+        "home_team": "Empoli",
+        "away_team": "Torino",
+        "kickoff_local": "2019-05-19T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-19|Juventus|Atalanta",
+        "season": "2018/19",
+        "match_date": "2019-05-19",
+        "official_round": 37,
+        "home_team": "Juventus",
+        "away_team": "Atalanta",
+        "kickoff_local": "2019-05-19T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-19|Milan|Frosinone",
+        "season": "2018/19",
+        "match_date": "2019-05-19",
+        "official_round": 37,
+        "home_team": "Milan",
+        "away_team": "Frosinone",
+        "kickoff_local": "2019-05-19T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-19|Napoli|Inter",
+        "season": "2018/19",
+        "match_date": "2019-05-19",
+        "official_round": 37,
+        "home_team": "Napoli",
+        "away_team": "Inter",
+        "kickoff_local": "2019-05-19T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-19|Parma|Fiorentina",
+        "season": "2018/19",
+        "match_date": "2019-05-19",
+        "official_round": 37,
+        "home_team": "Parma",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2019-05-19T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-20|Lazio|Bologna",
+        "season": "2018/19",
+        "match_date": "2019-05-20",
+        "official_round": 37,
+        "home_team": "Lazio",
+        "away_team": "Bologna",
+        "kickoff_local": "2019-05-20T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-25|Bologna|Napoli",
+        "season": "2018/19",
+        "match_date": "2019-05-25",
+        "official_round": 38,
+        "home_team": "Bologna",
+        "away_team": "Napoli",
+        "kickoff_local": "2019-05-25T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-25|Frosinone|Chievo",
+        "season": "2018/19",
+        "match_date": "2019-05-25",
+        "official_round": 38,
+        "home_team": "Frosinone",
+        "away_team": "Chievo",
+        "kickoff_local": "2019-05-25T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-26|Atalanta|Sassuolo",
+        "season": "2018/19",
+        "match_date": "2019-05-26",
+        "official_round": 38,
+        "home_team": "Atalanta",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2019-05-26T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-26|Cagliari|Udinese",
+        "season": "2018/19",
+        "match_date": "2019-05-26",
+        "official_round": 38,
+        "home_team": "Cagliari",
+        "away_team": "Udinese",
+        "kickoff_local": "2019-05-26T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-26|Fiorentina|Genoa",
+        "season": "2018/19",
+        "match_date": "2019-05-26",
+        "official_round": 38,
+        "home_team": "Fiorentina",
+        "away_team": "Genoa",
+        "kickoff_local": "2019-05-26T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-26|Inter|Empoli",
+        "season": "2018/19",
+        "match_date": "2019-05-26",
+        "official_round": 38,
+        "home_team": "Inter",
+        "away_team": "Empoli",
+        "kickoff_local": "2019-05-26T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-26|Roma|Parma",
+        "season": "2018/19",
+        "match_date": "2019-05-26",
+        "official_round": 38,
+        "home_team": "Roma",
+        "away_team": "Parma",
+        "kickoff_local": "2019-05-26T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-26|Sampdoria|Juventus",
+        "season": "2018/19",
+        "match_date": "2019-05-26",
+        "official_round": 38,
+        "home_team": "Sampdoria",
+        "away_team": "Juventus",
+        "kickoff_local": "2019-05-26T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-26|Spal|Milan",
+        "season": "2018/19",
+        "match_date": "2019-05-26",
+        "official_round": 38,
+        "home_team": "Spal",
+        "away_team": "Milan",
+        "kickoff_local": "2019-05-26T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2018/19|2019-05-26|Torino|Lazio",
+        "season": "2018/19",
+        "match_date": "2019-05-26",
+        "official_round": 38,
+        "home_team": "Torino",
+        "away_team": "Lazio",
+        "kickoff_local": "2019-05-26T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-18|Lazio|Sampdoria",
+        "season": "2019/20",
+        "match_date": "2020-01-18",
+        "official_round": 20,
+        "home_team": "Lazio",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2020-01-18T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-18|Sassuolo|Torino",
+        "season": "2019/20",
+        "match_date": "2020-01-18",
+        "official_round": 20,
+        "home_team": "Sassuolo",
+        "away_team": "Torino",
+        "kickoff_local": "2020-01-18T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-18|Napoli|Fiorentina",
+        "season": "2019/20",
+        "match_date": "2020-01-18",
+        "official_round": 20,
+        "home_team": "Napoli",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2020-01-18T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-19|Milan|Udinese",
+        "season": "2019/20",
+        "match_date": "2020-01-19",
+        "official_round": 20,
+        "home_team": "Milan",
+        "away_team": "Udinese",
+        "kickoff_local": "2020-01-19T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-19|Bologna|Verona",
+        "season": "2019/20",
+        "match_date": "2020-01-19",
+        "official_round": 20,
+        "home_team": "Bologna",
+        "away_team": "Verona",
+        "kickoff_local": "2020-01-19T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-19|Brescia|Cagliari",
+        "season": "2019/20",
+        "match_date": "2020-01-19",
+        "official_round": 20,
+        "home_team": "Brescia",
+        "away_team": "Cagliari",
+        "kickoff_local": "2020-01-19T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-19|Lecce|Inter",
+        "season": "2019/20",
+        "match_date": "2020-01-19",
+        "official_round": 20,
+        "home_team": "Lecce",
+        "away_team": "Inter",
+        "kickoff_local": "2020-01-19T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-19|Genoa|Roma",
+        "season": "2019/20",
+        "match_date": "2020-01-19",
+        "official_round": 20,
+        "home_team": "Genoa",
+        "away_team": "Roma",
+        "kickoff_local": "2020-01-19T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-19|Juventus|Parma",
+        "season": "2019/20",
+        "match_date": "2020-01-19",
+        "official_round": 20,
+        "home_team": "Juventus",
+        "away_team": "Parma",
+        "kickoff_local": "2020-01-19T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-20|Atalanta|Spal",
+        "season": "2019/20",
+        "match_date": "2020-01-20",
+        "official_round": 20,
+        "home_team": "Atalanta",
+        "away_team": "Spal",
+        "kickoff_local": "2020-01-20T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-24|Brescia|Milan",
+        "season": "2019/20",
+        "match_date": "2020-01-24",
+        "official_round": 21,
+        "home_team": "Brescia",
+        "away_team": "Milan",
+        "kickoff_local": "2020-01-24T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-25|Spal|Bologna",
+        "season": "2019/20",
+        "match_date": "2020-01-25",
+        "official_round": 21,
+        "home_team": "Spal",
+        "away_team": "Bologna",
+        "kickoff_local": "2020-01-25T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-25|Fiorentina|Genoa",
+        "season": "2019/20",
+        "match_date": "2020-01-25",
+        "official_round": 21,
+        "home_team": "Fiorentina",
+        "away_team": "Genoa",
+        "kickoff_local": "2020-01-25T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-25|Torino|Atalanta",
+        "season": "2019/20",
+        "match_date": "2020-01-25",
+        "official_round": 21,
+        "home_team": "Torino",
+        "away_team": "Atalanta",
+        "kickoff_local": "2020-01-25T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-26|Inter|Cagliari",
+        "season": "2019/20",
+        "match_date": "2020-01-26",
+        "official_round": 21,
+        "home_team": "Inter",
+        "away_team": "Cagliari",
+        "kickoff_local": "2020-01-26T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-26|Parma|Udinese",
+        "season": "2019/20",
+        "match_date": "2020-01-26",
+        "official_round": 21,
+        "home_team": "Parma",
+        "away_team": "Udinese",
+        "kickoff_local": "2020-01-26T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-26|Sampdoria|Sassuolo",
+        "season": "2019/20",
+        "match_date": "2020-01-26",
+        "official_round": 21,
+        "home_team": "Sampdoria",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2020-01-26T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-26|Verona|Lecce",
+        "season": "2019/20",
+        "match_date": "2020-01-26",
+        "official_round": 21,
+        "home_team": "Verona",
+        "away_team": "Lecce",
+        "kickoff_local": "2020-01-26T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-26|Roma|Lazio",
+        "season": "2019/20",
+        "match_date": "2020-01-26",
+        "official_round": 21,
+        "home_team": "Roma",
+        "away_team": "Lazio",
+        "kickoff_local": "2020-01-26T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-01-26|Napoli|Juventus",
+        "season": "2019/20",
+        "match_date": "2020-01-26",
+        "official_round": 21,
+        "home_team": "Napoli",
+        "away_team": "Juventus",
+        "kickoff_local": "2020-01-26T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-01|Bologna|Brescia",
+        "season": "2019/20",
+        "match_date": "2020-02-01",
+        "official_round": 22,
+        "home_team": "Bologna",
+        "away_team": "Brescia",
+        "kickoff_local": "2020-02-01T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-01|Cagliari|Parma",
+        "season": "2019/20",
+        "match_date": "2020-02-01",
+        "official_round": 22,
+        "home_team": "Cagliari",
+        "away_team": "Parma",
+        "kickoff_local": "2020-02-01T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-01|Sassuolo|Roma",
+        "season": "2019/20",
+        "match_date": "2020-02-01",
+        "official_round": 22,
+        "home_team": "Sassuolo",
+        "away_team": "Roma",
+        "kickoff_local": "2020-02-01T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-02|Juventus|Fiorentina",
+        "season": "2019/20",
+        "match_date": "2020-02-02",
+        "official_round": 22,
+        "home_team": "Juventus",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2020-02-02T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-02|Atalanta|Genoa",
+        "season": "2019/20",
+        "match_date": "2020-02-02",
+        "official_round": 22,
+        "home_team": "Atalanta",
+        "away_team": "Genoa",
+        "kickoff_local": "2020-02-02T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-02|Lazio|Spal",
+        "season": "2019/20",
+        "match_date": "2020-02-02",
+        "official_round": 22,
+        "home_team": "Lazio",
+        "away_team": "Spal",
+        "kickoff_local": "2020-02-02T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-02|Milan|Verona",
+        "season": "2019/20",
+        "match_date": "2020-02-02",
+        "official_round": 22,
+        "home_team": "Milan",
+        "away_team": "Verona",
+        "kickoff_local": "2020-02-02T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-02|Lecce|Torino",
+        "season": "2019/20",
+        "match_date": "2020-02-02",
+        "official_round": 22,
+        "home_team": "Lecce",
+        "away_team": "Torino",
+        "kickoff_local": "2020-02-02T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-02|Udinese|Inter",
+        "season": "2019/20",
+        "match_date": "2020-02-02",
+        "official_round": 22,
+        "home_team": "Udinese",
+        "away_team": "Inter",
+        "kickoff_local": "2020-02-02T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-03|Sampdoria|Napoli",
+        "season": "2019/20",
+        "match_date": "2020-02-03",
+        "official_round": 22,
+        "home_team": "Sampdoria",
+        "away_team": "Napoli",
+        "kickoff_local": "2020-02-03T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-07|Roma|Bologna",
+        "season": "2019/20",
+        "match_date": "2020-02-07",
+        "official_round": 23,
+        "home_team": "Roma",
+        "away_team": "Bologna",
+        "kickoff_local": "2020-02-07T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-08|Fiorentina|Atalanta",
+        "season": "2019/20",
+        "match_date": "2020-02-08",
+        "official_round": 23,
+        "home_team": "Fiorentina",
+        "away_team": "Atalanta",
+        "kickoff_local": "2020-02-08T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-08|Torino|Sampdoria",
+        "season": "2019/20",
+        "match_date": "2020-02-08",
+        "official_round": 23,
+        "home_team": "Torino",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2020-02-08T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-08|Verona|Juventus",
+        "season": "2019/20",
+        "match_date": "2020-02-08",
+        "official_round": 23,
+        "home_team": "Verona",
+        "away_team": "Juventus",
+        "kickoff_local": "2020-02-08T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-09|Spal|Sassuolo",
+        "season": "2019/20",
+        "match_date": "2020-02-09",
+        "official_round": 23,
+        "home_team": "Spal",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2020-02-09T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-09|Brescia|Udinese",
+        "season": "2019/20",
+        "match_date": "2020-02-09",
+        "official_round": 23,
+        "home_team": "Brescia",
+        "away_team": "Udinese",
+        "kickoff_local": "2020-02-09T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-09|Genoa|Cagliari",
+        "season": "2019/20",
+        "match_date": "2020-02-09",
+        "official_round": 23,
+        "home_team": "Genoa",
+        "away_team": "Cagliari",
+        "kickoff_local": "2020-02-09T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-09|Napoli|Lecce",
+        "season": "2019/20",
+        "match_date": "2020-02-09",
+        "official_round": 23,
+        "home_team": "Napoli",
+        "away_team": "Lecce",
+        "kickoff_local": "2020-02-09T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-09|Parma|Lazio",
+        "season": "2019/20",
+        "match_date": "2020-02-09",
+        "official_round": 23,
+        "home_team": "Parma",
+        "away_team": "Lazio",
+        "kickoff_local": "2020-02-09T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-09|Inter|Milan",
+        "season": "2019/20",
+        "match_date": "2020-02-09",
+        "official_round": 23,
+        "home_team": "Inter",
+        "away_team": "Milan",
+        "kickoff_local": "2020-02-09T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-15|Lecce|Spal",
+        "season": "2019/20",
+        "match_date": "2020-02-15",
+        "official_round": 24,
+        "home_team": "Lecce",
+        "away_team": "Spal",
+        "kickoff_local": "2020-02-15T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-15|Bologna|Genoa",
+        "season": "2019/20",
+        "match_date": "2020-02-15",
+        "official_round": 24,
+        "home_team": "Bologna",
+        "away_team": "Genoa",
+        "kickoff_local": "2020-02-15T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-15|Atalanta|Roma",
+        "season": "2019/20",
+        "match_date": "2020-02-15",
+        "official_round": 24,
+        "home_team": "Atalanta",
+        "away_team": "Roma",
+        "kickoff_local": "2020-02-15T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-16|Udinese|Verona",
+        "season": "2019/20",
+        "match_date": "2020-02-16",
+        "official_round": 24,
+        "home_team": "Udinese",
+        "away_team": "Verona",
+        "kickoff_local": "2020-02-16T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-16|Juventus|Brescia",
+        "season": "2019/20",
+        "match_date": "2020-02-16",
+        "official_round": 24,
+        "home_team": "Juventus",
+        "away_team": "Brescia",
+        "kickoff_local": "2020-02-16T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-16|Sampdoria|Fiorentina",
+        "season": "2019/20",
+        "match_date": "2020-02-16",
+        "official_round": 24,
+        "home_team": "Sampdoria",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2020-02-16T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-16|Sassuolo|Parma",
+        "season": "2019/20",
+        "match_date": "2020-02-16",
+        "official_round": 24,
+        "home_team": "Sassuolo",
+        "away_team": "Parma",
+        "kickoff_local": "2020-02-16T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-16|Cagliari|Napoli",
+        "season": "2019/20",
+        "match_date": "2020-02-16",
+        "official_round": 24,
+        "home_team": "Cagliari",
+        "away_team": "Napoli",
+        "kickoff_local": "2020-02-16T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-16|Lazio|Inter",
+        "season": "2019/20",
+        "match_date": "2020-02-16",
+        "official_round": 24,
+        "home_team": "Lazio",
+        "away_team": "Inter",
+        "kickoff_local": "2020-02-16T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-17|Milan|Torino",
+        "season": "2019/20",
+        "match_date": "2020-02-17",
+        "official_round": 24,
+        "home_team": "Milan",
+        "away_team": "Torino",
+        "kickoff_local": "2020-02-17T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-21|Brescia|Napoli",
+        "season": "2019/20",
+        "match_date": "2020-02-21",
+        "official_round": 25,
+        "home_team": "Brescia",
+        "away_team": "Napoli",
+        "kickoff_local": "2020-02-21T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-22|Bologna|Udinese",
+        "season": "2019/20",
+        "match_date": "2020-02-22",
+        "official_round": 25,
+        "home_team": "Bologna",
+        "away_team": "Udinese",
+        "kickoff_local": "2020-02-22T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-22|Spal|Juventus",
+        "season": "2019/20",
+        "match_date": "2020-02-22",
+        "official_round": 25,
+        "home_team": "Spal",
+        "away_team": "Juventus",
+        "kickoff_local": "2020-02-22T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-22|Fiorentina|Milan",
+        "season": "2019/20",
+        "match_date": "2020-02-22",
+        "official_round": 25,
+        "home_team": "Fiorentina",
+        "away_team": "Milan",
+        "kickoff_local": "2020-02-22T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-23|Genoa|Lazio",
+        "season": "2019/20",
+        "match_date": "2020-02-23",
+        "official_round": 25,
+        "home_team": "Genoa",
+        "away_team": "Lazio",
+        "kickoff_local": "2020-02-23T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-23|Roma|Lecce",
+        "season": "2019/20",
+        "match_date": "2020-02-23",
+        "official_round": 25,
+        "home_team": "Roma",
+        "away_team": "Lecce",
+        "kickoff_local": "2020-02-23T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-29|Lazio|Bologna",
+        "season": "2019/20",
+        "match_date": "2020-02-29",
+        "official_round": 26,
+        "home_team": "Lazio",
+        "away_team": "Bologna",
+        "kickoff_local": "2020-02-29T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-02-29|Napoli|Torino",
+        "season": "2019/20",
+        "match_date": "2020-02-29",
+        "official_round": 26,
+        "home_team": "Napoli",
+        "away_team": "Torino",
+        "kickoff_local": "2020-02-29T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-03-01|Lecce|Atalanta",
+        "season": "2019/20",
+        "match_date": "2020-03-01",
+        "official_round": 26,
+        "home_team": "Lecce",
+        "away_team": "Atalanta",
+        "kickoff_local": "2020-03-01T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-03-01|Cagliari|Roma",
+        "season": "2019/20",
+        "match_date": "2020-03-01",
+        "official_round": 26,
+        "home_team": "Cagliari",
+        "away_team": "Roma",
+        "kickoff_local": "2020-03-01T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-03-08|Parma|Spal",
+        "season": "2019/20",
+        "match_date": "2020-03-08",
+        "official_round": 26,
+        "home_team": "Parma",
+        "away_team": "Spal",
+        "kickoff_local": "2020-03-08T13:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-03-08|Milan|Genoa",
+        "season": "2019/20",
+        "match_date": "2020-03-08",
+        "official_round": 26,
+        "home_team": "Milan",
+        "away_team": "Genoa",
+        "kickoff_local": "2020-03-08T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-03-08|Sampdoria|Verona",
+        "season": "2019/20",
+        "match_date": "2020-03-08",
+        "official_round": 26,
+        "home_team": "Sampdoria",
+        "away_team": "Verona",
+        "kickoff_local": "2020-03-08T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-03-08|Udinese|Fiorentina",
+        "season": "2019/20",
+        "match_date": "2020-03-08",
+        "official_round": 26,
+        "home_team": "Udinese",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2020-03-08T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-03-08|Juventus|Inter",
+        "season": "2019/20",
+        "match_date": "2020-03-08",
+        "official_round": 26,
+        "home_team": "Juventus",
+        "away_team": "Inter",
+        "kickoff_local": "2020-03-08T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-03-09|Sassuolo|Brescia",
+        "season": "2019/20",
+        "match_date": "2020-03-09",
+        "official_round": 26,
+        "home_team": "Sassuolo",
+        "away_team": "Brescia",
+        "kickoff_local": "2020-03-09T18:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-20|Torino|Parma",
+        "season": "2019/20",
+        "match_date": "2020-06-20",
+        "official_round": 25,
+        "home_team": "Torino",
+        "away_team": "Parma",
+        "kickoff_local": "2020-06-20T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-20|Verona|Cagliari",
+        "season": "2019/20",
+        "match_date": "2020-06-20",
+        "official_round": 25,
+        "home_team": "Verona",
+        "away_team": "Cagliari",
+        "kickoff_local": "2020-06-20T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-21|Atalanta|Sassuolo",
+        "season": "2019/20",
+        "match_date": "2020-06-21",
+        "official_round": 25,
+        "home_team": "Atalanta",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2020-06-21T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-21|Inter|Sampdoria",
+        "season": "2019/20",
+        "match_date": "2020-06-21",
+        "official_round": 25,
+        "home_team": "Inter",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2020-06-21T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-22|Fiorentina|Brescia",
+        "season": "2019/20",
+        "match_date": "2020-06-22",
+        "official_round": 27,
+        "home_team": "Fiorentina",
+        "away_team": "Brescia",
+        "kickoff_local": "2020-06-22T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-22|Lecce|Milan",
+        "season": "2019/20",
+        "match_date": "2020-06-22",
+        "official_round": 27,
+        "home_team": "Lecce",
+        "away_team": "Milan",
+        "kickoff_local": "2020-06-22T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-22|Bologna|Juventus",
+        "season": "2019/20",
+        "match_date": "2020-06-22",
+        "official_round": 27,
+        "home_team": "Bologna",
+        "away_team": "Juventus",
+        "kickoff_local": "2020-06-22T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-23|Spal|Cagliari",
+        "season": "2019/20",
+        "match_date": "2020-06-23",
+        "official_round": 27,
+        "home_team": "Spal",
+        "away_team": "Cagliari",
+        "kickoff_local": "2020-06-23T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-23|Verona|Napoli",
+        "season": "2019/20",
+        "match_date": "2020-06-23",
+        "official_round": 27,
+        "home_team": "Verona",
+        "away_team": "Napoli",
+        "kickoff_local": "2020-06-23T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-23|Genoa|Parma",
+        "season": "2019/20",
+        "match_date": "2020-06-23",
+        "official_round": 27,
+        "home_team": "Genoa",
+        "away_team": "Parma",
+        "kickoff_local": "2020-06-23T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-23|Torino|Udinese",
+        "season": "2019/20",
+        "match_date": "2020-06-23",
+        "official_round": 27,
+        "home_team": "Torino",
+        "away_team": "Udinese",
+        "kickoff_local": "2020-06-23T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-24|Inter|Sassuolo",
+        "season": "2019/20",
+        "match_date": "2020-06-24",
+        "official_round": 27,
+        "home_team": "Inter",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2020-06-24T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-24|Atalanta|Lazio",
+        "season": "2019/20",
+        "match_date": "2020-06-24",
+        "official_round": 27,
+        "home_team": "Atalanta",
+        "away_team": "Lazio",
+        "kickoff_local": "2020-06-24T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-24|Roma|Sampdoria",
+        "season": "2019/20",
+        "match_date": "2020-06-24",
+        "official_round": 27,
+        "home_team": "Roma",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2020-06-24T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-26|Juventus|Lecce",
+        "season": "2019/20",
+        "match_date": "2020-06-26",
+        "official_round": 28,
+        "home_team": "Juventus",
+        "away_team": "Lecce",
+        "kickoff_local": "2020-06-26T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-27|Brescia|Genoa",
+        "season": "2019/20",
+        "match_date": "2020-06-27",
+        "official_round": 28,
+        "home_team": "Brescia",
+        "away_team": "Genoa",
+        "kickoff_local": "2020-06-27T17:15:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-27|Cagliari|Torino",
+        "season": "2019/20",
+        "match_date": "2020-06-27",
+        "official_round": 28,
+        "home_team": "Cagliari",
+        "away_team": "Torino",
+        "kickoff_local": "2020-06-27T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-27|Lazio|Fiorentina",
+        "season": "2019/20",
+        "match_date": "2020-06-27",
+        "official_round": 28,
+        "home_team": "Lazio",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2020-06-27T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-28|Milan|Roma",
+        "season": "2019/20",
+        "match_date": "2020-06-28",
+        "official_round": 28,
+        "home_team": "Milan",
+        "away_team": "Roma",
+        "kickoff_local": "2020-06-28T17:15:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-28|Napoli|Spal",
+        "season": "2019/20",
+        "match_date": "2020-06-28",
+        "official_round": 28,
+        "home_team": "Napoli",
+        "away_team": "Spal",
+        "kickoff_local": "2020-06-28T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-28|Sampdoria|Bologna",
+        "season": "2019/20",
+        "match_date": "2020-06-28",
+        "official_round": 28,
+        "home_team": "Sampdoria",
+        "away_team": "Bologna",
+        "kickoff_local": "2020-06-28T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-28|Sassuolo|Verona",
+        "season": "2019/20",
+        "match_date": "2020-06-28",
+        "official_round": 28,
+        "home_team": "Sassuolo",
+        "away_team": "Verona",
+        "kickoff_local": "2020-06-28T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-28|Udinese|Atalanta",
+        "season": "2019/20",
+        "match_date": "2020-06-28",
+        "official_round": 28,
+        "home_team": "Udinese",
+        "away_team": "Atalanta",
+        "kickoff_local": "2020-06-28T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-28|Parma|Inter",
+        "season": "2019/20",
+        "match_date": "2020-06-28",
+        "official_round": 28,
+        "home_team": "Parma",
+        "away_team": "Inter",
+        "kickoff_local": "2020-06-28T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-30|Torino|Lazio",
+        "season": "2019/20",
+        "match_date": "2020-06-30",
+        "official_round": 29,
+        "home_team": "Torino",
+        "away_team": "Lazio",
+        "kickoff_local": "2020-06-30T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-06-30|Genoa|Juventus",
+        "season": "2019/20",
+        "match_date": "2020-06-30",
+        "official_round": 29,
+        "home_team": "Genoa",
+        "away_team": "Juventus",
+        "kickoff_local": "2020-06-30T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-01|Bologna|Cagliari",
+        "season": "2019/20",
+        "match_date": "2020-07-01",
+        "official_round": 29,
+        "home_team": "Bologna",
+        "away_team": "Cagliari",
+        "kickoff_local": "2020-07-01T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-01|Inter|Brescia",
+        "season": "2019/20",
+        "match_date": "2020-07-01",
+        "official_round": 29,
+        "home_team": "Inter",
+        "away_team": "Brescia",
+        "kickoff_local": "2020-07-01T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-01|Fiorentina|Sassuolo",
+        "season": "2019/20",
+        "match_date": "2020-07-01",
+        "official_round": 29,
+        "home_team": "Fiorentina",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2020-07-01T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-01|Lecce|Sampdoria",
+        "season": "2019/20",
+        "match_date": "2020-07-01",
+        "official_round": 29,
+        "home_team": "Lecce",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2020-07-01T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-01|Spal|Milan",
+        "season": "2019/20",
+        "match_date": "2020-07-01",
+        "official_round": 29,
+        "home_team": "Spal",
+        "away_team": "Milan",
+        "kickoff_local": "2020-07-01T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-01|Verona|Parma",
+        "season": "2019/20",
+        "match_date": "2020-07-01",
+        "official_round": 29,
+        "home_team": "Verona",
+        "away_team": "Parma",
+        "kickoff_local": "2020-07-01T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-02|Atalanta|Napoli",
+        "season": "2019/20",
+        "match_date": "2020-07-02",
+        "official_round": 29,
+        "home_team": "Atalanta",
+        "away_team": "Napoli",
+        "kickoff_local": "2020-07-02T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-02|Roma|Udinese",
+        "season": "2019/20",
+        "match_date": "2020-07-02",
+        "official_round": 29,
+        "home_team": "Roma",
+        "away_team": "Udinese",
+        "kickoff_local": "2020-07-02T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-04|Juventus|Torino",
+        "season": "2019/20",
+        "match_date": "2020-07-04",
+        "official_round": 30,
+        "home_team": "Juventus",
+        "away_team": "Torino",
+        "kickoff_local": "2020-07-04T17:15:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-04|Sassuolo|Lecce",
+        "season": "2019/20",
+        "match_date": "2020-07-04",
+        "official_round": 30,
+        "home_team": "Sassuolo",
+        "away_team": "Lecce",
+        "kickoff_local": "2020-07-04T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-04|Lazio|Milan",
+        "season": "2019/20",
+        "match_date": "2020-07-04",
+        "official_round": 30,
+        "home_team": "Lazio",
+        "away_team": "Milan",
+        "kickoff_local": "2020-07-04T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-05|Inter|Bologna",
+        "season": "2019/20",
+        "match_date": "2020-07-05",
+        "official_round": 30,
+        "home_team": "Inter",
+        "away_team": "Bologna",
+        "kickoff_local": "2020-07-05T17:15:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-05|Brescia|Verona",
+        "season": "2019/20",
+        "match_date": "2020-07-05",
+        "official_round": 30,
+        "home_team": "Brescia",
+        "away_team": "Verona",
+        "kickoff_local": "2020-07-05T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-05|Cagliari|Atalanta",
+        "season": "2019/20",
+        "match_date": "2020-07-05",
+        "official_round": 30,
+        "home_team": "Cagliari",
+        "away_team": "Atalanta",
+        "kickoff_local": "2020-07-05T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-05|Parma|Fiorentina",
+        "season": "2019/20",
+        "match_date": "2020-07-05",
+        "official_round": 30,
+        "home_team": "Parma",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2020-07-05T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-05|Sampdoria|Spal",
+        "season": "2019/20",
+        "match_date": "2020-07-05",
+        "official_round": 30,
+        "home_team": "Sampdoria",
+        "away_team": "Spal",
+        "kickoff_local": "2020-07-05T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-05|Udinese|Genoa",
+        "season": "2019/20",
+        "match_date": "2020-07-05",
+        "official_round": 30,
+        "home_team": "Udinese",
+        "away_team": "Genoa",
+        "kickoff_local": "2020-07-05T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-05|Napoli|Roma",
+        "season": "2019/20",
+        "match_date": "2020-07-05",
+        "official_round": 30,
+        "home_team": "Napoli",
+        "away_team": "Roma",
+        "kickoff_local": "2020-07-05T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-07|Lecce|Lazio",
+        "season": "2019/20",
+        "match_date": "2020-07-07",
+        "official_round": 31,
+        "home_team": "Lecce",
+        "away_team": "Lazio",
+        "kickoff_local": "2020-07-07T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-07|Milan|Juventus",
+        "season": "2019/20",
+        "match_date": "2020-07-07",
+        "official_round": 31,
+        "home_team": "Milan",
+        "away_team": "Juventus",
+        "kickoff_local": "2020-07-07T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-08|Fiorentina|Cagliari",
+        "season": "2019/20",
+        "match_date": "2020-07-08",
+        "official_round": 31,
+        "home_team": "Fiorentina",
+        "away_team": "Cagliari",
+        "kickoff_local": "2020-07-08T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-08|Genoa|Napoli",
+        "season": "2019/20",
+        "match_date": "2020-07-08",
+        "official_round": 31,
+        "home_team": "Genoa",
+        "away_team": "Napoli",
+        "kickoff_local": "2020-07-08T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-08|Atalanta|Sampdoria",
+        "season": "2019/20",
+        "match_date": "2020-07-08",
+        "official_round": 31,
+        "home_team": "Atalanta",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2020-07-08T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-08|Bologna|Sassuolo",
+        "season": "2019/20",
+        "match_date": "2020-07-08",
+        "official_round": 31,
+        "home_team": "Bologna",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2020-07-08T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-08|Roma|Parma",
+        "season": "2019/20",
+        "match_date": "2020-07-08",
+        "official_round": 31,
+        "home_team": "Roma",
+        "away_team": "Parma",
+        "kickoff_local": "2020-07-08T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-08|Torino|Brescia",
+        "season": "2019/20",
+        "match_date": "2020-07-08",
+        "official_round": 31,
+        "home_team": "Torino",
+        "away_team": "Brescia",
+        "kickoff_local": "2020-07-08T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-09|Spal|Udinese",
+        "season": "2019/20",
+        "match_date": "2020-07-09",
+        "official_round": 31,
+        "home_team": "Spal",
+        "away_team": "Udinese",
+        "kickoff_local": "2020-07-09T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-09|Verona|Inter",
+        "season": "2019/20",
+        "match_date": "2020-07-09",
+        "official_round": 31,
+        "home_team": "Verona",
+        "away_team": "Inter",
+        "kickoff_local": "2020-07-09T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-11|Lazio|Sassuolo",
+        "season": "2019/20",
+        "match_date": "2020-07-11",
+        "official_round": 32,
+        "home_team": "Lazio",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2020-07-11T17:15:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-11|Brescia|Roma",
+        "season": "2019/20",
+        "match_date": "2020-07-11",
+        "official_round": 32,
+        "home_team": "Brescia",
+        "away_team": "Roma",
+        "kickoff_local": "2020-07-11T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-11|Juventus|Atalanta",
+        "season": "2019/20",
+        "match_date": "2020-07-11",
+        "official_round": 32,
+        "home_team": "Juventus",
+        "away_team": "Atalanta",
+        "kickoff_local": "2020-07-11T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-12|Genoa|Spal",
+        "season": "2019/20",
+        "match_date": "2020-07-12",
+        "official_round": 32,
+        "home_team": "Genoa",
+        "away_team": "Spal",
+        "kickoff_local": "2020-07-12T17:15:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-12|Cagliari|Lecce",
+        "season": "2019/20",
+        "match_date": "2020-07-12",
+        "official_round": 32,
+        "home_team": "Cagliari",
+        "away_team": "Lecce",
+        "kickoff_local": "2020-07-12T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-12|Fiorentina|Verona",
+        "season": "2019/20",
+        "match_date": "2020-07-12",
+        "official_round": 32,
+        "home_team": "Fiorentina",
+        "away_team": "Verona",
+        "kickoff_local": "2020-07-12T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-12|Parma|Bologna",
+        "season": "2019/20",
+        "match_date": "2020-07-12",
+        "official_round": 32,
+        "home_team": "Parma",
+        "away_team": "Bologna",
+        "kickoff_local": "2020-07-12T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-12|Udinese|Sampdoria",
+        "season": "2019/20",
+        "match_date": "2020-07-12",
+        "official_round": 32,
+        "home_team": "Udinese",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2020-07-12T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-12|Napoli|Milan",
+        "season": "2019/20",
+        "match_date": "2020-07-12",
+        "official_round": 32,
+        "home_team": "Napoli",
+        "away_team": "Milan",
+        "kickoff_local": "2020-07-12T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-13|Inter|Torino",
+        "season": "2019/20",
+        "match_date": "2020-07-13",
+        "official_round": 32,
+        "home_team": "Inter",
+        "away_team": "Torino",
+        "kickoff_local": "2020-07-13T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-14|Atalanta|Brescia",
+        "season": "2019/20",
+        "match_date": "2020-07-14",
+        "official_round": 33,
+        "home_team": "Atalanta",
+        "away_team": "Brescia",
+        "kickoff_local": "2020-07-14T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-15|Bologna|Napoli",
+        "season": "2019/20",
+        "match_date": "2020-07-15",
+        "official_round": 33,
+        "home_team": "Bologna",
+        "away_team": "Napoli",
+        "kickoff_local": "2020-07-15T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-15|Milan|Parma",
+        "season": "2019/20",
+        "match_date": "2020-07-15",
+        "official_round": 33,
+        "home_team": "Milan",
+        "away_team": "Parma",
+        "kickoff_local": "2020-07-15T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-15|Sampdoria|Cagliari",
+        "season": "2019/20",
+        "match_date": "2020-07-15",
+        "official_round": 33,
+        "home_team": "Sampdoria",
+        "away_team": "Cagliari",
+        "kickoff_local": "2020-07-15T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-15|Lecce|Fiorentina",
+        "season": "2019/20",
+        "match_date": "2020-07-15",
+        "official_round": 33,
+        "home_team": "Lecce",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2020-07-15T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-15|Roma|Verona",
+        "season": "2019/20",
+        "match_date": "2020-07-15",
+        "official_round": 33,
+        "home_team": "Roma",
+        "away_team": "Verona",
+        "kickoff_local": "2020-07-15T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-15|Sassuolo|Juventus",
+        "season": "2019/20",
+        "match_date": "2020-07-15",
+        "official_round": 33,
+        "home_team": "Sassuolo",
+        "away_team": "Juventus",
+        "kickoff_local": "2020-07-15T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-15|Udinese|Lazio",
+        "season": "2019/20",
+        "match_date": "2020-07-15",
+        "official_round": 33,
+        "home_team": "Udinese",
+        "away_team": "Lazio",
+        "kickoff_local": "2020-07-15T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-16|Torino|Genoa",
+        "season": "2019/20",
+        "match_date": "2020-07-16",
+        "official_round": 33,
+        "home_team": "Torino",
+        "away_team": "Genoa",
+        "kickoff_local": "2020-07-16T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-16|Spal|Inter",
+        "season": "2019/20",
+        "match_date": "2020-07-16",
+        "official_round": 33,
+        "home_team": "Spal",
+        "away_team": "Inter",
+        "kickoff_local": "2020-07-16T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-18|Verona|Atalanta",
+        "season": "2019/20",
+        "match_date": "2020-07-18",
+        "official_round": 34,
+        "home_team": "Verona",
+        "away_team": "Atalanta",
+        "kickoff_local": "2020-07-18T17:15:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-18|Cagliari|Sassuolo",
+        "season": "2019/20",
+        "match_date": "2020-07-18",
+        "official_round": 34,
+        "home_team": "Cagliari",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2020-07-18T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-18|Milan|Bologna",
+        "season": "2019/20",
+        "match_date": "2020-07-18",
+        "official_round": 34,
+        "home_team": "Milan",
+        "away_team": "Bologna",
+        "kickoff_local": "2020-07-18T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-19|Parma|Sampdoria",
+        "season": "2019/20",
+        "match_date": "2020-07-19",
+        "official_round": 34,
+        "home_team": "Parma",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2020-07-19T17:15:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-19|Brescia|Spal",
+        "season": "2019/20",
+        "match_date": "2020-07-19",
+        "official_round": 34,
+        "home_team": "Brescia",
+        "away_team": "Spal",
+        "kickoff_local": "2020-07-19T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-19|Fiorentina|Torino",
+        "season": "2019/20",
+        "match_date": "2020-07-19",
+        "official_round": 34,
+        "home_team": "Fiorentina",
+        "away_team": "Torino",
+        "kickoff_local": "2020-07-19T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-19|Genoa|Lecce",
+        "season": "2019/20",
+        "match_date": "2020-07-19",
+        "official_round": 34,
+        "home_team": "Genoa",
+        "away_team": "Lecce",
+        "kickoff_local": "2020-07-19T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-19|Napoli|Udinese",
+        "season": "2019/20",
+        "match_date": "2020-07-19",
+        "official_round": 34,
+        "home_team": "Napoli",
+        "away_team": "Udinese",
+        "kickoff_local": "2020-07-19T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-19|Roma|Inter",
+        "season": "2019/20",
+        "match_date": "2020-07-19",
+        "official_round": 34,
+        "home_team": "Roma",
+        "away_team": "Inter",
+        "kickoff_local": "2020-07-19T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-20|Juventus|Lazio",
+        "season": "2019/20",
+        "match_date": "2020-07-20",
+        "official_round": 34,
+        "home_team": "Juventus",
+        "away_team": "Lazio",
+        "kickoff_local": "2020-07-20T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-21|Atalanta|Bologna",
+        "season": "2019/20",
+        "match_date": "2020-07-21",
+        "official_round": 35,
+        "home_team": "Atalanta",
+        "away_team": "Bologna",
+        "kickoff_local": "2020-07-21T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-21|Sassuolo|Milan",
+        "season": "2019/20",
+        "match_date": "2020-07-21",
+        "official_round": 35,
+        "home_team": "Sassuolo",
+        "away_team": "Milan",
+        "kickoff_local": "2020-07-21T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-22|Parma|Napoli",
+        "season": "2019/20",
+        "match_date": "2020-07-22",
+        "official_round": 35,
+        "home_team": "Parma",
+        "away_team": "Napoli",
+        "kickoff_local": "2020-07-22T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-22|Inter|Fiorentina",
+        "season": "2019/20",
+        "match_date": "2020-07-22",
+        "official_round": 35,
+        "home_team": "Inter",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2020-07-22T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-22|Lecce|Brescia",
+        "season": "2019/20",
+        "match_date": "2020-07-22",
+        "official_round": 35,
+        "home_team": "Lecce",
+        "away_team": "Brescia",
+        "kickoff_local": "2020-07-22T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-22|Sampdoria|Genoa",
+        "season": "2019/20",
+        "match_date": "2020-07-22",
+        "official_round": 35,
+        "home_team": "Sampdoria",
+        "away_team": "Genoa",
+        "kickoff_local": "2020-07-22T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-22|Spal|Roma",
+        "season": "2019/20",
+        "match_date": "2020-07-22",
+        "official_round": 35,
+        "home_team": "Spal",
+        "away_team": "Roma",
+        "kickoff_local": "2020-07-22T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-22|Torino|Verona",
+        "season": "2019/20",
+        "match_date": "2020-07-22",
+        "official_round": 35,
+        "home_team": "Torino",
+        "away_team": "Verona",
+        "kickoff_local": "2020-07-22T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-23|Udinese|Juventus",
+        "season": "2019/20",
+        "match_date": "2020-07-23",
+        "official_round": 35,
+        "home_team": "Udinese",
+        "away_team": "Juventus",
+        "kickoff_local": "2020-07-23T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-23|Lazio|Cagliari",
+        "season": "2019/20",
+        "match_date": "2020-07-23",
+        "official_round": 35,
+        "home_team": "Lazio",
+        "away_team": "Cagliari",
+        "kickoff_local": "2020-07-23T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-24|Milan|Atalanta",
+        "season": "2019/20",
+        "match_date": "2020-07-24",
+        "official_round": 36,
+        "home_team": "Milan",
+        "away_team": "Atalanta",
+        "kickoff_local": "2020-07-24T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-25|Brescia|Parma",
+        "season": "2019/20",
+        "match_date": "2020-07-25",
+        "official_round": 36,
+        "home_team": "Brescia",
+        "away_team": "Parma",
+        "kickoff_local": "2020-07-25T17:15:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-25|Genoa|Inter",
+        "season": "2019/20",
+        "match_date": "2020-07-25",
+        "official_round": 36,
+        "home_team": "Genoa",
+        "away_team": "Inter",
+        "kickoff_local": "2020-07-25T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-25|Napoli|Sassuolo",
+        "season": "2019/20",
+        "match_date": "2020-07-25",
+        "official_round": 36,
+        "home_team": "Napoli",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2020-07-25T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-26|Bologna|Lecce",
+        "season": "2019/20",
+        "match_date": "2020-07-26",
+        "official_round": 36,
+        "home_team": "Bologna",
+        "away_team": "Lecce",
+        "kickoff_local": "2020-07-26T17:15:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-26|Cagliari|Udinese",
+        "season": "2019/20",
+        "match_date": "2020-07-26",
+        "official_round": 36,
+        "home_team": "Cagliari",
+        "away_team": "Udinese",
+        "kickoff_local": "2020-07-26T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-26|Roma|Fiorentina",
+        "season": "2019/20",
+        "match_date": "2020-07-26",
+        "official_round": 36,
+        "home_team": "Roma",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2020-07-26T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-26|Spal|Torino",
+        "season": "2019/20",
+        "match_date": "2020-07-26",
+        "official_round": 36,
+        "home_team": "Spal",
+        "away_team": "Torino",
+        "kickoff_local": "2020-07-26T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-26|Verona|Lazio",
+        "season": "2019/20",
+        "match_date": "2020-07-26",
+        "official_round": 36,
+        "home_team": "Verona",
+        "away_team": "Lazio",
+        "kickoff_local": "2020-07-26T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-26|Juventus|Sampdoria",
+        "season": "2019/20",
+        "match_date": "2020-07-26",
+        "official_round": 36,
+        "home_team": "Juventus",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2020-07-26T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-28|Parma|Atalanta",
+        "season": "2019/20",
+        "match_date": "2020-07-28",
+        "official_round": 37,
+        "home_team": "Parma",
+        "away_team": "Atalanta",
+        "kickoff_local": "2020-07-28T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-28|Inter|Napoli",
+        "season": "2019/20",
+        "match_date": "2020-07-28",
+        "official_round": 37,
+        "home_team": "Inter",
+        "away_team": "Napoli",
+        "kickoff_local": "2020-07-28T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-29|Lazio|Brescia",
+        "season": "2019/20",
+        "match_date": "2020-07-29",
+        "official_round": 37,
+        "home_team": "Lazio",
+        "away_team": "Brescia",
+        "kickoff_local": "2020-07-29T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-29|Sampdoria|Milan",
+        "season": "2019/20",
+        "match_date": "2020-07-29",
+        "official_round": 37,
+        "home_team": "Sampdoria",
+        "away_team": "Milan",
+        "kickoff_local": "2020-07-29T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-29|Sassuolo|Genoa",
+        "season": "2019/20",
+        "match_date": "2020-07-29",
+        "official_round": 37,
+        "home_team": "Sassuolo",
+        "away_team": "Genoa",
+        "kickoff_local": "2020-07-29T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-29|Udinese|Lecce",
+        "season": "2019/20",
+        "match_date": "2020-07-29",
+        "official_round": 37,
+        "home_team": "Udinese",
+        "away_team": "Lecce",
+        "kickoff_local": "2020-07-29T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-29|Verona|Spal",
+        "season": "2019/20",
+        "match_date": "2020-07-29",
+        "official_round": 37,
+        "home_team": "Verona",
+        "away_team": "Spal",
+        "kickoff_local": "2020-07-29T19:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-29|Cagliari|Juventus",
+        "season": "2019/20",
+        "match_date": "2020-07-29",
+        "official_round": 37,
+        "home_team": "Cagliari",
+        "away_team": "Juventus",
+        "kickoff_local": "2020-07-29T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-29|Fiorentina|Bologna",
+        "season": "2019/20",
+        "match_date": "2020-07-29",
+        "official_round": 37,
+        "home_team": "Fiorentina",
+        "away_team": "Bologna",
+        "kickoff_local": "2020-07-29T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-07-29|Torino|Roma",
+        "season": "2019/20",
+        "match_date": "2020-07-29",
+        "official_round": 37,
+        "home_team": "Torino",
+        "away_team": "Roma",
+        "kickoff_local": "2020-07-29T21:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-08-01|Brescia|Sampdoria",
+        "season": "2019/20",
+        "match_date": "2020-08-01",
+        "official_round": 38,
+        "home_team": "Brescia",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2020-08-01T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-08-01|Atalanta|Inter",
+        "season": "2019/20",
+        "match_date": "2020-08-01",
+        "official_round": 38,
+        "home_team": "Atalanta",
+        "away_team": "Inter",
+        "kickoff_local": "2020-08-01T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-08-01|Juventus|Roma",
+        "season": "2019/20",
+        "match_date": "2020-08-01",
+        "official_round": 38,
+        "home_team": "Juventus",
+        "away_team": "Roma",
+        "kickoff_local": "2020-08-01T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-08-01|Milan|Cagliari",
+        "season": "2019/20",
+        "match_date": "2020-08-01",
+        "official_round": 38,
+        "home_team": "Milan",
+        "away_team": "Cagliari",
+        "kickoff_local": "2020-08-01T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-08-01|Napoli|Lazio",
+        "season": "2019/20",
+        "match_date": "2020-08-01",
+        "official_round": 38,
+        "home_team": "Napoli",
+        "away_team": "Lazio",
+        "kickoff_local": "2020-08-01T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-08-02|Spal|Fiorentina",
+        "season": "2019/20",
+        "match_date": "2020-08-02",
+        "official_round": 38,
+        "home_team": "Spal",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2020-08-02T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-08-02|Bologna|Torino",
+        "season": "2019/20",
+        "match_date": "2020-08-02",
+        "official_round": 38,
+        "home_team": "Bologna",
+        "away_team": "Torino",
+        "kickoff_local": "2020-08-02T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-08-02|Genoa|Verona",
+        "season": "2019/20",
+        "match_date": "2020-08-02",
+        "official_round": 38,
+        "home_team": "Genoa",
+        "away_team": "Verona",
+        "kickoff_local": "2020-08-02T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-08-02|Lecce|Parma",
+        "season": "2019/20",
+        "match_date": "2020-08-02",
+        "official_round": 38,
+        "home_team": "Lecce",
+        "away_team": "Parma",
+        "kickoff_local": "2020-08-02T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2019/20|2020-08-02|Sassuolo|Udinese",
+        "season": "2019/20",
+        "match_date": "2020-08-02",
+        "official_round": 38,
+        "home_team": "Sassuolo",
+        "away_team": "Udinese",
+        "kickoff_local": "2020-08-02T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-01-29|Torino|Fiorentina",
+        "season": "2020/21",
+        "match_date": "2021-01-29",
+        "official_round": 20,
+        "home_team": "Torino",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2021-01-29T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-01-30|Bologna|Milan",
+        "season": "2020/21",
+        "match_date": "2021-01-30",
+        "official_round": 20,
+        "home_team": "Bologna",
+        "away_team": "Milan",
+        "kickoff_local": "2021-01-30T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-01-30|Sampdoria|Juventus",
+        "season": "2020/21",
+        "match_date": "2021-01-30",
+        "official_round": 20,
+        "home_team": "Sampdoria",
+        "away_team": "Juventus",
+        "kickoff_local": "2021-01-30T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-01-30|Inter|Benevento",
+        "season": "2020/21",
+        "match_date": "2021-01-30",
+        "official_round": 20,
+        "home_team": "Inter",
+        "away_team": "Benevento",
+        "kickoff_local": "2021-01-30T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-01-31|Spezia|Udinese",
+        "season": "2020/21",
+        "match_date": "2021-01-31",
+        "official_round": 20,
+        "home_team": "Spezia",
+        "away_team": "Udinese",
+        "kickoff_local": "2021-01-31T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-01-31|Atalanta|Lazio",
+        "season": "2020/21",
+        "match_date": "2021-01-31",
+        "official_round": 20,
+        "home_team": "Atalanta",
+        "away_team": "Lazio",
+        "kickoff_local": "2021-01-31T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-01-31|Cagliari|Sassuolo",
+        "season": "2020/21",
+        "match_date": "2021-01-31",
+        "official_round": 20,
+        "home_team": "Cagliari",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2021-01-31T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-01-31|Crotone|Genoa",
+        "season": "2020/21",
+        "match_date": "2021-01-31",
+        "official_round": 20,
+        "home_team": "Crotone",
+        "away_team": "Genoa",
+        "kickoff_local": "2021-01-31T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-01-31|Napoli|Parma",
+        "season": "2020/21",
+        "match_date": "2021-01-31",
+        "official_round": 20,
+        "home_team": "Napoli",
+        "away_team": "Parma",
+        "kickoff_local": "2021-01-31T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-01-31|Roma|Verona",
+        "season": "2020/21",
+        "match_date": "2021-01-31",
+        "official_round": 20,
+        "home_team": "Roma",
+        "away_team": "Verona",
+        "kickoff_local": "2021-01-31T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-05|Fiorentina|Inter",
+        "season": "2020/21",
+        "match_date": "2021-02-05",
+        "official_round": 21,
+        "home_team": "Fiorentina",
+        "away_team": "Inter",
+        "kickoff_local": "2021-02-05T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-06|Atalanta|Torino",
+        "season": "2020/21",
+        "match_date": "2021-02-06",
+        "official_round": 21,
+        "home_team": "Atalanta",
+        "away_team": "Torino",
+        "kickoff_local": "2021-02-06T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-06|Sassuolo|Spezia",
+        "season": "2020/21",
+        "match_date": "2021-02-06",
+        "official_round": 21,
+        "home_team": "Sassuolo",
+        "away_team": "Spezia",
+        "kickoff_local": "2021-02-06T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-06|Juventus|Roma",
+        "season": "2020/21",
+        "match_date": "2021-02-06",
+        "official_round": 21,
+        "home_team": "Juventus",
+        "away_team": "Roma",
+        "kickoff_local": "2021-02-06T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-06|Genoa|Napoli",
+        "season": "2020/21",
+        "match_date": "2021-02-06",
+        "official_round": 21,
+        "home_team": "Genoa",
+        "away_team": "Napoli",
+        "kickoff_local": "2021-02-06T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-07|Benevento|Sampdoria",
+        "season": "2020/21",
+        "match_date": "2021-02-07",
+        "official_round": 21,
+        "home_team": "Benevento",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2021-02-07T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-07|Milan|Crotone",
+        "season": "2020/21",
+        "match_date": "2021-02-07",
+        "official_round": 21,
+        "home_team": "Milan",
+        "away_team": "Crotone",
+        "kickoff_local": "2021-02-07T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-07|Udinese|Verona",
+        "season": "2020/21",
+        "match_date": "2021-02-07",
+        "official_round": 21,
+        "home_team": "Udinese",
+        "away_team": "Verona",
+        "kickoff_local": "2021-02-07T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-07|Parma|Bologna",
+        "season": "2020/21",
+        "match_date": "2021-02-07",
+        "official_round": 21,
+        "home_team": "Parma",
+        "away_team": "Bologna",
+        "kickoff_local": "2021-02-07T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-07|Lazio|Cagliari",
+        "season": "2020/21",
+        "match_date": "2021-02-07",
+        "official_round": 21,
+        "home_team": "Lazio",
+        "away_team": "Cagliari",
+        "kickoff_local": "2021-02-07T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-12|Bologna|Benevento",
+        "season": "2020/21",
+        "match_date": "2021-02-12",
+        "official_round": 22,
+        "home_team": "Bologna",
+        "away_team": "Benevento",
+        "kickoff_local": "2021-02-12T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-13|Torino|Genoa",
+        "season": "2020/21",
+        "match_date": "2021-02-13",
+        "official_round": 22,
+        "home_team": "Torino",
+        "away_team": "Genoa",
+        "kickoff_local": "2021-02-13T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-13|Napoli|Juventus",
+        "season": "2020/21",
+        "match_date": "2021-02-13",
+        "official_round": 22,
+        "home_team": "Napoli",
+        "away_team": "Juventus",
+        "kickoff_local": "2021-02-13T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-13|Spezia|Milan",
+        "season": "2020/21",
+        "match_date": "2021-02-13",
+        "official_round": 22,
+        "home_team": "Spezia",
+        "away_team": "Milan",
+        "kickoff_local": "2021-02-13T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-14|Roma|Udinese",
+        "season": "2020/21",
+        "match_date": "2021-02-14",
+        "official_round": 22,
+        "home_team": "Roma",
+        "away_team": "Udinese",
+        "kickoff_local": "2021-02-14T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-14|Cagliari|Atalanta",
+        "season": "2020/21",
+        "match_date": "2021-02-14",
+        "official_round": 22,
+        "home_team": "Cagliari",
+        "away_team": "Atalanta",
+        "kickoff_local": "2021-02-14T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-14|Sampdoria|Fiorentina",
+        "season": "2020/21",
+        "match_date": "2021-02-14",
+        "official_round": 22,
+        "home_team": "Sampdoria",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2021-02-14T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-14|Crotone|Sassuolo",
+        "season": "2020/21",
+        "match_date": "2021-02-14",
+        "official_round": 22,
+        "home_team": "Crotone",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2021-02-14T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-14|Inter|Lazio",
+        "season": "2020/21",
+        "match_date": "2021-02-14",
+        "official_round": 22,
+        "home_team": "Inter",
+        "away_team": "Lazio",
+        "kickoff_local": "2021-02-14T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-15|Verona|Parma",
+        "season": "2020/21",
+        "match_date": "2021-02-15",
+        "official_round": 22,
+        "home_team": "Verona",
+        "away_team": "Parma",
+        "kickoff_local": "2021-02-15T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-19|Fiorentina|Spezia",
+        "season": "2020/21",
+        "match_date": "2021-02-19",
+        "official_round": 23,
+        "home_team": "Fiorentina",
+        "away_team": "Spezia",
+        "kickoff_local": "2021-02-19T18:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-19|Cagliari|Torino",
+        "season": "2020/21",
+        "match_date": "2021-02-19",
+        "official_round": 23,
+        "home_team": "Cagliari",
+        "away_team": "Torino",
+        "kickoff_local": "2021-02-19T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-20|Lazio|Sampdoria",
+        "season": "2020/21",
+        "match_date": "2021-02-20",
+        "official_round": 23,
+        "home_team": "Lazio",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2021-02-20T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-20|Genoa|Verona",
+        "season": "2020/21",
+        "match_date": "2021-02-20",
+        "official_round": 23,
+        "home_team": "Genoa",
+        "away_team": "Verona",
+        "kickoff_local": "2021-02-20T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-20|Sassuolo|Bologna",
+        "season": "2020/21",
+        "match_date": "2021-02-20",
+        "official_round": 23,
+        "home_team": "Sassuolo",
+        "away_team": "Bologna",
+        "kickoff_local": "2021-02-20T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-21|Parma|Udinese",
+        "season": "2020/21",
+        "match_date": "2021-02-21",
+        "official_round": 23,
+        "home_team": "Parma",
+        "away_team": "Udinese",
+        "kickoff_local": "2021-02-21T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-21|Milan|Inter",
+        "season": "2020/21",
+        "match_date": "2021-02-21",
+        "official_round": 23,
+        "home_team": "Milan",
+        "away_team": "Inter",
+        "kickoff_local": "2021-02-21T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-21|Atalanta|Napoli",
+        "season": "2020/21",
+        "match_date": "2021-02-21",
+        "official_round": 23,
+        "home_team": "Atalanta",
+        "away_team": "Napoli",
+        "kickoff_local": "2021-02-21T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-21|Benevento|Roma",
+        "season": "2020/21",
+        "match_date": "2021-02-21",
+        "official_round": 23,
+        "home_team": "Benevento",
+        "away_team": "Roma",
+        "kickoff_local": "2021-02-21T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-22|Juventus|Crotone",
+        "season": "2020/21",
+        "match_date": "2021-02-22",
+        "official_round": 23,
+        "home_team": "Juventus",
+        "away_team": "Crotone",
+        "kickoff_local": "2021-02-22T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-27|Spezia|Parma",
+        "season": "2020/21",
+        "match_date": "2021-02-27",
+        "official_round": 24,
+        "home_team": "Spezia",
+        "away_team": "Parma",
+        "kickoff_local": "2021-02-27T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-27|Bologna|Lazio",
+        "season": "2020/21",
+        "match_date": "2021-02-27",
+        "official_round": 24,
+        "home_team": "Bologna",
+        "away_team": "Lazio",
+        "kickoff_local": "2021-02-27T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-27|Verona|Juventus",
+        "season": "2020/21",
+        "match_date": "2021-02-27",
+        "official_round": 24,
+        "home_team": "Verona",
+        "away_team": "Juventus",
+        "kickoff_local": "2021-02-27T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-28|Sampdoria|Atalanta",
+        "season": "2020/21",
+        "match_date": "2021-02-28",
+        "official_round": 24,
+        "home_team": "Sampdoria",
+        "away_team": "Atalanta",
+        "kickoff_local": "2021-02-28T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-28|Crotone|Cagliari",
+        "season": "2020/21",
+        "match_date": "2021-02-28",
+        "official_round": 24,
+        "home_team": "Crotone",
+        "away_team": "Cagliari",
+        "kickoff_local": "2021-02-28T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-28|Inter|Genoa",
+        "season": "2020/21",
+        "match_date": "2021-02-28",
+        "official_round": 24,
+        "home_team": "Inter",
+        "away_team": "Genoa",
+        "kickoff_local": "2021-02-28T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-28|Udinese|Fiorentina",
+        "season": "2020/21",
+        "match_date": "2021-02-28",
+        "official_round": 24,
+        "home_team": "Udinese",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2021-02-28T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-28|Napoli|Benevento",
+        "season": "2020/21",
+        "match_date": "2021-02-28",
+        "official_round": 24,
+        "home_team": "Napoli",
+        "away_team": "Benevento",
+        "kickoff_local": "2021-02-28T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-02-28|Roma|Milan",
+        "season": "2020/21",
+        "match_date": "2021-02-28",
+        "official_round": 24,
+        "home_team": "Roma",
+        "away_team": "Milan",
+        "kickoff_local": "2021-02-28T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-02|Juventus|Spezia",
+        "season": "2020/21",
+        "match_date": "2021-03-02",
+        "official_round": 25,
+        "home_team": "Juventus",
+        "away_team": "Spezia",
+        "kickoff_local": "2021-03-02T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-03|Sassuolo|Napoli",
+        "season": "2020/21",
+        "match_date": "2021-03-03",
+        "official_round": 25,
+        "home_team": "Sassuolo",
+        "away_team": "Napoli",
+        "kickoff_local": "2021-03-03T18:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-03|Atalanta|Crotone",
+        "season": "2020/21",
+        "match_date": "2021-03-03",
+        "official_round": 25,
+        "home_team": "Atalanta",
+        "away_team": "Crotone",
+        "kickoff_local": "2021-03-03T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-03|Benevento|Verona",
+        "season": "2020/21",
+        "match_date": "2021-03-03",
+        "official_round": 25,
+        "home_team": "Benevento",
+        "away_team": "Verona",
+        "kickoff_local": "2021-03-03T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-03|Cagliari|Bologna",
+        "season": "2020/21",
+        "match_date": "2021-03-03",
+        "official_round": 25,
+        "home_team": "Cagliari",
+        "away_team": "Bologna",
+        "kickoff_local": "2021-03-03T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-03|Fiorentina|Roma",
+        "season": "2020/21",
+        "match_date": "2021-03-03",
+        "official_round": 25,
+        "home_team": "Fiorentina",
+        "away_team": "Roma",
+        "kickoff_local": "2021-03-03T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-03|Genoa|Sampdoria",
+        "season": "2020/21",
+        "match_date": "2021-03-03",
+        "official_round": 25,
+        "home_team": "Genoa",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2021-03-03T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-03|Milan|Udinese",
+        "season": "2020/21",
+        "match_date": "2021-03-03",
+        "official_round": 25,
+        "home_team": "Milan",
+        "away_team": "Udinese",
+        "kickoff_local": "2021-03-03T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-04|Parma|Inter",
+        "season": "2020/21",
+        "match_date": "2021-03-04",
+        "official_round": 25,
+        "home_team": "Parma",
+        "away_team": "Inter",
+        "kickoff_local": "2021-03-04T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-06|Spezia|Benevento",
+        "season": "2020/21",
+        "match_date": "2021-03-06",
+        "official_round": 26,
+        "home_team": "Spezia",
+        "away_team": "Benevento",
+        "kickoff_local": "2021-03-06T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-06|Udinese|Sassuolo",
+        "season": "2020/21",
+        "match_date": "2021-03-06",
+        "official_round": 26,
+        "home_team": "Udinese",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2021-03-06T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-06|Juventus|Lazio",
+        "season": "2020/21",
+        "match_date": "2021-03-06",
+        "official_round": 26,
+        "home_team": "Juventus",
+        "away_team": "Lazio",
+        "kickoff_local": "2021-03-06T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-07|Roma|Genoa",
+        "season": "2020/21",
+        "match_date": "2021-03-07",
+        "official_round": 26,
+        "home_team": "Roma",
+        "away_team": "Genoa",
+        "kickoff_local": "2021-03-07T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-07|Crotone|Torino",
+        "season": "2020/21",
+        "match_date": "2021-03-07",
+        "official_round": 26,
+        "home_team": "Crotone",
+        "away_team": "Torino",
+        "kickoff_local": "2021-03-07T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-07|Fiorentina|Parma",
+        "season": "2020/21",
+        "match_date": "2021-03-07",
+        "official_round": 26,
+        "home_team": "Fiorentina",
+        "away_team": "Parma",
+        "kickoff_local": "2021-03-07T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-07|Verona|Milan",
+        "season": "2020/21",
+        "match_date": "2021-03-07",
+        "official_round": 26,
+        "home_team": "Verona",
+        "away_team": "Milan",
+        "kickoff_local": "2021-03-07T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-07|Sampdoria|Cagliari",
+        "season": "2020/21",
+        "match_date": "2021-03-07",
+        "official_round": 26,
+        "home_team": "Sampdoria",
+        "away_team": "Cagliari",
+        "kickoff_local": "2021-03-07T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-07|Napoli|Bologna",
+        "season": "2020/21",
+        "match_date": "2021-03-07",
+        "official_round": 26,
+        "home_team": "Napoli",
+        "away_team": "Bologna",
+        "kickoff_local": "2021-03-07T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-08|Inter|Atalanta",
+        "season": "2020/21",
+        "match_date": "2021-03-08",
+        "official_round": 26,
+        "home_team": "Inter",
+        "away_team": "Atalanta",
+        "kickoff_local": "2021-03-08T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-12|Lazio|Crotone",
+        "season": "2020/21",
+        "match_date": "2021-03-12",
+        "official_round": 27,
+        "home_team": "Lazio",
+        "away_team": "Crotone",
+        "kickoff_local": "2021-03-12T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-12|Atalanta|Spezia",
+        "season": "2020/21",
+        "match_date": "2021-03-12",
+        "official_round": 27,
+        "home_team": "Atalanta",
+        "away_team": "Spezia",
+        "kickoff_local": "2021-03-12T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-13|Sassuolo|Verona",
+        "season": "2020/21",
+        "match_date": "2021-03-13",
+        "official_round": 27,
+        "home_team": "Sassuolo",
+        "away_team": "Verona",
+        "kickoff_local": "2021-03-13T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-13|Benevento|Fiorentina",
+        "season": "2020/21",
+        "match_date": "2021-03-13",
+        "official_round": 27,
+        "home_team": "Benevento",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2021-03-13T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-13|Genoa|Udinese",
+        "season": "2020/21",
+        "match_date": "2021-03-13",
+        "official_round": 27,
+        "home_team": "Genoa",
+        "away_team": "Udinese",
+        "kickoff_local": "2021-03-13T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-14|Bologna|Sampdoria",
+        "season": "2020/21",
+        "match_date": "2021-03-14",
+        "official_round": 27,
+        "home_team": "Bologna",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2021-03-14T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-14|Parma|Roma",
+        "season": "2020/21",
+        "match_date": "2021-03-14",
+        "official_round": 27,
+        "home_team": "Parma",
+        "away_team": "Roma",
+        "kickoff_local": "2021-03-14T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-14|Torino|Inter",
+        "season": "2020/21",
+        "match_date": "2021-03-14",
+        "official_round": 27,
+        "home_team": "Torino",
+        "away_team": "Inter",
+        "kickoff_local": "2021-03-14T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-14|Cagliari|Juventus",
+        "season": "2020/21",
+        "match_date": "2021-03-14",
+        "official_round": 27,
+        "home_team": "Cagliari",
+        "away_team": "Juventus",
+        "kickoff_local": "2021-03-14T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-14|Milan|Napoli",
+        "season": "2020/21",
+        "match_date": "2021-03-14",
+        "official_round": 27,
+        "home_team": "Milan",
+        "away_team": "Napoli",
+        "kickoff_local": "2021-03-14T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-17|Torino|Sassuolo",
+        "season": "2020/21",
+        "match_date": "2021-03-17",
+        "official_round": 24,
+        "home_team": "Torino",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2021-03-17T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-19|Parma|Genoa",
+        "season": "2020/21",
+        "match_date": "2021-03-19",
+        "official_round": 28,
+        "home_team": "Parma",
+        "away_team": "Genoa",
+        "kickoff_local": "2021-03-19T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-20|Crotone|Bologna",
+        "season": "2020/21",
+        "match_date": "2021-03-20",
+        "official_round": 28,
+        "home_team": "Crotone",
+        "away_team": "Bologna",
+        "kickoff_local": "2021-03-20T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-20|Spezia|Cagliari",
+        "season": "2020/21",
+        "match_date": "2021-03-20",
+        "official_round": 28,
+        "home_team": "Spezia",
+        "away_team": "Cagliari",
+        "kickoff_local": "2021-03-20T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-21|Verona|Atalanta",
+        "season": "2020/21",
+        "match_date": "2021-03-21",
+        "official_round": 28,
+        "home_team": "Verona",
+        "away_team": "Atalanta",
+        "kickoff_local": "2021-03-21T12:30:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-21|Juventus|Benevento",
+        "season": "2020/21",
+        "match_date": "2021-03-21",
+        "official_round": 28,
+        "home_team": "Juventus",
+        "away_team": "Benevento",
+        "kickoff_local": "2021-03-21T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-21|Sampdoria|Torino",
+        "season": "2020/21",
+        "match_date": "2021-03-21",
+        "official_round": 28,
+        "home_team": "Sampdoria",
+        "away_team": "Torino",
+        "kickoff_local": "2021-03-21T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-21|Udinese|Lazio",
+        "season": "2020/21",
+        "match_date": "2021-03-21",
+        "official_round": 28,
+        "home_team": "Udinese",
+        "away_team": "Lazio",
+        "kickoff_local": "2021-03-21T15:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-21|Fiorentina|Milan",
+        "season": "2020/21",
+        "match_date": "2021-03-21",
+        "official_round": 28,
+        "home_team": "Fiorentina",
+        "away_team": "Milan",
+        "kickoff_local": "2021-03-21T18:00:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-03-21|Roma|Napoli",
+        "season": "2020/21",
+        "match_date": "2021-03-21",
+        "official_round": 28,
+        "home_team": "Roma",
+        "away_team": "Napoli",
+        "kickoff_local": "2021-03-21T20:45:00+01:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-03|Milan|Sampdoria",
+        "season": "2020/21",
+        "match_date": "2021-04-03",
+        "official_round": 29,
+        "home_team": "Milan",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2021-04-03T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-03|Atalanta|Udinese",
+        "season": "2020/21",
+        "match_date": "2021-04-03",
+        "official_round": 29,
+        "home_team": "Atalanta",
+        "away_team": "Udinese",
+        "kickoff_local": "2021-04-03T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-03|Benevento|Parma",
+        "season": "2020/21",
+        "match_date": "2021-04-03",
+        "official_round": 29,
+        "home_team": "Benevento",
+        "away_team": "Parma",
+        "kickoff_local": "2021-04-03T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-03|Cagliari|Verona",
+        "season": "2020/21",
+        "match_date": "2021-04-03",
+        "official_round": 29,
+        "home_team": "Cagliari",
+        "away_team": "Verona",
+        "kickoff_local": "2021-04-03T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-03|Genoa|Fiorentina",
+        "season": "2020/21",
+        "match_date": "2021-04-03",
+        "official_round": 29,
+        "home_team": "Genoa",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2021-04-03T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-03|Lazio|Spezia",
+        "season": "2020/21",
+        "match_date": "2021-04-03",
+        "official_round": 29,
+        "home_team": "Lazio",
+        "away_team": "Spezia",
+        "kickoff_local": "2021-04-03T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-03|Napoli|Crotone",
+        "season": "2020/21",
+        "match_date": "2021-04-03",
+        "official_round": 29,
+        "home_team": "Napoli",
+        "away_team": "Crotone",
+        "kickoff_local": "2021-04-03T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-03|Sassuolo|Roma",
+        "season": "2020/21",
+        "match_date": "2021-04-03",
+        "official_round": 29,
+        "home_team": "Sassuolo",
+        "away_team": "Roma",
+        "kickoff_local": "2021-04-03T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-03|Torino|Juventus",
+        "season": "2020/21",
+        "match_date": "2021-04-03",
+        "official_round": 29,
+        "home_team": "Torino",
+        "away_team": "Juventus",
+        "kickoff_local": "2021-04-03T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-03|Bologna|Inter",
+        "season": "2020/21",
+        "match_date": "2021-04-03",
+        "official_round": 29,
+        "home_team": "Bologna",
+        "away_team": "Inter",
+        "kickoff_local": "2021-04-03T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-07|Inter|Sassuolo",
+        "season": "2020/21",
+        "match_date": "2021-04-07",
+        "official_round": 28,
+        "home_team": "Inter",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2021-04-07T18:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-10|Spezia|Crotone",
+        "season": "2020/21",
+        "match_date": "2021-04-10",
+        "official_round": 30,
+        "home_team": "Spezia",
+        "away_team": "Crotone",
+        "kickoff_local": "2021-04-10T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-10|Parma|Milan",
+        "season": "2020/21",
+        "match_date": "2021-04-10",
+        "official_round": 30,
+        "home_team": "Parma",
+        "away_team": "Milan",
+        "kickoff_local": "2021-04-10T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-10|Udinese|Torino",
+        "season": "2020/21",
+        "match_date": "2021-04-10",
+        "official_round": 30,
+        "home_team": "Udinese",
+        "away_team": "Torino",
+        "kickoff_local": "2021-04-10T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-11|Inter|Cagliari",
+        "season": "2020/21",
+        "match_date": "2021-04-11",
+        "official_round": 30,
+        "home_team": "Inter",
+        "away_team": "Cagliari",
+        "kickoff_local": "2021-04-11T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-11|Juventus|Genoa",
+        "season": "2020/21",
+        "match_date": "2021-04-11",
+        "official_round": 30,
+        "home_team": "Juventus",
+        "away_team": "Genoa",
+        "kickoff_local": "2021-04-11T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-11|Sampdoria|Napoli",
+        "season": "2020/21",
+        "match_date": "2021-04-11",
+        "official_round": 30,
+        "home_team": "Sampdoria",
+        "away_team": "Napoli",
+        "kickoff_local": "2021-04-11T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-11|Verona|Lazio",
+        "season": "2020/21",
+        "match_date": "2021-04-11",
+        "official_round": 30,
+        "home_team": "Verona",
+        "away_team": "Lazio",
+        "kickoff_local": "2021-04-11T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-11|Roma|Bologna",
+        "season": "2020/21",
+        "match_date": "2021-04-11",
+        "official_round": 30,
+        "home_team": "Roma",
+        "away_team": "Bologna",
+        "kickoff_local": "2021-04-11T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-11|Fiorentina|Atalanta",
+        "season": "2020/21",
+        "match_date": "2021-04-11",
+        "official_round": 30,
+        "home_team": "Fiorentina",
+        "away_team": "Atalanta",
+        "kickoff_local": "2021-04-11T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-12|Benevento|Sassuolo",
+        "season": "2020/21",
+        "match_date": "2021-04-12",
+        "official_round": 30,
+        "home_team": "Benevento",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2021-04-12T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-17|Crotone|Udinese",
+        "season": "2020/21",
+        "match_date": "2021-04-17",
+        "official_round": 31,
+        "home_team": "Crotone",
+        "away_team": "Udinese",
+        "kickoff_local": "2021-04-17T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-17|Sampdoria|Verona",
+        "season": "2020/21",
+        "match_date": "2021-04-17",
+        "official_round": 31,
+        "home_team": "Sampdoria",
+        "away_team": "Verona",
+        "kickoff_local": "2021-04-17T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-17|Sassuolo|Fiorentina",
+        "season": "2020/21",
+        "match_date": "2021-04-17",
+        "official_round": 31,
+        "home_team": "Sassuolo",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2021-04-17T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-17|Cagliari|Parma",
+        "season": "2020/21",
+        "match_date": "2021-04-17",
+        "official_round": 31,
+        "home_team": "Cagliari",
+        "away_team": "Parma",
+        "kickoff_local": "2021-04-17T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-18|Milan|Genoa",
+        "season": "2020/21",
+        "match_date": "2021-04-18",
+        "official_round": 31,
+        "home_team": "Milan",
+        "away_team": "Genoa",
+        "kickoff_local": "2021-04-18T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-18|Atalanta|Juventus",
+        "season": "2020/21",
+        "match_date": "2021-04-18",
+        "official_round": 31,
+        "home_team": "Atalanta",
+        "away_team": "Juventus",
+        "kickoff_local": "2021-04-18T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-18|Bologna|Spezia",
+        "season": "2020/21",
+        "match_date": "2021-04-18",
+        "official_round": 31,
+        "home_team": "Bologna",
+        "away_team": "Spezia",
+        "kickoff_local": "2021-04-18T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-18|Lazio|Benevento",
+        "season": "2020/21",
+        "match_date": "2021-04-18",
+        "official_round": 31,
+        "home_team": "Lazio",
+        "away_team": "Benevento",
+        "kickoff_local": "2021-04-18T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-18|Torino|Roma",
+        "season": "2020/21",
+        "match_date": "2021-04-18",
+        "official_round": 31,
+        "home_team": "Torino",
+        "away_team": "Roma",
+        "kickoff_local": "2021-04-18T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-18|Napoli|Inter",
+        "season": "2020/21",
+        "match_date": "2021-04-18",
+        "official_round": 31,
+        "home_team": "Napoli",
+        "away_team": "Inter",
+        "kickoff_local": "2021-04-18T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-20|Verona|Fiorentina",
+        "season": "2020/21",
+        "match_date": "2021-04-20",
+        "official_round": 32,
+        "home_team": "Verona",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2021-04-20T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-21|Milan|Sassuolo",
+        "season": "2020/21",
+        "match_date": "2021-04-21",
+        "official_round": 32,
+        "home_team": "Milan",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2021-04-21T18:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-21|Bologna|Torino",
+        "season": "2020/21",
+        "match_date": "2021-04-21",
+        "official_round": 32,
+        "home_team": "Bologna",
+        "away_team": "Torino",
+        "kickoff_local": "2021-04-21T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-21|Crotone|Sampdoria",
+        "season": "2020/21",
+        "match_date": "2021-04-21",
+        "official_round": 32,
+        "home_team": "Crotone",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2021-04-21T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-21|Genoa|Benevento",
+        "season": "2020/21",
+        "match_date": "2021-04-21",
+        "official_round": 32,
+        "home_team": "Genoa",
+        "away_team": "Benevento",
+        "kickoff_local": "2021-04-21T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-21|Juventus|Parma",
+        "season": "2020/21",
+        "match_date": "2021-04-21",
+        "official_round": 32,
+        "home_team": "Juventus",
+        "away_team": "Parma",
+        "kickoff_local": "2021-04-21T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-21|Spezia|Inter",
+        "season": "2020/21",
+        "match_date": "2021-04-21",
+        "official_round": 32,
+        "home_team": "Spezia",
+        "away_team": "Inter",
+        "kickoff_local": "2021-04-21T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-21|Udinese|Cagliari",
+        "season": "2020/21",
+        "match_date": "2021-04-21",
+        "official_round": 32,
+        "home_team": "Udinese",
+        "away_team": "Cagliari",
+        "kickoff_local": "2021-04-21T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-22|Roma|Atalanta",
+        "season": "2020/21",
+        "match_date": "2021-04-22",
+        "official_round": 32,
+        "home_team": "Roma",
+        "away_team": "Atalanta",
+        "kickoff_local": "2021-04-22T18:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-22|Napoli|Lazio",
+        "season": "2020/21",
+        "match_date": "2021-04-22",
+        "official_round": 32,
+        "home_team": "Napoli",
+        "away_team": "Lazio",
+        "kickoff_local": "2021-04-22T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-24|Genoa|Spezia",
+        "season": "2020/21",
+        "match_date": "2021-04-24",
+        "official_round": 33,
+        "home_team": "Genoa",
+        "away_team": "Spezia",
+        "kickoff_local": "2021-04-24T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-24|Parma|Crotone",
+        "season": "2020/21",
+        "match_date": "2021-04-24",
+        "official_round": 33,
+        "home_team": "Parma",
+        "away_team": "Crotone",
+        "kickoff_local": "2021-04-24T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-24|Sassuolo|Sampdoria",
+        "season": "2020/21",
+        "match_date": "2021-04-24",
+        "official_round": 33,
+        "home_team": "Sassuolo",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2021-04-24T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-25|Benevento|Udinese",
+        "season": "2020/21",
+        "match_date": "2021-04-25",
+        "official_round": 33,
+        "home_team": "Benevento",
+        "away_team": "Udinese",
+        "kickoff_local": "2021-04-25T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-25|Fiorentina|Juventus",
+        "season": "2020/21",
+        "match_date": "2021-04-25",
+        "official_round": 33,
+        "home_team": "Fiorentina",
+        "away_team": "Juventus",
+        "kickoff_local": "2021-04-25T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-25|Inter|Verona",
+        "season": "2020/21",
+        "match_date": "2021-04-25",
+        "official_round": 33,
+        "home_team": "Inter",
+        "away_team": "Verona",
+        "kickoff_local": "2021-04-25T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-25|Cagliari|Roma",
+        "season": "2020/21",
+        "match_date": "2021-04-25",
+        "official_round": 33,
+        "home_team": "Cagliari",
+        "away_team": "Roma",
+        "kickoff_local": "2021-04-25T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-25|Atalanta|Bologna",
+        "season": "2020/21",
+        "match_date": "2021-04-25",
+        "official_round": 33,
+        "home_team": "Atalanta",
+        "away_team": "Bologna",
+        "kickoff_local": "2021-04-25T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-26|Torino|Napoli",
+        "season": "2020/21",
+        "match_date": "2021-04-26",
+        "official_round": 33,
+        "home_team": "Torino",
+        "away_team": "Napoli",
+        "kickoff_local": "2021-04-26T18:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-04-26|Lazio|Milan",
+        "season": "2020/21",
+        "match_date": "2021-04-26",
+        "official_round": 33,
+        "home_team": "Lazio",
+        "away_team": "Milan",
+        "kickoff_local": "2021-04-26T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-01|Verona|Spezia",
+        "season": "2020/21",
+        "match_date": "2021-05-01",
+        "official_round": 34,
+        "home_team": "Verona",
+        "away_team": "Spezia",
+        "kickoff_local": "2021-05-01T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-01|Crotone|Inter",
+        "season": "2020/21",
+        "match_date": "2021-05-01",
+        "official_round": 34,
+        "home_team": "Crotone",
+        "away_team": "Inter",
+        "kickoff_local": "2021-05-01T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-01|Milan|Benevento",
+        "season": "2020/21",
+        "match_date": "2021-05-01",
+        "official_round": 34,
+        "home_team": "Milan",
+        "away_team": "Benevento",
+        "kickoff_local": "2021-05-01T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-02|Lazio|Genoa",
+        "season": "2020/21",
+        "match_date": "2021-05-02",
+        "official_round": 34,
+        "home_team": "Lazio",
+        "away_team": "Genoa",
+        "kickoff_local": "2021-05-02T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-02|Bologna|Fiorentina",
+        "season": "2020/21",
+        "match_date": "2021-05-02",
+        "official_round": 34,
+        "home_team": "Bologna",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2021-05-02T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-02|Napoli|Cagliari",
+        "season": "2020/21",
+        "match_date": "2021-05-02",
+        "official_round": 34,
+        "home_team": "Napoli",
+        "away_team": "Cagliari",
+        "kickoff_local": "2021-05-02T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-02|Sassuolo|Atalanta",
+        "season": "2020/21",
+        "match_date": "2021-05-02",
+        "official_round": 34,
+        "home_team": "Sassuolo",
+        "away_team": "Atalanta",
+        "kickoff_local": "2021-05-02T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-02|Udinese|Juventus",
+        "season": "2020/21",
+        "match_date": "2021-05-02",
+        "official_round": 34,
+        "home_team": "Udinese",
+        "away_team": "Juventus",
+        "kickoff_local": "2021-05-02T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-02|Sampdoria|Roma",
+        "season": "2020/21",
+        "match_date": "2021-05-02",
+        "official_round": 34,
+        "home_team": "Sampdoria",
+        "away_team": "Roma",
+        "kickoff_local": "2021-05-02T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-03|Torino|Parma",
+        "season": "2020/21",
+        "match_date": "2021-05-03",
+        "official_round": 34,
+        "home_team": "Torino",
+        "away_team": "Parma",
+        "kickoff_local": "2021-05-03T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-08|Spezia|Napoli",
+        "season": "2020/21",
+        "match_date": "2021-05-08",
+        "official_round": 35,
+        "home_team": "Spezia",
+        "away_team": "Napoli",
+        "kickoff_local": "2021-05-08T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-08|Udinese|Bologna",
+        "season": "2020/21",
+        "match_date": "2021-05-08",
+        "official_round": 35,
+        "home_team": "Udinese",
+        "away_team": "Bologna",
+        "kickoff_local": "2021-05-08T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-08|Inter|Sampdoria",
+        "season": "2020/21",
+        "match_date": "2021-05-08",
+        "official_round": 35,
+        "home_team": "Inter",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2021-05-08T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-08|Fiorentina|Lazio",
+        "season": "2020/21",
+        "match_date": "2021-05-08",
+        "official_round": 35,
+        "home_team": "Fiorentina",
+        "away_team": "Lazio",
+        "kickoff_local": "2021-05-08T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-09|Genoa|Sassuolo",
+        "season": "2020/21",
+        "match_date": "2021-05-09",
+        "official_round": 35,
+        "home_team": "Genoa",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2021-05-09T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-09|Benevento|Cagliari",
+        "season": "2020/21",
+        "match_date": "2021-05-09",
+        "official_round": 35,
+        "home_team": "Benevento",
+        "away_team": "Cagliari",
+        "kickoff_local": "2021-05-09T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-09|Parma|Atalanta",
+        "season": "2020/21",
+        "match_date": "2021-05-09",
+        "official_round": 35,
+        "home_team": "Parma",
+        "away_team": "Atalanta",
+        "kickoff_local": "2021-05-09T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-09|Verona|Torino",
+        "season": "2020/21",
+        "match_date": "2021-05-09",
+        "official_round": 35,
+        "home_team": "Verona",
+        "away_team": "Torino",
+        "kickoff_local": "2021-05-09T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-09|Roma|Crotone",
+        "season": "2020/21",
+        "match_date": "2021-05-09",
+        "official_round": 35,
+        "home_team": "Roma",
+        "away_team": "Crotone",
+        "kickoff_local": "2021-05-09T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-09|Juventus|Milan",
+        "season": "2020/21",
+        "match_date": "2021-05-09",
+        "official_round": 35,
+        "home_team": "Juventus",
+        "away_team": "Milan",
+        "kickoff_local": "2021-05-09T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-11|Napoli|Udinese",
+        "season": "2020/21",
+        "match_date": "2021-05-11",
+        "official_round": 36,
+        "home_team": "Napoli",
+        "away_team": "Udinese",
+        "kickoff_local": "2021-05-11T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-12|Cagliari|Fiorentina",
+        "season": "2020/21",
+        "match_date": "2021-05-12",
+        "official_round": 36,
+        "home_team": "Cagliari",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2021-05-12T18:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-12|Atalanta|Benevento",
+        "season": "2020/21",
+        "match_date": "2021-05-12",
+        "official_round": 36,
+        "home_team": "Atalanta",
+        "away_team": "Benevento",
+        "kickoff_local": "2021-05-12T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-12|Bologna|Genoa",
+        "season": "2020/21",
+        "match_date": "2021-05-12",
+        "official_round": 36,
+        "home_team": "Bologna",
+        "away_team": "Genoa",
+        "kickoff_local": "2021-05-12T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-12|Inter|Roma",
+        "season": "2020/21",
+        "match_date": "2021-05-12",
+        "official_round": 36,
+        "home_team": "Inter",
+        "away_team": "Roma",
+        "kickoff_local": "2021-05-12T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-12|Lazio|Parma",
+        "season": "2020/21",
+        "match_date": "2021-05-12",
+        "official_round": 36,
+        "home_team": "Lazio",
+        "away_team": "Parma",
+        "kickoff_local": "2021-05-12T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-12|Sampdoria|Spezia",
+        "season": "2020/21",
+        "match_date": "2021-05-12",
+        "official_round": 36,
+        "home_team": "Sampdoria",
+        "away_team": "Spezia",
+        "kickoff_local": "2021-05-12T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-12|Sassuolo|Juventus",
+        "season": "2020/21",
+        "match_date": "2021-05-12",
+        "official_round": 36,
+        "home_team": "Sassuolo",
+        "away_team": "Juventus",
+        "kickoff_local": "2021-05-12T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-12|Torino|Milan",
+        "season": "2020/21",
+        "match_date": "2021-05-12",
+        "official_round": 36,
+        "home_team": "Torino",
+        "away_team": "Milan",
+        "kickoff_local": "2021-05-12T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-13|Crotone|Verona",
+        "season": "2020/21",
+        "match_date": "2021-05-13",
+        "official_round": 36,
+        "home_team": "Crotone",
+        "away_team": "Verona",
+        "kickoff_local": "2021-05-13T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-15|Genoa|Atalanta",
+        "season": "2020/21",
+        "match_date": "2021-05-15",
+        "official_round": 37,
+        "home_team": "Genoa",
+        "away_team": "Atalanta",
+        "kickoff_local": "2021-05-15T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-15|Spezia|Torino",
+        "season": "2020/21",
+        "match_date": "2021-05-15",
+        "official_round": 37,
+        "home_team": "Spezia",
+        "away_team": "Torino",
+        "kickoff_local": "2021-05-15T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-15|Juventus|Inter",
+        "season": "2020/21",
+        "match_date": "2021-05-15",
+        "official_round": 37,
+        "home_team": "Juventus",
+        "away_team": "Inter",
+        "kickoff_local": "2021-05-15T18:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-15|Roma|Lazio",
+        "season": "2020/21",
+        "match_date": "2021-05-15",
+        "official_round": 37,
+        "home_team": "Roma",
+        "away_team": "Lazio",
+        "kickoff_local": "2021-05-15T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-16|Fiorentina|Napoli",
+        "season": "2020/21",
+        "match_date": "2021-05-16",
+        "official_round": 37,
+        "home_team": "Fiorentina",
+        "away_team": "Napoli",
+        "kickoff_local": "2021-05-16T12:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-16|Benevento|Crotone",
+        "season": "2020/21",
+        "match_date": "2021-05-16",
+        "official_round": 37,
+        "home_team": "Benevento",
+        "away_team": "Crotone",
+        "kickoff_local": "2021-05-16T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-16|Udinese|Sampdoria",
+        "season": "2020/21",
+        "match_date": "2021-05-16",
+        "official_round": 37,
+        "home_team": "Udinese",
+        "away_team": "Sampdoria",
+        "kickoff_local": "2021-05-16T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-16|Parma|Sassuolo",
+        "season": "2020/21",
+        "match_date": "2021-05-16",
+        "official_round": 37,
+        "home_team": "Parma",
+        "away_team": "Sassuolo",
+        "kickoff_local": "2021-05-16T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-16|Milan|Cagliari",
+        "season": "2020/21",
+        "match_date": "2021-05-16",
+        "official_round": 37,
+        "home_team": "Milan",
+        "away_team": "Cagliari",
+        "kickoff_local": "2021-05-16T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-17|Verona|Bologna",
+        "season": "2020/21",
+        "match_date": "2021-05-17",
+        "official_round": 37,
+        "home_team": "Verona",
+        "away_team": "Bologna",
+        "kickoff_local": "2021-05-17T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-18|Lazio|Torino",
+        "season": "2020/21",
+        "match_date": "2021-05-18",
+        "official_round": 25,
+        "home_team": "Lazio",
+        "away_team": "Torino",
+        "kickoff_local": "2021-05-18T20:30:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-22|Cagliari|Genoa",
+        "season": "2020/21",
+        "match_date": "2021-05-22",
+        "official_round": 38,
+        "home_team": "Cagliari",
+        "away_team": "Genoa",
+        "kickoff_local": "2021-05-22T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-22|Crotone|Fiorentina",
+        "season": "2020/21",
+        "match_date": "2021-05-22",
+        "official_round": 38,
+        "home_team": "Crotone",
+        "away_team": "Fiorentina",
+        "kickoff_local": "2021-05-22T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-22|Sampdoria|Parma",
+        "season": "2020/21",
+        "match_date": "2021-05-22",
+        "official_round": 38,
+        "home_team": "Sampdoria",
+        "away_team": "Parma",
+        "kickoff_local": "2021-05-22T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-23|Inter|Udinese",
+        "season": "2020/21",
+        "match_date": "2021-05-23",
+        "official_round": 38,
+        "home_team": "Inter",
+        "away_team": "Udinese",
+        "kickoff_local": "2021-05-23T15:00:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-23|Atalanta|Milan",
+        "season": "2020/21",
+        "match_date": "2021-05-23",
+        "official_round": 38,
+        "home_team": "Atalanta",
+        "away_team": "Milan",
+        "kickoff_local": "2021-05-23T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-23|Bologna|Juventus",
+        "season": "2020/21",
+        "match_date": "2021-05-23",
+        "official_round": 38,
+        "home_team": "Bologna",
+        "away_team": "Juventus",
+        "kickoff_local": "2021-05-23T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-23|Napoli|Verona",
+        "season": "2020/21",
+        "match_date": "2021-05-23",
+        "official_round": 38,
+        "home_team": "Napoli",
+        "away_team": "Verona",
+        "kickoff_local": "2021-05-23T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-23|Sassuolo|Lazio",
+        "season": "2020/21",
+        "match_date": "2021-05-23",
+        "official_round": 38,
+        "home_team": "Sassuolo",
+        "away_team": "Lazio",
+        "kickoff_local": "2021-05-23T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-23|Spezia|Roma",
+        "season": "2020/21",
+        "match_date": "2021-05-23",
+        "official_round": 38,
+        "home_team": "Spezia",
+        "away_team": "Roma",
+        "kickoff_local": "2021-05-23T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      },
+      {
+        "fixture_key": "2020/21|2021-05-23|Torino|Benevento",
+        "season": "2020/21",
+        "match_date": "2021-05-23",
+        "official_round": 38,
+        "home_team": "Torino",
+        "away_team": "Benevento",
+        "kickoff_local": "2021-05-23T20:45:00+02:00",
+        "timezone": "Europe/Rome"
+      }
+    ]
+  },
+  "created_at": "2026-10-10T14:28:32+08:00",
+  "output_contract": {
+    "format": "row_level_jsonl_odds_evidence_plus_audit_and_unresolved_queue",
+    "status_policy": "processing_then_ok_or_error; unverifiable values remain unavailable",
+    "dp_used": false,
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
