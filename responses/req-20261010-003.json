@@ -1,1 +1,10 @@
-{"dispatch_id": "exec:proc_ade1d5d3ccb5", "dp_reason": "未调用 DeepSeek：FD 列核验为确定性脚本任务", "dp_used": false, "from": "muse", "id": "req-20261010-003", "note": "2026-10-10 15:05 CST FD列核验完成：N1(Eredivisie)1819(306行)/1920(232行，疫情腰斩季)/2021(306行)三季CSV有效，B365/PS/BW列齐全但无任何opening语义列（has_any_opening_col=False）。结论：FD无法提供true opening；文本层NowScore/OddsPortal/BetExplorer亦不可达（见-001同轮探测）。465个组合的true opening必须走真浏览器（NowScore初指/OddsPortal/BetExplorer历史），路由主代理按赛季分片派 browser.spawn_task。核验报告 work-req-20261010-003/fd_batch/fd_coverage_report.json。", "request_sha": "7196b4c7c8eaa4f0", "status": "processing"}
+{
+ "dispatch_id": "browser-task:23ae1a21-c5c2-4452-a93e-98cd031d12f8",
+ "dp_reason": "未调用 DeepSeek：FD 列核验为确定性脚本任务",
+ "dp_used": false,
+ "from": "muse",
+ "id": "req-20261010-003",
+ "note": "2026-10-10 15:05 CST FD列核验完成：N1(Eredivisie)1819(306行)/1920(232行，疫情腰斩季)/2021(306行)三季CSV有效，B365/PS/BW列齐全但无任何opening语义列（has_any_opening_col=False）。结论：FD无法提供true opening；文本层NowScore/OddsPortal/BetExplorer亦不可达（见-001同轮探测）。465个组合的true opening必须走真浏览器（NowScore初指/OddsPortal/BetExplorer历史），路由主代理按赛季分片派 browser.spawn_task。核验报告 work-req-20261010-003/fd_batch/fd_coverage_report.json。【2026-10-10 14:52 CST 路线更新】OddsPortal(1920季)与BetExplorer(2021季)两条路线均因同一美国IP地域限制失败（前者仅4家美国公司、后者仅bet365.us无历史入口）。NowScore(1819季Pinnacle初指)仍在跑，为当前唯一存活路线。【2026-10-10 14:56 CST 用户拍板走碰运气路线】NowScore第二路已派发：2019/20季182组合（bet365 68/WH 67/Pinnacle 47），与第一路（2018/19）错峰、单站2并发。待B1验证NowGoal博彩公司覆盖后，再切2020/21季、-004 gaps、-001切片。【2026-10-10 14:59 CST】NowScore第二路首发因浏览器槽位故障中断（非站点问题），已用正确镜像nowgoal.plus（nowgoal.com已停放、nowgoal.co空白）在新会话重试。另：SoccerPunter路用户似已亲自过验证，任务已恢复跑在比赛页。【2026-10-10 15:00 CST】第二路两次均在点击freesoccer页\"Leagues\"导航时渲染器无响应而中断（非站点封锁）；已换绕法（读href直接goto、不点击）在新会话第三次重试。若再失败则停手换备用镜像/另议。【2026-10-10 15:32 CST 1819季交付】NowGoal路线第一路（2018/19季81组合，全Pinnacle）完成：81/81成功，0缺失。数据 work-req-20261010-003/nowgoal_1819_pinnacle_opening.jsonl（81行，已校验：JSON全通过、81 fixture_key无重复、source/final/locator三处比赛ID一致）。重要语义警示：NowGoal的\"initial\"为其数据流首次捕获/刷新记录，部分比赛Last Updated接近甚至晚于开球时间，不等同于Pinnacle真实市场开盘时刻；true_opening标记依据来源\"Initial/初指\"标注，上游须结合recorded_at评估时效性。详见 nowgoal_1819_audit.md。1920季（182组合）与2021季待继续。",
+ "request_sha": "7196b4c7c8eaa4f0",
+ "status": "processing"
+}
