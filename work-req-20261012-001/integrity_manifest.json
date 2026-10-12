@@ -17,8 +17,8 @@
    "rows": 8
   },
   "excluded_and_anomaly_rows.csv": {
-   "bytes": 1866,
-   "sha256": "1c9df5c748cf938542339997415f63f7cc9c6381002d3da93a2974c9852586ab",
+   "bytes": 2452,
+   "sha256": "bfe49215e43f7d2c3cafbcf9a6c5109b41844375fd160436f01c1309bbd370c7",
    "rows": 11
   },
   "source_registration_manifest.json": {
@@ -27,8 +27,8 @@
    "rows": null
   },
   "integrity_manifest.json": {
-   "bytes": 1741,
-   "sha256": "114a9f6c932eb73b1bf64e6ec5e348886b502488fc69bb003e5581d423363ab3",
+   "bytes": 2278,
+   "sha256": "66f1a2de2322bdf7611a5e315e2483687f9cfd99fd28f40b080ec83b9f846cd6",
    "rows": null
   }
  },
@@ -87,5 +87,6 @@
    }
   ]
  },
- "notes": "official_round=null (SFL site does not display round numbers); meeting_number=null (no official field); 2022/23 Servette-Luzern 2023-03-12 marked Forfait by SFL"
+ "notes": "official_round=null (SFL site does not display round numbers); meeting_number=null (no official field); 2022/23 Servette-Luzern 2023-03-12 marked Forfait by SFL",
+ "exclusion_ledger_notes": "14 rows: 11 Barrage legs with evidence (9 from q1 exclusions + 2 2020/21 Barrage mislabeled as Challenge League in FD source) + 1 known-not-captured (2021/22 2nd leg Schaffhausen vs Luzern) + 2 unknown (2024/25, 2025/26 Barrage not in captured sources)"
 }
