@@ -1,0 +1,12 @@
+{
+ "id": "req-20261012-002",
+ "status": "processing",
+ "request_sha": "4c97d6074e4e42de",
+ "dispatch_id": "exec:main-20261012-3stream",
+ "data": {
+  "report": "# req-20261012-002 已接手\n\n三路并行：\n- A: 6 件交付物完整性重算（本轮直接做）\n- B: 1584 场赛前积分可复现证据（Q2 已有，补 provenance）\n- C: 1584 场历史开盘 1X2（独立档案搜索）\n",
+  "unresolved_queue": []
+ },
+ "note": "2026-10-12 12:28 CST 首轮受理。dispatch_id=exec:main-20261012-3stream（A本轮直做，B/C派subagent并行）",
+ "updated_at": "2026-10-12T12:27:38+08:00"
+}
