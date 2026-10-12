@@ -1,0 +1,26 @@
+{
+ "excluded_and_anomaly_rows.csv": {
+  "bytes": 2452,
+  "sha256": "bfe49215e43f7d2c3cafbcf9a6c5109b41844375fd160436f01c1309bbd370c7"
+ },
+ "fixture_source_crosswalk.csv": {
+  "bytes": 206567,
+  "sha256": "09ada4bc53b0a768376cd7fba5315fc9b3f9a6d58794cd50c6203fd31df9e416"
+ },
+ "integrity_manifest.json": {
+  "bytes": 2561,
+  "sha256": "d4ddb9ba105273637493686b0aa74ac7ffc7abe39215aba5c2d1bf67007b269e"
+ },
+ "season_files_manifest.csv": {
+  "bytes": 1129,
+  "sha256": "ddc24802f180d907a3bf4c676d209ce8a09f91fb4aa50c90179e55f0b8c587c0"
+ },
+ "sfl_schedule_enrichment.csv": {
+  "bytes": 98876,
+  "sha256": "b5f3e292f477a43b65d5e7d331c0133cd550f04c010cc5843078ff38ebbdf377"
+ },
+ "source_registration_manifest.json": {
+  "bytes": 1109,
+  "sha256": "f7bc53271672aff7f82da3b84de3ec84a6bba48c2e5f19dc8dac6dc4c787f85c"
+ }
+}
