@@ -1,0 +1,65 @@
+{
+  "id": "req-20261012-001",
+  "type": "deep_research",
+  "created_at": "2026-10-12T10:13:01+08:00",
+  "params": {
+    "topic": "Swiss Super League 2018/19-2025/26 source registration handoff and stable raw-row crosswalk",
+    "questions": [
+      "This is a narrow registration handoff follow-up to req-20261008-001/002/003 and req-20261009-001, not a repeat of their broad research. For the candidate https://www.football-data.co.uk/new/SWZ.csv, return a machine-readable source registration manifest for swiss_super_league: verify Country and League identity, exact source_code, source/final URL, retrieval time, HTTP status, content type, raw byte count and full SHA-256, header/schema, and explicit source-column mappings for season, date, kickoff time, home, away, home goals, away goals, 90-minute result, and each odds field with opening/closing semantics. If any registry field cannot be proven, leave it null and explain the missing evidence; do not set status=ready by assumption.",
+      "Provide the exact eight-season split manifest for 2018/19 through 2025/26, including each file's actual deliverable path/name, byte count, full SHA-256, CSV header, source line range, stable source_row definition, row count, season value, and reproducible split command or code/version. The split files must be byte-distinct valid CSV data or explicitly marked unavailable; do not return HTML placeholders as season files.",
+      "Return a fixture identity crosswalk for the 1,584 expected regular-league fixtures only. Each row must contain season, stable source_row in the raw SWZ file, normalized date and kickoff as published, official home/away names, stable official SFL Spielnummer or provider fixture ID when available, and the source locator. Report matched, unmatched, duplicate, and conflicting key counts by season. Do not infer identity from CSV row order alone; preserve unmatched rows as null with reason.",
+      "Provide a separate exclusion/anomaly ledger for every candidate source row that is not a regular Swiss Super League fixture or cannot be classified: identify Barrage/promotion-relegation playoff rows, the 2020/21 Challenge League-labelled rows, the single 2021/22 Barrage leg, and any other extra or malformed rows. For each, return source_row, season, observed competition label, exclusion status/reason, and evidence URL/locator. Do not silently drop or relabel rows.",
+      "For SFL schedule enrichment, join official Spielnummer and published phase/group to the 1,584 regular fixture identity keys. Return official_round only when the source explicitly provides it; otherwise return null. Return meeting_number only when supported by an official field or a documented deterministic schedule rule. Include exact source URL/final URL, fetched_at, HTTP status, artifact bytes and SHA-256, field locators, and per-season coverage/conflicts. Reconcile the currently reported 1,584 unique Spielnummer/phase candidate with the final frozen artifacts and explain any prior hash or byte mismatch."
+    ],
+    "constraints": {
+      "competition_key": "swiss_super_league",
+      "competition_name": "Swiss Super League",
+      "seasons": [
+        "2018/19",
+        "2019/20",
+        "2020/21",
+        "2021/22",
+        "2022/23",
+        "2023/24",
+        "2024/25",
+        "2025/26"
+      ],
+      "expected_regular_fixtures": 1584,
+      "candidate_source_url": "https://www.football-data.co.uk/new/SWZ.csv",
+      "candidate_source_sha256": "1c40b7cebed397a177643b6576f064e3c144b6d719dc9a5719636d88ca040021",
+      "identity_key": [
+        "season",
+        "kickoff_local",
+        "official_home_team",
+        "official_away_team"
+      ],
+      "required_output_artifacts": [
+        "source_registration_manifest.json",
+        "season_files_manifest.csv",
+        "fixture_source_crosswalk.csv",
+        "excluded_and_anomaly_rows.csv",
+        "sfl_schedule_enrichment.csv",
+        "integrity_manifest.json"
+      ],
+      "provenance_per_artifact": [
+        "source_url",
+        "final_url",
+        "retrieved_at",
+        "http_status",
+        "field_locator",
+        "byte_count",
+        "sha256"
+      ],
+      "forbidden": [
+        "Qimen or chart fields",
+        "model direction or probabilities",
+        "Outcome or Review labels",
+        "Gold or weight recommendations",
+        "inferring official round or meeting number from result rows or final standings",
+        "silently dropping conflicts, extra rows, or unavailable fields"
+      ],
+      "manual_data_policy": "The user's 2026-10-12 venue and club attachment has already been accepted as source_type=user_authoritative. Do not re-audit or replace those fields; this request is only for source registration, raw-row identity, SFL schedule mapping, and anomaly evidence.",
+      "existing_request_policy": "Do not duplicate the broad pending req-20261009-001. This request only asks for a stable registration handoff and raw source-row crosswalk needed by the local registry."
+    }
+  }
+}
