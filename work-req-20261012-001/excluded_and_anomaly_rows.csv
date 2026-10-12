@@ -1,0 +1,12 @@
+source_row,season,date,home,away,competition_label,exclusion_status,reason,evidence_locator
+,2018/2019,30/05/2019,Xamax,Aarau,Barrage,excluded,Relegation Barrage (promotion/relegation playoff) - excluded per request scope (regular season only),SFL matchcenter
+,2018/2019,02/06/2019,Aarau,Xamax,Barrage,excluded,Relegation Barrage (promotion/relegation playoff) - excluded per request scope (regular season only),SFL matchcenter
+,2019/2020,07/08/2020,Vaduz,Thun,Barrage,excluded,Relegation Barrage (promotion/relegation playoff) - excluded per request scope (regular season only),SFL matchcenter
+,2019/2020,10/08/2020,Thun,Vaduz,Barrage,excluded,Relegation Barrage (promotion/relegation playoff) - excluded per request scope (regular season only),SFL matchcenter
+,2021/2022,29/05/2022,Luzern,Schaffhausen,Barrage,excluded,Relegation Barrage (promotion/relegation playoff) - excluded per request scope (regular season only),SFL matchcenter
+,2022/2023,03/06/2023,Sion,Lausanne Ouchy,Barrage,excluded,Relegation Barrage (promotion/relegation playoff) - excluded per request scope (regular season only),SFL matchcenter
+,2022/2023,06/06/2023,Lausanne Ouchy,Sion,Barrage,excluded,Relegation Barrage (promotion/relegation playoff) - excluded per request scope (regular season only),SFL matchcenter
+,2023/2024,26/05/2024,Grasshoppers,Thun,Barrage,excluded,Relegation Barrage (promotion/relegation playoff) - excluded per request scope (regular season only),SFL matchcenter
+,2023/2024,31/05/2024,Thun,Grasshoppers,Barrage,excluded,Relegation Barrage (promotion/relegation playoff) - excluded per request scope (regular season only),SFL matchcenter
+,2020/2021,27/05/2021,Thun,Sion,Challenge League,excluded,mislabeled rows in SWZ.csv source,SWZ-current.csv
+,2020/2021,30/05/2021,Sion,Thun,Challenge League,excluded,mislabeled rows in SWZ.csv source,SWZ-current.csv

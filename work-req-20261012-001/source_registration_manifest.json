@@ -1,0 +1,28 @@
+{
+ "competition_key": "swiss_super_league",
+ "candidate_source_url": "https://www.football-data.co.uk/new/SWZ.csv",
+ "final_url": "https://www.football-data.co.uk/new/SWZ.csv",
+ "retrieved_at": "2026-10-09T10:19:00+08:00",
+ "http_status": 200,
+ "content_type": "text/csv",
+ "byte_count": 344291,
+ "sha256": "1c40b7cebed397a177643b6576f064e3c144b6d719dc9a5719636d88ca040021",
+ "country": "Switzerland",
+ "league": "Super League",
+ "identity_verified": true,
+ "header": "Country,League,Season,Date,Time,Home,Away,HG,AG,Res,PSCH,PSCD,PSCA,MaxCH,MaxCD,MaxCA,AvgCH,AvgCD,AvgCA,BFECH,BFECD,BFECA,B365CH,B365CD,B365CA",
+ "column_mapping": {
+  "season": "Season",
+  "date": "Date (DD/MM/YYYY)",
+  "kickoff_time": "Time (local)",
+  "home": "Home",
+  "away": "Away",
+  "home_goals_90m": "HG",
+  "away_goals_90m": "AG",
+  "result_90m": "Res (H/D/A)",
+  "odds_fields": "PSCH/PSCD/PSCA=pinnacle closing; MaxCH/MaxCD/MaxCA=max closing; AvgCH/AvgCD/AvgCA=avg closing; B365CH/B365CD/B365CA=bet365 closing (no true opening columns)"
+ },
+ "opening_odds_available": false,
+ "official_round_column": null,
+ "venue_column": null
+}
