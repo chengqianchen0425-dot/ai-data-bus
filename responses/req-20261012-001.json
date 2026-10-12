@@ -1,0 +1,12 @@
+{
+ "id": "req-20261012-001",
+ "status": "processing",
+ "request_sha": "38a51e859740ad60",
+ "dispatch_id": "exec:main-20261012-sfl-handoff",
+ "data": {
+  "report": "# req-20261012-001 已接手\n\nCodex 的 source registration handoff 请求。6 件交付物：\n1. source_registration_manifest.json\n2. season_files_manifest.csv\n3. fixture_source_crosswalk.csv (1584)\n4. excluded_and_anomaly_rows.csv\n5. sfl_schedule_enrichment.csv\n6. integrity_manifest.json\n\n原料状态：8 季 SFL chunk 齐（1584 行全带 Spielnummer）；8 季 season 文件齐（work-req-20261009-001/）；Q1 1584 场齐。\n本轮做 SFL Spielnummer ↔ Q1 的 join + 6 件落盘。",
+  "unresolved_queue": []
+ },
+ "note": "2026-10-12 10:35 CST 首轮受理。dispatch_id=exec:main-20261012-sfl-handoff",
+ "updated_at": "2026-10-12T10:35:00+08:00"
+}
