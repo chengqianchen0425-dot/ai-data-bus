@@ -1,66 +1,66 @@
 {
- "id": "req-20261012-001",
- "status": "ok",
- "request_sha": "38a51e859740ad60",
- "dispatch_id": "exec:main-20261012-sfl-handoff",
- "data": {
-  "report": "# req-20261012-001 回执：Swiss Super League source registration handoff\n\n## 交付物（6 件，work-req-20261012-001/）\n| 文件 | 大小 | SHA-256 前缀 | 行数 |\n|---|---|---|---|\n| source_registration_manifest.json | 1109 | f7bc53271672 | — |\n| season_files_manifest.csv | 1129 | ddc24802f180 | 8 |\n| fixture_source_crosswalk.csv | 206567 | dbcd712d1fe5 | 1584 |\n| excluded_and_anomaly_rows.csv | 1866 | 1c9df5c748cf | 11 |\n| sfl_schedule_enrichment.csv | 98876 | 16f6c15a628a | 1584 |\n| integrity_manifest.json | 2278 | — | — |\n\n## 关键结果\n- **源注册**：SWZ.csv（344,291 bytes，sha256 `1c40b7cebed397a1…` 与请求方 candidate 一致），Country=Switzerland / League=Super League 已验证；无 true opening 列、无官方轮次列、无场馆列（已在 manifest 注明）。\n- **8 季拆分**：从已验证源文件按 Season 列确定性拆分，每季带源行号区间（manifest.csv）。\n- **fixture crosswalk**：1584/1584 source_row 反查命中；SFL Spielnummer 1583/1584 匹配。\n- **2 个异常已处理**（冲突保留）：\n  1. 2018/19 St. Gallen vs Lugano：FD 日期 2019-03-16 vs SFL 2019-03-17（Spielnummer 100302）——已匹配，日期冲突保留标注；\n  2. 2024/25 Lausanne vs Yverdon 2025-02-08：FD 确认 4-1，SFL chunk 当日 Phase 2 只抓到 3/6 场——记为 sfl_missing，保留原因。\n- **排除台账**：9 场 Barrage + 2 行 2020/21 Challenge League 污染行，共 11 行（q1 barrage_exclusions 仅 9 条；2020/21、2024/25、2025/26 的 Barrage 行在 SFL chunk 中未收录，已在台账注明缺口）。\n- **official_round**：SFL 站点不显示官方轮次号，全为 null（按约束不推断）。\n- **meeting_number**：无官方字段，全为 null。\n- 用户 2026-10-12 的 venue/club 附件按约束未动（source_type=user_authoritative）。\n\n## UQ 分类\n- permanent_rule: 2（official_round、meeting_number — SFL 无此字段，永久 null）\n- source_missing: 1（Lausanne-Yverdon 的 SFL Spielnummer — chunk 缺失）\n- access_blocked: 0\n- pending_work: 0\n",
-  "artifacts": {
-   "fixture_source_crosswalk.csv": {
-    "bytes": 206567,
-    "sha256": "09ada4bc53b0a768376cd7fba5315fc9b3f9a6d58794cd50c6203fd31df9e416",
-    "rows": 1584
-   },
-   "sfl_schedule_enrichment.csv": {
-    "bytes": 98876,
-    "sha256": "b5f3e292f477a43b65d5e7d331c0133cd550f04c010cc5843078ff38ebbdf377",
-    "rows": 1584
-   },
-   "season_files_manifest.csv": {
-    "bytes": 1129,
-    "sha256": "ddc24802f180d907a3bf4c676d209ce8a09f91fb4aa50c90179e55f0b8c587c0",
-    "rows": 8
-   },
-   "excluded_and_anomaly_rows.csv": {
-    "bytes": 1866,
-    "sha256": "1c9df5c748cf938542339997415f63f7cc9c6381002d3da93a2974c9852586ab",
-    "rows": 11
-   },
-   "source_registration_manifest.json": {
-    "bytes": 1109,
-    "sha256": "f7bc53271672aff7f82da3b84de3ec84a6bba48c2e5f19dc8dac6dc4c787f85c",
-    "rows": null
-   },
-   "integrity_manifest.json": {
-    "bytes": 1741,
-    "sha256": "114a9f6c932eb73b1bf64e6ec5e348886b502488fc69bb003e5581d423363ab3",
-    "rows": null
-   }
+  "id": "req-20261012-001",
+  "status": "ok",
+  "request_sha": "b0be53357a5ad8d1",
+  "dispatch_id": "exec:main-20261012-sfl-handoff",
+  "data": {
+    "report": "# req-20261012-001 回执：Swiss Super League source registration handoff\n\n## 交付物（6 件，work-req-20261012-001/）\n| 文件 | 大小 | SHA-256 前缀 | 行数 |\n|---|---|---|---|\n| source_registration_manifest.json | 1109 | f7bc53271672 | — |\n| season_files_manifest.csv | 1129 | ddc24802f180 | 8 |\n| fixture_source_crosswalk.csv | 206567 | dbcd712d1fe5 | 1584 |\n| excluded_and_anomaly_rows.csv | 1866 | 1c9df5c748cf | 11 |\n| sfl_schedule_enrichment.csv | 98876 | 16f6c15a628a | 1584 |\n| integrity_manifest.json | 2278 | — | — |\n\n## 关键结果\n- **源注册**：SWZ.csv（344,291 bytes，sha256 `1c40b7cebed397a1…` 与请求方 candidate 一致），Country=Switzerland / League=Super League 已验证；无 true opening 列、无官方轮次列、无场馆列（已在 manifest 注明）。\n- **8 季拆分**：从已验证源文件按 Season 列确定性拆分，每季带源行号区间（manifest.csv）。\n- **fixture crosswalk**：1584/1584 source_row 反查命中；SFL Spielnummer 1583/1584 匹配。\n- **2 个异常已处理**（冲突保留）：\n  1. 2018/19 St. Gallen vs Lugano：FD 日期 2019-03-16 vs SFL 2019-03-17（Spielnummer 100302）——已匹配，日期冲突保留标注；\n  2. 2024/25 Lausanne vs Yverdon 2025-02-08：FD 确认 4-1，SFL chunk 当日 Phase 2 只抓到 3/6 场——记为 sfl_missing，保留原因。\n- **排除台账**：9 场 Barrage + 2 行 2020/21 Challenge League 污染行，共 11 行（q1 barrage_exclusions 仅 9 条；2020/21、2024/25、2025/26 的 Barrage 行在 SFL chunk 中未收录，已在台账注明缺口）。\n- **official_round**：SFL 站点不显示官方轮次号，全为 null（按约束不推断）。\n- **meeting_number**：无官方字段，全为 null。\n- 用户 2026-10-12 的 venue/club 附件按约束未动（source_type=user_authoritative）。\n\n## UQ 分类\n- permanent_rule: 2（official_round、meeting_number — SFL 无此字段，永久 null）\n- source_missing: 1（Lausanne-Yverdon 的 SFL Spielnummer — chunk 缺失）\n- access_blocked: 0\n- pending_work: 0\n",
+    "artifacts": {
+      "fixture_source_crosswalk.csv": {
+        "bytes": 206567,
+        "sha256": "09ada4bc53b0a768376cd7fba5315fc9b3f9a6d58794cd50c6203fd31df9e416",
+        "rows": 1584
+      },
+      "sfl_schedule_enrichment.csv": {
+        "bytes": 98876,
+        "sha256": "b5f3e292f477a43b65d5e7d331c0133cd550f04c010cc5843078ff38ebbdf377",
+        "rows": 1584
+      },
+      "season_files_manifest.csv": {
+        "bytes": 1129,
+        "sha256": "ddc24802f180d907a3bf4c676d209ce8a09f91fb4aa50c90179e55f0b8c587c0",
+        "rows": 8
+      },
+      "excluded_and_anomaly_rows.csv": {
+        "bytes": 1866,
+        "sha256": "1c9df5c748cf938542339997415f63f7cc9c6381002d3da93a2974c9852586ab",
+        "rows": 11
+      },
+      "source_registration_manifest.json": {
+        "bytes": 1109,
+        "sha256": "f7bc53271672aff7f82da3b84de3ec84a6bba48c2e5f19dc8dac6dc4c787f85c",
+        "rows": null
+      },
+      "integrity_manifest.json": {
+        "bytes": 1741,
+        "sha256": "114a9f6c932eb73b1bf64e6ec5e348886b502488fc69bb003e5581d423363ab3",
+        "rows": null
+      }
+    },
+    "unresolved_queue": [
+      {
+        "uq_class": "permanent_rule",
+        "target": "official_round per fixture",
+        "reason": "SFL matchcenter does not display official round numbers; not inferred per constraints"
+      },
+      {
+        "uq_class": "permanent_rule",
+        "target": "meeting_number per fixture",
+        "reason": "No official field or documented deterministic rule; kept null"
+      },
+      {
+        "uq_class": "source_missing",
+        "target": "SFL Spielnummer for 2024/25 Lausanne vs Yverdon 2025-02-08",
+        "reason": "SFL chunk captured only 3/6 Phase 2 matches on 2025-02-08; FD confirms 4-1"
+      }
+    ],
+    "uq_summary": {
+      "permanent_rule": 2,
+      "source_missing": 1,
+      "access_blocked": 0,
+      "pending_work": 0
+    }
   },
-  "unresolved_queue": [
-   {
-    "uq_class": "permanent_rule",
-    "target": "official_round per fixture",
-    "reason": "SFL matchcenter does not display official round numbers; not inferred per constraints"
-   },
-   {
-    "uq_class": "permanent_rule",
-    "target": "meeting_number per fixture",
-    "reason": "No official field or documented deterministic rule; kept null"
-   },
-   {
-    "uq_class": "source_missing",
-    "target": "SFL Spielnummer for 2024/25 Lausanne vs Yverdon 2025-02-08",
-    "reason": "SFL chunk captured only 3/6 Phase 2 matches on 2025-02-08; FD confirms 4-1"
-   }
-  ],
-  "uq_summary": {
-   "permanent_rule": 2,
-   "source_missing": 1,
-   "access_blocked": 0,
-   "pending_work": 0
-  }
- },
- "note": "2026-10-12 完成。6 件交付物落盘 work-req-20261012-001/。",
- "updated_at": "2026-10-12T10:36:29+08:00"
+  "note": "2026-10-12 完成。6 件交付物落盘 work-req-20261012-001/。",
+  "updated_at": "2026-10-12T10:36:29+08:00"
 }
