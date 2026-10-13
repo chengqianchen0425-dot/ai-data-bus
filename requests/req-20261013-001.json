@@ -1,0 +1,129 @@
+{
+  "id": "req-20261013-001",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "created_at": "2026-10-13T18:31:19+08:00",
+  "params": {
+    "topic": "Swiss Super League nine unresolved Bet365 true-opening 1X2 fields, fixture-level evidence only",
+    "execution_note": "This is a narrow follow-up to req-20261012-002, whose broad audit found structural text-layer limits. Search only the nine fixtures listed below. Do not repeat a league-wide audit or retry any source before its DEAD-END REGISTRY retry_after date. The 5Dollar API targeted attempts are exhausted and must not be called again. Dispatch independent fixture searches in parallel under the ai-data-bus SOP, then merge row-level evidence without resolving conflicts.",
+    "questions": [
+      "For each listed Swiss Super League regular-season fixture, identify the exact fixture using season, Swiss-local date, and ordered home/away teams. Return stable source fixture IDs where available and exact official/archived fixture URLs. Do not use fuzzy team/date matching; do not substitute another match returned by a search page.",
+      "For each exact fixture, search accessible independent historical odds archives for Bet365 1X2 true opening odds. Accept a value only when the source explicitly identifies bookmaker Bet365 (or a documented Bet365 alias), market 1X2, and opening/initial phase, with complete home/draw/away values. Return the three values only with direct source evidence. Do not treat closing, current, pre-close, a single unspecified snapshot, or another bookmaker as opening.",
+      "Return one row for every target fixture even when no opening odds are found. Each row must include record_key, season, local_date, ordered home_team and away_team, SFL_Spielnummer when supplied, provider_fixture_id if found, bookmaker, market, phase, home/draw/away values or null, status (ok/unavailable/blocked/conflict/parse_failed), source_url, final_url, retrieved_at with timezone, field_locator, source_sha256, and a concise source-specific reason. Preserve conflicting candidate values and provenance; do not choose a winner.",
+      "For failed searches, state which sources were checked and why each failed, while respecting registered retry_after restrictions. Do not call 5DollarFootballAPI again. Do not report an unrelated fixture's odds as a match. No score, goals, result, standings, Qimen, model, Snapshot, Outcome, Review, Gold, probability, or weight fields are requested or allowed.",
+      "Include an audit with expected=9, discovered exact fixtures, complete Bet365 opening triplets, partial evidence, and missing count, plus an unresolved_queue listing every unresolved record_key and source-specific reason. Preserve nulls and do not invent data."
+    ],
+    "fixtures": [
+      {
+        "record_key": "swiss_super_league|2019/2020|spielnummer:108328",
+        "season": "2019/2020",
+        "local_date": "2020-01-26",
+        "home_team": "St. Gallen",
+        "away_team": "Lugano",
+        "sfl_spielnummer": "108328",
+        "field_name": "opening_odds_1x2"
+      },
+      {
+        "record_key": "swiss_super_league|2019/2020|spielnummer:108329",
+        "season": "2019/2020",
+        "local_date": "2020-01-26",
+        "home_team": "Thun",
+        "away_team": "Sion",
+        "sfl_spielnummer": "108329",
+        "field_name": "opening_odds_1x2"
+      },
+      {
+        "record_key": "swiss_super_league|2019/2020|spielnummer:108330",
+        "season": "2019/2020",
+        "local_date": "2020-01-26",
+        "home_team": "Young Boys",
+        "away_team": "Basel",
+        "sfl_spielnummer": "108330",
+        "field_name": "opening_odds_1x2"
+      },
+      {
+        "record_key": "swiss_super_league|2019/2020|spielnummer:108387",
+        "season": "2019/2020",
+        "local_date": "2020-07-14",
+        "home_team": "Basel",
+        "away_team": "Zurich",
+        "sfl_spielnummer": "108387",
+        "field_name": "opening_odds_1x2"
+      },
+      {
+        "record_key": "swiss_super_league|2019/2020|spielnummer:108396",
+        "season": "2019/2020",
+        "local_date": "2020-07-18",
+        "home_team": "Zurich",
+        "away_team": "Young Boys",
+        "sfl_spielnummer": "108396",
+        "field_name": "opening_odds_1x2"
+      },
+      {
+        "record_key": "swiss_super_league|2021/2022|spielnummer:223325",
+        "season": "2021/2022",
+        "local_date": "2022-02-12",
+        "home_team": "Lausanne",
+        "away_team": "Grasshoppers",
+        "sfl_spielnummer": "223325",
+        "field_name": "opening_odds_1x2"
+      },
+      {
+        "record_key": "swiss_super_league|2021/2022|spielnummer:223327",
+        "season": "2021/2022",
+        "local_date": "2022-02-12",
+        "home_team": "St. Gallen",
+        "away_team": "Servette",
+        "sfl_spielnummer": "223327",
+        "field_name": "opening_odds_1x2"
+      },
+      {
+        "record_key": "swiss_super_league|2021/2022|spielnummer:223324",
+        "season": "2021/2022",
+        "local_date": "2022-02-13",
+        "home_team": "Young Boys",
+        "away_team": "Basel",
+        "sfl_spielnummer": "223324",
+        "field_name": "opening_odds_1x2"
+      },
+      {
+        "record_key": "swiss_super_league|2021/2022|spielnummer:223300",
+        "season": "2021/2022",
+        "local_date": "2021-12-05",
+        "home_team": "St. Gallen",
+        "away_team": "Grasshoppers",
+        "sfl_spielnummer": "223300",
+        "provider_fixture_id": "606019108",
+        "field_name": "opening_odds_1x2"
+      }
+    ],
+    "scope": {
+      "competition_key": "swiss_super_league",
+      "competition_name": "Swiss Super League",
+      "seasons": ["2019/2020", "2021/2022"],
+      "league_only": true,
+      "target_fixture_count": 9,
+      "requested_field": "opening_odds_1x2",
+      "excluded_competitions": ["Swiss Cup", "Challenge League", "promotion/relegation Barrage", "UEFA", "friendlies"]
+    },
+    "prior_provider_attempts": {
+      "five_dollar_api_status": "exhausted_after_five_targeted_attempts_per_field",
+      "req_20261012_002_status": "broad text-layer source audit found opening odds structurally unavailable or access-blocked for sampled fixtures",
+      "restriction": "Do not repeat broad source research and do not reattempt registered dead-end sources before retry_after. Search only accessible alternative evidence for these exact fixtures."
+    }
+  },
+  "output_contract": {
+    "format": "json_report_plus_fixture_level_evidence_and_unresolved_queue",
+    "expected_rows": 9,
+    "return_every_target_fixture": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "require_exact_fixture_identity": true,
+    "require_explicit_bookmaker_market_phase": true,
+    "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+    "exclude_match_results": true,
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
