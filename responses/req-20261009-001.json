@@ -1,7 +1,7 @@
 {
  "id": "req-20261009-001",
  "status": "ok",
- "request_sha": "eeaee275ad28b67f",
+ "request_sha": "f0607d421d1cd996",
  "dispatch_id": "exec:main-20261013-closeout",
  "data": {
   "report": "# req-20261009-001 收尾（2026-10-13）\n\n完整性修正工作已完成：\n- 8 季 SWZ season 文件：从 SWZ-current.csv 确定性拆分，每季带 SHA-256 + 源行号区间（season-files-manifest.json）\n- SFL enrichment join：1584 场全部命中 Spielnummer + phase/group（sfl-enrichment-joined.json）\n- integrity-report-20261009.json：完整性报告\n- reported-errors-investigation.md：2024/25 St.Gallen–Basel 重复行、2022/23 Zürich–Sion 轮次错位两处已知错误已调查\n- swz-season-files-verdict.json：7 个 HTML 占位文件问题已解决（重拆真实文件）\n\n后续 Codex 的 req-20261012-001/002 已在此基础上交卷。",
