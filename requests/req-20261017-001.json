@@ -1,0 +1,38 @@
+{
+  "id": "req-20261017-001",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "created_at": "2026-10-17T20:00:54+08:00",
+  "params": {
+    "topic": "Eliteserien historical source identity and season dataset coverage audit",
+    "execution_note": "First-stage source discovery for the Eliteserien historical football workflow. The local production registry currently has source_code=null and status=blocked_missing_source_mapping, and no production replay should run until the mapping and season inputs are verified. This request does not authorize odds research, Qimen analysis, or formal replay.",
+    "questions": [
+      "Identify the exact source identity mapping for Norway's Eliteserien in Football-Data.co.uk or another stable structured historical football dataset. Return a provider's exact competition code only when direct provider documentation or source evidence confirms that it means Eliteserien. Do not infer a code from Div values, filenames, neighboring seasons, or another league. If no verified mapping exists, return null and explain which source was checked.",
+      "Inventory every completed Eliteserien season available from the verified candidate sources, from each source's earliest supported season through its latest completed season. For each season return the exact direct file or page URL, filename, final URL, retrieval time, source-provided row count, expected fixture count where independently verifiable, available columns, and any coverage caveat. Do not claim a season complete from a filename or aggregate total alone.",
+      "For each season, locate direct federation or official competition evidence for the season format, participating teams, official round numbering, expected fixture count, and whether each team meets twice. State whether a fixture-level meeting_number can be established from a directly sourced schedule. Do not assume a double round robin or derive meeting_number from date, score, or result.",
+      "Audit source coverage by season for the historical workflow fields: fixture identity, local match date and kickoff time, IANA timezone, home and away teams, 90-minute home and away goals, 90-minute result, official round, season format, meeting_number, actual match venue, venue latitude and longitude, and stable provider fixture ID. Distinguish fields present in the candidate data from fields that require a separate source; keep unavailable and conflicts explicit.",
+      "Prefer machine-readable source files or direct download URLs over a narrative summary. Return a season-level audit with expected, discovered, complete, partial, and missing counts, plus an unresolved_queue naming each unavailable mapping, season, or required field and the reason. Preserve competing source values and provenance; do not choose a winner when sources conflict.",
+      "Return only historical football facts, source identity, schedule metadata, and provenance. Do not return or infer odds, Qimen charts, palace or five-element data, model directions, probabilities, Snapshot, Outcome, Review, Gold, or structure conclusions."
+    ],
+    "scope": {
+      "competition_key": "eliteserien",
+      "competition_name": "Eliteserien",
+      "country": "Norway",
+      "timezone": "Europe/Oslo",
+      "league_only": true,
+      "seasons": "all completed seasons verifiably covered by candidate historical sources",
+      "exclude_competitions": ["Norwegian Cup", "European competitions", "friendlies", "other Norwegian divisions"]
+    },
+    "output_contract": {
+      "format": "json_report_plus_season_source_inventory_and_unresolved_queue",
+      "preserve_nulls": true,
+      "conflicts_not_auto_resolved": true,
+      "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+      "required_statuses": ["ok", "unavailable", "blocked", "conflict", "parse_failed"],
+      "include_expected_discovered_complete_partial_missing_audit": true,
+      "formal_model_unchanged": true,
+      "promotion_allowed": false
+    }
+  }
+}
