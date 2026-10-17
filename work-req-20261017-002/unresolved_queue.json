@@ -2,9 +2,9 @@
  {
   "scope": "all 1920 rows",
   "field": "method_context.competition_identity_source_mapping",
-  "status": "blocked",
-  "reason": "pending-req-20261017-001: no response at responses/req-20261017-001.json as of 2026-10-17",
-  "next_action": "adopt -001 source inventory when its response lands; do not infer provider competition code"
+  "status": "partial",
+  "reason": "req-20261017-001 landed 2026-10-17: FD.co.uk confirmed null (no inference); verified alternatives enumerated (NFF fiksId, 7msport 104, worldfootball.net, FBref comps/28, wildstat). Partial: -001 recommends direct-page re-verification before lifting blocked_missing_source_mapping; registry source_code choice stays with requester.",
+  "next_action": "direct-page re-verification round for the alternative mappings when egress recovers; then requester adopts a registry source_code"
  },
  {
   "scope": "960 second-cycle rows",
