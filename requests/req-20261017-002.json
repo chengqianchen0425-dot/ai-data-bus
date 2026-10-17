@@ -1,0 +1,45 @@
+{
+  "id": "req-20261017-002",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "created_at": "2026-10-17T20:56:07+08:00",
+  "params": {
+    "topic": "Eliteserien 2018-2025 historical pre-match prediction-input gap inventory",
+    "execution_note": "Incremental follow-up to req-20261017-001. That request covers broad source identity and season availability; do not repeat its broad source search. The user fixed the exact scope as the eight completed Norwegian calendar-year seasons 2018, 2019, 2020, 2021, 2022, 2023, 2024, and 2025. Exclude all 2026 fixtures. Local project audit as of 2026-10-17 found no Eliteserien season CSV or row-keyed Method Context in the project football database, Numerologist_skills-main/data, or work artifacts. The production registry still has source_code=null and status=blocked_missing_source_mapping. API-Football league_id=103 is a provider-specific configured identifier and is not evidence of a Football-Data.co.uk code or season coverage. This request is for a source-backed gap inventory and candidate football facts only; it does not authorize odds research, Qimen charting, model judgment, or formal replay.",
+    "questions": [
+      "For each calendar season 2018 through 2025 inclusive, identify every exact Eliteserien league fixture and the independently verified expected fixture count. Use the already available response to req-20261017-001 for broad source inventory if it exists; do not repeat a completed source search. Do not include cup, European, friendly, lower-division, or any 2026 fixtures. Do not infer the provider's competition code from Div values, filenames, or another competition.",
+      "Return one row per exact fixture with a stable record_key, season, official round, local date, local kickoff with UTC offset, IANA timezone, ordered home_team and away_team, provider fixture ID where supplied, and source-backed fixture identity. Preserve source team names and aliases separately; do not merge ambiguous identities.",
+      "For every fixture, audit core pre-match Method Context fields required by the local Eliteserien adapter: competition identity/source mapping; official round; season format and whether it is double round robin; explicit meeting_number=1 or 2 only where directly established by schedule evidence; actual matchday venue name and city; venue latitude and longitude; Europe/Oslo local kickoff; each team's source-supported natal/founding year and first Eliteserien entry year. Return value or null, a field-level status, and direct evidence for every field. Do not infer missing fields.",
+      "For second-meeting/second-cycle fixtures only, separately audit the conditional pre-kickoff context required by the local workflow: first-cycle fixture identity and 90-minute result, standings/points before this kickoff, remaining rounds, and supported chase/points relation. These are conditional historical context fields and must not be used to guess the current fixture's round or identity. Keep them separate from the core pre-match fields.",
+      "Separately report whether 90-minute home goals, away goals, and W/D/L result are available as post-match Outcome/Review labels. Clearly classify them as post-match labels, never as pre-match prediction inputs; extra time, penalties, aggregate score, and qualification must not replace the 90-minute result. Do not derive any pre-match field from these labels.",
+      "For each season and the full eight-season range, provide expected, discovered, complete, partial, and missing fixture counts. Define complete as all core pre-match fields above having source-backed values; show conditional second-cycle and post-match label coverage separately. Include an unresolved_queue with each missing or conflicting record_key/field, reason, and next source/action.",
+      "Each returned field must retain source_url, final_url, retrieved_at with timezone, field_locator, source_sha256, and source/value when sources conflict. Preserve nulls and conflicts; do not choose a winner. If row-level data is too large for the response, save it as work-req-20261017-002/eliteserien_2018_2025_gap_inventory.jsonl in this bus repository and state its SHA-256, row count, and schema in the response.",
+      "Do not return odds, Qimen charts, palace or five-element data, model direction, probabilities, Snapshot, Review conclusions, Gold, or structure-learning conclusions. Do not write to the project's registry, formal data, or prediction records."
+    ],
+    "scope": {
+      "competition_key": "eliteserien",
+      "competition_name": "Eliteserien",
+      "country": "Norway",
+      "timezone": "Europe/Oslo",
+      "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+      "season_type": "Norwegian calendar-year seasons",
+      "exclude_seasons": [2026],
+      "league_only": true,
+      "exclude_competitions": ["Norwegian Cup", "European competitions", "friendlies", "other Norwegian divisions"],
+      "parent_request_id": "req-20261017-001",
+      "local_baseline_status": "no Eliteserien season CSV or row-keyed Method Context identified as of 2026-10-17"
+    },
+    "output_contract": {
+      "format": "json_report_plus_fixture_field_inventory_jsonl_and_unresolved_queue",
+      "pre_match_inputs_separate_from_post_match_labels": true,
+      "preserve_nulls": true,
+      "conflicts_not_auto_resolved": true,
+      "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+      "required_statuses": ["ok", "unavailable", "blocked", "conflict", "parse_failed"],
+      "include_expected_discovered_complete_partial_missing_audit": true,
+      "formal_model_unchanged": true,
+      "promotion_allowed": false
+    }
+  }
+}
