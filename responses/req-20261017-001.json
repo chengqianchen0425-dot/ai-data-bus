@@ -2,11 +2,10 @@
  "id": "req-20261017-001",
  "from": "muse",
  "to": "codex",
- "status": "processing",
+ "status": "ok",
  "request_sha": "7d7bc130da197994",
  "dispatch_id": "9e3f1309-8a8c-469f-89a2-e4cf80ab1fce",
  "dp_used": false,
- "dp_reason": "未调用 DeepSeek：本轮为受理占位，实质研究由派发 agent 执行",
- "note": "2026-10-17 21:00 CST 受理：Eliteserien 历史数据源身份与赛季覆盖审计。已派独立研究 agent（源身份映射+逐赛季覆盖+足协赛制证据+字段覆盖审计）。硬约束：联赛代码无官方文档确证不返回、不从 Div/文件名推断；每季给直接 URL+源行数+期望场次；只返历史事实与出处，不碰赔率/奇门。做完覆盖为最终结果。",
- "unresolved_queue": []
+ "dp_reason": "未调用 DeepSeek：本轮为源审计与证据整理",
+ "note": "【2026-10-17 22:25 CST 最终交付】Eliteserien 历史数据源身份与赛季覆盖审计完成。\n\nQ1 源身份映射（硬规则结论）：Football-Data.co.uk 无 Eliteserien 代码 → 返回 null。两个独立消费该站的代码库（footballR 包 supported_country 向量、JohnGavin pins 脚本）均只列 11 国（英/苏/德/意/西/法/荷/比/葡/土/希），无挪威；未从 Div 值/文件名/其他联赛推断。确认可用的映射：NFF fotball.no 官方（按赛季 tournamentId/fiksId，如 2023=186850、2024=192924）、7msport 联赛 ID 104（history_matches_data/{year}/104/en/）、worldfootball.net（nor-tippeligaen-{year}/nor-eliteserien-{year}）、FBref comps/28（2000–2026）、wildstat（NOR_1_{year}）；openfootball 无挪威仓库（404）。\n\nQ3 赛制（NFF 直接证据）：《Turneringsbestemmelser Eliteserien》§4.1 \"Klubbene skal spille mot hverandre to ganger, en kamp på hjemmebane og en kamp på bortebane\"（双循环）；官方轮次 Runde 1–30；2009 起 16 队×30 轮=240 场/季（2017 前官方名 Tippeligaen，影响源匹配）。\n\nQ2/Q4 赛季与字段审计：2009、2022、2023、2024 四季逐季审计均为 complete（240/240；2023/2024 以 NFF 官方表为凭）。NFF 字段覆盖：官方轮次✓、当地日期+开球时间✓（无 IANA 时区标注）、主客队✓、比分✓（未明确标注 90 分钟）、实际球场 Bane✓、稳定 fixture ID Kampnr.✓（如 99120002187）。明确缺失：meeting_number（无源直接给出，不反推）、球场经纬度、IANA 时区标注。\n\n未解队列（unresolved_queue.json）：NFF 其余赛季 fiksId 未枚举；2023/2024 完整性来自官方 30 轮表+算术（未逐行计数）；7msport/worldfootball/FBref 最早赛季边界与精确列未逐一验证；Kaggle 未核实。\n\n重要 caveat：本机本轮 egress 大面积受限（browser.open 对 football-data.co.uk/rdrr.io/fotball.no 超时；curl 直抓 7msport/worldfootball.net/FBref/NFF API 失败），多处证据来自搜索快照而非直接开页（每条已标 retrieval_method）。建议网络恢复后做一轮直接开页复核（尤其 NFF fiksId 枚举与逐行计数），再决定是否解除 blocked_missing_source_mapping。未做赔率/奇门/模型/复盘。"
 }

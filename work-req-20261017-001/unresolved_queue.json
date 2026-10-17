@@ -1,0 +1,117 @@
+{
+ "generated_at": "2026-10-17T22:17:47+08:00",
+ "items": [
+  {
+   "category": "source_mapping",
+   "item": "Football-Data.co.uk Eliteserien division code",
+   "reason": "Provider download index covers exactly 11 countries (England, Scotland, Germany, Italy, Spain, France, Netherlands, Belgium, Portugal, Turkey, Greece); no Norwegian league exists. Confirmed via two independent consumer codebases (footballR, JohnGavin/ccxt). No code to return.",
+   "status": "unavailable"
+  },
+  {
+   "category": "source_mapping",
+   "item": "openfootball/football.db Norway league dataset",
+   "reason": "No Norway repository under the openfootball GitHub org (openfootball/norway -> 404; no indexed openfootball Norway repo).",
+   "status": "unavailable"
+  },
+  {
+   "category": "source_mapping",
+   "item": "fixturedownload.com Norway season code",
+   "reason": "Only current/upcoming fixtures listed; no per-season historical archive or stable season code identified.",
+   "status": "unavailable"
+  },
+  {
+   "category": "source_mapping",
+   "item": "API-Football league_id=103 as code mapping",
+   "reason": "Requester explicitly excludes this: it is the vendor's own numbering, not a Football-Data or general code mapping. Season coverage via that API not audited here.",
+   "status": "unavailable"
+  },
+  {
+   "category": "source_mapping",
+   "item": "Kaggle 'Football Matches Result Data' (zahidmughal2343) Eliteserien inclusion",
+   "reason": "Dataset advertises 2015-2025, 16 columns, but whether Eliteserien is among its competitions was not verified. User-uploaded; weaker provenance.",
+   "status": "unavailable"
+  },
+  {
+   "category": "season",
+   "item": "NFF fotball.no tournamentId (fiksId) for Eliteserien seasons other than 2023 (186850) and 2024 (192924)",
+   "reason": "Only two season tournament IDs verified via search. NFF site hosts one tournament page per season; IDs for 2009-2022, 2025 not enumerated in this pass.",
+   "status": "unavailable"
+  },
+  {
+   "category": "season",
+   "item": "Per-season row-count verification for NFF 2023/2024 fixture tables",
+   "reason": "Direct page fetch blocked from this environment (egress timeout). Completeness stated from official 30-round tables + 16x30/2 arithmetic, not from full row enumeration. A future pass with page access should count rows.",
+   "status": "partial"
+  },
+  {
+   "category": "season",
+   "item": "Eliteserien 2010-2021, 2025 completed-season audits",
+   "reason": "Not individually audited in this pass. Expected 240 each (16-team era, verified for 2009 and 2022-2024), but per-season evidence not collected. 2026 season in progress (excluded).",
+   "status": "unavailable"
+  },
+  {
+   "category": "season",
+   "item": "Pre-2009 seasons (14-team era 1995-2008, earlier formats)",
+   "reason": "Different team counts/formats; not audited in this pass. Naming varies (Tippeligaen, 1. divisjon, Hovedserien, Norgesserien).",
+   "status": "unavailable"
+  },
+  {
+   "category": "season",
+   "item": "7msport league-104 earliest/latest season range and exact columns",
+   "reason": "Mapping confirmed via page title; year-substitutable URL pattern observed for 2021 only. Direct fetch failed from this environment.",
+   "status": "unavailable"
+  },
+  {
+   "category": "season",
+   "item": "worldfootball.net Norway earliest season and exact per-page columns",
+   "reason": "2012 season page verified via search; earlier/later coverage not individually verified. Direct fetch failed from this environment.",
+   "status": "unavailable"
+  },
+  {
+   "category": "season",
+   "item": "FBref comps/28 per-season fixture page columns (kickoff time, venue, round)",
+   "reason": "Season stats pages verified (2000-2026 range per FBref Norway page); fixture schedule pages not individually opened. Direct fetch failed from this environment.",
+   "status": "unavailable"
+  },
+  {
+   "category": "field",
+   "item": "meeting_number (1st vs 2nd leg) from any source",
+   "reason": "NFF regulations mandate home+away double round robin, but no source labels the leg per fixture. Per hard rule, not derived from date/score.",
+   "status": "unavailable"
+  },
+  {
+   "category": "field",
+   "item": "IANA timezone label on fixture sources",
+   "reason": "NFF table gives Dato+Tid with no timezone label; wildstat says 'Local time' only; worldfootball/FBref unstated. Europe/Oslo per request scope is an assumption, not a sourced field.",
+   "status": "unavailable"
+  },
+  {
+   "category": "field",
+   "item": "Venue latitude/longitude",
+   "reason": "NFF 'Bane' gives venue names only; no coordinates in any audited fixture source. Requires a separate stadium/venue source (e.g., openfootball/stadiums covers some Norwegian grounds - not verified here).",
+   "status": "unavailable"
+  },
+  {
+   "category": "field",
+   "item": "Explicit 90-minute labeling of scores",
+   "reason": "Sources report final 'Resultat'/score; 90-minute basis is football convention, not an explicit source label.",
+   "status": "unavailable"
+  },
+  {
+   "category": "field",
+   "item": "Cross-season stability of NFF Kampnr.",
+   "reason": "Kampnr. (e.g., 99120002187) is stable within a season's table; whether IDs persist across seasons not verified.",
+   "status": "unavailable"
+  }
+ ],
+ "request_id": "req-20261017-001",
+ "summary": {
+  "total": 17,
+  "unavailable": 16,
+  "partial": 1,
+  "blocked": 0,
+  "conflict": 0,
+  "parse_failed": 0,
+  "with_status_ok": 0
+ }
+}
