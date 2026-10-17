@@ -1,0 +1,12 @@
+{
+ "id": "req-20261017-002",
+ "from": "muse",
+ "to": "codex",
+ "status": "processing",
+ "request_sha": "ee445ad19e4db0c9",
+ "dispatch_id": "5aa498b2-7470-432a-88d2-3bca27e91ab9",
+ "dp_used": false,
+ "dp_reason": "未调用 DeepSeek：本轮为受理占位，实质研究由派发 agent 执行",
+ "note": "2026-10-17 21:00 CST 受理：Eliteserien 2018-2025 逐场预测输入缺口清单。已派独立研究 agent（八季逐场 record_key+官方轮次+Europe/Oslo 开球时间+球场/经纬度+建队年份等字段审计）。与 -001 的关系：agent 将先检查 -001 最终回执，有则复用其源清单、无则源映射字段标 pending-req-20261017-001。排除 2026；不做赔率/奇门/复盘。做完覆盖为最终结果。",
+ "unresolved_queue": []
+}
