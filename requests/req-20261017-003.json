@@ -1,0 +1,45 @@
+{
+  "id": "req-20261017-003",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "created_at": "2026-10-17T21:55:40+08:00",
+  "params": {
+    "topic": "Eliteserien 2018-2025 second-meeting pre-kickoff standings source audit",
+    "execution_note": "Scoped follow-up to req-20261017-002. Its artifact work-req-20261017-002/fixtures_2018_2025.jsonl contains 1,920 league fixtures; target only the 960 rows with meeting_number=2. Use the artifact's provider fixture IDs and original source evidence to resolve actual kickoff instants because its kickoff fields were serialized with +08:00 even though the instant is consistent. Do not repeat the broad competition/source-code identity search in req-20261017-001. The exact scope is completed Norwegian calendar seasons 2018 through 2025 inclusive. Exclude every 2026 fixture. This request seeks raw historical facts and provenance only, not a chase judgment or model input inference.",
+    "questions": [
+      "For each of the 960 fixture record_keys with meeting_number=2 in work-req-20261017-002/fixtures_2018_2025.jsonl, locate any source that records the league table immediately before that fixture's kickoff. Prefer official NFF, league, or club archives, then other directly accessible historical table sources. Do not use final-season standings as a substitute for a pre-kickoff snapshot.",
+      "For both the home and away teams, return the table snapshot's rank, points, played matches, goals for, goals against, and goal difference, together with the snapshot date/time and its relation to the actual fixture kickoff. Preserve the original source team spelling and any unresolved identity ambiguity.",
+      "Resolve the actual kickoff instant from the provider fixture ID and direct source evidence where possible. Return it as an ISO-8601 UTC timestamp ending in +00:00 and as Europe/Oslo local date/time with the correct DST-aware offset. Preserve source URLs, final URLs, retrieval timestamps with timezone, field locators, and SHA-256 for the raw source evidence. Do not copy the existing +08:00 representation as UTC or Oslo local time.",
+      "If a per-round/pre-kickoff standings source cannot be found for a fixture, retain the fixture and mark that field unavailable or blocked with the attempted sources and reason. Preserve conflicting source values; do not select a winner. Do not infer a standings snapshot from final tables or from the result of the target fixture.",
+      "Provide an audit for the expected 960 fixtures and 1,920 team-side standings rows: discovered, complete, partial, missing, and source coverage by season. Define complete as both teams having all requested standings fields with direct source evidence and a valid before-kickoff timestamp.",
+      "If row-level output is too large for the response, write work-req-20261017-003/eliteserien_second_meeting_standings_2018_2025.jsonl and report its SHA-256, row count, schema, and unresolved queue. Keep standings as raw historical facts only; do not return chase_relation, draw_value, Qimen, odds, probabilities, model direction, Snapshot, Outcome, Review, Gold, or structure-learning conclusions. Do not write to project files or formal records."
+    ],
+    "scope": {
+      "competition_key": "eliteserien",
+      "competition_name": "Eliteserien",
+      "country": "Norway",
+      "timezone": "Europe/Oslo",
+      "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+      "season_type": "Norwegian calendar-year seasons",
+      "meeting_number": 2,
+      "expected_fixture_count": 960,
+      "exclude_seasons": [2026],
+      "league_only": true,
+      "exclude_competitions": ["Norwegian Cup", "European competitions", "friendlies", "other Norwegian divisions"],
+      "source_fixture_artifact": "work-req-20261017-002/fixtures_2018_2025.jsonl",
+      "parent_request_ids": ["req-20261017-001", "req-20261017-002"]
+    },
+    "output_contract": {
+      "format": "json_report_plus_fixture_team_standings_jsonl_and_unresolved_queue",
+      "pre_kickoff_snapshot_only": true,
+      "preserve_nulls": true,
+      "conflicts_not_auto_resolved": true,
+      "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+      "required_statuses": ["ok", "unavailable", "blocked", "conflict", "parse_failed"],
+      "include_expected_discovered_complete_partial_missing_audit": true,
+      "formal_model_unchanged": true,
+      "promotion_allowed": false
+    }
+  }
+}
