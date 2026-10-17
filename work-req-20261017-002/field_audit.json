@@ -1,0 +1,2610 @@
+{
+ "request_id": "req-20261017-002",
+ "built_at": "2026-10-17T21:21:51.620328+08:00",
+ "expected_total": 1920,
+ "discovered_total": 1920,
+ "complete": 0,
+ "partial": 1920,
+ "missing": 0,
+ "complete_definition": "all 13 core pre-match method_context fields have status ok with source-backed values",
+ "per_season": {
+  "2018": {
+   "expected": 240,
+   "discovered": 240,
+   "complete": 0,
+   "partial": 240,
+   "missing": 0,
+   "source_sha256": "b79b8a8b9c3ebbcae69371f8292c9148710db62a1a5b5944a5eea3904f8031b7"
+  },
+  "2019": {
+   "expected": 240,
+   "discovered": 240,
+   "complete": 0,
+   "partial": 240,
+   "missing": 0,
+   "source_sha256": "0bff8292e1591e125475c629e5156f3932740f0d990f9fa9d3eba39eb42c1875"
+  },
+  "2020": {
+   "expected": 240,
+   "discovered": 240,
+   "complete": 0,
+   "partial": 240,
+   "missing": 0,
+   "source_sha256": "4be8d8feece5fa05364f5ade2e12451c8c271089eae4609049da50cba16ea8dc"
+  },
+  "2021": {
+   "expected": 240,
+   "discovered": 240,
+   "complete": 0,
+   "partial": 240,
+   "missing": 0,
+   "source_sha256": "ba3ccea1438f344eedcc51656747ce40889cc8c0d8b6c313735502f721d6d4c9"
+  },
+  "2022": {
+   "expected": 240,
+   "discovered": 240,
+   "complete": 0,
+   "partial": 240,
+   "missing": 0,
+   "source_sha256": "e25523b7b86aa61061e00f094dd6c599094efb7cf77bf2ff5a0b93e38dc9579f"
+  },
+  "2023": {
+   "expected": 240,
+   "discovered": 240,
+   "complete": 0,
+   "partial": 240,
+   "missing": 0,
+   "source_sha256": "d4608d7b14f45538d738c46dce6698052e5e03fa2f3421f23df860b0d64e5eab"
+  },
+  "2024": {
+   "expected": 240,
+   "discovered": 240,
+   "complete": 0,
+   "partial": 240,
+   "missing": 0,
+   "source_sha256": "bab76dff47e93d30c987d81e42d9f3727adbeb8e0cabaf638f04335d250c08af"
+  },
+  "2025": {
+   "expected": 240,
+   "discovered": 240,
+   "complete": 0,
+   "partial": 240,
+   "missing": 0,
+   "source_sha256": "b104cfb7e6a02d7f93976d6961625d4e3ec427bb0fa04db7dd16e0232db9831f"
+  }
+ },
+ "field_stats": {
+  "competition_identity_source_mapping": {
+   "blocked": 1920
+  },
+  "official_round": {
+   "ok": 1920
+  },
+  "season_format": {
+   "ok": 1920
+  },
+  "meeting_number": {
+   "ok": 1920
+  },
+  "venue_name": {
+   "ok": 1920
+  },
+  "venue_city": {
+   "ok": 1920
+  },
+  "venue_lat": {
+   "ok": 1920
+  },
+  "venue_lon": {
+   "ok": 1920
+  },
+  "kickoff_europe_oslo": {
+   "ok": 1920
+  },
+  "home_founded": {
+   "ok": 1920
+  },
+  "away_founded": {
+   "ok": 1920
+  },
+  "home_first_topflight_season": {
+   "ok": 1920
+  },
+  "away_first_topflight_season": {
+   "ok": 1920
+  }
+ },
+ "second_cycle_context": {
+  "rows": 960,
+  "with_standings": 0,
+  "note": "first-cycle pairing+90min and remaining_rounds are schedule-backed; standings/points/chase need a per-round standings source"
+ },
+ "post_match_labels": {
+  "rows": 1920,
+  "hg_ag_90_available": 1920,
+  "note": "classified as post-match labels, never pre-match inputs"
+ },
+ "meeting_number_method": "chronological order of the pair’s two scheduled meetings by kickoff datetime; rounds 16-30 do NOT mirror rounds 1-15 in Eliteserien (verified 0/120 mirror rounds), so round number alone cannot establish meeting_number; date ordering is schedule evidence, not score/result derivation",
+ "excluded_non_league": [
+  {
+   "season": 2020,
+   "provider_fixture_id": 654341,
+   "round": "Final",
+   "home": "Mjondalen",
+   "away": "Sogndal",
+   "status": "FT",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681607,
+   "round": "Regular Season - 1",
+   "home": "Stabaek",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681610,
+   "round": "Regular Season - 1",
+   "home": "Kristiansund BK",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681608,
+   "round": "Regular Season - 1",
+   "home": "Bodo/Glimt",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681609,
+   "round": "Regular Season - 1",
+   "home": "Haugesund",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681612,
+   "round": "Regular Season - 1",
+   "home": "Rosenborg",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681613,
+   "round": "Regular Season - 1",
+   "home": "Sarpsborg 08 FF",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681611,
+   "round": "Regular Season - 1",
+   "home": "Mjondalen",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681614,
+   "round": "Regular Season - 1",
+   "home": "Valerenga",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681615,
+   "round": "Regular Season - 2",
+   "home": "Stromsgodset",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681616,
+   "round": "Regular Season - 2",
+   "home": "ODD Ballklubb",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681621,
+   "round": "Regular Season - 2",
+   "home": "Lillestrom",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681619,
+   "round": "Regular Season - 2",
+   "home": "Tromso",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681617,
+   "round": "Regular Season - 2",
+   "home": "Molde",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681618,
+   "round": "Regular Season - 2",
+   "home": "Sandefjord",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681620,
+   "round": "Regular Season - 2",
+   "home": "Viking",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681622,
+   "round": "Regular Season - 2",
+   "home": "Brann",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681625,
+   "round": "Regular Season - 3",
+   "home": "Kristiansund BK",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681629,
+   "round": "Regular Season - 3",
+   "home": "Stabaek",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681627,
+   "round": "Regular Season - 3",
+   "home": "Valerenga",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681623,
+   "round": "Regular Season - 3",
+   "home": "Bodo/Glimt",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681624,
+   "round": "Regular Season - 3",
+   "home": "Haugesund",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681628,
+   "round": "Regular Season - 3",
+   "home": "Sarpsborg 08 FF",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681626,
+   "round": "Regular Season - 3",
+   "home": "Mjondalen",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681630,
+   "round": "Regular Season - 3",
+   "home": "Rosenborg",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681631,
+   "round": "Regular Season - 4",
+   "home": "Lillestrom",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681632,
+   "round": "Regular Season - 4",
+   "home": "Stromsgodset",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681637,
+   "round": "Regular Season - 4",
+   "home": "Brann",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681633,
+   "round": "Regular Season - 4",
+   "home": "Molde",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681634,
+   "round": "Regular Season - 4",
+   "home": "ODD Ballklubb",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681635,
+   "round": "Regular Season - 4",
+   "home": "Sandefjord",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681636,
+   "round": "Regular Season - 4",
+   "home": "Viking",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681638,
+   "round": "Regular Season - 4",
+   "home": "Bodo/Glimt",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681639,
+   "round": "Regular Season - 5",
+   "home": "Sarpsborg 08 FF",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681640,
+   "round": "Regular Season - 5",
+   "home": "Stabaek",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681644,
+   "round": "Regular Season - 5",
+   "home": "Kristiansund BK",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681645,
+   "round": "Regular Season - 5",
+   "home": "Tromso",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681642,
+   "round": "Regular Season - 5",
+   "home": "Valerenga",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681643,
+   "round": "Regular Season - 5",
+   "home": "Haugesund",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681641,
+   "round": "Regular Season - 5",
+   "home": "Mjondalen",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681646,
+   "round": "Regular Season - 5",
+   "home": "Rosenborg",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681647,
+   "round": "Regular Season - 6",
+   "home": "Stromsgodset",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681648,
+   "round": "Regular Season - 6",
+   "home": "Rosenborg",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681653,
+   "round": "Regular Season - 6",
+   "home": "Bodo/Glimt",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681649,
+   "round": "Regular Season - 6",
+   "home": "Molde",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681650,
+   "round": "Regular Season - 6",
+   "home": "ODD Ballklubb",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681652,
+   "round": "Regular Season - 6",
+   "home": "Sandefjord",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681651,
+   "round": "Regular Season - 6",
+   "home": "Viking",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681654,
+   "round": "Regular Season - 6",
+   "home": "Brann",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681655,
+   "round": "Regular Season - 7",
+   "home": "Mjondalen",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681656,
+   "round": "Regular Season - 7",
+   "home": "Haugesund",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681657,
+   "round": "Regular Season - 7",
+   "home": "Lillestrom",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681660,
+   "round": "Regular Season - 7",
+   "home": "Stabaek",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681661,
+   "round": "Regular Season - 7",
+   "home": "Tromso",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681658,
+   "round": "Regular Season - 7",
+   "home": "Sandefjord",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681659,
+   "round": "Regular Season - 7",
+   "home": "Sarpsborg 08 FF",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681662,
+   "round": "Regular Season - 7",
+   "home": "Molde",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681663,
+   "round": "Regular Season - 8",
+   "home": "Viking",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681664,
+   "round": "Regular Season - 8",
+   "home": "Brann",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681665,
+   "round": "Regular Season - 8",
+   "home": "Kristiansund BK",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681668,
+   "round": "Regular Season - 8",
+   "home": "Stromsgodset",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681669,
+   "round": "Regular Season - 8",
+   "home": "Bodo/Glimt",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681666,
+   "round": "Regular Season - 8",
+   "home": "ODD Ballklubb",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681667,
+   "round": "Regular Season - 8",
+   "home": "Rosenborg",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681670,
+   "round": "Regular Season - 8",
+   "home": "Valerenga",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681671,
+   "round": "Regular Season - 9",
+   "home": "Stabaek",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681672,
+   "round": "Regular Season - 9",
+   "home": "Tromso",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681677,
+   "round": "Regular Season - 9",
+   "home": "Haugesund",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681674,
+   "round": "Regular Season - 9",
+   "home": "Molde",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681675,
+   "round": "Regular Season - 9",
+   "home": "Sandefjord",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681676,
+   "round": "Regular Season - 9",
+   "home": "Sarpsborg 08 FF",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681673,
+   "round": "Regular Season - 9",
+   "home": "Mjondalen",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681678,
+   "round": "Regular Season - 9",
+   "home": "Lillestrom",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681679,
+   "round": "Regular Season - 10",
+   "home": "ODD Ballklubb",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681680,
+   "round": "Regular Season - 10",
+   "home": "Brann",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681682,
+   "round": "Regular Season - 10",
+   "home": "Kristiansund BK",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681684,
+   "round": "Regular Season - 10",
+   "home": "Stromsgodset",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681685,
+   "round": "Regular Season - 10",
+   "home": "Bodo/Glimt",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681681,
+   "round": "Regular Season - 10",
+   "home": "Haugesund",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681683,
+   "round": "Regular Season - 10",
+   "home": "Rosenborg",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681686,
+   "round": "Regular Season - 10",
+   "home": "Valerenga",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681687,
+   "round": "Regular Season - 11",
+   "home": "Kristiansund BK",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681688,
+   "round": "Regular Season - 11",
+   "home": "Lillestrom",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681692,
+   "round": "Regular Season - 11",
+   "home": "Stabaek",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681693,
+   "round": "Regular Season - 11",
+   "home": "Tromso",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681690,
+   "round": "Regular Season - 11",
+   "home": "Sandefjord",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681691,
+   "round": "Regular Season - 11",
+   "home": "Sarpsborg 08 FF",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681694,
+   "round": "Regular Season - 11",
+   "home": "Viking",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681689,
+   "round": "Regular Season - 11",
+   "home": "Mjondalen",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681696,
+   "round": "Regular Season - 12",
+   "home": "Brann",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681701,
+   "round": "Regular Season - 12",
+   "home": "Stromsgodset",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681702,
+   "round": "Regular Season - 12",
+   "home": "Valerenga",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681695,
+   "round": "Regular Season - 12",
+   "home": "Bodo/Glimt",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681697,
+   "round": "Regular Season - 12",
+   "home": "Haugesund",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681698,
+   "round": "Regular Season - 12",
+   "home": "Molde",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681699,
+   "round": "Regular Season - 12",
+   "home": "Rosenborg",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681700,
+   "round": "Regular Season - 12",
+   "home": "Sarpsborg 08 FF",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681703,
+   "round": "Regular Season - 13",
+   "home": "Kristiansund BK",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681704,
+   "round": "Regular Season - 13",
+   "home": "Lillestrom",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681708,
+   "round": "Regular Season - 13",
+   "home": "Stabaek",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681709,
+   "round": "Regular Season - 13",
+   "home": "Tromso",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681706,
+   "round": "Regular Season - 13",
+   "home": "ODD Ballklubb",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681707,
+   "round": "Regular Season - 13",
+   "home": "Sandefjord",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681710,
+   "round": "Regular Season - 13",
+   "home": "Viking",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681705,
+   "round": "Regular Season - 13",
+   "home": "Mjondalen",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681717,
+   "round": "Regular Season - 14",
+   "home": "Stromsgodset",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681718,
+   "round": "Regular Season - 14",
+   "home": "Valerenga",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681711,
+   "round": "Regular Season - 14",
+   "home": "Bodo/Glimt",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681712,
+   "round": "Regular Season - 14",
+   "home": "Haugesund",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681713,
+   "round": "Regular Season - 14",
+   "home": "Molde",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681714,
+   "round": "Regular Season - 14",
+   "home": "Rosenborg",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681715,
+   "round": "Regular Season - 14",
+   "home": "Sarpsborg 08 FF",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681719,
+   "round": "Regular Season - 15",
+   "home": "Brann",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681720,
+   "round": "Regular Season - 15",
+   "home": "Kristiansund BK",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681721,
+   "round": "Regular Season - 15",
+   "home": "Lillestrom",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681725,
+   "round": "Regular Season - 15",
+   "home": "Tromso",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681723,
+   "round": "Regular Season - 15",
+   "home": "ODD Ballklubb",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681724,
+   "round": "Regular Season - 15",
+   "home": "Sandefjord",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681726,
+   "round": "Regular Season - 15",
+   "home": "Viking",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681722,
+   "round": "Regular Season - 15",
+   "home": "Mjondalen",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681732,
+   "round": "Regular Season - 16",
+   "home": "Stabaek",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681733,
+   "round": "Regular Season - 16",
+   "home": "Stromsgodset",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681734,
+   "round": "Regular Season - 16",
+   "home": "Valerenga",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681727,
+   "round": "Regular Season - 16",
+   "home": "Bodo/Glimt",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681728,
+   "round": "Regular Season - 16",
+   "home": "Haugesund",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681729,
+   "round": "Regular Season - 16",
+   "home": "Molde",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681730,
+   "round": "Regular Season - 16",
+   "home": "Rosenborg",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681731,
+   "round": "Regular Season - 16",
+   "home": "Sarpsborg 08 FF",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681735,
+   "round": "Regular Season - 17",
+   "home": "Brann",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681736,
+   "round": "Regular Season - 17",
+   "home": "Kristiansund BK",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681737,
+   "round": "Regular Season - 17",
+   "home": "Lillestrom",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681741,
+   "round": "Regular Season - 17",
+   "home": "Tromso",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681739,
+   "round": "Regular Season - 17",
+   "home": "ODD Ballklubb",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681740,
+   "round": "Regular Season - 17",
+   "home": "Sandefjord",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681742,
+   "round": "Regular Season - 17",
+   "home": "Viking",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681738,
+   "round": "Regular Season - 17",
+   "home": "Mjondalen",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681747,
+   "round": "Regular Season - 18",
+   "home": "Stabaek",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681748,
+   "round": "Regular Season - 18",
+   "home": "Stromsgodset",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681750,
+   "round": "Regular Season - 18",
+   "home": "Valerenga",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681743,
+   "round": "Regular Season - 18",
+   "home": "Bodo/Glimt",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681744,
+   "round": "Regular Season - 18",
+   "home": "Molde",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681745,
+   "round": "Regular Season - 18",
+   "home": "Rosenborg",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681746,
+   "round": "Regular Season - 18",
+   "home": "Sarpsborg 08 FF",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681749,
+   "round": "Regular Season - 18",
+   "home": "Viking",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681751,
+   "round": "Regular Season - 19",
+   "home": "Brann",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681753,
+   "round": "Regular Season - 19",
+   "home": "Kristiansund BK",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681754,
+   "round": "Regular Season - 19",
+   "home": "Lillestrom",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681758,
+   "round": "Regular Season - 19",
+   "home": "Tromso",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681752,
+   "round": "Regular Season - 19",
+   "home": "Haugesund",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681756,
+   "round": "Regular Season - 19",
+   "home": "ODD Ballklubb",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681757,
+   "round": "Regular Season - 19",
+   "home": "Sandefjord",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681755,
+   "round": "Regular Season - 19",
+   "home": "Mjondalen",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681762,
+   "round": "Regular Season - 20",
+   "home": "Stabaek",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681763,
+   "round": "Regular Season - 20",
+   "home": "Stromsgodset",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681764,
+   "round": "Regular Season - 20",
+   "home": "Tromso",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681766,
+   "round": "Regular Season - 20",
+   "home": "Valerenga",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681759,
+   "round": "Regular Season - 20",
+   "home": "Molde",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681760,
+   "round": "Regular Season - 20",
+   "home": "Rosenborg",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681761,
+   "round": "Regular Season - 20",
+   "home": "Sarpsborg 08 FF",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681765,
+   "round": "Regular Season - 20",
+   "home": "Viking",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681768,
+   "round": "Regular Season - 21",
+   "home": "Brann",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681770,
+   "round": "Regular Season - 21",
+   "home": "Kristiansund BK",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681771,
+   "round": "Regular Season - 21",
+   "home": "Lillestrom",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681767,
+   "round": "Regular Season - 21",
+   "home": "Bodo/Glimt",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681769,
+   "round": "Regular Season - 21",
+   "home": "Haugesund",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681773,
+   "round": "Regular Season - 21",
+   "home": "ODD Ballklubb",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681774,
+   "round": "Regular Season - 21",
+   "home": "Sandefjord",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681772,
+   "round": "Regular Season - 21",
+   "home": "Mjondalen",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681780,
+   "round": "Regular Season - 22",
+   "home": "Tromso",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681782,
+   "round": "Regular Season - 22",
+   "home": "Valerenga",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681776,
+   "round": "Regular Season - 22",
+   "home": "Molde",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681777,
+   "round": "Regular Season - 22",
+   "home": "ODD Ballklubb",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681778,
+   "round": "Regular Season - 22",
+   "home": "Rosenborg",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681779,
+   "round": "Regular Season - 22",
+   "home": "Sarpsborg 08 FF",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681781,
+   "round": "Regular Season - 22",
+   "home": "Viking",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681775,
+   "round": "Regular Season - 22",
+   "home": "Mjondalen",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681784,
+   "round": "Regular Season - 23",
+   "home": "Brann",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681786,
+   "round": "Regular Season - 23",
+   "home": "Kristiansund BK",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681787,
+   "round": "Regular Season - 23",
+   "home": "Lillestrom",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681789,
+   "round": "Regular Season - 23",
+   "home": "Stabaek",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681790,
+   "round": "Regular Season - 23",
+   "home": "Stromsgodset",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681783,
+   "round": "Regular Season - 23",
+   "home": "Bodo/Glimt",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681785,
+   "round": "Regular Season - 23",
+   "home": "Haugesund",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681788,
+   "round": "Regular Season - 23",
+   "home": "Sandefjord",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681791,
+   "round": "Regular Season - 24",
+   "home": "Lillestrom",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681796,
+   "round": "Regular Season - 24",
+   "home": "Tromso",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681798,
+   "round": "Regular Season - 24",
+   "home": "Valerenga",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681793,
+   "round": "Regular Season - 24",
+   "home": "Molde",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681794,
+   "round": "Regular Season - 24",
+   "home": "ODD Ballklubb",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681795,
+   "round": "Regular Season - 24",
+   "home": "Rosenborg",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681797,
+   "round": "Regular Season - 24",
+   "home": "Viking",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681792,
+   "round": "Regular Season - 24",
+   "home": "Mjondalen",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681800,
+   "round": "Regular Season - 25",
+   "home": "Brann",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681802,
+   "round": "Regular Season - 25",
+   "home": "Kristiansund BK",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681805,
+   "round": "Regular Season - 25",
+   "home": "Stabaek",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681806,
+   "round": "Regular Season - 25",
+   "home": "Stromsgodset",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681799,
+   "round": "Regular Season - 25",
+   "home": "Bodo/Glimt",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681801,
+   "round": "Regular Season - 25",
+   "home": "Haugesund",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681803,
+   "round": "Regular Season - 25",
+   "home": "Sandefjord",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681804,
+   "round": "Regular Season - 25",
+   "home": "Sarpsborg 08 FF",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681807,
+   "round": "Regular Season - 26",
+   "home": "Brann",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681808,
+   "round": "Regular Season - 26",
+   "home": "Lillestrom",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681811,
+   "round": "Regular Season - 26",
+   "home": "Stromsgodset",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681812,
+   "round": "Regular Season - 26",
+   "home": "Tromso",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681814,
+   "round": "Regular Season - 26",
+   "home": "Valerenga",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681809,
+   "round": "Regular Season - 26",
+   "home": "Molde",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681810,
+   "round": "Regular Season - 26",
+   "home": "ODD Ballklubb",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681813,
+   "round": "Regular Season - 26",
+   "home": "Viking",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681817,
+   "round": "Regular Season - 27",
+   "home": "Kristiansund BK",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681821,
+   "round": "Regular Season - 27",
+   "home": "Stabaek",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681822,
+   "round": "Regular Season - 27",
+   "home": "Valerenga",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681815,
+   "round": "Regular Season - 27",
+   "home": "Bodo/Glimt",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681816,
+   "round": "Regular Season - 27",
+   "home": "Haugesund",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681819,
+   "round": "Regular Season - 27",
+   "home": "Rosenborg",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681820,
+   "round": "Regular Season - 27",
+   "home": "Sarpsborg 08 FF",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681818,
+   "round": "Regular Season - 27",
+   "home": "Mjondalen",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681823,
+   "round": "Regular Season - 28",
+   "home": "Brann",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681824,
+   "round": "Regular Season - 28",
+   "home": "Lillestrom",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681828,
+   "round": "Regular Season - 28",
+   "home": "Stromsgodset",
+   "away": "Stabaek",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681829,
+   "round": "Regular Season - 28",
+   "home": "Tromso",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681825,
+   "round": "Regular Season - 28",
+   "home": "Molde",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681826,
+   "round": "Regular Season - 28",
+   "home": "ODD Ballklubb",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681827,
+   "round": "Regular Season - 28",
+   "home": "Sandefjord",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681830,
+   "round": "Regular Season - 28",
+   "home": "Viking",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681833,
+   "round": "Regular Season - 29",
+   "home": "Kristiansund BK",
+   "away": "Viking",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681837,
+   "round": "Regular Season - 29",
+   "home": "Stabaek",
+   "away": "Lillestrom",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681838,
+   "round": "Regular Season - 29",
+   "home": "Valerenga",
+   "away": "Stromsgodset",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681831,
+   "round": "Regular Season - 29",
+   "home": "Bodo/Glimt",
+   "away": "ODD Ballklubb",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681832,
+   "round": "Regular Season - 29",
+   "home": "Haugesund",
+   "away": "Sandefjord",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681835,
+   "round": "Regular Season - 29",
+   "home": "Rosenborg",
+   "away": "Tromso",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681836,
+   "round": "Regular Season - 29",
+   "home": "Sarpsborg 08 FF",
+   "away": "Molde",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681834,
+   "round": "Regular Season - 29",
+   "home": "Mjondalen",
+   "away": "Brann",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681839,
+   "round": "Regular Season - 30",
+   "home": "Brann",
+   "away": "Sarpsborg 08 FF",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681840,
+   "round": "Regular Season - 30",
+   "home": "Lillestrom",
+   "away": "Bodo/Glimt",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681844,
+   "round": "Regular Season - 30",
+   "home": "Stromsgodset",
+   "away": "Haugesund",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681841,
+   "round": "Regular Season - 30",
+   "home": "Molde",
+   "away": "Valerenga",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681842,
+   "round": "Regular Season - 30",
+   "home": "ODD Ballklubb",
+   "away": "Mjondalen",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681843,
+   "round": "Regular Season - 30",
+   "home": "Sandefjord",
+   "away": "Kristiansund BK",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 681846,
+   "round": "Regular Season - 30",
+   "home": "Viking",
+   "away": "Rosenborg",
+   "status": "CANC",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2021,
+   "provider_fixture_id": 816642,
+   "round": "Final",
+   "home": "Brann",
+   "away": "jerv",
+   "status": "PEN",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2022,
+   "provider_fixture_id": 973276,
+   "round": "Relegation Round",
+   "home": "Sandefjord",
+   "away": "Kongsvinger",
+   "status": "FT",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2022,
+   "provider_fixture_id": 973277,
+   "round": "Relegation Round",
+   "home": "Kongsvinger",
+   "away": "Sandefjord",
+   "status": "FT",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2023,
+   "provider_fixture_id": 1145731,
+   "round": "Relegation Round",
+   "home": "Kristiansund BK",
+   "away": "Valerenga",
+   "status": "FT",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2023,
+   "provider_fixture_id": 1145732,
+   "round": "Relegation Round",
+   "home": "Valerenga",
+   "away": "Kristiansund BK",
+   "status": "PEN",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2024,
+   "provider_fixture_id": 1319936,
+   "round": "Relegation Round",
+   "home": "Moss",
+   "away": "Haugesund",
+   "status": "FT",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2024,
+   "provider_fixture_id": 1319937,
+   "round": "Relegation Round",
+   "home": "Haugesund",
+   "away": "Moss",
+   "status": "FT",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2025,
+   "provider_fixture_id": 1488553,
+   "round": "Final",
+   "home": "Bryne",
+   "away": "Aalesund",
+   "status": "FT",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  },
+  {
+   "season": 2025,
+   "provider_fixture_id": 1488554,
+   "round": "Final",
+   "home": "Aalesund",
+   "away": "Bryne",
+   "status": "FT",
+   "reason": "not a league regular-season played fixture (playoff round or cancelled duplicate)",
+   "action": "excluded from league_only inventory by design"
+  }
+ ]
+}

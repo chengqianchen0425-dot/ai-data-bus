@@ -1,0 +1,37 @@
+[
+ {
+  "scope": "all 1920 rows",
+  "field": "method_context.competition_identity_source_mapping",
+  "status": "blocked",
+  "reason": "pending-req-20261017-001: no response at responses/req-20261017-001.json as of 2026-10-17",
+  "next_action": "adopt -001 source inventory when its response lands; do not infer provider competition code"
+ },
+ {
+  "scope": "960 second-cycle rows",
+  "field": "second_cycle_context.standings_before_kickoff / points_before_kickoff / chase_points_relation",
+  "status": "unavailable",
+  "reason": "no per-round historical standings source in this inventory (api-football /standings is final-table only)",
+  "next_action": "identify a round-by-round standings source (e.g., NFF historical tables) in a follow-up"
+ },
+ {
+  "scope": "2025-R29",
+  "field": "fixture_identity.fixture_status",
+  "status": "ok",
+  "reason": "Valerenga vs Kristiansund BK recorded AWD (awarded 3-0); included as played league fixture",
+  "next_action": "none; noted for downstream label handling"
+ },
+ {
+  "scope": "2021 season",
+  "field": "fixture_identity",
+  "status": "ok",
+  "reason": "238 CANC records excluded as cancelled scheduling duplicates; 240 FT league fixtures kept (30x8 verified)",
+  "next_action": "none"
+ },
+ {
+  "scope": "playoff rounds",
+  "field": "fixture_identity",
+  "status": "ok",
+  "reason": "excluded non-league rounds: 2020 Final x1, 2022/2023/2024 Relegation Round x2 each, 2025 Final x2",
+  "next_action": "none"
+ }
+]
