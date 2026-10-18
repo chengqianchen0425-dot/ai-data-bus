@@ -1,0 +1,58 @@
+[
+ {
+  "scope": "960 fixtures / 1920 team-rows",
+  "field": "home_standings_snapshot / away_standings_snapshot (rank, points, played, goals_for, goals_against, goal_difference, snapshot_datetime)",
+  "status": "unavailable",
+  "reason": "No accessible source records per-round/pre-kickoff Eliteserien tables. 8 source families attempted with documented outcomes (see methodology).",
+  "attempted_sources": [
+   {
+    "source": "NFF fotball.no (official, preferred)",
+    "outcome": "no per-round table obtained",
+    "detail": "Site reachable (200). Table is a JS SPA; internal XHR API not discoverable (probed /fotballdata/api/*, /api/* and relative variants -> 404). No static per-round historical tables found. Old server-rendered table pages exist on Wayback but are rate-limited and per-season fiksId mapping incomplete."
+   },
+   {
+    "source": "worldfootball.net",
+    "outcome": "no per-round table obtained",
+    "detail": "Live site returns 403 'Your request was blocked' (bot protection) for competition pages. Wayback schedule pages (e.g. nor-eliteserien-2019-spieltag/15) contain results only; no standings table in archived HTML."
+   },
+   {
+    "source": "nifs.no (Norsk & Internasjonal Fotballstatistikk)",
+    "outcome": "blocked",
+    "detail": "Site serves a reCAPTCHA human-verification gate; no table data accessible."
+   },
+   {
+    "source": "altomfotball.no (TV2)",
+    "outcome": "unreachable",
+    "detail": "Connection failed from this VM; no table URLs found in Wayback CDX."
+   },
+   {
+    "source": "eliteserien.no (official league site)",
+    "outcome": "current season only",
+    "detail": "Server-rendered table present but current season (2026) only; no historical season or round navigation."
+   },
+   {
+    "source": "Wikipedia season articles (e.g. 2019 Eliteserien)",
+    "outcome": "insufficient fields",
+    "detail": "'Positions by round' tables give rank only; no points/played/goals for/against."
+   },
+   {
+    "source": "FBref comps/28",
+    "outcome": "final tables only",
+    "detail": "Season tables are final (MP=30); no per-round snapshots."
+   },
+   {
+    "source": "11v11.com",
+    "outcome": "no coverage",
+    "detail": "League-tables index shows no Norway/Eliteserien coverage."
+   }
+  ],
+  "next_action": "Re-run survey when NFF API access or a per-round table source becomes available; or, if the requester authorizes it, deterministically reconstruct exact pre-kickoff tables from the -002 verified ledger (1920/1920 rows carry hg_90/ag_90 + kickoff instants) labeled as derived, not direct source evidence."
+ },
+ {
+  "scope": "kickoff calibration",
+  "field": "kickoff.utc / kickoff.oslo_local",
+  "status": "ok",
+  "reason": "All 960 kickoff instants verified against raw api-football timestamps; Oslo wall times are DST-aware.",
+  "next_action": "none"
+ }
+]

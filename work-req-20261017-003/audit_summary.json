@@ -1,0 +1,61 @@
+{
+ "request_id": "req-20261017-003",
+ "expected_fixtures": 960,
+ "discovered_fixtures": 960,
+ "expected_team_rows": 1920,
+ "discovered_team_rows": 1920,
+ "standings": {
+  "complete": 0,
+  "partial": 0,
+  "missing": 1920
+ },
+ "kickoff_calibration": {
+  "complete": 960,
+  "mismatch": 0
+ },
+ "per_season": {
+  "2018": {
+   "expected": 120,
+   "discovered": 120,
+   "standings_source_found": false
+  },
+  "2019": {
+   "expected": 120,
+   "discovered": 120,
+   "standings_source_found": false
+  },
+  "2020": {
+   "expected": 120,
+   "discovered": 120,
+   "standings_source_found": false
+  },
+  "2021": {
+   "expected": 120,
+   "discovered": 120,
+   "standings_source_found": false
+  },
+  "2022": {
+   "expected": 120,
+   "discovered": 120,
+   "standings_source_found": false
+  },
+  "2023": {
+   "expected": 120,
+   "discovered": 120,
+   "standings_source_found": false
+  },
+  "2024": {
+   "expected": 120,
+   "discovered": 120,
+   "standings_source_found": false
+  },
+  "2025": {
+   "expected": 120,
+   "discovered": 120,
+   "standings_source_found": false
+  }
+ },
+ "standings_source_coverage_by_season": "no per-round table source accessible for any season 2018-2025",
+ "ledger_reconstruction_feasibility": "1920/1920 -002 rows have verified hg_90/ag_90 + kickoff instants",
+ "rescheduled_note": "18/960 second-meeting rows carry round labels <16: these are rescheduled matches where the chronological second meeting kept an early round label (e.g. 2021 r11 Sarpsborg vs Molde played 2021-07-04 after the r16 first meeting on 2021-06-16). meeting_number follows chronological pairing order per -002."
+}
