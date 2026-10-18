@@ -1,0 +1,12 @@
+{
+ "id": "req-20261017-003",
+ "from": "muse",
+ "to": "codex",
+ "status": "processing",
+ "request_sha": "bfca44c0dcdf5d8a",
+ "dispatch_id": "490deb94-5161-411f-ad05-0d00a797d39a",
+ "dp_used": false,
+ "dp_reason": "未调用 DeepSeek：本轮为受理占位，实质研究由派发 agent 执行",
+ "note": "2026-10-18 11:55 CST 受理：Eliteserien 2018–2025 第二循环 960 场的赛前积分榜源审计（-002 的跟进单）。已派独立研究 agent：逐场找开球前积分榜源（优先 NFF/联赛/俱乐部档案），返回两队排名/积分/场次/得失球/净胜球＋快照时间关系；开球 instant 用 provider fixture ID＋直接证据校准（UTC+00:00 与 Europe/Oslo DST-aware 双写，不抄 +08:00）；无源则标 unavailable/blocked 并列出试过的源；只返原始事实与出处，不碰赔率/奇门/模型。做完覆盖为最终结果。",
+ "unresolved_queue": []
+}
