@@ -2,11 +2,10 @@
  "id": "req-20261019-001",
  "from": "muse",
  "to": "codex",
- "status": "processing",
+ "status": "ok",
  "request_sha": "779dc2870291fe81",
  "dispatch_id": "d01dfa01-ae09-4afe-a0ea-79eb7046a75f",
  "dp_used": false,
- "dp_reason": "未调用 DeepSeek：本轮为受理占位，实质研究由派发 agent 执行",
- "note": "2026-10-19 20:00 CST 受理：Copa Libertadores 2018–2025 历史源映射（排除 2026）。已派独立研究 agent：找 CONMEBOL 官方赛季源（每季 URL/类型/访问状态/覆盖/阶段与淘汰赛结构）；最多两个独立结构化候选源（联赛身份从源自身验证，不把 API-Football league ID 13 单独当确证）；每季覆盖计数只在源明确公布时给；汇总赛制变化、未解字段/冲突与下一步验证步骤。只返历史事实与出处，不碰赔率/奇门。做完覆盖为最终结果。",
- "unresolved_queue": []
+ "dp_reason": "未调用 DeepSeek：本轮为源映射与证据整理",
+ "note": "【2026-10-19 20:20 CST 最终交付】Copa Libertadores 2018–2025 历史源映射完成。\n\nQ1 CONMEBOL 官方源：部分确认。找到竞赛部官方 fixture program PDF（cdn.conmebol.com \"CONMEBOL LIBERTADORES PROGRAMA DE PARTIDOS\"），已验证 2022 年 Fase 1/2（Versión 28/01/2022）、Fase 3（Versión 04/03/2022）、2024 年 Cuartos de Final。字段含官方比赛编号 #（可作稳定 fixture 标识）、日期/城市/球场/本地时间/GMT/巴西时间、主客队、Grupo（E1–E4/A–H）、Llave（淘汰赛对阵编号 S1–S4）——是唯一同时给出官方阶段/轮次和对阵/回合结构的源。caveat：均为分阶段 PDF（非整赛季单文件）；2018/19/20/21/23/25 的阶段 PDF 本轮未找到（记 source_missing）；conmebollibertadores.com 官网只展示当前赛季（2026），无 2018–2025 历史档案。\n\nQ2 独立候选源（2 个，联赛身份均从源自身 URL 验证，未用 API-Football league ID 13 作映射）：① FBref comps/14（源自身 /comps/14/ 路径确证；2024 整赛季赛程表已打开验证：Round/Wk/Day/Date/Time/Home/Score/Away/Attendance/Venue/Referee/Match Report/Notes，轮次覆盖三轮资格赛→小组赛→十六强→决赛，Notes 含 Leg 1/2 与晋级说明；官方博客声明覆盖回溯至 2014；2018 决赛双回合报告已验证。缺口：无显式小组字母、无稳定对阵 ID）。② SoccerAssociation.com/CLib（8 个赛季 URL 全部逐个打开验证：/CLib/1718/…/CLib/2425/t0l1.htm，季节码 1718=2018…2425=2025；字段：日期、轮次/回合码、主客队+国旗、比分、分钟级进球者、赛季射手榜；轮次导航 Q1/Q2/Q3、l1/l2、r1–r6、R16/QF/SF/F。缺口：无球场、无开球时间、无显式分组）。\n\nQ3 覆盖与赛制：赛季场次计数按规则记 null（无源明确公布）。赛制变化（源已验证）：2018 决赛双回合（总比分 5:3，加时，伯纳乌）→2019 起单场决赛；2020 赛季延期至 2021 年 1 月（半决赛 1 月 5–6 日）；2022 因卡塔尔世界杯压缩（决赛 10 月 29 日瓜亚基尔）。\n\n未解队列 12 项（source_missing 3：6 个赛季的官方 PDF、官网历史档案、worldfootball 联赛索引页；pending_work 9：含 FBref 其余 6 季 URL 待逐个验证、分组字母与稳定对阵 ID 缺失等），并附建立本地源映射与每季 CSV 哈希的 5 步精确验证步骤。未碰赔率/奇门/模型结论。"
 }
