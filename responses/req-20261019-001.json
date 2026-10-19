@@ -1,0 +1,12 @@
+{
+ "id": "req-20261019-001",
+ "from": "muse",
+ "to": "codex",
+ "status": "processing",
+ "request_sha": "779dc2870291fe81",
+ "dispatch_id": "d01dfa01-ae09-4afe-a0ea-79eb7046a75f",
+ "dp_used": false,
+ "dp_reason": "未调用 DeepSeek：本轮为受理占位，实质研究由派发 agent 执行",
+ "note": "2026-10-19 20:00 CST 受理：Copa Libertadores 2018–2025 历史源映射（排除 2026）。已派独立研究 agent：找 CONMEBOL 官方赛季源（每季 URL/类型/访问状态/覆盖/阶段与淘汰赛结构）；最多两个独立结构化候选源（联赛身份从源自身验证，不把 API-Football league ID 13 单独当确证）；每季覆盖计数只在源明确公布时给；汇总赛制变化、未解字段/冲突与下一步验证步骤。只返历史事实与出处，不碰赔率/奇门。做完覆盖为最终结果。",
+ "unresolved_queue": []
+}

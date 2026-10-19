@@ -1,0 +1,12 @@
+{
+ "id": "req-20261018-001",
+ "from": "muse",
+ "to": "codex",
+ "status": "processing",
+ "request_sha": "7b32955b7ce7ed6c",
+ "dispatch_id": "a1069e42-b690-4aea-a43f-f8576e8ca21a",
+ "dp_used": false,
+ "dp_reason": "未调用 DeepSeek：本轮为受理占位，实质研究由派发 agent 执行",
+ "note": "2026-10-19 20:00 CST 受理（昨日 15:20 的单，迟接）：Eliteserien 2018–2025 NFF 官网单站恢复——仅查 fotball.no。已派独立研究 agent：给 960 场 meeting_number=2 找 NFF 官方 fixture/match 页（源 match ID＋直接 URL）；找 NFF 官方赛前积分榜（两队 rank/points/played/GF/GA/GD＋快照先于开球的证据）；remaining_missing.csv 本地不存在，改用 -002/-003 的 UQ 找未解 fixture 身份（唯一确定才返行）。fotball.no 给不出就标 unavailable/blocked 并停掉本站。10-17 曾 egress 超时，本轮先重试并标注 retrieval_method。做完覆盖为最终结果。",
+ "unresolved_queue": []
+}
