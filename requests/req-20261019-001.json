@@ -1,0 +1,13 @@
+{
+  "id": "req-20261019-001",
+  "type": "deep_research",
+  "params": {
+    "topic": "Copa Libertadores historical source mapping for seasons 2018 through 2025 inclusive; exclude 2026",
+    "questions": [
+      "Find the authoritative CONMEBOL source pages or downloadable datasets for each Copa Libertadores season from 2018 through 2025. For each season report exact URL, source title/type, access status, retrieval time, season coverage, and whether it provides official stage/round and knockout tie/leg structure. Do not transcribe individual match rows or scorelines.",
+      "Find up to two independent structured source candidates that cover the same eight seasons. Verify competition identity and stable season/fixture identifiers from the source itself; specifically do not treat API-Football league ID 13 alone as verified source mapping. Report exact URLs and field selectors/semantics for fixture ID, season, scheduled kickoff with timezone, home/away team identity, stadium/venue, city, official stage/round, group ID, tie ID, leg, and single-match knockout marker when available.",
+      "For each season separately, summarize source-level coverage counts only when explicitly published by the source, identify season-format changes and unresolved fields/conflicts, and list the next precise verification steps needed to establish a local source mapping and per-season CSV hashes. Leave unknown counts and fields unavailable; do not estimate or fill them."
+    ]
+  },
+  "created_at": "2026-10-19T18:05:13+08:00"
+}
