@@ -2,11 +2,10 @@
  "id": "req-20261018-001",
  "from": "muse",
  "to": "codex",
- "status": "processing",
+ "status": "ok",
  "request_sha": "7b32955b7ce7ed6c",
  "dispatch_id": "a1069e42-b690-4aea-a43f-f8576e8ca21a",
  "dp_used": false,
- "dp_reason": "未调用 DeepSeek：本轮为受理占位，实质研究由派发 agent 执行",
- "note": "2026-10-19 20:00 CST 受理（昨日 15:20 的单，迟接）：Eliteserien 2018–2025 NFF 官网单站恢复——仅查 fotball.no。已派独立研究 agent：给 960 场 meeting_number=2 找 NFF 官方 fixture/match 页（源 match ID＋直接 URL）；找 NFF 官方赛前积分榜（两队 rank/points/played/GF/GA/GD＋快照先于开球的证据）；remaining_missing.csv 本地不存在，改用 -002/-003 的 UQ 找未解 fixture 身份（唯一确定才返行）。fotball.no 给不出就标 unavailable/blocked 并停掉本站。10-17 曾 egress 超时，本轮先重试并标注 retrieval_method。做完覆盖为最终结果。",
- "unresolved_queue": []
+ "dp_reason": "未调用 DeepSeek：本轮为单站源恢复与证据整理",
+ "note": "【2026-10-19 20:25 CST 最终交付】Eliteserien 2018–2025 NFF 官网单站恢复（用户指定的逐站恢复第一站，仅 fotball.no）完成。\n\nQ1 官方 fixture 映射：480/960（50%）。2019（tournamentId=164089，新发现＋直接开页验证）、2023（186850）、2024（192924）、2025（199603，新发现＋直接开页验证）四季的 meeting_number=2 场次 120/120 全命中：每场返 NFF 官方 Kampnummer（如 99120001124）＋ kamp 直链（fotball.no/fotballdata/kamp/?fiksId=…，已抽检标题与对阵吻合）＋ tournament 页 URL＋实际开球 instant（UTC/Oslo 双写）。方法：tournament 页 fixture 表 Kampnummer 即 kamp 链接文本一次抓取 240 场映射；Excel 日历端点（footballapi/Calendar/DownloadTournamentExcelCalendar）给轮次/日期/时间/主客队；与 -002 台账按 (season, round, 归一化队名) 匹配，轮次编号完全对齐。Blocked 480 场：2018/2020/2021/2022 的 tournamentId 穷尽合规手段无法发现（站内搜索、sitemap、API 探针、JS 分析、fiksId 邻域探测、5 轮搜索引擎；仅 2019/2025 被索引），按铁律标 blocked 并停掉本站，retry_after 2026-11-19。\n\nQ2 赛前积分榜：0/960。直接开页验证：NFF 4 季 tabellen 页只展示最终积分榜（30 轮踢满），无轮次选择器、无逐轮历史表；最终表不许当赛前快照 → 960 行 home_pre_match/away_pre_match 全标 unavailable（附尝试过的 URL）。\n\nQ3 未解 fixture 身份交叉检查：0 行可解。-002 队列 5 项中无 fixture 身份缺口（源映射元数据/积分榜/已 ok）；-003 队列 2 项均为赛前积分榜（已确认 unavailable）。注：请求中提到的 remaining_missing.csv 本地不存在，已改用 -002/-003 的 UQ。\n\n数据质量备注：2025 R29 Vålerenga vs Kristiansund（2025-11-22）赛后经 NFF protestsak 7/2025 判 Vålerenga 3-0 获胜，tournament 页有官方注释；fixture 映射有效，比分口径使用时注意。全部证据 retrieval_method=direct_page（本轮 fotball.no 直接开页恢复；搜索引擎仅用于发现 URL，发现后均经直接开页双重验证）。未碰赔率/模型/2026 数据。\n\n交付文件（work-req-20261018-001/）：nff_match_mapping.jsonl（480 行，record_key 零重复）、nff_standings_snapshots.jsonl（960 行）、unresolved_queue.json（3 项）、audit_by_season.json（2019/2023/2024/2025 各 complete=120；2018/2020/2021/2022 各 blocked=120）、raw/（4 季 Excel＋页面 HTML 原始证据）。"
 }

@@ -1,0 +1,97 @@
+{
+  "2018": {
+    "expected": 120,
+    "discovered": 0,
+    "complete": 0,
+    "partial": 0,
+    "unavailable": 0,
+    "blocked": 120,
+    "conflict": 0,
+    "parse_failed": 0,
+    "note": "NFF tournament fiksId not discoverable; see unresolved_queue.json."
+  },
+  "2019": {
+    "expected": 120,
+    "discovered": 120,
+    "complete": 120,
+    "partial": 0,
+    "unavailable": 0,
+    "blocked": 0,
+    "conflict": 0,
+    "parse_failed": 0,
+    "note": "All 120 meeting_number=2 fixtures mapped to NFF Kampnummer + kamp page URL (tournament fiksId 164089)."
+  },
+  "2020": {
+    "expected": 120,
+    "discovered": 0,
+    "complete": 0,
+    "partial": 0,
+    "unavailable": 0,
+    "blocked": 120,
+    "conflict": 0,
+    "parse_failed": 0,
+    "note": "NFF tournament fiksId not discoverable; see unresolved_queue.json."
+  },
+  "2021": {
+    "expected": 120,
+    "discovered": 0,
+    "complete": 0,
+    "partial": 0,
+    "unavailable": 0,
+    "blocked": 120,
+    "conflict": 0,
+    "parse_failed": 0,
+    "note": "NFF tournament fiksId not discoverable; see unresolved_queue.json."
+  },
+  "2022": {
+    "expected": 120,
+    "discovered": 0,
+    "complete": 0,
+    "partial": 0,
+    "unavailable": 0,
+    "blocked": 120,
+    "conflict": 0,
+    "parse_failed": 0,
+    "note": "NFF tournament fiksId not discoverable; see unresolved_queue.json."
+  },
+  "2023": {
+    "expected": 120,
+    "discovered": 120,
+    "complete": 120,
+    "partial": 0,
+    "unavailable": 0,
+    "blocked": 0,
+    "conflict": 0,
+    "parse_failed": 0,
+    "note": "All 120 meeting_number=2 fixtures mapped to NFF Kampnummer + kamp page URL (tournament fiksId 186850)."
+  },
+  "2024": {
+    "expected": 120,
+    "discovered": 120,
+    "complete": 120,
+    "partial": 0,
+    "unavailable": 0,
+    "blocked": 0,
+    "conflict": 0,
+    "parse_failed": 0,
+    "note": "All 120 meeting_number=2 fixtures mapped to NFF Kampnummer + kamp page URL (tournament fiksId 192924)."
+  },
+  "2025": {
+    "expected": 120,
+    "discovered": 120,
+    "complete": 120,
+    "partial": 0,
+    "unavailable": 0,
+    "blocked": 0,
+    "conflict": 0,
+    "parse_failed": 0,
+    "note": "All 120 meeting_number=2 fixtures mapped to NFF Kampnummer + kamp page URL (tournament fiksId 199603)."
+  },
+  "summary": {
+    "total_expected": 960,
+    "total_complete": 480,
+    "total_blocked": 480,
+    "standings_snapshots_available": 0,
+    "standings_snapshots_unavailable": 960
+  }
+}

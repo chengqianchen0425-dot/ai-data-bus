@@ -1,0 +1,28 @@
+[
+  {
+    "scope": "480 fixtures (seasons 2018, 2020, 2021, 2022; meeting_number=2, 120/season)",
+    "field": "nff_kampnummer / nff_kamp_url",
+    "status": "blocked",
+    "reason": "NFF tournament fiksId not discoverable via fotball.no-compliant means. Attempted: (1) fotball.no site search (/sok/) for 'Eliteserien YYYY' - returns only editorial pages; (2) sitemap.xml - 404; (3) /footballapi/Tournament/* probes - 404; (4) JS bundle analysis - no footballapi tournament refs; (5) web search engine queries for fotball.no tournament pages per year (2018/2020/2021/2022) - no fotball.no tournament page indexed; (6) fiksId neighborhood probing around 153173/164089 - returned other tournaments, verified by title check. Seasons 2019/2023/2024/2025 WERE found (164089/186850/192924/199603) proving method works when pages are indexed.",
+    "retry_after": "2026-11-19",
+    "next_action": "Retry search-engine discovery in 30 days; or obtain tournamentId from NFF editorial annual-review pages if they add fotballdata links."
+  },
+  {
+    "scope": "Q3 cross-check of work-req-20261017-002/unresolved_queue.json (5 items) and work-req-20261017-003/unresolved_queue.json (2 items)",
+    "field": "fixture_identity (Q3)",
+    "status": "no_actionable_items",
+    "reason": "-002 queue: items concern competition_identity_source_mapping (metadata, not match IDs), standings_before_kickoff (unavailable), and 3 items with status ok. -003 queue: items concern pre-match standings snapshots (unavailable, confirmed). Neither queue contains unresolved fixture match-ID gaps resolvable via fotball.no. Zero Q3 rows returned."
+  },
+  {
+    "scope": "960 fixtures (all seasons, meeting_number=2)",
+    "field": "home_pre_match / away_pre_match standings snapshot",
+    "status": "unavailable",
+    "reason": "NFF fotball.no publishes only the FINAL season table (all 30 rounds played). No round selector, no per-round historical tables. Direct-page verified on tabellen underside for 2019/2023/2024/2025. Final table cannot serve as pre-kickoff snapshot per request rules.",
+    "attempted_urls": [
+      "https://www.fotball.no/fotballdata/turnering/hjem/?fiksId=164089&underside=tabellen",
+      "https://www.fotball.no/fotballdata/turnering/hjem/?fiksId=186850&underside=tabellen",
+      "https://www.fotball.no/fotballdata/turnering/hjem/?fiksId=192924&underside=tabellen",
+      "https://www.fotball.no/fotballdata/turnering/hjem/?fiksId=199603&underside=tabellen"
+    ]
+  }
+]
