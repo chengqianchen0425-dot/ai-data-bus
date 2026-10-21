@@ -1,0 +1,84 @@
+{
+  "request_id": "req-20261021-001",
+  "unresolved_queue": [
+    {
+      "uq_class": "source_missing",
+      "item": "CONMEBOL PROGRAMA DE PARTIDOS: 60 season-stage combinations not found",
+      "reason": "Search of cdn.conmebol.com (about 20 query rounds) returned only the 3 verified PDFs; CONMEBOL official coverage is 4/64 combinations (corrected: the A-route audit said 4/56, which is an arithmetic error - 8 seasons x 8 stages = 64, so missing = 60, not 52).",
+      "next_action": "Re-search cdn.conmebol.com / conmebol.com press releases with a live browser; do not guess URLs."
+    },
+    {
+      "uq_class": "pending_work",
+      "item": "CONMEBOL PDFs cited by third-party references but cdn URL not recovered (5 items)",
+      "reason": "Wikipedia season-page references attest titles/version dates only: 2021 group stage v12/04/2021; 2022 group stage (record 2022-03-26); 2023 Fase 1/2 v22/12/2022 and v17/02/2023; 2023 Fase 3 v03/03/2023. No URL was returned, so no rows were fabricated.",
+      "next_action": "Follow the Wikipedia citation links with a live browser and transcribe any PDF found; re-check version date precedes kickoff before use."
+    },
+    {
+      "uq_class": "pending_work",
+      "item": "2025 CONMEBOL Planilla (referee sheet) found but excluded - requester decision needed",
+      "reason": "2025 Semana 7 Fase 1 Vuelta Planilla (cdn.conmebol.com, 3 rows) is an official document but a referee-appointment sheet, not a PROGRAMA DE PARTIDOS, and lacks venue/GMT/country columns. It was not counted as an official fixture source in this round.",
+      "next_action": "Requester to decide whether Planilla documents count as a source; if yes, systematically search Planilla sheets for all weeks/seasons."
+    },
+    {
+      "uq_class": "access_blocked",
+      "item": "SoccerAssociation 2022 Q3 page",
+      "reason": "browser.open returned upstream 429 after 3 attempts; per stop rules no further retries were made and no workaround was used. Other seasons have 8 Q3 rows, so the gap is on the order of 8 rows - stated as a scale reference only, not a count assertion.",
+      "next_action": "Retry the single page https://www.soccerassociation.com/CLib/2122/q3.htm after the retry date.",
+      "retry_after": "2026-10-28"
+    },
+    {
+      "uq_class": "pending_work",
+      "item": "SoccerAssociation 2018 Q2 page shows 10 rows (other seasons 16)",
+      "reason": "Page evidence is l1/l2 5 rows each; whether the page is incomplete or the 2018 format differed was not verified in this round, so no rows were invented.",
+      "next_action": "Re-open the 2018 Q2 page and check for pagination/sub-pages; cross-check the 6-row difference against FBref qualifying rows without merging values."
+    },
+    {
+      "uq_class": "source_missing",
+      "item": "SoccerAssociation C round pages, all 8 seasons (c.htm PAGE ERROR)",
+      "reason": "All 8 season C pages returned PAGE ERROR; the meaning of the C navigation label is therefore unconfirmed.",
+      "next_action": "Check an archived copy or another source for what C denotes; do not guess a stage."
+    },
+    {
+      "uq_class": "source_missing",
+      "item": "RSSSF 2025 season page",
+      "reason": "RSSSF overview lists 2025 as plain text with no hyperlink and no rsssf.org result was found; no URL was guessed.",
+      "next_action": "Verify whether an RSSSF 2025 Copa Libertadores page exists under a different path."
+    },
+    {
+      "uq_class": "pending_work",
+      "item": "FBref venue truncated on 111 presentations / 60 unique fixtures",
+      "reason": "Venue strings end with \"...\" in the browser text layer (9 distinct truncated forms, e.g. Estadio Monumental Antonio Vespucio Libe... 48 presentations). Rows are preserved verbatim.",
+      "next_action": "Complete venue names from FBref per-match report pages or an official source; do not guess completions."
+    },
+    {
+      "uq_class": "pending_work",
+      "item": "SoccerAssociation 4 rows with invalid source date header \"Thursday, 31 September 2020\"",
+      "reason": "September has no 31st day; match_date is null for these 4 rows (Flamengo vs Independiente; Junior vs Barcelona; River Plate vs Sao Paulo; Alianza Lima vs Estudiantes, all 2020 R1 r5). Teams and group labels are preserved verbatim.",
+      "next_action": "Confirm the true date from an independent source before populating match_date; do not silently correct to 30 September or 1 October."
+    },
+    {
+      "uq_class": "pending_work",
+      "item": "CONMEBOL source_sha256 null on all 38 official rows",
+      "reason": "Direct download of cdn.conmebol.com timed out in this environment (curl HTTP 000); PDFs were read via the browser text layer, so no PDF bytes were hashed.",
+      "next_action": "Re-download the 3 PDFs in a direct-access environment, compute sha256, and verify row counts are unchanged before attaching hashes."
+    },
+    {
+      "uq_class": "permanent_rule",
+      "item": "venue latitude/longitude on all rows",
+      "reason": "No cited source in this task directly supplies coordinates, and the request forbids inferring them.",
+      "next_action": "None unless a source that directly publishes coordinates is cited."
+    },
+    {
+      "uq_class": "permanent_rule",
+      "item": "city/country/timezone/group-letter/tie-ID fields on FBref and SoccerAssociation rows",
+      "reason": "Those pages have no such columns, and the request forbids inferring city, country, timezone, group or tie from venue, team names, match order or later records. SoccerAssociation Group 1-8 is kept verbatim and NOT mapped to Group A-H.",
+      "next_action": "None unless the source itself publishes the field."
+    },
+    {
+      "uq_class": "permanent_rule",
+      "item": "Cross-source fixture identity by team-name matching",
+      "reason": "Team labels differ systematically across sources (abbreviations, state codes, renames, ambiguous \"Nacional\") and two distinct 2021 teams share the label \"Nacional\"; name matching alone cannot prove identity, so no cross-source unified row was fabricated.",
+      "next_action": "If a unified key is required, the requester must approve an explicit team-identity mapping table built from an authoritative club register, not from name similarity."
+    }
+  ]
+}

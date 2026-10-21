@@ -1,0 +1,618 @@
+{
+  "request_id": "req-20261021-001",
+  "expected": null,
+  "expected_note": "expected=null for every season/stage: no authoritative source in this task publishes expected fixture counts; discovered counts below are observed, not expected.",
+  "by_season_stage": [
+    {
+      "season_year": 2018,
+      "official_stage": "First qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 6,
+      "soccerassoc_candidate_rows": 6
+    },
+    {
+      "season_year": 2018,
+      "official_stage": "Second qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 10
+    },
+    {
+      "season_year": 2018,
+      "official_stage": "Third qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2018,
+      "official_stage": "Group stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 96,
+      "soccerassoc_candidate_rows": 96
+    },
+    {
+      "season_year": 2018,
+      "official_stage": "Round of 16",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2018,
+      "official_stage": "Quarter-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2018,
+      "official_stage": "Semi-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 4,
+      "soccerassoc_candidate_rows": 4
+    },
+    {
+      "season_year": 2018,
+      "official_stage": "Final",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 2,
+      "soccerassoc_candidate_rows": 2
+    },
+    {
+      "season_year": 2019,
+      "official_stage": "First qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 6,
+      "soccerassoc_candidate_rows": 6
+    },
+    {
+      "season_year": 2019,
+      "official_stage": "Second qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2019,
+      "official_stage": "Third qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2019,
+      "official_stage": "Group stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 96,
+      "soccerassoc_candidate_rows": 96
+    },
+    {
+      "season_year": 2019,
+      "official_stage": "Round of 16",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2019,
+      "official_stage": "Quarter-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2019,
+      "official_stage": "Semi-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 4,
+      "soccerassoc_candidate_rows": 4
+    },
+    {
+      "season_year": 2019,
+      "official_stage": "Final",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 1,
+      "soccerassoc_candidate_rows": 1
+    },
+    {
+      "season_year": 2020,
+      "official_stage": "First qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 6,
+      "soccerassoc_candidate_rows": 6
+    },
+    {
+      "season_year": 2020,
+      "official_stage": "Second qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2020,
+      "official_stage": "Third qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2020,
+      "official_stage": "Group stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 96,
+      "soccerassoc_candidate_rows": 96
+    },
+    {
+      "season_year": 2020,
+      "official_stage": "Round of 16",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2020,
+      "official_stage": "Quarter-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2020,
+      "official_stage": "Semi-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 4,
+      "soccerassoc_candidate_rows": 4
+    },
+    {
+      "season_year": 2020,
+      "official_stage": "Final",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 1,
+      "soccerassoc_candidate_rows": 1
+    },
+    {
+      "season_year": 2021,
+      "official_stage": "First qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 6,
+      "soccerassoc_candidate_rows": 6
+    },
+    {
+      "season_year": 2021,
+      "official_stage": "Second qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2021,
+      "official_stage": "Third qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2021,
+      "official_stage": "Group stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 96,
+      "soccerassoc_candidate_rows": 96
+    },
+    {
+      "season_year": 2021,
+      "official_stage": "Round of 16",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2021,
+      "official_stage": "Quarter-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2021,
+      "official_stage": "Semi-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 4,
+      "soccerassoc_candidate_rows": 4
+    },
+    {
+      "season_year": 2021,
+      "official_stage": "Final",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 1,
+      "soccerassoc_candidate_rows": 1
+    },
+    {
+      "season_year": 2022,
+      "official_stage": "First qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 6,
+      "fbref_candidate_unique": 6,
+      "soccerassoc_candidate_rows": 6
+    },
+    {
+      "season_year": 2022,
+      "official_stage": "Second qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 16,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2022,
+      "official_stage": "Third qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 8,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 0
+    },
+    {
+      "season_year": 2022,
+      "official_stage": "Group stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 96,
+      "soccerassoc_candidate_rows": 96
+    },
+    {
+      "season_year": 2022,
+      "official_stage": "Round of 16",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2022,
+      "official_stage": "Quarter-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2022,
+      "official_stage": "Semi-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 4,
+      "soccerassoc_candidate_rows": 4
+    },
+    {
+      "season_year": 2022,
+      "official_stage": "Final",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 1,
+      "soccerassoc_candidate_rows": 1
+    },
+    {
+      "season_year": 2023,
+      "official_stage": "First qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 6,
+      "soccerassoc_candidate_rows": 6
+    },
+    {
+      "season_year": 2023,
+      "official_stage": "Second qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2023,
+      "official_stage": "Third qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2023,
+      "official_stage": "Group stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 96,
+      "soccerassoc_candidate_rows": 96
+    },
+    {
+      "season_year": 2023,
+      "official_stage": "Round of 16",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2023,
+      "official_stage": "Quarter-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2023,
+      "official_stage": "Semi-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 4,
+      "soccerassoc_candidate_rows": 4
+    },
+    {
+      "season_year": 2023,
+      "official_stage": "Final",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 1,
+      "soccerassoc_candidate_rows": 1
+    },
+    {
+      "season_year": 2024,
+      "official_stage": "First qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 6,
+      "soccerassoc_candidate_rows": 6
+    },
+    {
+      "season_year": 2024,
+      "official_stage": "Second qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2024,
+      "official_stage": "Third qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2024,
+      "official_stage": "Group stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 96,
+      "soccerassoc_candidate_rows": 96
+    },
+    {
+      "season_year": 2024,
+      "official_stage": "Round of 16",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2024,
+      "official_stage": "Quarter-finals",
+      "expected": null,
+      "conmebol_official_rows": 8,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2024,
+      "official_stage": "Semi-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 4,
+      "soccerassoc_candidate_rows": 4
+    },
+    {
+      "season_year": 2024,
+      "official_stage": "Final",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 1,
+      "soccerassoc_candidate_rows": 1
+    },
+    {
+      "season_year": 2025,
+      "official_stage": "First qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 6,
+      "soccerassoc_candidate_rows": 6
+    },
+    {
+      "season_year": 2025,
+      "official_stage": "Second qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2025,
+      "official_stage": "Third qualifying stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2025,
+      "official_stage": "Group stage",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 96,
+      "soccerassoc_candidate_rows": 96
+    },
+    {
+      "season_year": 2025,
+      "official_stage": "Round of 16",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 16,
+      "soccerassoc_candidate_rows": 16
+    },
+    {
+      "season_year": 2025,
+      "official_stage": "Quarter-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 8,
+      "soccerassoc_candidate_rows": 8
+    },
+    {
+      "season_year": 2025,
+      "official_stage": "Semi-finals",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 4,
+      "soccerassoc_candidate_rows": 4
+    },
+    {
+      "season_year": 2025,
+      "official_stage": "Final",
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_unique": 1,
+      "soccerassoc_candidate_rows": 1
+    }
+  ],
+  "by_season_totals": [
+    {
+      "season_year": 2018,
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_presentations": 282,
+      "fbref_candidate_unique": 156,
+      "soccerassoc_candidate_rows": 150,
+      "rsssf_stage_rows": 15
+    },
+    {
+      "season_year": 2019,
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_presentations": 280,
+      "fbref_candidate_unique": 155,
+      "soccerassoc_candidate_rows": 155,
+      "rsssf_stage_rows": 15
+    },
+    {
+      "season_year": 2020,
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_presentations": 280,
+      "fbref_candidate_unique": 155,
+      "soccerassoc_candidate_rows": 155,
+      "rsssf_stage_rows": 15
+    },
+    {
+      "season_year": 2021,
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_presentations": 280,
+      "fbref_candidate_unique": 155,
+      "soccerassoc_candidate_rows": 155,
+      "rsssf_stage_rows": 15
+    },
+    {
+      "season_year": 2022,
+      "expected": null,
+      "conmebol_official_rows": 30,
+      "fbref_candidate_presentations": 280,
+      "fbref_candidate_unique": 155,
+      "soccerassoc_candidate_rows": 147,
+      "rsssf_stage_rows": 15
+    },
+    {
+      "season_year": 2023,
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_presentations": 280,
+      "fbref_candidate_unique": 155,
+      "soccerassoc_candidate_rows": 155,
+      "rsssf_stage_rows": 15
+    },
+    {
+      "season_year": 2024,
+      "expected": null,
+      "conmebol_official_rows": 8,
+      "fbref_candidate_presentations": 280,
+      "fbref_candidate_unique": 155,
+      "soccerassoc_candidate_rows": 155,
+      "rsssf_stage_rows": 15
+    },
+    {
+      "season_year": 2025,
+      "expected": null,
+      "conmebol_official_rows": 0,
+      "fbref_candidate_presentations": 280,
+      "fbref_candidate_unique": 155,
+      "soccerassoc_candidate_rows": 155,
+      "rsssf_stage_rows": 0
+    }
+  ],
+  "status": {
+    "conmebol": "partial: 4 of 64 season-stage combinations covered (2022 Fase 1/2/3 + 2024 Cuartos); 60 missing.",
+    "fbref": "complete: all 8 season pages readable; 2242 presentations collapsed within-source to 1241 unique fixtures.",
+    "soccerassoc": "partial: 2022 Q3 blocked (429), 2018 Q2 only 10 rows on the page, 4 rows with an invalid source date header.",
+    "rsssf": "partial: stage structure only, 2018-2024; 2025 page not found."
+  },
+  "duplicate_and_ambiguity": [
+    "FBref: 2242 presentations -> 1241 unique fixtures by (season, date, time, home, away); 1001 duplicate presentations, each duplicated exactly twice (All Rounds table + stage sub-table).",
+    "FBref venue truncated: 111 presentations end with \"...\" (verbatim, not completed), covering 60 unique fixtures; the other presentation of the same fixture carries the identical truncated string, so no completion was available on the page.",
+    "SoccerAssociation: 0 duplicate rows by full key (season, round, sub-code, group label, date text, teams).",
+    "CONMEBOL: 0 duplicates by (season, stage, source_fixture_id); # is document-scoped only.",
+    "Ambiguous identity (NOT resolved): SoccerAssociation 2021 R1 Group 6 has two distinct teams both labelled \"Nacional\" (distinguished on the site only by flags, which are not a task field); several \"Nacional\" labels across seasons are likewise not disambiguated to a specific club.",
+    "SoccerAssociation 2020 R2 and QF each have 1 first-leg-coded row under a second-leg date header (verbatim, not re-sorted).",
+    "Team-label variants across sources are NOT harmonised (e.g. FBref \"Estudiantes LP\" vs CONMEBOL \"Est. La Plata\"; FBref \"Atlético Mineiro\" vs SoccerAssociation \"Atletico MG\"; FBref \"Real Garcilaso\" vs SoccerAssociation \"Cusco\"). Cross-source identity by name alone is therefore not asserted."
+  ],
+  "field_gaps": {
+    "venue_latitude_longitude": "null on all 2506 fixture rows: no cited source directly supplies coordinates.",
+    "city_country_fbref_soccerassoc": "null on all FBref/SoccerAssociation rows: those pages have no city/country columns; not inferred from venue or team.",
+    "group_id": "only CONMEBOL 2022 rows carry a Grupo value; FBref and SoccerAssociation rows have no explicit group letter (SoccerAssociation Group 1-8 verbatim is kept separately and NOT mapped to A-H).",
+    "tie_id": "only CONMEBOL 2024 Cuartos rows carry a Llave value (S1-S4); no other source supplies a stable tie ID.",
+    "kickoff_utc": "only CONMEBOL rows carry a GMT time-of-day string; no full UTC datetime is published by any source in this task.",
+    "source_timezone_text": "null on all rows: no source labels a timezone.",
+    "single_match_knockout": "null on all rows: no row-level source in this task explicitly evidences single-match vs two-legged format per fixture (season-format context is in the report only, from req-20261019-001).",
+    "scoring_mode": "null on all rows: no row-level source in this task explicitly describes the scoring/competition format per fixture."
+  }
+}
