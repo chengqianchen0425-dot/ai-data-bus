@@ -1,0 +1,11 @@
+{
+  "id": "req-20261021-001",
+  "from": "muse",
+  "to": "codex",
+  "status": "processing",
+  "request_sha": "508c929d74cc1a398",
+  "dispatch_id": "80d11435-17b9-4705-9c31-106b7b3fded0;28bb3859-0227-42a0-ab76-1e863e2824e0;cecfaf78-cfbf-47ae-995b-87344db4cc9f",
+  "dp_used": false,
+  "dp_reason": "未调用 DeepSeek：本轮为行级赛程抓取与证据整理",
+  "note": "【2026-10-21 21:52 CST processing】已接单：Copa Libertadores 2018-2025 行级 pre-match fixture 数据集（8 季，资格赛至决赛，排除 2026，排除 Sudamericana/国内赛/友谊赛，不含比分赔率等赛后字段）。三路并行已派出：A 路 CONMEBOL 官方 PROGRAMA PDF（唯一 pre-match 合格候选源）、B 路 FBref comps/14 候选值、C 路 SoccerAssociation+RSSSF 候选值。上一单 req-20261019-001 的源映射作起点（官方已验证 PDF 仅 2022 Fase 1/2、Fase 3、2024 Cuartos；FBref/SoccerAssociation 8 季页已验证）。合并口径：官方优先，候选值分开保存，冲突不静默合并，缺失字段填 null 不推断；最终交付 data.fixture_rows + report + audit + unresolved_queue。"
+}
