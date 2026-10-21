@@ -1,0 +1,52 @@
+{
+  "id": "req-20261021-001",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "params": {
+    "topic": "Copa Libertadores 2018-2025 historical prediction replay: complete pre-match fixture rows and official competition context",
+    "questions": [
+      "Build a row-level pre-match fixture dataset for Copa Libertadores seasons 2018 through 2025 inclusive, excluding 2026. Include all official competition phases that belong to each edition: qualifying/preliminary rounds, group stage, Round of 16, quarter-finals, semi-finals, and final where that phase existed. Keep Copa Libertadores separate from Copa Sudamericana, domestic competitions, friendlies, and other tournaments. The goal is to support local historical prediction replay, so return fixture rows rather than only a list of candidate source pages.",
+      "For each fixture, return season_year, season_label, source_fixture_id only when the source explicitly provides one, match_date, kickoff_local exactly as published, kickoff_utc only when explicitly published, source_timezone_text only when explicitly published, home_team_source_label, away_team_source_label, venue_or_stadium, city, country, official_stage, official_round, group_id, tie_id, leg (first/second only when explicitly evidenced), scoring_mode or competition-format description, and single_match_knockout only when explicitly evidenced. Return venue latitude/longitude only when a cited source directly supplies them; otherwise use null. Do not infer a provider ID, venue, timezone, stage, group, tie, leg, or match format from team names, match order, dates, scores, qualification, or later records.",
+      "Use official CONMEBOL sources first. For every fixture row, identify the exact schedule document/page and version, its publication date or document date, source_url, final_url, retrieved_at, field_locator, and source_sha256 when the source bytes are available. Use a schedule version published before that fixture's kickoff. A later revised document that contains scores or other post-match outcome fields is not an eligible pre-match source. If an earlier source does not cover a phase or required field, use at most two independent structured sources as candidates and preserve their values separately; never silently merge conflicting values.",
+      "Audit each season and official phase separately. Report discovered row counts and complete/partial/missing coverage. Set expected=null unless the expected count is explicitly published by an authoritative source; do not estimate counts. Identify duplicate rows, ambiguous fixture identity, venue/kickoff/stage gaps, source-version conflicts, and seasons or phases with no usable pre-kickoff source. Provider fixture identifiers are not assumed globally unique across documents or phases.",
+      "Return machine-readable row-level data under data.fixture_rows (or data.fixture_rows_by_season) in addition to data.report, data.audit, and data.unresolved_queue. Preserve every discovered fixture even when fields are null. Use status values ok, partial, unavailable, blocked, conflict, or parse_failed with a concise reason. The unresolved queue must classify each item as uq_class=permanent_rule, source_missing, access_blocked, or pending_work; include the reason and next action, and retry_after for access_blocked. Do not replace row-level evidence with a narrative summary if a field or fixture cannot be verified.",
+      "This is a pre-match schedule and competition-context request only. Do not return odds, bookmaker data, scores, goals, results, standings, qualification outcomes, aggregate scores, Qimen or palace fields, five elements, model directions, probabilities, Snapshot, Outcome, Review, or Gold. Do not read or derive any prediction judgment from post-match data."
+    ],
+    "source_hints": [
+      "https://www.conmebol.com/",
+      "https://cdn.conmebol.com/",
+      "https://www.rsssf.org/"
+    ]
+  },
+  "scope": {
+    "competition_key": "copa_libertadores",
+    "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "season_count": 8,
+    "include_official_qualifying_and_all_main_phases": true,
+    "exclude_seasons": [2026],
+    "league_only": false,
+    "football_facts_only": true,
+    "pre_match_only": true
+  },
+  "output_contract": {
+    "format": "json_report_plus_machine_readable_fixture_rows_and_unresolved_queue",
+    "return_available_rows_first": true,
+    "row_level_data_required": true,
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": [
+      "source_url",
+      "final_url",
+      "published_at_or_document_version",
+      "retrieved_at",
+      "field_locator",
+      "source_sha256"
+    ],
+    "audit_dimensions": ["season", "official_stage", "official_round"],
+    "formal_model_unchanged": true,
+    "writes_formal_records": false,
+    "promotion_allowed": false
+  },
+  "created_at": "2026-10-21T20:19:11+08:00"
+}
