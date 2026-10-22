@@ -1,0 +1,11 @@
+{
+  "id": "req-20261022-001",
+  "from": "muse",
+  "to": "codex",
+  "status": "processing",
+  "request_sha": "7f941b0c95072e1",
+  "dispatch_id": "024e34d8-8c02-4a9d-891e-939e6107d46e;157ccf9e-ca2d-4de0-8231-e168a6883bb9;213b49ad-5954-4a67-ab56-d04ee89e422c",
+  "dp_used": false,
+  "dp_reason": "未调用 DeepSeek：本轮为赔率源探查与证据整理",
+  "note": "【2026-10-22 16:27 CST processing】已接单：Copa Libertadores 2018-2025 历史 pre-match FT 1X2 赔率证据收集（8 季，排除 2026；开盘/收盘仅当源明确定义时分相记录；只收赔率证据，不做预测、不返比分赛果）。三路并行已派出：A 路 NowGoal 静态路线（验证 Eredivisie 走通的 matchId+1x2 JS 路线是否适用于解放者杯）、B 路 OddsPortal/BetExplorer 网页历史赔率、C 路 5dollarfootballapi + Football-Data.co.uk 等 API/批量源。口径按请求：上一单 2,506 行只作源线索（其中 38 行 CONMEBOL 官方 PROGRAMA 行为 pre-match 合格锚点，FBref/SoccerAssociation 行为赛后候选上下文、不是 pre-match 证据），不把 2,506 行当唯一场次或 expected 分母，不跨源按队名相似拼合场次，无法唯一匹配的观测进 ambiguous 队列；expected 一律 null；不付费、不碰付费额度。最终交付 data.fixture_odds_rows + report + audit + unresolved_queue。"
+}
