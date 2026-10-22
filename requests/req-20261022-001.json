@@ -1,0 +1,54 @@
+{
+  "id": "req-20261022-001",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "params": {
+    "topic": "Copa Libertadores 2018-2025 historical pre-match 1X2 odds data and source audit",
+    "questions": [
+      "For Copa Libertadores seasons 2018 through 2025 inclusive, excluding 2026, identify and return row-level historical full-time 1X2 odds snapshots for exact fixtures where reliable source evidence is available. Include opening and closing snapshots as separate phase records when the source explicitly defines both. This is odds evidence collection only; do not perform prediction, Qimen interpretation, pattern selection, or outcome scoring.",
+      "Use the existing local discovery report for req-20261021-001 only as a source lead: its 38 CONMEBOL PROGRAMA rows are pre-match-eligible anchors; its FBref and SoccerAssociation rows are post-match-revised candidate context and are not pre-match source evidence. Do not treat 2,506 source rows as unique fixtures or as the expected competition count. Do not merge rows across sources by team-name similarity. Search for official pre-kickoff schedule evidence and reliable historical odds sources; preserve source rows separately until exact fixture identity is established.",
+      "For every odds phase observation return season_year, source fixture ID only if explicitly published, exact source team labels, match date, kickoff and timezone only if published, official stage/round only when evidenced, bookmaker, market, phase (opening or closing only when explicitly defined), decimal home/draw/away values, quote timestamp or documented snapshot semantics, source_url, final_url, retrieved_at, HTTP status, field_locator, source_sha256 when bytes are available, and the exact fixture matching evidence. Keep provider IDs scoped as documented; never assume they are globally unique. If an observation cannot be uniquely matched to an exact fixture, place it in an unresolved or ambiguous queue rather than assigning it.",
+      "Opening and closing semantics must be explicit and distinct. A latest/current price is not closing unless the source defines it as the pre-kickoff close; a single intermediate price is neither an opening price nor an interval. Do not infer opening/closing from page order or retrieval date. Keep bookmaker and market identity exact. Preserve source conflicts and differing values without choosing a winner.",
+      "Audit coverage separately by season, official phase, bookmaker, market, and odds phase. Report discovered, eligible, partial, unavailable, blocked, conflict, ambiguous-match, and missing counts. Set expected=null unless an authoritative source explicitly publishes the expected number of fixtures. Do not use discovered rows as the denominator. Separate pre-match-eligible odds snapshots from post-match pages or candidate rows.",
+      "Return machine-readable data.fixture_odds_rows (or data.rows_by_season), data.audit, and data.unresolved_queue in addition to data.report. Preserve nulls and classify each row with ok, partial, unavailable, blocked, conflict, ambiguous, or parse_failed plus a concise reason. Include source URL, final URL, retrieval time, exact field locator, and source hash for each observation where available. If no usable bulk source exists, provide the verified source-access findings and exact next actions; do not fabricate rows.",
+      "Do not return or derive scores, goals, results, standings, qualification, aggregate scores, Qimen or palace fields, five elements, model direction, probabilities, Snapshot, Outcome, Review, or Gold. Do not read or use post-match data as a pre-match odds feature. Do not write to any project database or formal record."
+    ],
+    "source_hints": [
+      "https://www.conmebol.com/",
+      "https://cdn.conmebol.com/",
+      "https://api.5dollarfootballapi.com/",
+      "https://www.football-data.co.uk/"
+    ]
+  },
+  "scope": {
+    "competition_key": "copa_libertadores",
+    "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "season_count": 8,
+    "exclude_seasons": [2026],
+    "market": "full_time_1x2",
+    "odds_phases": ["opening", "closing"],
+    "row_level_evidence_required": true,
+    "pre_match_semantics_required": true,
+    "formal_model_unchanged": true,
+    "writes_formal_records": false,
+    "promotion_allowed": false
+  },
+  "output_contract": {
+    "format": "json_report_plus_machine_readable_odds_rows_and_unresolved_queue",
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": [
+      "source_url",
+      "final_url",
+      "retrieved_at",
+      "http_status",
+      "field_locator",
+      "source_sha256",
+      "fixture_match_evidence",
+      "odds_phase_semantics"
+    ],
+    "audit_dimensions": ["season", "official_stage", "bookmaker", "market", "odds_phase"]
+  },
+  "created_at": "2026-10-22T16:18:00+08:00"
+}
