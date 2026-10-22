@@ -1,0 +1,90 @@
+{
+  "request_id": "req-20261022-001",
+  "unresolved_queue": [
+    {
+      "uq_class": "blocked",
+      "item": "5DollarFootballAPI Ultra plan (league 3899038422) - the only verified bulk source with defined opening/closing semantics",
+      "reason": "Historical Libertadores queries and odds/history ticks are Ultra-only by the source documentation; Free covers top-5 leagues only and Pro only the last 12 months. No key was used and nothing was paid, so 0 rows were retrieved.",
+      "next_action": "Requester decides whether to subscribe to Ultra; before paying, verify on the billing page the price and that pre-2015-to-present history includes full 1X2 tick history (the data-quality Odds % alone does not guarantee opening/closing completeness). If subscribed, run the 5-step plan in api_odds_audit.md section 1.6 (date-window slicing, bet365 tick first/last pre-kickoff ticks, discard score columns, triple-evidence matching, record byte hashes)."
+    },
+    {
+      "uq_class": "access_blocked",
+      "item": "NowGoal static files (schedule JSON s89_en.json and 1x2 JS for match 2661153)",
+      "reason": "Live site nowgoal.net works, but the old static hosts fail: schedule JSON 404s on current domains (old s16 path also 404s, so this does not disprove s89), 1x2.nowgoal50.com DNS fails, 1x2.nowgoal.net unreachable, and no game=Array link is visible on the 1x2 page. League number 89 is a candidate by analogy to Eredivisie league/16 vs s16 only, not a verified sclass.",
+      "next_action": "Inspect the live 1x2 page network requests in a browser to find the actual data endpoint and the correct static host, then re-probe a single match before any bulk run.",
+      "retry_after": "2026-10-29"
+    },
+    {
+      "uq_class": "unavailable",
+      "item": "Football-Data.co.uk Libertadores coverage",
+      "reason": "The site data index lists only domestic leagues and returns zero hits for Libertadores/CONMEBOL; this is absence of coverage, not a fetch failure.",
+      "next_action": "Do not send further tasks against this source for Libertadores odds."
+    },
+    {
+      "uq_class": "unavailable",
+      "item": "OddsPortal rendered odds (pages checked)",
+      "reason": "Live-browser rendering still yields 0 bookmakers: 2025 results page states no odds available from the selected bookmakers, the 2020 single-match page is 404, and the H2H page renders an empty 1X2 table stating 0 bookmakers. No Opening/Closing label was observed.",
+      "next_action": "Only revisit if logged-in access or a different bookmaker selection is explicitly authorised; do not re-scrape the same pages expecting different results."
+    },
+    {
+      "uq_class": "unavailable",
+      "item": "BetExplorer empty 1/X/2 cells (2023/2022/2018 knockout tables seen; 2021/2020/2019 overview final rows)",
+      "reason": "Cells were empty in the rendered pages checked; this is a per-page observation, not a whole-season assertion for 2021/2020/2019, whose full results pages were not opened.",
+      "next_action": "Open the full results pages for 2021/2020/2019 and the non-knockout stages of 2023/2022/2018 before asserting season-wide emptiness."
+    },
+    {
+      "uq_class": "pending_work",
+      "item": "BetExplorer full results pages for 2021, 2020, 2019",
+      "reason": "Only overview pages were reached for these seasons in the live-browser check.",
+      "next_action": "Open each season results page via the on-site selector (pattern copa-libertadores-YYYY/results/) and record any rendered 1/X/2 values with bookmaker identification from single-match pages."
+    },
+    {
+      "uq_class": "pending_work",
+      "item": "Bookmaker identification for the 2 BetExplorer results-table rows (Palmeiras-LDU Quito 2025; Atletico-MG-Botafogo 2024)",
+      "reason": "Results tables do not name the bookmaker; the single-match pages for these two fixtures were not checked.",
+      "next_action": "Open each fixture single-match Odds Comparison page and, if exactly one bookmaker renders, attach it; if several render, keep values per bookmaker as separate rows and never assign the results-table value to one of them by assumption."
+    },
+    {
+      "uq_class": "pending_work",
+      "item": "NowGoal full 1x2 table for match 2661153 (147 bookmakers listed, only Bet 365 observed)",
+      "reason": "The live-browser report lists 147 bookmakers but quotes values only for Bet 365 (Initial and Live).",
+      "next_action": "Extract the full Initial and Live tables for this match from the rendered 1x2 page, one row per bookmaker, with phase=unspecified and the same semantics notes as the Bet 365 rows."
+    },
+    {
+      "uq_class": "pending_work",
+      "item": "API-Football Pro quota decision",
+      "reason": "The workspace has an API-Football connector, but its Pro quota was deliberately not touched in this round; conflicting third-party claims exist about old-fixture retention and opening/closing semantics, neither verified against official documentation.",
+      "next_action": "Requester decides whether to spend Pro quota; first verify retention period and opening/closing semantics from official API-Football documentation."
+    },
+    {
+      "uq_class": "pending_work",
+      "item": "The Odds API and OddAlerts coverage verification",
+      "reason": "Both are paywalled and their Libertadores coverage is unverified (third-party claims only, not official documentation).",
+      "next_action": "Only pursue if the requester authorises a key/trial; verify coverage and opening/closing semantics from official docs before retrieving rows."
+    },
+    {
+      "uq_class": "ambiguous",
+      "item": "NowGoal match 2661153 date: task reference 2024-09-17 vs page display 18-09-2024 08:30",
+      "reason": "The page displays 18-09-2024 08:30 with no timezone label; the task reference date is 2024-09-17. The difference is consistent with a timezone shift but the page timezone was not evidenced, so no conversion was applied and match_date is recorded as displayed.",
+      "next_action": "Confirm the page timezone (or the official kickoff instant) before converting this date; do not silently shift it to 2024-09-17."
+    },
+    {
+      "uq_class": "ambiguous",
+      "item": "NowGoal league number 89 vs static sclass",
+      "reason": "League page URL league/89 and the Eredivisie league/16-vs-s16 analogy suggest s89, but no static file (s89_en.json) was successfully fetched to confirm it.",
+      "next_action": "Confirm via the live page network requests (see access_blocked item) before using s89 in any static URL."
+    },
+    {
+      "uq_class": "permanent_rule",
+      "item": "Never label NowGoal Initial as opening, nor Live/results-table values as closing, without a source definition",
+      "reason": "NowGoal Initial is the data stream first capture, not a verified market opening (this corrects the Eredivisie batch label field_semantics=true_opening, which must not be inherited); Live is a current value, not a pre-kickoff close; BetExplorer rendered values carry no phase definition at all.",
+      "next_action": "Keep phase=unspecified with the source label preserved (Initial/Live/results-table value) until a source explicitly defines opening/closing for that value."
+    },
+    {
+      "uq_class": "permanent_rule",
+      "item": "Do not merge odds rows across sources by team-name similarity, and do not use the 2,506 previous rows as a denominator or expected count",
+      "reason": "Team labels differ across sources and ambiguous labels (e.g. Nacional) cannot prove identity; the 2,506 rows are source presentations, not unique fixtures.",
+      "next_action": "Keep odds rows source-separated; expected stays null unless an authoritative source publishes it."
+    }
+  ]
+}

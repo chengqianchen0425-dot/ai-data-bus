@@ -1,0 +1,121 @@
+{
+  "request_id": "req-20261022-001",
+  "expected": null,
+  "expected_note": "expected=null everywhere: no authoritative source in this task publishes expected fixture or odds-row counts; discovered counts are not denominators.",
+  "headline": {
+    "eligible_opening_rows": 0,
+    "eligible_closing_rows": 0,
+    "unspecified_phase_observed_rows": 5,
+    "bulk_source_rows": 0,
+    "total_fixture_odds_rows": 5,
+    "all_rows_status": "partial (phase undefined by source, and/or bookmaker unidentified, and/or no timestamp/hash)"
+  },
+  "by_season_bookmaker_phase": [
+    {
+      "season_year": 2024,
+      "source_id": "SRC-NOWGOAL-1X2",
+      "bookmaker": "Bet 365",
+      "market": "full_time_1x2",
+      "phase": "unspecified",
+      "phase_source_label": "Initial",
+      "rows": 1
+    },
+    {
+      "season_year": 2024,
+      "source_id": "SRC-NOWGOAL-1X2",
+      "bookmaker": "Bet 365",
+      "market": "full_time_1x2",
+      "phase": "unspecified",
+      "phase_source_label": "Live",
+      "rows": 1
+    },
+    {
+      "season_year": 2025,
+      "source_id": "SRC-BETEXPLORER",
+      "bookmaker": "Stake.com",
+      "market": "full_time_1x2",
+      "phase": "unspecified",
+      "phase_source_label": "Odds Comparison (1X2) rendered value",
+      "rows": 1
+    },
+    {
+      "season_year": 2025,
+      "source_id": "SRC-BETEXPLORER",
+      "bookmaker": null,
+      "market": "full_time_1x2",
+      "phase": "unspecified",
+      "phase_source_label": "Results table 1/X/2 value",
+      "rows": 1
+    },
+    {
+      "season_year": 2024,
+      "source_id": "SRC-BETEXPLORER",
+      "bookmaker": null,
+      "market": "full_time_1x2",
+      "phase": "unspecified",
+      "phase_source_label": "Results table 1/X/2 value",
+      "rows": 1
+    }
+  ],
+  "by_season": [
+    {
+      "season_year": 2018,
+      "expected": null,
+      "fixture_odds_rows": 0
+    },
+    {
+      "season_year": 2019,
+      "expected": null,
+      "fixture_odds_rows": 0
+    },
+    {
+      "season_year": 2020,
+      "expected": null,
+      "fixture_odds_rows": 0
+    },
+    {
+      "season_year": 2021,
+      "expected": null,
+      "fixture_odds_rows": 0
+    },
+    {
+      "season_year": 2022,
+      "expected": null,
+      "fixture_odds_rows": 0
+    },
+    {
+      "season_year": 2023,
+      "expected": null,
+      "fixture_odds_rows": 0
+    },
+    {
+      "season_year": 2024,
+      "expected": null,
+      "fixture_odds_rows": 3
+    },
+    {
+      "season_year": 2025,
+      "expected": null,
+      "fixture_odds_rows": 2
+    }
+  ],
+  "source_findings": {
+    "nowgoal_text_route": "unavailable in this VM environment: shell egress timed out even for example.com; browser text layer also failed on the previously verified Eredivisie schedule JSON. No Libertadores sclass was found in local files or search indexes; no URL was guessed.",
+    "nowgoal_live_browser": "League page league/89 found (2024 season page); example matchId 2661153 (Colo-Colo vs River Plate, Quarterfinals) with a 1x2 page listing 147 bookmakers, but only the Bet 365 Initial/Live values above were observed in the report. Static schedule JSON (s89_en.json) returned 404 on current nowgoal.net/nowgoal2.top domains (the old s16 path also 404s there, so 404 does not disprove 89); 1x2 JS host DNS failed; no game=Array structure was visible. Bulk static extraction remains unverified.",
+    "oddsportal_text_route": "parse_failed: competition and results pages render no fixture/odds rows in the text layer; odds are behind JS/hash-driven views.",
+    "oddsportal_live_browser": "unavailable as an odds source on the pages checked: 2025 results page rendered \"no matches can be displayed because there are no odds available from your selected bookmakers\"; the 2020 single-match page returned 404; the H2H page rendered an empty 1X2 table stating 0 bookmakers. No Opening/Closing label observed. Login was not attempted, so logged-in/bookmaker-selection variants are unverified.",
+    "betexplorer_text_route": "parse_failed: results and single-match pages render structure but 1/X/2 cells are empty in the text layer.",
+    "betexplorer_live_browser": "Season pages 2018-2025 located via on-site selector. Results tables render 1/X/2 values for 2025 and 2024 (3 example rows observed, 2 of them bookmaker-unidentified); knockout results seen for 2023/2022/2018 were empty; 2021/2020/2019 full results pages were not opened (overview finals only). Single-match pages: 2025 final renders Stake.com only; 2023 and 2005 sample single-match pages state no bookmaker offers odds. No Opening/Closing label on any page checked.",
+    "five_dollar_football_api": "blocked: verified Libertadores coverage (league id 3899038422, data-quality page) with explicitly defined opening/closing semantics for bet365 tick history, but historical queries and odds/history are Ultra-plan only; Free is top-5 leagues only, Pro is last 12 months only. No key was used and nothing was paid, so 0 rows were retrieved. Season labels on this source (e.g. 2025/26) do NOT correspond to Libertadores calendar-year editions and must be sliced by actual date windows, never by ?season=.",
+    "football_data_co_uk": "unavailable: the site data index lists only domestic leagues (Brazil Serie A, Argentina Primera Division) and contains zero hits for Libertadores/CONMEBOL; there is no Libertadores coverage to fetch. Its terms also restrict use against automated scraping/AI data products, so no CSV was downloaded.",
+    "other_bulk_sources": "unverified and not used: The Odds API (historical endpoint exists but needs a key; third-party claims of paywall/2020 limit are unverified), OddAlerts API (paid plan, customer-review claim only), Kaggle/GitHub bulk CSVs (none verifiable found), OpenFootball (schedule/results only, no odds). API-Football Pro quota was deliberately not touched; its retention period and opening/closing semantics for old fixtures are unverified."
+  },
+  "field_gaps": {
+    "opening_closing": "0 rows carry phase opening or closing: no source checked defines those phases for the values observed.",
+    "quote_timestamp": "null on all 5 rows: no source published a capture timestamp for these values.",
+    "source_sha256": "null on all 5 rows: browser-rendered pages do not yield stable source bytes; no hash was fabricated.",
+    "http_status": "null on all 5 rows: the live-browser checks did not record source HTTP statuses.",
+    "bookmaker": "null on 2 of 5 rows (BetExplorer results-table rows): the results table does not identify the bookmaker.",
+    "kickoff_timezone": "null on all 5 rows: no source labels a timezone (NowGoal displayed time 08:30 has no timezone label)."
+  }
+}
