@@ -1,0 +1,59 @@
+[
+  {
+    "id": "C-01",
+    "type": "time_conflict",
+    "fixture": "2020-02-05 Universitario pe vs Cerro Porteño py (second qualifying stage)",
+    "this_round": "17:15 (FBref text layer, page line L350)",
+    "previous_round": "19:15",
+    "evidence": "single text-layer occurrence this round; no second in-page occurrence found",
+    "resolution": "none - both preserved, status=conflict"
+  },
+  {
+    "id": "C-02",
+    "type": "time_conflict",
+    "fixture": "2020-09-16 Bolívar bo vs Palmeiras br (group stage)",
+    "this_round": "20:30 (FBref text layer, two in-page occurrences: All Rounds table L104 and group table L503, consistent)",
+    "previous_round": "21:30",
+    "evidence": "this round's reading has in-page double occurrence, but the two rounds still disagree, so no adjudication",
+    "resolution": "none - both preserved, status=conflict; final adjudication needs a fresh page re-open"
+  },
+  {
+    "id": "C-03",
+    "type": "date_conflict_inside_source",
+    "fixture": "Palmeiras vs Flamengo RJ, 2025 final (BetExplorer)",
+    "this_round_rendering": "single-match page top 30.11.2025 - 05:00; results page 30.11.2025",
+    "conflicting_value": "same single-match page Head-to-Head section 29.11.2025 (same fixture, same odds 3.55/3.00/2.42)",
+    "resolution": "none - match_date keeps 2025-11-30; 29.11.2025 preserved; no timezone label displayed on any checked page, no conversion applied"
+  },
+  {
+    "id": "C-04",
+    "type": "date_conflict_between_checks",
+    "fixture": "Atletico-MG vs Botafogo RJ, 2024 final (BetExplorer results table)",
+    "this_round_rendering": "01.12.2024",
+    "text_layer_this_round": "30.11.2024",
+    "resolution": "none - match_date keeps 2024-12-01; 30.11.2024 preserved; same +1-day pattern as C-03, timezone unconfirmed"
+  },
+  {
+    "id": "C-05",
+    "type": "date_conflict_reference_vs_page",
+    "fixture": "Colo-Colo vs River Plate, 2024 Quarterfinals (NowGoal 2661153)",
+    "task_reference": "2024-09-17",
+    "page_display": "18-09-2024 08:30 Wednesday (both rendering runs)",
+    "resolution": "none - match_date keeps 2024-09-18 as displayed; 2024-09-17 treated as another timezone's date, not converted"
+  },
+  {
+    "id": "C-06",
+    "type": "date_format_ambiguity",
+    "fixture": "Nacional vs River Plate, 2024 (SoccerPunter live-odds 19104674)",
+    "displayed": "08/05/2024 08:00 and H timestamps 06/05/2024-08/05/2024",
+    "readings": "DD/MM reading: 7 May 2024 kickoff window (matches task description 07/05/2024 17:00) vs MM/DD reading: 5 August 2024 (browser report)",
+    "resolution": "none - all SoccerPunter timestamps kept verbatim, match_date null, no ISO conversion, no kickoff instant claimed; pre-kickoff vs in-play separation of H ticks therefore not evidenced"
+  },
+  {
+    "id": "C-07",
+    "type": "bookmaker_attribution_uncertain",
+    "fixture": "Nacional vs River Plate, 2024 (SoccerPunter main table row 2)",
+    "displayed": "bet365-brand icon with a small suffix that could not be read clearly in the screenshot",
+    "resolution": "row kept with bookmaker as 'bet365-brand icon, suffix unclear (NOT definitively Bet365 SM)'; the chart legend lists Bet365 SM but legend order was NOT mapped onto main-table rows"
+  }
+]

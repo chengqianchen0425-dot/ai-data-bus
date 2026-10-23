@@ -1,0 +1,87 @@
+FBref 2022 Copa Libertadores 赛程表 · 浏览器文本层转录说明
+============================================================
+
+任务：req-20261023-001 A 路，仅 Copa Libertadores 2022 赛季，仅赛程清单。
+上一单文件只作核对清单，本文件每一行均来自本轮打开的页面文本。
+
+源 URL（source_url 与 final_url 均为此 URL）：
+https://fbref.com/en/comps/14/2022/schedule/2022-Copa-Libertadores-Scores-and-Fixtures
+
+打开方式与时间：
+- 仅用 browser.open 文本层读取该页，未用 curl（该站对本机 egress 返回
+  Cloudflare 挑战 403，字节下载已证实不可行）。
+- 本轮页面文本共 757 行，分 4 次读完（0-226、226-457、457-674、674-757）。
+- 打开/读取时间：2026-10-23 约 21:25（UTC+8）；JSONL 中 retrieved_at 统一记为
+  2026-10-23T21:25:20+08:00。
+- 文本层、无字节：source_sha256 一律 null，附注“浏览器文本层、无字节，
+  绝不编造哈希”。未编造任何哈希值。
+
+赛后字段处理（硬规则）：
+- 页面 Score 列整列丢弃；JSONL 中无 score/goals/result/winner 类字段。
+- Notes 列仅用于 leg 判定（明确写 Leg 1/2 时才填 first/second），Notes 中
+  的胜负/晋级表述一律不转录。
+- 时区：页内 Time 列未标注时区，source_timezone_text 一律 null，未推断。
+
+呈现行数与去重（按 (match_date, kickoff_local, home, away) 去重，round 取非空值）：
+- All Rounds 表：125 行（小组赛 96 + Round of 16 16 + Quarter-finals 8
+  + Semi-finals 4 + Final 1；半决赛第 1 场后有一次表头重复，不计入行数）
+- Qualifying stages 表：30 行（First 6 + Second 16 + Third 8）
+- Group stage 分表（仅 Wk 列、无 Round 列）：96 行
+- Knockout stage 分表：29 行（Round of 16 16 + Quarter-finals 8
+  + Semi-finals 4 + Final 1）
+- 呈现行数合计：280 行
+- 去重后唯一场次：155 场
+- 重复来源：小组赛 96 场在 All Rounds 表与 Group stage 分表各出现一次；
+  淘汰赛 29 场在 All Rounds 表与 Knockout stage 分表各出现一次；
+  资格赛 30 场仅在 Qualifying stages 表出现一次。
+
+按阶段唯一场次：
+- First qualifying stage：6
+- Second qualifying stage：16
+- Third qualifying stage：8
+- Group stage：96（Wk 1-6 各 16 场，official_round=1-6）
+- Round of 16：16
+- Quarter-finals：8
+- Semi-finals：4
+- Final：1
+- 合计：155
+
+截断行：
+- 截断唯一场次：8 行，均为 venue_or_stadium 以“...”结尾的页内原文截断，
+  照抄未补全，venue_truncated=true、status=partial：
+  - Colón 主场 “Estadio Brigadier General Estanislao Lóp...”：4 场
+    （2022-04-05 vs Peñarol；2022-05-04 vs Cerro Porteño；
+     2022-05-18 vs Olimpia；2022-07-06 vs Talleres–C）
+  - River Plate 主场 “Estadio Monumental Antonio Vespucio Libe...”：4 场
+    （2022-04-13 vs Fortaleza；2022-05-19 vs Colo-Colo；
+     2022-05-25 vs Alianza Lima；2022-07-06 vs Vélez Sarsfield）
+- 其余 147 场 status=complete。
+
+leg 字段：
+- 资格赛 30 场、Round of 16 16 场、Quarter-finals 8 场、Semi-finals 4 场
+  均按 Notes 的 Leg 1/2 填 first/second，共 58 场带 leg。
+- 小组赛 96 场 leg=null；单场决赛（2022-10-29）leg=null（不从无 Leg 标注
+  推断单场属性）。
+
+固定空值字段（按任务规定）：
+- city=null、country=null、group_id=null、tie_id=null、
+  source_fixture_id=null（FBref 赛程表无稳定对阵 ID）。
+- 小组赛以外 official_round=null；source_id=SRC-FBREF-TEXTLAYER。
+- field_locator：schedule table columns Round|Wk|Day|Date|Time|Home|Away|Venue|Notes
+  （Score column dropped）。
+
+与上一单核对差异：
+- 核对对象（仅作清单）：~/workspace/ai-inbox/work-req-20261021-001/parts/fbref_2022.jsonl
+  （呈现行 280 行，去重后唯一场次 155 场）。
+- 本轮去重后唯一场次（match_date, kickoff_local, home, away）与上一单
+  唯一场次集合完全一致：本轮独有 0 场，上一单独有 0 场，球场原文全部一致。
+- 唯一非实质差异：上一单文件的小组赛行 round 记为 null（因其取自无 Round 列
+  的 Group stage 分表），本轮按 All Rounds 表补正为 official_stage=Group stage；
+  行数不一致时以本轮页面为准——本轮呈现 280 行、唯一 155 场，与上一单一致，
+  无需修正。
+- expected 一律 null；约 155 场的预期仅作核对参考，本轮实测即 155 场。
+
+交付文件：
+- ~/workspace/ai-inbox/work-req-20261023-001/fbref_2022_textlayer.jsonl（155 行）
+- 本说明：~/workspace/ai-inbox/work-req-20261023-001/fixture_evidence/fbref_2022_textlayer_note.txt
+- 未写 repo/responses/，那是主代理的事。

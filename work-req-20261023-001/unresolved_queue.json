@@ -1,0 +1,101 @@
+[
+  {
+    "id": "UQ-01",
+    "category": "access_blocked",
+    "item": "FBref 2025 season schedule page: text-layer open failed 2026-10-23 21:24-21:25 CST ('URL was not found', source_fetch stage, no source HTTP status). This round's file is empty to mean 'blocked', not '0 fixtures'.",
+    "retry_after": null,
+    "retry_note": "Re-check by live browser on the next round; do not copy the previous round's 2025 rows (155 unique) as this round's delivery."
+  },
+  {
+    "id": "UQ-02",
+    "category": "access_blocked",
+    "item": "FBref page bytes for all 8 seasons: curl returns Cloudflare challenge (HTTP 403, Cf-Mitigated: challenge) or empty reply (HTTP 000). All 1,086 FBref fixture rows therefore lack source_sha256.",
+    "retry_after": null,
+    "retry_note": "Re-attempt byte download only when the channel is confirmed recovered; challenge-page hashes must never be used as row hashes."
+  },
+  {
+    "id": "UQ-03",
+    "category": "source_missing",
+    "item": "CONMEBOL official PROGRAMA PDFs: 60 of 64 season x stage combinations not covered (only 2022 Fase 1/2/3 and 2024 Cuartos found). No other official pre-match document set was located.",
+    "retry_after": null
+  },
+  {
+    "id": "UQ-04",
+    "category": "access_blocked",
+    "item": "5DollarFootballAPI historical odds/tick history (league 3899038422): Ultra-tier only per previous round's documentation check; this round did not re-verify the Ultra gate (marked unverified in C audit). Purchase is forbidden by this request, so this path is not fillable under the current rule.",
+    "retry_after": null,
+    "note": "Filling this requires a purchase decision by the requester; it is not a next-round automatic retry."
+  },
+  {
+    "id": "UQ-05",
+    "category": "access_blocked",
+    "item": "SoccerPunter full bookmaker list: page states 'Login or register to see all bookmakers!' - 10 bookmakers visible without login, the rest login-gated. Login was not tested (forbidden by this request's no-credential rule).",
+    "retry_after": null
+  },
+  {
+    "id": "UQ-06",
+    "category": "pending_work",
+    "item": "FBref 2025 re-read via live browser (to replace the blocked text-layer attempt in UQ-01)."
+  },
+  {
+    "id": "UQ-07",
+    "category": "pending_work",
+    "item": "Fresh page re-open to adjudicate the two 2020 time conflicts C-01/C-02."
+  },
+  {
+    "id": "UQ-08",
+    "category": "pending_work",
+    "item": "SoccerPunter H-popup histories for fixtures beyond the single Nacional vs River Plate 2024 page checked this round, and main-table extraction for other 2018-2025 fixtures (one fixture only this round)."
+  },
+  {
+    "id": "UQ-09",
+    "category": "pending_work",
+    "item": "BetExplorer 2021/2020/2019 full results pages (carried from the previous round's pending list; not re-checked this round)."
+  },
+  {
+    "id": "UQ-10",
+    "category": "pending_work",
+    "item": "NowGoal 2661153 remaining 146 bookmakers (only Bet 365 extracted in both rendering runs; the page lists 147)."
+  },
+  {
+    "id": "UQ-11",
+    "category": "pending_work",
+    "item": "OpenFootball south-america copa-libertadores directory (public CC0, confirmed to exist by C route): per-season file coverage by year unverified; candidate auditable fixture source, not yet used as rows."
+  },
+  {
+    "id": "UQ-12",
+    "category": "pending_work",
+    "item": "SoccerPunter H-button full-history gate: whether the full history (beyond the 40-row 188Bet popup) requires login/Premium - not tested this round."
+  },
+  {
+    "id": "UQ-13",
+    "category": "source_missing",
+    "item": "API-Football 2018-2025 odds: CLOSED as unavailable - official docs verify only the last 7 days of odds are retained, by design. Not a pending item; do not re-dispatch."
+  },
+  {
+    "id": "UQ-14",
+    "category": "permanent_rule",
+    "item": "Scores, results, outcomes, Qimen, prediction, Review and Gold fields: forbidden by the request, permanently left out even where pages display them."
+  },
+  {
+    "id": "UQ-15",
+    "category": "permanent_rule",
+    "item": "Opening/closing labels: forbidden to infer from page order, Initial/Live labels, results-table position, or earliest/latest tick. Only a source's explicit endpoint definition or timestamped ticks that establish endpoints may create an opening/closing row; none was found, hence 0 eligible rows."
+  },
+  {
+    "id": "UQ-16",
+    "category": "permanent_rule",
+    "item": "Bookmaker inference: forbidden to assign results-table values to a bookmaker, to assign SoccerPunter ticks via the generic 'My Bookmakers' list, or to map the chart legend order onto main-table rows. Affected rows keep bookmaker null or an explicit uncertainty note."
+  },
+  {
+    "id": "UQ-17",
+    "category": "ambiguous",
+    "item": "NowGoal static JS files (s89 / 1x2 JS domains): previous round retry_after=2026-10-29, not yet reached; not re-attempted this round. Do not attempt before 2026-10-29.",
+    "retry_after": "2026-10-29"
+  },
+  {
+    "id": "UQ-18",
+    "category": "ambiguous",
+    "item": "SoccerPunter date format (DD/MM vs MM/DD) and the Nacional vs River Plate kickoff instant: unresolved (see C-06); blocks any pre-kickoff/in-play split of its tick history."
+  }
+]

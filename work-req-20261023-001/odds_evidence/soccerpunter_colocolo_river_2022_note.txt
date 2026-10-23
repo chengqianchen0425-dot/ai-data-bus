@@ -1,0 +1,15 @@
+NEW-SOURCE EVIDENCE NOTE (text layer, not raw HTML)
+Source URL: https://www.soccerpunter.com/live-odds/18513320/Colo-Colo-vs-River-Plate
+Fetched: 2026-10-23 via browser.open text layer (tool page id 1183182754780143403)
+HTTP status: NOT exposed by the text-fetch tool; recorded as null, not assumed 200.
+Redaction note: score lines that appeared in the fetched text were REMOVED from this note per the task rule.
+
+IMPORTANT - DIFFERENT FIXTURE, DO NOT CONFUSE:
+- This SoccerPunter page is headed "Competition: Copa Libertadores 2022", venue Estadio Monumental David Arellano (Santiago de Chile), with NO date and NO kickoff time in the text layer.
+- It is therefore NOT the 2024 Quarterfinals Colo-Colo vs River Plate fixture (NowGoal matchId 2661153) from the prior delivery. No odds from this page may be attached to the 2024 fixture.
+- No 1X2 tick table appears in this page's text layer at all (only the "My Bookmakers" Premium list: Bet365, Winner, Vulcanbet, Singapore Pools, etc.). The page text does contain the general movement description ("consists of the opening odds and the daily fluctuation"), which is not a per-row opening/closing definition.
+
+Additional SoccerPunter search evidence (2026-10-23, search-index snippets only, not page opens):
+- Copa Libertadores 2025 movement pages exist (e.g. River Plate vs Independiente del Valle; Fortaleza vs Velez Sarsfield), but their search snippets show NO tick table, only the "My Bookmakers" list. Tick-table presence therefore varies by match and cannot be assumed.
+- A 2026 Junior FC vs Palmeiras movement page exists but is OUT OF SCOPE (2026 excluded) and was not used.
+- Older in-scope-adjacent examples (2017 Estudiantes vs Barcelona Guayaquil) show the same tick-table pattern with timestamps and a blank bookmaker cell in the snippet, confirming the bookmaker-attribution problem is structural in the text layer, not specific to one match.

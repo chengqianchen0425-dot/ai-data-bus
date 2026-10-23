@@ -1,0 +1,17 @@
+RE-VERIFICATION EVIDENCE DUMP (text layer, not raw HTML)
+Source URL: https://www.nowgoal.net/1x2-odds/2661153
+Fetched: 2026-10-23 via browser.open text layer (tool page id 4717202102158745874)
+HTTP status: NOT exposed by the text-fetch tool; recorded as null, not assumed 200.
+Redaction note: no score/result lines appeared in this page's text layer, so nothing was removed here.
+
+Page title: "Colo Colo VS River Plate 1x2 Odds, Kelly Criterion, Live Win Rate - Nowgoal Livescore"
+Body (verbatim, lines as returned):
+- "Hide Select Live Filter [Restore Defaults]"
+- Table header: Bookmakers | HW | D | AW | HWR% | DR% | AWR% | Return% | Kelly Criterion | Last Updated | Stats
+- (No bookmaker rows present in the text layer; the table body is empty.)
+- Summary rows present but empty: "The highest initial odds", "The highest odds", "The lowest initial odds", "The lowest odds", "The average initial odds", "Average odds" (all value cells blank in the text layer)
+- Notes section: definitions of Home Win Rate / Draw Rate / Away Win Rate, Rate of Return, Kelly Criterion, and Help text (clicking odds displays full odds trends). No definition of Initial as a market opening price, and no use of the word Closing, appears in this text.
+
+What this dump proves / does not prove:
+- PROVES: the page exists, is titled for Colo Colo vs River Plate 1x2 odds, and has a bookmaker odds table structure with Initial/Live filters and summary rows.
+- DOES NOT PROVE: any bookmaker row or any 1/X/2 value. The prior Bet 365 Initial 3.00/3.10/2.50 and Live 3.30/3.00/2.40 values do NOT appear in this dump.

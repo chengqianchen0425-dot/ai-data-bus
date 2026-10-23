@@ -1,0 +1,26 @@
+CONMEBOL PROGRAMA PDF transcription notes (byte-verified, 2026-10-23)
+- Transcription source: pdftotext -layout of the three downloaded PDFs above.
+  The -raw extraction wraps 2024 team labels across lines (e.g. 'Flamengo11'
+  on one line, 'BRA' on the next, and standalone seed digits '4'/'2'/'5'/'14'
+  on separate lines); layout lines keep each fixture on one line, so layout
+  was used for fields, with -raw token streams used ONLY to re-attach seed
+  numbers for 2024 rows #144/#146/#149, where layout drops them to a separate
+  line. Seed numbers are kept verbatim in team labels (e.g. Flamengo11 BRA);
+  their meaning is not interpreted.
+- A-definir correction (column-position evidence, Fase 1/2 PDF header columns
+  Ciudad=28, Pais=39, Estadio=68, Hora Local=98, GMT=114):
+  #9:  Ciudad='A definir', Pais=blank, Estadio='A definir', Hora Local=18:15.
+  #11/#14: Ciudad='A definir', Pais=blank, Estadio='A definir',
+  Hora Local='A definir' (recorded as kickoff_local=null + source text).
+  The previous round read these as city/country='A definir', venue=null
+  (and for #11/#14, venue='A definir' too); the column positions show Pais
+  is blank in all three rows and Estadio is 'A definir' in all three rows.
+- kickoff_utc is the GMT column time-of-day string only; no UTC date is
+  published, so it must not be combined with match_date.
+- 2022 Fase 1/2 PDF footer note (verbatim): club-indicated stadiums are
+  pending final CONMEBOL confirmation.
+- Document versions: 2022 Fase 1/2 'Versión de 28/01/2022' (PDF CreationDate
+  2022-01-28); 2022 Fase 3 'Versión de 04/03/2022' (CreationDate 2022-03-04);
+  2024 Cuartos header date 26/8/2024 (CreationDate 2024-08-26; the PDF has no
+  'Versión de' wording). All three version dates precede every kickoff in
+  their phase.

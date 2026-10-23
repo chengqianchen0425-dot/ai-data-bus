@@ -1,0 +1,31 @@
+NEW-SOURCE EVIDENCE DUMP (text layer, not raw HTML)
+Source URL: https://www.soccerpunter.com/live-odds/19104674/Nacional-vs-River-Plate
+Fetched: 2026-10-23 via browser.open text layer (tool page id 4248508200643272892)
+HTTP status: NOT exposed by the text-fetch tool; recorded as null, not assumed 200.
+Redaction note: half-time/full-time score lines that appeared in the fetched text were REMOVED from this dump per the task rule (no scores/results in deliverables). Only fixture identity and the 1X2 tick table are retained.
+
+Retained verbatim content:
+- Competition: Copa Libertadores 2024
+- Date: 07/05/2024, Day: Tuesday, Kick Off: 17:00
+- Venue: Estadio Gran Parque Central (Montevideo)
+- Sections: Pre-Match, In-Play; markets listed include 1X2, Asian Handicap, Over/Under, HT/FT, Double Chance, Odd/Even, Total, Score, Both to Score, First to Score, Last to Score, DNB, HT 1X2
+- 1X2 tick table header: Bookmaker | (H) | 1 | X | 2 | Updated
+- Tick rows (Bookmaker cell BLANK in the text layer for every row; values are in American odds format, not decimal):
+  H | 240 (-0.20 / -5.56%) | 275 (+0.25 / +7.14%) | 104 (+0.05 / +2.50%) | 07/05/2024 17:00
+  H | 250 (-0.10 / -2.78%) | 275 (+0.25 / +7.14%) | 100 (0.00) | 07/05/2024 16:34
+  H | 254 (-0.10 / -2.74%) | 265 (+0.20 / +5.80%) | 104 (+0.05 / +2.50%) | 07/05/2024 16:44
+  H | 204 (-0.15 / -4.69%) | 250 (+0.15 / +4.48%) | 104 (-0.01 / -0.49%) | 07/05/2024 16:33
+  H | 240 (0.00) | 229 (+0.05 / +1.54%) | -109 (0.00) | 07/05/2024 16:32
+  H | 277 (+0.18 / +5.01%) | 258 (+0.25 / +7.51%) | 102 (-0.02 / -0.98%) | 07/05/2024 16:45
+  H | 280 (+0.30 / +8.57%) | 250 (+0.10 / +2.94%) | -125 (-0.11 / -5.76%) | 07/05/2024 15:40
+  H | 260 (+0.30 / +9.09%) | 260 (+0.40 / +12.50%) | -125 (-0.17 / -8.63%) | 07/05/2024 16:50
+  H | 260 (0.00) | 250 (+0.10 / +2.94%) | -102 (0.00) | 07/05/2024 16:32
+  H | 250 (-0.20 / -5.41%) | 229 (-0.10 / -2.94%) | -109 (-0.04 / -2.05%) | 07/05/2024 16:53
+- "My Bookmakers" list on the page (NOT row attribution): Bet365 Premium, Bet365 SM Premium, 10Bet Premium, 188Bet Premium, Ladbrokes Premium, Pinnacle Sports Premium, William Hill Premium, Winner Premium, Vulcanbet Premium, Singapore Pools Premium, bwin Premium, Betfair Premium.
+- Site text (general description, not a per-row definition): the movement "consists of the opening odds and the daily fluctuation"; "There will be Live In-Play betting odds once the match kick off."
+
+Why no rows were emitted from this page:
+- The Bookmaker cell is blank for all 10 tick rows in the text layer, so no tick can be attributed to a bookmaker without guessing. The "My Bookmakers" Premium list is a site-wide list, not row attribution, and must not be used to assign rows.
+- Multiple distinct rows share the same timestamp (two different rows at 16:32), which indicates the rows are per-bookmaker snapshots rather than one bookmaker's time series. Without labels, earliest/latest ticks per bookmaker cannot be established, so opening/closing cannot be derived from timestamps alone.
+- Values are in American format; converting them to decimal would be deterministic arithmetic, but conversion without a bookmaker still yields unattributable rows, so no conversion was performed and no rows were emitted.
+- No login, payment, or key was used. Whether bookmaker names render as images/icons in a live browser, or require Premium membership, was not tested in this route and is left for the parent's live-browser check.

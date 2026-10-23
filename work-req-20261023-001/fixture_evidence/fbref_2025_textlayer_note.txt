@@ -1,0 +1,52 @@
+FBref Copa Libertadores 2025 赛程文本层转录 — 证据说明（本轮未完成，未产出有效行）
+================================================================
+
+任务：req-20261023-001 A 路，仅 Copa Libertadores 2025 赛季，FBref 赛程表文本层转录。
+目标 URL（任务给定，已验证、上一单用过）：
+  https://fbref.com/en/comps/14/2025/schedule/2025-Copa-Libertadores-Scores-and-Fixtures
+
+本轮实际打开尝试（UTC+8）：
+  尝试时间：2026-10-23 约 21:24-21:25 CST（UTC 13:24-13:25）
+  工具：browser.open（文本层，唯一被任务允许的读取方式）
+  结果：失败，未返回任何页面文本。
+  错误原文：browser.open failed: The requested URL was not found
+    failure_stage=source_fetch, kind=upstream_fetch_failed,
+    message="browser_open source fetch failed without a source HTTP status"
+  收到该失败后按指令未重试同一请求，也未改用 curl、未改用其他端点绕过。
+
+因此本轮数据：
+  呈现行数：未知（0 行可验证文本，无法计数）
+  唯一场次数：未知 / 未产出（不得以预期约 155 场充数）
+  按阶段行数：未知
+  截断行数：未知
+  retrieved_at：无有效页面打开时间；仅有失败尝试时间 2026-10-23 21:24-21:25 CST
+  source_sha256：null（浏览器文本层、无字节；本轮连文本层都未取得，更绝不编造哈希）
+  source_id：SRC-FBREF-TEXTLAYER（本轮无任何行实际使用该来源）
+
+伴生文件说明：
+  ~/workspace/ai-inbox/work-req-20261023-001/fbref_2025_textlayer.jsonl
+  已创建为空文件（0 行），表示“本轮阻塞、未转录”，不是“2025 赛季 0 场比赛”。
+  绝不把上一单文件复制为本轮交付。
+
+上一单核对清单（仅作核对参考，未用作本轮证据，未复制任何行）：
+  位置：~/workspace/ai-inbox/work-req-20261021-001/parts/fbref_2025.jsonl
+  该文件共 280 行，retrieved_at 为 2026-10-21T22:03:41+08:00，
+  source_url 与本任务 URL 相同，Score 列已在该文件说明中声明丢弃。
+  与本轮差异：无法比较——本轮 0 行可验证文本，行数/阶段/截断差异全部未知，
+  不能以 280 行或约 155 场唯一场次反推本轮结果。
+  注意：该上一单文件行数 280 与任务所述“唯一场次预期约 155 场”不一致，
+  差额可能源于 All Rounds 表与阶段分表重复呈现未去重，但本轮未取得页面，
+  无法核实去重前/去重后数字，此处仅记录疑问，不下结论。
+
+硬规则遵守情况：
+  - 未返回任何比分、赛果、晋级、预测字段（本轮无任何行）。
+  - 未使用 curl（任务明确禁止；且该站对本机 egress 已证实 Cloudflare 挑战 403，
+    见同目录 curl_probe_log.json 中 fbref_2025 一项：403、Cloudflare "Just a moment..."）。
+  - 未推断时区、城市、国家、group_id、tie_id、source_fixture_id。
+  - 未从上一单复制 home/away、日期、时刻、球场等任何字段。
+
+需要主代理 / 有真浏览器能力的上级处理（子代理无真浏览器能力）：
+  请由具备 live browser 能力的父级重新打开上述 URL 并做文本层转录，
+  或确认该页在本轮是否暂时不可达后再派单。
+  本子代理任务在此状态下无法闭环：呈现行数、唯一场次数、按阶段行数、
+  截断行数、与上一单的差异均未取得，报告中一律写“未知”，不估算。

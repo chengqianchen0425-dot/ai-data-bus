@@ -1,0 +1,98 @@
+FBref Copa Libertadores 2018 赛程文本层转录 — 证据说明（req-20261023-001 A 路）
+================================================================
+
+任务范围：仅 Copa Libertadores 2018 赛季，只做赛程清单。
+本文件对应的交付文件：
+  ~/workspace/ai-inbox/work-req-20261023-001/fbref_2018_textlayer.jsonl
+  （156 行，每行一个唯一场次；本说明文件与之同目录下的 fixture_evidence/）
+
+源 URL（任务给定，已验证、上一单用过）：
+  https://fbref.com/en/comps/14/2018/schedule/2018-Copa-Libertadores-Scores-and-Fixtures
+  source_url 与 final_url 均为上面 URL。
+
+打开时间与读取方式：
+  打开时间（UTC+8）：2026-10-23 约 21:24–21:25 CST；
+    JSONL 内 retrieved_at 统一记为 2026-10-23T21:25:43+08:00（生成时系统时钟）。
+  工具：仅 browser.open 文本层，分 4 次读完该页全文（共 787 行文本行）。
+  未用 curl：任务明确该站对本机 egress 返回 Cloudflare 挑战 403，
+    字节下载已证实不可行，本轮未尝试 curl。
+  无字节、无下载文件，因此 source_sha256 一律为 null，
+    绝不编造哈希。附注：浏览器文本层、无字节。
+
+赛后字段处理：
+  页面 Score 列整列丢弃。JSONL 内不含 score / goals / result / winner 类字段，
+    不返回比分、赛果、晋级、预测等赛后字段。
+  仅在 Notes 明确写 Leg 1 of 2 / Leg 2 of 2 时填 leg=first/second；
+    小组赛 leg 一律 null。
+  Time 列原文时刻照抄为 kickoff_local；页内未标注时区，
+    source_timezone_text 一律为 null，绝不推断。
+  Venue 列原文照抄；以 ... 结尾的截断照抄，不补全，
+    并标 venue_truncated=true，该行 status=partial。
+  city=null、country=null、group_id=null、tie_id=null、
+    source_fixture_id=null（FBref 赛程表无稳定对阵 ID）。
+  主客队标签照抄 FBref 文本原文，含国家小码
+    （主场为“队名 + 小码”形式，如 Monagas ve；
+     客场为“小码 + 队名”形式，如 py Cerro Porteño）。
+
+呈现行数与去重（源内去重）：
+  页内同一场比赛在 All Rounds 表与阶段分表中各出现一次，
+    按 (match_date, kickoff_local, home, away) 去重为唯一场次，
+    round 取非空值（小组赛分表的 Wk 与 All Rounds 表的 Round 互补）。
+  呈现行数（去重前）：282 行，构成如下——
+    All Rounds 表：126 行
+      （Group stage 96 + Round of 16 16 + Quarter-finals 8
+       + Semi-finals 4 + Finals 2）
+    Qualifying stages 分表：30 行
+      （First qualifying stage 6 + Second qualifying stage 16
+       + Third qualifying stage 8）
+    Group stage 分表：96 行（Wk 1–6 各 16 行）
+    Knockout stage 分表：30 行
+      （Round of 16 16 + Quarter-finals 8 + Semi-finals 4 + Finals 2）
+    合计：126 + 30 + 96 + 30 = 282 行。
+  去重后唯一场次数：156 场。
+  按阶段行数（去重后）：
+    First qualifying stage：6
+    Second qualifying stage：16
+    Third qualifying stage：8
+    Group stage：96（Wk 1–6 各 16；official_round=1–6，其余阶段为 null）
+    Round of 16：16
+    Quarter-finals：8
+    Semi-finals：4
+    Finals：2
+    合计：6 + 16 + 8 + 96 + 16 + 8 + 4 + 2 = 156 场。
+  决赛说明：2018 决赛 Round 原文为 Finals（不是 Final），本交付照抄
+    official_stage=Finals，并在此注明；两回合按 Notes 分两行，
+    2018-11-11 leg=first、2018-12-09 leg=second。
+
+截断行数：
+  去重前截断呈现：24 行。
+  去重后截断唯一场次：13 行，status=partial；
+    其余 143 行 status=complete。
+  截断球场（照抄原文，含 ...）：
+    Estadio Monumental Presidente José Fierr...（Atlé Tucumán 主场）
+    Estadio Monumental Antonio Vespucio Libe...（River Plate 主场）
+    Estadio Municipal Alcaldesa Ester Roa Re...（U Concepción 主场）
+    Estadio General Rumiñahui del Valle de L...（Independiente ec 主场）
+
+与上一单核对差异：
+  上一单核对清单位置（仅作核对清单，未当作本行证据，未复制任何行）：
+    ~/workspace/ai-inbox/work-req-20261021-001/parts/fbref_2018.jsonl
+  上一单计数：呈现 282 行；按 (date, time, home, away) 去重 156 场；
+    截断唯一 13 行。
+  本轮差异：呈现行数、唯一场次数、按阶段行数、截断唯一行数
+    全部与上一单计数一致，无行数差异。
+    本轮每一行均来自本轮打开的该页文本（787 行），行数不一致时
+    以本轮页面为准——本轮未出现不一致。
+  字段口径差异（非行数差异）：
+    本交付按本任务字段名输出（season_year / match_date / kickoff_local /
+    official_stage / official_round / venue_or_stadium 等），
+    Score 列已丢弃；上一单分表行 round 缺失的，本交付按去重规则
+    取 All Rounds 表非空 Round 值补齐 official_stage。
+  expected 一律为 null；约 156 场仅为核对参考，不是 expected。
+
+其他说明：
+  source_id：SRC-FBREF-TEXTLAYER。
+  field_locator：各行记 schedule table 列名
+    （All Rounds 表 / Qualifying stages 表 / Group stage 表 /
+     Knockout stage 表的列名，见 JSONL 内各行）。
+  未写 repo/responses/，那是主代理的事。

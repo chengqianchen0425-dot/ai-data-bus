@@ -1,0 +1,52 @@
+FBref 2019 Copa Libertadores 赛程表 · 浏览器文本层转录说明
+任务：req-20261023-001 A 路，仅 Copa Libertadores 2019 赛季，不碰其他赛季。
+
+URL（source_url 与 final_url 均为此地址）：
+https://fbref.com/en/comps/14/2019/schedule/2019-Copa-Libertadores-Scores-and-Fixtures
+
+读取方式与时间：
+- 仅用 browser.open 文本层读取该页，未用 curl（该站对本机 egress 返回 Cloudflare 挑战 403，字节下载已证实不可行）。
+- 页面于 2026-10-23 21:25（UTC+8）首次打开，分段续读全部 800 行文本，最后一页读完约 21:26；JSONL 中 retrieved_at 取 2026-10-23T21:26:14+08:00（本次读取会话内时间）。
+- 无字节下载，因此 source_sha256 一律为 null，并附注“浏览器文本层、无字节，绝不编造哈希”；JSONL 中 source_sha256_note 字段即此附注。
+- 页内 Time 列未标注时区，source_timezone_text 一律为 null，未作任何时区推断；kickoff_local 照抄 Time 列原文（含括号内第二时刻，如“19:15 (15:15)”）。
+
+赛程清单范围（只含赛程字段，Score 列整列丢弃）：
+- 每行字段：season_year、home、away、match_date、kickoff_local、source_timezone_text、official_stage、official_round、venue_or_stadium、venue_truncated、city、country、group_id、tie_id、source_fixture_id、leg、source_url、final_url、retrieved_at、field_locator、source_sha256、source_sha256_note、status、source_id=SRC-FBREF-TEXTLAYER。
+- home/away 照抄 FBref 文本的源标签原文，含国家小码，且保留页内不对称写法（主队小码在队名后，如“Melgar pe”；客队小码在队名 前，如“ar CA San Lorenzo”），未作归一化。
+- city、country、group_id、tie_id、source_fixture_id 一律为 null（赛程表无稳定对阵 ID、无城市/国家列、无小组字母列）。
+- field_locator：schedule table columns Round|Wk|Day|Date|Time|Home|Away|Venue|Notes。
+- official_stage 照抄 Round 列原文；official_round 仅小组赛取 Wk 值 1–6，其余为 null。
+- leg 仅当 Notes 明确写 Leg 1/2 时填 first/second；小组赛与单场决赛 leg 为 null（决赛不从无 Leg 标注推断单场属性）。
+- venue 以“...”结尾的截断照抄原文并标 venue_truncated=true、status=partial，不补全；其余 status=complete。
+
+呈现行数与去重（按 (match_date, kickoff_local, home, away) 去重，round 取非空值）：
+- All Rounds 表：125 行（Group stage 96 + Round of 16 16 + Quarter-finals 8 + Semi-finals 4 + Final 1）。
+- Qualifying stages 表：30 行（First qualifying stage 6 + Second qualifying stage 16 + Third qualifying stage 8）。
+- Group stage 分表（仅 Wk 列，无 Round 列）：96 行，全部为 All Rounds 小组赛的重复呈现。
+- Knockout stage 分表：29 行（Round of 16 16 + Quarter-finals 8 + Semi-finals 4 + Final 1），全部为 All Rounds 淘汰赛的重复呈现。
+- 呈现行数合计：280 行；去重后唯一场次：155 场；去除重复呈现：125 行。
+- All Rounds 表中 Semi-finals 处出现一次表头重复行（文本层分页痕迹），不是比赛行，未计入行数。
+
+按阶段唯一场次：
+- First qualifying stage：6
+- Second qualifying stage：16
+- Third qualifying stage：8
+- Group stage：96（Wk 1–6 各 16）
+- Round of 16：16（Leg 1 计 8，Leg 2 计 8）
+- Quarter-finals：8（Leg 1 计 4，Leg 2 计 4）
+- Semi-finals：4（Leg 1 计 2，Leg 2 计 2）
+- Final：1（leg null）
+- 合计：155；leg first 计 29、second 计 29、null 计 97（小组赛 96 + 决赛 1）。
+
+截断行数：
+- 唯一场次中 venue_truncated=true 计 14 行，status 均为 partial；其余 141 行 status 为 complete。
+- 截断球场原文共 4 种：Estadio de la Universidad Nacional San A...（4 场）、Estadio Municipal Alcaldesa Ester Roa Re...（3 场）、Estadio Monumental Antonio Vespucio Libe...（6 场）、Estádio Municipal de Figueira de Castelo...（1 场）。
+- 文本层渲染小注：All Rounds 表中 2019-05-08 Grêmio 主场一行曾出现一次字符乱码（Arena do Gr…），同场比赛在 Group stage 分表中渲染为正常“Arena do Grêmio”，本文件采用正常渲染文本；不影响场次认定。
+
+与上一单核对差异：
+- 上一单核对文件：~/workspace/ai-inbox/work-req-20261021-001/parts/fbref_2019.jsonl，共 280 行（即本轮呈现行数，未去重），仅作核对清单，未当作本轮行的证据；本轮每一行均来自本轮打开的该页文本。
+- 归一化比对（match_date + 主客队源标签 + venue + Time 列首个时刻）：本轮 155 场唯一场次与上一单 155 个归一化唯一键完全一致，零新增、零缺失、零不一致。
+- 唯一方法差异（非内容差异）：上一单 time 字段仅保留 Time 列首个时刻；本轮 kickoff_local 保留 Time 列完整原文（含括号内第二时刻），更贴近页内原文。
+- 行数不一致时以本轮页面为准：本轮未发现不一致，上述结论即以本轮页面为准。
+
+本文件与 fbref_2019_textlayer.jsonl 配套；未写 repo/responses/，那是主代理的事。

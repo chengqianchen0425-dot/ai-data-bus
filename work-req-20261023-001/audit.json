@@ -1,0 +1,150 @@
+{
+  "request_id": "req-20261023-001",
+  "request_sha": "aff3630cf236a768",
+  "request_sha_full": "aff3630cf236a76803a0584b4f762da834f77f8d485cfa47a88b28d8709a54fa",
+  "request_sha_method": "sha256 of requests/req-20261023-001.json file bytes; request_sha is first 16 hex chars, request_sha_full is the complete digest. Both supplied because the previous delivery's request_sha was reported malformed/mismatched; the previous receipt's 16-char value did match its request file's sha256 prefix on re-check, so the mismatch, if any, lies in the checker's input serialization - the full digest here lets either check pass.",
+  "method_note": "No expected totals were invented. Fixture counts are per-source counts (sources kept separate, never merged by team names); odds counts are per source x season x bookmaker x phase. Scores, results, outcomes, Qimen, prediction, Review and Gold fields were excluded throughout. No purchase, no login, no credential, no paid-quota use.",
+  "fixture_inventory": {
+    "file": "fixture_inventory.jsonl",
+    "total_rows": 1124,
+    "by_source": {
+      "SRC-CONMEBOL-PROGRAMA (byte-downloaded PDF)": 38,
+      "SRC-FBREF-TEXTLAYER (browser text layer, no bytes)": 1086
+    },
+    "by_status": {
+      "complete": 1062,
+      "partial": 60,
+      "conflict": 2,
+      "unmatched": 0,
+      "ambiguous": 0
+    },
+    "by_season_source": {
+      "2018": 156,
+      "2019": 155,
+      "2020": 155,
+      "2021": 155,
+      "2022": 185,
+      "2023": 155,
+      "2024": 163,
+      "2025": 0
+    },
+    "by_season_source_detail": {
+      "2018": "FBref 156",
+      "2019": "FBref 155",
+      "2020": "FBref 155",
+      "2021": "FBref 155",
+      "2022": "FBref 155 + CONMEBOL 30",
+      "2023": "FBref 155",
+      "2024": "FBref 155 + CONMEBOL 8",
+      "2025": "0 - this round blocked (see unresolved queue); previous round's 2025 FBref unique count was 155, NOT copied this round"
+    },
+    "byte_hash_coverage": {
+      "all_rows": "38/1124 = 3.38%",
+      "conmebol_subset": "38/38 = 100%",
+      "fbref_subset": "0/1086 = 0% (Cloudflare challenge on curl: HTTP 403 / 000; structural, not an omission)"
+    },
+    "timezone_coverage": "0/1124 rows carry a source timezone name/offset (no source published one); kickoff_utc is null on all rows except CONMEBOL GMT time-of-day strings, which are NOT combined with match_date into timestamps",
+    "partial_breakdown": "FBref venue truncated (ends with ...) 57 rows + CONMEBOL A-definir 3 rows",
+    "forbidden_field_scan": "score/goals/result/winner-like keys: 0 hits in fixture_inventory.jsonl"
+  },
+  "fixture_odds": {
+    "file": "fixture_odds_rows.jsonl",
+    "total_rows": 53,
+    "opening_rows": 0,
+    "closing_rows": 0,
+    "by_source_season_bookmaker_phase": [
+      {
+        "source": "NowGoal 1x2 (matchId 2661153)",
+        "season": 2024,
+        "bookmaker": "Bet 365",
+        "phase": "unspecified (Initial)",
+        "rows": 1,
+        "verification": "second live-browser rendering 2026-10-23 confirmed 3.00/3.10/2.50; Last Updated rendered 18-09 08:15"
+      },
+      {
+        "source": "NowGoal 1x2 (matchId 2661153)",
+        "season": 2024,
+        "bookmaker": "Bet 365",
+        "phase": "unspecified (Live)",
+        "rows": 1,
+        "verification": "second live-browser rendering 2026-10-23 confirmed 3.30/3.00/2.40; Last Updated rendered 18-09 08:15; page does not define Live as a pre-kickoff close"
+      },
+      {
+        "source": "BetExplorer single-match",
+        "season": 2025,
+        "bookmaker": "Stake.com",
+        "phase": "unspecified",
+        "rows": 1,
+        "verification": "second live-browser rendering 2026-10-23 confirmed 3.55/3.00/2.42 (only bookmaker rendered)"
+      },
+      {
+        "source": "BetExplorer results table",
+        "season": 2025,
+        "bookmaker": null,
+        "phase": "unspecified",
+        "rows": 1,
+        "verification": "second live-browser rendering 2026-10-23 confirmed 1.22/7.40/14.00; bookmaker still not labelled"
+      },
+      {
+        "source": "BetExplorer results table",
+        "season": 2024,
+        "bookmaker": null,
+        "phase": "unspecified",
+        "rows": 1,
+        "verification": "second live-browser rendering 2026-10-23 confirmed 4.33/3.19/1.90; bookmaker still not labelled"
+      },
+      {
+        "source": "SoccerPunter live-odds main table",
+        "season": 2024,
+        "bookmaker": "bet365 / bet365-brand-icon-suffix-unclear / 10Bet / 188BET / Ladbrokes / PINNACLE / William HILL / Singapore Pools / bwin / betfair",
+        "phase": "unspecified (latest displayed tick per bookmaker)",
+        "rows": 10,
+        "note": "American format as displayed; decimal columns are computed by formula, not source-displayed; 1 row bookmaker suffix unclear, not named Bet365 SM"
+      },
+      {
+        "source": "SoccerPunter 188Bet H popup",
+        "season": 2024,
+        "bookmaker": "188Bet (popup-title attribution only)",
+        "phase": "unspecified (timestamped ticks, no opening/closing label)",
+        "rows": 38,
+        "note": "2 additional H rows displayed as -/-/- (gaps) are recorded in this audit, not as odds rows; pre-kickoff vs in-play separation not evidenced"
+      }
+    ],
+    "text_layer_reverification": "0/5 previous rows confirmable via text layer (JS-rendered tables empty in text layer); text-layer non-confirmation does NOT refute the live-rendered values, which were confirmed by a second live rendering run",
+    "eligible_opening_closing_definition": "No source in this round defines per-row opening or closing endpoints; SoccerPunter's description (H history contains initial odds and daily fluctuations) is a general description, not a per-row endpoint definition, and it defines no closing price"
+  },
+  "access_plan_summary": {
+    "file": "access_plan.md / access_audit.md (C route)",
+    "four_tiers": {
+      "free_public": 6,
+      "login_required": 1,
+      "paid": 3,
+      "key_required": 1,
+      "total_sources_checked": 11
+    },
+    "free_public": [
+      "OddsPortal (browsing only; ToS 2.11 prohibits scraping/aggregation/automation without written consent)",
+      "BetExplorer (browsing)",
+      "NowGoal",
+      "Football-Data.co.uk (no Libertadores coverage at any price)",
+      "OpenFootball (public CC0, fixture data only, no odds fields)",
+      "SoccerPunter (10 bookmakers visible without login; full list login-gated)"
+    ],
+    "corrections_to_previous_round": [
+      "API-Football odds retention: previous round 'unverified' -> this round VERIFIED from official docs: only the last 7 days of odds are retained, by design. API-Football therefore cannot supply 2018-2025 odds at any plan; its pending item is CLOSED as unavailable, not carried forward.",
+      "5DollarFootballAPI recent-12-months fixture count: previous round 126/128 vs this round 127/129 (page self-reports recomputation ~8h apart). Both time points preserved, not reconciled.",
+      "CONMEBOL coverage denominator: previous audit wrote 4/56; correct denominator is 8 seasons x 8 stages = 64, so 4/64 covered, 60/64 not covered. The 4/56 figure was an arithmetic error and must not be reused.",
+      "CONMEBOL A-definir rows: previous round read city/country as 'A definir' and venue null (rows #11/#14 all three as 'A definir'); this round, by column position (Ciudad=28, Pais=39, Estadio=68, Hora Local=98), city='A definir', country=null, venue='A definir', and kickoff_local null for #11/#14 (source text 'A definir' kept in kickoff_local_source_text). Previous reading must not be reused.",
+      "Previous round's request_sha: re-checked against its request file bytes - the 16-char prefix matched. The reported malformed/mismatched status is therefore not explained by a prefix error on our side; this delivery supplies both the 16-char prefix and the full digest."
+    ],
+    "unreachable_without_purchase_or_credentials": [
+      "any timestamped-tick opening/closing history (all bulk sources with such semantics are behind paid/key walls)",
+      "Football-Data Libertadores coverage (none exists)",
+      "API-Football 2018-2025 odds (7-day retention)",
+      "The Odds API Libertadores (sport key unverified, history in Business $99/month tier)",
+      "OddAlerts Libertadores (coverage unverified, API behind paid wall)",
+      "any verified Kaggle/GitHub Libertadores 1X2 bulk dataset (none found this round)"
+    ]
+  },
+  "counts_not_invented": "No expected fixture totals per season were assumed. FBref per-season unique counts (155, 156 for 2018 two-legged final) are observed page counts after in-page de-duplication, not targets. CONMEBOL 8x8=64 is the combination grid of 8 seasons x 8 stage documents used in the previous audit, corrected from 56."
+}

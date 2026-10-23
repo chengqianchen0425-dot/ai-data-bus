@@ -1,0 +1,64 @@
+FBref 2023 Copa Libertadores 赛程表文本层转录说明（req-20261023-001 A 路）
+================================================================
+
+源 URL（source_url 与 final_url 均为此 URL）：
+https://fbref.com/en/comps/14/2023/schedule/2023-Copa-Libertadores-Scores-and-Fixtures
+
+打开方式与时间：
+- 仅用 browser.open 文本层读取该页，未用 curl（该站对本机 egress 返回 Cloudflare 挑战 403，字节下载已证实不可行）。
+- 页面分 3 段读完（文本总行数 824 行），打开时间：2026-10-23 21:24–21:26 北京时间（UTC+8）；JSONL 中 retrieved_at 统一记为 2026-10-23T21:25:00+08:00。
+- 无字节下载：source_sha256 全行 null，绝不编造哈希。页内未标注时区：source_timezone_text 全行 null，绝不推断。
+- Score 列整列丢弃：JSONL 不含 score/goals/result/winner 类字段；Notes 列仅用于取 Leg 1/2 标注，不取晋级类信息。
+
+呈现行数与去重（按 (match_date, kickoff_local, home, away) 去重）：
+- All Rounds 首表：125 行（小组赛 96 + Round of 16 16 + Quarter-finals 8 + Semi-finals 4 + Final 1）。
+  注意：本轮文本层中 All Rounds 首表未呈现资格赛行，资格赛唯一行全部来自阶段分表。
+- 阶段分表：资格赛 30 行（First 6 + Second 16 + Third 8）。
+- 小组赛分表：96 行（Wk 1–6 各 16 行；该分表无 Round 列，分表行 round 保持 null，合并时 Round 取 All Rounds 行的非空值 Group stage，绝不按分表语境推断后声称是页内原文）。
+- 淘汰赛分表：29 行（Round of 16 16 + Quarter-finals 8 + Semi-finals 4 + Final 1）。
+- 呈现行数合计：125 + 30 + 96 + 29 = 280 行。
+- 去重后唯一场次：155 场（280 − 125 组重复行；资格赛 30 行无重复）。
+
+按阶段唯一场次：
+- First qualifying stage：6
+- Second qualifying stage：16
+- Third qualifying stage：8
+- Group stage：96（Wk 1–6 各 16）
+- Round of 16：16
+- Quarter-finals：8
+- Semi-finals：4
+- Final：1
+- 合计：155（与任务给出的“约 155 场”核对参考一致；expected 一律 null，本文件不设 expected）。
+
+截断行数：
+- 唯一场次中 venue 截断行：9 行，status 均为 partial，其余 146 行 complete。
+- 截断球场（均照抄页内以 ... 结尾的原文，未补全）：
+  1) 2023-04-05 Patronato ar 主场：Estadio Brigadier General Estanislao Lóp...
+  2) 2023-04-05 Ñublense cl 主场：Estadio Municipal Alcaldesa Ester Roa Re...
+  3) 2023-04-06 Melgar pe 主场：Estadio de la Universidad Nacional San A...
+  4) 2023-05-02 Ñublense cl 主场：Estadio Municipal Alcaldesa Ester Roa Re...
+  5) 2023-05-04 Patronato ar 主场：Estadio Brigadier General Estanislao Lóp...
+  6) 2023-05-24 Ñublense cl 主场：Estadio Municipal Alcaldesa Ester Roa Re...
+  7) 2023-05-24 Melgar pe 主场：Estadio de la Universidad Nacional San A...
+  8) 2023-05-25 Patronato ar 主场：Estadio Brigadier General Estanislao Lóp...
+  9) 2023-06-06 Melgar pe 主场：Estadio de la Universidad Nacional San A...
+- 呈现层截断行：18 行（上述 9 场在 All Rounds 表与小组赛分表中各出现一次）。
+
+字段口径：
+- home/away：照抄 FBref 文本，含国家小码（如 pe/br/ar/cl/uy/ve/ec/py/bo/co）。
+- kickoff_local：Time 列原文全串（如 17:00 (15:00)），括号部分一并保留，不拆分、不推断时区。
+- official_round：仅小组赛取 Wk 值 1–6，其余 null。
+- leg：仅 Notes 明确写 Leg 1/2 时填 first/second（资格赛与淘汰赛共 29 first + 29 second）；小组赛 leg=null；单场决赛 leg=null。
+- city=null、country=null、group_id=null、tie_id=null、source_fixture_id=null（FBref 赛程表无稳定对阵 ID）。
+- field_locator：All Rounds 表列名 Round/Wk/Day/Date/Time/Home/Away/Venue/Notes；阶段分表列名 Round/Day/Date/Time/Home/Away/Venue/Notes；小组赛分表列名 Wk/Day/Date/Time/Home/Away/Venue/Notes（无 Round 列，已在 locator 中注明）。
+- source_id 全行 = SRC-FBREF-TEXTLAYER；season_year 全行 = 2023。
+- 交付文件按时间顺序排列（资格赛→小组赛→淘汰赛），仅为阅读顺序，不改变任何页内值。
+
+与上一单核对差异：
+- 核对清单：上一单文件 ~/workspace/ai-inbox/work-req-20261021-001/parts/fbref_2023.jsonl（2026-10-21 文本层，呈现 280 行）。
+- 该文件仅作核对清单，本轮每一行均来自本轮打开的页面文本，不以旧文件当证据。
+- 核对结果：去重后 (match_date, home, away) 键集合零差异——本轮 155 场与上一单去重后 155 场完全一致，无多出、无缺失；venue、official_stage、Wk、venue_truncated 全部一致。
+- 非实质差异（均按本单规范有意为之，不计入场次差异）：
+  1) leg 编码：本单按任务规范记 first/second，上一单记原文串 Leg 1 of 2 / Leg 2 of 2，语义一致。
+  2) kickoff_local 写法：本单保留 Time 列原文全串（如 17:00 (15:00)），上一单仅记首段时刻（如 17:00）；场次与首段时刻一致。
+- 结论：以本轮页面为准，唯一场次 155 场，无需因上一单调整任何行。

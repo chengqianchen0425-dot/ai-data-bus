@@ -1,0 +1,20 @@
+RE-VERIFICATION EVIDENCE DUMP (text layer, not raw HTML)
+Source URL: https://www.betexplorer.com/football/south-america/copa-libertadores-2025/results/
+Fetched: 2026-10-23 via browser.open text layer (tool page id 6531522771542790007)
+HTTP status: NOT exposed by the text-fetch tool; recorded as null, not assumed 200.
+Redaction note: the score column that appeared in the fetched text was REMOVED from every row in this dump per the task rule (no scores/results in deliverables). Only stage headers, team pairs, dates, and the (empty) 1/X/2 cells are retained.
+
+Retained structure (team pair | 1 | X | 2 | date; all odds cells blank in the text layer):
+- Section "Final": Palmeiras - Flamengo RJ | (blank) | (blank) | (blank) | 29.11.2025
+- Section "Semi-finals - Second leg": Palmeiras - LDU Quito | (blank) | (blank) | (blank) | 31.10.2025
+- Section "Semi-finals - Second leg": Racing Club - Flamengo RJ | (blank) | (blank) | (blank) | 30.10.2025
+- Section "Semi-finals - First leg": LDU Quito - Palmeiras | (blank) | (blank) | (blank) | 24.10.2025
+- Section "Semi-finals - First leg": Flamengo RJ - Racing Club | (blank) | (blank) | (blank) | 23.10.2025
+- Quarter-finals, 1/8-finals sections follow the same pattern (team pairs and dates retained in the fetched text; all 1/X/2 cells blank). Full fetched text covered results from 12.08.2025 to 29.11.2025.
+- Help text (verbatim, abridged): the page serves complete results for Copa Libertadores 2025 and links to archive betting odds; "Click on match detail and find out ... 1X2, under/over, asian handicap and moneyline odds offered for the game."
+
+What this dump proves / does not prove:
+- PROVES: the Palmeiras-Flamengo RJ Final row and the Palmeiras-LDU Quito Semi-finals Second leg row exist on the 2025 results page, with dates 29.11.2025 and 31.10.2025 respectively in this text layer.
+- DOES NOT PROVE: any 1/X/2 value. All odds cells are blank in the text layer, so the prior values (final 3.55/3.00/2.42; Palmeiras-LDU Quito 1.22/7.40/14.00) are neither confirmed nor contradicted here.
+- DATE CONFLICT (final row, preserved not resolved): prior row match_date 2025-11-30 (from the prior live-browser report's "30.11.2025") vs this text layer's 29.11.2025 and the single-match event 2025-11-29T22:00:00+01:00. The Palmeiras-LDU Quito date agrees in both rounds (31.10.2025).
+- No bookmaker is identified for any results-table row in this text layer.

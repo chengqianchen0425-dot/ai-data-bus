@@ -1,0 +1,101 @@
+[
+  {
+    "name": "fbref_2018",
+    "url": "https://fbref.com/en/comps/14/2018/schedule/2018-Copa-Libertadores-Scores-and-Fixtures",
+    "curl_exit": 52,
+    "http_and_size": "000 0",
+    "stderr": "curl: (52) Empty reply from server",
+    "body_sha256": null,
+    "body_head": ""
+  },
+  {
+    "name": "fbref_2019",
+    "url": "https://fbref.com/en/comps/14/2019/schedule/2019-Copa-Libertadores-Scores-and-Fixtures",
+    "curl_exit": 18,
+    "http_and_size": "403 3334",
+    "stderr": "curl: (18) transfer closed with 2472 bytes remaining to read",
+    "body_sha256": "3e8e9ee5c45bf09ac8894c2bd3948aa9ab6c7decdf19b903cd995ff8b19c9739",
+    "body_head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/htm"
+  },
+  {
+    "name": "fbref_2020",
+    "url": "https://fbref.com/en/comps/14/2020/schedule/2020-Copa-Libertadores-Scores-and-Fixtures",
+    "curl_exit": 18,
+    "http_and_size": "403 3334",
+    "stderr": "curl: (18) transfer closed with 2472 bytes remaining to read",
+    "body_sha256": "a42fc3eadd0de746f3df6dc279ec2c09f17355b007134b7aa841d2781d4a424f",
+    "body_head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/htm"
+  },
+  {
+    "name": "fbref_2021",
+    "url": "https://fbref.com/en/comps/14/2021/schedule/2021-Copa-Libertadores-Scores-and-Fixtures",
+    "curl_exit": 18,
+    "http_and_size": "403 3334",
+    "stderr": "curl: (18) transfer closed with 2472 bytes remaining to read",
+    "body_sha256": "f6b245de520a805eb1b71fb595ae257065e8b457e775402d6fc18ae0cffc3b77",
+    "body_head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/htm"
+  },
+  {
+    "name": "fbref_2022",
+    "url": "https://fbref.com/en/comps/14/2022/schedule/2022-Copa-Libertadores-Scores-and-Fixtures",
+    "curl_exit": 0,
+    "http_and_size": "403 5806",
+    "stderr": "",
+    "body_sha256": "f15776016b83af648d034fd17f1b6a334a1e31b736564ce708c52f671645e515",
+    "body_head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/htm"
+  },
+  {
+    "name": "fbref_2023",
+    "url": "https://fbref.com/en/comps/14/2023/schedule/2023-Copa-Libertadores-Scores-and-Fixtures",
+    "curl_exit": 52,
+    "http_and_size": "000 0",
+    "stderr": "curl: (52) Empty reply from server",
+    "body_sha256": null,
+    "body_head": ""
+  },
+  {
+    "name": "fbref_2024",
+    "url": "https://fbref.com/en/comps/14/2024/schedule/2024-Copa-Libertadores-Scores-and-Fixtures",
+    "curl_exit": 52,
+    "http_and_size": "000 0",
+    "stderr": "curl: (52) Empty reply from server",
+    "body_sha256": null,
+    "body_head": ""
+  },
+  {
+    "name": "fbref_2025",
+    "url": "https://fbref.com/en/comps/14/2025/schedule/2025-Copa-Libertadores-Scores-and-Fixtures",
+    "curl_exit": 18,
+    "http_and_size": "403 1965",
+    "stderr": "curl: (18) transfer closed with 3841 bytes remaining to read",
+    "body_sha256": "0bf2d8590b6c64dd04f2183f8b867bdbb9ad64b2d5ec463e39f7871113aff891",
+    "body_head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/htm"
+  },
+  {
+    "name": "conmebol_2022_fase12",
+    "url": "https://cdn.conmebol.com/wp-content/uploads/2022/01/Fixture_CONMEBOL-Libertadores-Fase-1-2_-v-28-01-2022.pdf",
+    "curl_exit": 0,
+    "http_and_size": "200 194980",
+    "stderr": "",
+    "body_sha256": "54f9acdc5344759a5d0c1c373f64d7f8fc7d5ec047939c95655ec7d2d595e95c",
+    "body_head": "%PDF-1.6\r%\r\n882 0 obj\r<</Linearized 1/L 194980/O 884/E 179338/N 1/T 194589/H [ 533 217]>>\rendobj\r             \r\n908 "
+  },
+  {
+    "name": "conmebol_2022_fase3",
+    "url": "https://cdn.conmebol.com/wp-content/uploads/2022/03/Fixture_CONMEBOL-Libertadores-Fase-3_01-03-2022-sin-picks.pdf",
+    "curl_exit": 0,
+    "http_and_size": "200 155797",
+    "stderr": "",
+    "body_sha256": "83c0f73aa46d1b3030a1f2ed05d294f17e814bef3b33bc755b578c65d03941e2",
+    "body_head": "%PDF-1.6\r%\r\n222 0 obj\r<</Linearized 1/L 155797/O 224/E 148258/N 1/T 155460/H [ 525 212]>>\rendobj\r             \r\n246 "
+  },
+  {
+    "name": "conmebol_2024_qf",
+    "url": "https://cdn.conmebol.com/wp-content/uploads/2024/08/Fixture-Libertadores_Cuartos-de-Final_2024.pdf",
+    "curl_exit": 0,
+    "http_and_size": "200 71765",
+    "stderr": "",
+    "body_sha256": "5569f5b2cf3421e23153582199d716fa5c037c8d4b185da498e51d2d81bc7334",
+    "body_head": "%PDF-1.7\r\n%\r\n1 0 obj\r\n<</Type/Catalog/Pages 2 0 R/Lang(es) /StructTreeRoot 20 0 R/MarkInfo<</Marked true>>/Metadata "
+  }
+]

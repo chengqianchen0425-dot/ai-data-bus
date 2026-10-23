@@ -1,0 +1,86 @@
+FBref 2021 Copa Libertadores 赛程表 — 浏览器文本层转录证据说明
+任务：req-20261023-001 A 路 FBref 分季执行员，仅 2021 赛季，不碰其他赛季。
+
+URL（source_url 与 final_url 均为此 URL）：
+https://fbref.com/en/comps/14/2021/schedule/2021-Copa-Libertadores-Scores-and-Fixtures
+
+打开方式与时间：
+- 仅用 browser.open 文本层读取本页，未用 curl（该站对本机 egress 返回 Cloudflare 挑战 403，字节下载已证实不可行，任务亦明令不用 curl）。
+- 首次打开时间（UTC+8）：2026-10-23T21:24:57+08:00，即各行 retrieved_at。
+- 页面分 4 次分页读完，全文共 727 行文本层行（L0–L727），赛程表分 4 段呈现，见下。
+
+文本层、无字节声明：
+- 本次只读浏览器文本层，未下载任何字节文件；因此 source_sha256 一律 null。
+- 附注：浏览器文本层、无字节，绝不编造哈希。
+
+呈现行数与去重（去重键 = match_date + kickoff_local + home + away；round 取非空值）：
+- All Rounds 表：125 行（Group stage 96 + Round of 16 16 + Quarter-finals 8 + Semi-finals 4 + Final 1）。
+  注：该表半决赛处重复出现一次表头行，非数据行，未计入。
+- 资格赛分表：30 行（First qualifying stage 6 + Second qualifying stage 16 + Third qualifying stage 8）。
+- Group stage 分表：96 行（Wk 1–6 各 16 行；该分表 Round 列为空，Wk 与阶段以 All Rounds 表为准）。
+- Knockout stage 分表：29 行（Round of 16 16 + Quarter-finals 8 + Semi-finals 4 + Final 1）。
+- 呈现行数合计：280 行。
+- 去重后唯一场次数：155 场。
+- 去重剔除重复呈现：125 行。
+
+按阶段唯一场次数：
+- First qualifying stage：6
+- Second qualifying stage：16
+- Third qualifying stage：8
+- Group stage：96（Wk 1–6 各 16）
+- Round of 16：16
+- Quarter-finals：8
+- Semi-finals：4
+- Final：1
+- 合计：155
+- expected：一律 null（155 仅为核对参考，不是 expected）。
+
+截断行数与 status：
+- 截断行数：5 行，均为球场名以 ... 结尾、照抄原文、venue_truncated=true、status=partial：
+  1) 2021-04-28 River Plate ar vs co Junior — Estadio Monumental Antonio Vespucio Libe...
+  2) 2021-05-19 River Plate ar vs co Santa Fe — Estadio Monumental Antonio Vespucio Libe...
+  3) 2021-05-25 River Plate ar vs br Fluminense — Estadio Monumental Antonio Vespucio Libe...
+  4) 2021-07-14 River Plate ar vs ar Arg Juniors — Estadio Monumental Antonio Vespucio Libe...
+  5) 2021-08-11 River Plate ar vs br Atlético Mineiro — Estadio Monumental Antonio Vespucio Libe...
+- 其余 150 行 status=complete，venue_truncated=false。
+- 截断球场未补全。
+
+其他文本层注意事项：
+- All Rounds 表中 2021-05-26 Boca Juniors ar vs bo The Strongest 一行的球场在文本层显示为乱码
+  “Estadio Alberto Jos?? Armando”；同一页面 Group stage 分表对同一场比赛显示为完整
+  “Estadio Alberto José Armando”，本文件采用同一页面分表中的完整写法。该行不以 ... 结尾，
+  不计入截断行数。
+- 页内 Time 列无时区标注，故 source_timezone_text 一律 null，未作任何时区推断。
+- 页内无稳定对阵 ID，故 source_fixture_id、group_id、tie_id 一律 null；city、country 一律 null。
+- leg 仅当 Notes 明确写 Leg 1/2 时填 first/second：first 29 行、second 29 行；
+  小组赛 96 行与决赛 1 行 leg=null。决赛 Notes 未写 Leg 标注，不从无标注推断单场属性。
+
+赛后字段处理：
+- 页面 Score 列整列丢弃；本 JSONL 不含任何比分、赛果类字段。
+- 淘汰赛 Notes 中除 Leg 标注外的其他文字未转录为字段，仅用于判定 leg。
+
+与上一单核对差异：
+- 上一单核对清单：~/workspace/ai-inbox/work-req-20261021-001/parts/fbref_2021.jsonl
+  （仅作核对清单，本文件每一行均来自本轮打开的上述 FBref 页面文本，不以该文件为证据）。
+- 核对方法：按 (match_date, kickoff_local, home, away) 键集合比对，并比对共享键的球场与阶段。
+- 差异：零差异。
+  - 本轮唯一场次 155 场，上一单去重后唯一键 155 个，两集合完全相等；
+    本轮有而上一单无：0；上一单有而本轮无：0。
+  - 共享键的球场差异：0；阶段差异（上一单非空阶段）：0。
+  - 上一单呈现行数 280 行，与本轮页面呈现行数 280 行一致。
+- 行数不一致时以本轮页面为准的情形未发生。
+
+字段清单（每行）：
+season_year, home, away, match_date, kickoff_local, source_timezone_text, official_stage,
+official_round, venue_or_stadium, venue_truncated, city, country, group_id, tie_id,
+source_fixture_id, source_url, final_url, retrieved_at, field_locator, source_sha256,
+status, source_id=SRC-FBREF-TEXTLAYER, leg。
+field_locator：资格赛/淘汰赛行为 Round|Day|Date|Time|Home|Away|Venue|Notes；
+小组赛行为 Round|Wk|Day|Date|Time|Home|Away|Venue|Notes。
+home/away 均为 FBref 文本原文（含国家小码；主队为“名 + 小码”，客队为“小码 + 名”的
+文本层呈现顺序，照抄未归一化）。
+
+交付文件：
+- ~/workspace/ai-inbox/work-req-20261023-001/fbref_2021_textlayer.jsonl（155 行）
+- ~/workspace/ai-inbox/work-req-20261023-001/fixture_evidence/fbref_2021_textlayer_note.txt（本文件）
+未写 repo/responses/，那是主代理的事。

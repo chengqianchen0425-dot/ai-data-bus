@@ -1,0 +1,62 @@
+FBref 2024 Copa Libertadores 赛程表 · 浏览器文本层转录说明
+========================================================
+
+source_url / final_url（同一 URL）：
+https://fbref.com/en/comps/14/2024/schedule/2024-Copa-Libertadores-Scores-and-Fixtures
+
+打开方式与时间：
+- 仅用 browser.open 文本层读取该页（分 3 段读完，全页共 719 行文本行）；
+  未用 curl（该站对本机 egress 返回 Cloudflare 挑战 403，字节下载已证实不可行）。
+- 页面打开时间：2026-10-23 21:24–21:26（UTC+8）；JSONL 内 retrieved_at 字段统一取
+  2026-10-23T21:26:16+08:00（文件生成时刻，同次打开会话内）。
+- 无字节下载，故 source_sha256=null，并附注“浏览器文本层、无字节，绝不编造哈希”。
+
+只做赛程清单：
+- Score 列整列丢弃；JSONL 内无 score/goals/result/winner 类字段（已 grep 校验为 0 命中）。
+- 每行字段：season_year=2024、home/away 源标签原文（含国家小码）、match_date（页内
+  Date 列，ISO 格式）、kickoff_local（页内 Time 列原文时刻）、source_timezone_text=null
+  （页内未标注时区，绝不推断）、official_stage（页内 Round 列原文）、official_round
+  （小组赛 Wk 值 1–6，其余 null）、venue_or_stadium（页内 Venue 列原文）、city=null、
+  country=null、group_id=null、tie_id=null、source_fixture_id=null（FBref 赛程表无稳定
+  对阵 ID）、source_url/final_url（均为上 URL）、retrieved_at、field_locator（schedule
+  table 列名）、source_sha256=null、status（complete/partial）、source_id=SRC-FBREF-TEXTLAYER、
+  leg（见下）、venue_truncated。
+- leg 规则：仅当 Notes 明确写 Leg 1/2 时填 first/second；单场决赛 leg=null（不从无
+  Leg 标注推断单场属性）；小组赛 leg=null。
+
+呈现行数与去重：
+- 页内呈现行数：280 行，构成如下：
+  * All Rounds 表：125 行（小组赛 96＋16 强 16＋8 强 8＋半决赛 4＋决赛 1）
+  * 资格赛分表：30 行（第一阶段 6＋第二阶段 16＋第三阶段 8）
+  * 小组赛分表：96 行（与 All Rounds 表小组赛部分逐行重复）
+  * 淘汰赛分表：29 行（与 All Rounds 表淘汰赛部分逐行重复）
+- 源内去重：按 (match_date, kickoff_local, home, away) 去重，round 取非空值；
+  去重后唯一场次：155 场。
+- 按阶段唯一场次：First qualifying stage 6、Second qualifying stage 16、
+  Third qualifying stage 8、Group stage 96、Round of 16 16、Quarter-finals 8、
+  Semi-finals 4、Final 1；合计 155。
+- 小组赛两场延期场次仍按页内 Wk 归属：2024-06-04 Huachipato–Grêmio 记 Wk 4，
+  2024-06-08 Grêmio–Estudiantes–LP 记 Wk 5。
+
+截断行数：
+- 唯一场次中 venue_truncated=true：3 行，均以 ... 结尾照抄、不补全，status=partial：
+  * 2024-02-14 Melgar–Aurora：Estadio de la Universidad Nacional San A...
+  * 2024-04-25 Palestino–Millonarios：Estadio Bicentenario Francisco Sánchez R...
+  * 2024-05-07 Palestino–Flamengo：Estadio Bicentenario Francisco Sánchez R...
+- 呈现层截断行数：5 行（上述 2 场 Palestino 主场球场在 All Rounds 表与小组赛分表
+  各出现一次，共 4 行；Melgar 一场仅资格赛分表出现，1 行）。
+- 其余 152 行 status=complete。
+
+与上一单核对差异：
+- 上一单核对文件：~/workspace/ai-inbox/work-req-20261021-001/parts/fbref_2024.jsonl
+  （仅作核对清单，不作本轮行的证据；本轮每一行均来自本轮打开的该页文本）。
+- 核对结果：差异 0 ——按 (match_date, kickoff_local, home, away) 及 venue_or_stadium
+  逐项比对，155 个唯一场次全部一致，无新增、无缺失、无球场文本差异。
+- 行数口径差异说明：上一单文件共 280 行（呈现行数），本轮交付 155 行（去重后
+  唯一场次）；两者差异仅为去重口径，不是数据差异。
+- 预期约 155 场仅作核对参考；本文件 expected 一律不设，以本轮页面为准。
+
+交付文件：
+- ~/workspace/ai-inbox/work-req-20261023-001/fbref_2024_textlayer.jsonl（155 行）
+- 本说明：~/workspace/ai-inbox/work-req-20261023-001/fixture_evidence/fbref_2024_textlayer_note.txt
+- 未写 repo/responses/，那是主代理的事。

@@ -1,0 +1,28 @@
+RE-VERIFICATION EVIDENCE DUMP (text layer, not raw HTML)
+Source URL: https://www.nowgoal.net/oddscomp/2661153
+Fetched: 2026-10-23 via browser.open text layer (tool page id 4055581711896816953)
+HTTP status: NOT exposed by the text-fetch tool; recorded as null, not assumed 200.
+Redaction note: score/result lines that appeared in the fetched text were REMOVED from this dump per the task rule (no scores/results in deliverables). Only fixture identity and the odds-table structure are retained.
+
+Retained verbatim content:
+- Page title: "Colo Colo VS River Plate - Live Odds Comparison, 1x2 Odds, Asian Handicap, Over/Under"
+- "Copa Libertadores · Quarterfinals"
+- Teams: "Colo Colo" and "River Plate" (with team badge images)
+- Odds table header: Company | Asian Handicap Odds (Home, Handicap, Away) | 1X2 Odds (HW, D, AW) | Over/Under Odds (Over, Goals, Under) | Detail
+- Company rows (all odds cells shown as "-" in the text layer):
+  Bet365 | Initial Live In-Play | - - - | - - - | - - - | - - - | - - - | - - - | Trends
+  Sbobet | Initial Live In-Play | - - - | - - - | - - - | - - - | - - - | - - - | Trends
+  1xBet | Initial Live In-Play | - - - | - - - | - - - | - - - | - - - | - - - | Trends
+  M88 | Initial Live In-Play | - - - | - - - | - - - | - - - | - - - | - - - | Trends
+  12Bet | Initial Live In-Play | - - - | - - - | - - - | - - - | - - - | - - - | Trends
+  Crown | Initial Live In-Play | - - - | - - - | - - - | - - - | - - - | - - - | Trends
+  18Bet | Initial Live In-Play | - - - | - - - | - - - | - - - | - - - | - - - | Trends
+  Easybet | Initial Live In-Play | - - - | - - - | - - - | - - - | - - - | - - - | Trends
+  Macauslot | Initial Live In-Play | - - - | - - - | - - - | - - - | - - - | - - - | Trends
+  Ladbrokes | Initial Live In-Play | - - - | - - - | - - - | - - - | - - - | - - - | Trends
+  Vcbet | Initial Live In-Play | - - - | - - - | - - - | - - - | - - - | - - - | Trends
+  Interwetten | Initial Live In-Play | - - - | - - - | - - - | - - - | - - - | - - - | Trends
+
+What this dump proves / does not prove:
+- PROVES: the fixture identity (Colo Colo vs River Plate, Copa Libertadores Quarterfinals, NowGoal matchId 2661153 via URL) and that Bet365 is one of 12 companies listed on the odds-comparison table.
+- DOES NOT PROVE: any 1X2 value. Every odds cell is "-" in the text layer, so the prior Bet 365 Initial/Live values are neither confirmed nor contradicted here.

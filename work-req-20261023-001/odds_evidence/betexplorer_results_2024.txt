@@ -1,0 +1,19 @@
+RE-VERIFICATION EVIDENCE DUMP (text layer, not raw HTML)
+Source URL: https://www.betexplorer.com/football/south-america/copa-libertadores-2024/results/
+Fetched: 2026-10-23 via browser.open text layer (tool page id 1639795033016438111)
+HTTP status: NOT exposed by the text-fetch tool; recorded as null, not assumed 200.
+Redaction note: the score column that appeared in the fetched text was REMOVED from every row in this dump per the task rule (no scores/results in deliverables). Only stage headers, team pairs, dates, and the (empty) 1/X/2 cells are retained.
+
+Retained structure (team pair | 1 | X | 2 | date; all odds cells blank in the text layer):
+- Section "Final": Atletico-MG - Botafogo RJ | (blank) | (blank) | (blank) | 30.11.2024
+- Section "Semi-finals - Second leg": Penarol - Botafogo RJ | (blank) | (blank) | (blank) | 31.10.2024
+- Section "Semi-finals - Second leg": River Plate - Atletico-MG | (blank) | (blank) | (blank) | 30.10.2024
+- Section "Quarter-finals - First leg": Colo Colo - River Plate | (blank) | (blank) | (blank) | 18.09.2024
+- 1/8-finals sections follow the same pattern (team pairs and dates retained in the fetched text; all 1/X/2 cells blank). Full fetched text covered results from 13.08.2024 to 30.11.2024.
+- Help text (verbatim, abridged): the page serves complete results for Copa Libertadores 2024 and links to archive betting odds; "Click on match detail and find out ... 1X2, under/over, asian handicap and moneyline odds offered for the game."
+
+What this dump proves / does not prove:
+- PROVES: the Atletico-MG vs Botafogo RJ Final row exists on the 2024 results page, dated 30.11.2024 in this text layer, and the Colo Colo vs River Plate Quarter-finals First leg row exists dated 18.09.2024 (consistent with the NowGoal page display date 18-09-2024; the prior task's reference date 2024-09-17 is a different timezone's date, unresolved).
+- DOES NOT PROVE: any 1/X/2 value. All odds cells are blank in the text layer, so the prior Atletico-MG-Botafogo values 4.33/3.19/1.90 are neither confirmed nor contradicted here.
+- DATE CONFLICT (final row, preserved not resolved): prior row match_date 2024-12-01 (from the prior live-browser report's "01.12.2024") vs this text layer's 30.11.2024. Same +1-day pattern as the 2025 final row, consistent with a timezone display difference, but the display timezone was not evidenced, so no conversion was applied.
+- No bookmaker is identified for any results-table row in this text layer.

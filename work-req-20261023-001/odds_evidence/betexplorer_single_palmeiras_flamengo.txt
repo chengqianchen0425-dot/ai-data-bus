@@ -1,0 +1,21 @@
+RE-VERIFICATION EVIDENCE DUMP (text layer, not raw HTML)
+Source URL: https://www.betexplorer.com/football/south-america/copa-libertadores-2025/palmeiras-flamengo-rj/IwUrkvRk/
+Also fetched: the same page's 1X2 tab URL .../IwUrkvRk/1x2/ (tool page id 253581184105255219) - text layer identical in the relevant parts.
+Fetched: 2026-10-23 via browser.open text layer (tool page id 4601544268709985393)
+HTTP status: NOT exposed by the text-fetch tool; recorded as null, not assumed 200.
+Redaction note: score lines and a goalscorer line that appeared in the fetched text were REMOVED from this dump per the task rule (no scores/results/goalscorers in deliverables). Only fixture identity and odds-section structure are retained.
+
+Retained verbatim content:
+- Page title: "Palmeiras - Flamengo RJ - H2H stats, odds"
+- Teams: "Sociedade Esportiva Palmeiras / Palmeiras" and "Clube de Regatas do Flamengo / Flamengo RJ"
+- Tabs present: "1X2 Stats", "O/U", "AH", "DNB", "DC", "BTS" (Both Teams To Score)
+- Events section: "Palmeiras - Flamengo RJ"
+- "When: 2025-11-29T22:00:00+01:00"
+- "Where: Estadio Monumental, Lima"
+- "Description: Palmeiras - Flamengo RJ 29 Nov 2025 22:00:00 at Estadio Monumental"
+- No Odds Comparison (1X2) table, no bookmaker row, and no 1/X/2 values appear anywhere in this text layer.
+
+What this dump proves / does not prove:
+- PROVES: the fixture identity (Palmeiras vs Flamengo RJ, kickoff 2025-11-29T22:00:00+01:00, Estadio Monumental, Lima) and that a 1X2 Stats tab exists.
+- DOES NOT PROVE: the prior Stake.com values 3.55/3.00/2.42. No bookmaker row and no values appear in this dump.
+- DATE NOTE (conflict, preserved not resolved): the prior row's match_date was 2025-11-30, taken from the prior live-browser report's results-table date "30.11.2025". This re-fetch shows the single-match event as 2025-11-29T22:00:00+01:00 and the text-layer results table (see betexplorer_results_2025.txt) dates the Final row 29.11.2025. Both dates are preserved in the audit; neither is overwritten. The difference is consistent with a timezone display difference, but the display timezone was not evidenced, so no conversion was applied.

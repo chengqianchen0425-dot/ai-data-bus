@@ -1,0 +1,83 @@
+FBref 2020 Copa Libertadores 赛程表 · 浏览器文本层转录证据说明
+============================================================
+
+任务：req-20261023-001 A 路，仅 2020 赛季赛程清单，不含任何赛后字段。
+
+源 URL（source_url 与 final_url 均为此 URL）
+  https://fbref.com/en/comps/14/2020/schedule/2020-Copa-Libertadores-Scores-and-Fixtures
+
+读取方式
+  - 仅用 browser.open 文本层读取该页（2026-10-23 约 21:24–21:26 北京时间打开，
+    全页 747 行文本分 4 段读完：L0–225、225–456、456–679、679–747）。
+  - 未用 curl（该站对本机 egress 返回 Cloudflare 挑战 403，字节下载已证实不可行）。
+  - 无字节下载，因此 source_sha256 一律 null，并附注“浏览器文本层、无字节，
+    绝不编造哈希”。
+  - 页面 Score 列整列丢弃：JSONL 中无 score/goals/result/winner 类字段。
+    文本 grep 若命中“Score”，仅来自必填的 source_url/final_url 本身
+    （URL 中含 Scores-and-Fixtures 字样），非比分数据。
+  - retrieved_at（UTC+8）：2026-10-23T21:26:11+08:00（本轮实际打开页面时间）。
+  - 页内 Time 列未标注时区，故 source_timezone_text 一律 null，不推断。
+  - 2020 赛季赛程跨到 2021 年 1 月（半决赛 2021-01-05/06/12/13、决赛 2021-01-30）
+    是源表原文（赛季延期），日期照抄，不是转录错误。
+
+呈现行数与去重
+  - 页内呈现行数：280 行，分 4 张表：
+      All Rounds 表 125 行（小组赛 96 + Round of 16 16 + Quarter-finals 8
+        + Semi-finals 4 + Final 1；不含资格赛）
+      Qualifying stages 表 30 行（First 6 + Second 16 + Third 8）
+      Group stage 分表 96 行（小组赛重复呈现）
+      Knockout stage 分表 29 行（Round of 16 16 + Quarter-finals 8
+        + Semi-finals 4 + Final 1）
+  - 去重键 (match_date, kickoff_local, home, away)，round 取非空值：
+      去重后唯一场次 155 场。
+      其中 125 场呈现 2 次（All Rounds 表 + 阶段分表），30 场呈现 1 次（资格赛仅在
+      Qualifying stages 表出现）；125×2 + 30 = 280，账目相符。
+  - 日期范围：2020-01-21 至 2021-01-30。
+
+按阶段唯一场次
+  - First qualifying stage：6
+  - Second qualifying stage：16
+  - Third qualifying stage：8
+  - Group stage：96（Wk 1–6 各 16 场；official_round = Wk 值，其余阶段 null）
+  - Round of 16：16
+  - Quarter-finals：8
+  - Semi-finals：4
+  - Final：1
+  - 合计：155
+  - leg：first 29、second 29、null 97（小组赛 96 + 单场决赛 1；决赛 leg=null，
+    不从无 Leg 标注推断单场属性；其余 leg 均以 Notes 明确写 Leg 1/2 为准）。
+
+截断行数
+  - 截断唯一场次 5 场，venue 以 ... 结尾照抄，venue_truncated=true，
+    status=partial；其余 150 场 status=complete：
+      2020-02-12 Atlé Tucumán ar vs bo The Strongest
+        — Estadio Monumental Presidente José Fierr...
+      2020-02-25 Atlé Tucumán ar vs co Ind. Medellín
+        — Estadio Monumental Presidente José Fierr...
+      2020-03-11 River Plate ar vs pe Binacional
+        — Estadio Monumental Antonio Vespucio Libe...
+      2020-09-30 River Plate ar vs br São Paulo
+        — Estadio Monumental Antonio Vespucio Libe...
+      2020-10-20 River Plate ar vs ec LDU Quito
+        — Estadio Monumental Antonio Vespucio Libe...
+  - 截断球场未补全。
+
+与上一单核对差异（上一单清单：~/workspace/ai-inbox/work-req-20261021-001/parts/fbref_2020.jsonl，
+  该文件本身为 280 行呈现行、未去重；上一单仅作核对清单，本轮每一行均来自本轮页面文本）
+  - 呈现行数一致：280 行；去重后唯一场次一致：155 场；按阶段分布一致。
+  - 153 场在 date/time/home/away/venue/stage/wk/leg 上与上一单完全一致。
+  - 2 处以本轮页面为准、与上一单不同（均为开球时间，上一单有误，本轮已用页面
+    原文复核，见括号内行号）：
+      ① 2020-02-05 Universitario pe vs py Cerro Porteño：本轮 17:15
+         （本轮页面 L350 原文；上一单记为 19:15）。
+      ② 2020-09-16 Bolívar bo vs br Palmeiras：本轮 20:30
+         （本轮页面 L104 原文，且小组赛分表 L503 同为 20:30；上一单记为 21:30）。
+  - 字段值表达差异（非内容差异）：本轮 leg 用 first/second（任务规定），
+    上一单用 "Leg 1 of 2"/"Leg 2 of 2" 字符串；映射一一对应。
+
+固定空值字段（按任务规定）
+  - city=null、country=null、group_id=null、tie_id=null、
+    source_fixture_id=null（FBref 赛程表无稳定对阵 ID）、
+    source_timezone_text=null、source_sha256=null。
+  - source_id=SRC-FBREF-TEXTLAYER；field_locator 为 schedule table 列名
+    Round|Wk|Day|Date|Time|Home|Away|Venue|Notes（赛后列已丢弃）。
