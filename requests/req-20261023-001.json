@@ -1,0 +1,14 @@
+{
+  "id": "req-20261023-001",
+  "type": "deep_research",
+  "params": {
+    "topic": "Copa Libertadores 2018-2025 canonical fixture inventory and auditable historical pre-match 1X2 odds",
+    "questions": [
+      "For each season year 2018 through 2025 inclusive (exclude 2026), build a fixture-level inventory from auditable sources. Preserve stable source fixture IDs where available, season year, home/away team labels, official kickoff timestamp, timezone/UTC offset, stage/round where explicitly published, source URL, retrieval time, field locator, and source SHA-256. Do not infer missing fixture identity or kickoff fields; leave them null and classify the row.",
+      "For each uniquely identified fixture, collect any available full-time 1X2 odds by bookmaker, with home/draw/away values and explicit source phase semantics. Return opening and closing only when the source explicitly defines those endpoints or supplies timestamped ticks that establish them; keep Initial, Live, current, results-table and unspecified-phase prices as non-eligible observations. Include quote timestamp, source URL/final URL, retrieval time, HTTP status where available, field locator, raw evidence path or attached source evidence, and SHA-256. Never infer a bookmaker or join rows by team names alone.",
+      "Audit season and phase coverage without inventing expected totals. For every source, report discovered, complete, partial, unmatched, ambiguous and conflicting counts by season, bookmaker and phase. Keep source conflicts and unresolved tasks in separate queues. Avoid scores, results, outcomes, Qimen, prediction, Review and Gold fields; do not purchase subscriptions or use credentials.",
+      "Recheck the existing req-20261022-001 delivery as background only, but do not copy its values as valid odds unless independently re-verified with traceable source evidence. Its request_sha was malformed/mismatched. Prioritize finding a complete fixture table and any accessible historical 1X2 source; clearly state access-plan blockers and alternatives."
+    ]
+  },
+  "created_at": "2026-10-23T21:17:11+08:00"
+}
