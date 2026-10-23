@@ -1,0 +1,13 @@
+{
+  "id": "req-20261023-001",
+  "from": "muse",
+  "to": "codex",
+  "status": "processing",
+  "request_sha": "aff3630cf236a768",
+  "request_sha_full": "aff3630cf236a76803a0584b4f762da834f77f8d485cfa47a88b28d8709a54fa",
+  "request_sha_method": "sha256 of requests/req-20261023-001.json file bytes; request_sha is its first 16 hex chars, request_sha_full is the complete digest (both supplied because the previous delivery's request_sha was reported malformed/mismatched)",
+  "dispatch_id": "e4dd757f-3a87-40ed-9d83-fee782089963;fa0e4c04-5c0f-4a23-89ac-716b3d176aef;79755707-f358-4bf6-b627-dc391cdceb8e",
+  "dp_used": false,
+  "dp_reason": "未调用 DeepSeek：本轮为清单与赔率证据整理",
+  "note": "【2026-10-23 21:21 CST processing】已接单：Copa Libertadores 2018-2025 canonical fixture 清单 + 可审计历史 pre-match FT 1X2 赔率（8 季，排除 2026）。三路并行已派出：A 路可审计 fixture 清单（优先下载源字节并计算 SHA-256，文本层后备必须标 null、不冒充字节哈希）、B 路赔率独立重验 + 新公开源探查、C 路访问计划 blocker 与替代方案分析。口径按本单 Q4：上一单 req-20261022-001 的 5 行赔率只作背景，不直接复制为有效赔率，每行须用可追溯源证据独立重验通过才保留；开盘/收盘仅当源明确定义端点或提供带时间戳 ticks 能确立时才标，Initial/Live/current/结果表值一律作 non-eligible 观测；绝不按队名拼合、不推断博彩公司；不购买订阅、不使用任何凭证（5Dollar Ultra 与 API-Football 额度均不动）；expected 一律 null。另：本回执同时附完整 request_sha_full，以回应上一单 request_sha 被指 malformed/mismatched 的问题——本单 request_sha 取请求文件字节 sha256 前 16 位，完整摘要见 request_sha_full 字段，可双向核对。最终交付 data.fixture_inventory + data.fixture_odds_rows（仅重验通过行）+ report + audit + 双队列（conflicts 与 unresolved 分开）。"
+}
