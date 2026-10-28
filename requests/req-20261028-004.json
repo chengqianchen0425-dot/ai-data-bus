@@ -1,0 +1,39 @@
+{
+  "id": "req-20261028-004",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "created_at": "2026-10-28T20:05:00+08:00",
+  "dp_used": false,
+  "params": {
+    "topic": "Pinnacle strictly pre-kickoff 1X2 opening odds provenance for one Eredivisie fixture",
+    "execution_note": "Single-fixture follow-up for an unresolved historical odds pair. Identity is fixed by the accepted fixture crosswalk: fixture_key=eredivisie-2018-19-2019-03-30-heerenveen-excelsior; provider fixture_id=619161520; league_id=137325260; season=2018/19; local date=2019-03-30; home=Heerenveen; away=Excelsior; kickoff=20:45 Europe/Amsterdam (2019-03-30T19:45:32Z). Do not add other matches. The FiveDollar API returned an empty bookmakers array for this Pinnacle target on every accepted HTTP 200 response and the fixture has reached its 20-attempt cap. Existing archived NowGoal candidate has Pinnacle Initial 1.70/4.05/4.77 recorded_at=2019-03-31T03:45:00+08:00, exactly the kickoff instant; do not call it pre-kickoff unless source evidence proves an earlier effective timestamp. Existing Football-Data evidence has Pinnacle pre_closing 1.62/4.43/5.15 and closing 1.60/4.74/4.96, but its own semantics say pre_closing is not true opening. These are audit leads only, not accepted substitutes.",
+    "questions": [
+      "For this exact fixture only, find a source-backed Pinnacle decimal 1X2 opening quote whose effective capture/update time is strictly before 2019-03-30T19:45:32Z. Return home/draw/away odds, the source's original timestamp and timezone, and whether that timestamp denotes quote capture, page update, or merely a label such as Initial.",
+      "Audit the archived NowGoal record and source page for match ID 1552084. Determine whether its Initial row's effective timestamp is exactly kickoff, before kickoff, or cannot be established. Preserve the existing candidate as a separate unverified record; do not rewrite it or silently promote it.",
+      "For every candidate include exact competition/date/home/away identity, source_url, final_url, retrieved_at with timezone, field_locator, source_name, timestamp semantics, and SHA-256 of captured source evidence bytes. Preserve competing values and conflicts. Do not infer odds from another bookmaker, market consensus, a neighboring fixture, or an untimed page value.",
+      "If no strictly pre-kickoff Pinnacle opening quote can be evidenced, return opening_status=unavailable or blocked with attempted sources and reasons. Do not substitute the pre_closing or closing values. Return the row even when unavailable.",
+      "Only retrieve pre-match odds and their provenance. Exclude score, result, post-match facts, standings, Qimen/chart fields, model outputs, predictions, Snapshot, Outcome, Review, and Gold. Do not write into project files or formal databases."
+    ],
+    "scope": {
+      "competition_key": "eredivisie",
+      "season": "2018/19",
+      "fixture_key": "eredivisie-2018-19-2019-03-30-heerenveen-excelsior",
+      "provider_fixture_id": "619161520",
+      "kickoff_local": "2019-03-30T20:45:32+01:00",
+      "kickoff_utc": "2019-03-30T19:45:32Z",
+      "bookmaker": "Pinnacle",
+      "market": "1X2",
+      "required_phase": "strictly_pre_kickoff_opening",
+      "exact_fixture_only": true
+    },
+    "output_contract": {
+      "format": "single_fixture_json_report_plus_evidence",
+      "preserve_nulls_and_conflicts": true,
+      "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256", "effective_timestamp_semantics"],
+      "pre_match_odds_only": true,
+      "formal_model_unchanged": true,
+      "promotion_allowed": false
+    }
+  }
+}
