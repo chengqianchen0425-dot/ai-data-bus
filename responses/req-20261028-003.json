@@ -2,12 +2,192 @@
   "id": "req-20261028-003",
   "from": "muse",
   "to": "codex",
-  "status": "processing",
+  "status": "ok",
   "request_sha": "030f455a445dbf23",
   "request_sha_full": "030f455a445dbf23c75081f71f7b78b5ee01b08c8915d27570d51b9dca17aeb2",
   "request_sha_method": "sha256 of requests/req-20261028-003.json file bytes; request_sha is its first 16 hex chars, request_sha_full is the complete digest",
   "dispatch_id": "ccab8227-c970-4459-a05b-5f190eac992e",
   "dp_used": false,
   "dp_reason": "未调用 DeepSeek：本轮为身份联结与证据整理",
-  "note": "【2026-10-28 19:40 CST processing】已接单：Veikkausliiga 精确 868 场赛前背景证据补齐（-002 的纠正单，只用随单提交的身份 artifact，不用 1902 超集、不推断缺失身份行、不碰盘口与赛后数据）。先报两项已核实项：① 身份 artifact 核验：随单提交的 work-req-20261028-003/fixture_identity_input.csv 在库内以 LF 存储，SHA-256 为 e93a940b543f7257154166dc220295cc92b8d8f2fe4b46c1c347ac6564d0cf51；将其恢复为 CRLF 行尾＋BOM 后，SHA-256 恰为请求所称 9de8b8fac5fcdebbc51e1df99f9a5fe329e3149f3deacc2dfcc4105cd9a4c093——内容同一，仅提交时行尾转换所致，身份内容已确认，行数 868＋表头。② 关于 -002 哈希：库内 requests/req-20261028-002.json 当前文件字节 SHA-256 恰等于 -002 ok 回执所发 request_sha_full（4b1ced19c40b2c149c0690fddb33a992ceb3f7e83907075af202a3fb87f43f48），与该文件当前版本无出入；若 Codex 校验端用另一序列化口径，请以该口径的对照值为准，本轮不再改写 -002 回执。执行：先以（season, match_date, home_team, away_team）＋赛季别名表把 868 行逐一联结到已接受的 -004 行与 -002 合并行（CSV fixture_key 为 veikkausliiga|赛季|日期|小写缩写 格式，与合并行键格式不同，禁止字符串直连；联结不上的行一律记 unresolved，不模糊匹配、不新增场次）；身份字段逐字保留；只补缺失或弱源字段；最终交付恰 868 行＋按赛季计数＋fixture_key 级 unresolved_queue。"
+  "data": {
+    "method_context_rows": "work-req-20261028-003/method_context_rows_868.jsonl",
+    "row_count": 868,
+    "row_sha256": "0e10f60e21419766e3bfd4ab72b421f2005d03b07a3170ed3b6e547d9135be8d",
+    "input_artifact": "work-req-20261028-003/fixture_identity_input.csv",
+    "input_artifact_sha256_stored_LF": "e93a940b543f7257154166dc220295cc92b8d8f2fe4b46c1c347ac6564d0cf51",
+    "input_artifact_sha256_restored_CRLF_BOM": "9de8b8fac5fcdebbc51e1df99f9a5fe329e3149f3deacc2dfcc4105cd9a4c093",
+    "input_artifact_note": "stored copy is LF; restoring CRLF line endings + BOM reproduces the claimed SHA-256 exactly, so content identity is confirmed and the difference is line-ending conversion on commit only",
+    "request_002_hash_note": "requests/req-20261028-002.json in repo hashes exactly to the request_sha_full sent in the -002 ok receipt (4b1ced19c40b2c149c0690fddb33a992ceb3f7e83907075af202a3fb87f43f48); no discrepancy against the current file version; if the checker uses another serialization, that serialization is the point to reconcile",
+    "join": {
+      "method": "(season, match_date, home_team, away_team) with per-season alias map derived and verified by same-date co-occurrence; raw fixture_key strings never joined directly (CSV keys use veikkausliiga|season|date|lowercase-slug format, merged keys use season|date|full-team-name format)",
+      "exact_one": 863,
+      "zero_hit": 5,
+      "multi_hit": 0,
+      "alias_map_ambiguous": 0,
+      "crosswalk_004_found": "623/623 for 2019-2025 joined rows; 2016-2018 and 2026 (240 rows) out of -004 scope"
+    },
+    "counts_by_season": {
+      "2016": {
+        "expected": 34,
+        "discovered": 34,
+        "complete": 31,
+        "partial": 3,
+        "conflict": 0,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2017": {
+        "expected": 83,
+        "discovered": 83,
+        "complete": 37,
+        "partial": 4,
+        "conflict": 42,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2018": {
+        "expected": 108,
+        "discovered": 108,
+        "complete": 63,
+        "partial": 11,
+        "conflict": 34,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2019": {
+        "expected": 68,
+        "discovered": 68,
+        "complete": 68,
+        "partial": 0,
+        "conflict": 0,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2020": {
+        "expected": 68,
+        "discovered": 68,
+        "complete": 66,
+        "partial": 0,
+        "conflict": 2,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2021": {
+        "expected": 109,
+        "discovered": 109,
+        "complete": 108,
+        "partial": 0,
+        "conflict": 1,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2022": {
+        "expected": 116,
+        "discovered": 111,
+        "complete": 21,
+        "partial": 90,
+        "conflict": 0,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 5
+      },
+      "2023": {
+        "expected": 112,
+        "discovered": 112,
+        "complete": 112,
+        "partial": 0,
+        "conflict": 0,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2024": {
+        "expected": 89,
+        "discovered": 89,
+        "complete": 88,
+        "partial": 0,
+        "conflict": 1,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2025": {
+        "expected": 66,
+        "discovered": 66,
+        "complete": 0,
+        "partial": 66,
+        "conflict": 0,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2026": {
+        "expected": 15,
+        "discovered": 15,
+        "complete": 0,
+        "partial": 9,
+        "conflict": 6,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      }
+    },
+    "counts_total": {
+      "expected": 868,
+      "discovered": 863,
+      "complete": 594,
+      "partial": 183,
+      "conflict": 86,
+      "unavailable": 0,
+      "blocked": 0,
+      "missing": 5
+    },
+    "meeting_number_non_null": 0,
+    "meeting_number_schedule_order_count_unverified_hits": 15,
+    "weak_fields_in_joined_rows": {
+      "official_round_null": 91,
+      "official_round_all_non_official": 772,
+      "venue_official_confirmation_true": 0,
+      "venue_confirmed": 803,
+      "venue_moved": 19,
+      "venue_unverified": 34,
+      "venue_competing": 7,
+      "kickoff_null": 15,
+      "kickoff_unresolved_disagreement": 66,
+      "club_entry_year_null_home": 860,
+      "club_entry_year_null_away": 861,
+      "byte_provenance_null_2016_2018_rows": 225
+    },
+    "key_findings": [
+      "output is exactly 868 rows in CSV order with identity fields byte-for-byte (fixture_key, season, match_date, home_team, away_team, api_fixture_id); no fixture added, none dropped; zero-hit rows are preserved with null evidence",
+      "key-date special case (not a join error): veikkausliiga|2020|2020-09-20|honka|hjk joins merged row 2020|2020-09-19|FC Honka|HJK Helsinki because the -002 B route kept the -004 key (which embeds the wrong date 09-19) while the corrected match_date is 09-20; join used match_date and matches the CSV date; -004 kickoff 18:30 -> merged 13:00, round 15 unchanged",
+      "zero-hit 5 rows are all 2022-10-19 to 2022-10-30 (SJK-AC Oulu, TPS-Lahti, AC Oulu-VPS, VPS-Haka, Haka-VPS); the merged 2022 league universe ends 2022-10-16, so no merged row exists on those dates; date is part of the join key, so no cross-date inference was made; TPS-Lahti timing is consistent with a relegation playoff window but that is NOT asserted (the other 4 rows have no such explanation in the league universe) -- requester adjudication required: playoff phase vs mislabel vs missing coverage",
+      "meeting_number remains null on all 868 rows; the 15 D-route schedule-order counts hitting the 2026 subset are reference-only under meeting_number_schedule_order_count_unverified",
+      "all -002 caveats carry over unchanged: venue official confirmation 0, all round labels non-official, 2022 rounds missing, 2025 kickoff disputed, 2016-2018 FBref byte provenance null (Cloudflare)"
+    ],
+    "unresolved_queue": "work-req-20261028-003/unresolved_queue_868.jsonl",
+    "unresolved_queue_items": 274,
+    "unresolved_queue_breakdown": {
+      "join_zero_hit": 5,
+      "carried_gap": 269,
+      "by_dimension": {
+        "official_round": 91,
+        "merged_conflict": 86,
+        "kickoff": 81,
+        "venue": 41,
+        "join": 5
+      }
+    },
+    "notes": "work-req-20261028-003/method_context_868_notes.md",
+    "join_scripts": [
+      "work-req-20261028-003/join_868.py",
+      "work-req-20261028-003/build_uq_868.py"
+    ]
+  }
 }
