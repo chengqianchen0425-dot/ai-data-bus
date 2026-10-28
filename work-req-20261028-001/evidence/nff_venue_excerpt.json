@@ -1,0 +1,4322 @@
+[
+ {
+  "season": 2024,
+  "round": 1,
+  "local_date": "2024-03-31",
+  "home_raw": "Odd",
+  "away_raw": "Haugesund",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002005"
+ },
+ {
+  "season": 2024,
+  "round": 1,
+  "local_date": "2024-04-01",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002001"
+ },
+ {
+  "season": 2024,
+  "round": 1,
+  "local_date": "2024-04-01",
+  "home_raw": "Molde",
+  "away_raw": "Strømsgodset",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002004"
+ },
+ {
+  "season": 2024,
+  "round": 1,
+  "local_date": "2024-04-01",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Kristiansund",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002003"
+ },
+ {
+  "season": 2024,
+  "round": 1,
+  "local_date": "2024-04-01",
+  "home_raw": "Rosenborg",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002006"
+ },
+ {
+  "season": 2024,
+  "round": 1,
+  "local_date": "2024-04-01",
+  "home_raw": "Tromsø",
+  "away_raw": "Brann",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002007"
+ },
+ {
+  "season": 2024,
+  "round": 1,
+  "local_date": "2024-04-01",
+  "home_raw": "Viking",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002008"
+ },
+ {
+  "season": 2024,
+  "round": 1,
+  "local_date": "2024-04-02",
+  "home_raw": "KFUM",
+  "away_raw": "HamKam",
+  "bane": "Intility Arena",
+  "kampnummer": "99120002002"
+ },
+ {
+  "season": 2024,
+  "round": 2,
+  "local_date": "2024-04-06",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Viking",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002009"
+ },
+ {
+  "season": 2024,
+  "round": 2,
+  "local_date": "2024-04-07",
+  "home_raw": "Kristiansund",
+  "away_raw": "KFUM",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002013"
+ },
+ {
+  "season": 2024,
+  "round": 2,
+  "local_date": "2024-04-07",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Rosenborg",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002016"
+ },
+ {
+  "season": 2024,
+  "round": 2,
+  "local_date": "2024-04-07",
+  "home_raw": "HamKam",
+  "away_raw": "Molde",
+  "bane": "Briskeby",
+  "kampnummer": "99120002011"
+ },
+ {
+  "season": 2024,
+  "round": 2,
+  "local_date": "2024-04-07",
+  "home_raw": "Haugesund",
+  "away_raw": "Lillestrøm",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002012"
+ },
+ {
+  "season": 2024,
+  "round": 2,
+  "local_date": "2024-04-07",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Odd",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002015"
+ },
+ {
+  "season": 2024,
+  "round": 2,
+  "local_date": "2024-04-07",
+  "home_raw": "Brann",
+  "away_raw": "Fredrikstad",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002010"
+ },
+ {
+  "season": 2024,
+  "round": 2,
+  "local_date": "2024-07-03",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Tromsø",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002014"
+ },
+ {
+  "season": 2024,
+  "round": 3,
+  "local_date": "2024-04-13",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002017"
+ },
+ {
+  "season": 2024,
+  "round": 3,
+  "local_date": "2024-04-14",
+  "home_raw": "Viking",
+  "away_raw": "Brann",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002024"
+ },
+ {
+  "season": 2024,
+  "round": 3,
+  "local_date": "2024-04-14",
+  "home_raw": "Molde",
+  "away_raw": "Kristiansund",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002020"
+ },
+ {
+  "season": 2024,
+  "round": 3,
+  "local_date": "2024-04-14",
+  "home_raw": "Odd",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002021"
+ },
+ {
+  "season": 2024,
+  "round": 3,
+  "local_date": "2024-04-14",
+  "home_raw": "Rosenborg",
+  "away_raw": "HamKam",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002022"
+ },
+ {
+  "season": 2024,
+  "round": 3,
+  "local_date": "2024-04-14",
+  "home_raw": "Tromsø",
+  "away_raw": "Haugesund",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002023"
+ },
+ {
+  "season": 2024,
+  "round": 3,
+  "local_date": "2024-04-14",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002019"
+ },
+ {
+  "season": 2024,
+  "round": 3,
+  "local_date": "2024-04-16",
+  "home_raw": "KFUM",
+  "away_raw": "Strømsgodset",
+  "bane": "Intility Arena",
+  "kampnummer": "99120002018"
+ },
+ {
+  "season": 2024,
+  "round": 4,
+  "local_date": "2024-04-21",
+  "home_raw": "HamKam",
+  "away_raw": "Strømsgodset",
+  "bane": "Briskeby",
+  "kampnummer": "99120002027"
+ },
+ {
+  "season": 2024,
+  "round": 4,
+  "local_date": "2024-04-21",
+  "home_raw": "Brann",
+  "away_raw": "Odd",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002026"
+ },
+ {
+  "season": 2024,
+  "round": 4,
+  "local_date": "2024-04-21",
+  "home_raw": "Haugesund",
+  "away_raw": "Rosenborg",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002028"
+ },
+ {
+  "season": 2024,
+  "round": 4,
+  "local_date": "2024-04-21",
+  "home_raw": "Viking",
+  "away_raw": "Fredrikstad",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002032"
+ },
+ {
+  "season": 2024,
+  "round": 4,
+  "local_date": "2024-04-21",
+  "home_raw": "Kristiansund",
+  "away_raw": "Tromsø",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002029"
+ },
+ {
+  "season": 2024,
+  "round": 4,
+  "local_date": "2024-04-21",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Lillestrøm",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002030"
+ },
+ {
+  "season": 2024,
+  "round": 4,
+  "local_date": "2024-04-21",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "KFUM",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002031"
+ },
+ {
+  "season": 2024,
+  "round": 4,
+  "local_date": "2024-04-21",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Molde",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002025"
+ },
+ {
+  "season": 2024,
+  "round": 5,
+  "local_date": "2024-04-27",
+  "home_raw": "Rosenborg",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002038"
+ },
+ {
+  "season": 2024,
+  "round": 5,
+  "local_date": "2024-04-28",
+  "home_raw": "Molde",
+  "away_raw": "Haugesund",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002036"
+ },
+ {
+  "season": 2024,
+  "round": 5,
+  "local_date": "2024-04-28",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Kristiansund",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002039"
+ },
+ {
+  "season": 2024,
+  "round": 5,
+  "local_date": "2024-04-28",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002033"
+ },
+ {
+  "season": 2024,
+  "round": 5,
+  "local_date": "2024-04-28",
+  "home_raw": "KFUM",
+  "away_raw": "Brann",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002034"
+ },
+ {
+  "season": 2024,
+  "round": 5,
+  "local_date": "2024-04-28",
+  "home_raw": "Lillestrøm",
+  "away_raw": "HamKam",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002035"
+ },
+ {
+  "season": 2024,
+  "round": 5,
+  "local_date": "2024-04-28",
+  "home_raw": "Tromsø",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002040"
+ },
+ {
+  "season": 2024,
+  "round": 5,
+  "local_date": "2024-04-28",
+  "home_raw": "Odd",
+  "away_raw": "Viking",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002037"
+ },
+ {
+  "season": 2024,
+  "round": 6,
+  "local_date": "2024-05-04",
+  "home_raw": "Brann",
+  "away_raw": "Rosenborg",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002042"
+ },
+ {
+  "season": 2024,
+  "round": 6,
+  "local_date": "2024-05-05",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Strømsgodset",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002041"
+ },
+ {
+  "season": 2024,
+  "round": 6,
+  "local_date": "2024-05-05",
+  "home_raw": "Haugesund",
+  "away_raw": "KFUM",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002043"
+ },
+ {
+  "season": 2024,
+  "round": 6,
+  "local_date": "2024-05-05",
+  "home_raw": "Odd",
+  "away_raw": "Fredrikstad",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002045"
+ },
+ {
+  "season": 2024,
+  "round": 6,
+  "local_date": "2024-05-05",
+  "home_raw": "Kristiansund",
+  "away_raw": "HamKam",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002044"
+ },
+ {
+  "season": 2024,
+  "round": 6,
+  "local_date": "2024-05-05",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Molde",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002046"
+ },
+ {
+  "season": 2024,
+  "round": 6,
+  "local_date": "2024-05-05",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Lillestrøm",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002047"
+ },
+ {
+  "season": 2024,
+  "round": 6,
+  "local_date": "2024-05-05",
+  "home_raw": "Viking",
+  "away_raw": "Tromsø",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002048"
+ },
+ {
+  "season": 2024,
+  "round": 7,
+  "local_date": "2024-05-11",
+  "home_raw": "Molde",
+  "away_raw": "Rosenborg",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002053"
+ },
+ {
+  "season": 2024,
+  "round": 7,
+  "local_date": "2024-05-12",
+  "home_raw": "Kristiansund",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002051"
+ },
+ {
+  "season": 2024,
+  "round": 7,
+  "local_date": "2024-05-12",
+  "home_raw": "HamKam",
+  "away_raw": "Haugesund",
+  "bane": "Briskeby",
+  "kampnummer": "99120002049"
+ },
+ {
+  "season": 2024,
+  "round": 7,
+  "local_date": "2024-05-12",
+  "home_raw": "KFUM",
+  "away_raw": "Fredrikstad",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002050"
+ },
+ {
+  "season": 2024,
+  "round": 7,
+  "local_date": "2024-05-12",
+  "home_raw": "Tromsø",
+  "away_raw": "Odd",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002056"
+ },
+ {
+  "season": 2024,
+  "round": 7,
+  "local_date": "2024-05-12",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002054"
+ },
+ {
+  "season": 2024,
+  "round": 7,
+  "local_date": "2024-05-12",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Viking",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002055"
+ },
+ {
+  "season": 2024,
+  "round": 7,
+  "local_date": "2024-05-12",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Brann",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002052"
+ },
+ {
+  "season": 2024,
+  "round": 8,
+  "local_date": "2024-05-16",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Strømsgodset",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002059"
+ },
+ {
+  "season": 2024,
+  "round": 8,
+  "local_date": "2024-05-16",
+  "home_raw": "Rosenborg",
+  "away_raw": "KFUM",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002062"
+ },
+ {
+  "season": 2024,
+  "round": 8,
+  "local_date": "2024-05-16",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Tromsø",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002057"
+ },
+ {
+  "season": 2024,
+  "round": 8,
+  "local_date": "2024-05-16",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "HamKam",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002063"
+ },
+ {
+  "season": 2024,
+  "round": 8,
+  "local_date": "2024-05-16",
+  "home_raw": "Viking",
+  "away_raw": "Lillestrøm",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002064"
+ },
+ {
+  "season": 2024,
+  "round": 8,
+  "local_date": "2024-05-16",
+  "home_raw": "Brann",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002058"
+ },
+ {
+  "season": 2024,
+  "round": 8,
+  "local_date": "2024-05-16",
+  "home_raw": "Haugesund",
+  "away_raw": "Kristiansund",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002060"
+ },
+ {
+  "season": 2024,
+  "round": 8,
+  "local_date": "2024-05-16",
+  "home_raw": "Odd",
+  "away_raw": "Molde",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002061"
+ },
+ {
+  "season": 2024,
+  "round": 9,
+  "local_date": "2024-05-20",
+  "home_raw": "HamKam",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Briskeby",
+  "kampnummer": "99120002065"
+ },
+ {
+  "season": 2024,
+  "round": 9,
+  "local_date": "2024-05-20",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Viking",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002070"
+ },
+ {
+  "season": 2024,
+  "round": 9,
+  "local_date": "2024-05-20",
+  "home_raw": "Kristiansund",
+  "away_raw": "Brann",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002067"
+ },
+ {
+  "season": 2024,
+  "round": 9,
+  "local_date": "2024-05-20",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Haugesund",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002071"
+ },
+ {
+  "season": 2024,
+  "round": 9,
+  "local_date": "2024-05-20",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Fredrikstad",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002068"
+ },
+ {
+  "season": 2024,
+  "round": 9,
+  "local_date": "2024-05-20",
+  "home_raw": "KFUM",
+  "away_raw": "Odd",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002066"
+ },
+ {
+  "season": 2024,
+  "round": 9,
+  "local_date": "2024-05-20",
+  "home_raw": "Molde",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002069"
+ },
+ {
+  "season": 2024,
+  "round": 9,
+  "local_date": "2024-05-20",
+  "home_raw": "Tromsø",
+  "away_raw": "Rosenborg",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002072"
+ },
+ {
+  "season": 2024,
+  "round": 10,
+  "local_date": "2024-05-24",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "KFUM",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002073"
+ },
+ {
+  "season": 2024,
+  "round": 10,
+  "local_date": "2024-05-25",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Tromsø",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002075"
+ },
+ {
+  "season": 2024,
+  "round": 10,
+  "local_date": "2024-05-26",
+  "home_raw": "Haugesund",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002076"
+ },
+ {
+  "season": 2024,
+  "round": 10,
+  "local_date": "2024-05-26",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Strømsgodset",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002079"
+ },
+ {
+  "season": 2024,
+  "round": 10,
+  "local_date": "2024-05-26",
+  "home_raw": "Rosenborg",
+  "away_raw": "Kristiansund",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002078"
+ },
+ {
+  "season": 2024,
+  "round": 10,
+  "local_date": "2024-05-26",
+  "home_raw": "Odd",
+  "away_raw": "Lillestrøm",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002077"
+ },
+ {
+  "season": 2024,
+  "round": 10,
+  "local_date": "2024-05-26",
+  "home_raw": "Viking",
+  "away_raw": "HamKam",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002080"
+ },
+ {
+  "season": 2024,
+  "round": 10,
+  "local_date": "2024-05-26",
+  "home_raw": "Brann",
+  "away_raw": "Molde",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002074"
+ },
+ {
+  "season": 2024,
+  "round": 11,
+  "local_date": "2024-06-01",
+  "home_raw": "HamKam",
+  "away_raw": "Brann",
+  "bane": "Briskeby",
+  "kampnummer": "99120002081"
+ },
+ {
+  "season": 2024,
+  "round": 11,
+  "local_date": "2024-06-02",
+  "home_raw": "Molde",
+  "away_raw": "Viking",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002085"
+ },
+ {
+  "season": 2024,
+  "round": 11,
+  "local_date": "2024-06-02",
+  "home_raw": "Kristiansund",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002084"
+ },
+ {
+  "season": 2024,
+  "round": 11,
+  "local_date": "2024-06-02",
+  "home_raw": "Haugesund",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002082"
+ },
+ {
+  "season": 2024,
+  "round": 11,
+  "local_date": "2024-06-02",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Odd",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002087"
+ },
+ {
+  "season": 2024,
+  "round": 11,
+  "local_date": "2024-06-02",
+  "home_raw": "KFUM",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002083"
+ },
+ {
+  "season": 2024,
+  "round": 11,
+  "local_date": "2024-06-02",
+  "home_raw": "Tromsø",
+  "away_raw": "Lillestrøm",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002088"
+ },
+ {
+  "season": 2024,
+  "round": 11,
+  "local_date": "2024-06-02",
+  "home_raw": "Rosenborg",
+  "away_raw": "Fredrikstad",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002086"
+ },
+ {
+  "season": 2024,
+  "round": 12,
+  "local_date": "2024-06-27",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "HamKam",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002093"
+ },
+ {
+  "season": 2024,
+  "round": 12,
+  "local_date": "2024-06-27",
+  "home_raw": "Lillestrøm",
+  "away_raw": "KFUM",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002091"
+ },
+ {
+  "season": 2024,
+  "round": 12,
+  "local_date": "2024-06-28",
+  "home_raw": "Brann",
+  "away_raw": "Strømsgodset",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002089"
+ },
+ {
+  "season": 2024,
+  "round": 12,
+  "local_date": "2024-06-28",
+  "home_raw": "Odd",
+  "away_raw": "Kristiansund",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002092"
+ },
+ {
+  "season": 2024,
+  "round": 12,
+  "local_date": "2024-06-28",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002094"
+ },
+ {
+  "season": 2024,
+  "round": 12,
+  "local_date": "2024-06-28",
+  "home_raw": "Tromsø",
+  "away_raw": "Molde",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002095"
+ },
+ {
+  "season": 2024,
+  "round": 12,
+  "local_date": "2024-06-30",
+  "home_raw": "Viking",
+  "away_raw": "Rosenborg",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002096"
+ },
+ {
+  "season": 2024,
+  "round": 12,
+  "local_date": "2024-08-14",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Haugesund",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002090"
+ },
+ {
+  "season": 2024,
+  "round": 13,
+  "local_date": "2024-07-07",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Brann",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002097"
+ },
+ {
+  "season": 2024,
+  "round": 13,
+  "local_date": "2024-07-07",
+  "home_raw": "HamKam",
+  "away_raw": "Tromsø",
+  "bane": "Briskeby",
+  "kampnummer": "99120002098"
+ },
+ {
+  "season": 2024,
+  "round": 13,
+  "local_date": "2024-07-07",
+  "home_raw": "Haugesund",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002099"
+ },
+ {
+  "season": 2024,
+  "round": 13,
+  "local_date": "2024-07-07",
+  "home_raw": "KFUM",
+  "away_raw": "Viking",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002100"
+ },
+ {
+  "season": 2024,
+  "round": 13,
+  "local_date": "2024-07-07",
+  "home_raw": "Molde",
+  "away_raw": "Lillestrøm",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002102"
+ },
+ {
+  "season": 2024,
+  "round": 13,
+  "local_date": "2024-07-07",
+  "home_raw": "Rosenborg",
+  "away_raw": "Odd",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002103"
+ },
+ {
+  "season": 2024,
+  "round": 13,
+  "local_date": "2024-07-08",
+  "home_raw": "Kristiansund",
+  "away_raw": "Fredrikstad",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002101"
+ },
+ {
+  "season": 2024,
+  "round": 13,
+  "local_date": "2024-07-08",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002104"
+ },
+ {
+  "season": 2024,
+  "round": 14,
+  "local_date": "2024-07-12",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Rosenborg",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002110"
+ },
+ {
+  "season": 2024,
+  "round": 14,
+  "local_date": "2024-07-13",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Strømsgodset",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002107"
+ },
+ {
+  "season": 2024,
+  "round": 14,
+  "local_date": "2024-07-13",
+  "home_raw": "Odd",
+  "away_raw": "HamKam",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002108"
+ },
+ {
+  "season": 2024,
+  "round": 14,
+  "local_date": "2024-07-13",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002109"
+ },
+ {
+  "season": 2024,
+  "round": 14,
+  "local_date": "2024-07-13",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Molde",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002106"
+ },
+ {
+  "season": 2024,
+  "round": 14,
+  "local_date": "2024-07-13",
+  "home_raw": "Viking",
+  "away_raw": "Kristiansund",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002112"
+ },
+ {
+  "season": 2024,
+  "round": 14,
+  "local_date": "2024-07-13",
+  "home_raw": "Brann",
+  "away_raw": "Haugesund",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002105"
+ },
+ {
+  "season": 2024,
+  "round": 14,
+  "local_date": "2024-07-13",
+  "home_raw": "Tromsø",
+  "away_raw": "KFUM",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002111"
+ },
+ {
+  "season": 2024,
+  "round": 15,
+  "local_date": "2024-07-19",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Odd",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002113"
+ },
+ {
+  "season": 2024,
+  "round": 15,
+  "local_date": "2024-07-20",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Brann",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002119"
+ },
+ {
+  "season": 2024,
+  "round": 15,
+  "local_date": "2024-07-20",
+  "home_raw": "Molde",
+  "away_raw": "KFUM",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002117"
+ },
+ {
+  "season": 2024,
+  "round": 15,
+  "local_date": "2024-07-21",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Tromsø",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002120"
+ },
+ {
+  "season": 2024,
+  "round": 15,
+  "local_date": "2024-07-21",
+  "home_raw": "HamKam",
+  "away_raw": "Fredrikstad",
+  "bane": "Briskeby",
+  "kampnummer": "99120002114"
+ },
+ {
+  "season": 2024,
+  "round": 15,
+  "local_date": "2024-07-21",
+  "home_raw": "Haugesund",
+  "away_raw": "Viking",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002115"
+ },
+ {
+  "season": 2024,
+  "round": 15,
+  "local_date": "2024-08-21",
+  "home_raw": "Rosenborg",
+  "away_raw": "Lillestrøm",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002118"
+ },
+ {
+  "season": 2024,
+  "round": 15,
+  "local_date": "2024-10-05",
+  "home_raw": "Kristiansund",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002116"
+ },
+ {
+  "season": 2024,
+  "round": 16,
+  "local_date": "2024-04-17",
+  "home_raw": "Brann",
+  "away_raw": "HamKam",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002121"
+ },
+ {
+  "season": 2024,
+  "round": 16,
+  "local_date": "2024-07-27",
+  "home_raw": "KFUM",
+  "away_raw": "Bodø/Glimt",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002123"
+ },
+ {
+  "season": 2024,
+  "round": 16,
+  "local_date": "2024-07-27",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Rosenborg",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002122"
+ },
+ {
+  "season": 2024,
+  "round": 16,
+  "local_date": "2024-07-28",
+  "home_raw": "Odd",
+  "away_raw": "Strømsgodset",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002125"
+ },
+ {
+  "season": 2024,
+  "round": 16,
+  "local_date": "2024-07-28",
+  "home_raw": "Tromsø",
+  "away_raw": "Kristiansund",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002127"
+ },
+ {
+  "season": 2024,
+  "round": 16,
+  "local_date": "2024-07-28",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Haugesund",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002126"
+ },
+ {
+  "season": 2024,
+  "round": 16,
+  "local_date": "2024-07-28",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002124"
+ },
+ {
+  "season": 2024,
+  "round": 16,
+  "local_date": "2024-07-28",
+  "home_raw": "Viking",
+  "away_raw": "Molde",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002128"
+ },
+ {
+  "season": 2024,
+  "round": 17,
+  "local_date": "2024-04-17",
+  "home_raw": "Molde",
+  "away_raw": "Odd",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002133"
+ },
+ {
+  "season": 2024,
+  "round": 17,
+  "local_date": "2024-08-03",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Haugesund",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002129"
+ },
+ {
+  "season": 2024,
+  "round": 17,
+  "local_date": "2024-08-04",
+  "home_raw": "HamKam",
+  "away_raw": "Viking",
+  "bane": "Briskeby",
+  "kampnummer": "99120002131"
+ },
+ {
+  "season": 2024,
+  "round": 17,
+  "local_date": "2024-08-04",
+  "home_raw": "Fredrikstad",
+  "away_raw": "KFUM",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002130"
+ },
+ {
+  "season": 2024,
+  "round": 17,
+  "local_date": "2024-08-04",
+  "home_raw": "Kristiansund",
+  "away_raw": "Lillestrøm",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002132"
+ },
+ {
+  "season": 2024,
+  "round": 17,
+  "local_date": "2024-08-04",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002135"
+ },
+ {
+  "season": 2024,
+  "round": 17,
+  "local_date": "2024-08-04",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Brann",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002136"
+ },
+ {
+  "season": 2024,
+  "round": 17,
+  "local_date": "2024-08-04",
+  "home_raw": "Rosenborg",
+  "away_raw": "Tromsø",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002134"
+ },
+ {
+  "season": 2024,
+  "round": 18,
+  "local_date": "2024-05-29",
+  "home_raw": "Brann",
+  "away_raw": "Kristiansund",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002137"
+ },
+ {
+  "season": 2024,
+  "round": 18,
+  "local_date": "2024-05-29",
+  "home_raw": "Tromsø",
+  "away_raw": "Fredrikstad",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002143"
+ },
+ {
+  "season": 2024,
+  "round": 18,
+  "local_date": "2024-08-09",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Strømsgodset",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002142"
+ },
+ {
+  "season": 2024,
+  "round": 18,
+  "local_date": "2024-08-10",
+  "home_raw": "Haugesund",
+  "away_raw": "HamKam",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002138"
+ },
+ {
+  "season": 2024,
+  "round": 18,
+  "local_date": "2024-08-10",
+  "home_raw": "Viking",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002144"
+ },
+ {
+  "season": 2024,
+  "round": 18,
+  "local_date": "2024-08-11",
+  "home_raw": "KFUM",
+  "away_raw": "Rosenborg",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002139"
+ },
+ {
+  "season": 2024,
+  "round": 18,
+  "local_date": "2024-08-11",
+  "home_raw": "Odd",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002141"
+ },
+ {
+  "season": 2024,
+  "round": 18,
+  "local_date": "2024-08-11",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Molde",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002140"
+ },
+ {
+  "season": 2024,
+  "round": 19,
+  "local_date": "2024-05-29",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002145"
+ },
+ {
+  "season": 2024,
+  "round": 19,
+  "local_date": "2024-08-17",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Lillestrøm",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002152"
+ },
+ {
+  "season": 2024,
+  "round": 19,
+  "local_date": "2024-08-18",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Brann",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002146"
+ },
+ {
+  "season": 2024,
+  "round": 19,
+  "local_date": "2024-08-18",
+  "home_raw": "HamKam",
+  "away_raw": "Odd",
+  "bane": "Briskeby",
+  "kampnummer": "99120002147"
+ },
+ {
+  "season": 2024,
+  "round": 19,
+  "local_date": "2024-08-18",
+  "home_raw": "KFUM",
+  "away_raw": "Tromsø",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002148"
+ },
+ {
+  "season": 2024,
+  "round": 19,
+  "local_date": "2024-08-18",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Haugesund",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002151"
+ },
+ {
+  "season": 2024,
+  "round": 19,
+  "local_date": "2024-08-18",
+  "home_raw": "Rosenborg",
+  "away_raw": "Viking",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002150"
+ },
+ {
+  "season": 2024,
+  "round": 19,
+  "local_date": "2024-09-18",
+  "home_raw": "Kristiansund",
+  "away_raw": "Molde",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002149"
+ },
+ {
+  "season": 2024,
+  "round": 20,
+  "local_date": "2024-08-24",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002153"
+ },
+ {
+  "season": 2024,
+  "round": 20,
+  "local_date": "2024-08-25",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Tromsø",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002156"
+ },
+ {
+  "season": 2024,
+  "round": 20,
+  "local_date": "2024-08-25",
+  "home_raw": "Molde",
+  "away_raw": "HamKam",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002157"
+ },
+ {
+  "season": 2024,
+  "round": 20,
+  "local_date": "2024-08-25",
+  "home_raw": "Viking",
+  "away_raw": "Strømsgodset",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002160"
+ },
+ {
+  "season": 2024,
+  "round": 20,
+  "local_date": "2024-08-25",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Kristiansund",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002159"
+ },
+ {
+  "season": 2024,
+  "round": 20,
+  "local_date": "2024-08-25",
+  "home_raw": "Haugesund",
+  "away_raw": "Fredrikstad",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002155"
+ },
+ {
+  "season": 2024,
+  "round": 20,
+  "local_date": "2024-08-25",
+  "home_raw": "Odd",
+  "away_raw": "Rosenborg",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002158"
+ },
+ {
+  "season": 2024,
+  "round": 20,
+  "local_date": "2024-09-18",
+  "home_raw": "Brann",
+  "away_raw": "KFUM",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002154"
+ },
+ {
+  "season": 2024,
+  "round": 21,
+  "local_date": "2024-08-30",
+  "home_raw": "KFUM",
+  "away_raw": "Lillestrøm",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002164"
+ },
+ {
+  "season": 2024,
+  "round": 21,
+  "local_date": "2024-08-31",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Odd",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002162"
+ },
+ {
+  "season": 2024,
+  "round": 21,
+  "local_date": "2024-09-01",
+  "home_raw": "Rosenborg",
+  "away_raw": "Molde",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002166"
+ },
+ {
+  "season": 2024,
+  "round": 21,
+  "local_date": "2024-09-01",
+  "home_raw": "HamKam",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Briskeby",
+  "kampnummer": "99120002163"
+ },
+ {
+  "season": 2024,
+  "round": 21,
+  "local_date": "2024-09-01",
+  "home_raw": "Kristiansund",
+  "away_raw": "Haugesund",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002165"
+ },
+ {
+  "season": 2024,
+  "round": 21,
+  "local_date": "2024-09-01",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002167"
+ },
+ {
+  "season": 2024,
+  "round": 21,
+  "local_date": "2024-09-01",
+  "home_raw": "Tromsø",
+  "away_raw": "Viking",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002168"
+ },
+ {
+  "season": 2024,
+  "round": 21,
+  "local_date": "2024-09-01",
+  "home_raw": "Brann",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002161"
+ },
+ {
+  "season": 2024,
+  "round": 22,
+  "local_date": "2024-09-13",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "HamKam",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002169"
+ },
+ {
+  "season": 2024,
+  "round": 22,
+  "local_date": "2024-09-14",
+  "home_raw": "Viking",
+  "away_raw": "KFUM",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002176"
+ },
+ {
+  "season": 2024,
+  "round": 22,
+  "local_date": "2024-09-14",
+  "home_raw": "Molde",
+  "away_raw": "Fredrikstad",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002172"
+ },
+ {
+  "season": 2024,
+  "round": 22,
+  "local_date": "2024-09-15",
+  "home_raw": "Odd",
+  "away_raw": "Tromsø",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002173"
+ },
+ {
+  "season": 2024,
+  "round": 22,
+  "local_date": "2024-09-15",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Brann",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002174"
+ },
+ {
+  "season": 2024,
+  "round": 22,
+  "local_date": "2024-09-15",
+  "home_raw": "Haugesund",
+  "away_raw": "Strømsgodset",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002170"
+ },
+ {
+  "season": 2024,
+  "round": 22,
+  "local_date": "2024-09-15",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Kristiansund",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002175"
+ },
+ {
+  "season": 2024,
+  "round": 22,
+  "local_date": "2024-09-15",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Rosenborg",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002171"
+ },
+ {
+  "season": 2024,
+  "round": 23,
+  "local_date": "2024-09-21",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002183"
+ },
+ {
+  "season": 2024,
+  "round": 23,
+  "local_date": "2024-09-21",
+  "home_raw": "HamKam",
+  "away_raw": "Lillestrøm",
+  "bane": "Briskeby",
+  "kampnummer": "99120002179"
+ },
+ {
+  "season": 2024,
+  "round": 23,
+  "local_date": "2024-09-22",
+  "home_raw": "Brann",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002177"
+ },
+ {
+  "season": 2024,
+  "round": 23,
+  "local_date": "2024-09-22",
+  "home_raw": "Tromsø",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002184"
+ },
+ {
+  "season": 2024,
+  "round": 23,
+  "local_date": "2024-09-22",
+  "home_raw": "Kristiansund",
+  "away_raw": "Odd",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002181"
+ },
+ {
+  "season": 2024,
+  "round": 23,
+  "local_date": "2024-09-22",
+  "home_raw": "Rosenborg",
+  "away_raw": "Haugesund",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002182"
+ },
+ {
+  "season": 2024,
+  "round": 23,
+  "local_date": "2024-09-22",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Viking",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002178"
+ },
+ {
+  "season": 2024,
+  "round": 23,
+  "local_date": "2024-09-23",
+  "home_raw": "KFUM",
+  "away_raw": "Molde",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002180"
+ },
+ {
+  "season": 2024,
+  "round": 24,
+  "local_date": "2024-09-28",
+  "home_raw": "Molde",
+  "away_raw": "Tromsø",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002188"
+ },
+ {
+  "season": 2024,
+  "round": 24,
+  "local_date": "2024-09-28",
+  "home_raw": "Haugesund",
+  "away_raw": "Brann",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002186"
+ },
+ {
+  "season": 2024,
+  "round": 24,
+  "local_date": "2024-09-28",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Fredrikstad",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002191"
+ },
+ {
+  "season": 2024,
+  "round": 24,
+  "local_date": "2024-09-29",
+  "home_raw": "Strømsgodset",
+  "away_raw": "HamKam",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002192"
+ },
+ {
+  "season": 2024,
+  "round": 24,
+  "local_date": "2024-09-29",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Kristiansund",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002185"
+ },
+ {
+  "season": 2024,
+  "round": 24,
+  "local_date": "2024-09-29",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Viking",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002187"
+ },
+ {
+  "season": 2024,
+  "round": 24,
+  "local_date": "2024-09-29",
+  "home_raw": "Odd",
+  "away_raw": "KFUM",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002189"
+ },
+ {
+  "season": 2024,
+  "round": 24,
+  "local_date": "2024-09-29",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Rosenborg",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002190"
+ },
+ {
+  "season": 2024,
+  "round": 25,
+  "local_date": "2024-10-19",
+  "home_raw": "Molde",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002197"
+ },
+ {
+  "season": 2024,
+  "round": 25,
+  "local_date": "2024-10-19",
+  "home_raw": "Tromsø",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002199"
+ },
+ {
+  "season": 2024,
+  "round": 25,
+  "local_date": "2024-10-20",
+  "home_raw": "Rosenborg",
+  "away_raw": "Brann",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002198"
+ },
+ {
+  "season": 2024,
+  "round": 25,
+  "local_date": "2024-10-20",
+  "home_raw": "Viking",
+  "away_raw": "Odd",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002200"
+ },
+ {
+  "season": 2024,
+  "round": 25,
+  "local_date": "2024-10-20",
+  "home_raw": "Kristiansund",
+  "away_raw": "Strømsgodset",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002196"
+ },
+ {
+  "season": 2024,
+  "round": 25,
+  "local_date": "2024-10-20",
+  "home_raw": "HamKam",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Briskeby",
+  "kampnummer": "99120002194"
+ },
+ {
+  "season": 2024,
+  "round": 25,
+  "local_date": "2024-10-20",
+  "home_raw": "KFUM",
+  "away_raw": "Haugesund",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002195"
+ },
+ {
+  "season": 2024,
+  "round": 25,
+  "local_date": "2024-10-20",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Lillestrøm",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002193"
+ },
+ {
+  "season": 2024,
+  "round": 26,
+  "local_date": "2024-10-26",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Fredrikstad",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002208"
+ },
+ {
+  "season": 2024,
+  "round": 26,
+  "local_date": "2024-10-27",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "KFUM",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002206"
+ },
+ {
+  "season": 2024,
+  "round": 26,
+  "local_date": "2024-10-27",
+  "home_raw": "HamKam",
+  "away_raw": "Kristiansund",
+  "bane": "Briskeby",
+  "kampnummer": "99120002203"
+ },
+ {
+  "season": 2024,
+  "round": 26,
+  "local_date": "2024-10-27",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Odd",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002205"
+ },
+ {
+  "season": 2024,
+  "round": 26,
+  "local_date": "2024-10-27",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Viking",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002207"
+ },
+ {
+  "season": 2024,
+  "round": 26,
+  "local_date": "2024-10-27",
+  "home_raw": "Haugesund",
+  "away_raw": "Molde",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002204"
+ },
+ {
+  "season": 2024,
+  "round": 26,
+  "local_date": "2024-10-27",
+  "home_raw": "Brann",
+  "away_raw": "Tromsø",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002202"
+ },
+ {
+  "season": 2024,
+  "round": 26,
+  "local_date": "2024-10-28",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Rosenborg",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002201"
+ },
+ {
+  "season": 2024,
+  "round": 27,
+  "local_date": "2024-11-02",
+  "home_raw": "Viking",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002216"
+ },
+ {
+  "season": 2024,
+  "round": 27,
+  "local_date": "2024-11-03",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Haugesund",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002211"
+ },
+ {
+  "season": 2024,
+  "round": 27,
+  "local_date": "2024-11-03",
+  "home_raw": "Molde",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002212"
+ },
+ {
+  "season": 2024,
+  "round": 27,
+  "local_date": "2024-11-03",
+  "home_raw": "Odd",
+  "away_raw": "Brann",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002213"
+ },
+ {
+  "season": 2024,
+  "round": 27,
+  "local_date": "2024-11-03",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Kristiansund",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002209"
+ },
+ {
+  "season": 2024,
+  "round": 27,
+  "local_date": "2024-11-03",
+  "home_raw": "KFUM",
+  "away_raw": "Sarpsborg 08",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002210"
+ },
+ {
+  "season": 2024,
+  "round": 27,
+  "local_date": "2024-11-03",
+  "home_raw": "Tromsø",
+  "away_raw": "HamKam",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002215"
+ },
+ {
+  "season": 2024,
+  "round": 27,
+  "local_date": "2024-11-03",
+  "home_raw": "Rosenborg",
+  "away_raw": "Strømsgodset",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002214"
+ },
+ {
+  "season": 2024,
+  "round": 28,
+  "local_date": "2024-11-09",
+  "home_raw": "Brann",
+  "away_raw": "Lillestrøm",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002218"
+ },
+ {
+  "season": 2024,
+  "round": 28,
+  "local_date": "2024-11-10",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Odd",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002222"
+ },
+ {
+  "season": 2024,
+  "round": 28,
+  "local_date": "2024-11-10",
+  "home_raw": "Haugesund",
+  "away_raw": "Tromsø",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002220"
+ },
+ {
+  "season": 2024,
+  "round": 28,
+  "local_date": "2024-11-10",
+  "home_raw": "Kristiansund",
+  "away_raw": "Viking",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002221"
+ },
+ {
+  "season": 2024,
+  "round": 28,
+  "local_date": "2024-11-10",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Molde",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002223"
+ },
+ {
+  "season": 2024,
+  "round": 28,
+  "local_date": "2024-11-10",
+  "home_raw": "HamKam",
+  "away_raw": "Rosenborg",
+  "bane": "Briskeby",
+  "kampnummer": "99120002219"
+ },
+ {
+  "season": 2024,
+  "round": 28,
+  "local_date": "2024-11-10",
+  "home_raw": "Strømsgodset",
+  "away_raw": "KFUM",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002224"
+ },
+ {
+  "season": 2024,
+  "round": 28,
+  "local_date": "2024-11-10",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Fredrikstad",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002217"
+ },
+ {
+  "season": 2024,
+  "round": 29,
+  "local_date": "2024-11-23",
+  "home_raw": "Odd",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Skagerak Arena",
+  "kampnummer": "99120002229"
+ },
+ {
+  "season": 2024,
+  "round": 29,
+  "local_date": "2024-11-23",
+  "home_raw": "Fredrikstad",
+  "away_raw": "HamKam",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120002225"
+ },
+ {
+  "season": 2024,
+  "round": 29,
+  "local_date": "2024-11-23",
+  "home_raw": "Lillestrøm",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Åråsen stadion",
+  "kampnummer": "99120002227"
+ },
+ {
+  "season": 2024,
+  "round": 29,
+  "local_date": "2024-11-23",
+  "home_raw": "Rosenborg",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120002230"
+ },
+ {
+  "season": 2024,
+  "round": 29,
+  "local_date": "2024-11-23",
+  "home_raw": "Viking",
+  "away_raw": "Haugesund",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120002232"
+ },
+ {
+  "season": 2024,
+  "round": 29,
+  "local_date": "2024-11-23",
+  "home_raw": "KFUM",
+  "away_raw": "Kristiansund",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120002226"
+ },
+ {
+  "season": 2024,
+  "round": 29,
+  "local_date": "2024-11-23",
+  "home_raw": "Molde",
+  "away_raw": "Brann",
+  "bane": "Aker stadion",
+  "kampnummer": "99120002228"
+ },
+ {
+  "season": 2024,
+  "round": 29,
+  "local_date": "2024-11-23",
+  "home_raw": "Tromsø",
+  "away_raw": "Strømsgodset",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120002231"
+ },
+ {
+  "season": 2024,
+  "round": 30,
+  "local_date": "2024-12-01",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Molde",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120002240"
+ },
+ {
+  "season": 2024,
+  "round": 30,
+  "local_date": "2024-12-01",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Lillestrøm",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120002233"
+ },
+ {
+  "season": 2024,
+  "round": 30,
+  "local_date": "2024-12-01",
+  "home_raw": "Kristiansund",
+  "away_raw": "Rosenborg",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120002237"
+ },
+ {
+  "season": 2024,
+  "round": 30,
+  "local_date": "2024-12-01",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Tromsø",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120002239"
+ },
+ {
+  "season": 2024,
+  "round": 30,
+  "local_date": "2024-12-01",
+  "home_raw": "Brann",
+  "away_raw": "Viking",
+  "bane": "Brann stadion",
+  "kampnummer": "99120002234"
+ },
+ {
+  "season": 2024,
+  "round": 30,
+  "local_date": "2024-12-01",
+  "home_raw": "Haugesund",
+  "away_raw": "Odd",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120002236"
+ },
+ {
+  "season": 2024,
+  "round": 30,
+  "local_date": "2024-12-01",
+  "home_raw": "HamKam",
+  "away_raw": "KFUM",
+  "bane": "Briskeby",
+  "kampnummer": "99120002235"
+ },
+ {
+  "season": 2024,
+  "round": 30,
+  "local_date": "2024-12-01",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Fredrikstad",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120002238"
+ },
+ {
+  "season": 2025,
+  "round": 1,
+  "local_date": "2025-03-29",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Rosenborg",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001006"
+ },
+ {
+  "season": 2025,
+  "round": 1,
+  "local_date": "2025-03-29",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Brann",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001002"
+ },
+ {
+  "season": 2025,
+  "round": 1,
+  "local_date": "2025-03-30",
+  "home_raw": "Vålerenga",
+  "away_raw": "Viking",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001008"
+ },
+ {
+  "season": 2025,
+  "round": 1,
+  "local_date": "2025-03-30",
+  "home_raw": "HamKam",
+  "away_raw": "Kristiansund",
+  "bane": "Briskeby",
+  "kampnummer": "99120001003"
+ },
+ {
+  "season": 2025,
+  "round": 1,
+  "local_date": "2025-03-30",
+  "home_raw": "Molde",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001005"
+ },
+ {
+  "season": 2025,
+  "round": 1,
+  "local_date": "2025-03-30",
+  "home_raw": "Tromsø",
+  "away_raw": "Haugesund",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001007"
+ },
+ {
+  "season": 2025,
+  "round": 1,
+  "local_date": "2025-03-30",
+  "home_raw": "KFUM",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001004"
+ },
+ {
+  "season": 2025,
+  "round": 1,
+  "local_date": "2025-03-30",
+  "home_raw": "Bryne",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001001"
+ },
+ {
+  "season": 2025,
+  "round": 2,
+  "local_date": "2025-04-05",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "HamKam",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001009"
+ },
+ {
+  "season": 2025,
+  "round": 2,
+  "local_date": "2025-04-05",
+  "home_raw": "Rosenborg",
+  "away_raw": "Fredrikstad",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001013"
+ },
+ {
+  "season": 2025,
+  "round": 2,
+  "local_date": "2025-04-06",
+  "home_raw": "Brann",
+  "away_raw": "Tromsø",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001010"
+ },
+ {
+  "season": 2025,
+  "round": 2,
+  "local_date": "2025-04-06",
+  "home_raw": "Kristiansund",
+  "away_raw": "Bryne",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001012"
+ },
+ {
+  "season": 2025,
+  "round": 2,
+  "local_date": "2025-04-06",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Vålerenga",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001015"
+ },
+ {
+  "season": 2025,
+  "round": 2,
+  "local_date": "2025-04-06",
+  "home_raw": "Haugesund",
+  "away_raw": "Strømsgodset",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001011"
+ },
+ {
+  "season": 2025,
+  "round": 2,
+  "local_date": "2025-04-06",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Molde",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001014"
+ },
+ {
+  "season": 2025,
+  "round": 2,
+  "local_date": "2025-04-06",
+  "home_raw": "Viking",
+  "away_raw": "KFUM",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001016"
+ },
+ {
+  "season": 2025,
+  "round": 3,
+  "local_date": "2025-04-20",
+  "home_raw": "Tromsø",
+  "away_raw": "Kristiansund",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001023"
+ },
+ {
+  "season": 2025,
+  "round": 3,
+  "local_date": "2025-04-21",
+  "home_raw": "Vålerenga",
+  "away_raw": "Rosenborg",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001024"
+ },
+ {
+  "season": 2025,
+  "round": 3,
+  "local_date": "2025-04-21",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Brann",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001022"
+ },
+ {
+  "season": 2025,
+  "round": 3,
+  "local_date": "2025-04-21",
+  "home_raw": "Bryne",
+  "away_raw": "Haugesund",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001017"
+ },
+ {
+  "season": 2025,
+  "round": 3,
+  "local_date": "2025-04-21",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001018"
+ },
+ {
+  "season": 2025,
+  "round": 3,
+  "local_date": "2025-04-21",
+  "home_raw": "HamKam",
+  "away_raw": "Viking",
+  "bane": "Briskeby",
+  "kampnummer": "99120001019"
+ },
+ {
+  "season": 2025,
+  "round": 3,
+  "local_date": "2025-04-21",
+  "home_raw": "KFUM",
+  "away_raw": "Sarpsborg 08",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001020"
+ },
+ {
+  "season": 2025,
+  "round": 3,
+  "local_date": "2025-04-21",
+  "home_raw": "Molde",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001021"
+ },
+ {
+  "season": 2025,
+  "round": 4,
+  "local_date": "2025-04-27",
+  "home_raw": "Rosenborg",
+  "away_raw": "Molde",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001029"
+ },
+ {
+  "season": 2025,
+  "round": 4,
+  "local_date": "2025-04-27",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "KFUM",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001025"
+ },
+ {
+  "season": 2025,
+  "round": 4,
+  "local_date": "2025-04-27",
+  "home_raw": "Kristiansund",
+  "away_raw": "Vålerenga",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001028"
+ },
+ {
+  "season": 2025,
+  "round": 4,
+  "local_date": "2025-04-27",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "HamKam",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001030"
+ },
+ {
+  "season": 2025,
+  "round": 4,
+  "local_date": "2025-04-27",
+  "home_raw": "Brann",
+  "away_raw": "Bryne",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001026"
+ },
+ {
+  "season": 2025,
+  "round": 4,
+  "local_date": "2025-04-27",
+  "home_raw": "Haugesund",
+  "away_raw": "Fredrikstad",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001027"
+ },
+ {
+  "season": 2025,
+  "round": 4,
+  "local_date": "2025-04-27",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Strømsgodset",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001031"
+ },
+ {
+  "season": 2025,
+  "round": 4,
+  "local_date": "2025-04-27",
+  "home_raw": "Viking",
+  "away_raw": "Tromsø",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001032"
+ },
+ {
+  "season": 2025,
+  "round": 5,
+  "local_date": "2025-05-02",
+  "home_raw": "HamKam",
+  "away_raw": "KFUM",
+  "bane": "Briskeby",
+  "kampnummer": "99120001034"
+ },
+ {
+  "season": 2025,
+  "round": 5,
+  "local_date": "2025-05-03",
+  "home_raw": "Vålerenga",
+  "away_raw": "Brann",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001040"
+ },
+ {
+  "season": 2025,
+  "round": 5,
+  "local_date": "2025-05-04",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Kristiansund",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001037"
+ },
+ {
+  "season": 2025,
+  "round": 5,
+  "local_date": "2025-05-04",
+  "home_raw": "Tromsø",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001038"
+ },
+ {
+  "season": 2025,
+  "round": 5,
+  "local_date": "2025-05-04",
+  "home_raw": "Molde",
+  "away_raw": "Haugesund",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001035"
+ },
+ {
+  "season": 2025,
+  "round": 5,
+  "local_date": "2025-05-04",
+  "home_raw": "Viking",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001039"
+ },
+ {
+  "season": 2025,
+  "round": 5,
+  "local_date": "2025-05-04",
+  "home_raw": "Rosenborg",
+  "away_raw": "Bryne",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001036"
+ },
+ {
+  "season": 2025,
+  "round": 5,
+  "local_date": "2025-07-16",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001033"
+ },
+ {
+  "season": 2025,
+  "round": 6,
+  "local_date": "2025-05-11",
+  "home_raw": "Brann",
+  "away_raw": "Rosenborg",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001042"
+ },
+ {
+  "season": 2025,
+  "round": 6,
+  "local_date": "2025-05-11",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Vålerenga",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001047"
+ },
+ {
+  "season": 2025,
+  "round": 6,
+  "local_date": "2025-05-11",
+  "home_raw": "Kristiansund",
+  "away_raw": "Fredrikstad",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001046"
+ },
+ {
+  "season": 2025,
+  "round": 6,
+  "local_date": "2025-05-11",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "HamKam",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001048"
+ },
+ {
+  "season": 2025,
+  "round": 6,
+  "local_date": "2025-05-11",
+  "home_raw": "Bryne",
+  "away_raw": "Molde",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001043"
+ },
+ {
+  "season": 2025,
+  "round": 6,
+  "local_date": "2025-05-11",
+  "home_raw": "KFUM",
+  "away_raw": "Tromsø",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001045"
+ },
+ {
+  "season": 2025,
+  "round": 6,
+  "local_date": "2025-05-11",
+  "home_raw": "Haugesund",
+  "away_raw": "Viking",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001044"
+ },
+ {
+  "season": 2025,
+  "round": 6,
+  "local_date": "2025-07-30",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Strømsgodset",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001041"
+ },
+ {
+  "season": 2025,
+  "round": 7,
+  "local_date": "2025-05-16",
+  "home_raw": "Rosenborg",
+  "away_raw": "Haugesund",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001052"
+ },
+ {
+  "season": 2025,
+  "round": 7,
+  "local_date": "2025-05-16",
+  "home_raw": "Brann",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001049"
+ },
+ {
+  "season": 2025,
+  "round": 7,
+  "local_date": "2025-05-16",
+  "home_raw": "Tromsø",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001054"
+ },
+ {
+  "season": 2025,
+  "round": 7,
+  "local_date": "2025-05-16",
+  "home_raw": "Viking",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001055"
+ },
+ {
+  "season": 2025,
+  "round": 7,
+  "local_date": "2025-05-16",
+  "home_raw": "Molde",
+  "away_raw": "Kristiansund",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001051"
+ },
+ {
+  "season": 2025,
+  "round": 7,
+  "local_date": "2025-05-16",
+  "home_raw": "Fredrikstad",
+  "away_raw": "KFUM",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001050"
+ },
+ {
+  "season": 2025,
+  "round": 7,
+  "local_date": "2025-05-16",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Bryne",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001053"
+ },
+ {
+  "season": 2025,
+  "round": 7,
+  "local_date": "2025-05-16",
+  "home_raw": "Vålerenga",
+  "away_raw": "HamKam",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001056"
+ },
+ {
+  "season": 2025,
+  "round": 8,
+  "local_date": "2025-05-24",
+  "home_raw": "Bryne",
+  "away_raw": "Fredrikstad",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001058"
+ },
+ {
+  "season": 2025,
+  "round": 8,
+  "local_date": "2025-05-24",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Rosenborg",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001057"
+ },
+ {
+  "season": 2025,
+  "round": 8,
+  "local_date": "2025-05-25",
+  "home_raw": "HamKam",
+  "away_raw": "Molde",
+  "bane": "Briskeby",
+  "kampnummer": "99120001059"
+ },
+ {
+  "season": 2025,
+  "round": 8,
+  "local_date": "2025-05-25",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Strømsgodset",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001063"
+ },
+ {
+  "season": 2025,
+  "round": 8,
+  "local_date": "2025-05-25",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Tromsø",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001064"
+ },
+ {
+  "season": 2025,
+  "round": 8,
+  "local_date": "2025-05-25",
+  "home_raw": "Kristiansund",
+  "away_raw": "Viking",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001062"
+ },
+ {
+  "season": 2025,
+  "round": 8,
+  "local_date": "2025-05-25",
+  "home_raw": "Haugesund",
+  "away_raw": "Brann",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001060"
+ },
+ {
+  "season": 2025,
+  "round": 8,
+  "local_date": "2025-05-26",
+  "home_raw": "KFUM",
+  "away_raw": "Vålerenga",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001061"
+ },
+ {
+  "season": 2025,
+  "round": 9,
+  "local_date": "2025-05-31",
+  "home_raw": "Strømsgodset",
+  "away_raw": "HamKam",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001071"
+ },
+ {
+  "season": 2025,
+  "round": 9,
+  "local_date": "2025-05-31",
+  "home_raw": "Tromsø",
+  "away_raw": "Vålerenga",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001072"
+ },
+ {
+  "season": 2025,
+  "round": 9,
+  "local_date": "2025-06-01",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001067"
+ },
+ {
+  "season": 2025,
+  "round": 9,
+  "local_date": "2025-06-01",
+  "home_raw": "Bryne",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001066"
+ },
+ {
+  "season": 2025,
+  "round": 9,
+  "local_date": "2025-06-01",
+  "home_raw": "Haugesund",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001068"
+ },
+ {
+  "season": 2025,
+  "round": 9,
+  "local_date": "2025-06-01",
+  "home_raw": "Rosenborg",
+  "away_raw": "KFUM",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001070"
+ },
+ {
+  "season": 2025,
+  "round": 9,
+  "local_date": "2025-06-01",
+  "home_raw": "Brann",
+  "away_raw": "Kristiansund",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001065"
+ },
+ {
+  "season": 2025,
+  "round": 9,
+  "local_date": "2025-06-01",
+  "home_raw": "Molde",
+  "away_raw": "Viking",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001069"
+ },
+ {
+  "season": 2025,
+  "round": 10,
+  "local_date": "2025-06-21",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Brann",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001073"
+ },
+ {
+  "season": 2025,
+  "round": 10,
+  "local_date": "2025-06-22",
+  "home_raw": "Vålerenga",
+  "away_raw": "Molde",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001080"
+ },
+ {
+  "season": 2025,
+  "round": 10,
+  "local_date": "2025-06-22",
+  "home_raw": "KFUM",
+  "away_raw": "Strømsgodset",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001075"
+ },
+ {
+  "season": 2025,
+  "round": 10,
+  "local_date": "2025-06-22",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Haugesund",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001077"
+ },
+ {
+  "season": 2025,
+  "round": 10,
+  "local_date": "2025-06-22",
+  "home_raw": "HamKam",
+  "away_raw": "Tromsø",
+  "bane": "Briskeby",
+  "kampnummer": "99120001074"
+ },
+ {
+  "season": 2025,
+  "round": 10,
+  "local_date": "2025-06-22",
+  "home_raw": "Kristiansund",
+  "away_raw": "Rosenborg",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001076"
+ },
+ {
+  "season": 2025,
+  "round": 10,
+  "local_date": "2025-06-22",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Bryne",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001078"
+ },
+ {
+  "season": 2025,
+  "round": 10,
+  "local_date": "2025-06-22",
+  "home_raw": "Viking",
+  "away_raw": "Fredrikstad",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001079"
+ },
+ {
+  "season": 2025,
+  "round": 11,
+  "local_date": "2025-06-28",
+  "home_raw": "Rosenborg",
+  "away_raw": "Viking",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001087"
+ },
+ {
+  "season": 2025,
+  "round": 11,
+  "local_date": "2025-06-29",
+  "home_raw": "Haugesund",
+  "away_raw": "Kristiansund",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001085"
+ },
+ {
+  "season": 2025,
+  "round": 11,
+  "local_date": "2025-06-29",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Tromsø",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001084"
+ },
+ {
+  "season": 2025,
+  "round": 11,
+  "local_date": "2025-06-29",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001081"
+ },
+ {
+  "season": 2025,
+  "round": 11,
+  "local_date": "2025-06-29",
+  "home_raw": "Bryne",
+  "away_raw": "HamKam",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001083"
+ },
+ {
+  "season": 2025,
+  "round": 11,
+  "local_date": "2025-06-29",
+  "home_raw": "Molde",
+  "away_raw": "KFUM",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001086"
+ },
+ {
+  "season": 2025,
+  "round": 11,
+  "local_date": "2025-06-29",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Vålerenga",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001088"
+ },
+ {
+  "season": 2025,
+  "round": 11,
+  "local_date": "2025-06-30",
+  "home_raw": "Brann",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001082"
+ },
+ {
+  "season": 2025,
+  "round": 12,
+  "local_date": "2025-07-05",
+  "home_raw": "HamKam",
+  "away_raw": "Brann",
+  "bane": "Briskeby",
+  "kampnummer": "99120001089"
+ },
+ {
+  "season": 2025,
+  "round": 12,
+  "local_date": "2025-07-05",
+  "home_raw": "Viking",
+  "away_raw": "Strømsgodset",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001095"
+ },
+ {
+  "season": 2025,
+  "round": 12,
+  "local_date": "2025-07-05",
+  "home_raw": "Vålerenga",
+  "away_raw": "Fredrikstad",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001096"
+ },
+ {
+  "season": 2025,
+  "round": 12,
+  "local_date": "2025-07-05",
+  "home_raw": "Kristiansund",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001091"
+ },
+ {
+  "season": 2025,
+  "round": 12,
+  "local_date": "2025-07-05",
+  "home_raw": "Tromsø",
+  "away_raw": "Molde",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001094"
+ },
+ {
+  "season": 2025,
+  "round": 12,
+  "local_date": "2025-07-06",
+  "home_raw": "KFUM",
+  "away_raw": "Bryne",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001090"
+ },
+ {
+  "season": 2025,
+  "round": 12,
+  "local_date": "2025-07-06",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Rosenborg",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001092"
+ },
+ {
+  "season": 2025,
+  "round": 12,
+  "local_date": "2025-07-06",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Haugesund",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001093"
+ },
+ {
+  "season": 2025,
+  "round": 13,
+  "local_date": "2025-07-12",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001097"
+ },
+ {
+  "season": 2025,
+  "round": 13,
+  "local_date": "2025-07-12",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Molde",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001100"
+ },
+ {
+  "season": 2025,
+  "round": 13,
+  "local_date": "2025-07-13",
+  "home_raw": "Bryne",
+  "away_raw": "Vålerenga",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001099"
+ },
+ {
+  "season": 2025,
+  "round": 13,
+  "local_date": "2025-07-13",
+  "home_raw": "Haugesund",
+  "away_raw": "KFUM",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001101"
+ },
+ {
+  "season": 2025,
+  "round": 13,
+  "local_date": "2025-07-13",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Tromsø",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001104"
+ },
+ {
+  "season": 2025,
+  "round": 13,
+  "local_date": "2025-07-13",
+  "home_raw": "Kristiansund",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001102"
+ },
+ {
+  "season": 2025,
+  "round": 13,
+  "local_date": "2025-07-13",
+  "home_raw": "Rosenborg",
+  "away_raw": "HamKam",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001103"
+ },
+ {
+  "season": 2025,
+  "round": 13,
+  "local_date": "2025-07-13",
+  "home_raw": "Brann",
+  "away_raw": "Viking",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001098"
+ },
+ {
+  "season": 2025,
+  "round": 14,
+  "local_date": "2025-07-18",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Rosenborg",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001109"
+ },
+ {
+  "season": 2025,
+  "round": 14,
+  "local_date": "2025-07-19",
+  "home_raw": "KFUM",
+  "away_raw": "Brann",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001106"
+ },
+ {
+  "season": 2025,
+  "round": 14,
+  "local_date": "2025-07-19",
+  "home_raw": "Molde",
+  "away_raw": "Strømsgodset",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001107"
+ },
+ {
+  "season": 2025,
+  "round": 14,
+  "local_date": "2025-07-19",
+  "home_raw": "Viking",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001111"
+ },
+ {
+  "season": 2025,
+  "round": 14,
+  "local_date": "2025-07-20",
+  "home_raw": "Vålerenga",
+  "away_raw": "Haugesund",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001112"
+ },
+ {
+  "season": 2025,
+  "round": 14,
+  "local_date": "2025-07-20",
+  "home_raw": "Tromsø",
+  "away_raw": "Bryne",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001110"
+ },
+ {
+  "season": 2025,
+  "round": 14,
+  "local_date": "2025-07-20",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Kristiansund",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001108"
+ },
+ {
+  "season": 2025,
+  "round": 14,
+  "local_date": "2025-07-20",
+  "home_raw": "HamKam",
+  "away_raw": "Fredrikstad",
+  "bane": "Briskeby",
+  "kampnummer": "99120001105"
+ },
+ {
+  "season": 2025,
+  "round": 15,
+  "local_date": "2025-05-29",
+  "home_raw": "Brann",
+  "away_raw": "Molde",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001114"
+ },
+ {
+  "season": 2025,
+  "round": 15,
+  "local_date": "2025-07-25",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Strømsgodset",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001116"
+ },
+ {
+  "season": 2025,
+  "round": 15,
+  "local_date": "2025-07-26",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001120"
+ },
+ {
+  "season": 2025,
+  "round": 15,
+  "local_date": "2025-07-26",
+  "home_raw": "Kristiansund",
+  "away_raw": "KFUM",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001118"
+ },
+ {
+  "season": 2025,
+  "round": 15,
+  "local_date": "2025-07-26",
+  "home_raw": "Haugesund",
+  "away_raw": "HamKam",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001117"
+ },
+ {
+  "season": 2025,
+  "round": 15,
+  "local_date": "2025-07-26",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Vålerenga",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001113"
+ },
+ {
+  "season": 2025,
+  "round": 15,
+  "local_date": "2025-07-27",
+  "home_raw": "Bryne",
+  "away_raw": "Viking",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001115"
+ },
+ {
+  "season": 2025,
+  "round": 15,
+  "local_date": "2025-07-27",
+  "home_raw": "Rosenborg",
+  "away_raw": "Tromsø",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001119"
+ },
+ {
+  "season": 2025,
+  "round": 16,
+  "local_date": "2025-04-10",
+  "home_raw": "Viking",
+  "away_raw": "Kristiansund",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001127"
+ },
+ {
+  "season": 2025,
+  "round": 16,
+  "local_date": "2025-08-02",
+  "home_raw": "Tromsø",
+  "away_raw": "Fredrikstad",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001126"
+ },
+ {
+  "season": 2025,
+  "round": 16,
+  "local_date": "2025-08-02",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Brann",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001124"
+ },
+ {
+  "season": 2025,
+  "round": 16,
+  "local_date": "2025-08-03",
+  "home_raw": "HamKam",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Briskeby",
+  "kampnummer": "99120001121"
+ },
+ {
+  "season": 2025,
+  "round": 16,
+  "local_date": "2025-08-03",
+  "home_raw": "Vålerenga",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001128"
+ },
+ {
+  "season": 2025,
+  "round": 16,
+  "local_date": "2025-08-03",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Haugesund",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001125"
+ },
+ {
+  "season": 2025,
+  "round": 16,
+  "local_date": "2025-08-03",
+  "home_raw": "KFUM",
+  "away_raw": "Rosenborg",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001122"
+ },
+ {
+  "season": 2025,
+  "round": 16,
+  "local_date": "2025-08-03",
+  "home_raw": "Molde",
+  "away_raw": "Bryne",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001123"
+ },
+ {
+  "season": 2025,
+  "round": 17,
+  "local_date": "2025-04-09",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Vålerenga",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001132"
+ },
+ {
+  "season": 2025,
+  "round": 17,
+  "local_date": "2025-04-10",
+  "home_raw": "Brann",
+  "away_raw": "Strømsgodset",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001130"
+ },
+ {
+  "season": 2025,
+  "round": 17,
+  "local_date": "2025-05-01",
+  "home_raw": "Rosenborg",
+  "away_raw": "Kristiansund",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001135"
+ },
+ {
+  "season": 2025,
+  "round": 17,
+  "local_date": "2025-08-09",
+  "home_raw": "Molde",
+  "away_raw": "HamKam",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001134"
+ },
+ {
+  "season": 2025,
+  "round": 17,
+  "local_date": "2025-08-09",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Tromsø",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001129"
+ },
+ {
+  "season": 2025,
+  "round": 17,
+  "local_date": "2025-08-10",
+  "home_raw": "Bryne",
+  "away_raw": "KFUM",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001131"
+ },
+ {
+  "season": 2025,
+  "round": 17,
+  "local_date": "2025-08-10",
+  "home_raw": "Haugesund",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001133"
+ },
+ {
+  "season": 2025,
+  "round": 17,
+  "local_date": "2025-08-10",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Viking",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001136"
+ },
+ {
+  "season": 2025,
+  "round": 18,
+  "local_date": "2025-04-30",
+  "home_raw": "Viking",
+  "away_raw": "Haugesund",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001143"
+ },
+ {
+  "season": 2025,
+  "round": 18,
+  "local_date": "2025-05-28",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Rosenborg",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001137"
+ },
+ {
+  "season": 2025,
+  "round": 18,
+  "local_date": "2025-08-15",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001141"
+ },
+ {
+  "season": 2025,
+  "round": 18,
+  "local_date": "2025-08-17",
+  "home_raw": "Tromsø",
+  "away_raw": "Brann",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001142"
+ },
+ {
+  "season": 2025,
+  "round": 18,
+  "local_date": "2025-08-17",
+  "home_raw": "Kristiansund",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001140"
+ },
+ {
+  "season": 2025,
+  "round": 18,
+  "local_date": "2025-08-17",
+  "home_raw": "KFUM",
+  "away_raw": "Molde",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001139"
+ },
+ {
+  "season": 2025,
+  "round": 18,
+  "local_date": "2025-08-17",
+  "home_raw": "HamKam",
+  "away_raw": "Bryne",
+  "bane": "Briskeby",
+  "kampnummer": "99120001138"
+ },
+ {
+  "season": 2025,
+  "round": 18,
+  "local_date": "2025-08-17",
+  "home_raw": "Vålerenga",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001144"
+ },
+ {
+  "season": 2025,
+  "round": 19,
+  "local_date": "2025-05-28",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Viking",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001145"
+ },
+ {
+  "season": 2025,
+  "round": 19,
+  "local_date": "2025-08-22",
+  "home_raw": "KFUM",
+  "away_raw": "HamKam",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001149"
+ },
+ {
+  "season": 2025,
+  "round": 19,
+  "local_date": "2025-08-24",
+  "home_raw": "Haugesund",
+  "away_raw": "Vålerenga",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001148"
+ },
+ {
+  "season": 2025,
+  "round": 19,
+  "local_date": "2025-08-24",
+  "home_raw": "Bryne",
+  "away_raw": "Strømsgodset",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001147"
+ },
+ {
+  "season": 2025,
+  "round": 19,
+  "local_date": "2025-08-24",
+  "home_raw": "Molde",
+  "away_raw": "Tromsø",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001150"
+ },
+ {
+  "season": 2025,
+  "round": 19,
+  "local_date": "2025-08-25",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Kristiansund",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001152"
+ },
+ {
+  "season": 2025,
+  "round": 19,
+  "local_date": "2025-09-28",
+  "home_raw": "Brann",
+  "away_raw": "Fredrikstad",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001146"
+ },
+ {
+  "season": 2025,
+  "round": 19,
+  "local_date": "2025-10-29",
+  "home_raw": "Rosenborg",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001151"
+ },
+ {
+  "season": 2025,
+  "round": 20,
+  "local_date": "2025-08-30",
+  "home_raw": "Vålerenga",
+  "away_raw": "Bryne",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001160"
+ },
+ {
+  "season": 2025,
+  "round": 20,
+  "local_date": "2025-08-31",
+  "home_raw": "Kristiansund",
+  "away_raw": "Brann",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001155"
+ },
+ {
+  "season": 2025,
+  "round": 20,
+  "local_date": "2025-08-31",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001156"
+ },
+ {
+  "season": 2025,
+  "round": 20,
+  "local_date": "2025-08-31",
+  "home_raw": "Viking",
+  "away_raw": "Rosenborg",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001159"
+ },
+ {
+  "season": 2025,
+  "round": 20,
+  "local_date": "2025-08-31",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Haugesund",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001153"
+ },
+ {
+  "season": 2025,
+  "round": 20,
+  "local_date": "2025-08-31",
+  "home_raw": "HamKam",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Briskeby",
+  "kampnummer": "99120001154"
+ },
+ {
+  "season": 2025,
+  "round": 20,
+  "local_date": "2025-08-31",
+  "home_raw": "Tromsø",
+  "away_raw": "KFUM",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001158"
+ },
+ {
+  "season": 2025,
+  "round": 20,
+  "local_date": "2025-08-31",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Molde",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001157"
+ },
+ {
+  "season": 2025,
+  "round": 21,
+  "local_date": "2025-09-12",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Kristiansund",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001161"
+ },
+ {
+  "season": 2025,
+  "round": 21,
+  "local_date": "2025-09-13",
+  "home_raw": "Molde",
+  "away_raw": "Fredrikstad",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001167"
+ },
+ {
+  "season": 2025,
+  "round": 21,
+  "local_date": "2025-09-13",
+  "home_raw": "Brann",
+  "away_raw": "Vålerenga",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001162"
+ },
+ {
+  "season": 2025,
+  "round": 21,
+  "local_date": "2025-09-14",
+  "home_raw": "Bryne",
+  "away_raw": "Tromsø",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001163"
+ },
+ {
+  "season": 2025,
+  "round": 21,
+  "local_date": "2025-09-14",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001168"
+ },
+ {
+  "season": 2025,
+  "round": 21,
+  "local_date": "2025-09-14",
+  "home_raw": "HamKam",
+  "away_raw": "Strømsgodset",
+  "bane": "Briskeby",
+  "kampnummer": "99120001164"
+ },
+ {
+  "season": 2025,
+  "round": 21,
+  "local_date": "2025-09-14",
+  "home_raw": "KFUM",
+  "away_raw": "Viking",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001166"
+ },
+ {
+  "season": 2025,
+  "round": 21,
+  "local_date": "2025-09-14",
+  "home_raw": "Haugesund",
+  "away_raw": "Rosenborg",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001165"
+ },
+ {
+  "season": 2025,
+  "round": 22,
+  "local_date": "2025-09-20",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Bryne",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001169"
+ },
+ {
+  "season": 2025,
+  "round": 22,
+  "local_date": "2025-09-20",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Brann",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001172"
+ },
+ {
+  "season": 2025,
+  "round": 22,
+  "local_date": "2025-09-20",
+  "home_raw": "Vålerenga",
+  "away_raw": "KFUM",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001176"
+ },
+ {
+  "season": 2025,
+  "round": 22,
+  "local_date": "2025-09-21",
+  "home_raw": "Rosenborg",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001171"
+ },
+ {
+  "season": 2025,
+  "round": 22,
+  "local_date": "2025-09-21",
+  "home_raw": "Kristiansund",
+  "away_raw": "Haugesund",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001170"
+ },
+ {
+  "season": 2025,
+  "round": 22,
+  "local_date": "2025-09-21",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001173"
+ },
+ {
+  "season": 2025,
+  "round": 22,
+  "local_date": "2025-09-21",
+  "home_raw": "Tromsø",
+  "away_raw": "HamKam",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001174"
+ },
+ {
+  "season": 2025,
+  "round": 22,
+  "local_date": "2025-09-21",
+  "home_raw": "Viking",
+  "away_raw": "Molde",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001175"
+ },
+ {
+  "season": 2025,
+  "round": 23,
+  "local_date": "2025-09-27",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Viking",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001183"
+ },
+ {
+  "season": 2025,
+  "round": 23,
+  "local_date": "2025-09-28",
+  "home_raw": "Bryne",
+  "away_raw": "Kristiansund",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001178"
+ },
+ {
+  "season": 2025,
+  "round": 23,
+  "local_date": "2025-09-28",
+  "home_raw": "HamKam",
+  "away_raw": "Rosenborg",
+  "bane": "Briskeby",
+  "kampnummer": "99120001179"
+ },
+ {
+  "season": 2025,
+  "round": 23,
+  "local_date": "2025-09-28",
+  "home_raw": "Tromsø",
+  "away_raw": "Strømsgodset",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001184"
+ },
+ {
+  "season": 2025,
+  "round": 23,
+  "local_date": "2025-09-28",
+  "home_raw": "Molde",
+  "away_raw": "Vålerenga",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001182"
+ },
+ {
+  "season": 2025,
+  "round": 23,
+  "local_date": "2025-09-29",
+  "home_raw": "Haugesund",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001180"
+ },
+ {
+  "season": 2025,
+  "round": 23,
+  "local_date": "2025-10-01",
+  "home_raw": "KFUM",
+  "away_raw": "Fredrikstad",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001181"
+ },
+ {
+  "season": 2025,
+  "round": 23,
+  "local_date": "2025-10-29",
+  "home_raw": "Brann",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001177"
+ },
+ {
+  "season": 2025,
+  "round": 24,
+  "local_date": "2025-10-04",
+  "home_raw": "Vålerenga",
+  "away_raw": "Tromsø",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001192"
+ },
+ {
+  "season": 2025,
+  "round": 24,
+  "local_date": "2025-10-04",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Bryne",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001189"
+ },
+ {
+  "season": 2025,
+  "round": 24,
+  "local_date": "2025-10-04",
+  "home_raw": "Kristiansund",
+  "away_raw": "Molde",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001187"
+ },
+ {
+  "season": 2025,
+  "round": 24,
+  "local_date": "2025-10-05",
+  "home_raw": "Viking",
+  "away_raw": "Brann",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001191"
+ },
+ {
+  "season": 2025,
+  "round": 24,
+  "local_date": "2025-10-05",
+  "home_raw": "Fredrikstad",
+  "away_raw": "HamKam",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001186"
+ },
+ {
+  "season": 2025,
+  "round": 24,
+  "local_date": "2025-10-05",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Haugesund",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001185"
+ },
+ {
+  "season": 2025,
+  "round": 24,
+  "local_date": "2025-10-05",
+  "home_raw": "Strømsgodset",
+  "away_raw": "KFUM",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001190"
+ },
+ {
+  "season": 2025,
+  "round": 24,
+  "local_date": "2025-10-05",
+  "home_raw": "Rosenborg",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001188"
+ },
+ {
+  "season": 2025,
+  "round": 25,
+  "local_date": "2025-10-18",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001198"
+ },
+ {
+  "season": 2025,
+  "round": 25,
+  "local_date": "2025-10-18",
+  "home_raw": "Bryne",
+  "away_raw": "Rosenborg",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001194"
+ },
+ {
+  "season": 2025,
+  "round": 25,
+  "local_date": "2025-10-18",
+  "home_raw": "Brann",
+  "away_raw": "Haugesund",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001193"
+ },
+ {
+  "season": 2025,
+  "round": 25,
+  "local_date": "2025-10-19",
+  "home_raw": "Tromsø",
+  "away_raw": "Viking",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001200"
+ },
+ {
+  "season": 2025,
+  "round": 25,
+  "local_date": "2025-10-19",
+  "home_raw": "HamKam",
+  "away_raw": "Vålerenga",
+  "bane": "Briskeby",
+  "kampnummer": "99120001195"
+ },
+ {
+  "season": 2025,
+  "round": 25,
+  "local_date": "2025-10-19",
+  "home_raw": "Molde",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001197"
+ },
+ {
+  "season": 2025,
+  "round": 25,
+  "local_date": "2025-10-19",
+  "home_raw": "KFUM",
+  "away_raw": "Kristiansund",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001196"
+ },
+ {
+  "season": 2025,
+  "round": 25,
+  "local_date": "2025-10-19",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Fredrikstad",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001199"
+ },
+ {
+  "season": 2025,
+  "round": 26,
+  "local_date": "2025-10-25",
+  "home_raw": "Viking",
+  "away_raw": "Bryne",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001207"
+ },
+ {
+  "season": 2025,
+  "round": 26,
+  "local_date": "2025-10-25",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "KFUM",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001206"
+ },
+ {
+  "season": 2025,
+  "round": 26,
+  "local_date": "2025-10-26",
+  "home_raw": "Rosenborg",
+  "away_raw": "Brann",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001204"
+ },
+ {
+  "season": 2025,
+  "round": 26,
+  "local_date": "2025-10-26",
+  "home_raw": "Kristiansund",
+  "away_raw": "HamKam",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001203"
+ },
+ {
+  "season": 2025,
+  "round": 26,
+  "local_date": "2025-10-26",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Fredrikstad",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001205"
+ },
+ {
+  "season": 2025,
+  "round": 26,
+  "local_date": "2025-10-26",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Molde",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001201"
+ },
+ {
+  "season": 2025,
+  "round": 26,
+  "local_date": "2025-10-26",
+  "home_raw": "Haugesund",
+  "away_raw": "Tromsø",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001202"
+ },
+ {
+  "season": 2025,
+  "round": 26,
+  "local_date": "2025-10-26",
+  "home_raw": "Vålerenga",
+  "away_raw": "Strømsgodset",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001208"
+ },
+ {
+  "season": 2025,
+  "round": 27,
+  "local_date": "2025-11-01",
+  "home_raw": "Vålerenga",
+  "away_raw": "Bodø/Glimt",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001216"
+ },
+ {
+  "season": 2025,
+  "round": 27,
+  "local_date": "2025-11-01",
+  "home_raw": "Molde",
+  "away_raw": "Rosenborg",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001213"
+ },
+ {
+  "season": 2025,
+  "round": 27,
+  "local_date": "2025-11-02",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Viking",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001214"
+ },
+ {
+  "season": 2025,
+  "round": 27,
+  "local_date": "2025-11-02",
+  "home_raw": "Bryne",
+  "away_raw": "Brann",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001209"
+ },
+ {
+  "season": 2025,
+  "round": 27,
+  "local_date": "2025-11-02",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Kristiansund",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001210"
+ },
+ {
+  "season": 2025,
+  "round": 27,
+  "local_date": "2025-11-02",
+  "home_raw": "HamKam",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Briskeby",
+  "kampnummer": "99120001211"
+ },
+ {
+  "season": 2025,
+  "round": 27,
+  "local_date": "2025-11-02",
+  "home_raw": "KFUM",
+  "away_raw": "Haugesund",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001212"
+ },
+ {
+  "season": 2025,
+  "round": 27,
+  "local_date": "2025-11-02",
+  "home_raw": "Tromsø",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001215"
+ },
+ {
+  "season": 2025,
+  "round": 28,
+  "local_date": "2025-11-08",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Fredrikstad",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001223"
+ },
+ {
+  "season": 2025,
+  "round": 28,
+  "local_date": "2025-11-08",
+  "home_raw": "Viking",
+  "away_raw": "HamKam",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001224"
+ },
+ {
+  "season": 2025,
+  "round": 28,
+  "local_date": "2025-11-09",
+  "home_raw": "Rosenborg",
+  "away_raw": "Vålerenga",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001221"
+ },
+ {
+  "season": 2025,
+  "round": 28,
+  "local_date": "2025-11-09",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Bryne",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001217"
+ },
+ {
+  "season": 2025,
+  "round": 28,
+  "local_date": "2025-11-09",
+  "home_raw": "Brann",
+  "away_raw": "KFUM",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001218"
+ },
+ {
+  "season": 2025,
+  "round": 28,
+  "local_date": "2025-11-09",
+  "home_raw": "Kristiansund",
+  "away_raw": "Strømsgodset",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001220"
+ },
+ {
+  "season": 2025,
+  "round": 28,
+  "local_date": "2025-11-09",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "Tromsø",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001222"
+ },
+ {
+  "season": 2025,
+  "round": 28,
+  "local_date": "2025-11-09",
+  "home_raw": "Haugesund",
+  "away_raw": "Molde",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001219"
+ },
+ {
+  "season": 2025,
+  "round": 29,
+  "local_date": "2025-11-21",
+  "home_raw": "KFUM",
+  "away_raw": "Bodø/Glimt",
+  "bane": "KFUM-Arena",
+  "kampnummer": "99120001228"
+ },
+ {
+  "season": 2025,
+  "round": 29,
+  "local_date": "2025-11-22",
+  "home_raw": "Tromsø",
+  "away_raw": "Rosenborg",
+  "bane": "Romssa Arena",
+  "kampnummer": "99120001231"
+ },
+ {
+  "season": 2025,
+  "round": 29,
+  "local_date": "2025-11-22",
+  "home_raw": "Vålerenga",
+  "away_raw": "Kristiansund",
+  "bane": "Intility Arena",
+  "kampnummer": "99120001232"
+ },
+ {
+  "season": 2025,
+  "round": 29,
+  "local_date": "2025-11-22",
+  "home_raw": "Molde",
+  "away_raw": "Brann",
+  "bane": "Aker stadion",
+  "kampnummer": "99120001229"
+ },
+ {
+  "season": 2025,
+  "round": 29,
+  "local_date": "2025-11-22",
+  "home_raw": "Strømsgodset",
+  "away_raw": "Sandefjord Fotball",
+  "bane": "Marienlyst stadion",
+  "kampnummer": "99120001230"
+ },
+ {
+  "season": 2025,
+  "round": 29,
+  "local_date": "2025-11-23",
+  "home_raw": "Bryne",
+  "away_raw": "Sarpsborg 08",
+  "bane": "Bryne stadion",
+  "kampnummer": "99120001225"
+ },
+ {
+  "season": 2025,
+  "round": 29,
+  "local_date": "2025-11-23",
+  "home_raw": "HamKam",
+  "away_raw": "Haugesund",
+  "bane": "Briskeby",
+  "kampnummer": "99120001227"
+ },
+ {
+  "season": 2025,
+  "round": 29,
+  "local_date": "2025-11-23",
+  "home_raw": "Fredrikstad",
+  "away_raw": "Viking",
+  "bane": "Fredrikstad stadion",
+  "kampnummer": "99120001226"
+ },
+ {
+  "season": 2025,
+  "round": 30,
+  "local_date": "2025-11-30",
+  "home_raw": "Brann",
+  "away_raw": "HamKam",
+  "bane": "Brann stadion",
+  "kampnummer": "99120001234"
+ },
+ {
+  "season": 2025,
+  "round": 30,
+  "local_date": "2025-11-30",
+  "home_raw": "Haugesund",
+  "away_raw": "Bryne",
+  "bane": "Haugesund Sparebank Arena",
+  "kampnummer": "99120001235"
+ },
+ {
+  "season": 2025,
+  "round": 30,
+  "local_date": "2025-11-30",
+  "home_raw": "Kristiansund",
+  "away_raw": "Tromsø",
+  "bane": "Nordmøre stadion",
+  "kampnummer": "99120001236"
+ },
+ {
+  "season": 2025,
+  "round": 30,
+  "local_date": "2025-11-30",
+  "home_raw": "Rosenborg",
+  "away_raw": "Strømsgodset",
+  "bane": "Lerkendal stadion",
+  "kampnummer": "99120001237"
+ },
+ {
+  "season": 2025,
+  "round": 30,
+  "local_date": "2025-11-30",
+  "home_raw": "Sandefjord Fotball",
+  "away_raw": "KFUM",
+  "bane": "Jotun Arena",
+  "kampnummer": "99120001238"
+ },
+ {
+  "season": 2025,
+  "round": 30,
+  "local_date": "2025-11-30",
+  "home_raw": "Sarpsborg 08",
+  "away_raw": "Molde",
+  "bane": "Sarpsborg st KG",
+  "kampnummer": "99120001239"
+ },
+ {
+  "season": 2025,
+  "round": 30,
+  "local_date": "2025-11-30",
+  "home_raw": "Viking",
+  "away_raw": "Vålerenga",
+  "bane": "Lyse Arena",
+  "kampnummer": "99120001240"
+ },
+ {
+  "season": 2025,
+  "round": 30,
+  "local_date": "2025-11-30",
+  "home_raw": "Bodø/Glimt",
+  "away_raw": "Fredrikstad",
+  "bane": "Aspmyra stadion",
+  "kampnummer": "99120001233"
+ }
+]

@@ -2,12 +2,104 @@
   "id": "req-20261028-001",
   "from": "muse",
   "to": "codex",
-  "status": "processing",
+  "status": "ok",
   "request_sha": "ff8338b9c1d5891a",
   "request_sha_full": "ff8338b9c1d5891a32cb550c582fd63eef894c1b8aca9b1393a09d45ce4bc941",
-  "request_sha_method": "sha256 of requests/req-20261028-001.json file bytes; request_sha is its first 16 hex chars, request_sha_full is the complete digest",
+  "request_sha_method": "sha256 of requests/req-20261028-001.json file bytes; request_sha is first 16 hex chars, request_sha_full is the complete digest",
   "dispatch_id": "f3ccac89-0f54-4312-adf6-680b13c90d33;a66cc475-1de5-4ffb-b5fe-f00b8a132f39;4dda65a4-d699-4e6a-9605-ba4e4498fd3c;20c5a9d9-db23-4fef-afa5-7701c4632f92",
   "dp_used": false,
   "dp_reason": "未调用 DeepSeek：本轮为场馆证据审计整理",
-  "note": "【2026-10-28 15:57 CST processing】已接单：Eliteserien 2018-2025 Qimen 图表输入场馆与坐标溯源缺口审计（8 季，排除 2026；预期 240 场/季，共 1,920 场）。身份基线为已接受的 req-20261017-002 1,920 行台账（record_key、provider_fixture_id 逐字沿用，不改动开球/时区/轮次/主客队/ meeting_number 值）。四路并行已派出（2018-2019、2020-2021、2022-2023、2024-2025 各 480 场）：逐场审计实际比赛日场馆（confirmed/neutral/moved/conflict/unavailable/blocked），保留竞争性候选，绝不用主队默认主场代替实际场馆；场馆级 WGS84 坐标附 field 级 provenance（source_url、final_url、retrieved_at、field_locator、source/value、证据 SHA-256）；坐标是场馆级证据，不写成场次专属确认。严格排除：2026、赔率、比分、赛果、积分榜、任何奇门/宫位/干支/门/星/神/五行解读与预测；不算真太阳时；不写本地奇门项目文件。不购买、不登录、不使用任何凭证、不动用 API-Football 付费额度（NFF 官方与俱乐部/场馆/公开地图源优先）。最终交付 data.fixture_venue_rows（1,920 行 JSONL，附 SHA-256 与行数）+ 按赛季计数 + unresolved_queue（record_key、字段、原因、尝试源、下一步）。"
+  "note": "【2026-10-28 16:10 CST ok】Eliteserien 2018-2025 实际比赛日场馆与坐标溯源缺口审计完成。fixture_venue_rows 1,920/1,920 行（SHA-256 见 data），状态：confirmed 1,915、neutral 4、moved 0、conflict 1、unavailable 0、blocked（行级）0、missing 0；坐标 1,919/1,920 行（唯一空坐标为 conflict 行）。关键分层：confirmed 分两档——720 行有 NFF 官方背书（2019 赛季表 Bane 列、2024-2025 官方赛历 Excel），1,200 行（2018/2020/2021/2022/2023）仅为基线逐场 venue + FBref 逐场 Venue 列双源一致，未经官方确认，每行 confirmation_tier 写明、不得擅自升级。中立场仅 4 场（全 2024：KFUM Oslo 两场 Intility Arena、Kristiansund BK 两场 Aker stadion）；唯一 conflict 为 2018-04-25 Ranheim vs Brann（EXTRA Arena vs Aker Stadion，未记 moved，待 NFF 裁决）。基线坐标异常：Sandefjord/Jotun Arena 基线点与 Nominatim 场馆点相距 4.72 km（三路独立一致，Nominatim 点与公开地址/坐标吻合，基线点反查为民宅地址；合并行采用 Nominatim 点、基线值保留比对）。NFF 官方缺口：2018/2020/2021 tournamentId 不可发现（retry_after 2026-11-19）、2022 tournamentId 未发现、2023 旧 URL 已死，均进 unresolved_queue（共 10 项，四类分开）。身份基线校验：与 req-20261017-002 台账 record_key 集合 0 缺失 0 多余，联结字段 0 差异；请求所引本地 Windows 证据副本本机够不着，用的是 repo 里同一份台账。严格排除项（2026、赔率、比分、赛果、积分榜、奇门/宫位/干支/门/星/神/五行解读、预测、Snapshot/Outcome/Review/Gold）字段名扫描 0 命中；真太阳时未算；未写本地奇门项目文件；未购买、未登录、未用任何凭证、未动用 API-Football 付费额度。",
+  "data": {
+    "fixture_venue_rows": {
+      "file": "work-req-20261028-001/fixture_venue_rows.jsonl",
+      "rows": 1920,
+      "sha256": "5a1ae44f14d0b9c1d38106b2efb1b6329f389200198a81445c7a2b1a213c2dfa",
+      "schema": [
+        "record_key",
+        "season",
+        "local_date",
+        "home_team",
+        "away_team",
+        "kickoff_local",
+        "round",
+        "round_label",
+        "provider_fixture_id",
+        "source_venue_name",
+        "source_venue_city",
+        "verified_actual_matchday_venue_name",
+        "verified_actual_matchday_venue_city",
+        "venue_status",
+        "confirmation_tier",
+        "venue_candidates",
+        "venue_lat",
+        "venue_lon",
+        "baseline_venue_lat",
+        "baseline_venue_lon",
+        "coordinate_delta_km_vs_baseline",
+        "coordinate_match_quality",
+        "coordinate_provenance",
+        "coordinate_note",
+        "conflict_note",
+        "route_file"
+      ]
+    },
+    "counts_total": {
+      "expected": 1920,
+      "discovered": 1920,
+      "confirmed": 1915,
+      "neutral": 4,
+      "moved": 0,
+      "conflict": 1,
+      "unavailable": 0,
+      "blocked": 0,
+      "missing": 0,
+      "coord_rows": 1919
+    },
+    "counts_by_season": {
+      "2018": {
+        "confirmed": 239,
+        "conflict": 1
+      },
+      "2019": {
+        "confirmed": 240
+      },
+      "2020": {
+        "confirmed": 240
+      },
+      "2021": {
+        "confirmed": 240
+      },
+      "2022": {
+        "confirmed": 240
+      },
+      "2023": {
+        "confirmed": 240
+      },
+      "2024": {
+        "confirmed": 236,
+        "neutral": 4
+      },
+      "2025": {
+        "confirmed": 240
+      }
+    },
+    "confirmation_tiers": {
+      "nff_official_rows": 720,
+      "dual_non_official_rows": 1200
+    },
+    "neutral_rows": [
+      "eliteserien-2024-r01-kfum-oslo-vs-ham-kam",
+      "eliteserien-2024-r03-kfum-oslo-vs-stromsgodset",
+      "eliteserien-2024-r13-kristiansund-bk-vs-fredrikstad",
+      "eliteserien-2024-r17-kristiansund-bk-vs-lillestrom"
+    ],
+    "conflict_rows": [
+      "eliteserien-2018-r01-ranheim-vs-brann"
+    ],
+    "audit_file": "work-req-20261028-001/audit.json",
+    "unresolved_queue_file": "work-req-20261028-001/unresolved_queue.json",
+    "unresolved_count": 10,
+    "report_file": "work-req-20261028-001/report.md"
+  }
 }

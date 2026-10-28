@@ -1,0 +1,206 @@
+{
+  "request_id": "req-20261028-001",
+  "request_sha": "ff8338b9c1d5891a",
+  "request_sha_full": "ff8338b9c1d5891a32cb550c582fd63eef894c1b8aca9b1393a09d45ce4bc941",
+  "request_sha_method": "sha256 of requests/req-20261028-001.json file bytes; request_sha is first 16 hex chars, request_sha_full is the complete digest",
+  "baseline": "req-20261017-002 fixtures_2018_2025.jsonl (1,920 rows). The request also cited a local Windows evidence copy (D:\\奇門斗數\\...\\fixtures_2018_2025.jsonl) on the requester's machine, which this VM cannot reach; the repo copy of the same accepted dataset was used as the identity baseline instead. Join-field verification: merged rows vs baseline record_key set = 0 missing, 0 extra; local_date, kickoff_local, round, provider_fixture_id, home/away team spellings = 0 diffs.",
+  "merged_file": {
+    "file": "fixture_venue_rows.jsonl",
+    "rows": 1920,
+    "sha256": "5a1ae44f14d0b9c1d38106b2efb1b6329f389200198a81445c7a2b1a213c2dfa",
+    "schema": [
+      "record_key",
+      "season",
+      "local_date",
+      "home_team",
+      "away_team",
+      "kickoff_local",
+      "round",
+      "round_label",
+      "provider_fixture_id",
+      "source_venue_name",
+      "source_venue_city",
+      "verified_actual_matchday_venue_name",
+      "verified_actual_matchday_venue_city",
+      "venue_status",
+      "confirmation_tier",
+      "venue_candidates",
+      "venue_lat",
+      "venue_lon",
+      "baseline_venue_lat",
+      "baseline_venue_lon",
+      "coordinate_delta_km_vs_baseline",
+      "coordinate_match_quality",
+      "coordinate_provenance",
+      "coordinate_note",
+      "conflict_note",
+      "route_file",
+      "route_note(optional)"
+    ],
+    "note": "Canonical merged schema. Route files (venue_audit_YYYY_YYYY.jsonl) remain in the same directory with full per-route detail (evidence objects, name-variant notes, rename notes); merged rows point to them via route_file. Kickoff/timezone/round/meeting-number/team values are copied verbatim from the baseline and were not modified; meeting_number itself is not repeated in the merged file because the request asked for venue fields plus the crosswalk only (record_key + provider_fixture_id join back to the baseline for meeting_number)."
+  },
+  "counts_by_season": {
+    "2018": {
+      "expected": 240,
+      "discovered": 240,
+      "confirmed": 239,
+      "neutral": 0,
+      "moved": 0,
+      "conflict": 1,
+      "unavailable": 0,
+      "blocked": 0,
+      "missing": 0,
+      "coord_rows": 239
+    },
+    "2019": {
+      "expected": 240,
+      "discovered": 240,
+      "confirmed": 240,
+      "neutral": 0,
+      "moved": 0,
+      "conflict": 0,
+      "unavailable": 0,
+      "blocked": 0,
+      "missing": 0,
+      "coord_rows": 240
+    },
+    "2020": {
+      "expected": 240,
+      "discovered": 240,
+      "confirmed": 240,
+      "neutral": 0,
+      "moved": 0,
+      "conflict": 0,
+      "unavailable": 0,
+      "blocked": 0,
+      "missing": 0,
+      "coord_rows": 240
+    },
+    "2021": {
+      "expected": 240,
+      "discovered": 240,
+      "confirmed": 240,
+      "neutral": 0,
+      "moved": 0,
+      "conflict": 0,
+      "unavailable": 0,
+      "blocked": 0,
+      "missing": 0,
+      "coord_rows": 240
+    },
+    "2022": {
+      "expected": 240,
+      "discovered": 240,
+      "confirmed": 240,
+      "neutral": 0,
+      "moved": 0,
+      "conflict": 0,
+      "unavailable": 0,
+      "blocked": 0,
+      "missing": 0,
+      "coord_rows": 240
+    },
+    "2023": {
+      "expected": 240,
+      "discovered": 240,
+      "confirmed": 240,
+      "neutral": 0,
+      "moved": 0,
+      "conflict": 0,
+      "unavailable": 0,
+      "blocked": 0,
+      "missing": 0,
+      "coord_rows": 240
+    },
+    "2024": {
+      "expected": 240,
+      "discovered": 240,
+      "confirmed": 236,
+      "neutral": 4,
+      "moved": 0,
+      "conflict": 0,
+      "unavailable": 0,
+      "blocked": 0,
+      "missing": 0,
+      "coord_rows": 240
+    },
+    "2025": {
+      "expected": 240,
+      "discovered": 240,
+      "confirmed": 240,
+      "neutral": 0,
+      "moved": 0,
+      "conflict": 0,
+      "unavailable": 0,
+      "blocked": 0,
+      "missing": 0,
+      "coord_rows": 240
+    }
+  },
+  "counts_total": {
+    "expected": 1920,
+    "discovered": 1920,
+    "confirmed": 1915,
+    "neutral": 4,
+    "moved": 0,
+    "conflict": 1,
+    "unavailable": 0,
+    "blocked": 0,
+    "missing": 0,
+    "coord_rows": 1919,
+    "coord_null_rows": 1
+  },
+  "confirmation_tiers": {
+    "nff_official": "2019 (NFF tournamentId=164089 season table Bane column, 240/240) and 2024-2025 (NFF official tournament calendar Excel, tournamentId 2024=192924 / 2025=199603, matched 480/480). These 720 rows carry official backing.",
+    "dual_non_official": "2018, 2020, 2021, 2022, 2023 (1,200 rows): baseline api-football per-fixture venue + FBref per-fixture Venue column agreeing on the same physical ground after name-normalisation, plus rename evidence where applicable. These rows are 'confirmed' at dual-source tier, NOT official tier; the tier is stated on every row (confirmation_tier) and must not be upgraded silently.",
+    "adjudication": "2018 Rosenborg 14 home fixtures: FBref league table says Abrahallen, but FBref's own European log, the 2018 Rosenborg season page (Lerkendal Stadion per fixture), and Abrahallen-row crowd sizes at Lerkendal magnitude support Lerkendal Stadion. Adjudicated to Lerkendal with Abrahallen retained as a competing candidate in-row. This is an adjudication, not official confirmation."
+  },
+  "neutral_rows": [
+    {
+      "record_key": "eliteserien-2024-r01-kfum-oslo-vs-ham-kam",
+      "home": "KFUM Oslo",
+      "verified_venue": "Intility Arena, Oslo",
+      "regular_home": "KFUM-Arena"
+    },
+    {
+      "record_key": "eliteserien-2024-r03-kfum-oslo-vs-stromsgodset",
+      "home": "KFUM Oslo",
+      "verified_venue": "Intility Arena, Oslo",
+      "regular_home": "KFUM-Arena"
+    },
+    {
+      "record_key": "eliteserien-2024-r13-kristiansund-bk-vs-fredrikstad",
+      "home": "Kristiansund BK",
+      "verified_venue": "Aker stadion, Molde",
+      "regular_home": "Nordmøre stadion"
+    },
+    {
+      "record_key": "eliteserien-2024-r17-kristiansund-bk-vs-lillestrom",
+      "home": "Kristiansund BK",
+      "verified_venue": "Aker stadion, Molde",
+      "regular_home": "Nordmøre stadion"
+    }
+  ],
+  "conflict_rows": [
+    {
+      "record_key": "eliteserien-2018-r01-ranheim-vs-brann",
+      "local_date": "2018-04-25",
+      "candidates": [
+        "Ranheim Arena / EXTRA Arena (baseline; 2018 Ranheim season page per-fixture, match noted as rescheduled from 10 March)",
+        "Aker Stadion, Molde (FBref; three pages of the same data family, counted as one evidence side)"
+      ],
+      "verified": null,
+      "status": "conflict",
+      "note": "Not marked moved: no confirmed relocation. EXTRA Arena was in normal use on 2, 15 and 28 April; no single-match move to Molde was evidenced. Awaits NFF official adjudication."
+    }
+  ],
+  "coordinate_coverage": {
+    "rows_with_coords": "1919/1920 (the single conflict row has null coordinates; both competing grounds' coordinates are in the route coordinate table, not assigned to the row)",
+    "venue_strings": "49 distinct verified (name, city) strings in the merged file. This is a spelling-variant count (case, ae/oe/aa transliteration, locality-vs-municipality city spellings, sponsor renames), NOT 49 physical grounds. Routes each report 18 physical sites per two-season block; physical grounds across 8 seasons are the union of club grounds for 24 distinct home clubs plus the 2 neutral grounds (Intility Arena, Aker stadion), with sponsor renames counted once.",
+    "coordinate_sources": "OpenStreetMap Nominatim search JSON (venue-level, not per-fixture confirmation). Byte-captured JSON with recomputed SHA-256 for most venues; exceptions in the unresolved queue (D-route 3 sites via map tool, sha null; FBref text-layer evidence sha null).",
+    "baseline_coordinate_discrepancy": "Sandefjord/Jotun Arena: baseline (59.17544, 10.21542) vs Nominatim venue point (59.1371935, 10.1795249), 4.72 km apart. Three independent routes agree the Nominatim point matches the published ground address/coordinates and the baseline point reverse-geocodes to a residential address (Sondre Kullerod). Both values are preserved in-row; the Nominatim point is adopted for venue_lat/venue_lon. All other venues: baseline vs Nominatim within 0.6 km (street-level take-point differences, e.g. Brann 341 m, Sarpsborg 595 m, Nadderud 233 m), recorded as precision notes, not identity conflicts."
+  },
+  "naming_and_renames": "All source spellings are preserved in-row (source_venue_name, venue_candidates, route notes). Normalisation was used only to judge same-physical-ground: Alfheim=Romssa Arena (renamed 2023-03-29); Isachsen=Consto Arena; Ranheim Arena=EXTRA Arena; SR-Bank Arena=Viking Stadion=Lyse Arena (Lyse from 2025); Sor Arena=Sparebanken Sor Arena=Sparebanken Norge Arena; Kristiansund Stadion=Nordmore stadion; Komplett.no Arena (to 2019-11) -> Release Arena (2021-05-05) -> Jotun Arena (2023-09-05); Haugesund Stadion -> Haugesund Sparebank Arena (2021-05; clean mid-season split in baseline: Stadion to 2021-07-18, Sparebank Arena from 2021-07-28; announcement date unverified); Sarpsborg st KG = Sarpsborg Stadion artificial-turf pitch (not a different ground, not moved). FBref tables use expired sponsor names in several seasons; verified names use the matchday-current name.",
+  "exclusions_verified": "No 2026 fixtures; no odds, scores, results, post-match status, standings (final or pre-kickoff), Qimen/palace/stem/door/star/deity/five-element interpretation, prediction, probability, Snapshot, Outcome, Review, or Gold fields in the merged file (field-name scan: 0 hits). No true solar time was calculated. No local Qimen project files were written. No purchase, no login, no credential, no API-Football paid-quota use.",
+  "method_honesty": "FBref per-fixture Venue values were read from full season tables (240/240 per season where used); where a route reports 'team-season constant venue', that constancy was observed after reading the full table, not assumed from a club stadium list. Verified city values come from the baseline where the per-fixture source table has no city column (FBref, NFF Bane column); this is stated on the rows/notes and city is weaker than name in those cases. D-route reused Nominatim JSON files captured in the shared work dir by sibling routes (re-read bytes, re-selected venue-class results, recomputed SHA-256; provenance retrieved_at is the file capture time, not D's own fetch time) after its own Nominatim request was stopped by a runtime permission gate; it did not bypass the gate."
+}

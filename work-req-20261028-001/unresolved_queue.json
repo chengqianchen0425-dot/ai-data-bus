@@ -1,0 +1,93 @@
+[
+  {
+    "id": "UQ-01",
+    "category": "conflict",
+    "record_key": "eliteserien-2018-r01-ranheim-vs-brann",
+    "field": "verified_actual_matchday_venue_name/city + venue_lat/venue_lon",
+    "reason": "Baseline/2018 Ranheim season page say Ranheim Arena (EXTRA Arena); FBref says Aker Stadion, Molde. Same crowd and referee on both sides, so the sides cannot be separated; no single-match move to Molde was evidenced.",
+    "attempted_source": "Baseline method_context; FBref 2018 schedule Venue column; 2018 Ranheim season page; EXTRA Arena usage dates 2/15/28 April 2018",
+    "next_action": "Adjudicate against the NFF official 2018 match record once the 2018 tournamentId is discoverable (see UQ-02). Do not mark moved until then."
+  },
+  {
+    "id": "UQ-02",
+    "category": "access_blocked",
+    "record_key": null,
+    "field": "NFF official confirmation, seasons 2018, 2020, 2021",
+    "reason": "NFF tournamentIds for 2018/2020/2021 Eliteserien main tournaments were not discoverable (established in req-20261018-001); 2018 search this round hit only the relegation playoff (163384) and a G19 youth group, which must not be mistaken for the main tournament.",
+    "attempted_source": "fotball.no search + tournament pages",
+    "next_action": "Re-probe after retry_after 2026-11-19. Until then the 720 rows for these seasons stay at dual-non-official tier.",
+    "retry_after": "2026-11-19"
+  },
+  {
+    "id": "UQ-03",
+    "category": "access_blocked",
+    "record_key": null,
+    "field": "NFF official confirmation, season 2022",
+    "reason": "2022 tournamentId not discovered after two searches this round; not guessed or copied from another season.",
+    "attempted_source": "fotball.no search",
+    "next_action": "Discover the 2022 tournamentId via NFF's current site structure or a live-browser task, then re-verify the 240 rows against the official table."
+  },
+  {
+    "id": "UQ-04",
+    "category": "access_blocked",
+    "record_key": null,
+    "field": "NFF official confirmation, season 2023",
+    "reason": "Known tournamentId 186850 exists, but the legacy fotballdata URL pattern is dead (301 to a 404 SPA shell, 61,617-byte shell page archived as evidence). The current NFF site structure for the 2023 table was not resolved by text-layer routes.",
+    "attempted_source": "fotball.no legacy fotballdata URL for tournamentId 186850",
+    "next_action": "Resolve via a live-browser task against the current NFF site, then re-verify the 240 rows against the official table."
+  },
+  {
+    "id": "UQ-05",
+    "category": "ambiguous",
+    "record_key": null,
+    "field": "venue_lat/venue_lon for Sandefjord (Jotun Arena) - baseline value",
+    "reason": "Baseline (59.17544, 10.21542) sits 4.72 km from the Nominatim venue point (59.1371935, 10.1795249) and reverse-geocodes to a residential address; three independent routes agree the Nominatim point matches the published ground address/coordinates. The baseline value's provenance (which geocoder, which input string) was not re-established.",
+    "attempted_source": "Nominatim venue point; published ground address Nygardsveien 82-86 and published coordinates (59.13725, 10.17969); baseline method_context",
+    "next_action": "Downstream: use the Nominatim point (adopted in merged rows) and keep the baseline value only as a preserved candidate. If the baseline geocoding input is recovered, re-check which input produced the residential point."
+  },
+  {
+    "id": "UQ-06",
+    "category": "ambiguous",
+    "record_key": null,
+    "field": "coordinate_provenance source_sha256 for 3 venues (Bryne, Fredrikstad, KFUM)",
+    "reason": "D-route's own Nominatim request was stopped by a runtime permission gate (not bypassed); these 3 venues' coordinates came from a map tool result with no downloadable bytes, so source_sha256 is null with the reason stated.",
+    "attempted_source": "map geocode tool (no byte capture)",
+    "next_action": "If byte-level provenance is required for these 3 venues, re-run Nominatim capture after the sharing permission is approved; the coordinate values themselves are unaffected."
+  },
+  {
+    "id": "UQ-07",
+    "category": "ambiguous",
+    "record_key": null,
+    "field": "source_sha256 for FBref text-layer venue evidence",
+    "reason": "FBref values were read via the browser text layer, which yields no downloadable page bytes; FBref evidence SHA-256 is null with the reason stated (never fabricated).",
+    "attempted_source": "FBref schedule pages via text layer",
+    "next_action": "Byte-capture FBref pages (e.g. via live browser save) if byte-level provenance is required for the FBref side; the venue values are already cross-checked against the baseline per fixture."
+  },
+  {
+    "id": "UQ-08",
+    "category": "pending_work",
+    "record_key": null,
+    "field": "NFF official confirmation, seasons 2018/2020/2021/2022/2023 (1,200 rows) - tier upgrade",
+    "reason": "Rows are confirmed at dual-non-official tier only. Upgrading them to official tier requires the NFF sources in UQ-02/UQ-03/UQ-04.",
+    "attempted_source": "See UQ-02/UQ-03/UQ-04",
+    "next_action": "After the NFF sources are resolved, re-verify the 1,200 rows and update confirmation_tier; do not relabel them official on the current evidence."
+  },
+  {
+    "id": "UQ-09",
+    "category": "permanent_rule",
+    "record_key": null,
+    "field": "All Qimen/chart/solar-time/prediction fields",
+    "reason": "The request forbids Muse from calculating true solar time or returning any Qimen/chart interpretation; the local pipeline owns chart generation.",
+    "attempted_source": null,
+    "next_action": "None for Muse. Downstream pipeline computes true solar time from the verified kickoff (baseline) and venue longitude (this delivery)."
+  },
+  {
+    "id": "UQ-10",
+    "category": "permanent_rule",
+    "record_key": null,
+    "field": "Club default stadium as fixture venue",
+    "reason": "The request forbids substituting a club's default stadium when fixture evidence does not establish the actual venue. No row in this delivery uses a club stadium list as its sole fixture evidence; every confirmed row has per-fixture evidence from the baseline and at least one independent per-fixture source (FBref or NFF).",
+    "attempted_source": null,
+    "next_action": "None. Any future row lacking per-fixture evidence must be marked unavailable/blocked, not filled from a stadium list."
+  }
+]

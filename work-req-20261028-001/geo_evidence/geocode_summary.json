@@ -1,0 +1,500 @@
+{
+ "Color Line Stadion": {
+  "error": "URLError(TimeoutError('timed out'))"
+ },
+ "Aspmyra Stadion": {
+  "error": "URLError(TimeoutError('timed out'))"
+ },
+ "Brann Stadion": {
+  "error": "URLError(TimeoutError('timed out'))"
+ },
+ "Haugesund Stadion": {
+  "error": "URLError(TimeoutError('timed out'))"
+ },
+ "Kristiansund Stadion": {
+  "error": "URLError(TimeoutError('timed out'))"
+ },
+ "Consto Arena": {
+  "error": "URLError(TimeoutError('timed out'))"
+ },
+ "Aker Stadion": {
+  "query": "Aker Stadion, Molde, Norway",
+  "http_status": 200,
+  "evidence_file": "Aker_Stadion_primary.json",
+  "evidence_sha256": "2c31d66b1751119822ac68f3270fb25202ce74765ff9dfb9b033214197940e0c",
+  "pick": {
+   "place_id": 160798367,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 74887533,
+   "lat": "62.7334015",
+   "lon": "7.1480721",
+   "class": "leisure",
+   "type": "stadium",
+   "place_rank": 30,
+   "importance": 0.47946854915750603,
+   "addresstype": "leisure",
+   "name": "Aker Stadion",
+   "display_name": "Aker Stadion, Julsundvegen, Bekkevoll, Røysan, Molde, Møre og Romsdal, 6414, Norge",
+   "address": {
+    "leisure": "Aker Stadion",
+    "road": "Julsundvegen",
+    "quarter": "Bekkevoll",
+    "suburb": "Røysan",
+    "town": "Molde",
+    "municipality": "Molde",
+    "county": "Møre og Romsdal",
+    "ISO3166-2-lvl4": "NO-15",
+    "postcode": "6414",
+    "country": "Norge",
+    "country_code": "no"
+   },
+   "boundingbox": [
+    "62.7328490",
+    "62.7339320",
+    "7.1465720",
+    "7.1495710"
+   ]
+  }
+ },
+ "Skagerak Arena": {
+  "query": "Skagerak Arena, Skien, Norway",
+  "http_status": 200,
+  "evidence_file": "Skagerak_Arena_primary.json",
+  "evidence_sha256": "cba8f70c3fc4033be0c78b3b9f62b958b84c3ff8950d7323d69781745b44d8b4",
+  "pick": {
+   "place_id": 163873364,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 264311515,
+   "lat": "59.2114504",
+   "lon": "9.5899759",
+   "class": "leisure",
+   "type": "pitch",
+   "place_rank": 30,
+   "importance": 5.000152590214416e-05,
+   "addresstype": "leisure",
+   "name": "Skagerak Arena",
+   "display_name": "Skagerak Arena, Hjalmar Johansens gate, Falkum, Gulset, Skien, Telemark, 3722, Norge",
+   "address": {
+    "leisure": "Skagerak Arena",
+    "road": "Hjalmar Johansens gate",
+    "quarter": "Falkum",
+    "suburb": "Gulset",
+    "city": "Skien",
+    "municipality": "Skien",
+    "county": "Telemark",
+    "ISO3166-2-lvl4": "NO-40",
+    "postcode": "3722",
+    "country": "Norge",
+    "country_code": "no"
+   },
+   "boundingbox": [
+    "59.2108775",
+    "59.2120232",
+    "9.5890744",
+    "9.5908773"
+   ]
+  }
+ },
+ "Lerkendal Stadion": {
+  "query": "Lerkendal Stadion, Trondheim, Norway",
+  "http_status": 200,
+  "evidence_file": "Lerkendal_Stadion_primary.json",
+  "evidence_sha256": "298ec07b4649f6ad50bd213ff4994e3c40be1eeb5225c349aa381df53cfc6452",
+  "pick": {
+   "place_id": 161705170,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 344273120,
+   "lat": "63.4123264",
+   "lon": "10.4044664",
+   "class": "leisure",
+   "type": "stadium",
+   "place_rank": 30,
+   "importance": 0.5169053596278818,
+   "addresstype": "leisure",
+   "name": "Lerkendal Stadion",
+   "display_name": "Lerkendal Stadion, Strindvegen, Tempe, Lerkendal, Trondheim, Trøndelag, 7034, Norge",
+   "address": {
+    "leisure": "Lerkendal Stadion",
+    "road": "Strindvegen",
+    "quarter": "Tempe",
+    "suburb": "Lerkendal",
+    "city_district": "Lerkendal",
+    "city": "Trondheim",
+    "county": "Trøndelag",
+    "ISO3166-2-lvl4": "NO-50",
+    "postcode": "7034",
+    "country": "Norge",
+    "country_code": "no"
+   },
+   "boundingbox": [
+    "63.4116272",
+    "63.4130195",
+    "10.4025909",
+    "10.4063425"
+   ]
+  }
+ },
+ "Komplett.no Arena": {
+  "query": "Jotun Arena, Sandefjord, Norway",
+  "http_status": 200,
+  "evidence_file": "Komplett.no_Arena_fallback.json",
+  "evidence_sha256": "380183961e90d4f50414ed19615658f9122223173e7c096be7db76e8d2b59fad",
+  "pick": {
+   "place_id": 161903354,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 101979167,
+   "lat": "59.1371935",
+   "lon": "10.1795249",
+   "class": "leisure",
+   "type": "pitch",
+   "place_rank": 30,
+   "importance": 0.3895399885548953,
+   "addresstype": "leisure",
+   "name": "Jotun Arena",
+   "display_name": "Jotun Arena, Ringveien, Pindsle, Krokemoa, Sandefjord, Vestfold, 3223, Norge",
+   "address": {
+    "leisure": "Jotun Arena",
+    "road": "Ringveien",
+    "neighbourhood": "Pindsle",
+    "suburb": "Krokemoa",
+    "city": "Sandefjord",
+    "municipality": "Sandefjord",
+    "county": "Vestfold",
+    "ISO3166-2-lvl4": "NO-39",
+    "postcode": "3223",
+    "country": "Norge",
+    "country_code": "no"
+   },
+   "boundingbox": [
+    "59.1366401",
+    "59.1377469",
+    "10.1784628",
+    "10.1805871"
+   ]
+  }
+ },
+ "Sarpsborg Stadion": {
+  "query": "Sarpsborg Stadion, Sarpsborg, Norway",
+  "http_status": 200,
+  "evidence_file": "Sarpsborg_Stadion_primary.json",
+  "evidence_sha256": "1122d0e0506c8a6fbddf34f4ad8d654d4b36603e034f18e173ee02b37eeb545a",
+  "pick": {
+   "place_id": 162433753,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 94220992,
+   "lat": "59.2862886",
+   "lon": "11.0977153",
+   "class": "leisure",
+   "type": "pitch",
+   "place_rank": 30,
+   "importance": 0.4562086448809265,
+   "addresstype": "leisure",
+   "name": "Sarpsborg stadion",
+   "display_name": "Sarpsborg stadion, Haftor Jonssons gate, Enenda, Valaskjold, Sarpsborg, Østfold, 1723, Norge",
+   "address": {
+    "leisure": "Sarpsborg stadion",
+    "road": "Haftor Jonssons gate",
+    "neighbourhood": "Enenda",
+    "suburb": "Valaskjold",
+    "city": "Sarpsborg",
+    "municipality": "Sarpsborg",
+    "county": "Østfold",
+    "ISO3166-2-lvl4": "NO-31",
+    "postcode": "1723",
+    "country": "Norge",
+    "country_code": "no"
+   },
+   "boundingbox": [
+    "59.2857448",
+    "59.2868322",
+    "11.0966410",
+    "11.0987895"
+   ]
+  }
+ },
+ "Nadderud Stadion": {
+  "query": "Nadderud Stadion, Bærum, Norway",
+  "http_status": 200,
+  "evidence_file": "Nadderud_Stadion_primary.json",
+  "evidence_sha256": "9d81fc47b069ebe15690fd6fb4502031ef7c1eaedb944ed12d05d3ae12ac27a7",
+  "pick": {
+   "place_id": 163504001,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 3987467,
+   "lat": "59.9213185",
+   "lon": "10.5804579",
+   "class": "leisure",
+   "type": "track",
+   "place_rank": 30,
+   "importance": 0.46669126189261223,
+   "addresstype": "leisure",
+   "name": "Nadderud stadion",
+   "display_name": "Nadderud stadion, Øygardveien, Ringstabekk, Hosle, Bekkestua, Bærum, Akershus, 1356, Norge",
+   "address": {
+    "leisure": "Nadderud stadion",
+    "road": "Øygardveien",
+    "quarter": "Ringstabekk",
+    "suburb": "Hosle",
+    "village": "Bekkestua",
+    "municipality": "Bærum",
+    "county": "Akershus",
+    "ISO3166-2-lvl4": "NO-32",
+    "postcode": "1356",
+    "country": "Norge",
+    "country_code": "no"
+   },
+   "boundingbox": [
+    "59.9205196",
+    "59.9220412",
+    "10.5800505",
+    "10.5823521"
+   ]
+  }
+ },
+ "Sparebanken Sør Arena": {
+  "query": "Sparebanken Sør Arena, Kristiansand, Norway",
+  "http_status": 200,
+  "evidence_file": "Sparebanken_Sør_Arena_primary.json",
+  "evidence_sha256": "0f02013d2439d2ee7b0985fc827e88e6dbcf322134cc3d7accc828a8daef70ae",
+  "pick": {
+   "place_id": 163730332,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 2354259,
+   "lat": "58.1536965",
+   "lon": "8.0302821",
+   "class": "leisure",
+   "type": "stadium",
+   "place_rank": 30,
+   "importance": 0.43502000867299523,
+   "addresstype": "leisure",
+   "name": "Sparebanken Norge Arena",
+   "display_name": "Sparebanken Norge Arena, Stadionveien, Marvika, Tangen, Lund, Kristiansand, Agder, 4632, Norge",
+   "address": {
+    "leisure": "Sparebanken Norge Arena",
+    "road": "Stadionveien",
+    "neighbourhood": "Marvika",
+    "quarter": "Tangen",
+    "suburb": "Lund",
+    "city": "Kristiansand",
+    "municipality": "Kristiansand",
+    "county": "Agder",
+    "ISO3166-2-lvl4": "NO-42",
+    "postcode": "4632",
+    "country": "Norge",
+    "country_code": "no"
+   },
+   "boundingbox": [
+    "58.1531100",
+    "58.1542990",
+    "8.0276690",
+    "8.0304650"
+   ]
+  }
+ },
+ "Marienlyst Stadion": {
+  "query": "Marienlyst Stadion, Drammen, Norway",
+  "http_status": 200,
+  "evidence_file": "Marienlyst_Stadion_primary.json",
+  "evidence_sha256": "6d4084a1807b41e2004450ab6a63de4190f98ecf2bb7148b8fc2b3dbb5c49b86",
+  "pick": {
+   "place_id": 162592791,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 13850962,
+   "lat": "59.7343801",
+   "lon": "10.2015510",
+   "class": "leisure",
+   "type": "stadium",
+   "place_rank": 30,
+   "importance": 0.4930696691257567,
+   "addresstype": "leisure",
+   "name": "Marienlyst stadion",
+   "display_name": "Marienlyst stadion, Schwartz gate, Marienlyst, Strømsø, Drammen, Buskerud, 3044, Norge",
+   "address": {
+    "leisure": "Marienlyst stadion",
+    "road": "Schwartz gate",
+    "neighbourhood": "Marienlyst",
+    "suburb": "Strømsø",
+    "city_district": "Strømsø",
+    "city": "Drammen",
+    "municipality": "Drammen",
+    "county": "Buskerud",
+    "ISO3166-2-lvl4": "NO-33",
+    "postcode": "3044",
+    "country": "Norge",
+    "country_code": "no"
+   },
+   "boundingbox": [
+    "59.7335752",
+    "59.7351708",
+    "10.2000496",
+    "10.2030986"
+   ]
+  }
+ },
+ "Intility Arena": {
+  "query": "Intility Arena, Oslo, Norway",
+  "http_status": 200,
+  "evidence_file": "Intility_Arena_primary.json",
+  "evidence_sha256": "b399eef5c62183bf64094c0f7d0298e5a66dffa902f7bb7a1bd7ec67b14ae2a6",
+  "pick": {
+   "place_id": 163243189,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 443983964,
+   "lat": "59.9179048",
+   "lon": "10.8066324",
+   "class": "leisure",
+   "type": "stadium",
+   "place_rank": 30,
+   "importance": 0.4493085284326974,
+   "addresstype": "leisure",
+   "name": "Intility Arena",
+   "display_name": "Intility Arena, Hjalmar Brantings vei, Gullhaug, Valle, Gamle Oslo, Oslo, 0665, Norge",
+   "address": {
+    "leisure": "Intility Arena",
+    "road": "Hjalmar Brantings vei",
+    "neighbourhood": "Gullhaug",
+    "suburb": "Valle",
+    "municipality": "Oslo",
+    "city": "Oslo",
+    "ISO3166-2-lvl4": "NO-03",
+    "postcode": "0665",
+    "country": "Norge",
+    "country_code": "no"
+   },
+   "boundingbox": [
+    "59.9168219",
+    "59.9191583",
+    "10.8046055",
+    "10.8085005"
+   ]
+  }
+ },
+ "SR-Bank Arena": {
+  "query": "Viking Stadion, Stavanger, Norway",
+  "http_status": 200,
+  "evidence_file": "SR-Bank_Arena_fallback.json",
+  "evidence_sha256": "656d2aa33749dc0b296c18e2d04c05d1d2a50b3de70e94c5ac59ff68d72b7e4a",
+  "pick": {
+   "place_id": 159379045,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 201384256,
+   "lat": "58.9145955",
+   "lon": "5.7309977",
+   "class": "leisure",
+   "type": "stadium",
+   "place_rank": 30,
+   "importance": 0.43843044507974105,
+   "addresstype": "leisure",
+   "name": "Lyse Arena",
+   "display_name": "Lyse Arena, Gamle Jåttåvågen, Jåttåvågen, Gausel, Hinna, Stavanger, Rogaland, 4032, Norge",
+   "address": {
+    "leisure": "Lyse Arena",
+    "road": "Gamle Jåttåvågen",
+    "neighbourhood": "Jåttåvågen",
+    "quarter": "Jåttåvågen",
+    "suburb": "Gausel",
+    "city_district": "Hinna",
+    "city": "Stavanger",
+    "county": "Rogaland",
+    "ISO3166-2-lvl4": "NO-11",
+    "postcode": "4032",
+    "country": "Norge",
+    "country_code": "no"
+   },
+   "boundingbox": [
+    "58.9137870",
+    "58.9153920",
+    "5.7294160",
+    "5.7325840"
+   ]
+  }
+ },
+ "Åråsen Stadion": {
+  "query": "Åråsen Stadion, Lillestrøm, Norway",
+  "http_status": 200,
+  "evidence_file": "Åråsen_Stadion_primary.json",
+  "evidence_sha256": "3682d650b54743606d263ef21a3394a91b6b35bd3a6f148014388c74fb95efda",
+  "pick": {
+   "place_id": 162820839,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 13333689399,
+   "lat": "59.9627403",
+   "lon": "11.0635660",
+   "class": "leisure",
+   "type": "pitch",
+   "place_rank": 30,
+   "importance": 0.47912111845331606,
+   "addresstype": "leisure",
+   "name": "Åråsen Stadion",
+   "display_name": "Åråsen Stadion, C.J. Hansens vei, Vigernes, Lillestrøm, Akershus, 2000, Norge",
+   "address": {
+    "leisure": "Åråsen Stadion",
+    "road": "C.J. Hansens vei",
+    "suburb": "Vigernes",
+    "town": "Lillestrøm",
+    "municipality": "Lillestrøm",
+    "county": "Akershus",
+    "ISO3166-2-lvl4": "NO-32",
+    "postcode": "2000",
+    "country": "Norge",
+    "country_code": "no"
+   },
+   "boundingbox": [
+    "59.9626903",
+    "59.9627903",
+    "11.0635160",
+    "11.0636160"
+   ]
+  }
+ },
+ "Alfheim Stadion": {
+  "query": "Alfheim Stadion, Tromsø, Norway",
+  "http_status": 200,
+  "evidence_file": "Alfheim_Stadion_primary.json",
+  "evidence_sha256": "7b2baeccf4d5218b0b63b971c7dc1ca1f474027589d41e6e438e2dd52bce2622",
+  "pick": {
+   "place_id": 269842505,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 7734852,
+   "lat": "69.6489185",
+   "lon": "18.9343489",
+   "class": "leisure",
+   "type": "stadium",
+   "place_rank": 30,
+   "importance": 0.3862077567270856,
+   "addresstype": "leisure",
+   "name": "Romssa Arena",
+   "display_name": "Romssa Arena, Stadionvegen, Haugenstykket, Alfheim, Tromsø, Troms, 9007, Norge",
+   "address": {
+    "leisure": "Romssa Arena",
+    "road": "Stadionvegen",
+    "neighbourhood": "Haugenstykket",
+    "suburb": "Alfheim",
+    "city": "Tromsø",
+    "county": "Troms",
+    "ISO3166-2-lvl4": "NO-55",
+    "postcode": "9007",
+    "country": "Norge",
+    "country_code": "no"
+   },
+   "boundingbox": [
+    "69.6482541",
+    "69.6494119",
+    "18.9325571",
+    "18.9363220"
+   ]
+  }
+ }
+}
