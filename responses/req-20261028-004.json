@@ -2,12 +2,114 @@
   "id": "req-20261028-004",
   "from": "muse",
   "to": "codex",
-  "status": "processing",
+  "status": "ok",
   "request_sha": "579df46855b9e86e",
   "request_sha_full": "579df46855b9e86e9744db5fb5e2e2af5e4b5d1294047b9511431ce1a8c34ff0",
   "request_sha_method": "sha256 of requests/req-20261028-004.json file bytes; request_sha is its first 16 hex chars, request_sha_full is the complete digest",
-  "dispatch_id": "268e4497-b06d-4678-9f57-ceced48e180b",
+  "dispatch_id": "268e4497-b06d-4678-9f57-ceced48e180b;browser-task:4a91f1f1-df03-533a-b26e-fd0d66d6ad47",
   "dp_used": false,
   "dp_reason": "未调用 DeepSeek：本轮为单场赔率证据审计",
-  "note": "【2026-10-28 19:40 CST processing】已接单：单场 Eredivisie 2018/19 Heerenveen vs Excelsior（2019-03-30，20:45 Europe/Amsterdam，fixture_key=eredivisie-2018-19-2019-03-30-heerenveen-excelsior，provider_fixture_id=619161520）Pinnacle 严格开球前 1X2 开盘证据审计，只做这一场。硬约束已记：FiveDollar 该场 Pinnacle 已空数组且达 20 次上限，本轮不再撞 FiveDollar；API-Football 赔率仅保留 7 天，对 2019 年场次无用，不浪费调用；NowGoal Initial ≠ 真实开盘（首次捕获语义），其 Initial 行 1.70/4.05/4.77 与 recorded_at 2019-03-31T03:45:00+08:00 在未证实更早有效时间戳前不升格为开球前开盘；Football-Data pre_closing（1.62/4.43/5.15）与 closing（1.60/4.74/4.96）按其自身语义不是开盘，不作替代。执行：先审计库内已存档 NowGoal 记录（work-req-20261010-003/nowgoal_1819_pinnacle_opening.jsonl 含 match 1552084），再以实时浏览器核查 NowGoal 比赛页与其它可读历史赔率源的 Pinnacle 首条带时间戳记录；找不到严格开球前证据即返回 opening_status=unavailable（附尝试源与原因），不以 pre_closing／closing／别家／共识顶替；行即使无结果也返回。"
+  "data": {
+    "fixture_key": "eredivisie-2018-19-2019-03-30-heerenveen-excelsior",
+    "provider_fixture_id": "619161520",
+    "league_id": "137325260",
+    "season": "2018/19",
+    "home_team": "Heerenveen",
+    "away_team": "Excelsior",
+    "kickoff_local": "2019-03-30T20:45:32+01:00",
+    "kickoff_utc": "2019-03-30T19:45:32Z",
+    "bookmaker": "Pinnacle",
+    "market": "1X2",
+    "opening_status": "available_with_semantic_qualification",
+    "opening_quote": {
+      "home": 1.7,
+      "draw": 4.05,
+      "away": 4.77
+    },
+    "first_tick": {
+      "timestamp_as_shown": "14-03 14:19 Initial",
+      "timestamp_year_inferred": 2019,
+      "timestamp_year_basis": "page context 31-03-2019 and continuous 14-03 to 31-03 sequence",
+      "timestamp_timezone": "unlabeled on page",
+      "timestamp_semantics": "per-tick Updated time + Initial label; first tick in NowGoal's Pinnacle change history for this match (36 ticks total, exactly one Initial-labeled tick, chronologically earliest)",
+      "strictly_before_kickoff": true,
+      "strictness_basis": "16 days between 14 March and 30 March kickoff, far exceeding any timezone offset, so precedence holds under any timezone conversion"
+    },
+    "opening_semantics_caveat": "NowGoal Initial is the source's first captured tick, NOT proof of Pinnacle's absolute market-opening instant; the page uses no 'opening' or 'first capture' wording. Accurate statement: 'first Initial-labeled Pinnacle quote on this source, timestamped strictly before kickoff.' Do not shorten to 'Pinnacle official opening.'",
+    "main_table_crosscheck": {
+      "home": 1.7,
+      "draw": 4.05,
+      "away": 4.77,
+      "hwr": 56.3,
+      "dr": 23.63,
+      "awr": 20.07,
+      "return": 95.71,
+      "last_updated_as_shown": "31-03 03:45",
+      "last_updated_note": "equals the page's displayed kickoff display time; it is NOT the initial capture time and this verdict does not rely on it",
+      "kelly_warning": "main-table Kelly (0.93/1.02/1.01) matches the latest tick, not the first tick (1.00/0.88/0.92); page does not explain main-table Kelly basis, so main-table Kelly must not be cited as the first tick's Kelly"
+    },
+    "tick_history": "work-req-20261028-004/nowgoal_tick_history_1552084.md",
+    "tick_count": 36,
+    "archived_record": {
+      "status": "preserved_unverified_separate_record",
+      "source": "work-req-20261010-003/nowgoal_1819_pinnacle_opening.jsonl line 57",
+      "row_byte_sha256": "4678415d2c85972478a89247052bc169f70623d014f459ee1558f6fc7c39d055",
+      "home": 1.7,
+      "draw": 4.05,
+      "away": 4.77,
+      "recorded_at": "2019-03-31T03:45:00+08:00",
+      "recorded_at_utc": "2019-03-30T19:45:00Z",
+      "field_semantics_correction": "archived field_semantics=true_opening is NOT inherited; per the established NowGoal Initial lesson it is re-labeled initial_first_capture",
+      "standalone_verdict": "on its own fields the archived record still cannot establish strictly-before-kickoff (minute-precision Last Updated straddling the :32 kickoff second; no quote-effective-time field); the strictly-before-kickoff evidence comes from the live-page tick history, not from the archived row"
+    },
+    "provenance": {
+      "source_url": "https://www.nowgoal.net/1x2-odds/1552084",
+      "final_url": "https://www.nowgoal.net/1x2-odds/1552084",
+      "retrieved_at": "2026-10-28T19:36-19:46 CST and 19:47-19:56 CST (11:36-11:46 UTC and 11:47-11:56 UTC, system-measured)",
+      "field_locator": "Pinnacle Odds Change popup, earliest tick '14-03 14:19 Initial'; main table Initial filter Pinnacle row",
+      "source_name": "NowGoal 1x2 odds page, match 1552084",
+      "source_sha256": null,
+      "source_sha256_reason": "popup is a JS-rendered view transcribed live; no source bytes were captured in this round, so no hash is claimed (a description or URL hash is not an evidence hash); values are cross-validated against the archived row (identical odds/probabilities/return)"
+    },
+    "other_sources": [
+      {
+        "source": "BetExplorer",
+        "url": "https://www.betexplorer.com/football/netherlands/eredivisie-2018-2019/heerenveen-excelsior/pOWPvvie/",
+        "result": "page reachable, no block or login wall wording; Odds Comparison (1X2) states no bookmaker offered odds for this match; no Pinnacle row, no opening value, no timestamp; neither confirms nor refutes the NowGoal quote"
+      },
+      {
+        "source": "SoccerPunter",
+        "url": "https://www.soccerpunter.com/live-odds/10331984/SC-Heerenveen-vs-Excelsior",
+        "result": "logged-out view shows 4 bookmaker rows only, no Pinnacle row; page invites login to see all bookmakers; stopped at the login wall per constraints, no bypass; no Pinnacle opening value or timestamp from this source"
+      },
+      {
+        "source": "FiveDollar API",
+        "result": "NOT called this round: empty bookmakers array on every accepted HTTP 200 response and the fixture has reached its 20-attempt cap"
+      },
+      {
+        "source": "API-Football odds",
+        "result": "NOT called: odds retained only 7 days by design, useless for a 2019 fixture"
+      },
+      {
+        "source": "OddsPortal",
+        "result": "inventory only, zero extraction: terms section 2.11 prohibit scraping/aggregation without written consent"
+      },
+      {
+        "source": "Football-Data (task-given lead, not re-fetched)",
+        "result": "pre_closing 1.62/4.43/5.15 and closing 1.60/4.74/4.96; per its own semantics pre_closing is not true opening and neither value was substituted; consistency note only: pre_closing values exactly equal tick 13 of the NowGoal history (29-03 21:02), closing values match no tick exactly"
+      }
+    ],
+    "promotion_allowed": false,
+    "promotion_note": "this receipt promotes nothing beyond the evidence: the archived record stays unverified, and the opening claim is qualified to source-first-tick semantics as stated above",
+    "audit_files": [
+      "work-req-20261028-004/nowgoal_audit_1552084.md",
+      "work-req-20261028-004/pinnacle_opening_candidates.md",
+      "work-req-20261028-004/nowgoal_tick_history_1552084.md"
+    ],
+    "residual_gaps": [
+      "byte-level SHA-256 for the popup tick history (rendered-view transcription only; a compliant download channel would be needed for byte capture)",
+      "Pinnacle official opening-time statement: no such evidence found this round"
+    ],
+    "excluded": "scores, results, standings, predictions and model outputs are excluded from this delivery by the request scope"
+  }
 }
