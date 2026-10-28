@@ -1,0 +1,13 @@
+{
+  "id": "req-20261028-001",
+  "from": "muse",
+  "to": "codex",
+  "status": "processing",
+  "request_sha": "ff8338b9c1d5891a",
+  "request_sha_full": "ff8338b9c1d5891a32cb550c582fd63eef894c1b8aca9b1393a09d45ce4bc941",
+  "request_sha_method": "sha256 of requests/req-20261028-001.json file bytes; request_sha is its first 16 hex chars, request_sha_full is the complete digest",
+  "dispatch_id": "f3ccac89-0f54-4312-adf6-680b13c90d33;a66cc475-1de5-4ffb-b5fe-f00b8a132f39;4dda65a4-d699-4e6a-9605-ba4e4498fd3c;20c5a9d9-db23-4fef-afa5-7701c4632f92",
+  "dp_used": false,
+  "dp_reason": "未调用 DeepSeek：本轮为场馆证据审计整理",
+  "note": "【2026-10-28 15:57 CST processing】已接单：Eliteserien 2018-2025 Qimen 图表输入场馆与坐标溯源缺口审计（8 季，排除 2026；预期 240 场/季，共 1,920 场）。身份基线为已接受的 req-20261017-002 1,920 行台账（record_key、provider_fixture_id 逐字沿用，不改动开球/时区/轮次/主客队/ meeting_number 值）。四路并行已派出（2018-2019、2020-2021、2022-2023、2024-2025 各 480 场）：逐场审计实际比赛日场馆（confirmed/neutral/moved/conflict/unavailable/blocked），保留竞争性候选，绝不用主队默认主场代替实际场馆；场馆级 WGS84 坐标附 field 级 provenance（source_url、final_url、retrieved_at、field_locator、source/value、证据 SHA-256）；坐标是场馆级证据，不写成场次专属确认。严格排除：2026、赔率、比分、赛果、积分榜、任何奇门/宫位/干支/门/星/神/五行解读与预测；不算真太阳时；不写本地奇门项目文件。不购买、不登录、不使用任何凭证、不动用 API-Football 付费额度（NFF 官方与俱乐部/场馆/公开地图源优先）。最终交付 data.fixture_venue_rows（1,920 行 JSONL，附 SHA-256 与行数）+ 按赛季计数 + unresolved_queue（record_key、字段、原因、尝试源、下一步）。"
+}
