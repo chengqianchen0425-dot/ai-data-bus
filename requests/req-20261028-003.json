@@ -1,0 +1,71 @@
+{
+  "id": "req-20261028-003",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "created_at": "2026-10-28T19:30:25+08:00",
+  "params": {
+    "topic": "Veikkausliiga exact 868-fixture pre-match context evidence completion",
+    "execution_note": "Corrective unique request after req-20261028-002 returned 1,902 rows and a request hash that does not match its current request file. Use only the attached exact 868-row identity artifact. Artifact SHA-256: 9de8b8fac5fcdebbc51e1df99f9a5fe329e3149f3deacc2dfcc4105cd9a4c093. The artifact is committed in this ai-data-bus repository at work-req-20261028-003/fixture_identity_input.csv. Do not substitute the 1,902-row superset, do not infer missing identity rows, and do not use odds or post-match data.",
+    "input_artifact": {
+      "path": "work-req-20261028-003/fixture_identity_input.csv",
+      "sha256": "9de8b8fac5fcdebbc51e1df99f9a5fe329e3149f3deacc2dfcc4105cd9a4c093",
+      "row_count": 868,
+      "columns": [
+        "fixture_key",
+        "season",
+        "match_date",
+        "home_team",
+        "away_team",
+        "api_fixture_id"
+      ]
+    },
+    "questions": [
+      "For each exact fixture_key in the attached artifact, return exactly one row; preserve identity fields byte-for-byte and do not add fixtures. Crosswalk accepted pre-existing response req-20261006-004 for 2019-2025 first, then provide only missing or weakly sourced fields.",
+      "Return official_round and double_round_robin with source-backed season semantics. Return meeting_number only when an authoritative source explicitly defines it or the exact pairing is joined to sourced official round records. Otherwise preserve null and state unavailable; never infer from order/date/score/standings/market data.",
+      "Return actual matchday venue and city, WGS84 longitude/latitude, IANA timezone, home/away official club identity and lineage fields (natal_year and competition_entry_year), and official local kickoff with timezone semantics. Preserve source spelling, neutral/moved/conflict/unavailable statuses and competing values.",
+      "For every non-null value provide field-level source_url, final_url, retrieved_at with timezone, field_locator, source_name, source_value, and SHA-256 of captured source evidence bytes. A hash of URL or prose is not an evidence hash. Return rows for unavailable fields with attempted sources and next actions.",
+      "Return expected/discovered/complete/partial/conflict/unavailable/blocked/missing counts by season and total, plus unresolved_queue keyed by fixture_key. Provide row artifact path/schema/count/SHA-256 and confirm the input artifact SHA-256 before processing.",
+      "Only source-backed pre-match facts and provenance. Exclude odds, scores, results, standings, Qimen/chart output, interpretation, direction, probability, Snapshot, Outcome, Review, and Gold. Do not write into project files or formal records."
+    ],
+    "scope": {
+      "competition_key": "veikkausliiga",
+      "competition_name": "Veikkausliiga",
+      "country": "Finland",
+      "timezone": "Europe/Helsinki",
+      "candidate_fixture_count": 868,
+      "fixture_identity_source": "work-req-20261028-003/fixture_identity_input.csv",
+      "fixture_identity_sha256": "9de8b8fac5fcdebbc51e1df99f9a5fe329e3149f3deacc2dfcc4105cd9a4c093",
+      "seasons": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "league_only": true,
+      "pre_match_facts_only": true
+    },
+    "output_contract": {
+      "format": "json_report_plus_fixture_method_context_evidence_jsonl_and_unresolved_queue",
+      "exact_input_identity_only": true,
+      "expected_rows": 868,
+      "preserve_nulls_and_conflicts": true,
+      "required_provenance": [
+        "source_url",
+        "final_url",
+        "retrieved_at",
+        "field_locator",
+        "source_sha256"
+      ],
+      "formal_model_unchanged": true,
+      "promotion_allowed": false
+    }
+  }
+}

@@ -1,0 +1,869 @@
+﻿fixture_key,season,match_date,home_team,away_team,api_fixture_id
+veikkausliiga|2016|2016-08-07|hjk|lahti,2016,2016-08-07,HJK,Lahti,1967924443
+veikkausliiga|2016|2016-08-07|mariehamn|hifk,2016,2016-08-07,Mariehamn,HIFK,3487974599
+veikkausliiga|2016|2016-08-10|hifk|hjk,2016,2016-08-10,HIFK,HJK,3880892881
+veikkausliiga|2016|2016-08-10|lahti|ilves,2016,2016-08-10,Lahti,Ilves,3267572677
+veikkausliiga|2016|2016-08-10|vps|sjk,2016,2016-08-10,VPS,SJK,3583844444
+veikkausliiga|2016|2016-08-13|ilves|hifk,2016,2016-08-13,Ilves,HIFK,921084147
+veikkausliiga|2016|2016-08-14|vps|mariehamn,2016,2016-08-14,VPS,Mariehamn,4293229697
+veikkausliiga|2016|2016-08-20|sjk|ilves,2016,2016-08-20,SJK,Ilves,3988822974
+veikkausliiga|2016|2016-08-21|mariehamn|hifk,2016,2016-08-21,Mariehamn,HIFK,1154598726
+veikkausliiga|2016|2016-08-21|vps|hjk,2016,2016-08-21,VPS,HJK,572124213
+veikkausliiga|2016|2016-08-27|hifk|sjk,2016,2016-08-27,HIFK,SJK,1379975557
+veikkausliiga|2016|2016-08-28|mariehamn|vps,2016,2016-08-28,Mariehamn,VPS,3520451235
+veikkausliiga|2016|2016-09-09|hifk|vps,2016,2016-09-09,HIFK,VPS,1312796355
+veikkausliiga|2016|2016-09-09|pskemi|hjk,2016,2016-09-09,PS Kemi,HJK,1645102067
+veikkausliiga|2016|2016-09-12|hjk|lahti,2016,2016-09-12,HJK,Lahti,1095854442
+veikkausliiga|2016|2016-09-12|mariehamn|pskemi,2016,2016-09-12,Mariehamn,PS Kemi,3153572289
+veikkausliiga|2016|2016-09-16|hifk|pskemi,2016,2016-09-16,HIFK,PS Kemi,946099572
+veikkausliiga|2016|2016-09-16|ilves|vps,2016,2016-09-16,Ilves,VPS,3550298579
+veikkausliiga|2016|2016-09-17|sjk|mariehamn,2016,2016-09-17,SJK,Mariehamn,2266805893
+veikkausliiga|2016|2016-09-21|pskemi|lahti,2016,2016-09-21,PS Kemi,Lahti,2030810020
+veikkausliiga|2016|2016-09-21|vps|sjk,2016,2016-09-21,VPS,SJK,2404870009
+veikkausliiga|2016|2016-09-25|ilves|pskemi,2016,2016-09-25,Ilves,PS Kemi,1783848068
+veikkausliiga|2016|2016-09-26|lahti|hifk,2016,2016-09-26,Lahti,HIFK,2678100459
+veikkausliiga|2016|2016-09-30|hifk|hjk,2016,2016-09-30,HIFK,HJK,569797090
+veikkausliiga|2016|2016-10-01|pskemi|sjk,2016,2016-10-01,PS Kemi,SJK,1780891227
+veikkausliiga|2016|2016-10-14|hjk|mariehamn,2016,2016-10-14,HJK,Mariehamn,3617691161
+veikkausliiga|2016|2016-10-14|ilves|hifk,2016,2016-10-14,Ilves,HIFK,3955228509
+veikkausliiga|2016|2016-10-14|sjk|lahti,2016,2016-10-14,SJK,Lahti,205051779
+veikkausliiga|2016|2016-10-17|ilves|hjk,2016,2016-10-17,Ilves,HJK,2707522702
+veikkausliiga|2016|2016-10-17|lahti|mariehamn,2016,2016-10-17,Lahti,Mariehamn,1891667794
+veikkausliiga|2016|2016-10-17|pskemi|vps,2016,2016-10-17,PS Kemi,VPS,2991817004
+veikkausliiga|2016|2016-10-23|hjk|sjk,2016,2016-10-23,HJK,SJK,2625720740
+veikkausliiga|2016|2016-10-23|mariehamn|ilves,2016,2016-10-23,Mariehamn,Ilves,3388606741
+veikkausliiga|2016|2016-10-23|vps|lahti,2016,2016-10-23,VPS,Lahti,3058634323
+veikkausliiga|2017|2017-04-05|hjk|vps,2017,2017-04-05,HJK,VPS,1295615253
+veikkausliiga|2017|2017-04-05|sjk|lahti,2017,2017-04-05,SJK,Lahti,2521255404
+veikkausliiga|2017|2017-04-08|ilves|lahti,2017,2017-04-08,Ilves,Lahti,952156414
+veikkausliiga|2017|2017-04-08|pskemi|hifk,2017,2017-04-08,PS Kemi,HIFK,4002660310
+veikkausliiga|2017|2017-04-15|mariehamn|hjk,2017,2017-04-15,Mariehamn,HJK,2856724415
+veikkausliiga|2017|2017-04-15|sjk|ilves,2017,2017-04-15,SJK,Ilves,38371326
+veikkausliiga|2017|2017-04-22|pskemi|sjk,2017,2017-04-22,PS Kemi,SJK,2114905283
+veikkausliiga|2017|2017-04-24|hifk|lahti,2017,2017-04-24,HIFK,Lahti,2406333813
+veikkausliiga|2017|2017-04-28|sjk|hifk,2017,2017-04-28,SJK,HIFK,2639080305
+veikkausliiga|2017|2017-04-30|mariehamn|vps,2017,2017-04-30,Mariehamn,VPS,1211080529
+veikkausliiga|2017|2017-05-06|ilves|mariehamn,2017,2017-05-06,Ilves,Mariehamn,1606447783
+veikkausliiga|2017|2017-05-06|lahti|sjk,2017,2017-05-06,Lahti,SJK,3621604866
+veikkausliiga|2017|2017-05-06|vps|hjk,2017,2017-05-06,VPS,HJK,1454788914
+veikkausliiga|2017|2017-05-11|hjk|ilves,2017,2017-05-11,HJK,Ilves,884544517
+veikkausliiga|2017|2017-05-12|mariehamn|pskemi,2017,2017-05-12,Mariehamn,PS Kemi,4046167493
+veikkausliiga|2017|2017-05-19|hifk|mariehamn,2017,2017-05-19,HIFK,Mariehamn,3028863698
+veikkausliiga|2017|2017-05-19|pskemi|hjk,2017,2017-05-19,PS Kemi,HJK,3492358910
+veikkausliiga|2017|2017-05-23|hifk|hjk,2017,2017-05-23,HIFK,HJK,2812918186
+veikkausliiga|2017|2017-05-23|mariehamn|lahti,2017,2017-05-23,Mariehamn,Lahti,179931511
+veikkausliiga|2017|2017-05-24|vps|ilves,2017,2017-05-24,VPS,Ilves,1413502252
+veikkausliiga|2017|2017-05-27|lahti|hjk,2017,2017-05-27,Lahti,HJK,3587599075
+veikkausliiga|2017|2017-05-27|pskemi|vps,2017,2017-05-27,PS Kemi,VPS,4018063908
+veikkausliiga|2017|2017-05-27|sjk|mariehamn,2017,2017-05-27,SJK,Mariehamn,2408253441
+veikkausliiga|2017|2017-05-31|hjk|sjk,2017,2017-05-31,HJK,SJK,2910027651
+veikkausliiga|2017|2017-05-31|ilves|pskemi,2017,2017-05-31,Ilves,PS Kemi,998969121
+veikkausliiga|2017|2017-05-31|vps|hifk,2017,2017-05-31,VPS,HIFK,1167749892
+veikkausliiga|2017|2017-06-03|lahti|vps,2017,2017-06-03,Lahti,VPS,685902258
+veikkausliiga|2017|2017-06-04|hifk|ilves,2017,2017-06-04,HIFK,Ilves,2862819621
+veikkausliiga|2017|2017-06-14|hifk|sjk,2017,2017-06-14,HIFK,SJK,4036446155
+veikkausliiga|2017|2017-06-16|lahti|ilves,2017,2017-06-16,Lahti,Ilves,844155924
+veikkausliiga|2017|2017-06-17|hifk|pskemi,2017,2017-06-17,HIFK,PS Kemi,3683597899
+veikkausliiga|2017|2017-06-17|sjk|vps,2017,2017-06-17,SJK,VPS,2869693212
+veikkausliiga|2017|2017-06-21|pskemi|lahti,2017,2017-06-21,PS Kemi,Lahti,3961604342
+veikkausliiga|2017|2017-06-22|hjk|mariehamn,2017,2017-06-22,HJK,Mariehamn,3124481393
+veikkausliiga|2017|2017-06-22|ilves|sjk,2017,2017-06-22,Ilves,SJK,4016928888
+veikkausliiga|2017|2017-06-26|sjk|pskemi,2017,2017-06-26,SJK,PS Kemi,3633142576
+veikkausliiga|2017|2017-06-27|lahti|hifk,2017,2017-06-27,Lahti,HIFK,4185809931
+veikkausliiga|2017|2017-07-02|vps|mariehamn,2017,2017-07-02,VPS,Mariehamn,2736443617
+veikkausliiga|2017|2017-07-04|lahti|pskemi,2017,2017-07-04,Lahti,PS Kemi,601749996
+veikkausliiga|2017|2017-07-07|mariehamn|ilves,2017,2017-07-07,Mariehamn,Ilves,514761522
+veikkausliiga|2017|2017-07-16|ilves|hjk,2017,2017-07-16,Ilves,HJK,919849729
+veikkausliiga|2017|2017-07-17|hifk|kups,2017,2017-07-17,HIFK,KuPS,4064135041
+veikkausliiga|2017|2017-07-22|mariehamn|hifk,2017,2017-07-22,Mariehamn,HIFK,114487094
+veikkausliiga|2017|2017-07-23|hjk|pskemi,2017,2017-07-23,HJK,PS Kemi,4173285933
+veikkausliiga|2017|2017-07-29|ilves|vps,2017,2017-07-29,Ilves,VPS,2397042556
+veikkausliiga|2017|2017-07-31|hjk|hifk,2017,2017-07-31,HJK,HIFK,1332227525
+veikkausliiga|2017|2017-08-06|hjk|lahti,2017,2017-08-06,HJK,Lahti,192899571
+veikkausliiga|2017|2017-08-06|mariehamn|sjk,2017,2017-08-06,Mariehamn,SJK,2510226073
+veikkausliiga|2017|2017-08-06|vps|pskemi,2017,2017-08-06,VPS,PS Kemi,270989704
+veikkausliiga|2017|2017-08-09|hifk|vps,2017,2017-08-09,HIFK,VPS,1605963600
+veikkausliiga|2017|2017-08-09|pskemi|ilves,2017,2017-08-09,PS Kemi,Ilves,1662615934
+veikkausliiga|2017|2017-08-10|sjk|hjk,2017,2017-08-10,SJK,HJK,1840131200
+veikkausliiga|2017|2017-08-14|ilves|hifk,2017,2017-08-14,Ilves,HIFK,2229745201
+veikkausliiga|2017|2017-08-14|vps|lahti,2017,2017-08-14,VPS,Lahti,2956077280
+veikkausliiga|2017|2017-08-19|sjk|lahti,2017,2017-08-19,SJK,Lahti,3251041169
+veikkausliiga|2017|2017-08-20|vps|ilves,2017,2017-08-20,VPS,Ilves,1619744658
+veikkausliiga|2017|2017-08-26|ilves|hifk,2017,2017-08-26,Ilves,HIFK,3716012503
+veikkausliiga|2017|2017-08-26|lahti|pskemi,2017,2017-08-26,Lahti,PS Kemi,18544834
+veikkausliiga|2017|2017-08-27|mariehamn|vps,2017,2017-08-27,Mariehamn,VPS,974056851
+veikkausliiga|2017|2017-09-07|interturku|ilves,2017,2017-09-07,Inter Turku,Ilves,867844139
+veikkausliiga|2017|2017-09-08|hifk|mariehamn,2017,2017-09-08,HIFK,Mariehamn,4238428186
+veikkausliiga|2017|2017-09-08|vps|hjk,2017,2017-09-08,VPS,HJK,1084429292
+veikkausliiga|2017|2017-09-11|sjk|vps,2017,2017-09-11,SJK,VPS,394986924
+veikkausliiga|2017|2017-09-12|hjk|hifk,2017,2017-09-12,HJK,HIFK,1180497689
+veikkausliiga|2017|2017-09-16|ilves|hjk,2017,2017-09-16,Ilves,HJK,2111093094
+veikkausliiga|2017|2017-09-17|mariehamn|pskemi,2017,2017-09-17,Mariehamn,PS Kemi,811622648
+veikkausliiga|2017|2017-09-24|pskemi|vps,2017,2017-09-24,PS Kemi,VPS,2779926421
+veikkausliiga|2017|2017-09-27|hjk|mariehamn,2017,2017-09-27,HJK,Mariehamn,1671750162
+veikkausliiga|2017|2017-09-27|sjk|ilves,2017,2017-09-27,SJK,Ilves,1826794289
+veikkausliiga|2017|2017-09-29|vps|hifk,2017,2017-09-29,VPS,HIFK,3610296619
+veikkausliiga|2017|2017-09-30|hjk|pskemi,2017,2017-09-30,HJK,PS Kemi,3675882615
+veikkausliiga|2017|2017-09-30|ilves|lahti,2017,2017-09-30,Ilves,Lahti,2690915738
+veikkausliiga|2017|2017-10-01|mariehamn|sjk,2017,2017-10-01,Mariehamn,SJK,3476599582
+veikkausliiga|2017|2017-10-12|hifk|pskemi,2017,2017-10-12,HIFK,PS Kemi,1339127955
+veikkausliiga|2017|2017-10-12|lahti|mariehamn,2017,2017-10-12,Lahti,Mariehamn,2850799141
+veikkausliiga|2017|2017-10-12|sjk|hjk,2017,2017-10-12,SJK,HJK,2009079951
+veikkausliiga|2017|2017-10-15|pskemi|sjk,2017,2017-10-15,PS Kemi,SJK,1012883089
+veikkausliiga|2017|2017-10-16|hjk|lahti,2017,2017-10-16,HJK,Lahti,433613924
+veikkausliiga|2017|2017-10-20|hifk|sjk,2017,2017-10-20,HIFK,SJK,1062873389
+veikkausliiga|2017|2017-10-20|ilves|pskemi,2017,2017-10-20,Ilves,PS Kemi,998768908
+veikkausliiga|2017|2017-10-20|vps|lahti,2017,2017-10-20,VPS,Lahti,576858611
+veikkausliiga|2017|2017-10-28|lahti|hifk,2017,2017-10-28,Lahti,HIFK,1342731105
+veikkausliiga|2017|2017-10-28|mariehamn|ilves,2017,2017-10-28,Mariehamn,Ilves,3630510543
+veikkausliiga|2018|2018-04-07|sjk|pskemi,2018,2018-04-07,SJK,PS Kemi,679918229
+veikkausliiga|2018|2018-04-08|hjk|ilves,2018,2018-04-08,HJK,Ilves,1633915775
+veikkausliiga|2018|2018-04-08|lahti|tps,2018,2018-04-08,Lahti,TPS,1240886138
+veikkausliiga|2018|2018-04-14|mariehamn|hjk,2018,2018-04-14,Mariehamn,HJK,3928943915
+veikkausliiga|2018|2018-04-15|honka|lahti,2018,2018-04-15,Honka,Lahti,1401200061
+veikkausliiga|2018|2018-04-15|tps|sjk,2018,2018-04-15,TPS,SJK,2168459688
+veikkausliiga|2018|2018-04-18|sjk|hjk,2018,2018-04-18,SJK,HJK,810172808
+veikkausliiga|2018|2018-04-21|lahti|ilves,2018,2018-04-21,Lahti,Ilves,3429492090
+veikkausliiga|2018|2018-04-21|sjk|honka,2018,2018-04-21,SJK,Honka,4161828528
+veikkausliiga|2018|2018-04-22|mariehamn|vps,2018,2018-04-22,Mariehamn,VPS,3467584032
+veikkausliiga|2018|2018-04-25|vps|ilves,2018,2018-04-25,VPS,Ilves,1536466164
+veikkausliiga|2018|2018-04-29|ilves|sjk,2018,2018-04-29,Ilves,SJK,3615278276
+veikkausliiga|2018|2018-04-29|pskemi|mariehamn,2018,2018-04-29,PS Kemi,Mariehamn,3574929154
+veikkausliiga|2018|2018-04-29|vps|hjk,2018,2018-04-29,VPS,HJK,3182252088
+veikkausliiga|2018|2018-05-03|hjk|lahti,2018,2018-05-03,HJK,Lahti,2291428254
+veikkausliiga|2018|2018-05-03|mariehamn|tps,2018,2018-05-03,Mariehamn,TPS,1300643442
+veikkausliiga|2018|2018-05-03|vps|pskemi,2018,2018-05-03,VPS,PS Kemi,1375062762
+veikkausliiga|2018|2018-05-07|honka|mariehamn,2018,2018-05-07,Honka,Mariehamn,3883596681
+veikkausliiga|2018|2018-05-07|lahti|sjk,2018,2018-05-07,Lahti,SJK,2648045622
+veikkausliiga|2018|2018-05-07|pskemi|hjk,2018,2018-05-07,PS Kemi,HJK,2489095132
+veikkausliiga|2018|2018-05-07|tps|vps,2018,2018-05-07,TPS,VPS,4146623305
+veikkausliiga|2018|2018-05-13|mariehamn|ilves,2018,2018-05-13,Mariehamn,Ilves,2659789688
+veikkausliiga|2018|2018-05-13|pskemi|tps,2018,2018-05-13,PS Kemi,TPS,1864876527
+veikkausliiga|2018|2018-05-14|vps|honka,2018,2018-05-14,VPS,Honka,4201620225
+veikkausliiga|2018|2018-05-18|honka|pskemi,2018,2018-05-18,Honka,PS Kemi,4163548107
+veikkausliiga|2018|2018-05-18|ilves|vps,2018,2018-05-18,Ilves,VPS,1115042282
+veikkausliiga|2018|2018-05-18|tps|hjk,2018,2018-05-18,TPS,HJK,1846646238
+veikkausliiga|2018|2018-05-22|mariehamn|lahti,2018,2018-05-22,Mariehamn,Lahti,1932660842
+veikkausliiga|2018|2018-05-22|pskemi|ilves,2018,2018-05-22,PS Kemi,Ilves,265448395
+veikkausliiga|2018|2018-05-22|tps|honka,2018,2018-05-22,TPS,Honka,2715185394
+veikkausliiga|2018|2018-05-26|hjk|honka,2018,2018-05-26,HJK,Honka,291443665
+veikkausliiga|2018|2018-05-26|ilves|tps,2018,2018-05-26,Ilves,TPS,161758517
+veikkausliiga|2018|2018-05-26|lahti|vps,2018,2018-05-26,Lahti,VPS,142441056
+veikkausliiga|2018|2018-05-26|sjk|mariehamn,2018,2018-05-26,SJK,Mariehamn,671772242
+veikkausliiga|2018|2018-05-29|hjk|sjk,2018,2018-05-29,HJK,SJK,3427902531
+veikkausliiga|2018|2018-06-01|vps|sjk,2018,2018-06-01,VPS,SJK,1769824543
+veikkausliiga|2018|2018-06-02|honka|ilves,2018,2018-06-02,Honka,Ilves,1010207332
+veikkausliiga|2018|2018-06-02|pskemi|lahti,2018,2018-06-02,PS Kemi,Lahti,497303517
+veikkausliiga|2018|2018-06-12|hjk|mariehamn,2018,2018-06-12,HJK,Mariehamn,2648470247
+veikkausliiga|2018|2018-06-12|lahti|honka,2018,2018-06-12,Lahti,Honka,1036377837
+veikkausliiga|2018|2018-06-12|sjk|tps,2018,2018-06-12,SJK,TPS,867056488
+veikkausliiga|2018|2018-06-15|tps|lahti,2018,2018-06-15,TPS,Lahti,3066452184
+veikkausliiga|2018|2018-06-16|ilves|hjk,2018,2018-06-16,Ilves,HJK,3713562222
+veikkausliiga|2018|2018-06-16|pskemi|sjk,2018,2018-06-16,PS Kemi,SJK,1087937537
+veikkausliiga|2018|2018-06-20|honka|sjk,2018,2018-06-20,Honka,SJK,1750810689
+veikkausliiga|2018|2018-06-20|ilves|lahti,2018,2018-06-20,Ilves,Lahti,1701779217
+veikkausliiga|2018|2018-06-20|vps|mariehamn,2018,2018-06-20,VPS,Mariehamn,3524169688
+veikkausliiga|2018|2018-06-25|hjk|vps,2018,2018-06-25,HJK,VPS,651285495
+veikkausliiga|2018|2018-06-25|mariehamn|pskemi,2018,2018-06-25,Mariehamn,PS Kemi,1735461013
+veikkausliiga|2018|2018-06-26|sjk|ilves,2018,2018-06-26,SJK,Ilves,2926428735
+veikkausliiga|2018|2018-06-29|lahti|hjk,2018,2018-06-29,Lahti,HJK,3927320573
+veikkausliiga|2018|2018-06-29|tps|mariehamn,2018,2018-06-29,TPS,Mariehamn,2366286361
+veikkausliiga|2018|2018-06-30|pskemi|vps,2018,2018-06-30,PS Kemi,VPS,376141885
+veikkausliiga|2018|2018-07-04|hjk|pskemi,2018,2018-07-04,HJK,PS Kemi,1624349601
+veikkausliiga|2018|2018-07-04|mariehamn|honka,2018,2018-07-04,Mariehamn,Honka,1822663371
+veikkausliiga|2018|2018-07-04|sjk|lahti,2018,2018-07-04,SJK,Lahti,3025990169
+veikkausliiga|2018|2018-07-04|vps|tps,2018,2018-07-04,VPS,TPS,2373729717
+veikkausliiga|2018|2018-07-07|tps|pskemi,2018,2018-07-07,TPS,PS Kemi,353914107
+veikkausliiga|2018|2018-07-08|honka|vps,2018,2018-07-08,Honka,VPS,2837163492
+veikkausliiga|2018|2018-07-14|hjk|tps,2018,2018-07-14,HJK,TPS,573109536
+veikkausliiga|2018|2018-07-14|pskemi|honka,2018,2018-07-14,PS Kemi,Honka,3926335444
+veikkausliiga|2018|2018-07-21|honka|tps,2018,2018-07-21,Honka,TPS,1352910898
+veikkausliiga|2018|2018-07-22|ilves|pskemi,2018,2018-07-22,Ilves,PS Kemi,426664050
+veikkausliiga|2018|2018-07-22|lahti|mariehamn,2018,2018-07-22,Lahti,Mariehamn,3401494183
+veikkausliiga|2018|2018-07-28|honka|hjk,2018,2018-07-28,Honka,HJK,172036427
+veikkausliiga|2018|2018-07-29|mariehamn|sjk,2018,2018-07-29,Mariehamn,SJK,2812818847
+veikkausliiga|2018|2018-07-30|tps|ilves,2018,2018-07-30,TPS,Ilves,574035249
+veikkausliiga|2018|2018-07-30|vps|lahti,2018,2018-07-30,VPS,Lahti,1730483138
+veikkausliiga|2018|2018-08-03|sjk|vps,2018,2018-08-03,SJK,VPS,1241035303
+veikkausliiga|2018|2018-08-05|ilves|honka,2018,2018-08-05,Ilves,Honka,3479570930
+veikkausliiga|2018|2018-08-05|lahti|pskemi,2018,2018-08-05,Lahti,PS Kemi,4201575389
+veikkausliiga|2018|2018-08-11|honka|tps,2018,2018-08-11,Honka,TPS,761580538
+veikkausliiga|2018|2018-08-11|vps|sjk,2018,2018-08-11,VPS,SJK,310968875
+veikkausliiga|2018|2018-08-17|tps|vps,2018,2018-08-17,TPS,VPS,2242790457
+veikkausliiga|2018|2018-08-19|hjk|pskemi,2018,2018-08-19,HJK,PS Kemi,2159070943
+veikkausliiga|2018|2018-08-19|mariehamn|honka,2018,2018-08-19,Mariehamn,Honka,168989035
+veikkausliiga|2018|2018-08-20|sjk|ilves,2018,2018-08-20,SJK,Ilves,145142298
+veikkausliiga|2018|2018-08-24|vps|mariehamn,2018,2018-08-24,VPS,Mariehamn,3634510301
+veikkausliiga|2018|2018-08-25|honka|lahti,2018,2018-08-25,Honka,Lahti,218964826
+veikkausliiga|2018|2018-08-25|ilves|tps,2018,2018-08-25,Ilves,TPS,3409949420
+veikkausliiga|2018|2018-08-25|pskemi|sjk,2018,2018-08-25,PS Kemi,SJK,2647484291
+veikkausliiga|2018|2018-08-29|ilves|mariehamn,2018,2018-08-29,Ilves,Mariehamn,1609769917
+veikkausliiga|2018|2018-08-31|lahti|vps,2018,2018-08-31,Lahti,VPS,291244117
+veikkausliiga|2018|2018-08-31|tps|pskemi,2018,2018-08-31,TPS,PS Kemi,1035396241
+veikkausliiga|2018|2018-09-02|mariehamn|ilves,2018,2018-09-02,Mariehamn,Ilves,103396639
+veikkausliiga|2018|2018-09-13|hjk|mariehamn,2018,2018-09-13,HJK,Mariehamn,749703317
+veikkausliiga|2018|2018-09-13|ilves|honka,2018,2018-09-13,Ilves,Honka,1065869838
+veikkausliiga|2018|2018-09-13|sjk|tps,2018,2018-09-13,SJK,TPS,2520984696
+veikkausliiga|2018|2018-09-17|honka|pskemi,2018,2018-09-17,Honka,PS Kemi,2040802678
+veikkausliiga|2018|2018-09-17|lahti|hjk,2018,2018-09-17,Lahti,HJK,1895218125
+veikkausliiga|2018|2018-09-17|mariehamn|sjk,2018,2018-09-17,Mariehamn,SJK,2766750478
+veikkausliiga|2018|2018-09-17|vps|ilves,2018,2018-09-17,VPS,Ilves,584388924
+veikkausliiga|2018|2018-09-21|sjk|lahti,2018,2018-09-21,SJK,Lahti,1257794577
+veikkausliiga|2018|2018-09-22|pskemi|vps,2018,2018-09-22,PS Kemi,VPS,477262572
+veikkausliiga|2018|2018-09-23|mariehamn|tps,2018,2018-09-23,Mariehamn,TPS,4096467361
+veikkausliiga|2018|2018-09-26|ilves|hjk,2018,2018-09-26,Ilves,HJK,3384313388
+veikkausliiga|2018|2018-09-29|honka|hjk,2018,2018-09-29,Honka,HJK,3174072522
+veikkausliiga|2018|2018-09-29|ilves|pskemi,2018,2018-09-29,Ilves,PS Kemi,4276422947
+veikkausliiga|2018|2018-09-30|lahti|tps,2018,2018-09-30,Lahti,TPS,1256813174
+veikkausliiga|2018|2018-10-06|sjk|honka,2018,2018-10-06,SJK,Honka,4048579186
+veikkausliiga|2018|2018-10-07|hjk|vps,2018,2018-10-07,HJK,VPS,698788517
+veikkausliiga|2018|2018-10-07|mariehamn|lahti,2018,2018-10-07,Mariehamn,Lahti,3499267690
+veikkausliiga|2018|2018-10-21|hjk|sjk,2018,2018-10-21,HJK,SJK,2840339686
+veikkausliiga|2018|2018-10-21|ilves|lahti,2018,2018-10-21,Ilves,Lahti,1485884527
+veikkausliiga|2018|2018-10-21|pskemi|mariehamn,2018,2018-10-21,PS Kemi,Mariehamn,3456067167
+veikkausliiga|2018|2018-10-27|honka|vps,2018,2018-10-27,Honka,VPS,2833823597
+veikkausliiga|2018|2018-10-27|lahti|pskemi,2018,2018-10-27,Lahti,PS Kemi,4271951115
+veikkausliiga|2018|2018-10-27|tps|hjk,2018,2018-10-27,TPS,HJK,203826176
+veikkausliiga|2019|2019-04-06|sjk|hifk,2019,2019-04-06,SJK,HIFK,3097648296
+veikkausliiga|2019|2019-04-08|hjk|mariehamn,2019,2019-04-08,HJK,Mariehamn,226218469
+veikkausliiga|2019|2019-04-14|ilves|vps,2019,2019-04-14,Ilves,VPS,401749828
+veikkausliiga|2019|2019-04-15|hifk|lahti,2019,2019-04-15,HIFK,Lahti,2223947004
+veikkausliiga|2019|2019-04-15|honka|mariehamn,2019,2019-04-15,Honka,Mariehamn,4069718675
+veikkausliiga|2019|2019-04-18|sjk|hjk,2019,2019-04-18,SJK,HJK,323379070
+veikkausliiga|2019|2019-04-22|sjk|ilves,2019,2019-04-22,SJK,Ilves,4182480531
+veikkausliiga|2019|2019-04-23|hjk|hifk,2019,2019-04-23,HJK,HIFK,2395836055
+veikkausliiga|2019|2019-04-26|vps|sjk,2019,2019-04-26,VPS,SJK,1023557252
+veikkausliiga|2019|2019-04-26|ilves|lahti,2019,2019-04-26,Ilves,Lahti,1912932388
+veikkausliiga|2019|2019-04-29|hifk|honka,2019,2019-04-29,HIFK,Honka,3747884811
+veikkausliiga|2019|2019-04-30|lahti|vps,2019,2019-04-30,Lahti,VPS,3731826851
+veikkausliiga|2019|2019-05-03|hjk|ilves,2019,2019-05-03,HJK,Ilves,87203003
+veikkausliiga|2019|2019-05-05|lahti|sjk,2019,2019-05-05,Lahti,SJK,1000657606
+veikkausliiga|2019|2019-05-07|ilves|honka,2019,2019-05-07,Ilves,Honka,388151001
+veikkausliiga|2019|2019-05-07|vps|hjk,2019,2019-05-07,VPS,HJK,2051543906
+veikkausliiga|2019|2019-05-08|hifk|mariehamn,2019,2019-05-08,HIFK,Mariehamn,3019809830
+veikkausliiga|2019|2019-05-11|honka|vps,2019,2019-05-11,Honka,VPS,1302303440
+veikkausliiga|2019|2019-05-11|hjk|sjk,2019,2019-05-11,HJK,SJK,3527638305
+veikkausliiga|2019|2019-05-18|sjk|honka,2019,2019-05-18,SJK,Honka,2579087448
+veikkausliiga|2019|2019-05-20|lahti|hjk,2019,2019-05-20,Lahti,HJK,1319000075
+veikkausliiga|2019|2019-05-20|ilves|mariehamn,2019,2019-05-20,Ilves,Mariehamn,1897551268
+veikkausliiga|2019|2019-05-26|mariehamn|vps,2019,2019-05-26,Mariehamn,VPS,2632136102
+veikkausliiga|2019|2019-05-27|honka|lahti,2019,2019-05-27,Honka,Lahti,3825896365
+veikkausliiga|2019|2019-05-31|hifk|vps,2019,2019-05-31,HIFK,VPS,3079403088
+veikkausliiga|2019|2019-06-02|mariehamn|lahti,2019,2019-06-02,Mariehamn,Lahti,71261903
+veikkausliiga|2019|2019-06-18|hifk|sjk,2019,2019-06-18,HIFK,SJK,3771373428
+veikkausliiga|2019|2019-06-19|hjk|honka,2019,2019-06-19,HJK,Honka,1030336593
+veikkausliiga|2019|2019-06-25|mariehamn|hjk,2019,2019-06-25,Mariehamn,HJK,1891839908
+veikkausliiga|2019|2019-06-29|vps|ilves,2019,2019-06-29,VPS,Ilves,2147011922
+veikkausliiga|2019|2019-06-30|lahti|hifk,2019,2019-06-30,Lahti,HIFK,1227271595
+veikkausliiga|2019|2019-06-30|mariehamn|honka,2019,2019-06-30,Mariehamn,Honka,2936045392
+veikkausliiga|2019|2019-07-04|hifk|hjk,2019,2019-07-04,HIFK,HJK,1268965786
+veikkausliiga|2019|2019-07-07|ilves|sjk,2019,2019-07-07,Ilves,SJK,3111004137
+veikkausliiga|2019|2019-07-13|honka|hifk,2019,2019-07-13,Honka,HIFK,4200294849
+veikkausliiga|2019|2019-07-13|sjk|vps,2019,2019-07-13,SJK,VPS,499335788
+veikkausliiga|2019|2019-07-14|lahti|ilves,2019,2019-07-14,Lahti,Ilves,2268350419
+veikkausliiga|2019|2019-07-20|vps|lahti,2019,2019-07-20,VPS,Lahti,2107137703
+veikkausliiga|2019|2019-07-20|ilves|hjk,2019,2019-07-20,Ilves,HJK,4152958009
+veikkausliiga|2019|2019-07-26|sjk|lahti,2019,2019-07-26,SJK,Lahti,3180455521
+veikkausliiga|2019|2019-07-27|hjk|vps,2019,2019-07-27,HJK,VPS,837944302
+veikkausliiga|2019|2019-07-27|honka|ilves,2019,2019-07-27,Honka,Ilves,3890061379
+veikkausliiga|2019|2019-07-28|mariehamn|hifk,2019,2019-07-28,Mariehamn,HIFK,785376488
+veikkausliiga|2019|2019-08-03|vps|honka,2019,2019-08-03,VPS,Honka,272087363
+veikkausliiga|2019|2019-08-10|hjk|lahti,2019,2019-08-10,HJK,Lahti,1848940918
+veikkausliiga|2019|2019-08-10|honka|sjk,2019,2019-08-10,Honka,SJK,1889443194
+veikkausliiga|2019|2019-08-11|mariehamn|ilves,2019,2019-08-11,Mariehamn,Ilves,402528601
+veikkausliiga|2019|2019-08-15|sjk|mariehamn,2019,2019-08-15,SJK,Mariehamn,1349240168
+veikkausliiga|2019|2019-08-19|lahti|honka,2019,2019-08-19,Lahti,Honka,539872132
+veikkausliiga|2019|2019-08-19|vps|mariehamn,2019,2019-08-19,VPS,Mariehamn,926975295
+veikkausliiga|2019|2019-08-23|hifk|ilves,2019,2019-08-23,HIFK,Ilves,3117932083
+veikkausliiga|2019|2019-08-24|honka|hjk,2019,2019-08-24,Honka,HJK,1068733471
+veikkausliiga|2019|2019-08-25|mariehamn|sjk,2019,2019-08-25,Mariehamn,SJK,2418376294
+veikkausliiga|2019|2019-08-27|ilves|hifk,2019,2019-08-27,Ilves,HIFK,2549032825
+veikkausliiga|2019|2019-08-31|vps|hifk,2019,2019-08-31,VPS,HIFK,2627159839
+veikkausliiga|2019|2019-09-01|lahti|mariehamn,2019,2019-09-01,Lahti,Mariehamn,1871502562
+veikkausliiga|2019|2019-09-13|sjk|vps,2019,2019-09-13,SJK,VPS,1565460733
+veikkausliiga|2019|2019-09-15|ilves|honka,2019,2019-09-15,Ilves,Honka,3689393187
+veikkausliiga|2019|2019-09-20|vps|lahti,2019,2019-09-20,VPS,Lahti,3369082887
+veikkausliiga|2019|2019-09-21|honka|hjk,2019,2019-09-21,Honka,HJK,1291566785
+veikkausliiga|2019|2019-09-21|hifk|sjk,2019,2019-09-21,HIFK,SJK,866789342
+veikkausliiga|2019|2019-09-28|lahti|hifk,2019,2019-09-28,Lahti,HIFK,1576394167
+veikkausliiga|2019|2019-09-28|hjk|mariehamn,2019,2019-09-28,HJK,Mariehamn,2651024311
+veikkausliiga|2019|2019-10-06|mariehamn|ilves,2019,2019-10-06,Mariehamn,Ilves,75156520
+veikkausliiga|2019|2019-10-06|vps|hifk,2019,2019-10-06,VPS,HIFK,466319450
+veikkausliiga|2019|2019-10-19|honka|mariehamn,2019,2019-10-19,Honka,Mariehamn,2332097854
+veikkausliiga|2019|2019-10-19|sjk|lahti,2019,2019-10-19,SJK,Lahti,3746639768
+veikkausliiga|2019|2019-10-19|ilves|hjk,2019,2019-10-19,Ilves,HJK,4055155883
+veikkausliiga|2020|2020-07-01|sjk|tps,2020,2020-07-01,SJK,TPS,237921046
+veikkausliiga|2020|2020-07-01|ilves|mariehamn,2020,2020-07-01,Ilves,Mariehamn,1985811246
+veikkausliiga|2020|2020-07-01|haka|honka,2020,2020-07-01,Haka,Honka,2344879653
+veikkausliiga|2020|2020-07-01|lahti|hjk,2020,2020-07-01,Lahti,HJK,3343897121
+veikkausliiga|2020|2020-07-07|tps|ilves,2020,2020-07-07,TPS,Ilves,1962554235
+veikkausliiga|2020|2020-07-08|hjk|haka,2020,2020-07-08,HJK,Haka,1254092890
+veikkausliiga|2020|2020-07-08|lahti|sjk,2020,2020-07-08,Lahti,SJK,3078122229
+veikkausliiga|2020|2020-07-08|mariehamn|honka,2020,2020-07-08,Mariehamn,Honka,3489234727
+veikkausliiga|2020|2020-07-17|sjk|mariehamn,2020,2020-07-17,SJK,Mariehamn,3374442000
+veikkausliiga|2020|2020-07-18|honka|tps,2020,2020-07-18,Honka,TPS,1077349422
+veikkausliiga|2020|2020-07-18|hifk|lahti,2020,2020-07-18,HIFK,Lahti,2779149672
+veikkausliiga|2020|2020-07-22|mariehamn|haka,2020,2020-07-22,Mariehamn,Haka,594714844
+veikkausliiga|2020|2020-07-22|hifk|sjk,2020,2020-07-22,HIFK,SJK,3007938175
+veikkausliiga|2020|2020-07-22|tps|hjk,2020,2020-07-22,TPS,HJK,3103106613
+veikkausliiga|2020|2020-07-25|hjk|ilves,2020,2020-07-25,HJK,Ilves,1828308580
+veikkausliiga|2020|2020-07-26|mariehamn|hifk,2020,2020-07-26,Mariehamn,HIFK,1605288412
+veikkausliiga|2020|2020-08-01|ilves|hifk,2020,2020-08-01,Ilves,HIFK,3250520765
+veikkausliiga|2020|2020-08-01|sjk|haka,2020,2020-08-01,SJK,Haka,4241974757
+veikkausliiga|2020|2020-08-03|lahti|honka,2020,2020-08-03,Lahti,Honka,355356621
+veikkausliiga|2020|2020-08-06|hjk|lahti,2020,2020-08-06,HJK,Lahti,2494822450
+veikkausliiga|2020|2020-08-06|tps|honka,2020,2020-08-06,TPS,Honka,4245953330
+veikkausliiga|2020|2020-08-09|lahti|ilves,2020,2020-08-09,Lahti,Ilves,3316326335
+veikkausliiga|2020|2020-08-10|honka|sjk,2020,2020-08-10,Honka,SJK,475485453
+veikkausliiga|2020|2020-08-10|hifk|tps,2020,2020-08-10,HIFK,TPS,3702887408
+veikkausliiga|2020|2020-08-15|hjk|honka,2020,2020-08-15,HJK,Honka,47202440
+veikkausliiga|2020|2020-08-15|ilves|sjk,2020,2020-08-15,Ilves,SJK,1491043730
+veikkausliiga|2020|2020-08-16|mariehamn|tps,2020,2020-08-16,Mariehamn,TPS,3202050170
+veikkausliiga|2020|2020-08-18|haka|hjk,2020,2020-08-18,Haka,HJK,1765750150
+veikkausliiga|2020|2020-08-21|sjk|honka,2020,2020-08-21,SJK,Honka,2247394497
+veikkausliiga|2020|2020-08-22|ilves|lahti,2020,2020-08-22,Ilves,Lahti,3450858757
+veikkausliiga|2020|2020-08-23|hifk|haka,2020,2020-08-23,HIFK,Haka,789842728
+veikkausliiga|2020|2020-08-26|tps|hifk,2020,2020-08-26,TPS,HIFK,807896106
+veikkausliiga|2020|2020-08-26|haka|lahti,2020,2020-08-26,Haka,Lahti,1295861524
+veikkausliiga|2020|2020-08-26|hjk|sjk,2020,2020-08-26,HJK,SJK,3148304102
+veikkausliiga|2020|2020-08-30|hjk|mariehamn,2020,2020-08-30,HJK,Mariehamn,1003835444
+veikkausliiga|2020|2020-09-01|haka|ilves,2020,2020-09-01,Haka,Ilves,373352121
+veikkausliiga|2020|2020-09-01|honka|hifk,2020,2020-09-01,Honka,HIFK,2288060568
+veikkausliiga|2020|2020-09-09|honka|ilves,2020,2020-09-09,Honka,Ilves,3464895607
+veikkausliiga|2020|2020-09-10|hifk|hjk,2020,2020-09-10,HIFK,HJK,6713272
+veikkausliiga|2020|2020-09-12|haka|sjk,2020,2020-09-12,Haka,SJK,236025837
+veikkausliiga|2020|2020-09-13|ilves|hjk,2020,2020-09-13,Ilves,HJK,4039978443
+veikkausliiga|2020|2020-09-14|tps|mariehamn,2020,2020-09-14,TPS,Mariehamn,4050714738
+veikkausliiga|2020|2020-09-17|lahti|tps,2020,2020-09-17,Lahti,TPS,163253550
+veikkausliiga|2020|2020-09-19|ilves|haka,2020,2020-09-19,Ilves,Haka,1480173984
+veikkausliiga|2020|2020-09-19|hifk|mariehamn,2020,2020-09-19,HIFK,Mariehamn,1697047140
+veikkausliiga|2020|2020-09-20|honka|hjk,2020,2020-09-20,Honka,HJK,1077275607
+veikkausliiga|2020|2020-09-23|sjk|lahti,2020,2020-09-23,SJK,Lahti,58420859
+veikkausliiga|2020|2020-09-23|mariehamn|ilves,2020,2020-09-23,Mariehamn,Ilves,3662995749
+veikkausliiga|2020|2020-09-24|hjk|tps,2020,2020-09-24,HJK,TPS,3373558156
+veikkausliiga|2020|2020-09-27|honka|haka,2020,2020-09-27,Honka,Haka,339707118
+veikkausliiga|2020|2020-09-27|ilves|tps,2020,2020-09-27,Ilves,TPS,3091914769
+veikkausliiga|2020|2020-09-28|sjk|hifk,2020,2020-09-28,SJK,HIFK,1081947679
+veikkausliiga|2020|2020-10-02|lahti|mariehamn,2020,2020-10-02,Lahti,Mariehamn,329936306
+veikkausliiga|2020|2020-10-02|hifk|honka,2020,2020-10-02,HIFK,Honka,2704213660
+veikkausliiga|2020|2020-10-15|hifk|ilves,2020,2020-10-15,HIFK,Ilves,399991212
+veikkausliiga|2020|2020-10-15|sjk|hjk,2020,2020-10-15,SJK,HJK,1822050910
+veikkausliiga|2020|2020-10-15|honka|mariehamn,2020,2020-10-15,Honka,Mariehamn,3901342003
+veikkausliiga|2020|2020-10-16|haka|tps,2020,2020-10-16,Haka,TPS,1908672195
+veikkausliiga|2020|2020-10-18|hjk|hifk,2020,2020-10-18,HJK,HIFK,3454900
+veikkausliiga|2020|2020-10-18|mariehamn|sjk,2020,2020-10-18,Mariehamn,SJK,2139411114
+veikkausliiga|2020|2020-10-19|lahti|haka,2020,2020-10-19,Lahti,Haka,1605918315
+veikkausliiga|2020|2020-10-22|honka|lahti,2020,2020-10-22,Honka,Lahti,2194334866
+veikkausliiga|2020|2020-10-22|sjk|ilves,2020,2020-10-22,SJK,Ilves,2992733613
+veikkausliiga|2020|2020-10-31|tps|sjk,2020,2020-10-31,TPS,SJK,2655001667
+veikkausliiga|2020|2020-11-01|mariehamn|hjk,2020,2020-11-01,Mariehamn,HJK,2257135108
+veikkausliiga|2020|2020-11-04|ilves|honka,2020,2020-11-04,Ilves,Honka,815317633
+veikkausliiga|2020|2020-11-04|haka|mariehamn,2020,2020-11-04,Haka,Mariehamn,940216229
+veikkausliiga|2020|2020-11-04|lahti|hifk,2020,2020-11-04,Lahti,HIFK,3217485885
+veikkausliiga|2021|2021-04-24|hjk|honka,2021,2021-04-24,HJK,Honka,3369934639
+veikkausliiga|2021|2021-05-03|acoulu|ilves,2021,2021-05-03,AC Oulu,Ilves,529900262
+veikkausliiga|2021|2021-05-03|hifk|haka,2021,2021-05-03,HIFK,Haka,543351642
+veikkausliiga|2021|2021-05-03|sjk|ktp,2021,2021-05-03,SJK,KTP,2295468251
+veikkausliiga|2021|2021-05-03|honka|mariehamn,2021,2021-05-03,Honka,Mariehamn,3197653026
+veikkausliiga|2021|2021-05-07|sjk|hifk,2021,2021-05-07,SJK,HIFK,1281980082
+veikkausliiga|2021|2021-05-07|ktp|honka,2021,2021-05-07,KTP,Honka,3814888384
+veikkausliiga|2021|2021-05-09|mariehamn|acoulu,2021,2021-05-09,Mariehamn,AC Oulu,1788947945
+veikkausliiga|2021|2021-05-11|ilves|hjk,2021,2021-05-11,Ilves,HJK,2742883518
+veikkausliiga|2021|2021-05-14|haka|ktp,2021,2021-05-14,Haka,KTP,2533317402
+veikkausliiga|2021|2021-05-15|acoulu|sjk,2021,2021-05-15,AC Oulu,SJK,1616040459
+veikkausliiga|2021|2021-05-15|hifk|ilves,2021,2021-05-15,HIFK,Ilves,1971975948
+veikkausliiga|2021|2021-05-17|hjk|lahti,2021,2021-05-17,HJK,Lahti,2274875111
+veikkausliiga|2021|2021-05-22|lahti|honka,2021,2021-05-22,Lahti,Honka,1893191287
+veikkausliiga|2021|2021-05-22|sjk|hjk,2021,2021-05-22,SJK,HJK,2442405775
+veikkausliiga|2021|2021-05-23|mariehamn|haka,2021,2021-05-23,Mariehamn,Haka,77915801
+veikkausliiga|2021|2021-05-23|acoulu|hifk,2021,2021-05-23,AC Oulu,HIFK,3416785369
+veikkausliiga|2021|2021-05-28|hjk|acoulu,2021,2021-05-28,HJK,AC Oulu,1649606246
+veikkausliiga|2021|2021-05-28|ilves|ktp,2021,2021-05-28,Ilves,KTP,4028038619
+veikkausliiga|2021|2021-05-29|honka|sjk,2021,2021-05-29,Honka,SJK,4114603385
+veikkausliiga|2021|2021-05-30|mariehamn|lahti,2021,2021-05-30,Mariehamn,Lahti,455188012
+veikkausliiga|2021|2021-06-10|ktp|hifk,2021,2021-06-10,KTP,HIFK,24659569
+veikkausliiga|2021|2021-06-10|haka|hjk,2021,2021-06-10,Haka,HJK,2136108941
+veikkausliiga|2021|2021-06-11|acoulu|honka,2021,2021-06-11,AC Oulu,Honka,2184674641
+veikkausliiga|2021|2021-06-14|sjk|ilves,2021,2021-06-14,SJK,Ilves,466370563
+veikkausliiga|2021|2021-06-14|mariehamn|hjk,2021,2021-06-14,Mariehamn,HJK,2849244980
+veikkausliiga|2021|2021-06-15|hifk|honka,2021,2021-06-15,HIFK,Honka,504154723
+veikkausliiga|2021|2021-06-15|ktp|acoulu,2021,2021-06-15,KTP,AC Oulu,662421315
+veikkausliiga|2021|2021-06-15|haka|lahti,2021,2021-06-15,Haka,Lahti,807519332
+veikkausliiga|2021|2021-06-18|hjk|ilves,2021,2021-06-18,HJK,Ilves,3330957543
+veikkausliiga|2021|2021-06-23|lahti|hifk,2021,2021-06-23,Lahti,HIFK,1800951574
+veikkausliiga|2021|2021-06-24|mariehamn|sjk,2021,2021-06-24,Mariehamn,SJK,1071709058
+veikkausliiga|2021|2021-06-24|hjk|ktp,2021,2021-06-24,HJK,KTP,1597300126
+veikkausliiga|2021|2021-06-24|honka|haka,2021,2021-06-24,Honka,Haka,2167700071
+veikkausliiga|2021|2021-06-30|ktp|ilves,2021,2021-06-30,KTP,Ilves,2288135813
+veikkausliiga|2021|2021-06-30|hifk|hjk,2021,2021-06-30,HIFK,HJK,2388783268
+veikkausliiga|2021|2021-06-30|haka|honka,2021,2021-06-30,Haka,Honka,3936599442
+veikkausliiga|2021|2021-06-30|sjk|mariehamn,2021,2021-06-30,SJK,Mariehamn,4268984258
+veikkausliiga|2021|2021-07-04|mariehamn|hifk,2021,2021-07-04,Mariehamn,HIFK,868820497
+veikkausliiga|2021|2021-07-04|lahti|sjk,2021,2021-07-04,Lahti,SJK,1769454373
+veikkausliiga|2021|2021-07-05|acoulu|ktp,2021,2021-07-05,AC Oulu,KTP,526425849
+veikkausliiga|2021|2021-07-05|ilves|haka,2021,2021-07-05,Ilves,Haka,3781186762
+veikkausliiga|2021|2021-07-11|honka|acoulu,2021,2021-07-11,Honka,AC Oulu,2692732118
+veikkausliiga|2021|2021-07-12|hifk|lahti,2021,2021-07-12,HIFK,Lahti,1754169375
+veikkausliiga|2021|2021-07-12|ktp|mariehamn,2021,2021-07-12,KTP,Mariehamn,4127108201
+veikkausliiga|2021|2021-07-16|ilves|sjk,2021,2021-07-16,Ilves,SJK,2185203068
+veikkausliiga|2021|2021-07-16|lahti|mariehamn,2021,2021-07-16,Lahti,Mariehamn,3582396758
+veikkausliiga|2021|2021-07-17|acoulu|hjk,2021,2021-07-17,AC Oulu,HJK,21872143
+veikkausliiga|2021|2021-07-19|ktp|haka,2021,2021-07-19,KTP,Haka,3970208351
+veikkausliiga|2021|2021-07-23|hifk|ktp,2021,2021-07-23,HIFK,KTP,3656890437
+veikkausliiga|2021|2021-07-24|hjk|haka,2021,2021-07-24,HJK,Haka,320646749
+veikkausliiga|2021|2021-07-24|sjk|acoulu,2021,2021-07-24,SJK,AC Oulu,2900496844
+veikkausliiga|2021|2021-07-25|honka|lahti,2021,2021-07-25,Honka,Lahti,3148771092
+veikkausliiga|2021|2021-07-30|lahti|ktp,2021,2021-07-30,Lahti,KTP,2234435628
+veikkausliiga|2021|2021-07-30|ilves|acoulu,2021,2021-07-30,Ilves,AC Oulu,3897340678
+veikkausliiga|2021|2021-07-31|hjk|sjk,2021,2021-07-31,HJK,SJK,1398197364
+veikkausliiga|2021|2021-08-07|acoulu|mariehamn,2021,2021-08-07,AC Oulu,Mariehamn,4076381524
+veikkausliiga|2021|2021-08-07|ktp|hjk,2021,2021-08-07,KTP,HJK,2754342536
+veikkausliiga|2021|2021-08-08|honka|ilves,2021,2021-08-08,Honka,Ilves,3269659516
+veikkausliiga|2021|2021-08-13|lahti|haka,2021,2021-08-13,Lahti,Haka,1977522474
+veikkausliiga|2021|2021-08-15|hjk|mariehamn,2021,2021-08-15,HJK,Mariehamn,736507190
+veikkausliiga|2021|2021-08-16|sjk|honka,2021,2021-08-16,SJK,Honka,2728617066
+veikkausliiga|2021|2021-08-20|haka|acoulu,2021,2021-08-20,Haka,AC Oulu,1422303983
+veikkausliiga|2021|2021-08-22|mariehamn|honka,2021,2021-08-22,Mariehamn,Honka,756796808
+veikkausliiga|2021|2021-08-23|lahti|hjk,2021,2021-08-23,Lahti,HJK,1216406009
+veikkausliiga|2021|2021-08-27|sjk|haka,2021,2021-08-27,SJK,Haka,1760180535
+veikkausliiga|2021|2021-08-28|honka|hifk,2021,2021-08-28,Honka,HIFK,2655610960
+veikkausliiga|2021|2021-08-28|acoulu|lahti,2021,2021-08-28,AC Oulu,Lahti,987251445
+veikkausliiga|2021|2021-08-29|mariehamn|ilves,2021,2021-08-29,Mariehamn,Ilves,3005590346
+veikkausliiga|2021|2021-09-07|hifk|sjk,2021,2021-09-07,HIFK,SJK,3184863888
+veikkausliiga|2021|2021-09-11|hifk|acoulu,2021,2021-09-11,HIFK,AC Oulu,771883533
+veikkausliiga|2021|2021-09-11|ilves|lahti,2021,2021-09-11,Ilves,Lahti,2684723326
+veikkausliiga|2021|2021-09-11|haka|mariehamn,2021,2021-09-11,Haka,Mariehamn,3565905298
+veikkausliiga|2021|2021-09-11|honka|ktp,2021,2021-09-11,Honka,KTP,3594419948
+veikkausliiga|2021|2021-09-14|ilves|hifk,2021,2021-09-14,Ilves,HIFK,989956158
+veikkausliiga|2021|2021-09-14|ktp|sjk,2021,2021-09-14,KTP,SJK,3823839649
+veikkausliiga|2021|2021-09-18|hifk|mariehamn,2021,2021-09-18,HIFK,Mariehamn,2372881037
+veikkausliiga|2021|2021-09-18|lahti|acoulu,2021,2021-09-18,Lahti,AC Oulu,2485067180
+veikkausliiga|2021|2021-09-18|haka|ilves,2021,2021-09-18,Haka,Ilves,3578997211
+veikkausliiga|2021|2021-09-19|honka|hjk,2021,2021-09-19,Honka,HJK,4097653706
+veikkausliiga|2021|2021-09-22|ilves|mariehamn,2021,2021-09-22,Ilves,Mariehamn,2655481909
+veikkausliiga|2021|2021-09-22|hjk|hifk,2021,2021-09-22,HJK,HIFK,3331032006
+veikkausliiga|2021|2021-09-22|haka|sjk,2021,2021-09-22,Haka,SJK,3487753587
+veikkausliiga|2021|2021-09-22|ktp|lahti,2021,2021-09-22,KTP,Lahti,3730927073
+veikkausliiga|2021|2021-09-26|ilves|honka,2021,2021-09-26,Ilves,Honka,1336447786
+veikkausliiga|2021|2021-09-26|sjk|lahti,2021,2021-09-26,SJK,Lahti,1870354082
+veikkausliiga|2021|2021-09-26|acoulu|haka,2021,2021-09-26,AC Oulu,Haka,2431217810
+veikkausliiga|2021|2021-09-26|mariehamn|ktp,2021,2021-09-26,Mariehamn,KTP,3234091480
+veikkausliiga|2021|2021-09-30|haka|hifk,2021,2021-09-30,Haka,HIFK,1436477262
+veikkausliiga|2021|2021-10-02|honka|mariehamn,2021,2021-10-02,Honka,Mariehamn,1687197851
+veikkausliiga|2021|2021-10-03|lahti|ktp,2021,2021-10-03,Lahti,KTP,2101301191
+veikkausliiga|2021|2021-10-03|haka|acoulu,2021,2021-10-03,Haka,AC Oulu,3290024578
+veikkausliiga|2021|2021-10-03|hjk|sjk,2021,2021-10-03,HJK,SJK,4019730818
+veikkausliiga|2021|2021-10-16|ilves|hjk,2021,2021-10-16,Ilves,HJK,1517529091
+veikkausliiga|2021|2021-10-16|hifk|sjk,2021,2021-10-16,HIFK,SJK,268083931
+veikkausliiga|2021|2021-10-16|ktp|honka,2021,2021-10-16,KTP,Honka,958197721
+veikkausliiga|2021|2021-10-16|haka|lahti,2021,2021-10-16,Haka,Lahti,3571452147
+veikkausliiga|2021|2021-10-16|acoulu|mariehamn,2021,2021-10-16,AC Oulu,Mariehamn,3968270616
+veikkausliiga|2021|2021-10-22|lahti|acoulu,2021,2021-10-22,Lahti,AC Oulu,1330850403
+veikkausliiga|2021|2021-10-22|sjk|ilves,2021,2021-10-22,SJK,Ilves,3428834664
+veikkausliiga|2021|2021-10-23|honka|haka,2021,2021-10-23,Honka,Haka,2932075736
+veikkausliiga|2021|2021-10-23|mariehamn|ktp,2021,2021-10-23,Mariehamn,KTP,3639406524
+veikkausliiga|2021|2021-10-27|hjk|hifk,2021,2021-10-27,HJK,HIFK,101283909
+veikkausliiga|2021|2021-10-27|mariehamn|lahti,2021,2021-10-27,Mariehamn,Lahti,382353492
+veikkausliiga|2021|2021-10-27|honka|acoulu,2021,2021-10-27,Honka,AC Oulu,1350634188
+veikkausliiga|2021|2021-10-27|ktp|haka,2021,2021-10-27,KTP,Haka,3997616857
+veikkausliiga|2021|2021-10-31|acoulu|ktp,2021,2021-10-31,AC Oulu,KTP,2416002856
+veikkausliiga|2021|2021-10-31|haka|mariehamn,2021,2021-10-31,Haka,Mariehamn,3509647685
+veikkausliiga|2021|2021-10-31|hifk|ilves,2021,2021-10-31,HIFK,Ilves,1148930378
+veikkausliiga|2022|2022-04-02|hjk|honka,2022,2022-04-02,HJK,Honka,23611749
+veikkausliiga|2022|2022-04-02|haka|ilves,2022,2022-04-02,Haka,Ilves,1071224098
+veikkausliiga|2022|2022-04-02|vps|acoulu,2022,2022-04-02,VPS,AC Oulu,1378284324
+veikkausliiga|2022|2022-04-02|sjk|hifk,2022,2022-04-02,SJK,HIFK,2098254725
+veikkausliiga|2022|2022-04-02|mariehamn|lahti,2022,2022-04-02,Mariehamn,Lahti,1713070300
+veikkausliiga|2022|2022-04-07|honka|haka,2022,2022-04-07,Honka,Haka,1159254531
+veikkausliiga|2022|2022-04-08|sjk|hjk,2022,2022-04-08,SJK,HJK,994744466
+veikkausliiga|2022|2022-04-08|lahti|vps,2022,2022-04-08,Lahti,VPS,4249815935
+veikkausliiga|2022|2022-04-09|hifk|mariehamn,2022,2022-04-09,HIFK,Mariehamn,2675913902
+veikkausliiga|2022|2022-04-17|acoulu|ilves,2022,2022-04-17,AC Oulu,Ilves,99166504
+veikkausliiga|2022|2022-04-18|vps|hjk,2022,2022-04-18,VPS,HJK,976226102
+veikkausliiga|2022|2022-04-18|hifk|lahti,2022,2022-04-18,HIFK,Lahti,2053923559
+veikkausliiga|2022|2022-04-18|mariehamn|honka,2022,2022-04-18,Mariehamn,Honka,2382152560
+veikkausliiga|2022|2022-04-22|haka|hifk,2022,2022-04-22,Haka,HIFK,2818980268
+veikkausliiga|2022|2022-04-23|ilves|vps,2022,2022-04-23,Ilves,VPS,1709466346
+veikkausliiga|2022|2022-04-24|mariehamn|acoulu,2022,2022-04-24,Mariehamn,AC Oulu,199069846
+veikkausliiga|2022|2022-04-25|honka|sjk,2022,2022-04-25,Honka,SJK,2001178149
+veikkausliiga|2022|2022-04-28|hifk|hjk,2022,2022-04-28,HIFK,HJK,1154160446
+veikkausliiga|2022|2022-04-29|lahti|honka,2022,2022-04-29,Lahti,Honka,136598971
+veikkausliiga|2022|2022-04-29|acoulu|haka,2022,2022-04-29,AC Oulu,Haka,1254024508
+veikkausliiga|2022|2022-04-29|ilves|sjk,2022,2022-04-29,Ilves,SJK,4069411263
+veikkausliiga|2022|2022-05-03|interturku|hjk,2022,2022-05-03,Inter Turku,HJK,2982750939
+veikkausliiga|2022|2022-05-07|sjk|lahti,2022,2022-05-07,SJK,Lahti,2119411642
+veikkausliiga|2022|2022-05-07|haka|vps,2022,2022-05-07,Haka,VPS,2736191177
+veikkausliiga|2022|2022-05-07|acoulu|hifk,2022,2022-05-07,AC Oulu,HIFK,3875055459
+veikkausliiga|2022|2022-05-08|hjk|ilves,2022,2022-05-08,HJK,Ilves,821489882
+veikkausliiga|2022|2022-05-12|lahti|hjk,2022,2022-05-12,Lahti,HJK,1879523762
+veikkausliiga|2022|2022-05-13|vps|sjk,2022,2022-05-13,VPS,SJK,357886474
+veikkausliiga|2022|2022-05-13|acoulu|honka,2022,2022-05-13,AC Oulu,Honka,962437680
+veikkausliiga|2022|2022-05-15|ilves|mariehamn,2022,2022-05-15,Ilves,Mariehamn,4282376074
+veikkausliiga|2022|2022-05-17|haka|sjk,2022,2022-05-17,Haka,SJK,2928815833
+veikkausliiga|2022|2022-05-17|hjk|lahti,2022,2022-05-17,HJK,Lahti,3882200762
+veikkausliiga|2022|2022-05-20|honka|ilves,2022,2022-05-20,Honka,Ilves,2532584038
+veikkausliiga|2022|2022-05-21|sjk|mariehamn,2022,2022-05-21,SJK,Mariehamn,3871054760
+veikkausliiga|2022|2022-05-22|lahti|acoulu,2022,2022-05-22,Lahti,AC Oulu,467083597
+veikkausliiga|2022|2022-05-22|hjk|haka,2022,2022-05-22,HJK,Haka,1327466329
+veikkausliiga|2022|2022-05-28|acoulu|sjk,2022,2022-05-28,AC Oulu,SJK,1325790197
+veikkausliiga|2022|2022-05-28|haka|lahti,2022,2022-05-28,Haka,Lahti,3620777646
+veikkausliiga|2022|2022-05-29|hifk|honka,2022,2022-05-29,HIFK,Honka,92667224
+veikkausliiga|2022|2022-05-29|mariehamn|vps,2022,2022-05-29,Mariehamn,VPS,3825858569
+veikkausliiga|2022|2022-06-18|haka|mariehamn,2022,2022-06-18,Haka,Mariehamn,1199913621
+veikkausliiga|2022|2022-06-18|hjk|acoulu,2022,2022-06-18,HJK,AC Oulu,1077102050
+veikkausliiga|2022|2022-06-18|ilves|lahti,2022,2022-06-18,Ilves,Lahti,1796178975
+veikkausliiga|2022|2022-06-18|hifk|vps,2022,2022-06-18,HIFK,VPS,1362693995
+veikkausliiga|2022|2022-06-22|sjk|haka,2022,2022-06-22,SJK,Haka,1000860605
+veikkausliiga|2022|2022-06-22|vps|honka,2022,2022-06-22,VPS,Honka,2117635125
+veikkausliiga|2022|2022-06-22|ilves|hifk,2022,2022-06-22,Ilves,HIFK,2630609912
+veikkausliiga|2022|2022-06-22|mariehamn|hjk,2022,2022-06-22,Mariehamn,HJK,1468427539
+veikkausliiga|2022|2022-07-02|honka|mariehamn,2022,2022-07-02,Honka,Mariehamn,2459725480
+veikkausliiga|2022|2022-07-02|acoulu|vps,2022,2022-07-02,AC Oulu,VPS,3160365809
+veikkausliiga|2022|2022-07-04|hifk|ilves,2022,2022-07-04,HIFK,Ilves,2041068553
+veikkausliiga|2022|2022-07-09|hifk|haka,2022,2022-07-09,HIFK,Haka,1336921929
+veikkausliiga|2022|2022-07-09|vps|mariehamn,2022,2022-07-09,VPS,Mariehamn,3984233225
+veikkausliiga|2022|2022-07-10|sjk|honka,2022,2022-07-10,SJK,Honka,2312272524
+veikkausliiga|2022|2022-07-11|ilves|acoulu,2022,2022-07-11,Ilves,AC Oulu,283604693
+veikkausliiga|2022|2022-07-15|honka|lahti,2022,2022-07-15,Honka,Lahti,2480242603
+veikkausliiga|2022|2022-07-16|hjk|vps,2022,2022-07-16,HJK,VPS,634228689
+veikkausliiga|2022|2022-07-16|mariehamn|hifk,2022,2022-07-16,Mariehamn,HIFK,4066880685
+veikkausliiga|2022|2022-07-17|sjk|ilves,2022,2022-07-17,SJK,Ilves,930919796
+veikkausliiga|2022|2022-07-23|ilves|hjk,2022,2022-07-23,Ilves,HJK,2235684373
+veikkausliiga|2022|2022-07-23|acoulu|mariehamn,2022,2022-07-23,AC Oulu,Mariehamn,160443012
+veikkausliiga|2022|2022-07-23|vps|haka,2022,2022-07-23,VPS,Haka,2926362722
+veikkausliiga|2022|2022-07-24|lahti|sjk,2022,2022-07-24,Lahti,SJK,2539946005
+veikkausliiga|2022|2022-07-29|lahti|ilves,2022,2022-07-29,Lahti,Ilves,2571465866
+veikkausliiga|2022|2022-07-30|honka|vps,2022,2022-07-30,Honka,VPS,2733090626
+veikkausliiga|2022|2022-07-30|hjk|mariehamn,2022,2022-07-30,HJK,Mariehamn,4294965882
+veikkausliiga|2022|2022-07-31|sjk|acoulu,2022,2022-07-31,SJK,AC Oulu,1793785636
+veikkausliiga|2022|2022-08-06|vps|ilves,2022,2022-08-06,VPS,Ilves,2587089961
+veikkausliiga|2022|2022-08-06|mariehamn|haka,2022,2022-08-06,Mariehamn,Haka,115300761
+veikkausliiga|2022|2022-08-07|acoulu|hjk,2022,2022-08-07,AC Oulu,HJK,2390266494
+veikkausliiga|2022|2022-08-08|lahti|hifk,2022,2022-08-08,Lahti,HIFK,726908440
+veikkausliiga|2022|2022-08-12|haka|acoulu,2022,2022-08-12,Haka,AC Oulu,817058183
+veikkausliiga|2022|2022-08-13|ilves|honka,2022,2022-08-13,Ilves,Honka,1733828466
+veikkausliiga|2022|2022-08-15|hifk|sjk,2022,2022-08-15,HIFK,SJK,87533772
+veikkausliiga|2022|2022-08-20|vps|lahti,2022,2022-08-20,VPS,Lahti,3243894330
+veikkausliiga|2022|2022-08-21|haka|hjk,2022,2022-08-21,Haka,HJK,910437614
+veikkausliiga|2022|2022-08-21|mariehamn|ilves,2022,2022-08-21,Mariehamn,Ilves,2386422177
+veikkausliiga|2022|2022-08-22|honka|hifk,2022,2022-08-22,Honka,HIFK,1743142420
+veikkausliiga|2022|2022-08-26|lahti|mariehamn,2022,2022-08-26,Lahti,Mariehamn,355919180
+veikkausliiga|2022|2022-08-27|honka|acoulu,2022,2022-08-27,Honka,AC Oulu,1899052891
+veikkausliiga|2022|2022-08-27|ilves|haka,2022,2022-08-27,Ilves,Haka,3031890724
+veikkausliiga|2022|2022-08-28|vps|hifk,2022,2022-08-28,VPS,HIFK,203606810
+veikkausliiga|2022|2022-08-28|hjk|sjk,2022,2022-08-28,HJK,SJK,3269807094
+veikkausliiga|2022|2022-09-01|haka|honka,2022,2022-09-01,Haka,Honka,993052920
+veikkausliiga|2022|2022-09-03|sjk|vps,2022,2022-09-03,SJK,VPS,1878432450
+veikkausliiga|2022|2022-09-04|acoulu|lahti,2022,2022-09-04,AC Oulu,Lahti,799211969
+veikkausliiga|2022|2022-09-05|hjk|hifk,2022,2022-09-05,HJK,HIFK,2247075620
+veikkausliiga|2022|2022-09-11|hifk|acoulu,2022,2022-09-11,HIFK,AC Oulu,767885852
+veikkausliiga|2022|2022-09-11|mariehamn|sjk,2022,2022-09-11,Mariehamn,SJK,2087869443
+veikkausliiga|2022|2022-09-11|lahti|haka,2022,2022-09-11,Lahti,Haka,3554717725
+veikkausliiga|2022|2022-09-18|ilves|vps,2022,2022-09-18,Ilves,VPS,1208563797
+veikkausliiga|2022|2022-09-18|acoulu|hifk,2022,2022-09-18,AC Oulu,HIFK,1949922047
+veikkausliiga|2022|2022-09-18|hjk|sjk,2022,2022-09-18,HJK,SJK,626561246
+veikkausliiga|2022|2022-09-18|mariehamn|lahti,2022,2022-09-18,Mariehamn,Lahti,1097955506
+veikkausliiga|2022|2022-09-28|lahti|vps,2022,2022-09-28,Lahti,VPS,1911419668
+veikkausliiga|2022|2022-09-28|hifk|ilves,2022,2022-09-28,HIFK,Ilves,4071350832
+veikkausliiga|2022|2022-09-28|mariehamn|acoulu,2022,2022-09-28,Mariehamn,AC Oulu,188337913
+veikkausliiga|2022|2022-09-29|honka|hjk,2022,2022-09-29,Honka,HJK,1645306989
+veikkausliiga|2022|2022-10-02|ilves|mariehamn,2022,2022-10-02,Ilves,Mariehamn,2908633541
+veikkausliiga|2022|2022-10-02|vps|hifk,2022,2022-10-02,VPS,HIFK,1107458002
+veikkausliiga|2022|2022-10-02|haka|sjk,2022,2022-10-02,Haka,SJK,1107941015
+veikkausliiga|2022|2022-10-02|acoulu|lahti,2022,2022-10-02,AC Oulu,Lahti,3132706001
+veikkausliiga|2022|2022-10-08|hifk|mariehamn,2022,2022-10-08,HIFK,Mariehamn,1551902304
+veikkausliiga|2022|2022-10-08|vps|acoulu,2022,2022-10-08,VPS,AC Oulu,18948988
+veikkausliiga|2022|2022-10-09|ilves|lahti,2022,2022-10-09,Ilves,Lahti,676140422
+veikkausliiga|2022|2022-10-09|haka|hjk,2022,2022-10-09,Haka,HJK,2393957898
+veikkausliiga|2022|2022-10-10|sjk|honka,2022,2022-10-10,SJK,Honka,1878890351
+veikkausliiga|2022|2022-10-16|mariehamn|vps,2022,2022-10-16,Mariehamn,VPS,114644392
+veikkausliiga|2022|2022-10-16|acoulu|ilves,2022,2022-10-16,AC Oulu,Ilves,2159317003
+veikkausliiga|2022|2022-10-16|lahti|hifk,2022,2022-10-16,Lahti,HIFK,3909916326
+veikkausliiga|2022|2022-10-16|honka|haka,2022,2022-10-16,Honka,Haka,2421443953
+veikkausliiga|2022|2022-10-19|sjk|acoulu,2022,2022-10-19,SJK,AC Oulu,1035069257
+veikkausliiga|2022|2022-10-20|tps|lahti,2022,2022-10-20,TPS,Lahti,1878724843
+veikkausliiga|2022|2022-10-22|acoulu|vps,2022,2022-10-22,AC Oulu,VPS,90080464
+veikkausliiga|2022|2022-10-26|vps|haka,2022,2022-10-26,VPS,Haka,4265396770
+veikkausliiga|2022|2022-10-30|haka|vps,2022,2022-10-30,Haka,VPS,3557310148
+veikkausliiga|2023|2023-04-05|mariehamn|ilves,2023,2023-04-05,Mariehamn,Ilves,67369749
+veikkausliiga|2023|2023-04-05|sjk|haka,2023,2023-04-05,SJK,Haka,760602664
+veikkausliiga|2023|2023-04-05|vps|lahti,2023,2023-04-05,VPS,Lahti,1383033088
+veikkausliiga|2023|2023-04-05|hjk|honka,2023,2023-04-05,HJK,Honka,4074698009
+veikkausliiga|2023|2023-04-14|haka|acoulu,2023,2023-04-14,Haka,AC Oulu,89701569
+veikkausliiga|2023|2023-04-15|honka|sjk,2023,2023-04-15,Honka,SJK,4204355280
+veikkausliiga|2023|2023-04-15|vps|hjk,2023,2023-04-15,VPS,HJK,2384735057
+veikkausliiga|2023|2023-04-16|mariehamn|lahti,2023,2023-04-16,Mariehamn,Lahti,914897633
+veikkausliiga|2023|2023-04-19|hjk|vps,2023,2023-04-19,HJK,VPS,324878676
+veikkausliiga|2023|2023-04-22|sjk|lahti,2023,2023-04-22,SJK,Lahti,902666466
+veikkausliiga|2023|2023-04-22|ktp|mariehamn,2023,2023-04-22,KTP,Mariehamn,2205866486
+veikkausliiga|2023|2023-04-23|hjk|acoulu,2023,2023-04-23,HJK,AC Oulu,3564819126
+veikkausliiga|2023|2023-04-24|haka|honka,2023,2023-04-24,Haka,Honka,4042791635
+veikkausliiga|2023|2023-04-29|hjk|haka,2023,2023-04-29,HJK,Haka,1655282632
+veikkausliiga|2023|2023-04-29|vps|honka,2023,2023-04-29,VPS,Honka,1612621981
+veikkausliiga|2023|2023-04-29|acoulu|sjk,2023,2023-04-29,AC Oulu,SJK,1733438412
+veikkausliiga|2023|2023-04-29|ilves|ktp,2023,2023-04-29,Ilves,KTP,3320187993
+veikkausliiga|2023|2023-05-05|ilves|acoulu,2023,2023-05-05,Ilves,AC Oulu,1113432747
+veikkausliiga|2023|2023-05-05|haka|ktp,2023,2023-05-05,Haka,KTP,2934371760
+veikkausliiga|2023|2023-05-05|vps|mariehamn,2023,2023-05-05,VPS,Mariehamn,3993614200
+veikkausliiga|2023|2023-05-05|honka|lahti,2023,2023-05-05,Honka,Lahti,4212616400
+veikkausliiga|2023|2023-05-09|honka|haka,2023,2023-05-09,Honka,Haka,2148935760
+veikkausliiga|2023|2023-05-09|ktp|hjk,2023,2023-05-09,KTP,HJK,2279689569
+veikkausliiga|2023|2023-05-13|lahti|ktp,2023,2023-05-13,Lahti,KTP,1896728690
+veikkausliiga|2023|2023-05-13|acoulu|vps,2023,2023-05-13,AC Oulu,VPS,1025133532
+veikkausliiga|2023|2023-05-13|sjk|ilves,2023,2023-05-13,SJK,Ilves,1441215514
+veikkausliiga|2023|2023-05-13|mariehamn|haka,2023,2023-05-13,Mariehamn,Haka,4143664450
+veikkausliiga|2023|2023-05-21|ilves|hjk,2023,2023-05-21,Ilves,HJK,795027973
+veikkausliiga|2023|2023-05-22|ktp|sjk,2023,2023-05-22,KTP,SJK,1729280356
+veikkausliiga|2023|2023-05-22|haka|vps,2023,2023-05-22,Haka,VPS,3441742063
+veikkausliiga|2023|2023-05-22|acoulu|honka,2023,2023-05-22,AC Oulu,Honka,3734640685
+veikkausliiga|2023|2023-05-26|honka|ktp,2023,2023-05-26,Honka,KTP,1725688883
+veikkausliiga|2023|2023-05-26|lahti|acoulu,2023,2023-05-26,Lahti,AC Oulu,2249005075
+veikkausliiga|2023|2023-05-26|vps|ilves,2023,2023-05-26,VPS,Ilves,3497087852
+veikkausliiga|2023|2023-05-27|mariehamn|hjk,2023,2023-05-27,Mariehamn,HJK,3927801122
+veikkausliiga|2023|2023-06-03|ktp|vps,2023,2023-06-03,KTP,VPS,710293214
+veikkausliiga|2023|2023-06-03|hjk|sjk,2023,2023-06-03,HJK,SJK,3661430642
+veikkausliiga|2023|2023-06-03|acoulu|mariehamn,2023,2023-06-03,AC Oulu,Mariehamn,4183198054
+veikkausliiga|2023|2023-06-03|ilves|lahti,2023,2023-06-03,Ilves,Lahti,3436290426
+veikkausliiga|2023|2023-06-07|honka|mariehamn,2023,2023-06-07,Honka,Mariehamn,1567584854
+veikkausliiga|2023|2023-06-07|lahti|hjk,2023,2023-06-07,Lahti,HJK,2443850835
+veikkausliiga|2023|2023-06-08|sjk|vps,2023,2023-06-08,SJK,VPS,3013480188
+veikkausliiga|2023|2023-06-11|ilves|honka,2023,2023-06-11,Ilves,Honka,218005162
+veikkausliiga|2023|2023-06-11|hjk|ktp,2023,2023-06-11,HJK,KTP,523504161
+veikkausliiga|2023|2023-06-11|mariehamn|sjk,2023,2023-06-11,Mariehamn,SJK,710320664
+veikkausliiga|2023|2023-06-11|lahti|haka,2023,2023-06-11,Lahti,Haka,1613138885
+veikkausliiga|2023|2023-06-27|ktp|lahti,2023,2023-06-27,KTP,Lahti,1794959773
+veikkausliiga|2023|2023-06-27|honka|vps,2023,2023-06-27,Honka,VPS,2561294826
+veikkausliiga|2023|2023-06-27|haka|hjk,2023,2023-06-27,Haka,HJK,3847162944
+veikkausliiga|2023|2023-06-27|sjk|acoulu,2023,2023-06-27,SJK,AC Oulu,4043762306
+veikkausliiga|2023|2023-07-01|honka|hjk,2023,2023-07-01,Honka,HJK,354596969
+veikkausliiga|2023|2023-07-01|ilves|sjk,2023,2023-07-01,Ilves,SJK,1878752358
+veikkausliiga|2023|2023-07-01|acoulu|haka,2023,2023-07-01,AC Oulu,Haka,2550935424
+veikkausliiga|2023|2023-07-01|mariehamn|ktp,2023,2023-07-01,Mariehamn,KTP,4105641799
+veikkausliiga|2023|2023-07-08|hjk|lahti,2023,2023-07-08,HJK,Lahti,1796809060
+veikkausliiga|2023|2023-07-08|sjk|honka,2023,2023-07-08,SJK,Honka,3605041406
+veikkausliiga|2023|2023-07-08|ktp|ilves,2023,2023-07-08,KTP,Ilves,3968202878
+veikkausliiga|2023|2023-07-09|mariehamn|acoulu,2023,2023-07-09,Mariehamn,AC Oulu,676046907
+veikkausliiga|2023|2023-07-15|ilves|mariehamn,2023,2023-07-15,Ilves,Mariehamn,1644279538
+veikkausliiga|2023|2023-07-15|vps|acoulu,2023,2023-07-15,VPS,AC Oulu,3015384551
+veikkausliiga|2023|2023-07-16|lahti|sjk,2023,2023-07-16,Lahti,SJK,1111644799
+veikkausliiga|2023|2023-07-22|acoulu|ktp,2023,2023-07-22,AC Oulu,KTP,1459093155
+veikkausliiga|2023|2023-07-22|hjk|ilves,2023,2023-07-22,HJK,Ilves,2204912049
+veikkausliiga|2023|2023-07-23|lahti|mariehamn,2023,2023-07-23,Lahti,Mariehamn,3895427922
+veikkausliiga|2023|2023-07-23|vps|haka,2023,2023-07-23,VPS,Haka,2996154424
+veikkausliiga|2023|2023-07-28|ilves|vps,2023,2023-07-28,Ilves,VPS,1315367384
+veikkausliiga|2023|2023-07-30|haka|lahti,2023,2023-07-30,Haka,Lahti,2302503152
+veikkausliiga|2023|2023-07-30|honka|acoulu,2023,2023-07-30,Honka,AC Oulu,816529041
+veikkausliiga|2023|2023-08-04|ilves|haka,2023,2023-08-04,Ilves,Haka,41167792
+veikkausliiga|2023|2023-08-05|hjk|mariehamn,2023,2023-08-05,HJK,Mariehamn,3711471517
+veikkausliiga|2023|2023-08-07|lahti|honka,2023,2023-08-07,Lahti,Honka,4044088812
+veikkausliiga|2023|2023-08-09|vps|sjk,2023,2023-08-09,VPS,SJK,2672086360
+veikkausliiga|2023|2023-08-11|haka|mariehamn,2023,2023-08-11,Haka,Mariehamn,2235229764
+veikkausliiga|2023|2023-08-12|acoulu|lahti,2023,2023-08-12,AC Oulu,Lahti,2947526292
+veikkausliiga|2023|2023-08-15|sjk|ktp,2023,2023-08-15,SJK,KTP,4151994851
+veikkausliiga|2023|2023-08-18|lahti|vps,2023,2023-08-18,Lahti,VPS,2818944346
+veikkausliiga|2023|2023-08-18|mariehamn|honka,2023,2023-08-18,Mariehamn,Honka,3607087936
+veikkausliiga|2023|2023-08-19|acoulu|ilves,2023,2023-08-19,AC Oulu,Ilves,1751844798
+veikkausliiga|2023|2023-08-21|ktp|haka,2023,2023-08-21,KTP,Haka,2863097509
+veikkausliiga|2023|2023-08-25|vps|ktp,2023,2023-08-25,VPS,KTP,338637521
+veikkausliiga|2023|2023-08-26|sjk|mariehamn,2023,2023-08-26,SJK,Mariehamn,4100072380
+veikkausliiga|2023|2023-08-27|honka|ilves,2023,2023-08-27,Honka,Ilves,1252946672
+veikkausliiga|2023|2023-08-27|acoulu|hjk,2023,2023-08-27,AC Oulu,HJK,742233126
+veikkausliiga|2023|2023-09-03|mariehamn|vps,2023,2023-09-03,Mariehamn,VPS,2808789188
+veikkausliiga|2023|2023-09-03|lahti|ilves,2023,2023-09-03,Lahti,Ilves,3577574903
+veikkausliiga|2023|2023-09-03|ktp|honka,2023,2023-09-03,KTP,Honka,3835610155
+veikkausliiga|2023|2023-09-03|haka|sjk,2023,2023-09-03,Haka,SJK,3861873367
+veikkausliiga|2023|2023-09-15|haka|ilves,2023,2023-09-15,Haka,Ilves,1076176632
+veikkausliiga|2023|2023-09-15|lahti|ktp,2023,2023-09-15,Lahti,KTP,3317980477
+veikkausliiga|2023|2023-09-16|sjk|honka,2023,2023-09-16,SJK,Honka,802284388
+veikkausliiga|2023|2023-09-16|acoulu|mariehamn,2023,2023-09-16,AC Oulu,Mariehamn,2592325893
+veikkausliiga|2023|2023-09-22|ktp|ilves,2023,2023-09-22,KTP,Ilves,1049154920
+veikkausliiga|2023|2023-09-22|honka|vps,2023,2023-09-22,Honka,VPS,2516193803
+veikkausliiga|2023|2023-09-22|lahti|acoulu,2023,2023-09-22,Lahti,AC Oulu,4284454667
+veikkausliiga|2023|2023-09-22|mariehamn|haka,2023,2023-09-22,Mariehamn,Haka,2211844325
+veikkausliiga|2023|2023-09-24|sjk|hjk,2023,2023-09-24,SJK,HJK,1936254932
+veikkausliiga|2023|2023-09-27|ilves|mariehamn,2023,2023-09-27,Ilves,Mariehamn,429704523
+veikkausliiga|2023|2023-09-27|hjk|honka,2023,2023-09-27,HJK,Honka,1197742186
+veikkausliiga|2023|2023-09-29|acoulu|ktp,2023,2023-09-29,AC Oulu,KTP,3065556263
+veikkausliiga|2023|2023-10-01|haka|lahti,2023,2023-10-01,Haka,Lahti,146090246
+veikkausliiga|2023|2023-10-06|ilves|acoulu,2023,2023-10-06,Ilves,AC Oulu,2382077291
+veikkausliiga|2023|2023-10-07|haka|ktp,2023,2023-10-07,Haka,KTP,1941368372
+veikkausliiga|2023|2023-10-08|mariehamn|lahti,2023,2023-10-08,Mariehamn,Lahti,13363213
+veikkausliiga|2023|2023-10-08|vps|hjk,2023,2023-10-08,VPS,HJK,844435423
+veikkausliiga|2023|2023-10-21|acoulu|haka,2023,2023-10-21,AC Oulu,Haka,1104460482
+veikkausliiga|2023|2023-10-21|ktp|mariehamn,2023,2023-10-21,KTP,Mariehamn,2386884286
+veikkausliiga|2023|2023-10-21|lahti|ilves,2023,2023-10-21,Lahti,Ilves,4001909537
+veikkausliiga|2023|2023-10-21|sjk|vps,2023,2023-10-21,SJK,VPS,307291494
+veikkausliiga|2023|2023-10-25|sjk|acoulu,2023,2023-10-25,SJK,AC Oulu,1996099098
+veikkausliiga|2023|2023-10-28|honka|acoulu,2023,2023-10-28,Honka,AC Oulu,3342396259
+veikkausliiga|2023|2023-11-01|honka|vps,2023,2023-11-01,Honka,VPS,3002157531
+veikkausliiga|2023|2023-11-05|vps|honka,2023,2023-11-05,VPS,Honka,2880816699
+veikkausliiga|2024|2024-04-06|ilves|lahti,2024,2024-04-06,Ilves,Lahti,409613301
+veikkausliiga|2024|2024-04-06|haka|vps,2024,2024-04-06,Haka,VPS,2141796488
+veikkausliiga|2024|2024-04-06|sjk|acoulu,2024,2024-04-06,SJK,AC Oulu,2794372871
+veikkausliiga|2024|2024-04-11|hjk|lahti,2024,2024-04-11,HJK,Lahti,119586507
+veikkausliiga|2024|2024-04-12|vps|sjk,2024,2024-04-12,VPS,SJK,1764809698
+veikkausliiga|2024|2024-04-13|ilves|gnistan,2024,2024-04-13,Ilves,Gnistan,3804241823
+veikkausliiga|2024|2024-04-19|sjk|ilves,2024,2024-04-19,SJK,Ilves,1185905962
+veikkausliiga|2024|2024-04-20|hjk|mariehamn,2024,2024-04-20,HJK,Mariehamn,3773893408
+veikkausliiga|2024|2024-04-20|lahti|haka,2024,2024-04-20,Lahti,Haka,2376190151
+veikkausliiga|2024|2024-04-20|vps|gnistan,2024,2024-04-20,VPS,Gnistan,1131726225
+veikkausliiga|2024|2024-04-24|sjk|hjk,2024,2024-04-24,SJK,HJK,3471506619
+veikkausliiga|2024|2024-04-27|haka|hjk,2024,2024-04-27,Haka,HJK,3906171985
+veikkausliiga|2024|2024-04-27|acoulu|vps,2024,2024-04-27,AC Oulu,VPS,3246875069
+veikkausliiga|2024|2024-04-28|mariehamn|ilves,2024,2024-04-28,Mariehamn,Ilves,308813780
+veikkausliiga|2024|2024-05-03|vps|lahti,2024,2024-05-03,VPS,Lahti,885619078
+veikkausliiga|2024|2024-05-04|ilves|acoulu,2024,2024-05-04,Ilves,AC Oulu,294373060
+veikkausliiga|2024|2024-05-05|gnistan|haka,2024,2024-05-05,Gnistan,Haka,1050323914
+veikkausliiga|2024|2024-05-11|haka|sjk,2024,2024-05-11,Haka,SJK,775625876
+veikkausliiga|2024|2024-05-11|acoulu|gnistan,2024,2024-05-11,AC Oulu,Gnistan,226965134
+veikkausliiga|2024|2024-05-12|lahti|mariehamn,2024,2024-05-12,Lahti,Mariehamn,2122982735
+veikkausliiga|2024|2024-05-17|acoulu|mariehamn,2024,2024-05-17,AC Oulu,Mariehamn,493246088
+veikkausliiga|2024|2024-05-17|hjk|vps,2024,2024-05-17,HJK,VPS,2591539349
+veikkausliiga|2024|2024-05-17|ilves|haka,2024,2024-05-17,Ilves,Haka,3979400017
+veikkausliiga|2024|2024-05-22|hjk|gnistan,2024,2024-05-22,HJK,Gnistan,2841539292
+veikkausliiga|2024|2024-05-24|haka|acoulu,2024,2024-05-24,Haka,AC Oulu,3317171564
+veikkausliiga|2024|2024-05-25|hjk|ilves,2024,2024-05-25,HJK,Ilves,2555727861
+veikkausliiga|2024|2024-05-26|mariehamn|gnistan,2024,2024-05-26,Mariehamn,Gnistan,3613090499
+veikkausliiga|2024|2024-05-27|lahti|sjk,2024,2024-05-27,Lahti,SJK,4187741857
+veikkausliiga|2024|2024-05-31|sjk|mariehamn,2024,2024-05-31,SJK,Mariehamn,1685804333
+veikkausliiga|2024|2024-05-31|acoulu|hjk,2024,2024-05-31,AC Oulu,HJK,1547894477
+veikkausliiga|2024|2024-06-02|gnistan|lahti,2024,2024-06-02,Gnistan,Lahti,4111906585
+veikkausliiga|2024|2024-06-07|vps|ilves,2024,2024-06-07,VPS,Ilves,1526603419
+veikkausliiga|2024|2024-06-07|haka|mariehamn,2024,2024-06-07,Haka,Mariehamn,3163580649
+veikkausliiga|2024|2024-06-07|hjk|sjk,2024,2024-06-07,HJK,SJK,3128413162
+veikkausliiga|2024|2024-06-12|mariehamn|vps,2024,2024-06-12,Mariehamn,VPS,795065745
+veikkausliiga|2024|2024-06-12|acoulu|lahti,2024,2024-06-12,AC Oulu,Lahti,4178653790
+veikkausliiga|2024|2024-06-12|gnistan|hjk,2024,2024-06-12,Gnistan,HJK,2743331579
+veikkausliiga|2024|2024-06-19|vps|acoulu,2024,2024-06-19,VPS,AC Oulu,2140593658
+veikkausliiga|2024|2024-06-19|lahti|gnistan,2024,2024-06-19,Lahti,Gnistan,2273300407
+veikkausliiga|2024|2024-06-19|ilves|sjk,2024,2024-06-19,Ilves,SJK,2626216973
+veikkausliiga|2024|2024-06-29|sjk|haka,2024,2024-06-29,SJK,Haka,2468439411
+veikkausliiga|2024|2024-06-29|lahti|ilves,2024,2024-06-29,Lahti,Ilves,2145225217
+veikkausliiga|2024|2024-06-30|mariehamn|hjk,2024,2024-06-30,Mariehamn,HJK,1544782754
+veikkausliiga|2024|2024-07-06|ilves|hjk,2024,2024-07-06,Ilves,HJK,3689462657
+veikkausliiga|2024|2024-07-07|mariehamn|haka,2024,2024-07-07,Mariehamn,Haka,3115616508
+veikkausliiga|2024|2024-07-08|acoulu|sjk,2024,2024-07-08,AC Oulu,SJK,1826296583
+veikkausliiga|2024|2024-07-14|lahti|acoulu,2024,2024-07-14,Lahti,AC Oulu,1556091780
+veikkausliiga|2024|2024-07-15|haka|ilves,2024,2024-07-15,Haka,Ilves,1186180093
+veikkausliiga|2024|2024-07-20|hjk|haka,2024,2024-07-20,HJK,Haka,1805889822
+veikkausliiga|2024|2024-07-21|mariehamn|sjk,2024,2024-07-21,Mariehamn,SJK,4239617690
+veikkausliiga|2024|2024-07-21|ilves|vps,2024,2024-07-21,Ilves,VPS,3346848508
+veikkausliiga|2024|2024-07-27|sjk|lahti,2024,2024-07-27,SJK,Lahti,2246539383
+veikkausliiga|2024|2024-07-27|hjk|acoulu,2024,2024-07-27,HJK,AC Oulu,2900458910
+veikkausliiga|2024|2024-07-28|haka|gnistan,2024,2024-07-28,Haka,Gnistan,1440774041
+veikkausliiga|2024|2024-07-28|vps|mariehamn,2024,2024-07-28,VPS,Mariehamn,3046105442
+veikkausliiga|2024|2024-08-03|lahti|hjk,2024,2024-08-03,Lahti,HJK,3335533481
+veikkausliiga|2024|2024-08-04|acoulu|ilves,2024,2024-08-04,AC Oulu,Ilves,3591337777
+veikkausliiga|2024|2024-08-11|ilves|mariehamn,2024,2024-08-11,Ilves,Mariehamn,3333170333
+veikkausliiga|2024|2024-08-12|sjk|vps,2024,2024-08-12,SJK,VPS,1002755649
+veikkausliiga|2024|2024-08-18|gnistan|acoulu,2024,2024-08-18,Gnistan,AC Oulu,3350750417
+veikkausliiga|2024|2024-08-18|mariehamn|lahti,2024,2024-08-18,Mariehamn,Lahti,1245041326
+veikkausliiga|2024|2024-08-18|vps|haka,2024,2024-08-18,VPS,Haka,3131783617
+veikkausliiga|2024|2024-08-21|gnistan|mariehamn,2024,2024-08-21,Gnistan,Mariehamn,1060993177
+veikkausliiga|2024|2024-08-25|lahti|vps,2024,2024-08-25,Lahti,VPS,826008812
+veikkausliiga|2024|2024-08-26|sjk|gnistan,2024,2024-08-26,SJK,Gnistan,1356240587
+veikkausliiga|2024|2024-09-01|mariehamn|acoulu,2024,2024-09-01,Mariehamn,AC Oulu,543071242
+veikkausliiga|2024|2024-09-01|vps|hjk,2024,2024-09-01,VPS,HJK,1005689616
+veikkausliiga|2024|2024-09-01|haka|lahti,2024,2024-09-01,Haka,Lahti,2726394072
+veikkausliiga|2024|2024-09-01|gnistan|ilves,2024,2024-09-01,Gnistan,Ilves,4113303898
+veikkausliiga|2024|2024-09-14|hjk|sjk,2024,2024-09-14,HJK,SJK,1091780403
+veikkausliiga|2024|2024-09-14|ilves|haka,2024,2024-09-14,Ilves,Haka,4040019667
+veikkausliiga|2024|2024-09-14|acoulu|lahti,2024,2024-09-14,AC Oulu,Lahti,4175546022
+veikkausliiga|2024|2024-09-15|gnistan|mariehamn,2024,2024-09-15,Gnistan,Mariehamn,3342596988
+veikkausliiga|2024|2024-09-19|lahti|mariehamn,2024,2024-09-19,Lahti,Mariehamn,671707331
+veikkausliiga|2024|2024-09-20|haka|sjk,2024,2024-09-20,Haka,SJK,883507707
+veikkausliiga|2024|2024-09-20|vps|hjk,2024,2024-09-20,VPS,HJK,871390568
+veikkausliiga|2024|2024-09-27|gnistan|acoulu,2024,2024-09-27,Gnistan,AC Oulu,3109393257
+veikkausliiga|2024|2024-09-28|sjk|vps,2024,2024-09-28,SJK,VPS,3537640309
+veikkausliiga|2024|2024-09-28|hjk|ilves,2024,2024-09-28,HJK,Ilves,987551554
+veikkausliiga|2024|2024-10-04|vps|ilves,2024,2024-10-04,VPS,Ilves,3517512450
+veikkausliiga|2024|2024-10-05|gnistan|lahti,2024,2024-10-05,Gnistan,Lahti,2738369690
+veikkausliiga|2024|2024-10-06|hjk|haka,2024,2024-10-06,HJK,Haka,1178838631
+veikkausliiga|2024|2024-10-19|acoulu|mariehamn,2024,2024-10-19,AC Oulu,Mariehamn,1965026933
+veikkausliiga|2024|2024-10-19|haka|vps,2024,2024-10-19,Haka,VPS,2561658914
+veikkausliiga|2024|2024-10-19|ilves|sjk,2024,2024-10-19,Ilves,SJK,4018936548
+veikkausliiga|2024|2024-10-23|vps|gnistan,2024,2024-10-23,VPS,Gnistan,989579842
+veikkausliiga|2024|2024-10-26|haka|gnistan,2024,2024-10-26,Haka,Gnistan,2186955862
+veikkausliiga|2024|2024-10-30|haka|sjk,2024,2024-10-30,Haka,SJK,3678923285
+veikkausliiga|2024|2024-11-02|sjk|haka,2024,2024-11-02,SJK,Haka,2250845980
+veikkausliiga|2025|2025-04-05|ilves|hjk,2025,2025-04-05,Ilves,HJK,787755245
+veikkausliiga|2025|2025-04-05|vps|acoulu,2025,2025-04-05,VPS,AC Oulu,859020474
+veikkausliiga|2025|2025-04-05|ktp|sjk,2025,2025-04-05,KTP,SJK,2874757431
+veikkausliiga|2025|2025-04-11|ktp|vps,2025,2025-04-11,KTP,VPS,2356113417
+veikkausliiga|2025|2025-04-11|sjk|hjk,2025,2025-04-11,SJK,HJK,499575119
+veikkausliiga|2025|2025-04-12|haka|mariehamn,2025,2025-04-12,Haka,Mariehamn,877261864
+veikkausliiga|2025|2025-04-19|ktp|ilves,2025,2025-04-19,KTP,Ilves,52420853
+veikkausliiga|2025|2025-04-19|haka|acoulu,2025,2025-04-19,Haka,AC Oulu,3952903918
+veikkausliiga|2025|2025-04-19|mariehamn|sjk,2025,2025-04-19,Mariehamn,SJK,4065766109
+veikkausliiga|2025|2025-04-22|hjk|gnistan,2025,2025-04-22,HJK,Gnistan,2631354045
+veikkausliiga|2025|2025-04-23|sjk|acoulu,2025,2025-04-23,SJK,AC Oulu,1392967683
+veikkausliiga|2025|2025-04-26|hjk|vps,2025,2025-04-26,HJK,VPS,324627949
+veikkausliiga|2025|2025-04-27|mariehamn|ilves,2025,2025-04-27,Mariehamn,Ilves,2281218146
+veikkausliiga|2025|2025-04-28|sjk|haka,2025,2025-04-28,SJK,Haka,2325778344
+veikkausliiga|2025|2025-05-02|ktp|acoulu,2025,2025-05-02,KTP,AC Oulu,705367577
+veikkausliiga|2025|2025-05-02|vps|ilves,2025,2025-05-02,VPS,Ilves,1560964766
+veikkausliiga|2025|2025-05-03|gnistan|mariehamn,2025,2025-05-03,Gnistan,Mariehamn,469189554
+veikkausliiga|2025|2025-05-09|ilves|haka,2025,2025-05-09,Ilves,Haka,3681918926
+veikkausliiga|2025|2025-05-10|acoulu|gnistan,2025,2025-05-10,AC Oulu,Gnistan,1503641360
+veikkausliiga|2025|2025-05-12|sjk|vps,2025,2025-05-12,SJK,VPS,1012214288
+veikkausliiga|2025|2025-05-16|gnistan|sjk,2025,2025-05-16,Gnistan,SJK,652469127
+veikkausliiga|2025|2025-05-17|acoulu|mariehamn,2025,2025-05-17,AC Oulu,Mariehamn,2072764109
+veikkausliiga|2025|2025-05-17|hjk|ktp,2025,2025-05-17,HJK,KTP,2425255457
+veikkausliiga|2025|2025-05-20|hjk|sjk,2025,2025-05-20,HJK,SJK,1043727497
+veikkausliiga|2025|2025-05-23|ktp|haka,2025,2025-05-23,KTP,Haka,2434121605
+veikkausliiga|2025|2025-05-24|ilves|acoulu,2025,2025-05-24,Ilves,AC Oulu,3129020820
+veikkausliiga|2025|2025-05-24|mariehamn|hjk,2025,2025-05-24,Mariehamn,HJK,1807863343
+veikkausliiga|2025|2025-05-31|ktp|mariehamn,2025,2025-05-31,KTP,Mariehamn,738907726
+veikkausliiga|2025|2025-05-31|haka|vps,2025,2025-05-31,Haka,VPS,2188742860
+veikkausliiga|2025|2025-05-31|acoulu|sjk,2025,2025-05-31,AC Oulu,SJK,3874480996
+veikkausliiga|2025|2025-06-01|gnistan|ilves,2025,2025-06-01,Gnistan,Ilves,344776487
+veikkausliiga|2025|2025-06-14|acoulu|hjk,2025,2025-06-14,AC Oulu,HJK,2856502324
+veikkausliiga|2025|2025-06-14|gnistan|ktp,2025,2025-06-14,Gnistan,KTP,1520575295
+veikkausliiga|2025|2025-06-14|mariehamn|vps,2025,2025-06-14,Mariehamn,VPS,2137616316
+veikkausliiga|2025|2025-06-18|ilves|sjk,2025,2025-06-18,Ilves,SJK,1705244049
+veikkausliiga|2025|2025-06-18|vps|gnistan,2025,2025-06-18,VPS,Gnistan,3870285008
+veikkausliiga|2025|2025-06-18|hjk|haka,2025,2025-06-18,HJK,Haka,4236060842
+veikkausliiga|2025|2025-06-28|sjk|mariehamn,2025,2025-06-28,SJK,Mariehamn,3696587486
+veikkausliiga|2025|2025-06-28|haka|ilves,2025,2025-06-28,Haka,Ilves,2745702021
+veikkausliiga|2025|2025-06-28|acoulu|vps,2025,2025-06-28,AC Oulu,VPS,1220361771
+veikkausliiga|2025|2025-07-02|ilves|ktp,2025,2025-07-02,Ilves,KTP,140016621
+veikkausliiga|2025|2025-07-02|vps|haka,2025,2025-07-02,VPS,Haka,1884329963
+veikkausliiga|2025|2025-07-05|sjk|ilves,2025,2025-07-05,SJK,Ilves,3659198404
+veikkausliiga|2025|2025-07-05|vps|hjk,2025,2025-07-05,VPS,HJK,3070816485
+veikkausliiga|2025|2025-07-07|ktp|gnistan,2025,2025-07-07,KTP,Gnistan,485580764
+veikkausliiga|2025|2025-07-13|gnistan|haka,2025,2025-07-13,Gnistan,Haka,2678728114
+veikkausliiga|2025|2025-07-13|acoulu|ktp,2025,2025-07-13,AC Oulu,KTP,3938000425
+veikkausliiga|2025|2025-07-14|ilves|vps,2025,2025-07-14,Ilves,VPS,2814738978
+veikkausliiga|2025|2025-07-20|sjk|gnistan,2025,2025-07-20,SJK,Gnistan,2304856569
+veikkausliiga|2025|2025-07-20|hjk|acoulu,2025,2025-07-20,HJK,AC Oulu,1014420370
+veikkausliiga|2025|2025-07-21|mariehamn|haka,2025,2025-07-21,Mariehamn,Haka,855607593
+veikkausliiga|2025|2025-07-26|haka|ktp,2025,2025-07-26,Haka,KTP,3767384008
+veikkausliiga|2025|2025-07-26|mariehamn|acoulu,2025,2025-07-26,Mariehamn,AC Oulu,737372212
+veikkausliiga|2025|2025-07-28|gnistan|hjk,2025,2025-07-28,Gnistan,HJK,75107569
+veikkausliiga|2025|2025-08-01|vps|mariehamn,2025,2025-08-01,VPS,Mariehamn,2877044052
+veikkausliiga|2025|2025-08-03|sjk|ktp,2025,2025-08-03,SJK,KTP,2296547784
+veikkausliiga|2025|2025-08-04|ilves|gnistan,2025,2025-08-04,Ilves,Gnistan,3986206139
+veikkausliiga|2025|2025-08-09|mariehamn|gnistan,2025,2025-08-09,Mariehamn,Gnistan,2896029435
+veikkausliiga|2025|2025-08-10|vps|sjk,2025,2025-08-10,VPS,SJK,3537937568
+veikkausliiga|2025|2025-08-11|hjk|ilves,2025,2025-08-11,HJK,Ilves,2835463383
+veikkausliiga|2025|2025-08-31|ktp|hjk,2025,2025-08-31,KTP,HJK,451554504
+veikkausliiga|2025|2025-08-31|ilves|mariehamn,2025,2025-08-31,Ilves,Mariehamn,2534928454
+veikkausliiga|2025|2025-09-29|hjk|ilves,2025,2025-09-29,HJK,Ilves,3850715285
+veikkausliiga|2025|2025-10-18|haka|ktp,2025,2025-10-18,Haka,KTP,1406371424
+veikkausliiga|2025|2025-10-19|gnistan|sjk,2025,2025-10-19,Gnistan,SJK,2034246562
+veikkausliiga|2025|2025-10-22|hjk|sjk,2025,2025-10-22,HJK,SJK,3515632605
+veikkausliiga|2026|2026-04-10|tps|lahti,2026,2026-04-10,TPS,Lahti,3881000949
+veikkausliiga|2026|2026-04-18|acoulu|vps,2026,2026-04-18,AC Oulu,VPS,1257863132
+veikkausliiga|2026|2026-06-13|lahti|sjk,2026,2026-06-13,Lahti,SJK,1318106932
+veikkausliiga|2026|2026-07-10|vps|sjk,2026,2026-07-10,VPS,SJK,1158835286
+veikkausliiga|2026|2026-07-11|gnistan|mariehamn,2026,2026-07-11,Gnistan,Mariehamn,3235840020
+veikkausliiga|2026|2026-08-03|sjk|hjk,2026,2026-08-03,SJK,HJK,2169356371
+veikkausliiga|2026|2026-08-07|sjk|gnistan,2026,2026-08-07,SJK,Gnistan,331497735
+veikkausliiga|2026|2026-08-09|acoulu|hjk,2026,2026-08-09,AC Oulu,HJK,2495925399
+veikkausliiga|2026|2026-08-15|mariehamn|sjk,2026,2026-08-15,Mariehamn,SJK,175112985
+veikkausliiga|2026|2026-08-22|ilves|vps,2026,2026-08-22,Ilves,VPS,1589022328
+veikkausliiga|2026|2026-08-31|gnistan|tps,2026,2026-08-31,Gnistan,TPS,131524661
+veikkausliiga|2026|2026-08-31|ilves|hjk,2026,2026-08-31,Ilves,HJK,1185690292
+veikkausliiga|2026|2026-09-08|tps|sjk,2026,2026-09-08,TPS,SJK,2837839762
+veikkausliiga|2026|2026-09-18|sjk|mariehamn,2026,2026-09-18,SJK,Mariehamn,665263075
+veikkausliiga|2026|2026-09-18|gnistan|hjk,2026,2026-09-18,Gnistan,HJK,3582847053
