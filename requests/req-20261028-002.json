@@ -1,0 +1,41 @@
+{
+  "id": "req-20261028-002",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "created_at": "2026-10-28T15:02:00+08:00",
+  "params": {
+    "topic": "Veikkausliiga 2016-2026 historical fixture pre-match context evidence gaps",
+    "execution_note": "This is a complementary source audit for 868 exact-match fixtures. Use only the identity input D:\\奇门斗数\\work\\veikkausliiga-fin-20260927\\incremental_2019_2026\\historical_interval_merge_20261028\\method_context_request_fixtures_20261028.csv (SHA-256 9de8b8fac5fcdebbc51e1df99f9a5fe329e3149f3deacc2dfcc4105cd9a4c093); it contains fixture_key, season, match_date, home_team, away_team, and provider_fixture_id only. Reuse the valid 2019-2025 response req-20261006-004 and its row artifact work-req-20261006-004/req-20261006-004-rows.json; do not repeat facts already present unless stronger actual-matchday venue provenance is available. Focus on remaining source-backed facts and unresolved rows. Do not collect market data.",
+    "questions": [
+      "For each of the 868 fixture_key rows in the supplied candidate CSV, return one row keyed to that exact fixture identity. Crosswalk the accepted 2019-2025 response req-20261006-004 first, then fill only missing or weakly sourced fields. Preserve all source spellings and competing values; never fuzzy-match a fixture without recording it as unresolved.",
+      "Return explicit official_round and whether the competition used a double round robin for that season. Return meeting_number only where an authoritative source explicitly defines it or the exact pairing can be joined to sourced official round records without inferring from date order, CSV order, team occurrence count, scores, standings, or market data. Otherwise leave it null and mark unavailable with the attempted sources.",
+      "Return the actual venue used on that fixture date, city, WGS84 latitude and longitude, and venue IANA timezone. Distinguish confirmed, neutral, moved, conflict, unavailable, and blocked. A club's default ground or a season venue list is not fixture-level confirmation by itself. Preserve every competing venue candidate and its source.",
+      "Return home and away club official identity, natal_year/lineage year, and competition_entry_year for the exact season. Preserve promotions, relegations, renamed clubs, predecessor clubs, mergers, and identity conflicts as separate sourced facts. Do not collapse two clubs into one identity because names look similar.",
+      "Return the official local kickoff with timezone and its source semantics. Do not convert a date-only value to a guessed time. If a source gives UTC, preserve the original UTC value and timezone and provide the converted Europe/Helsinki local value only with the conversion method recorded.",
+      "For every non-null field include source_url, final_url, retrieved_at with timezone, field_locator, source_name, source/value, and SHA-256 of the captured source evidence bytes. A hash of a description or URL is not a source-evidence hash. Return a row even when fields are null; state the missing fields, attempted sources, and next action.",
+      "Return expected, discovered, complete, partial, unavailable, blocked, conflict, and missing counts by season and overall, plus an unresolved_queue keyed by fixture_key. If the row output is large, save JSONL under work-req-20261028-002/ and report its path, schema, row count, and SHA-256.",
+      "Return only source-backed pre-match facts and provenance. Do not include post-match information, analytical model outputs, or predictive judgments. Do not write into project files or formal records."
+    ],
+    "scope": {
+      "competition_key": "veikkausliiga",
+      "competition_name": "Veikkausliiga",
+      "country": "Finland",
+      "timezone": "Europe/Helsinki",
+      "candidate_fixture_count": 868,
+      "fixture_identity_source": "identity-only fixture CSV; SHA-256 recorded in execution_note",
+      "candidate_seasons": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026],
+      "league_only": true,
+      "pre_match_facts_only": true
+    },
+    "output_contract": {
+      "format": "json_report_plus_fixture_method_context_evidence_jsonl_and_unresolved_queue",
+      "pre_match_facts_only": true,
+      "preserve_nulls_and_conflicts": true,
+      "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+      "formal_model_unchanged": true,
+      "promotion_allowed": false
+    }
+  },
+  "dp_used": false
+}
