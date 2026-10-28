@@ -1,0 +1,162 @@
+{"d":"2021-04-24","h":"HJK Helsinki","a":"FC Honka","t":"15:00","v":"Telia 5G -areena","w":13,"s":null}
+{"d":"2021-04-24","h":"Inter Turku","a":"KuPS","t":"17:00","v":"Veritas Stadion","w":13,"s":null}
+{"d":"2021-05-02","h":"KuPS","a":"HJK Helsinki","t":"18:30","v":"Väre Areena","w":5,"s":null}
+{"d":"2021-05-03","h":"AC Oulu","a":"Ilves","t":"18:30","v":"Raatin stadion","w":5,"s":null}
+{"d":"2021-05-03","h":"SJK","a":"KTP","t":"18:30","v":"OmaSP Stadion","w":5,"s":null}
+{"d":"2021-05-03","h":"Helsinki IFK","a":"Haka","t":"18:30","v":"Telia 5G -areena","w":5,"s":null}
+{"d":"2021-05-03","h":"Lahti","a":"Inter Turku","t":"18:30","v":"Lahden Stadion","w":5,"s":null}
+{"d":"2021-05-03","h":"FC Honka","a":"IFK Mariehamn","t":"18:30","v":"Tapiolan Urheilupuisto","w":5,"s":null}
+{"d":"2021-05-07","h":"SJK","a":"Helsinki IFK","t":"18:30","v":"OmaSP Stadion","w":6,"s":null}
+{"d":"2021-05-07","h":"KTP","a":"FC Honka","t":"18:30","v":"Arto Tolsa Areena","w":6,"s":null}
+{"d":"2021-05-09","h":"Inter Turku","a":"Haka","t":"16:00","v":"Veritas Stadion","w":6,"s":null}
+{"d":"2021-05-09","h":"IFK Mariehamn","a":"AC Oulu","t":"18:30","v":"Wiklöf Holding Arena","w":6,"s":null}
+{"d":"2021-05-11","h":"Lahti","a":"KuPS","t":"18:30","v":"Lahden Stadion","w":6,"s":null}
+{"d":"2021-05-11","h":"Ilves","a":"HJK Helsinki","t":"18:30","v":"Ratinan Stadion","w":6,"s":null}
+{"d":"2021-05-14","h":"Haka","a":"KTP","t":"18:30","v":"Tehtaan kenttä","w":7,"s":null}
+{"d":"2021-05-14","h":"KuPS","a":"IFK Mariehamn","t":"18:30","v":"Väre Areena","w":7,"s":null}
+{"d":"2021-05-14","h":"FC Honka","a":"Inter Turku","t":"18:30","v":"Tapiolan Urheilupuisto","w":7,"s":null}
+{"d":"2021-05-15","h":"Helsinki IFK","a":"Ilves","t":"17:00","v":"Telia 5G -areena","w":7,"s":null}
+{"d":"2021-05-15","h":"AC Oulu","a":"SJK","t":"17:00","v":"Raatin stadion","w":7,"s":null}
+{"d":"2021-05-17","h":"HJK Helsinki","a":"Lahti","t":"18:30","v":"Telia 5G -areena","w":7,"s":null}
+{"d":"2021-05-22","h":"Inter Turku","a":"KTP","t":"15:00","v":"Veritas Stadion","w":8,"s":null}
+{"d":"2021-05-22","h":"Lahti","a":"FC Honka","t":"17:00","v":"Lahden Stadion","w":8,"s":null}
+{"d":"2021-05-22","h":"SJK","a":"HJK Helsinki","t":"17:00","v":"OmaSP Stadion","w":8,"s":null}
+{"d":"2021-05-22","h":"Ilves","a":"KuPS","t":"19:00","v":"Ratinan Stadion","w":8,"s":null}
+{"d":"2021-05-23","h":"IFK Mariehamn","a":"Haka","t":"18:30","v":"Wiklöf Holding Arena","w":8,"s":null}
+{"d":"2021-05-23","h":"AC Oulu","a":"Helsinki IFK","t":"18:30","v":"Raatin stadion","w":8,"s":null}
+{"d":"2021-05-28","h":"HJK Helsinki","a":"AC Oulu","t":"18:00","v":"Telia 5G -areena","w":9,"s":null}
+{"d":"2021-05-28","h":"Ilves","a":"KTP","t":"18:30","v":"Ratinan Stadion","w":9,"s":null}
+{"d":"2021-05-29","h":"FC Honka","a":"SJK","t":"15:00","v":"Tapiolan Urheilupuisto","w":9,"s":null}
+{"d":"2021-05-29","h":"KuPS","a":"Haka","t":"17:00","v":"Väre Areena","w":9,"s":null}
+{"d":"2021-05-29","h":"Helsinki IFK","a":"Inter Turku","t":"17:00","v":"Telia 5G -areena","w":9,"s":null}
+{"d":"2021-05-30","h":"IFK Mariehamn","a":"Lahti","t":"18:30","v":"Wiklöf Holding Arena","w":9,"s":null}
+{"d":"2021-06-10","h":"Inter Turku","a":"IFK Mariehamn","t":"18:00","v":"Veritas Stadion","w":10,"s":null}
+{"d":"2021-06-10","h":"KTP","a":"Helsinki IFK","t":"18:30","v":"Arto Tolsa Areena","w":10,"s":null}
+{"d":"2021-06-10","h":"Haka","a":"HJK Helsinki","t":"18:30","v":"Tehtaan kenttä","w":10,"s":null}
+{"d":"2021-06-10","h":"SJK","a":"KuPS","t":"18:30","v":"OmaSP Stadion","w":10,"s":null}
+{"d":"2021-06-10","h":"Lahti","a":"Ilves","t":"18:30","v":"Lahden Stadion","w":10,"s":null}
+{"d":"2021-06-11","h":"AC Oulu","a":"FC Honka","t":"18:30","v":"Raatin stadion","w":10,"s":null}
+{"d":"2021-06-14","h":"KuPS","a":"Inter Turku","t":"18:30","v":"Väre Areena","w":1,"s":null}
+{"d":"2021-06-14","h":"SJK","a":"Ilves","t":"18:30","v":"OmaSP Stadion","w":1,"s":null}
+{"d":"2021-06-14","h":"IFK Mariehamn","a":"HJK Helsinki","t":"18:30","v":"Wiklöf Holding Arena","w":1,"s":null}
+{"d":"2021-06-15","h":"Helsinki IFK","a":"FC Honka","t":"18:00","v":"Telia 5G -areena","w":1,"s":null}
+{"d":"2021-06-15","h":"KTP","a":"AC Oulu","t":"18:30","v":"Arto Tolsa Areena","w":1,"s":null}
+{"d":"2021-06-15","h":"Haka","a":"Lahti","t":"18:30","v":"Tehtaan kenttä","w":1,"s":null}
+{"d":"2021-06-18","h":"HJK Helsinki","a":"Ilves","t":"18:00","v":"Telia 5G -areena","w":14,"s":null}
+{"d":"2021-06-18","h":"Inter Turku","a":"SJK","t":"18:30","v":"Veritas Stadion","w":2,"s":null}
+{"d":"2021-06-19","h":"KuPS","a":"FC Honka","t":"17:00","v":"Väre Areena","w":15,"s":null}
+{"d":"2021-06-23","h":"Lahti","a":"Helsinki IFK","t":"18:30","v":"Lahden Stadion","w":11,"s":null}
+{"d":"2021-06-23","h":"Ilves","a":"Inter Turku","t":"18:30","v":"Ratinan Stadion","w":11,"s":null}
+{"d":"2021-06-24","h":"AC Oulu","a":"KuPS","t":"18:30","v":"Raatin stadion","w":11,"s":null}
+{"d":"2021-06-24","h":"HJK Helsinki","a":"KTP","t":"18:30","v":"Telia 5G -areena","w":11,"s":null}
+{"d":"2021-06-24","h":"IFK Mariehamn","a":"SJK","t":"18:30","v":"Wiklöf Holding Arena","w":11,"s":null}
+{"d":"2021-06-24","h":"FC Honka","a":"Haka","t":"18:30","v":"Tapiolan Urheilupuisto","w":11,"s":null}
+{"d":"2021-06-30","h":"Haka","a":"FC Honka","t":"18:30","v":"Tehtaan kenttä","w":12,"s":null}
+{"d":"2021-06-30","h":"Inter Turku","a":"Lahti","t":"18:30","v":"Veritas Stadion","w":12,"s":null}
+{"d":"2021-06-30","h":"SJK","a":"IFK Mariehamn","t":"18:30","v":"OmaSP Stadion","w":12,"s":null}
+{"d":"2021-06-30","h":"KuPS","a":"AC Oulu","t":"18:30","v":"Väre Areena","w":12,"s":null}
+{"d":"2021-06-30","h":"Helsinki IFK","a":"HJK Helsinki","t":"18:30","v":"Telia 5G -areena","w":12,"s":null}
+{"d":"2021-06-30","h":"KTP","a":"Ilves","t":"18:30","v":"Arto Tolsa Areena","w":12,"s":null}
+{"d":"2021-07-04","h":"Lahti","a":"SJK","t":"18:30","v":"Lahden Stadion","w":13,"s":null}
+{"d":"2021-07-04","h":"IFK Mariehamn","a":"Helsinki IFK","t":"18:30","v":"Wiklöf Holding Arena","w":13,"s":null}
+{"d":"2021-07-05","h":"Ilves","a":"Haka","t":"18:30","v":"Ratinan Stadion","w":13,"s":null}
+{"d":"2021-07-05","h":"AC Oulu","a":"KTP","t":"18:30","v":"Raatin stadion","w":13,"s":null}
+{"d":"2021-07-11","h":"FC Honka","a":"AC Oulu","t":"18:30","v":"Tapiolan Urheilupuisto","w":14,"s":null}
+{"d":"2021-07-11","h":"Haka","a":"KuPS","t":"18:30","v":"Tehtaan kenttä","w":14,"s":null}
+{"d":"2021-07-12","h":"KTP","a":"IFK Mariehamn","t":"18:30","v":"Arto Tolsa Areena","w":14,"s":null}
+{"d":"2021-07-12","h":"Helsinki IFK","a":"Lahti","t":"18:30","v":"Telia 5G -areena","w":14,"s":null}
+{"d":"2021-07-16","h":"Ilves","a":"SJK","t":"18:30","v":"Ratinan Stadion","w":15,"s":null}
+{"d":"2021-07-16","h":"Lahti","a":"IFK Mariehamn","t":"18:30","v":"Lahden Stadion","w":15,"s":null}
+{"d":"2021-07-17","h":"AC Oulu","a":"HJK Helsinki","t":"18:30","v":"Raatin stadion","w":15,"s":null}
+{"d":"2021-07-19","h":"Inter Turku","a":"Helsinki IFK","t":"18:30","v":"Veritas Stadion","w":15,"s":null}
+{"d":"2021-07-19","h":"KTP","a":"Haka","t":"18:30","v":"Arto Tolsa Areena","w":15,"s":null}
+{"d":"2021-07-23","h":"Helsinki IFK","a":"KTP","t":"18:30","v":"Telia 5G -areena","w":16,"s":null}
+{"d":"2021-07-24","h":"SJK","a":"AC Oulu","t":"17:00","v":"OmaSP Stadion","w":16,"s":null}
+{"d":"2021-07-24","h":"HJK Helsinki","a":"Haka","t":"17:00","v":"Telia 5G -areena","w":16,"s":null}
+{"d":"2021-07-25","h":"IFK Mariehamn","a":"Inter Turku","t":"16:30","v":"Wiklöf Holding Arena","w":16,"s":null}
+{"d":"2021-07-25","h":"KuPS","a":"Ilves","t":"18:30","v":"Väre Areena","w":16,"s":null}
+{"d":"2021-07-25","h":"FC Honka","a":"Lahti","t":"18:30","v":"Tapiolan Urheilupuisto","w":16,"s":null}
+{"d":"2021-07-30","h":"Ilves","a":"AC Oulu","t":"18:30","v":"Ratinan Stadion","w":17,"s":null}
+{"d":"2021-07-30","h":"Lahti","a":"KTP","t":"18:30","v":"Lahden Stadion","w":17,"s":null}
+{"d":"2021-07-31","h":"HJK Helsinki","a":"SJK","t":"17:00","v":"Telia 5G -areena","w":17,"s":null}
+{"d":"2021-08-02","h":"Inter Turku","a":"FC Honka","t":"18:30","v":"Veritas Stadion","w":17,"s":null}
+{"d":"2021-08-07","h":"AC Oulu","a":"IFK Mariehamn","t":"15:00","v":"Raatin stadion","w":18,"s":null}
+{"d":"2021-08-07","h":"KTP","a":"HJK Helsinki","t":"17:00","v":"Arto Tolsa Areena","w":18,"s":null}
+{"d":"2021-08-08","h":"Haka","a":"Inter Turku","t":"16:00","v":"Tehtaan kenttä","w":18,"s":null}
+{"d":"2021-08-08","h":"FC Honka","a":"Ilves","t":"18:30","v":"Tapiolan Urheilupuisto","w":18,"s":null}
+{"d":"2021-08-08","h":"KuPS","a":"Lahti","t":"18:30","v":"Väre Areena","w":18,"s":null}
+{"d":"2021-08-13","h":"Lahti","a":"Haka","t":"18:30","v":"Lahden Stadion","w":19,"s":null}
+{"d":"2021-08-14","h":"AC Oulu","a":"Inter Turku","t":"17:00","v":"Raatin stadion","w":19,"s":null}
+{"d":"2021-08-15","h":"HJK Helsinki","a":"IFK Mariehamn","t":"15:00","v":"Telia 5G -areena","w":19,"s":null}
+{"d":"2021-08-15","h":"KuPS","a":"KTP","t":"18:30","v":"Väre Areena","w":19,"s":null}
+{"d":"2021-08-16","h":"SJK","a":"FC Honka","t":"18:30","v":"OmaSP Stadion","w":19,"s":null}
+{"d":"2021-08-20","h":"Haka","a":"AC Oulu","t":"18:30","v":"Tehtaan kenttä","w":20,"s":null}
+{"d":"2021-08-21","h":"Inter Turku","a":"Ilves","t":"15:00","v":"Veritas Stadion","w":20,"s":null}
+{"d":"2021-08-22","h":"IFK Mariehamn","a":"FC Honka","t":"18:30","v":"Wiklöf Holding Arena","w":20,"s":null}
+{"d":"2021-08-22","h":"Helsinki IFK","a":"KuPS","t":"18:30","v":"Telia 5G -areena","w":20,"s":null}
+{"d":"2021-08-23","h":"Lahti","a":"HJK Helsinki","t":"18:30","v":"Lahden Stadion","w":20,"s":null}
+{"d":"2021-08-27","h":"SJK","a":"Haka","t":"18:30","v":"OmaSP Stadion","w":21,"s":null}
+{"d":"2021-08-28","h":"FC Honka","a":"Helsinki IFK","t":"13:00","v":"Tapiolan Urheilupuisto","w":21,"s":null}
+{"d":"2021-08-28","h":"AC Oulu","a":"Lahti","t":"17:00","v":"Raatin stadion","w":21,"s":null}
+{"d":"2021-08-29","h":"IFK Mariehamn","a":"Ilves","t":"18:30","v":"Wiklöf Holding Arena","w":21,"s":null}
+{"d":"2021-08-29","h":"HJK Helsinki","a":"KuPS","t":"18:30","v":"Telia 5G -areena","w":21,"s":null}
+{"d":"2021-08-31","h":"KTP","a":"Inter Turku","t":"18:30","v":"Arto Tolsa Areena","w":21,"s":null}
+{"d":"2021-09-05","h":"IFK Mariehamn","a":"KuPS","t":"18:30","v":"Wiklöf Holding Arena","w":17,"s":null}
+{"d":"2021-09-07","h":"Helsinki IFK","a":"SJK","t":"18:30","v":"Telia 5G -areena","w":18,"s":null}
+{"d":"2021-09-11","h":"Ilves","a":"Lahti","t":"17:00","v":"Ratinan Stadion","w":22,"s":null}
+{"d":"2021-09-11","h":"Helsinki IFK","a":"AC Oulu","t":"17:00","v":"Telia 5G -areena","w":22,"s":null}
+{"d":"2021-09-11","h":"FC Honka","a":"KTP","t":"17:00","v":"Tapiolan Urheilupuisto","w":22,"s":null}
+{"d":"2021-09-11","h":"Haka","a":"IFK Mariehamn","t":"17:00","v":"Tehtaan kenttä","w":22,"s":null}
+{"d":"2021-09-11","h":"KuPS","a":"SJK","t":"17:00","v":"Väre Areena","w":22,"s":null}
+{"d":"2021-09-11","h":"Inter Turku","a":"HJK Helsinki","t":"17:00","v":"Veritas Stadion","w":22,"s":null}
+{"d":"2021-09-14","h":"Ilves","a":"Helsinki IFK","t":"18:30","v":"Ratinan Stadion","w":14,"s":null}
+{"d":"2021-09-14","h":"KTP","a":"SJK","t":"18:30","v":"Arto Tolsa Areena","w":20,"s":null}
+{"d":"2021-09-18","h":"Helsinki IFK","a":"IFK Mariehamn","t":"15:00","v":"Telia 5G -areena","w":2,"s":null}
+{"d":"2021-09-18","h":"Lahti","a":"AC Oulu","t":"17:00","v":"Lahden Stadion","w":2,"s":null}
+{"d":"2021-09-18","h":"KTP","a":"KuPS","t":"17:00","v":"Arto Tolsa Areena","w":2,"s":null}
+{"d":"2021-09-18","h":"Haka","a":"Ilves","t":"17:00","v":"Tehtaan kenttä","w":2,"s":null}
+{"d":"2021-09-18","h":"SJK","a":"Inter Turku","t":"17:00","v":"OmaSP Stadion","w":14,"s":null}
+{"d":"2021-09-19","h":"FC Honka","a":"HJK Helsinki","t":"15:00","v":"Tapiolan Urheilupuisto","w":2,"s":null}
+{"d":"2021-09-22","h":"HJK Helsinki","a":"Helsinki IFK","t":"18:30","v":"Telia 5G -areena","w":4,"s":null}
+{"d":"2021-09-22","h":"Inter Turku","a":"AC Oulu","t":"18:30","v":"Veritas Stadion","w":4,"s":null}
+{"d":"2021-09-22","h":"FC Honka","a":"KuPS","t":"18:30","v":"Tapiolan Urheilupuisto","w":4,"s":null}
+{"d":"2021-09-22","h":"KTP","a":"Lahti","t":"18:30","v":"Arto Tolsa Areena","w":4,"s":null}
+{"d":"2021-09-22","h":"Ilves","a":"IFK Mariehamn","t":"18:30","v":"Ratinan Stadion","w":4,"s":null}
+{"d":"2021-09-22","h":"Haka","a":"SJK","t":"18:30","v":"Tehtaan kenttä","w":4,"s":null}
+{"d":"2021-09-26","h":"IFK Mariehamn","a":"KTP","t":"18:30","v":"Wiklöf Holding Arena","w":3,"s":null}
+{"d":"2021-09-26","h":"AC Oulu","a":"Haka","t":"18:30","v":"Raatin stadion","w":3,"s":null}
+{"d":"2021-09-26","h":"HJK Helsinki","a":"Inter Turku","t":"18:30","v":"Telia 5G -areena","w":3,"s":null}
+{"d":"2021-09-26","h":"KuPS","a":"Helsinki IFK","t":"18:30","v":"Väre Areena","w":3,"s":null}
+{"d":"2021-09-26","h":"SJK","a":"Lahti","t":"18:30","v":"OmaSP Stadion","w":3,"s":null}
+{"d":"2021-09-26","h":"Ilves","a":"FC Honka","t":"18:30","v":"Ratinan Stadion","w":3,"s":null}
+{"d":"2021-09-30","h":"Haka","a":"Helsinki IFK","t":"18:30","v":"Tehtaan kenttä","w":17,"s":null}
+{"d":"2021-10-02","h":"FC Honka","a":"IFK Mariehamn","t":"15:00","v":"Tapiolan Urheilupuisto","w":1,"s":"relegation"}
+{"d":"2021-10-02","h":"KuPS","a":"Ilves","t":"17:00","v":"Väre Areena","w":1,"s":"championship"}
+{"d":"2021-10-03","h":"Lahti","a":"KTP","t":"15:00","v":"Lahden Stadion","w":1,"s":"relegation"}
+{"d":"2021-10-03","h":"Inter Turku","a":"Helsinki IFK","t":"17:00","v":"Veritas Stadion","w":1,"s":"championship"}
+{"d":"2021-10-03","h":"Haka","a":"AC Oulu","t":"17:00","v":"Tehtaan kenttä","w":1,"s":"relegation"}
+{"d":"2021-10-03","h":"HJK Helsinki","a":"SJK","t":"18:30","v":"Telia 5G -areena","w":1,"s":"championship"}
+{"d":"2021-10-16","h":"Ilves","a":"HJK Helsinki","t":"15:00","v":"Ratinan Stadion","w":2,"s":"championship"}
+{"d":"2021-10-16","h":"Inter Turku","a":"KuPS","t":"17:00","v":"Veritas Stadion","w":2,"s":"championship"}
+{"d":"2021-10-16","h":"Helsinki IFK","a":"SJK","t":"17:00","v":"Telia 5G -areena","w":2,"s":"championship"}
+{"d":"2021-10-16","h":"AC Oulu","a":"IFK Mariehamn","t":"17:00","v":"Raatin stadion","w":2,"s":"relegation"}
+{"d":"2021-10-16","h":"Haka","a":"Lahti","t":"17:00","v":"Tehtaan kenttä","w":2,"s":"relegation"}
+{"d":"2021-10-16","h":"KTP","a":"FC Honka","t":"17:00","v":"Arto Tolsa Areena","w":2,"s":"relegation"}
+{"d":"2021-10-22","h":"Lahti","a":"AC Oulu","t":"17:30","v":"Lahden Stadion","w":3,"s":"relegation"}
+{"d":"2021-10-22","h":"SJK","a":"Ilves","t":"18:30","v":"OmaSP Stadion","w":3,"s":"championship"}
+{"d":"2021-10-23","h":"FC Honka","a":"Haka","t":"15:00","v":"Tapiolan Urheilupuisto","w":3,"s":"relegation"}
+{"d":"2021-10-23","h":"KuPS","a":"Helsinki IFK","t":"17:00","v":"Väre Areena","w":3,"s":"championship"}
+{"d":"2021-10-23","h":"IFK Mariehamn","a":"KTP","t":"17:00","v":"Wiklöf Holding Arena","w":3,"s":"relegation"}
+{"d":"2021-10-24","h":"HJK Helsinki","a":"Inter Turku","t":"18:30","v":"Telia 5G -areena","w":3,"s":"championship"}
+{"d":"2021-10-27","h":"HJK Helsinki","a":"Helsinki IFK","t":"18:30","v":"Telia 5G -areena","w":4,"s":"championship"}
+{"d":"2021-10-27","h":"Ilves","a":"Inter Turku","t":"18:30","v":"Ratinan Stadion","w":4,"s":"championship"}
+{"d":"2021-10-27","h":"SJK","a":"KuPS","t":"18:30","v":"OmaSP Stadion","w":4,"s":"championship"}
+{"d":"2021-10-27","h":"IFK Mariehamn","a":"Lahti","t":"18:30","v":"Wiklöf Holding Arena","w":4,"s":"relegation"}
+{"d":"2021-10-27","h":"KTP","a":"Haka","t":"18:30","v":"Arto Tolsa Areena","w":4,"s":"relegation"}
+{"d":"2021-10-27","h":"FC Honka","a":"AC Oulu","t":"18:30","v":"Tapiolan Urheilupuisto","w":4,"s":"relegation"}
+{"d":"2021-10-31","h":"AC Oulu","a":"KTP","t":"15:00","v":"Raatin stadion","w":5,"s":"relegation"}
+{"d":"2021-10-31","h":"Lahti","a":"FC Honka","t":"15:00","v":"Lahden Stadion","w":5,"s":"relegation"}
+{"d":"2021-10-31","h":"Haka","a":"IFK Mariehamn","t":"15:00","v":"Tehtaan kenttä","w":5,"s":"relegation"}
+{"d":"2021-10-31","h":"KuPS","a":"HJK Helsinki","t":"17:00","v":"Väre Areena","w":5,"s":"championship"}
+{"d":"2021-10-31","h":"Inter Turku","a":"SJK","t":"17:00","v":"Veritas Stadion","w":5,"s":"championship"}
+{"d":"2021-10-31","h":"Helsinki IFK","a":"Ilves","t":"17:00","v":"Telia 5G -areena","w":5,"s":"championship"}

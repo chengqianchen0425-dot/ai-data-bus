@@ -1,0 +1,821 @@
+{{Short description|Finnish football club}}
+{{Lead too short|date=June 2024}}
+{{Infobox football club 
+|  clubname = SJK Seinäjoki
+|  image    = Seinajoen Jalkapallokerho logo.svg
+|  upright  = 0.7
+|  fullname = Seinäjoen Jalkapallokerho 
+|  nickname = Kerho (The Club)
+|  founded  = {{Start date and age|df=yes|5 November 2007||}}
+|  ground   = [[OmaSP Stadion]],<br/>[[Seinäjoki]], [[Finland]] 
+|  capacity =  5,817
+|  chairman = Raimo Sarajärvi 
+|  manager  = [[Jarkko Wiss]]
+|  league   = [[Veikkausliiga]]
+|  season   = [[2026 Veikkausliiga|2026]]
+|  position = Veikkausliiga, 10th of 12
+|  website  = {{URL|http://www.sjk.fi/}}
+| pattern_la1     = _sjk26h
+| pattern_b1      = _sjk26h
+| pattern_ra1     = _sjk26h
+| pattern_sh1     = _adidasgold
+| pattern_so1     = _color_3_stripes_gold
+| leftarm1        = 000000
+| body1           = 000000
+| rightarm1       = 000000
+| shorts1         = 000000
+| socks1          = 000000
+| pattern_la2     = _sjk26a
+| pattern_b2      = _sjk26a
+| pattern_ra2     = _sjk26a
+| pattern_sh2     = _adidasonwhite
+| pattern_so2     = _adidasonwhitel
+| leftarm2        = 
+| body2           = 
+| rightarm2       = 
+| shorts2         = A90000
+| socks2          = A90000
+| pattern_la3     = _sjk26t
+| pattern_b3      = _sjk26t
+| pattern_ra3     = _sjk26t
+| pattern_sh3     = _adidasblue
+| pattern_so3     = _color_3_stripes_blue
+| leftarm3        = FF7700
+| body3           = FF7700
+| rightarm3       = FF7700
+| shorts3         = FF7700
+| socks3          = FF7700
+}}
+
+[[File:Fans of Seinäjoen Jalkapallokerho.jpg|thumb|SJK supporters.]]
+
+'''Seinäjoen Jalkapallokerho''', commonly referred to as '''SJK''', also internationally '''SJK Seinäjoki''', is a [[Finland|Finnish]] professional [[association football|football]] club from the city of [[Seinäjoki]]. The club plays in the [[Veikkausliiga]], the highest tier of the Finnish league system. Their home ground is [[OmaSP Stadion]], which is located near the city center and next to SJK's training facility Wallsport. SJK was formed in 2007 after the merger of [[TP-Seinäjoki]] and [[Sepsi-78]]. After starting in the third-tier, the club won the promotion to Veikkausliiga in 2014, and the next year won its first [[2015 Veikkausliiga|Finnish championship title]].
+
+==History==
+
+===The early years===
+SJK was formed on 5 November 2007 as a merger between the first teams of [[TP-Seinäjoki]] and [[Sepsi-78]]. It was told to the public five days later. [[Sepsi-78]] had a board meeting on 24 October and [[TP-Seinäjoki]] on the next day. Both clubs supported the merger.<ref>{{cite web|url=http://www.tp-seinajoki.fi/uutisarkisto/115_1565.html |author= TP-Seinäjoki |title=Kaupunkijoukkueasia hyväksyttiin|access-date= 26 January 2008}} {{dead link|date=October 2020}}</ref> Sepsi-78 and TP both gave up their place in [[Kakkonen]].<ref>{{cite web|url= http://www.ilkka.fi/arc_article.jsp?article=295199& | author = Ilkka | title = Sepsi-78:lle ja TP-Seinäjoelle yhteinen edustusjoukkue | access-date = 27 January 2008}} {{dead link|date=October 2020}}</ref> The first signing of the new club was Petri Huttu.<ref>{{cite web | url = https://sjk.fi/uutiset/pete-ehti-ensimmaisena/ | author = SJK | title = Pete ehti ensimmäisenä | date = 26 January 2008 | access-date = 26 January 2008 | archive-date = 11 October 2020 | archive-url = https://web.archive.org/web/20201011030313/https://sjk.fi/uutiset/pete-ehti-ensimmaisena/ | url-status = live }}</ref> There were several negotiations about the merger over the years. The main reason was the inadequacy of players. The clubs continued doing junior work after the merger, but could also have their own team in the lower divisions. The work name of the club was Seinäjoki Futis, and there was a contest about the official name, where everyone could suggest a name. The final name was Seinäjoen Jalkapallokerho, that had been suggested by many people. There was also a contest about the logo and uniform.<ref name="multiple1">{{cite web| url=http://www.tp-seinajoki.fi/uutisarkisto/115_1552.html | author = TP-Seinäjoki | title=Sepsi ja TP yhdistävät edustusjoukkueensa| access-date = 26 January 2008}} {{dead link|date=October 2020}}</ref> The registered name of the club is Seinäjoen Jalkapallokerho ry, and it was registered on January 22, 2008.<ref>{{cite web| url=http://yhdistysrekisteri.prh.fi/ryhaku.htx?kieli=1&hakuraja=0&nimi=Sein%E4joen+Jalkapallokerho+ry&kotipaikka=Sein%E4joki&ensrek=&viimrek=&osoite=&evlu=&orto=&vapaa=&sb_haku=Hae | author = Yhdistysrekisteri | title =Yhdistysrekisteri| access-date = 30 April 2008}} {{dead link|date=October 2020}}</ref> Mikko Latomäki was chosen as the first chairman. Jukka Saarijärvi was chosen as the vice chairman. Saarijärvi was a former TP-Seinäjoki chairman.
+
+===Promotion to Veikkausliiga===
+====2012–2016: Simo Valakari era====
+In 2013 SJK started its second season in [[Ykkönen]]. In 2012 SJK had been placed second. SJK made some signings for 2013, which included a Spanish [[La Masia]]  graduate [[Josu]] and Estonian [[Mihkel Aksalu]]. SJK started the season on May 4 with a 2–1 win over [[PK-35 Vantaa (men)|PK-35 Vantaa]]. SJK played [[AC Kajaani]] on June 30 and won 1–7. Kajaani made a complaint to [[Palloliitto]] about the amount of foreigners in SJK. The complaint went through and AC Kajaani was changed as the winner of the match. SJK complained about the decision and the result was again changed. AC Kajaani complained again, but later canceled it.<ref>{{cite web | url = http://yle.fi/uutiset/ac_kajaani_peruu_sjk-valituksensa/6846009 | title = AC Kajaani peruu SJK-valituksensa | author = Yle.fi | date = 24 September 2013 | access-date = 3 October 2013 | archive-date = 5 October 2013 | archive-url = https://web.archive.org/web/20131005050507/http://yle.fi/uutiset/ac_kajaani_peruu_sjk-valituksensa/6846009 | url-status = live }}</ref> After that SJK lost five matches in a row. SJK however did win eight matches in a row after that. The promotion to [[Veikkausliiga]] was confirmed on 29 September 2013 in a homematch against [[FC Haka]]. There was a record breaking attendance (4 798). The match was a 1–1 draw.
+
+SJK started the season 2014 with winning the [[Finnish League Cup|League Cup]]. SJK won the final 2–0 against local rivals [[Vaasan Palloseura]].<ref>{{cite web | url = http://yle.fi/urheilu/nousijajoukkue_valloitti_liigacupin_pohjanmaan_derbyssa/7163088 | title = Nousijajoukkue valloitti Liigacupin Pohjanmaan derbyssä | author = Yle Urheilu | date = 29 March 2014 | access-date = 29 March 2014 | archive-date = 31 March 2014 | archive-url = https://web.archive.org/web/20140331052232/http://yle.fi/urheilu/nousijajoukkue_valloitti_liigacupin_pohjanmaan_derbyssa/7163088 | url-status = live }}</ref> The season started poorly, at the end of May the club was at the eleventh place. After that SJK won seven games in a row and those results lifted SJK to the second place. [[Helsingin Jalkapalloklubi|HJK]] won the league and SJK was second. SJK was the only club to win against HJK under [[Mika Lehkosuo]]. SJK lost only two of the last 24 games. The most important players were [[Mihkel Aksalu]], the league's best defender [[Cedric Gogoua]], [[Johannes Laaksonen]] and [[Toni Lehtinen]].<ref name="urheilumuseo">{{cite web | url = http://www.urheilumuseo.fi/portals/47/veikkausliiga/seurat/sjk.htm | title = Veikkausliigan verkkonäyttely: Seinäjoen Jalkapallokerho (SJK) | author = Urheilumuseo.fi | access-date = 16 November 2015 | archive-date = 11 April 2016 | archive-url = https://web.archive.org/web/20160411001219/http://urheilumuseo.fi/portals/47/veikkausliiga/seurat/sjk.htm | url-status = dead }}</ref>
+
+For the 2015 season SJK got even stronger. There were new signings like [[Mehmet Hetemaj]] and [[Ariel Ngueukam]]. SJK was considered as the biggest challenger of HJK. SJK was at the top of the table in September. SJK won HJK 3–0 in [[Seinäjoki]]. At the end of the season SJK's biggest challenger was [[Rovaniemen Palloseura]]. SJK won the league with one point difference to RoPS. The most important players were [[Roope Riski]] and [[Liverpool FC]] loanee [[Allan (footballer, born 1997)|Allan]]. SJK was chosen as the team of the year in Finland's sports gala.<ref>{{cite web | url = http://www.hs.fi/urheilu/a1452578710578 | title = Mäkäräisen nousu sykähdyttävin urheiluhetki, Petteri Piironen vuoden valmentaja – lue tästä, ketkä kaikki palkittiin Urheilugaalassa | author = hs.fi | access-date = 16 January 2016 | archive-date = 15 January 2016 | archive-url = https://web.archive.org/web/20160115093224/http://www.hs.fi/urheilu/a1452578710578 | url-status = dead }}</ref>
+
+SJK won the [[Finnish Cup]] in 2016. It was the first time in the club's history.<ref>{{cite web|url=http://yle.fi/urheilu/3-9190005|title=SJK kukisti HJK:n Suomen Cupin finaalissa – Hetemaj ratkaisi rankkarikisan|author=yle.fi|date=24 September 2016|access-date=2016-09-24|archive-date=2016-09-27|archive-url=https://web.archive.org/web/20160927201057/http://yle.fi/urheilu/3-9190005|url-status=live}}</ref>
+
+====2017–present====
+SJK's head coach [[Simo Valakari]] was surprisingly sacked on February 17, 2017. He was replaced by [[Sixten Boström]].<ref>{{cite web | url = http://www.sjk2007.fi/w/simo-valakari-on-vapautettu-sjk-n-paavalmentajavastuusta | title = Simo Valakari on vapautettu SJK:n päävalmentajavastuusta | author = SJK | access-date = 17 February 2017 | archive-date = 24 August 2017 | archive-url = https://web.archive.org/web/20170824135507/http://www.sjk2007.fi/w/simo-valakari-on-vapautettu-sjk-n-paavalmentajavastuusta | url-status = dead }}</ref> Sixten Boström got also sacked after poor results in May and was replaced by Spanish [[José Manuel Roca]]<ref>{{cite web|url=https://www.iltalehti.fi/jalkapallo/a/201706022200180844|title=Kommentti: José Manuel Roca on SJK:n kolmas valmentaja tänä vuonna|access-date=2017-06-02|archive-date=2017-06-02|archive-url=https://web.archive.org/web/20170602101724/http://www.iltalehti.fi/jalkapallo/201706022200180844_vg.shtml|url-status=live}}</ref> Roca was sacked in September. [[SJK Akatemia]] coaches Brian Page and Toni Lehtinen did the job for the rest of the poor season.<ref>[https://www.sjk.fi/w/brian-page-ja-toni-lehtinen-vetavat-kauden-loppuun Brian Page ja Toni Lehtinen vetavat kauden loppuun.] {{Webarchive|url=https://web.archive.org/web/20190825213931/http://www.sjk.fi/w/brian-page-ja-toni-lehtinen-vetavat-kauden-loppuun |date=2019-08-25 }} SJK</ref> Under Page and Lehtinen SJK lost the [[Finnish Cup]] final to HJK.<ref>[https://www.palloliitto.fi/videot/jalkapallosarjat/kooste-respect-suomen-cup-finaali-2017 Suomen cup-finaali-2017.] {{Webarchive|url=https://web.archive.org/web/20171207135824/https://www.palloliitto.fi/videot/jalkapallosarjat/kooste-respect-suomen-cup-finaali-2017 |date=2017-12-07 }} Palloliitto</ref> [[Tommi Kautonen]] was hired as the new head coach in October 2017.<ref>[https://www.sjk.fi/w/tommi-kautonen-sjk-n-paavalmentaja-kaudesta-2018 Tommi Kautonen SJK:n päävalmentaja kaudesta 2018.] {{Webarchive|url=https://web.archive.org/web/20180808104831/https://www.sjk.fi/w/tommi-kautonen-sjk-n-paavalmentaja-kaudesta-2018 |date=2018-08-08 }} SJK</ref> The season 2018 didn't start as planned and Kautonen was sacked. He was replaced by [[Aleksei Borisovich Yeryomenko]]. Yeryomenko could save SJK from relegation.<ref>{{cite web| url = http://www.sjk.fi/w/alexei-eremenko-sr--korvaa-tommi-kautosen| title = Alexei Eremenko sr. korvaa Tommi Kautosen| author = Sjk.fi| date = 22 May 2018| access-date = 22 May 2018| archive-date = 23 May 2018| archive-url = https://web.archive.org/web/20180523010926/http://www.sjk.fi/w/alexei-eremenko-sr--korvaa-tommi-kautosen| url-status = live}}</ref> Yeryomenko continued as the head coach in 2019. SJK signed for example [[Sergei Eremenko]] and [[Moshtagh Yaghoubi]].<ref>{{cite web| url = https://www.sjk.fi/w/tervetuloa-sergei-eremenko| title = Tervetuloa Sergei Eremenko| author = Sjk.fi| date = 25 January 2019| access-date = 28 December 2019| archive-date = 28 December 2019| archive-url = https://web.archive.org/web/20191228125347/https://www.sjk.fi/w/tervetuloa-sergei-eremenko| url-status = live}}</ref><ref>{{cite web| url = https://www.sjk.fi/w/tervetuloa-kerhoon-mosa-| title = Tervetuloa Kerhoon Mosa| author = Sjk.fi| date = 31 January 2019| access-date = 28 December 2019| archive-date = 28 December 2019| archive-url = https://web.archive.org/web/20191228125344/https://www.sjk.fi/w/tervetuloa-kerhoon-mosa-| url-status = live}}</ref> SJK didn't win a single game in the group stage of the Finnish Cup in the winter.<ref>{{cite web| url = https://www.sjk.fi/w/cup-taival-paattyi-kotitasuriin| title = Cup-taival päättyi kotitasuriin| author = Sjk.fi| date = 22 February 2019| access-date = 28 December 2019| archive-date = 28 December 2019| archive-url = https://web.archive.org/web/20191228125343/https://www.sjk.fi/w/cup-taival-paattyi-kotitasuriin| url-status = live}}</ref> The Veikkausliiga-campaign started well, because SJK won in the first round for the first time ever.<ref>{{cite web| url = https://www.sjk.fi/w/veikkausliiga-kayntiin-komeasti-voitolla| title = Veikkausliiga käyntiin komeasti voitolla| author = Sjk.fi| date = 6 April 2019| access-date = 28 December 2019| archive-date = 28 December 2019| archive-url = https://web.archive.org/web/20191228125347/https://www.sjk.fi/w/veikkausliiga-kayntiin-komeasti-voitolla| url-status = live}}</ref> SJK won [[Kokkolan Pallo-Veikot|KPV]] in the end of April and was at the first place of the league.<ref>{{cite web| url = https://www.sjk.fi/w/sjk-nousi-voitolla-veikkausliigan-karkeen2| title = SJK nousi voitolla Veikkausliigan kärkeen| author = Sjk.fi| access-date = 28 December 2019| archive-date = 28 December 2019| archive-url = https://web.archive.org/web/20191228125344/https://www.sjk.fi/w/sjk-nousi-voitolla-veikkausliigan-karkeen2| url-status = dead}}</ref> Despite the good start, SJK couldn't get good results. Yeryomenko was sacked in August. The replacement was Brian Page.<ref>{{cite web| url = https://www.sjk.fi/w/sjk-n-ja-alexei-eremenkon-tiet-erkanevat| title = SJK:n ja Alexei Eremenkon tiet erkanevat| author = Sjk.fi| date = 16 August 2019| access-date = 28 December 2019| archive-date = 23 October 2019| archive-url = https://web.archive.org/web/20191023112047/https://www.sjk.fi/w/sjk-n-ja-alexei-eremenkon-tiet-erkanevat| url-status = live}}</ref> SJK didn't win any games for the rest of the season. SJK placed ninth.
+
+After the season SJK appointed [[Jani Honkavaara]] as the new head coach.<ref>{{cite web| url = https://www.sjk.fi/w/jani-honkavaara-on-sjk-n-uusi-paavalmentaja| title = Jani Honkavaara on SJK:n uusi päävalmentaja| author = Sjk.fi| date = 23 October 2019| access-date = 28 December 2019| archive-date = 28 December 2019| archive-url = https://web.archive.org/web/20191228125344/https://www.sjk.fi/w/jani-honkavaara-on-sjk-n-uusi-paavalmentaja| url-status = live}}</ref> Honkavaara signed many prolific players for the [[2020 SJK season|2020 season]], such as [[Ariel Ngueukam]], [[Robin Sid]], [[Tero Mäntylä]] and [[Niko Markkula]].<ref name="edustus">{{cite web | url = http://www.sjk2007.fi/w/edustus | title = Edustus | author = Seinäjoen Jalkapallokerho | access-date = 28 December 2019 | archive-date = 14 March 2017 | archive-url = https://web.archive.org/web/20170314082925/http://www.sjk2007.fi/w/edustus | url-status = dead }}</ref> In the winter, SJK once again could not get through from the group stage of the Finnish Cup.<ref>{{cite web|url=https://sjk.fi/uutiset/niukka-tappio-suomen-mestarin-kotihallissa/|title=Niukka tappio Suomen mestarin kotihallissa|author=Sjk.fi|date=14 February 2020|access-date=29 December 2020|archive-date=20 January 2021|archive-url=https://web.archive.org/web/20210120073050/https://sjk.fi/uutiset/niukka-tappio-suomen-mestarin-kotihallissa/|url-status=live}}</ref> As the [[Veikkausliiga]] season started in July, SJK won in the first round against [[Turun Palloseura|TPS]].<ref>{{cite web|url=https://sjk.fi/uutiset/kausi-kayntiin-voitolla-omasp-stadionilla/|title=Kausi käyntiin voitolla OmaSP Stadionilla|author=Sjk.fi|date=July 2020|access-date=29 December 2020|archive-date=19 December 2020|archive-url=https://web.archive.org/web/20201219205513/https://sjk.fi/uutiset/kausi-kayntiin-voitolla-omasp-stadionilla/|url-status=live}}</ref> SJK had a good start to the season, but the results started to get worse quite quickly.<ref>{{cite web|url=https://sjk.fi/uutiset/rikkonainen-ottelu-paattyi-viime-sekuntien-tappioon/|title=Rikkonainen ottelu päättyi viime sekuntien tappioon|author=Sjk.fi|date=22 July 2020|access-date=29 December 2020|archive-date=13 January 2021|archive-url=https://web.archive.org/web/20210113162636/https://sjk.fi/uutiset/rikkonainen-ottelu-paattyi-viime-sekuntien-tappioon/|url-status=live}}</ref> In the summer [[transfer window]] the club signed a couple of players, such as [[Jake Jervis]] and [[Emmanuel Ledesma]].<ref>{{cite web|url=https://sjk.fi/uutiset/sjkn-hyokkays-vahvistuu-kahdella-pelaajalla/|title=SJK:n hyökkäys vahvistuu kahdella pelaajalla|author=Sjk.fi|date=19 August 2020|access-date=29 December 2020|archive-date=28 October 2020|archive-url=https://web.archive.org/web/20201028060456/https://sjk.fi/uutiset/sjkn-hyokkays-vahvistuu-kahdella-pelaajalla/|url-status=live}}</ref> They proved themselves quickly and with their lead SJK could end the season somewhat brightly. SJK finished seventh, which was disappointing for the club and the supporters.<ref>{{cite web|url=https://sjk.fi/uutiset/kausi-paattyi-dramattiseen-voittoon-rovaniemella/|title=Kausi päättyi dramaattiseen voittoon Rovaniemellä|date=4 November 2020|access-date=29 December 2020|archive-date=24 November 2020|archive-url=https://web.archive.org/web/20201124170446/https://sjk.fi/uutiset/kausi-paattyi-dramattiseen-voittoon-rovaniemella/|url-status=live}}</ref> In the [[2021 Veikkausliiga|2021 season]], Honkavaara led SJK to finish 3rd in the league and win bronze medals.
+
+During the [[2022 Veikkausliiga|2022]] and [[2023 Veikkausliiga|2023]] seasons, the first team was managed by [[Joaquín Gómez (football manager) |Joaquín Gómez]]. In August 2022, club's academy product [[Daniel Håkans]] was loaned out to [[FK Jerv]] in Norwegian [[Eliteserien|top-tier]], and later acquired by Jerv on a permanent contract.
+
+On 6 March 2023, SJK officially announced a co-operation deal with [[Ghana|Ghanaian]] football academy [[Vision F.C.|Vision FC]], presented by the sporting director [[Richie Dorman]]. SJK and Vision had already worked together for a while before the announcement.<ref>{{cite web|url=https://sjk.fi/uutiset/ghanalainen-vision-fc-sjkn-yhteistyoseuraksi/|title=Ghanalainen Vision FC SJK:n yhteistyöseuraksi|date=6 March 2023|access-date=3 October 2023}}</ref> After the 2023 season, [[Terry Yegbe]], who had arrived to SJK from Vision, was acquired by [[IF Elfsborg]] for a reported transfer fee of €600.000–700.000.<ref>[https://www.mtvuutiset.fi/artikkeli/mtv-urheilun-tiedot-sjk-komeetta-siirtyy-ruotsin-huippuseuraan/8832116#gs.cldfxq MTV Urheilun tiedot: SJK-komeetta siirtyy Ruotsin huippuseuraan], mtvuutiset.fi, [[MTV Oy]], 3 December 2023</ref>
+
+For the [[2024 Veikkausliiga]] season, the reserve team head coach [[Stevie Grieve]] was appointed the manager of the first team.<ref>[https://www.veikkausliiga.com/uutiset/2023/12/04/stevie-grieve-tarttuu-sjkn-paavalmentajan-tehtaviin-suoriutui-viime-kaudella-ilmiomaisesti Stevie Grieve tarttuu SJK:n päävalmentajan tehtäviin - "Suoriutui viime kaudella ilmiömäisesti"], veikkausliiga.com, 4 December 2023</ref> However, due to his lack of required UEFA Pro-license, he worked first as an assistant coach to [[Toni Lehtinen]]. On 29 May 2024, he was named the manager officially, after he was earlier accepted to UEFA Pro-class.<ref>[https://yle.fi/a/74-20091063 SJK vaihtoi päävalmentajan paikalle aidon päävalmentajansa, kun Skotlannista tuli mieluisia uutisia], [[Yle]], 29 May 2024</ref>
+
+==Statistics==
+===Domestic history===
+{| class="wikitable" style="text-align: center"
+!width=55|Season
+!width=50|{{Tooltip|Tier|League level}}
+!width=30|{{Tooltip|Pos|Position}}
+!width=30|{{Tooltip|Pld|Played}}
+!width=30|{{Tooltip|W|Won}}
+!width=30|{{Tooltip|D|Drawn}}
+!width=30|{{Tooltip|L|Lost}}
+!width=60|For
+!width=60|Against
+!width=45|Points
+![[Finnish Cup]]
+![[Finnish League Cup|League Cup]]
+!Top goalscorer (League)<ref>{{cite web|title=Tilastot ja ennätykset|work=SJK |url=https://sjk.fi/seura/seuraennatykset-ja-tilastot/|publisher=Seinäjoen Jalkapallokerho|access-date=4 February 2016|language=fi|archive-date=15 June 2020|archive-url=https://web.archive.org/web/20200615065056/https://sjk.fi/seura/seuraennatykset-ja-tilastot/|url-status=live}}</ref>
+!Top goalscorer (All competitions)
+|-
+| [[2008 Kakkonen – Finnish League Division 2|2008]]||[[Kakkonen|3]]||'''8'''||26||10||7||9||57||37||'''37'''|| ||–||{{flagicon|FIN}} Tommi Haanpää &nbsp;– 10||-
+|-
+| [[2009 Kakkonen – Finnish League Division 2|2009]]||3||'''5'''||26||14||1||11||56||52||'''43'''||[[2009 Finnish Cup|Third round]]||–||{{flagicon|FIN}} Mikael Muurimäki &nbsp;– 14||-
+|-
+| [[2010 Kakkonen – Finnish League Division 2|2010]]||3||'''5'''||26||11||9||6||46||31||'''42'''||[[2010 Finnish Cup|Fifth Round]]||–||{{flagicon|FIN}} Mikael Muurimäki &nbsp;– 9||-
+|-
+| [[2011 Kakkonen – Finnish League Division 2|2011]]||3||style="background:gold"|'''1'''||26||22||4||0||72||14||'''70'''||[[2011 Finnish Cup|Seventh Round]]||–||{{flagicon|FIN}} [[Petter Meyer]] &nbsp;– 23||-
+|-
+| [[2012 Ykkönen|2012]] ||[[Ykkönen|2]]||style="background:silver"|'''2'''||27||14||5||8||42||29||'''47'''||[[2012 Finnish Cup|Fifth Round]]||–||{{flagicon|FIN}} [[Toni Lehtinen]]&nbsp;– 13||{{flagicon|FIN}} [[Toni Lehtinen]]&nbsp;- 14
+|-
+| [[2013 Ykkönen|2013]] ||2||style="background:gold"|'''1'''||27||18||5||4||51||17||'''59'''||[[2013 Finnish Cup|Third round]]||–||{{flagicon|FIN}} [[Toni Lehtinen]]&nbsp;– 10|| {{flagicon|FIN}} [[Toni Lehtinen]]&nbsp;– 10
+|-
+| [[2014 Veikkausliiga|2014]] ||[[Veikkausliiga|1]]||style="background:silver"|'''2'''||33||16||11||6||40||26||'''59'''||[[2014 Finnish Cup|Quarter-final]]||style="background:gold"|[[2014 Finnish League Cup|Winners]]||{{flagicon|FIN}} [[Akseli Pelvas]]&nbsp;– 11|| {{flagicon|FIN}} [[Akseli Pelvas]]&nbsp;– 12
+|-
+| [[2015 SJK season|2015]] ||1||style="background:gold"|'''1'''||33||18||6||9||50||22||'''60'''||[[2015 Finnish Cup|Fifth Round]]||[[2015 Finnish League Cup|Quarter-final]]||{{flagicon|FIN}} [[Akseli Pelvas]]&nbsp;– 14|| {{flagicon|FIN}} [[Akseli Pelvas]]&nbsp;– 20
+|-
+| [[2016 SJK season|2016]] ||1||style="background:#cc9966"|'''3'''||33||17||6||10||49||36||'''57'''||style="background:gold"|[[2016 Finnish Cup|Winners]]||style="background:silver"|[[2016 Finnish League Cup|Runners-up]]||{{flagicon|FIN}} [[Roope Riski]]&nbsp;– 17|| {{flagicon|FIN}} [[Roope Riski]]&nbsp;– 25
+|-
+| [[2017 SJK season|2017]] ||1||'''6'''||33||13||8||12||42||47||'''47'''||style="background:silver"|[[2017 Finnish Cup|Runners-up]]||–||{{flagicon|ENG}} [[Billy Ions]]&nbsp;– 12|| {{flagicon|ENG}} [[Billy Ions]]&nbsp;– 14
+|-
+| [[2018 SJK season|2018]] ||1||'''9'''||33||8||8||17||28||37||'''32'''||[[2017–18 Finnish Cup|Quarter-final]]||–||{{flagicon|FIN}} [[Johannes Laaksonen]]&nbsp;– 6|| {{flagicon|FIN}} [[Johannes Laaksonen]], {{flagicon|COD}} [[Aristote M'Boma]] &nbsp;– 6
+|-
+| [[2019 SJK season|2019]] ||1||'''9'''||27||7||9||11||18||29||'''30'''||[[2019 Finnish Cup|Group-stage]]||-||{{flagicon|UKR}} [[Denys Oliynyk]]&nbsp;- 8||{{flagicon|UKR}} [[Denys Oliynyk]]&nbsp;- 10
+|-
+| [[2020 SJK season|2020]] ||1||'''7'''||22||8||5||9||27||29||'''29'''||[[2020 Finnish Cup|Group-stage]]||-||{{flagicon|ARG}} [[Emmanuel Ledesma]]&nbsp;- 5||{{flagicon|FIN}} [[Joonas Lepistö]]&nbsp;- 6
+|-
+| [[2021 Veikkausliiga|2021]] ||1|| style="background:#cc9966"|'''3'''||27||14||6||7||45||34||'''48'''||[[2021 Finnish Cup|Quarter-final]]||-||{{flagicon|CMR}} [[Ariel Ngueukam]]&nbsp;–14|| {{flagicon|CMR}} [[Ariel Ngueukam]]&nbsp;– 14
+|-
+| [[2022 Veikkausliiga|2022]] ||1||'''6'''||27||10||5||12||33||38||'''35'''||[[2022 Finnish Cup|Quarter-final]]||[[Finnish League Cup|Semi-final]]||{{flagicon|ENG}} [[Jake Jervis]]&nbsp;–6|| {{flagicon|ENG}} [[Jake Jervis]]&nbsp;– 10
+|-
+| [[2023 Veikkausliiga|2023]]||1||'''4'''||27||12||6||9||35||33||'''42'''||[[2023 Finnish Cup|Fourth round]]||[[Finnish League Cup|Group-stage]]|| {{flagicon|NCA}} [[Jaime Moreno (footballer, born 1995)|Jaime Moreno]]&nbsp;–11|| {{flagicon|NCA}} [[Jaime Moreno (footballer, born 1995)|Jaime Moreno]]&nbsp;– 12
+|-
+| [[2024 Veikkausliiga|2024]]||1||'''4'''||27||11||7||9||46||44||'''40'''||[[2024 Finnish Cup|Semi-final]]||[[Finnish League Cup|Group-stage]]|| {{flagicon|NCA}} [[Jaime Moreno (footballer, born 1995)|Jaime Moreno]]&nbsp;-12|| {{flagicon|NCA}} [[Jaime Moreno (footballer, born 1995)|Jaime Moreno]]&nbsp;- 22
+|-
+| [[2025 Veikkausliiga|2025]]||1||'''4'''||32||17||8||7||70||51||'''59'''||[[2025 Finnish Cup|Quarter-final]]||[[Finnish League Cup|Group-stage]]|| {{flagicon|FIN}} [[Kasper Paananen]]&nbsp;-18|| {{flagicon|FIN}} [[Kasper Paananen]]&nbsp;- 19
+|}
+
+===European history===
+
+:''Accurate as of 17 July 2025''
+
+{| class="wikitable sortable" style="text-align: center"
+|-
+!Competition!!Played!!Won!!Drew!!Lost!!GF!!GA!!GD!!Win%
+|-
+|align=left|{{sort|3|[[UEFA Champions League]]}}
+{{WDL|2|0|1|1|for=2|against=4|diff=yes}}
+|-
+|align=left|{{sort|3|[[UEFA Europa League]]}}
+{{WDL|4|0|1|3|for=0|against=4|diff=yes}}
+|-
+|align=left|{{sort|3|[[UEFA Europa Conference League]]}}
+{{WDL|4|1|0|3|for=6|against=9|diff=yes}}
+|}
+Legend: GF = Goals For. GA = Goals Against. GD = Goal Difference.
+
+{| class="wikitable" style="text-align:left"
+|-
+! Season
+! Competition
+! Round
+! Opponent
+! Home
+! Away
+! Aggregate
+!
+|-
+| [[2015–16 UEFA Europa League|2015–16]]
+| [[UEFA Europa League]]
+| [[2015–16 UEFA Europa League#First qualifying round|1Q]]
+| {{flagicon|Iceland}} [[Fimleikafélag Hafnarfjarðar|FH]]
+| style="text-align:center;"| 0–1
+| style="text-align:center;"| 0–1
+| style="text-align:center;"| '''0–2'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2016–17 UEFA Champions League|2016–17]]
+| [[UEFA Champions League]]
+| [[2016–17 UEFA Champions League#Second qualifying round|2Q]]
+| {{flagicon|Belarus}} [[FC BATE Borisov|BATE Borisov]]
+| style="text-align:center;"| 2–2
+| style="text-align:center;"| 0–2
+| style="text-align:center;"| '''2–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2017–18 UEFA Europa League|2017–18]]
+| [[UEFA Europa League]]
+| [[2017–18 UEFA Europa League#First qualifying round|1Q]]
+| {{flagicon|Iceland}} [[Knattspyrnufélag Reykjavíkur|KR Reykjavík]]
+| style="text-align:center;"| 0–2
+| style="text-align:center;"| 0–0
+| style="text-align:center;"| '''0–2'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| rowspan=2|[[2022–23 UEFA Europa Conference League|2022–23]]
+| rowspan=2|[[UEFA Europa Conference League]]
+| [[2022–23 UEFA Europa Conference League#First qualifying round|1Q]]
+| {{flagicon|Estonia}} [[FC Flora|Flora]]
+| style="text-align:center;"| 4–2 {{aet}}
+| style="text-align:center;"| 0–1
+| style="text-align:center;"| '''4–3'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+| [[2022–23 UEFA Europa Conference League#Second qualifying round|2Q]]
+| {{flagicon|Norway}} [[Lillestrøm SK|Lillestrøm]]
+| style="text-align:center;"| 0–1
+| style="text-align:center;"| 2–5
+| style="text-align:center;"| '''2–6'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2025–26 UEFA Conference League|2025–26]]
+| [[UEFA Conference League]]
+| [[2025–26 UEFA Conference League#First qualifying round|1Q]]
+| {{flagicon|Faroe Islands}} [[Klaksvíkar Ítróttarfelag|KÍ Klaksvík]]
+| style="text-align:center;"| 1–2
+| style="text-align:center;"| 0–2
+| style="text-align:center;"| '''1–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|}
+
+;Notes
+* '''1Q''': First qualifying round
+* '''2Q''': Second qualifying round
+
+==Stadium and sponsors==
+
+===Stadium===
+[[File:OmaSp Stadion 17.6.2017.jpg|260px|thumb|[[OmaSP Stadion]]]]
+{{main|OmaSP Stadion}}
+SJK play their home matches at [[OmaSP Stadion]]. Previously SJK played their home matches at [[Seinäjoen keskuskenttä]].
+
+In 2010, it was reported for the first time that SJK were planning a [[OmaSP Stadion|new football stadium]]. Eventually, in autumn 2014 it was announced that the construction of SJK's [[OmaSP Stadion|new stadium]] would start soon. The construction began in summer 2015 and the new stadium was completed in June 2016.<ref>{{cite web|url=http://stadiumdb.com/designs/fin/seinajoki_stadion|title=Design: Seinäjoki Stadion – StadiumDB.com|work=stadiumdb.com|access-date=9 March 2017|archive-date=21 June 2016|archive-url=https://web.archive.org/web/20160621054946/http://stadiumdb.com/designs/fin/seinajoki_stadion|url-status=live}}</ref> Stadium has a capacity of 5817 seats.
+
+SJK play their friendlies and cup matches during the winter at [[Wallsport Areena]] which is an indoor training facility owned and operated by the team.
+
+===Kit suppliers and shirt sponsors===
+{{updated|26 March 2025}}<ref>{{cite web|title=SJK|url=https://sjk.fi/yrityksille/yhteistyossa/|website=sjk.fi|publisher=SJK|access-date=11 September 2020|archive-date=19 September 2020|archive-url=https://web.archive.org/web/20200919142810/https://sjk.fi/yrityksille/yhteistyossa/|url-status=live}}</ref>
+
+{| class="wikitable" style="text-align: center"
+|-
+! Period
+! Kit manufacturer
+! Shirt sponsors
+!Ref
+|-
+| 2008–2009
+| | {{flagicon|England}} Umbro
+| | [[Nordea]], S-Market
+|
+|-
+| 2010–2011
+| rowspan=15| {{flagicon|Germany}} Adidas
+| | Nordea, [[Carlsberg Group|Carlsberg]], Eepee
+|
+|-
+| 2012
+| Kotijoukkue, Prisma
+|
+|-
+| 2013
+| Kotijoukkue, [[LähiTapiola]], ABC, [[Sokos Hotels]]
+|
+|-
+| 2014
+| Conline, Ilkka, [[LähiTapiola]], GapCon, [[Sokos Hotels]]
+|
+|-
+| 2015
+| Conline, Kotijoukkue, [[LähiTapiola]], EPPK, ABC, [[Sokos Hotels]]
+|
+|-
+| 2016
+| Conline, Kotijoukkue, [[LähiTapiola]], EPPK, Prima Power
+|
+|-
+| 2017
+| FinCap, I-Print, OmaSp, [[LähiTapiola]], Prima Power, [[Elisa (company)|Elisa]]
+|
+|-
+| 2018
+| Visura, ProPrint, [[Peab]], [[LähiTapiola]], OmaSp, [[Elisa (company)|Elisa]]
+| rowspan="5" |<ref>{{Cite web |title=SJK Seinäjoki Kit History |url=https://www.footballkitarchive.com/sjk-seinajoki-kits/ |access-date=2023-03-14 |website=Football Kit Archive |language=en |archive-date=2023-03-14 |archive-url=https://web.archive.org/web/20230314111726/https://www.footballkitarchive.com/sjk-seinajoki-kits/ |url-status=live }}</ref>
+|-
+| 2019
+| [[Atria (company)|Atria]], ProPrint, [[Peab]], [[LähiTapiola]], OmaSp, [[Elisa (company)|Elisa]]
+|-
+| 2020
+| [[Atria (company)|Atria]], ProPrint, [[LähiTapiola]], OmaSp, [[Elisa (company)|Elisa]]
+|-
+| 2021
+| [[Atria (company)|Atria]], ProPrint, Ilkka-Pohjalainen, [[LähiTapiola]], OmaSp, [[Elisa (company)|Elisa]]
+|-
+| 2022-2023
+| Ilkka-Pohjalainen, ProPrint, Lecklé, [[LähiTapiola]], OmaSp, Pihlajalinna
+|-
+| 2024
+| [[Seinäjoki]], ProPrint, Lecklé, [[LähiTapiola]], OmaSp, Pihlajalinna
+| rowspan="2" |<ref>{{Cite web |title=Materiaalipankki|url= https://www.veikkausliiga.com/veikkausliiga/materiaalipankki |access-date=2024-12-23 |website=Veikkausliiga |language=fi }}</ref>
+|-
+| 2025
+| [[LähiTapiola]], OmaSp, ProPrint, Pihlajalinna
+
+|}
+
+==Honours==
+*'''[[Veikkausliiga]]'''
+** [[Image:Gold medal icon.svg|15px]] '''Winners (1):''' [[2015 Veikkausliiga|2015]]
+** [[Image:Silver medal icon.svg|15px]] Runners-up (1): [[2014 Veikkausliiga|2014]]
+** [[Image:Bronze medal icon.svg|15px]] 3rd place (2): [[2016 Veikkausliiga|2016]], [[2021 Veikkausliiga|2021]]
+*'''[[Finnish Cup]]'''
+** [[Image:Gold medal icon.svg|15px]] '''Winners (1):''' [[2016 Finnish Cup|2016]]
+** [[Image:Silver medal icon.svg|15px]] Runners-up (1): [[2016–17 Finnish Cup|2017]] 
+*'''[[Finnish League Cup]]'''
+** [[Image:Gold medal icon.svg|15px]] '''Winners (1):''' [[2014 Finnish League Cup|2014]]
+** [[Image:Silver medal icon.svg|15px]] Runners-up (1): [[2016 Finnish League Cup|2016]]
+
+==Transfers==
+SJK have invested in their academy system, and has produced a fair amount of young Finnish and international players for [[Veikkausliiga]] and for transfers abroad.
+
+===Record transfers===
+{|border="0" class="wikitable"
+!! style="color:gold; background:black;"|Rank
+!! style="color:gold; background:black;"|Player
+!! style="color:gold; background:black;"|To
+!! style="color:gold; background:black;"|Fee
+!! style="color:gold; background:black;"|Year
+|-
+|1.||{{flagicon|GHA}} [[Terry Yegbe]]||{{flagicon|SWE}} [[IF Elfsborg|Elfsborg]]||€950,000||2024<ref>[https://www.mtvuutiset.fi/artikkeli/mtv-urheilun-tiedot-sjk-komeetta-siirtyy-ruotsin-huippuseuraan/8832116 MTV Urheilun tiedot: SJK-komeetta siirtyy Ruotsin huippuseuraan], mtvuutiset.fi, [[MTV Oy]], 3 December 2023</ref>
+|-
+|2.||{{flagicon|CIV}} [[Cedric Gogoua]]||{{flagicon|SRB}} [[FK Partizan|Partizan]]||€300,000||2016<ref>[https://www.is.fi/veikkausliiga/art-2000001067004.html Veikkausliigan tähtipelaajan ura jatkuu eurooppalaisessa suurseurassa], [[Ilta-Sanomat]], 16 January 2016</ref>
+|-
+|3.||{{flagicon|FIN}} [[Daniel Håkans]]||{{flagicon|NOR}} [[FK Jerv|Jerv]]||€210,000||2023
+|-
+|4.||{{flagicon|FIN}} [[Dario Naamo]]||{{flagicon|AUT}} [[SKN St. Pölten|St. Pölten]]||€200,000||2024<ref>[https://www.mtvuutiset.fi/artikkeli/suomen-huippulupaus-siirtyy-ulkomaille-veikkausliiga-seura-loi-rahoiksi/9002964 Suomen huippulupaus siirtyy ulkomaille – Veikkausliiga-seura löi rahoiksi], mtvuutiset.fi, [[MTV Oy]], 6 September 2024</ref>
+|-
+|5.||{{flagicon|MAS}} [[Nooa Laine]]||{{flagicon|MAS}} [[Selangor F.C.|Selangor]]||€160,000||2024
+|}
+
+==Players==
+===First team squad===
+{{updated|27 August 2026}}<ref>{{cite web|title=SJK|url=https://sjk.fi/joukkueet/sjk/|website=sjk.fi|publisher=SJK|access-date=19 May 2020|archive-date=15 June 2020|archive-url=https://web.archive.org/web/20200615063212/https://sjk.fi/joukkueet/sjk/|url-status=live}}</ref><ref>{{Cite web |url= https://sjk.fi/uutiset/sjk-valitsi-kapteenistonsa/ |title= SJK valitsi kapteenistonsa |date= 15 April 2023 |access-date= 1 April 2023 |archive-date= 1 April 2023 |archive-url= https://web.archive.org/web/20230401061259/https://sjk.fi/uutiset/sjk-valitsi-kapteenistonsa/ |url-status= live }}</ref><ref>[https://sjk.fi/uutiset/katsaus-pelaajasopimustilanteeseen/ Katsaus pelaajasopimustilanteeseen], sjk</ref>
+{{Fs start}}
+{{Fs player|no= 1|nat= FIN |name=[[Roope Paunio]]|pos=GK|other=[[Captain (association football)|Captain]]}}
+{{Fs player|no= 2|nat= ARG |name=Facundo Costantini|pos=DF}}
+{{Fs player|no= 4|nat= CPV |name=[[Kelvin Pires]]|pos=DF}}
+{{Fs player|no= 5|nat= FIN |name=[[Oskari Väistö]]|pos=DF|other=[[Captain (association football)|3rd captain]]}}
+{{Fs player|no= 6|nat= GHA |name=[[Salim Yussif]]|pos=MF}}
+{{Fs player|no= 7|nat= BRA |name=Kelwin Sousa|pos=FW}}
+{{Fs player|no= 8|nat= FIN |name=Aapo Boström|pos=MF}}
+{{Fs player|no= 9|nat= FIN |name=[[Jeremiah Streng]]|pos=FW}}
+{{Fs player|no=11|nat= FIN |name=[[Albin Björkskog]]|pos=FW}}
+{{Fs player|no=14|nat= BRA |name=[[Murilo (footballer, born December 1995)|Murilo]]|pos=DF}}
+{{Fs player|no=15|nat= FIN |name=[[Eetu Mömmö]]|pos=DF|other=[[Captain (association football)|4th captain]]}}
+{{Fs player|no=17|nat= FIN |name=[[Vertti Hänninen]]|pos=MF}}
+{{Fs player|no=19|nat= FIN |name=[[Elias Mastokangas]]|pos=FW|other=[[Captain (association football)|vice-captain]]}}
+{{Fs player|no=21|nat= FIN |name=[[Danila Bulgakov]]|pos=FW}}
+{{fs mid}}
+{{Fs player|no=22|nat= FIN |name=Leon Vesterbacka|pos=MF}}
+{{Fs player|no=23|nat= CAN |name=[[Armaan Wilson]]|pos=MF}}
+{{Fs player|no=26|nat= FIN |name=[[Jaakko Moisio]]|pos=DF}}
+{{Fs player|no=27|nat= GRE |name=[[Apostolos Vellios]]|pos=FW}}
+{{Fs player|no=28|nat= SWE |name=Karlson Nwanege|pos=DF|other=on loan from [[Hellas Verona FC|Verona]]}}
+{{Fs player|no=30|nat= ZIM |name=[[Prosper Padera]]|pos=MF}}
+{{Fs player|no=31|nat= FIN |name=[[Eze Onuoha]]|pos=MF}}
+{{Fs player|no=33|nat= FIN |name=[[Aniis Machaal]]|pos=MF}}
+{{Fs player|no=35|nat= FIN |name=[[Johannes Viitala]]|pos=GK}}
+{{Fs player|no=42|nat= BRA |name=Caio|pos=MF}}
+{{Fs player|no=51|nat= CIV |name=Aziz Cissé|pos=FW}}
+{{Fs player|no=60|nat= NGA |name=Samuel James|pos=GK}}
+{{Fs player|no=  |nat= CIV |name=Amidou Traoré|pos=MF}}
+{{Fs player|no= |nat= NGA |name=Ekerette Udom|pos=DF}}
+{{Fs end}}
+
+===Out on loan===
+{{Fs start}}
+{{Fs player|no=10|nat= FIN |name=[[Kasper Paananen]]|pos=FW|other=at [[Kalmar FF]] until 30 June 2027}}
+{{Fs player|no=70|nat= HON |name=[[Alenis Vargas]]|pos=FW|other=at [[Manisa FK]] until 30 June 2027}}
+{{Fs end}}
+
+==SJK Akatemia==
+{{main|SJK Akatemia}}
+===Reserve team squad===
+{{Updated|16 March 2026}}<ref>{{cite web|publisher=Football Association of Finland|title=SJK Akatemia squad|url=https://tulospalvelu.palloliitto.fi/team/168874/players|accessdate=2 April 2023}}</ref>
+{{Fs start}}
+{{Fs player|no=2|nat=FIN|name=Topi Mustonen|pos=DF}}
+{{Fs player|no=3|nat=FIN|name=Oskari Raiski|pos=DF}}
+{{Fs player|no=5|nat=FIN|name=Eero Lehto|pos=DF}}
+{{Fs player|no=6|nat=GHA|name=Sayibu Yakubu|pos=DF}}
+{{Fs player|no=7|nat=FIN|name=Elari Hautamäki|pos=FW}}
+{{Fs player|no=11|nat=FIN|name=Noah Rantasalmi|pos=MF}}
+{{Fs player|no=14|nat=SSD|name=Ngong Madut|pos=FW}}
+{{Fs player|no=15|nat=FIN|name=Elias Hyytinen|pos=FW}}
+{{Fs player|no=17|nat=FIN|name=Sander Korsunov|pos=FW}}
+{{Fs player|no=18|nat=FIN|name=Leon Vesterbacka|pos=MF}}
+{{Fs player|no=19|nat=FIN|name=Ronal Malik|pos=DF}}
+{{Fs player|no=21|nat=FIN|name=Lucas Kyllönen|pos=DF}}
+{{Fs player|no=22|nat=FIN|name=Taavi Kangaskokko|pos=FW}}
+{{Fs player|no=25|nat=FIN|name=Niki Hasselman|pos=GK}}
+{{Fs player|no=26|nat=FIN|name=Adam Zahedi|pos=DF}}
+{{Fs player|no=27|nat=FIN|name=Jore Nikkilä|pos=MF}}
+{{Fs player|no=28|nat=FIN|name=Abdu Muchipay|pos=FW}}
+{{Fs player|no=29|nat=FIN|name=Noah Rantasalmi|pos=MF}}
+{{Fs player|no=33|nat=FIN|name=Adrian Hernandez|pos=DF}}
+{{fs mid}}
+{{Fs player|no=35|nat=FIN|name=Ronal Malik|pos=DF}}
+{{Fs player|no=36|nat=FIN|name=Iiro Kangasniemi|pos=DF}}
+{{Fs player|no=38|nat=FIN|name=Aatu Piiroinen|pos=FW}}
+{{Fs player|no=40|nat=FIN|name=Lassi Harju|pos=DF}}
+{{Fs player|no=41|nat=FIN|name=Ilmari Moilanen|pos=DF}}
+{{Fs player|no=46|nat=FIN|name=Oliver Eteläaho|pos=MF}}
+{{Fs player|no=47|nat=FIN|name=Elias Liettyä|pos=MF}}
+{{Fs player|no=48|nat=FIN|name=Lassi Rintamäki|pos=FW}}
+{{Fs player|no=50|nat=FIN|name=Hermanni Honkola|pos=FW}}
+{{Fs player|no=54|nat=FIN|name=Luka Kuusisto|pos=MF}}
+{{Fs player|no=60|nat=NGA|name=Samuel James|pos=GK}}
+{{Fs player|no=  |nat=FIN|name=Topias Töllinen|pos=DF}}
+{{Fs player|no=  |nat=FIN|name=Eerik Salmivuori|pos=DF}}
+{{Fs player|no=  |nat=FIN|name=Aatu Hakala|pos=MF}}
+{{Fs end}}
+
+===Out on loan===
+{{Fs start}}
+{{Fs end}}
+
+==Management and boardroom==
+
+===Management===
+''As of 27 August 2026''<ref>{{cite web|url=https://www.sjk.fi/w/edustus|publisher=SJK|language=fi|access-date=5 February 2018|title=Valmentajat|archive-date=9 January 2020|archive-url=https://web.archive.org/web/20200109014841/https://www.sjk.fi/w/edustus|url-status=live}}</ref><ref>{{Cite web|url =https://sjk.fi/uutiset/joaquin-gomez-jatkaa-uraansa-toisaalla/ |title = Joaquín Gómez jatkaa uraansa toisaalla|date = 28 October 2023|access-date = 28 October 2023}}</ref><ref>{{Cite web|url=https://sjk.fi/uutiset/akatemia-valmistautuu-miesten-ykkoseen-ja-nuorten-sm-karsintaan/|title=Akatemia valmistautuu miesten Ykköseen ja nuorten SM-karsintaan|date=3 December 2021|access-date=16 December 2021|archive-date=16 December 2021|archive-url=https://web.archive.org/web/20211216103241/https://sjk.fi/uutiset/akatemia-valmistautuu-miesten-ykkoseen-ja-nuorten-sm-karsintaan/|url-status=live}}</ref><ref>{{cite web | url= https://sjk.fi/uutiset/pelaajakehityksen-uusi-aikakausi-selkea-malli-nuorten-pelaajien-kasvattamiseen/ | title= Pelaajakehityksen uusi aikakausi – Selkeä malli nuorten pelaajien kasvattamiseen | date=1 December 2025 }}</ref><ref>{{cite web | url= https://sjk.fi/uutiset/tuore-suomenmestari-jarkko-wiss-on-sjkn-uusi-paavalmentaja/ | title= Tuore suomenmestari Jarkko Wiss on SJK:n uusi päävalmentaja | date=30 November 2025 }}</ref>
+{|
+|-
+|valign="top"|
+{| class="wikitable"
+|-
+!Name
+
+!Role
+|-
+|{{Flag icon|FIN}} [[Jarkko Wiss]]
+|Head coach
+|-
+|{{Flag icon|FIN}} [[Toni Lehtinen]]
+|Assistant coach
+|-
+|{{Flag icon|IND}} Sacha Navalkar
+|Video Analyst
+|-
+|{{Flag icon|BRA}} [[Luís Fernando da Silva|Luís Fernando]]
+|Goalkeeping coach
+|-
+|{{Flag icon|FIN}} Mikko Kujala
+|Fitness coach
+|-
+|{{Flag icon|FIN}} Tiitus Lehtinen
+|Physiotherapist
+|-
+|{{Flag icon|FIN}} Pekka Lehtinen
+|Team Manager
+|-
+|{{Flag icon|FIN}} Ranno Kukk
+|Doctor
+|-
+|{{Flag icon|BRA}} Adriel Gabilan
+|Technical Director
+|-
+|{{Flag icon|FIN}} Arttu Aromaa
+|Head of Academy
+|-
+|{{Flag icon|POR}} [[Paulo Lopes (footballer)|Paulo Lopes]]
+|[[SJK Akatemia]] Head coach
+|-
+|{{Flag icon|UKR}} [[Denys Oliynyk]]
+|SJK Akatemia/2 Head coach
+|}
+|}
+
+===Boardroom===
+''As of 18 June 2025''<ref>{{cite web |url=https://sjk.fi/kontakti/ |publisher=SJK |language=fi |access-date=20 November 2020 |title=Kontakti |archive-date=29 September 2020 |archive-url=https://web.archive.org/web/20200929165116/https://sjk.fi/kontakti/ |url-status=live }}</ref>
+{|
+|-
+|valign="top"|
+{| class="wikitable"
+|-
+!Name
+
+!Role
+|-
+|{{Flag icon|FIN}} Raimo Sarajärvi
+|Chairman
+|-
+|{{Flag icon|BRA}} Adriel Gabilan
+|Technical director
+|-
+|{{Flag icon|FIN}} Elina Paavola
+|Finance Manager
+|-
+|{{Flag icon|FIN}} Joonas Kuivalainen
+|Sales Manager
+|-
+|{{Flag icon|FIN}} Joonas Kuivalainen
+|Sales Negotiator
+|-
+|{{Flag icon|FIN}} Tommi Kilpiö
+|Marketing
+|}
+|}
+
+==Records and notable stats==
+
+===Club Records===
+
+* '''Biggest home win:''' SJK 8–1 TUS (30 May 2008), SJK 7-0 [[Kokkolan Palloveikot|KPV]] (11 June 2025)
+* '''Biggest away win:''' RoPo 0-8 SJK (15 April 2024)
+* '''Biggest home loss:''' SJK 0–6 [[Helsingin Jalkapalloklubi|HJK]] (10 August 2017)
+* '''Biggest away loss:''' [[Helsingin Jalkapalloklubi|HJK]] 6–0 SJK (31 May 2017)
+* '''Most consecutive matches without lost:''' 44 (18 August 2010 – 30 May 2012)
+* '''Most consecutive wins:''' 9 (11 July 2011 – 27 August 2011)
+* '''Most consecutive losses:''' 5 (8 April 2022 – 7 May 2022)
+
+===Individual Records===
+
+* '''Most appearances:''' {{flagicon|Estonia}} [[Mihkel Aksalu]] (221)
+* '''Most goals:''' {{flagicon|Finland}} [[Toni Lehtinen]] (39)
+* '''Most league appearances:''' {{flagicon|Estonia}} [[Mihkel Aksalu]] (158)
+* '''Most league goals:''' {{flagicon|Finland}} [[Kasper Paananen]] (30)
+* '''Most cup appearances:''' {{flagicon|Finland}} [[Mehmet Hetemaj]] (33)
+* '''Most cup goals:''' {{flagicon|Finland}} [[Jeremiah Streng]] (8)
+* '''Most European competition appearances:''' {{flagicon|Finland}} [[Mehmet Hetemaj]] (10)
+* '''Most European competition goals:''' {{flagicon|England}} [[Jake Jervis]] (3)
+* '''Most capped Finnish player:''' {{flagicon|Finland}} [[Alexei Eremenko]]&nbsp;- 61 caps
+* '''Most capped foreign player:''' {{flagicon|Andorra}} [[Marc Vales]] – 103 caps
+
+===Most appearances===
+{{updated|16 March 2025}}
+{| class="wikitable"
+|-
+! # !! Name !! Matches !! Goals
+|-
+| '''1''' || {{flagicon|EST}} [[Mihkel Aksalu]] || 221 || 0
+|-
+| '''2''' || {{flagicon|FIN}} [[Mehmet Hetemaj]] || 207 || 22
+|-
+| '''3''' || {{flagicon|FIN}} [[Johannes Laaksonen]] || 200 || 18
+|-
+| '''4''' || {{flagicon|WAL}} [[Richie Dorman]] || 168 || 7
+|-
+| '''5''' || {{flagicon|FIN}} [[Ville Tikkanen (footballer)|Ville Tikkanen]] || 159 || 4
+|-
+| '''6''' || {{flagicon|FIN}} ''[[Jeremiah Streng]]'' ||136 || 35
+|-
+| '''7''' || {{flagicon|CMR}} [[Ariel Ngueukam]] || 133 || 36
+|-
+| '''8''' || {{flagicon|FIN}} [[Matej Hradecky]] || 131 || 9
+|-
+| '''9''' || {{flagicon|FIN}} [[Timo Tahvanainen]] || 128 || 4
+|-
+| '''10''' || {{flagicon|FIN}} [[Pyry Hannola]] || 127 || 8
+|}
+
+===Club captains===
+{| class="wikitable"
+|-
+!Name
+!Nat
+!Period
+|-
+| Juha-Pekka Salminen<ref>{{Cite web|url=https://sjk.fi/uutiset/pavlesta-sjk-kapteeni/|title=Pavlesta SJK kapteeni|date=26 March 2014|access-date=21 December 2020|archive-date=13 August 2022|archive-url=https://web.archive.org/web/20220813143806/https://sjk.fi/uutiset/pavlesta-sjk-kapteeni/|url-status=live}}</ref>
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2008
+|-
+| Petri Niemi<ref>{{Cite web|url=https://sjk.fi/uutiset/pavlesta-sjk-kapteeni/|title=Pavlesta SJK kapteeni|date=26 March 2014|access-date=21 December 2020|archive-date=13 August 2022|archive-url=https://web.archive.org/web/20220813143806/https://sjk.fi/uutiset/pavlesta-sjk-kapteeni/|url-status=live}}</ref>
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2009
+|-
+| Ville Ylinen<ref>{{Cite web|url = https://sjk.fi/uutiset/ylinen-kipparoi-kerhoa/|title = Ylinen kipparoi Kerhoa|date = 3 April 2010|access-date = 21 December 2020|archive-date = 17 August 2022|archive-url = https://web.archive.org/web/20220817125959/https://sjk.fi/uutiset/ylinen-kipparoi-kerhoa/|url-status = live}}</ref>
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2010
+|-
+| [[Chris Cleaver]]<ref>{{Cite web|url=https://sjk.fi/uutiset/virallisesti-kapteeni/|title=Virallisesti kapteeni|date=7 April 2011|access-date=21 December 2020|archive-date=13 August 2022|archive-url=https://web.archive.org/web/20220813161353/https://sjk.fi/uutiset/virallisesti-kapteeni/|url-status=live}}</ref>
+| style="text-align:center;"| {{Flagicon|ENG}}
+| style="text-align:center;"| 2011–2013
+|-
+| [[Pavle Milosavljević]]<ref>{{Cite web|url=https://sjk.fi/uutiset/pavlesta-sjk-kapteeni/|title=Pavlesta SJK kapteeni|date=26 March 2014|access-date=21 December 2020|archive-date=13 August 2022|archive-url=https://web.archive.org/web/20220813143806/https://sjk.fi/uutiset/pavlesta-sjk-kapteeni/|url-status=live}}</ref>
+| style="text-align:center;"| {{Flagicon|SRB}}
+| style="text-align:center;"| 2014–2015
+|-
+| [[Mihkel Aksalu]]<ref>{{Cite web|url = https://sjk.fi/uutiset/sjkn-kauden-2016-kapteenisto-selvilla/|title = SJK:n kauden 2016 kapteenisto selvillä|date = 11 March 2016|access-date = 21 December 2020|archive-date = 13 August 2022|archive-url = https://web.archive.org/web/20220813191900/https://sjk.fi/uutiset/sjkn-kauden-2016-kapteenisto-selvilla/|url-status = live}}</ref>
+| style="text-align:center;"| {{Flagicon|EST}}
+| style="text-align:center;"| 2016–2018
+|-
+| [[Mehmet Hetemaj]]<ref>{{Cite web|url = https://sjk.fi/uutiset/hetemaj-on-sjkn-kapteeni-kaudella-2019/|title = Hetemaj on SJK:n kapteeni kaudella 2019|date = 12 March 2019|access-date = 21 December 2020|archive-date = 17 July 2020|archive-url = https://web.archive.org/web/20200717043502/https://sjk.fi/uutiset/hetemaj-on-sjkn-kapteeni-kaudella-2019/|url-status = live}}</ref>
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2019–2022
+|-
+| [[Matej Hradecky]]<ref>{{Cite web|url=https://sjk.fi/uutiset/sjk-valitsi-kapteenistonsa/|title=SJK valitsi kapteenistonsa|date=28 March 2023|access-date=1 April 2023|archive-date=1 April 2023|archive-url=https://web.archive.org/web/20230401061259/https://sjk.fi/uutiset/sjk-valitsi-kapteenistonsa/|url-status=live}}</ref>
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2023
+|-
+| [[Ville Tikkanen (footballer)|Ville Tikkanen]]
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2024
+|-
+| [[Rasmus Karjalainen]]
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2025
+|-
+| [[Markus Arsalo]]
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2026
+|-
+| [[Roope Paunio]]
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2026-
+|}
+
+===Supporters player of the year=== 
+<ref>{{Cite web|url = https://sjk.fi/uutiset/kloppien-kannun-sai-ville-tikkanen/?_gl=1*ynicvg*_up*MQ..*_ga*MTE0NTI0OTM3LjE2OTg0OTU4Nzc.*_ga_7SJMXLJDLW*MTY5ODQ5NTg3Ni4xLjAuMTY5ODQ5NTg3Ni4wLjAuMA.. |title = Kloppien kannun sai Ville Tikkanen|date = 27 October 2023|access-date = 28 October 2023}}</ref>
+{| class="wikitable"
+|-
+!Name
+!Nat
+!Period
+|-
+| Jani Asuintupa
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2008
+|-
+| Ville Pajula
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2009
+|-
+| Ville Pajula
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2010
+|-
+| Aki Sipilä
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2011
+|-
+| Patrik Lomski
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2012
+|-
+| [[Pavle Milosavljević]]
+| style="text-align:center;"| {{Flagicon|SRB}}
+| style="text-align:center;"| 2013
+|-
+| [[Cedric Gogoua]]
+| style="text-align:center;"| {{Flagicon|CIV}}
+| style="text-align:center;"| 2014
+|-
+| [[Mihkel Aksalu]]
+| style="text-align:center;"| {{Flagicon|EST}}
+| style="text-align:center;"| 2015
+|-
+| [[Roope Riski]]
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2016
+|-
+| [[Mehmet Hetemaj]]
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2017
+|-
+| [[Johannes Laaksonen]]
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2018
+|-
+| [[Denys Oliynyk]]
+| style="text-align:center;"| {{Flagicon|UKR}}
+| style="text-align:center;"| 2019
+|-
+| [[Emmanuel Ledesma]]
+| style="text-align:center;"| {{Flagicon|ARG}}
+| style="text-align:center;"| 2020
+|-
+| [[Ville Tikkanen (footballer)|Ville Tikkanen]]
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2021
+|-
+| [[Jake Jervis]]
+| style="text-align:center;"| {{Flagicon|ENG}}
+| style="text-align:center;"| 2022
+|-
+| [[Ville Tikkanen (footballer)|Ville Tikkanen]]
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2023
+|-
+| [[Rasmus Karjalainen]]
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2024
+|-
+| [[Kasper Paananen]]
+| style="text-align:center;"| {{Flagicon|FIN}}
+| style="text-align:center;"| 2025
+|}
+
+===SJK All Stars===
+In April 2020, SJK fans participated in a fan vote selecting their 11 favourite SJK players from the 2014-2019-seasons.<ref>Archived at [https://ghostarchive.org/varchive/youtube/20211205/JhGWjB_n6ik Ghostarchive]{{cbignore}} and the [https://web.archive.org/web/20210726095212/https://www.youtube.com/watch?v=JhGWjB_n6ik Wayback Machine]{{cbignore}}: {{cite web| url = https://www.youtube.com/watch?v=JhGWjB_n6ik| title = SJK XI – Veikkausliiga 2014–2019 | website=[[YouTube]]| date = 24 April 2020 }}{{cbignore}}</ref>
+
+{{football squad on pitch|align=left
+|  GK_nat = Estonia|  GK = [[Mihkel Aksalu|Aksalu]]
+|  RB_nat = Wales|  RB = [[Richie Dorman|Dorman]]
+| RCB_nat = Serbia| RCB = [[Pavle Milosavljević|Milosavljević]]
+| LCB_nat = Ivory Coast| LCB = [[Cedric Gogoua|Gogoua]]
+|  LB_nat = Finland|  LB = [[Timo Tahvanainen|Tahvanainen]]
+| RCM_nat = Finland| RCM = [[Johannes Laaksonen|Laaksonen]]
+|  AM_nat = Ukraine|  AM = [[Denys Oliynyk|Oliynyk]]
+| LCM_nat = Finland| LCM = [[Mehmet Hetemaj|Hetemaj]]
+|  RW_nat = Cameroon|  RW = [[Ariel Ngueukam|Tuco]]
+|  CF_nat = Finland|  CF = [[Roope Riski|Riski]]
+|  LW_nat = England|  LW = [[Billy Ions|Ions]]
+| caption = The SJK 2014–2019 All Stars.
+}}
+
+{| class="wikitable" style="text-align: center"
+|-
+!Name!!Pos!!Nat!!Years!!Games!!Goals!!League<br/>games!!League<br/>goals
+|-
+|align="left"|[[Mihkel Aksalu]]||GK||{{flagicon|EST}}||2013–2019||221||0||158||0
+|-
+|align="left"|[[Richie Dorman]]||RB||{{flagicon|WAL}}||2012–2018||168||7||95||4
+|-
+|align="left"|[[Pavle Milosavljević]]||CB||{{flagicon|SER}}||2013–2015||77||1||38||1
+|-
+|align="left"|[[Cedric Gogoua]]||CB||{{flagicon|CIV}}||2014–2015||59||3||52||3
+|-
+|align="left"|[[Timo Tahvanainen]]||LB||{{flagicon|FIN}}||2013–2017||128||4||79||2
+|-
+|align="left"|[[Johannes Laaksonen]]||CM||{{flagicon|FIN}}||2013–2018||200||18||141||14
+|-
+|align="left"|[[Mehmet Hetemaj]]||CM||{{flagicon|FIN}}||2015–||200||22||142||14
+|-
+|align="left"|[[Denys Oliynyk]]||CM||{{flagicon|UKR}}||2018–2022||116||29||94||23
+|-
+|align="left"|[[Ariel Ngueukam]]||RW||{{flagicon|CMR}}||2015–2016<br/>2020–2021||133||36||108||28
+|-
+|align="left"|[[Roope Riski]]||CF||{{flagicon|FIN}}||2015–2016||58||34||46||25
+|-
+|align="left"|[[Billy Ions]]||LW||{{flagicon|ENG}}||2016–2020||74||19||64||17
+|-
+|}
+
+==Managers==
+{{col-start}}
+{{col-2}}
+{| class="wikitable"
+|-
+!Name
+!Period
+|-
+|{{Flag icon|Republic of Ireland}} [[Tommy Dunne (footballer born 1972)|Tommy Dunne]]
+|2008
+|-
+|{{Flag icon|Finland}} Jari Kujala
+|2008
+|-
+|{{Flag icon|Finland}} Esa Haanpää
+|2009
+|-
+|{{Flag icon|Finland}} Tomi Kärkkäinen
+|2010
+|-
+|{{Flag icon|Finland}} [[Christoffer Kloo]]
+|1 Jan 2011 – 13 Aug 2012
+|-
+|{{Flag icon|Finland}} [[Simo Valakari]] 
+|1 Sep 2012 – 17 Feb 2017
+|-
+|{{Flag icon|Finland}} [[Sixten Boström]]
+|20 Feb 2017 – 2 Jun 2017
+|-
+|{{Flag icon|Spain}} [[José Manuel Roca Cases]] 
+|3 Jun 2017 – 9 Sep 2017
+|-
+|{{Flag icon|Scotland}} Brian Page & {{Flag icon|Finland}} [[Toni Lehtinen]] ([[Caretaker manager|interim]]) 
+|9 Sep 2017 – 28 Oct 2017
+|-
+|{{Flag icon|Finland}} [[Tommi Kautonen]]
+|28 Oct 2017 – 22 May 2018
+|-
+|{{Flag icon|Russia}} [[Aleksei Borisovich Yeryomenko]] 
+|22 May 2018 – 16 Aug 2019
+|-
+|{{Flag icon|Scotland}} Brian Page ([[Caretaker manager|interim]])
+|16 Aug 2019 – 23 Oct 2019
+|-
+|{{Flag icon|Finland}} [[Jani Honkavaara]]
+|23 Oct 2019 – 8 Nov 2021
+|-
+|{{Flag icon|Spain}} [[Joaquín Gómez (football)|Joaquín Gómez]]
+|8 Nov 2021 – 31 Dec 2023
+|-
+|{{Flag icon|Finland}} [[Toni Lehtinen]] ([[Caretaker manager|interim]])
+|1 Jan 2024 - 28 May 2024
+|-
+|{{Flag icon|Scotland}} [[Stevie Grieve]] 
+|28 May 2024 - 30 November 2025
+|-
+|{{Flag icon|Finland}} [[Jarkko Wiss]]
+|1 January 2026 -
+|}
+{{col-end}}
+
+==References==
+{{Duplicated citations|reason=DuplicateReferences script detected:
+* https://sjk.fi/uutiset/sjk-valitsi-kapteenistonsa/ (refs: 43, 59)
+* https://sjk.fi/uutiset/pavlesta-sjk-kapteeni/ (refs: 52, 53, 56)
+|date=October 2026}}
+
+{{Reflist}}
+
+==External links==
+*{{oweb|https://sjk.fi/}} {{in lang|fi}}
+{{Seinäjoen Jalkapallokerho}}
+{{Veikkausliiga}}
+{{Finnish Champions in Football}}
+{{Seinäjoki Cityscape}}
+
+{{DEFAULTSORT:Seinajoen Jalkapallokerho}}
+[[Category:Seinäjoen Jalkapallokerho| ]]
+[[Category:Football clubs in Finland]]
+[[Category:Seinäjoki]]
+[[Category:2007 establishments in Finland]]
+[[Category:Association football clubs established in 2007]]
+[[Category:Sports clubs and teams in South Ostrobothnia]]

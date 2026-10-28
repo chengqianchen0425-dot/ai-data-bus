@@ -1,0 +1,1013 @@
+{{short description|Association football club}}
+{{Infobox football club
+| clubname = KPV
+| image    = Kokkolan Palloveikot logo.svg
+| upright  = 0.6
+| fullname = Kokkolan Palloveikot <br> (Kokkola Ball Friends)
+| nickname = 
+| founded  = {{Start date and age|df=yes|1930}}
+| ground   = [[Kokkola Areena]]
+| capacity = 3,000
+| chairman = [[Jouko Vierimaa]]
+| manager  = Niko Kalliokoski
+| league   = [[Kakkonen]]
+| season   = [[2026 Ykkönen|2026]]
+| position = [[Ykkönen]], 11th of 12 (relegated)
+| website = https://kpv.fi/
+| |pattern_la1=|pattern_b1=_kpv20h|pattern_ra1=
+| leftarm1=008833|body1=008833|rightarm1=008833|shorts1=FFFFFF|socks1=008833
+| pattern_la2=|pattern_b2=|pattern_ra2=
+| leftarm2=FFFFFF|body2=FFFFFF|rightarm2=FFFFFF|shorts2=000000|socks2=FFFFFF
+}}
+
+'''Kokkolan Palloveikot''' ('''KPV''') is a Finnish [[association football|football]] club based in [[Kokkola]]. It currently plays in [[Ykkönen]], the third-highest level in Finnish football. The club plays its home matches at [[Kokkola Areena]].
+
+==History==
+KPV is a football club from the town of Kokkola. The rival club is Swedish-speaking [[GBK Kokkola|GBK]].
+
+KPV runs several teams, including 1 men's team, 1 women's team, 10 boys teams and 7 girls teams.  The club also runs an academy and Soccer School.<ref>{{cite web|url=http://www.jopox.fi/kpv/|title=Kokkolan Palloveikot Pääsivusto|access-date=2010-06-11|url-status=dead|archive-url=https://archive.today/20120803192950/http://www.jopox.fi/kpv/|archive-date=2012-08-03}}</ref>
+
+===1930s===
+
+The first decade for Pallo-Veikot was characterised by a search for its own identity and the establishment of a solid foundation. Notably, under the circumstances of the time, KPV had already incorporated junior activities into its program by 1938. Records indicate team lineups, with names such as Olli Dahlström (Telimaa) and Jukka Uunila emerging from the B-junior team.<ref name="KPVHistorySite"> {{cite web|url=https://www.kpv.fi/seura/1169/seuran-historia|title=Kokkolan Palloveikot Historia}}</ref>
+
+===1940s===
+
+The 1940s were marked by the war years and the subsequent recovery from their impacts. KPV focused primarily on junior activities during the first half of the decade, with notable figures such as future governor Antti Pohjonen among its ranks. By the club’s 20th year of operation, KPV had assembled a team strong enough to gain recognition even in southern Finland, with Helsinki-based clubs showing interest in its players. The team competed for top positions in the then-Suomisarja.<ref name="KPVHistorySite"/>
+
+===1950s===
+
+The following decade can be described as steady but unremarkable. There were ups and downs, with the team even dropping to the regional league at times, though talented individuals stood out. Hannu Vainio, perhaps the most prominent, was part of the national team selection. Toward the end of the decade, youth development began yielding results at the national level, as the A-juniors secured their first Finnish Championship medals—bronze—in 1956 in Kokkola.<ref name="KPVHistorySite"/>
+
+===1960s===
+
+The promise of the previous decades came to fruition in the 1960s. The early years of the decade instilled in some Pallo-Veikot members the realisation that the status quo was insufficient and that the fruits of their youth development efforts should be reaped. A strong sense of camaraderie and resolute decision-making led to promotion to the Finnish Championship League in the autumn of 1966. This was followed by an impressive run for the A-juniors: bronze in 1965, Finnish Championship title in 1967, silver in 1968, and another championship title in 1969. These achievements provided ample evidence that by 1969, the young players had matured into men capable of winning the Finnish Championship.<ref name="KPVHistorySite"/>
+
+===1970s===
+
+The club’s robust junior program continued to bear fruit into the following decades. The senior team added to its trophy collection with a Finnish Championship silver and two bronze medals during the 1970s. The A-juniors secured bronze in 1974, while the youth team earned bronze in 1975, when championships were still contested on smaller fields. Junior players also excelled in national skill competitions. KPV produced medal-winning players nearly every year, and in its best year, the youth national team included a core group of up to five KPV players.<ref name="KPVHistorySite"/>
+
+===1980s===
+
+The 1980s were a period of perseverance between the First Division and the Finnish Championship League. The era saw the introduction of a managing director role. The decade’s lessons were learned off the pitch, which came at a high cost in the following decade, as the club faced financial difficulties due to multiple factors. However, the youth program remained a source of pride, consistently keeping KPV’s teams at the forefront nationally.<ref name="KPVHistorySite"/>
+
+===1990s===
+
+The club’s name officially incorporated the letter “j” due to a debt restructuring process in the 1990s. During this period, the group of junior coaches shouldered significant responsibility, and their work received a much-needed boost despite the challenges. The senior team competed in the First and Second Divisions.<ref name="KPVHistorySite"/>
+
+===2000s===
+
+By the end of 2000, the club celebrated its 70th eventful year with renewed optimism for the future. In 2001, KPV launched its first website. In 2002, the Finnish Football Association granted KPV the status of a talent academy. In 2003, the club resumed activities in women’s football. That same year, the club’s B-juniors won bronze in the Finnish Championship. The senior team’s promotion to the First Division for the 2005 season was a testament to the club’s diligent work. Finishing fifth in their debut season under coach Antti Ylimäki was a commendable achievement. For the 2008 season, KPV’s women’s team was promoted to Ykkönen, the second-highest league tier. In 2009, KPV’s women’s team reached the Women’s League through a merger with Puistola and Kontula. They finished tenth, securing their place in the league for the 2010 season.<ref name="KPVHistorySite"/>
+
+===2010s===
+
+Looking toward the new decade, the board prioritised strict financial discipline and aimed to increase membership to match the club’s activities. The senior team continued its strong performance, positioning KPV/KPV-juniors at the top of Ykkönen’s statistics. The women’s team relinquished its league spot in favour of the newly established Kokkola F10. On the junior side, KPV became the city’s largest club in terms of player numbers, though the focus of the 1970s-era coaching staff remained on prioritising quality over quantity. The decade culminated in a grand 80th-anniversary celebration, attended by approximately 200 guests and featuring a speech by Kimmo J. Lipponen, CEO of the Finnish Football Association. During the event, a record 37 individuals were honoured with the club’s golden merit badge, and the club’s history book, “Kalahallin hiekasta noussut?” (“Risen from the Sand of Kalahalli?”), was unveiled.<ref name="KPVHistorySite"/>
+
+===Domestic history===
+
+{{cot
+|bg=#008000
+|fc=#FFFFFF
+|{{nowrap|Season to season of KPV}}
+}}
+{|  class="wikitable" style="text-align: center"
+|- style="background:#f0f6fa;"
+!Season
+!Level
+!Division
+!Section
+!Position
+![[Finnish League Cup|League Cup]]
+![[Finnish Cup]]
+!Result
+|-
+|1939
+|Tier 2
+|Itä-Länsi-Sarja
+|West League Group 4
+| '''6th'''
+|&nbsp;– 
+|&nbsp;–
+|&nbsp;–
+|-
+|1940
+|colspan=7|No Data Available
+|-
+|1940-41
+|Tier 3
+|C-Sarja 
+|Group 4
+|'''5th'''
+|&nbsp;– 
+|&nbsp;–
+|&nbsp;–
+|-
+|1942
+|&nbsp;– 
+|&nbsp;– 
+|&nbsp;– 
+|&nbsp;– 
+|&nbsp;– 
+|1st Round
+|&nbsp;–
+|-
+|1943
+|colspan=7 rowspan=2|No Data Available
+|-
+|1944
+|-
+|1945
+|&nbsp;– 
+|&nbsp;– 
+|&nbsp;– 
+|&nbsp;– 
+|&nbsp;– 
+|3rd Round
+|&nbsp;–
+|-
+|1945-46
+|Tier 3
+|SPL Maakuntasarja
+|North Group 
+|'''3rd'''
+|&nbsp;–
+|&nbsp;–
+|&nbsp;–
+|-
+|1946-47
+|Tier 3
+|SPL Maakuntasarja
+|North Group 
+|style="background:#FFD700;"|'''1st'''
+|&nbsp;– 
+|&nbsp;–
+|style="background:#CCFFCC;"|Promoted to [[Suomensarja]]
+|-
+|1947-48
+|Tier 2
+|[[Suomensarja]]
+|North Group
+| '''4th'''
+|&nbsp;– 
+|&nbsp;–
+|&nbsp;–
+|-
+|1948
+|Tier 2
+|[[Suomensarja]]
+|North Group
+| '''6th'''
+|&nbsp;– 
+|&nbsp;–
+|&nbsp;–
+|-
+|1949
+|Tier 2
+|[[Suomensarja]]
+|West Group
+| '''3rd'''
+|&nbsp;–
+|&nbsp;–
+|&nbsp;–
+|-
+|1950
+|Tier 2
+|[[Suomensarja]]
+|West Group
+| '''4th'''
+|&nbsp;–
+|&nbsp;–
+|&nbsp;–
+|-
+|1951
+|Tier 2
+|[[Suomensarja]]
+|West Group
+| '''8th'''
+|&nbsp;–
+|&nbsp;–
+|&nbsp;–
+|-
+|1952
+|Tier 2
+|[[Suomensarja]]
+|West Group
+|style="background:#FFCCCB;"|'''9th'''
+|&nbsp;– 
+|&nbsp;–
+|style="background:#FFCCCB;"|Relegated to Maakuntasarja
+|-
+|1953
+|Tier 3
+|Maakuntasarja
+|North Group A
+|style="background:#FFD700;"|'''1st'''
+|&nbsp;–
+|&nbsp;–
+|style="background:#CCFFCC;"|Promoted to [[Suomensarja]]
+|-
+|1954
+|Tier 2
+|[[Suomensarja]]
+|West Group
+| '''4th'''
+|&nbsp;–
+|&nbsp;–
+|&nbsp;–
+|-
+|1955
+|Tier 2
+|[[Suomensarja]]
+|West Group
+| '''6th'''
+|&nbsp;–
+| 1st Round
+|&nbsp;–
+|-
+|1956
+|Tier 2
+|[[Suomensarja]]
+|West Group
+| '''8th'''
+|&nbsp;–
+| 1st Round
+|&nbsp;–
+|-
+|1957
+|Tier 2
+|[[Suomensarja]]
+|West Group
+|style="background:#FFCCCB;"|'''9th'''
+|&nbsp;–
+| 1st Round
+|style="background:#FFCCCB;"|Relegated to Maakuntasarja
+|-
+|1958
+|Tier 3
+|Maakuntasarja
+|Group 8
+|'''4th'''
+|&nbsp;–
+| 3rd Qualifying Round
+|&nbsp;–
+|-
+|1959
+|Tier 3
+|Maakuntasarja
+|Group 8 
+|style="background:#FFD700;"|'''1st'''
+|&nbsp;–
+| 1st Round
+|style="background:#CCFFCC;"|Promoted to [[Suomensarja]]
+|-
+|1960
+|Tier 2
+|[[Suomensarja]]
+|North Group
+| '''8th'''
+|&nbsp;–
+| 2nd Round
+|&nbsp;–
+|-
+|1961
+|Tier 2
+|[[Suomensarja]]
+|North Group
+| '''5th'''
+|&nbsp;–
+| 2nd Round
+|&nbsp;–
+|-
+|1962
+|Tier 2
+|[[Suomensarja]]
+|North Group
+| '''3rd'''
+|&nbsp;–
+| 2nd Round
+|&nbsp;–
+|-
+|1963
+|Tier 2
+|[[Suomensarja]]
+|North Group
+| '''7th'''
+|&nbsp;–
+| 3rd Round
+|&nbsp;–
+|-
+|1964
+|Tier 2
+|[[Suomensarja]]
+|North Group
+| '''5th'''
+|&nbsp;–
+| 1st Round
+|&nbsp;–
+|-
+|1965
+|Tier 2
+|[[Suomensarja]]
+|North Group
+| '''8th'''
+|&nbsp;–
+|&nbsp;–
+|&nbsp;–
+|-
+|1966
+|Tier 2
+|[[Suomensarja]]
+|North Group
+|style="background:#FFD700;"|'''1st'''
+|&nbsp;–
+| 2nd Round
+|style="background:#CCFFCC;"|Promoted to [[Mestaruussarja]]
+|-
+|[[1967 Mestaruussarja|1967]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''8th'''
+|&nbsp;–
+| 1st Round
+|&nbsp;–
+|-
+|[[1968 Mestaruussarja|1968]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''5th'''
+|&nbsp;–
+| Quarter-Finals
+|&nbsp;–
+|-
+|[[1969 Mestaruussarja|1969]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+|style="background:#FFD700;"|'''1st'''
+|&nbsp;–
+| 2nd Round
+|style="background:#FFFF00;"|'''Champions''' <br> Qualified to <br> [[1970–71 European Cup|European Cup]]
+|-
+|[[1970 Mestaruussarja|1970]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''6th'''
+|&nbsp;–
+| 2nd Round
+|&nbsp;–
+|-
+|[[1971 Mestaruussarja|1971]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''3rd'''
+|&nbsp;–
+| 1st Round
+|&nbsp;–
+|-
+|[[1972 Mestaruussarja|1972]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''5th'''
+|&nbsp;–
+| Semi-Finals
+|&nbsp;–
+|-
+|[[1973 Mestaruussarja|1973]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''2nd'''
+|&nbsp;–
+| 2nd Round
+|style="background:#FFA500;"|Qualified to <br> [[1974–75 UEFA Cup|UEFA Cup]]
+|-
+|[[1974 Mestaruussarja|1974]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''9th'''
+|&nbsp;–
+| Semi-Finals
+|&nbsp;–
+|-
+|[[1975 Mestaruussarja|1975]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''3rd'''
+|&nbsp;–
+| 3rd Round
+|&nbsp;–
+|-
+|[[1976 Mestaruussarja|1976]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''8th'''
+|&nbsp;–
+| 1st Round
+|&nbsp;–
+|-
+|[[1977 Mestaruussarja|1977]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''6th'''
+|&nbsp;–
+| 3rd Round
+|&nbsp;–
+|-
+|[[1978 Mestaruussarja|1978]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''8th'''
+|&nbsp;–
+| 3rd Round
+|&nbsp;–
+|-
+|[[1979 Mestaruussarja|1979]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''9th'''
+|&nbsp;–
+| Quarter-Finals
+|&nbsp;–
+|-
+|[[1980 Mestaruussarja|1980]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+|style="background:#FFCCCB;"|'''12th'''
+|&nbsp;–
+| 1st Round
+|style="background:#FFCCCB;"|Promotion/Relegation League '''6th''' - Relegated to [[Ykkönen]]
+|-
+|[[1981 Ykkönen|1981]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''2nd'''
+|&nbsp;–
+| 8th Round
+|style="background:#CCFFCC;"|Promotion/Relegation League '''3rd''' - Promoted to [[Mestaruussarja]]
+|-
+|[[1982 Mestaruussarja|1982]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''6th'''
+|&nbsp;–
+| Final
+|&nbsp;–
+|-
+|[[1983 Mestaruussarja|1983]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''6th'''
+|&nbsp;–
+| 1st Round
+|&nbsp;–
+|-
+|[[1984 Mestaruussarja|1984]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+| '''11th'''
+|&nbsp;–
+| 4th Round
+| Relegation Playoff
+|-
+|[[1985 Mestaruussarja|1985]]
+|Tier 1
+|[[Veikkausliiga|Mestaruussarja]]
+|&nbsp;–
+|style="background:#FFCCCB;"|'''12th'''
+|&nbsp;–
+| 5th Round
+|style="background:#FFCCCB;"|Relegated to [[Ykkönen]]
+|-
+|[[1986 Ykkönen|1986]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''5th'''
+|&nbsp;–
+| 5th Round
+|&nbsp;–
+|-
+|[[1987 Ykkönen|1987]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''5th'''
+|&nbsp;–
+| 4th Round
+|&nbsp;–
+|-
+|[[1988 Ykkönen|1988]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''5th'''
+|&nbsp;–
+| 1st Round
+|&nbsp;–
+|-
+|[[1989 Ykkönen|1989]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+|style="background:#FFD700;"|'''1st'''
+|&nbsp;–
+| 6th Round
+|style="background:#CCFFCC;"|Promoted to [[Veikkausliiga]]
+|-
+|[[1990 Futisliiga|1990]]
+|Tier 1
+|[[Veikkausliiga]]
+|&nbsp;–
+|style="background:#FFCCCB;"|'''11th'''
+|&nbsp;–
+| 6th Round
+|style="background:#FFCCCB;"|Relegation Playoff - <br>Relegated to [[Ykkönen]]
+|-
+|[[1991 Ykkönen|1991]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''8th'''
+|&nbsp;–
+| 5th Round
+|&nbsp;–
+|-
+|[[1992 Ykkönen|1992]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''6th'''
+|&nbsp;–
+| 4th Round
+|&nbsp;–
+|-
+|[[1993 Ykkönen|1993]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''9th'''
+|&nbsp;–
+| 5th Round
+|&nbsp;–
+|-
+|[[1994 Ykkönen|1994]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''8th'''
+|&nbsp;–
+| 7th Round
+|&nbsp;–
+|-
+|[[1995 Ykkönen|1995]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+|style="background:#FFCCCB;"|'''13th'''
+|&nbsp;–
+| 7th Round
+|style="background:#FFCCCB;"|Relegated to [[Kakkonen]]
+|-
+|[[1996 Kakkonen|1996]]
+|Tier 3
+|[[Kakkonen]]
+|North Group
+|'''6th'''
+|&nbsp;–
+| 5th Round
+|&nbsp;–
+|-
+|[[1997 Kakkonen|1997]]
+|Tier 3
+|[[Kakkonen]]
+|West Group
+|style="background:#FFD700;"|'''1st'''
+|&nbsp;–
+| 5th Round
+|style="background:#CCFFCC;"|Promoted to [[Ykkönen]]
+|-
+|[[1998 Ykkönen|1998]]
+|Tier 2
+|[[Ykkönen]]
+| North Group
+| '''9th'''
+|&nbsp;–
+| 5th Round
+|&nbsp;–
+|-
+|[[1999 Ykkönen|1999]]
+|Tier 2
+|[[Ykkönen]]
+| North Group
+|style="background:#FFCCCB;"|'''7th'''
+|&nbsp;–
+| 4th Round
+|style="background:#FFCCCB;"|Relegated to [[Kakkonen]] 
+|-
+|[[2000 Kakkonen|2000]]
+|Tier 3
+|[[Kakkonen]]
+|North Group
+|'''6th'''
+|&nbsp;–
+| 6th Round
+|&nbsp;–
+|-
+|[[2001 Kakkonen|2001]]
+|Tier 3
+|[[Kakkonen]]
+|North Group
+|'''5th'''
+|&nbsp;–
+| 5th Round
+|&nbsp;–
+|-
+|[[2002 Kakkonen|2002]]
+|Tier 3
+|[[Kakkonen]]
+|North Group
+|'''2nd'''
+|&nbsp;–
+| 5th Round
+|&nbsp;–
+|-
+|[[2003 Kakkonen|2003]]
+|Tier 3
+|[[Kakkonen]]
+|North Group
+|'''4th'''
+|&nbsp;–
+| 4th Round
+|&nbsp;–
+|-
+|[[2004 Kakkonen|2004]]
+|Tier 3
+|[[Kakkonen]]
+|Northern Group
+|style="background:#FFD700;"|'''1st'''
+|&nbsp;–
+| 4th Round
+|style="background:#CCFFCC;"|Promotion Playoff - <br> Promoted to [[Ykkönen]]
+|-
+|[[2005 Ykkönen|2005]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''4th'''
+|&nbsp;–
+| 5th Round
+|&nbsp;–
+|-
+|[[2006 Ykkönen|2006]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''9th'''
+|&nbsp;–
+| Final
+|&nbsp;–
+|-
+|[[2007 Ykkönen|2007]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''10th'''
+|&nbsp;–
+| 6th Round
+|&nbsp;–
+|-
+|[[2008 Ykkönen|2008]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''6th'''
+|&nbsp;– 
+| 6th Round
+|&nbsp;–
+|-
+|[[2009 Ykkönen|2009]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''2nd'''
+|&nbsp;–
+| 4th Round
+| Promotion Playoff
+|-
+|[[2010 Ykkönen|2010]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''4th'''
+|&nbsp;–
+| 6th Round
+|&nbsp;–
+|-
+|[[2011 Ykkönen|2011]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+|style="background:#FFCCCB;"|'''12th'''
+|&nbsp;–
+| 4th Round
+|style="background:#FFCCCB;"|Relegated to [[Kakkonen]] 
+|-
+|[[2012 Kakkonen|2012]]
+|Tier 3
+|[[Kakkonen]]
+|Northern Group
+|'''7th'''
+|&nbsp;–
+| 5th Round
+|&nbsp;–
+|-
+|[[2013 Kakkonen|2013]]
+|Tier 3
+|[[Kakkonen]]
+|Northern Group
+|'''6th'''
+|&nbsp;–
+| 3rd Round
+|&nbsp;–
+|-
+|[[2014 Kakkonen|2014]]
+|Tier 3
+|[[Kakkonen]]
+|Northern Group
+|'''6th'''
+|&nbsp;–
+| 3rd Round
+|&nbsp;–
+|-
+|[[2015 Kakkonen|2015]]
+|Tier 3
+|[[Kakkonen]]
+|Northern Group
+|style="background:#FFD700;"|'''1st'''
+|&nbsp;–
+| 6th Round
+|style="background:#CCFFCC;"|Promotion Playoff - <br>Promoted to [[Ykkönen]]
+|-
+|[[2016 Ykkönen|2016]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''5th'''
+|&nbsp;–
+| 6th Round
+|&nbsp;–
+|-
+|[[2017 Ykkönen|2017]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''3rd'''
+|&nbsp;–
+| Group Stage - '''1st''' - Quarter-finals
+|&nbsp;–
+|-
+|[[2018 Ykkönen|2018]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''2nd'''
+|&nbsp;–
+|Group Stage - '''3rd''' - Round of 16
+|style="background:#CCFFCC;"|Promotion Playoff - <br>Promoted to [[Veikkausliiga]]
+|-
+|[[2019 Veikkausliiga|2019]]
+|Tier 1
+|[[Veikkausliiga]]
+|&nbsp;–
+|style="background:#FFCCCB;"|'''11th'''
+|&nbsp;–
+| Group Stage - '''3rd''' - Semi-finals
+|style="background:#FFCCCB;"|Relegation Playoff - <br>Relegated to [[Ykkönen]]
+|-
+|[[2020 Ykkönen|2020]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''8th'''
+|&nbsp;–
+|Group Stage - '''2nd''' - Round of 16
+|&nbsp;–
+|-
+|[[2021 Ykkönen|2021]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''7th'''
+|&nbsp;–
+|Group Stage - '''4th'''
+|&nbsp;–
+|-
+|[[2022 Ykkönen|2022]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+| '''5th'''
+|&nbsp;–
+| 4th Round
+|&nbsp;–
+|-
+|[[2023 Ykkönen|2023]]
+|Tier 2
+|[[Ykkönen]]
+|&nbsp;–
+|style="background:#FFCCCB;"|'''11th'''
+|&nbsp;–
+| Round of 16
+|style="background:#FFCCCB;"|Relegated to [[Ykkönen]]
+|-
+|[[2024 Ykkönen|2024]]
+|Tier 3
+|[[Ykkönen]]
+|&nbsp;–
+|'''2nd'''
+|&nbsp;–
+|Quarter-finals
+|Promotion Playoff
+|-
+|[[2025 Ykkönen|2025]]
+|Tier 3
+|[[Ykkönen]]
+|&nbsp;–
+|'''4th''' 
+|&nbsp;–
+|Round of 16
+|&nbsp;–
+|-
+|[[2026 Ykkönen|2026]]
+|Tier 3
+|[[Ykkönen]]
+|&nbsp;–
+|style="background:#FFCCCB;"|'''11th'''
+|&nbsp;–
+|5th Round
+|style="background:#FFCCCB;"|Relegated to [[Kakkonen]]
+|-
+|[[2027 Kakkonen|2027]]
+|Tier 4
+|[[Kakkonen]]
+|&nbsp;–
+|&nbsp;–
+|&nbsp;–
+|&nbsp;–
+|&nbsp;–
+|}
+
+
+'''Appearances:''' 
+*'''20''' seasons in Tier 1 Division ([[Mestaruussarja|Mestaruussarja 1930–1989]], [[Veikkausliiga|Veikkausliiga 1990–onwards]])
+*'''44''' seasons in Tier 2 Division ([[Suomensarja|Suomensarja 1936–1972]], [[Ykkönen|Ykkönen 1973–2023]], [[Ykkösliiga|Ykkösliiga 2024–onwards]])
+*'''20''' seasons in Tier 3 Division (Maakuntasarja 1936–1972, [[Kakkonen|Kakkonen 1973–2023]], [[Ykkönen|Ykkönen 2024–onwards]])
+*'''1''' season in Tier 4 Division ([[Kolmonen|Kolmonen 1973–2023]], [[Kakkonen|Kakkonen 2024–onwards]])
+
+Sources: <ref>{{cite web |url=http://www.finlandfootball.net/ |title=Home |website=finlandfootball.net}}</ref><ref>{{cite web |url=https://donnael.com/Soccer.php/Finnish_Ykkonen/1/2025/|title=Finnish Ykkonen |website=donnael.com}}</ref>
+{{cob}}
+
+===European history===
+Winning the domestic league the previous season for the first time, KPV qualified for the [[European Cup]] and played in a European competition for the first time in the [[1970–71 European Cup|1970-71]] season. [[Celtic F.C.|Celtic]] beat KPV in the first round with an aggregate of 0–14.
+
+For the [[1974–75 UEFA Cup|1974–75]] season, the team managed to qualify in the [[UEFA Cup]], but [[1. FC Köln]] beat KPV in the first round with an aggregate of 2–9.
+
+{| class="wikitable"
+! Season
+! Competition
+! Round
+! Club
+! Home
+! Away
+! Aggregate
+|-
+| [[1970–71 European Cup|1970–71]]
+| [[UEFA Champions League|European Cup]]
+| [[1970–71 European Cup#First round|First Round]]
+| {{flagicon|Scotland}} [[Celtic F.C.|Celtic]]
+| style="text-align:center;"| 0–9
+| style="text-align:center;"| 0–5
+| style="text-align:center;"| '''0–14'''
+|-
+| [[1974–75 UEFA Cup|1974–75]]
+| [[UEFA Europa League|UEFA Cup]]
+| [[1974–75 UEFA Cup#First round|First Round]]
+| {{flagicon|Germany}} [[1. FC Köln]]
+| style="text-align:center;"| 1–5
+| style="text-align:center;"| 1–4
+| style="text-align:center;"| '''2–9'''
+|}
+
+==Current squad==
+''Updated 20 March 2026''
+<ref>{{Cite web|url=https://www.kpv.fi/joukkueet/15759|title=Joukkue|access-date=20 March 2026|url-status=live}}</ref><br>
+{{fs start}}
+{{Fs player|no= 1|nat=FIN|pos=GK|name=Petrus Kytölaakso|}}
+{{Fs player|no= 3|nat=FIN|pos=DF|name=Madut Deng|}}
+{{Fs player|no= 4|nat=FIN|pos=DF|name=Elias Vesala}}
+{{Fs player|no= 6|nat=FIN|pos=DF|name=Matias Åberg}}
+{{Fs player|no= 7|nat=FIN|pos=FW|name=Pietro Kytölaakso|}}
+{{Fs player|no= 8|nat=FIN|pos=MF|name=Ville Välipakka|}}
+{{Fs player|no= 9|nat=FIN|pos=FW|name=Wegye Wegye}}
+{{Fs player|no=10|nat=GHA|pos=MF|name=Justice Adarkwa}}
+{{Fs player|no=11|nat=FIN|pos=FW|name=Niilo Santalo}}
+{{Fs player|no=12|nat=FIN|pos=GK|name=Kaarle Suoraniemi}}
+{{Fs player|no=13|nat=FIN|pos=DF|name=Onni Moilanen}}
+{{Fs player|no=14|nat=FIN|pos=FW|name=Vertti Åkerblom}}
+{{fs mid}}
+{{Fs player|no=16|nat=FIN|pos=DF|name=Arne Vesa}}
+{{Fs player|no=19|nat=FIN|pos=FW|name=Juho Pirkkalainen}}
+{{Fs player|no=20|nat=FIN|pos=MF|name=Jani Mäenpää}}
+{{Fs player|no=21|nat=FIN|pos=DF|name=Waltteri Koivisto}}
+{{Fs player|no=26|nat=FIN|pos=MF|name=Pyry Pensaari}}
+{{Fs player|no=29|nat=FIN|pos=DF|name=William Mikkola}}
+{{Fs player|no=44|nat=FIN|pos=FW|name=Johannes Moilanen}}
+{{Fs player|no=45|nat=FIN|pos=MF|name=Akonon Arope}}
+{{Fs player|no=77|nat=FIN|pos=MF|name=Jesse Hirvinen}}
+{{Fs player|no=87|nat=FIN|pos=MF|name=Onni Länsipää}}
+{{Fs player|no=99|nat=FIN|pos=GK|name=Filip Enqvist}}
+{{fs end}}
+
+===Former players===
+For a complete list of former Kokkolan Palloveikot players with Wikipedia articles, see [[:Category:Kokkolan Palloveikot players]].
+
+==Management==
+
+''As of 11 March 2026''<ref name="Staff">{{cite web|url=https://www.kpv.fi/joukkueet/15759|publisher=KPV|language=fi|access-date=8 March 2026|title=Toimihenkilöt|url-status=live}}</ref>
+{|
+|-
+|Valign="top"|
+{| class="wikitable"
+|-
+!Name
+
+!Role
+|-
+|{{Flag icon|FIN}} Niko Kalliokoski 
+| Head coach
+|-
+|{{Flag icon|FIN}} Aki Sipilä 
+| Coach
+|-
+|{{Flag icon|FIN}} Pasi Torppa
+| Goalkeeper Coach
+|-
+|{{Flag icon|FIN}} Oskar Ylimäki
+| Fitness Coach
+|-
+|}
+|}
+
+==Honours==
+'''League'''
+* '''Finnish First Division''' ([[Mestaruussarja|Mestaruussarja 1930–1989]], [[Veikkausliiga|Veikkausliiga 1990–onwards]])
+** Champions (1): [[1969 Mestaruussarja|1969]]
+
+* '''Finnish Second Division''' ([[Suomensarja|Suomensarja 1936–1972]], [[Ykkönen|Ykkönen 1973–2023]], [[Ykkösliiga|Ykkösliiga 2024–onwards]])
+** Champions (2): 1966, [[1989 Ykkönen – Finnish League Division 1|1989]] 
+
+* '''Finnish Third Division''' (Maakuntasarja 1936–1972, [[Kakkonen|Kakkonen 1973–2023]], [[Ykkönen|Ykkönen 2024–onwards]])
+** Champions (6): 1946-47, 1953, 1959, 1997, 2004, 2015  
+
+'''Cup'''
+* '''[[Finnish Cup]]'''
+** Runners-up (2): 1982, [[2006 Finnish Cup|2006]]
+
+==Footnotes==
+{{Reflist}}
+
+==External links==
+*{{in lang|fi}} {{official website|http://www.kpv.fi/}}
+*{{in lang|fi}} {{Deprecated archive|url=https://archive.today/20120803192950/http://www.jopox.fi/kpv/|title=KPV Juniors Website|sec=el}} (archived)
+*{{in lang|fi}} [[:fi: Kokkolan Palloveikot|Finnish Wikipedia]]
+*{{in lang|fi}} [https://web.archive.org/web/20100612050642/http://suomencup.net/index.php?title=Kokkolan_Palloveikot Suomen Cup] (archived)
+*{{in lang|fi}} [https://www.facebook.com/kpv.kokkola KPV] – [[Facebook]]
+
+{{Finnish Champions in Football}}
+{{Ykkönen}}
+
+[[Category:Football clubs in Finland]]
+[[Category:1930 establishments in Finland]]
+[[Category:Association football clubs established in 1930]]
+[[Category:Kokkola]]
+[[Category:Sport in Central Ostrobothnia]]
+[[Category:Long stubs with short prose]]
+
+
+{{Finland-footyclub-stub}}

@@ -1,0 +1,538 @@
+{{Short description|Association football club in Finland}}
+{{Use dmy dates|date=May 2023}}
+{{Infobox football club
+| clubname = Lahti
+| image = FC Lahti logo.svg
+| image_size = 200px
+| fullname = Football Club Lahti<ref>{{cite web|title=FC Lahti Profile|url=https://www.worldfootball.net/teams/te656/fc-lahti/|website=Worldfootball.net|publisher=HEIM:SPIEL Medien GmbH & Co. KG|access-date=24 January 2016|archive-date=10 February 2018|archive-url=https://web.archive.org/web/20180210002301/http://www.worldfootball.net/teams/fc-lahti/1/|url-status=live}}</ref><ref>{{cite web|title=Football Club Lahti|url=http://www.fussball.com/fussball-mannschaft-817-fc-lahti.html|website=Fussball.com|publisher=Active Agent AG|access-date=24 January 2016|url-status=dead|archive-url=https://web.archive.org/web/20090901072205/http://www.fussball.com/fussball-mannschaft-817-fc-lahti.html|archive-date=1 September 2009}}</ref>
+| nickname = ''Mustat kuhnurit'' (The Black Drones)
+| founded = {{Start date and age|df=yes|1996|}}
+| ground = Toolpoint Arena,<br />[[Lahti]]
+| capacity = 14,500 (7,465 seated)
+| chairman = Mika Halttunen
+| manager = [[Gonçalo Pereira (football manager)|Gonçalo Pereira]]
+| league = [[Veikkausliiga]]
+| season = [[2026 Veikkausliiga|2026]]
+| position = Veikkausliiga, 7th of 12
+| website = {{URL|http://www.fclahti.fi/}}
+| pattern_la1 = _adidastirocm26b
+| pattern_b1 = _adidastirocm26b
+| pattern_ra1 = _adidastirocm26b
+| pattern_sh1 = _adidastirocm26b
+| pattern_so1 = _3_stripes_white
+| leftarm1 = 000000
+| body1 = 000000
+| rightarm1 = 000000
+| shorts1 = 000000
+| socks1 = 000000
+| pattern_b2 = _adidastirocm26wb
+| pattern_la2 = _adidastirocm26wb
+| pattern_ra2 = _adidastirocm26wb
+| pattern_sh2 = _adidastirocm26wb
+| pattern_so2 = _3_stripes_black
+| leftarm2 = FFFFFF
+| body2 = FFFFFF
+| rightarm2 = FFFFFF
+| shorts2 = FFFFFF
+| socks2 = FFFFFF
+| pattern_b3 = _lahti26t
+| pattern_la3 = _lahti26t
+| pattern_ra3 = _lahti26t
+| pattern_sh3 = _lahti26t
+| pattern_so3 = _lahti26tl
+| leftarm3 = A90000
+| body3 = A90000
+| rightarm3 = A90000
+| shorts3 = A90000
+| socks3 = FF6600
+}}
+
+[[Image:Lahti-stadion.jpg|thumb|[[Lahden Stadion]]]]
+[[Image:Lahden Stadion view.jpg|thumb|Lahden Stadion&nbsp;– Aerial view]]
+
+'''FC Lahti''' is a [[Finland|Finnish]] professional [[Association football|football club]] based in the city of [[Lahti]]. It currently plays in the Finnish highest tier [[Veikkausliiga]], after being promoted from [[Ykkösliiga]] after the 2025 season. The home ground of Lahti is Toolpoint Arena. Lahti is famous of being the local team of the most successful Finnish player, [[Jari Litmanen]], who played for the club in two stints in 2004 and 2009–10. In his youth years and the start of his career, he played in [[Reipas Lahti]].
+
+==History==
+{{unreferenced section|date=May 2026}}
+Lahti was founded in 1996 when two rival clubs from Lahti&nbsp;– [[FC Kuusysi|Kuusysi]] and [[Reipas Lahti]] (founded in [[Vyborg|Viipuri]] and moved to Lahti after Viipuri was ceded to [[USSR]] in 1947) – decided to merge. Also, the reserve club Pallo-Lahti was formed, but it was closed down after a couple of seasons due to economic difficulties. Both Reipas and Kuusysi controlled the junior section of the club. From 1996, there was only one original staff member left at start of the 2026 season, Pekka Penttinen.
+
+Lahti played its first season in 1997, in the southern group of [[Ykkönen]], the second tier of [[Football in Finland|Finnish football]]. It finished second in the first half of the split league format Ykkönen, but was placed third in the final half, behind [[FC Haka|Haka]] and [[PK-35 Vantaa (men)|PK-35]], both of which were promoted to [[Veikkausliiga]]. The next season, in 1998, saw success and Lahti finally gained promotion to the highest tier. They were relegated at the end of the 2010 season, but bounced back after just one season in [[Ykkönen]].
+
+In the premier division, Lahti has not yet achieved the success of Kuusysi and Reipas. In 2007, Lahti won the [[Finnish League Cup]]. In 2008 Lahti was third in the Veikkausliiga final table and was placed in the [[UEFA Europa League]] qualification rounds for season 2009. Lahti repeated the success in 2014 by finishing third for the second time in their history. The club qualified to the Europa League qualifiers for the third time in 2018 when the club finished fourth in the table the season before.
+
+==Honours==
+*'''[[Finnish League Cup]]'''
+**'''Winners:''' 2007, [[2013 Finnish League Cup|2013]], [[2016 Finnish League Cup|2016]]
+**Runners-up: 2004, 2005
+*'''[[Finnish Cup]]'''
+**Runners-up: [[2002 Finnish Cup|2002]]
+
+== Crest and colours ==
+
+=== Kit manufacturers and shirt sponsors ===
+{| class="wikitable"
+|+
+!Period
+!Kit manufacturer
+!Shirt sponsor
+!Ref
+|-
+|2004
+|[[Umbro]]
+|{{Interlanguage link|Lahti Energia|fi|Lahti Energia}}
+| rowspan="6" |<ref>{{Cite web |title=FC Lahti Kit History |url=https://www.footballkitarchive.com/fc-lahti-kits/ |access-date=2023-03-13 |website=Football Kit Archive |language=en}}</ref>
+|-
+|2005–07
+|?
+|?
+|-
+|2008
+|[[Umbro]]
+|{{Interlanguage link|Lahti Energia|fi|Lahti Energia}}
+|-
+|2009–17
+|?
+|?
+|-
+|2018–21
+|[[Umbro]]
+| rowspan="2" |{{Interlanguage link|Halton (Finnish company)|lt=Halton|fi|Halton (yritys)}}
+|-
+|2022
+|[[Adidas]]
+|}
+
+==FC Lahti in Europe==
+''Updated 20 July 2018''
+{| class="wikitable"
+! Season
+! Competition
+! Round
+! Club
+! Home
+! Away
+! Aggregate
+!
+|-
+| rowspan="3"| [[2009–10 UEFA Europa League|2009–10]]
+| rowspan="3"| [[UEFA Europa League]]
+| [[2009–10 UEFA Europa League#First qualifying round|1Q]]
+| {{flagicon|Albania}} [[FK Dinamo Tirana|Dinamo Tirana]]
+| bgcolor="#ddffdd" style="text-align:center;"| [[2009–10 UEFA Europa League qualifying phase and play-off round#Lahti v Dinamo Tirana|4–1]]
+| bgcolor="#ffdddd" style="text-align:center;"| [[2009–10 UEFA Europa League qualifying phase and play-off round#Dinamo Tirana v Lahti|0–2]]
+| bgcolor="#ddffdd" style="text-align:center;"| '''4–3'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+| [[2009–10 UEFA Europa League#Second qualifying round|2Q]]
+| {{flagicon|Slovenia}} [[ND Gorica|Gorica]]
+| bgcolor="#ddffdd" style="text-align:center;"| [[2009–10 UEFA Europa League qualifying phase and play-off round#Lahti v Gorica|2–0]]
+| bgcolor="#ffdddd" style="text-align:center;"| [[2009–10 UEFA Europa League qualifying phase and play-off round#Gorica v Lahti|0–1]]
+| bgcolor="#ddffdd" style="text-align:center;"| '''2–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+| [[2009–10 UEFA Europa League#Third qualifying round|3Q]]
+| {{flagicon|Belgium}} [[Club Brugge KV|Club Brugge]]
+| bgcolor="#ffffdd" style="text-align:center;"| [[2009–10 UEFA Europa League qualifying phase and play-off round#Lahti v Club Brugge|1–1]]
+| bgcolor="#ffdddd" style="text-align:center;"| [[2009–10 UEFA Europa League qualifying phase and play-off round#Club Brugge v Lahti|2–3]]
+| bgcolor="#ffdddd" style="text-align:center;"| '''3–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2015–16 UEFA Europa League|2015–16]]
+| [[UEFA Europa League]]
+| [[2015–16 UEFA Europa League#First qualifying round|1Q]]
+| {{flagicon|Sweden}} [[IF Elfsborg|Elfsborg]]
+| bgcolor="#ffffdd" style="text-align:center;"| [[2015–16 UEFA Europa League qualifying phase and play-off round#Lahti v Elfsborg|2–2]]
+| bgcolor="#ffdddd" style="text-align:center;"| [[2015–16 UEFA Europa League qualifying phase and play-off round#Elfsborg v Lahti|0–5]]
+| bgcolor="#ffdddd" style="text-align:center;"| '''2–7'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2018–19 UEFA Europa League|2018–19]]
+| [[UEFA Europa League]]
+| [[2018–19 UEFA Europa League#First qualifying round|1Q]]
+| {{flagicon|Iceland}} [[Fimleikafélag Hafnarfjarðar|FH]]
+| bgcolor="#ffdddd" style="text-align:center;|0–3
+| bgcolor="#ffffdd" style="text-align:center;|0–0
+| bgcolor="#ffdddd" style="text-align:center;|'''0–3'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|}
+
+;Notes
+* '''1Q''': First qualifying round
+* '''2Q''': Second qualifying round
+* '''3Q''': Third qualifying round
+
+==Season to season==
+{|
+|valign="top" width=0%|
+{|  class="wikitable"
+|- style="background:#f0f6fa;"
+!'''Season'''
+!'''Level'''
+!'''Division'''
+!'''Section'''
+!'''Administration'''
+!'''Position'''
+!'''Movements'''
+|-
+|style="background:#87CEFA;"|1997
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|South Group
+|style="background:#87CEFA;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"| '''2nd'''
+|style="background:#87CEFA;"| Promotion Group – '''3rd'''
+|-
+|style="background:#87CEFA;"|1998
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|South Group
+|style="background:#87CEFA;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"| '''1st'''
+|style="background:#87CEFA;"| Promotion Group –  '''1st''' – Promoted
+|-
+|style="background:#FFFF00;"|1999
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''10th'''
+|style="background:#FFFF00;"| Relegation Group – Play-offs
+|-
+|style="background:#FFFF00;"|2000
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2001
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''9th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2002
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''7th'''
+|style="background:#FFFF00;"| Upper Group –  '''8th'''
+|-
+|style="background:#FFFF00;"|2003
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2004
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''7th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2005
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2006
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2007
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2008
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2009
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''11th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2010
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''14th'''
+|style="background:#FFFF00;"|Relegated
+|-
+|style="background:#87CEFA;"|2011
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"| '''1st'''
+|style="background:#87CEFA;"|Promoted
+|-
+|style="background:#FFFF00;"|2012
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2013
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2014
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2015
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2016
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2017
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2018
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2019
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2020
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2021
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''7th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2022
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''11th'''
+|style="background:#FFFF00;"| Relegation play-offs
+|-
+|style="background:#FFFF00;"|2023
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''10th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|2024
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''11th'''
+|style="background:#FFFF00;"| Relegation play-offs – Relegated
+|-
+|style="background:#87CEFA;"|2025
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkösliiga''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|
+|}
+*'''25''' seasons in ''[[Veikkausliiga]]''
+*'''3''' seasons in ''[[Ykkönen]]''
+|}
+
+==Players==
+===Current squad===
+{{updated|24 August 2026|<ref>{{cite news|url=http://www.fclahti.fi/pelaajat/|title=Pelaajat|trans-title=Players|language=fi|publisher=FC Lahti|access-date=21 July 2023|archive-date=17 July 2019|archive-url=https://web.archive.org/web/20190717073116/http://www.fclahti.fi/pelaajat/|url-status=live}}</ref>}}
+<!----------------------------- READ THIS NOTICE FIRST BEFORE EDITING ----------------------------------
+ – Do NOT add new players before their signing is officially announced by the club through their website, including medical and signing the contract. A transfer fee agreed doesn't mean the player will sign.
+ – Do NOT remove players before their exit is officially announced by the club.
+ – Do NOT add or change squad numbers until it is official on the FC Lahti website
+ – Only add numberless players that are likely to become part of the first team
+ – Pre-season numbers can be added temporarily with A REFERENCE
+ – This is Wikipedia, not a football newspaper. Anything unconfirmed and unsourced will be removed on sight
+  ------------------------------------------------------------------------------------------------------>
+{{Fs start}}
+{{Fs player|no= 2|pos=DF|nat=FIN|name=[[Joel Lehtonen (footballer)|Joel Lehtonen]]}}
+{{Fs player|no= 3|pos=DF|nat=FRA|name=[[Romain Sans]]}}
+{{Fs player|no= 4|pos=DF|nat=POR|name=José Müller}}
+{{Fs player|no= 5|pos=DF|nat=BRA|name=[[Nícolas Dantas]]}}
+{{Fs player|no= 6|pos=DF|nat=FIN|name=[[Väinö Vehkonen]]}}
+{{Fs player|no= 7|pos=MF|nat=FIN|name=[[Daniel Heikkinen]]}}
+{{Fs player|no= 8|pos=MF|nat=ESP|name=[[Tòfol Montiel]]}}
+{{Fs player|no= 9|pos=FW|nat=FIN|name=[[Aaron Lindholm]]}}
+{{Fs player|no=10|pos=MF|nat=FIN|name=[[Otso Koskinen]]}}
+{{Fs player|no=11|pos=MF|nat=POR|name=[[Martim Ferreira]]}}
+{{Fs player|no=12|pos=GK|nat=FIN|name=[[Aatu Hakala]]}}
+{{Fs player|no=13|pos=GK|nat=FIN|name=Veikka Rättö}}
+{{fs mid}}
+{{Fs player|no=14|pos=MF|nat=SWE|name=[[Erik Andersson (footballer)|Erik Andersson]]}}
+{{Fs player|no=17|pos=FW|nat=FIN|name=[[Amir Belabid]]}}
+{{Fs player|no=18|pos=MF|nat=FRA|name=[[Yohan Cassubie]]}}
+{{Fs player|no=19|pos=FW|nat=BRA|name=Neemias}}
+{{Fs player|no=20|pos=FW|nat=FIN|name=[[Justus Ojanen]]}}
+{{Fs player|no=21|pos=DF|nat=FIN|name=[[Matias Vainionpää]]}}
+{{Fs player|no=25|pos=DF|nat=FIN|name=[[Topias Inkinen]]}}
+{{Fs player|no=27|pos=DF|nat=FRA|name=[[Romaric Yapi]]}}
+{{Fs player|no=28|pos=MF|nat=FIN|name=[[Armend Kabashi]]}}
+{{Fs player|no=31|pos=GK|nat=FIN|name=[[Osku Maukonen]]}}
+{{Fs player|no=77|pos=FW|nat=FIN|name=[[Momodou Sarr]]}}
+{{Fs end}}
+
+===Out on loan===
+{{Fs start}}
+{{Fs end}}
+
+==Management==
+''Updated 27 November 2023.''
+{|
+|-
+|valign="top"|
+{| class="wikitable"
+|-
+!Name
+
+!Role
+|-
+|{{Flag icon|POR}} [[Gonçalo Pereira (football manager)|Gonçalo Pereira]]
+| Head coach
+|-
+|{{Flag icon|POR}} João Pires
+| Assistant Coach
+|-
+|{{Flag icon|FIN}} [[Kari Arkivuo]]
+| Assistant Coach
+|-
+|{{Flag icon|FIN}} Mika Heino
+| Fitness Coach
+|-
+|{{Flag icon|FIN}} Joni Kallioinen
+| Talent Coach
+|-
+|{{Flag icon|FIN}} Mikko Poutiainen
+| Physiotherapist
+|-
+|{{Flag icon|FIN}} Erno Jokinen
+| Physiotherapist
+|-
+|{{Flag icon|FIN}} Jarkko Koskinen
+| Kit Manager
+|-
+|{{Flag icon|FIN}} Janne Kaartti
+| Masseur
+|-
+|{{Flag icon|FIN}} Jussi Juurikka
+| Team Manager
+|-
+|{{Flag icon|FIN}} [[Marko Kolsi]]
+| Sporting director
+|}
+|}
+
+==FC Lahti Akatemia==
+{{Main|FC Lahti Akatemia}}
+
+Lahti's reserve team played its last season in [[Kakkonen]] in 2017. After they were relegated to [[Kolmonen]] for the 2018 season, the team's activity was taken over by its administrational parent club [[FC Kuusysi|Kuusysi]].
+
+== Managers ==
+
+* {{flagicon|FIN}} [[Esa Pekonen]] (1 January 1998 – 31 December 1999)
+* {{flagicon|FIN}} [[Jari Pyykölä]] (27 August 1999 – 31 December 2001)
+* {{flagicon|FIN}} [[Harri Kampman]] (1 January 2002 – 31 December 2005)
+* {{flagicon|FIN}} [[Antti Muurinen]] (1 January 2006 – 10 October 2007)
+* {{flagicon|BRA}} Luciano (10 October 2007 – 31 December 2007)
+* {{flagicon|FIN}} [[Ilkka Mäkelä]] (1 January 2008 – 31 December 2010)
+* {{flagicon|FIN}} [[Tommi Kautonen]] (1 January 2011 – 4 June 2013)
+* {{flagicon|FIN}} [[Juha Malinen]] (5 June 2013 – 31 December 2013)
+* {{flagicon|FIN}} [[Toni Korkeakunnas]] (1 January 2014 – 30 September 2018)
+* {{flagicon|FIN}} [[Sami Ristilä]] (1 October 2018 – 31 December 2019)
+* {{flagicon|FIN}} [[Ilir Zeneli]] (1 January 2020 – 23 June 2022)
+* {{flagicon|FIN}} [[Mikko Mannila]] (26 June 2022 – 31 August 2023)
+* {{flagicon|FIN}} [[Toni Lindberg]] (31 August 2023 – 20 June 2024)
+* {{flagicon|POR}} [[Ricardo Duarte (born 1980)|Ricardo Duarte]] (21 June 2024 – 20 December 2024)
+* {{flagicon|POR}} [[Gonçalo Pereira (football manager)|Gonçalo Pereira]] (20 December 2024 – present)
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{official website|http://www.fclahti.fi/}} {{in lang|fi}} 
+
+{{Veikkausliiga}}
+
+[[Category:FC Lahti| ]]
+[[Category:Football clubs in Finland|Lahti]]
+[[Category:Association football clubs established in 1996|Lahti]]
+[[Category:Sport in Lahti]]
+[[Category:Sports clubs and teams in Päijät-Häme]]
+[[Category:1996 establishments in Finland]]

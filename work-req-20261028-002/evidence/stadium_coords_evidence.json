@@ -1,0 +1,149 @@
+{
+  "Bolt Arena": {
+    "file": "stadium_coords_Bolt_Arena.json",
+    "sha256": "e53a0aab5d156355c4623a586bc760c5878b7087b4e4a865738700f5dd83fe0a",
+    "resolved_title": "Töölö Football Stadium",
+    "lat": 60.1875,
+    "lon": 24.9225
+  },
+  "Harjun stadion": {
+    "file": "stadium_coords_Harjun_stadion.json",
+    "sha256": "642c15f44ff96c17138407380697e9733119c66a06f9cdcbb4634b5a3ae1063b",
+    "resolved_title": "Harjun stadion",
+    "lat": 62.24472222,
+    "lon": 25.74083333
+  },
+  "Hietalahti Stadium": {
+    "file": "stadium_coords_Hietalahti_Stadium.json",
+    "sha256": "48fa0ecd4eaea78e5b724ed339d69cb123d69106b82b26836a29230cb1eaacc2",
+    "resolved_title": "Hietalahti Stadium",
+    "lat": 63.08527778,
+    "lon": 21.62777778
+  },
+  "Jouppilanvuoren tekonurmi": {
+    "file": "stadium_coords_Jouppilanvuoren_tekonurmi.json",
+    "sha256": "7d1d1b5914f1222518c996bac0a119c3821489540681506abd50d702e7425a0b",
+    "resolved_title": null,
+    "lat": null,
+    "lon": null
+  },
+  "Kaarlen kenttä": {
+    "file": "stadium_coords_Kaarlen_kentt_.json",
+    "sha256": "31a8952a32cf65d316e823b4572436c2ce8ae119826af5d3fca7075c0a2520b1",
+    "resolved_title": "Kaarlen kenttä",
+    "lat": 63.08277778,
+    "lon": 21.64111111
+  },
+  "Kuopio Football Stadium": {
+    "file": "stadium_coords_Kuopio_Football_Stadium.json",
+    "sha256": "34fdfd8cd00991b835cc68a0a67a5d99491c7c4db3bf6f609042392ec9aa82d6",
+    "resolved_title": "Kuopio Football Stadium",
+    "lat": 62.88463,
+    "lon": 27.6718
+  },
+  "Lahti Stadium": {
+    "file": "stadium_coords_Lahti_Stadium.json",
+    "sha256": "6cee666a1c1887a239d5a70fe9e512af8228f22e4d8aef8b822f7519c491c47a",
+    "resolved_title": "Lahti Stadium",
+    "lat": 60.98305556,
+    "lon": 25.63416667
+  },
+  "Myyrmäen jalkapallostadion": {
+    "file": "stadium_coords_Myyrm_en_jalkapallostadion.json",
+    "sha256": "904961dc2254d2aa05105fc549d03c95217afc0fd0b4ecdb7bae85beac1b18da",
+    "resolved_title": "Myyrmäen jalkapallostadion",
+    "lat": 60.2621,
+    "lon": 24.83818333
+  },
+  "OmaSP Stadion": {
+    "file": "stadium_coords_OmaSP_Stadion.json",
+    "sha256": "78e0fe663bcdeabe578715069f00794679c509e5b255c71817ff82c65945a061",
+    "resolved_title": "OmaSP Stadion",
+    "lat": 62.77861,
+    "lon": 22.81472
+  },
+  "Paavo Nurmi Stadium": {
+    "file": "stadium_coords_Paavo_Nurmi_Stadium.json",
+    "sha256": "687199cfbbca1fe8e69f87cfff0dfb97d68b08721d6729875dcb3807ae4865a8",
+    "resolved_title": "Paavo Nurmi Stadium",
+    "lat": 60.4425,
+    "lon": 22.26083333
+  },
+  "Raatti Stadium": {
+    "file": "stadium_coords_Raatti_Stadium.json",
+    "sha256": "a91c7d09531c653c4fc4e00865be0648635ff359dc451431a91e10601076806a",
+    "resolved_title": "Raatti Stadium",
+    "lat": 65.01972222,
+    "lon": 25.46583333
+  },
+  "Ratina Stadium": {
+    "file": "stadium_coords_Ratina_Stadium.json",
+    "sha256": "e5779e03f705ebb4604080563cefddadda8686f413d7b917427f6befcd6fa670",
+    "resolved_title": "Tampere Stadium",
+    "lat": 61.4925,
+    "lon": 23.76416667
+  },
+  "Seinäjoen keskuskenttä": {
+    "file": "stadium_coords_Sein_joen_keskuskentt_.json",
+    "sha256": "2ca27e67833bed8e5a6054ee7b9659024abcc4ef8998faadecb797f8ff72ae02",
+    "resolved_title": "Seinäjoen keskuskenttä",
+    "lat": 62.78194444,
+    "lon": 22.85111111
+  },
+  "Tammela Stadium": {
+    "file": "stadium_coords_Tammela_Stadium.json",
+    "sha256": "e6138fc6934543c460dee95fe9c43a1b4bdb209e03e0ca1944247469e62a2c9f",
+    "resolved_title": "Tammelan Stadion",
+    "lat": 61.5003,
+    "lon": 23.7853
+  },
+  "Tapiolan urheilupuisto": {
+    "file": "stadium_coords_Tapiolan_urheilupuisto.json",
+    "sha256": "63e7b0b8c9780c8460300bf61f3a94554c62bb558d439ae6593cb59bda98faee",
+    "resolved_title": "Tapiolan urheilupuisto",
+    "lat": 60.1791,
+    "lon": 24.7813
+  },
+  "Veritas Stadion": {
+    "file": "stadium_coords_Veritas_Stadion.json",
+    "sha256": "5c6c2714161f4f7fab74b6cb5c5d38f992a3dae226ab51a7be607a0d954d2508",
+    "resolved_title": "Kupittaa Football Stadium",
+    "lat": 60.44277778,
+    "lon": 22.29166667
+  },
+  "Wiklöf Holding Arena": {
+    "file": "stadium_coords_Wikl_f_Holding_Arena.json",
+    "sha256": "5f5fa7fd8d7c8378e1c13639ee188ceb7eb8f6d1f16f1df6e375068651789cfd",
+    "resolved_title": "Wiklöf Holding Arena",
+    "lat": 60.10222222,
+    "lon": 19.93527778
+  },
+  "fi:Sauvosaaren urheilupuisto": {
+    "file": "stadium_coords_fi_Sauvosaaren_urheilupuisto.json",
+    "sha256": "25aef07f68a0da03ee32d42e5982f276ed02260ff3448d838f7b77a807afe364",
+    "resolved_title": "Sauvosaaren urheilupuisto",
+    "lat": 65.72972222,
+    "lon": 24.56055556
+  },
+  "fi:Rovaniemen keskuskenttä": {
+    "file": "stadium_coords_fi_Rovaniemen_keskuskentt_.json",
+    "sha256": "e1b9ac5efc7e79db58bdc9933eeb9d7c5fb1424bc4c819a9b0fb8ed8a08f0e76",
+    "resolved_title": "Rovaniemen keskuskenttä",
+    "lat": 66.5,
+    "lon": 25.72166667
+  },
+  "fi:Väinölänniemen stadion": {
+    "file": "stadium_coords_fi_V_in_l_nniemen_stadion.json",
+    "sha256": "6efab18d1161d043f1c91ac68421a9f2ff2e05322b9f6989040fc3442e1c47ec",
+    "resolved_title": "Väinölänniemen stadion",
+    "lat": 62.88277778,
+    "lon": 27.70055556
+  },
+  "fi:Jouppilanvuoren tekonurmi": {
+    "file": "stadium_coords_fi_Jouppilanvuoren_tekonurmi.json",
+    "sha256": "61cc79e61c666895b212e04e272419303adc9bd9cbfa832a03ccd36bc33cad02",
+    "resolved_title": "Jouppilanvuoren tekonurmi",
+    "lat": 62.78,
+    "lon": 22.81194444
+  }
+}

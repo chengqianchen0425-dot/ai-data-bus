@@ -2,12 +2,276 @@
   "id": "req-20261028-002",
   "from": "muse",
   "to": "codex",
-  "status": "processing",
+  "status": "ok",
   "request_sha": "4b1ced19c40b2c14",
   "request_sha_full": "4b1ced19c40b2c149c0690fddb33a992ceb3f7e83907075af202a3fb87f43f48",
   "request_sha_method": "sha256 of requests/req-20261028-002.json file bytes; request_sha is its first 16 hex chars, request_sha_full is the complete digest",
   "dispatch_id": "9c8b3d60-f7e4-4469-a529-87cce5913986;dd972fbc-c5a9-4cd5-b6a7-0ee288fa6dd7;6546a6be-dc03-4aa4-828c-524b9cef4000;1a3ac1ab-d763-4b27-8f98-390b577f497d",
   "dp_used": false,
   "dp_reason": "未调用 DeepSeek：本轮为赛前背景证据整理",
-  "note": "【2026-10-28 16:12 CST processing】已接单：Veikkausliiga 2016-2026 历史赛程赛前背景证据缺口审计（868 场候选，仅联赛，仅赛前事实，不碰盘口数据）。先说明一个硬缺口：请求指定的身份 CSV（Windows 路径 D:\\奇门斗数\\...\\method_context_request_fixtures_20261028.csv，SHA-256 9de8b8fac5fcdebbc51e1df99f9a5fe329e3149f3deacc2dfcc4105cd9a4c093）在本 VM 上不存在、无法读取——本轮无法声称与该 CSV 精确对应。四路并行已派出（2016-2018 新季、2019-2021 交叉+填补、2022-2025 交叉+填补、2026 新季+全季赛制与俱乐部身份参考）：先交叉已接受的 req-20261006-004（1,131 行，2019-2025），已有事实不重复造，只在有更强实际比赛日场馆 provenance 时覆盖；重点填补 2021/2022 各缺失的 132 场 official_round、2020 日期缺失 5 场、场馆从 Wikipedia 主场映射升级为场次级证据、俱乐部身份（natal/lineage/entry 年、升降级/更名/前身/合并）、官方开球与时区语义、每季双循环与否。meeting_number 仅当权威源明确定义或可无推断联结到有源官方轮次记录时才填，否则 null。Provenance 按本单新标准：-004 的 source_sha256 是描述符哈希，本单明令其不是源证据哈希，凡需字节级 provenance 必须实采证据字节重算，拿不到写 null、不冒充。最终 CSV 精确联结列为未解决项，须请求方上传 CSV 或确认派生集后才能闭合；最终交付 data.method_context_rows（JSONL，附 SHA-256 与行数）+ 按赛季计数 + fixture_key 级 unresolved_queue。"
+  "data": {
+    "method_context_rows": "work-req-20261028-002/method_context_rows_merged.jsonl",
+    "row_count": 1902,
+    "row_sha256": "4e8c2029294752bf2054d74efe34b902ed626193ceee9241473729ec7e79581b",
+    "counts_by_season": {
+      "2016": {
+        "expected": 198,
+        "discovered": 198,
+        "complete": 165,
+        "partial": 20,
+        "conflict": 13,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2017": {
+        "expected": 198,
+        "discovered": 198,
+        "complete": 86,
+        "partial": 10,
+        "conflict": 102,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2018": {
+        "expected": 198,
+        "discovered": 198,
+        "complete": 122,
+        "partial": 15,
+        "conflict": 61,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2019": {
+        "expected": 162,
+        "discovered": 162,
+        "complete": 162,
+        "partial": 0,
+        "conflict": 0,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2020": {
+        "expected": 132,
+        "discovered": 132,
+        "complete": 128,
+        "partial": 0,
+        "conflict": 4,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2021": {
+        "expected": 162,
+        "discovered": 162,
+        "complete": 161,
+        "partial": 0,
+        "conflict": 1,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2022": {
+        "expected": 162,
+        "discovered": 162,
+        "complete": 30,
+        "partial": 132,
+        "conflict": 0,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2023": {
+        "expected": 167,
+        "discovered": 167,
+        "complete": 167,
+        "partial": 0,
+        "conflict": 0,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2024": {
+        "expected": 169,
+        "discovered": 169,
+        "complete": 167,
+        "partial": 0,
+        "conflict": 2,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2025": {
+        "expected": 177,
+        "discovered": 177,
+        "complete": 0,
+        "partial": 170,
+        "conflict": 7,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      },
+      "2026": {
+        "expected": 177,
+        "discovered": 177,
+        "complete": 0,
+        "partial": 116,
+        "conflict": 61,
+        "unavailable": 0,
+        "blocked": 0,
+        "missing": 0
+      }
+    },
+    "counts_total": {
+      "expected": 1902,
+      "discovered": 1902,
+      "complete": 1188,
+      "partial": 463,
+      "conflict": 251,
+      "unavailable": 0,
+      "blocked": 0,
+      "missing": 0
+    },
+    "venue_status_merged": {
+      "confirmed": 1598,
+      "moved": 59,
+      "unavailable": 175,
+      "conflict": 70,
+      "neutral_verified": 0,
+      "blocked": 0
+    },
+    "venue_official_confirmation_true": 0,
+    "meeting_number_non_null": 0,
+    "meeting_number_schedule_order_count_unverified": 169,
+    "official_round_non_null": 1769,
+    "official_round_null": 133,
+    "official_round_is_official_true": 0,
+    "kickoff_non_null": 1731,
+    "venue_coords_non_null": 1799,
+    "key_findings": [
+      "merged universe is 1902 rows (2016-2026 full public universe); the request CSV's 868 candidate keys could NOT be joined because the CSV file (Windows path on requester machine) does not exist on this VM -- CSV join is pending for all rows (U-11), the merged file is a superset for later joining, not a claim of 868 coverage",
+      "meeting_number is null on all 1902 rows: no authoritative source defines it anywhere; D-route 169 schedule-order occurrence counts are preserved ONLY under meeting_number_schedule_order_count_unverified and must not be used as meeting_number (the request forbids occurrence-count derivation)",
+      "venue official confirmation is 0/1902: all venue confirmations are FBref secondary (confirmed 1598 + moved 59) or season-table candidates; venue_status 'neutral' in route files did NOT mean verified neutral ground and was normalized (A neutral 59 = identity unresolved, D neutral 116 = unverified season-table candidate -> unavailable); merged neutral_verified = 0",
+      "req-20261006-004 kickoff column was systematically wrong: 2019/2021/2022/2023 -004 times are exactly FBref local -2h (UK clock mislabeled Europe/Helsinki) and were corrected; 2020 has NO offset (57/61 agree) and was not shifted; 2024 only 7 playoff rows corrected (league 162 kept with conflict note); 2025 all kept with an unresolved systematic +2h FBref disagreement and UTC withheld -- kickoff handling is per-season (kickoff_basis per row), do not compare across seasons directly",
+      "official_round is missing on 133 rows (2022 regular season 132 + 2021-09-14 Ilves-HIFK 1); all 1769 present round values are NON-official cross-check labels (Soccerway/worldfootball/FBref/topsoccerersfootball), official_round_is_official = false everywhere; 2017 (102) + 2018 (61) + 2016 (13) FBref Wk labels are self-conflicted and kept verbatim",
+      "2022 round recovery: WorldFootball pagination proved to be display chunking (not rounds) and FBref Wk buckets proved not clean round partitions -- neither was upgraded; next feasible source is live-browser Soccerway ROUND groups",
+      "2020 corrections vs -004 (keys retained, old values in date_as_in_req20261006_004): HIFK-RoPS 2020-11-04 -> 2020-10-22, Honka-HJK 2020-09-19 -> 2020-09-20; 2024 Gnistan fire relocation (7 matches to Bolt Arena, -004 mapping wrong for those 7); 2019 KPV borrowed OmaSP Stadion 8 matches",
+      "double round robin (whole-season sense): only 2020 is true (22 rounds, split cancelled); 2016-2018 triple (33 rounds); 2019/2021-2024 split formats; 2025/2026 mixed (championship double, relegation single); 2026 season in progress (championship rounds 30-32, 9 matches scheduled 2026-10-28 to 2026-11-08)",
+      "2023 labels-file home/away reversal (2023-04-30 KuPS home vs Mariehamn in labels file vs Mariehamn home vs KuPS in -004/FBref) recorded as non-row unresolved item U-08, no new fixture created",
+      "no market data, no scores, no standings, no predictions in any row (key scan clean); no purchase, no login, no credential, no paid API used"
+    ],
+    "unresolved_queue": [
+      {
+        "id": "U-01",
+        "type": "pending_work",
+        "scope": "all 1902 rows",
+        "field": "meeting_number",
+        "detail": "null everywhere; no authoritative definition found; D-route 169 schedule-order counts are reference-only"
+      },
+      {
+        "id": "U-02",
+        "type": "pending_work",
+        "scope": "2022 regular season 132 rows",
+        "field": "official_round",
+        "detail": "still null; WorldFootball pagination and FBref Wk buckets disproved as round sources; next: live-browser Soccerway ROUND groups"
+      },
+      {
+        "id": "U-03",
+        "type": "conflict",
+        "scope": "2021-09-14 Ilves-HIFK",
+        "field": "official_round",
+        "detail": "FBref Wk14 conflicts with group completeness (Wk14 already full without it; Wk19 missing exactly this pair)"
+      },
+      {
+        "id": "U-04",
+        "type": "conflict",
+        "scope": "2016 13 + 2017 102 + 2018 61 rows",
+        "field": "official_round",
+        "detail": "FBref Wk label anomalies kept verbatim; needs official Veikkausliiga/Palloliitto round records to upgrade"
+      },
+      {
+        "id": "U-05",
+        "type": "source_missing",
+        "scope": "all 1902 rows",
+        "field": "venue_official_confirmation",
+        "detail": "0 rows officially confirmed; all venue evidence is FBref secondary or season-table candidates"
+      },
+      {
+        "id": "U-06",
+        "type": "conflict",
+        "scope": "70 rows (C 9 + D 61)",
+        "field": "venue",
+        "detail": "competing venue candidates, none chosen; verified venue null"
+      },
+      {
+        "id": "U-07",
+        "type": "unavailable",
+        "scope": "175 rows (A 59 + D 116)",
+        "field": "venue",
+        "detail": "A: venue identity/coords unresolved; D: season-table candidate only, no fixture-level evidence"
+      },
+      {
+        "id": "U-08",
+        "type": "conflict",
+        "scope": "non-row item: 2023-04-30 KuPS vs Mariehamn",
+        "field": "home/away identity",
+        "detail": "labels file says KuPS home, -004/FBref say Mariehamn home; no new fixture created; needs official schedule adjudication"
+      },
+      {
+        "id": "U-09",
+        "type": "pending_work",
+        "scope": "2026 171/177 rows",
+        "field": "kickoff",
+        "detail": "null (source gives dates only); only round 1 (6 rows) has times, Flashscore CEST-marked, EEST conflict noted, no UTC conversion"
+      },
+      {
+        "id": "U-10",
+        "type": "pending_work",
+        "scope": "2025 170 rows",
+        "field": "kickoff",
+        "detail": "-004 values kept, FBref systematically +2h disagreement unresolved, UTC withheld"
+      },
+      {
+        "id": "U-11",
+        "type": "pending_work",
+        "scope": "all rows",
+        "field": "csv_join",
+        "detail": "request CSV unavailable on this VM; merged file is the 1902-row superset; the 868-row subset cannot be identified until requester uploads the CSV or confirms the derived set"
+      },
+      {
+        "id": "U-12",
+        "type": "pending_work",
+        "scope": "most clubs",
+        "field": "competition_entry_year",
+        "detail": "mostly null (B 16 teams null; C many null; D only Lahti/TPS 2026 filled); founded years present where verified"
+      },
+      {
+        "id": "U-13",
+        "type": "access_blocked",
+        "scope": "evidence-level",
+        "field": "provenance bytes / official sources",
+        "detail": "2016-2018 FBref row bytes blocked (Cloudflare 403, three methods); 2026 worldfootball.net full page HTTP 403 (not retried, not bypassed); veikkausliiga.com/Tulospalvelu JS-rendered (no live-browser capacity this round); no retry_after promised, official sources need a live-browser task"
+      },
+      {
+        "id": "U-14",
+        "type": "source_missing",
+        "scope": "2026 season",
+        "field": "season completeness",
+        "detail": "season in progress; championship rounds 30-32 (9 matches) scheduled 2026-10-28 to 2026-11-08; delivery contains pre-match facts only"
+      }
+    ],
+    "merge_notes": "work-req-20261028-002/merge_notes.md",
+    "route_files": [
+      "work-req-20261028-002/method_context_2016_2018.jsonl",
+      "work-req-20261028-002/method_context_2019_2021.jsonl",
+      "work-req-20261028-002/method_context_2022_2025.jsonl",
+      "work-req-20261028-002/method_context_2026.jsonl",
+      "work-req-20261028-002/season_format_club_reference.md",
+      "work-req-20261028-002/merge_20261028_002.py"
+    ],
+    "schema_note": "merged row keys: fixture_key, season, match_date, home_team, away_team, official_round, official_round_kind, official_round_basis, official_round_is_official, round_conflict, round_conflict_note, double_round_robin, double_round_robin_basis, meeting_number (always null), meeting_number_schedule_order_count_unverified, meeting_number_note, meeting_number_count_disagreement, venue_name, venue_name_per_fixture, venue_city, venue_lat, venue_lon, venue_iana_timezone, venue_status, venue_status_route, venue_status_note, venue_official_confirmation, venue_competing_candidates, venue_listed_home, kickoff_local, kickoff_timezone, kickoff_utc, kickoff_basis, kickoff_conflict, kickoff_conflict_note, kickoff_disagreement_unresolved, kickoff_disagreement_note, date_as_in_req20261006_004, home_club_identity, away_club_identity, csv_join_status, row_status_route, row_status_merged, route, provenance"
+  }
 }

@@ -1,0 +1,650 @@
+{{Short description|Finnish football club}}
+{{About|the football club from Turku, Finland|the Milan football club|Inter Milan}}
+{{Infobox football club
+| clubname = Inter Turku
+| image = FC Inter Turku logo.svg
+| upright = 0.9
+| fullname = Football Club International Turku
+| nickname = ''Sinimustat'' (Blue and Blacks) ''Hinaajat'' (Tugboats)
+| founded = {{Start date and age|1990}}
+| ground = [[Veritas Stadion]]<br />[[Kupittaa]], [[Turku]], [[Finland]]
+| capacity = 9,372
+| chairman = {{ill|Stefan Håkans|fi}}
+| manager = [[Vesa Vasara]]
+| league = [[Veikkausliiga]]
+| season = [[2025 Veikkausliiga|2025]]
+| position = Veikkausliiga, 2nd of 12
+| current = 2026 Veikkausliiga
+| website = {{URL|https://fcinter.fi/}}
+| pattern_la1 = _nikestripeddivision5rbb
+| pattern_b1  = _nikestripeddivision5rbb
+| pattern_ra1 = _nikestripeddivision5rbb
+| pattern_sh1 = 
+| pattern_so1 = 
+| leftarm1 = 02509B
+| body1 = 02509B
+| rightarm1 = 02509B
+| shorts1 = 000000
+| socks1 = 000000
+| pattern_la2 = _nikestrike4r25
+| pattern_b2 = _nikestrike4r25
+| pattern_ra2 = _nikestrike4r25
+| pattern_sh2 = _nikeleague3ur
+| leftarm2 = b30000
+| body2 = FF0000
+| rightarm2 = b30000
+| shorts2 = FF0000
+| socks2 = FF0000
+}}
+
+[[Image:Veritas Stadion 23.7.2015.jpg|thumb|[[Veritas Stadion]]]]
+
+'''Football Club International Turku''', commonly referred to as '''Inter Turku''' ({{langx|sv|Inter Åbo}}) and colloquially known as '''Inter''', is a Finnish professional [[association football|football]] club based in [[Turku]] that competes in the [[Veikkausliiga]], the top flight of Finnish football. Founded in 1990 by Stefan Håkans, Inter has a rivalry with [[Turun Palloseura]]. The club has won one [[List of Finnish football champions#Performance by club|Finnish championship title]], three [[Finnish Cup]] titles, and four [[Finnish League Cup]] titles. They play home matches at [[Veritas Stadion]], with a capacity of 9,372.
+
+==History==
+FC Inter was founded in 1990 by Stefan Håkans, the [[managing director]] of the [[tugboat|towage]] and [[Marine salvage|salvage]] company Alfons Håkans, allegedly after his 11-year-old son could not fit into any of the other youth teams in Turku. Both the name and the black and blue vertically striped jersey are inspired by [[Inter Milan]], the club involved in a memorable near miss of future city rivals TPS, who beat Inter 1–0 at [[San Siro]] in the [[1987–88 UEFA Cup]] but then lost the return leg 2–0 in Turku, exiting the competition after nearly achieving a historic breakthrough. The club's name was officially registered in September 1991. The club started out as a youth team, but in 1992 a senior squad was founded and it entered the Finnish league system at the fourth level (third division [[Kolmonen]]). The following year, the club assumed the place of the financially troubled local club [[Turun Toverit]] in the Second Division. Manager Timo Sinkkonen invested in new players, and eventually the club finished first and was promoted to the First Division ([[Ykkönen]]).
+
+In 1995, Inter finished first in the ''Ykkönen'' and was promoted, as well as reaching the semi-final stage in the Finnish [[Tournament|Cup]]. The squad was strengthened with new players, and in 1996, as both of Turku's better teams were now playing in the ''Veikkausliiga'', the club's attendance records were broken with 8,200 spectators in the [[local derby]] between [[Turun Palloseura]] (TPS) and Inter.
+
+In 1997, the club were relegated after finishing last in the ''Veikkausliiga'', but achieved promotion again the following season. New foreign players were bought to strengthen the squad, such as [[Richard Teberio]] and [[Fernando Della Sala]]. Since then the club has consistently finished between 7th and 4th in the league, and maintained a steady inflow of foreign players as well as young starlets from its own youth academy.
+
+During the 2006 season Inter sacked their manager [[Kari Virtanen]] and hired new coach, Dutchman [[Rene van Eck]]. After the season van Eck returned to Switzerland to coach [[FC Wohlen]], and another Dutchman [[Job Dragtsma]] took over.
+
+In 2008 Inter led the league since early season and clinched their first Finnish championship title after winning against [[FF Jaro]] in their final game.
+
+In the [[2011 Veikkausliiga]] season, the club's first-choice striker [[Timo Furuholm]] scored 22 goals and won the Veikkausliiga Golden Boot, and helped Inter to finish as the season's runner-up.
+
+In August 2026, Inter sold the centre-back [[Ilari Kangasniemi]] to English club [[Leicester City F.C.|Leicester City]] for the league's record-high transfer fee of €2.5 million.
+
+==European cup history==
+{| class="wikitable"
+! style="color:black; background:#275EF5;"|Season
+! style="color:black; background:#275EF5;"|Competition
+! style="color:black; background:#275EF5;"|Round
+! style="color:black; background:#275EF5;"|Club
+! style="color:black; background:#275EF5;"|Home
+! style="color:black; background:#275EF5;"|Away
+! style="color:black; background:#275EF5;"|Aggregate 
+! style="color:black; background:#275EF5;"|Y/N
+|-
+| rowspan="2"| [[2005 UEFA Intertoto Cup|2005]]
+| rowspan="2"| [[UEFA Intertoto Cup]]
+| [[2005 UEFA Intertoto Cup#First round|1R]]
+| {{flagicon|Iceland}} [[Íþróttabandalag Akraness|ÍA]]
+| bgcolor="#ffffdd" style="text-align:center;"| 0–0
+| bgcolor="#ddffdd" style="text-align:center;"| 4–0
+| style="text-align:center;"| 4–0 
+| [[File:Symbol keep vote.svg|17px]]
+|-
+| [[2005 UEFA Intertoto Cup#Second round|2R]]
+| {{flagicon|Croatia}} [[NK Varaždin (1931–2015)|NK Varteks]]
+| bgcolor="#ffffdd" style="text-align:center;"| 2–2
+| bgcolor="#ffdddd" style="text-align:center;"| 3–4
+|  style="text-align:center;"| 5–6 
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2009–10 UEFA Champions League|2009–10]]
+| [[UEFA Champions League]]
+| [[2009–10 UEFA Champions League#Second qualifying round|2Q]]
+| {{flagicon|Moldova}} [[FC Sheriff|Sheriff]]
+| bgcolor="#ffdddd" style="text-align:center;"| 0–1
+| bgcolor="#ffdddd" style="text-align:center;"| 0–1
+| style="text-align:center;"| 0–2 
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2010–11 UEFA Europa League|2010–11]]
+| [[UEFA Europa League]]
+| [[2010–11 UEFA Europa League#Third qualifying round|3Q]]
+| {{flagicon|Belgium}} [[K.R.C. Genk|Genk]]
+| bgcolor="#ffdddd" style="text-align:center;"| 1–5
+| bgcolor="#ffdddd" style="text-align:center;"| 2–3
+| style="text-align:center;"| 3–8 
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2012–13 UEFA Europa League|2012–13]]
+| [[UEFA Europa League]]
+| [[2012–13 UEFA Europa League#Second qualifying round|2Q]]
+| {{flagicon|Netherlands}} [[FC Twente|Twente]]
+| bgcolor="#ffdddd" style="text-align:center;"| 0–5
+| bgcolor="#ffffdd" style="text-align:center;"| 1–1
+| style="text-align:center;"| 1–6 
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2013–14 UEFA Europa League|2013–14]]
+| [[UEFA Europa League]]
+| [[2013–14 UEFA Europa League#First qualifying round|1Q]]
+| {{flagicon|Faroe Islands}} [[Víkingur Gøta]]
+| bgcolor="#ffdddd" style="text-align:center;"| 0–1
+| bgcolor="#ffffdd" style="text-align:center;"| 1–1
+| style="text-align:center;"| 1–2 
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2019–20 UEFA Europa League|2019–20]]
+| [[UEFA Europa League]]
+| [[2019–20 UEFA Europa League#First qualifying round|1Q]]
+| {{flagicon|Denmark}} [[Brøndby IF|Brøndby]]
+| bgcolor="#ddffdd" style="text-align:center;"| 2–0
+| bgcolor="#ffdddd" style="text-align:center;"| 1–4
+| style="text-align:center;"| 3–4 
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2020–21 UEFA Europa League|2020–21]]
+| [[UEFA Europa League]]
+| [[2020–21 UEFA Europa League#First qualifying round|1Q]]
+| {{flagicon|Hungary}} [[Budapest Honvéd FC|Honvéd]]
+| {{n/a}}
+| bgcolor="#ffdddd" style="text-align:center;"| 1−2 {{aet}}
+| {{n/a}} 
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2021–22 UEFA Europa Conference League|2021–22]]
+| [[UEFA Europa Conference League]]
+| [[2021–22 UEFA Europa Conference League#First qualifying round|1Q]]
+| {{flagicon|Hungary}} [[Puskás Akadémia FC|Puskás Akadémia]]
+| bgcolor="#ffffdd" style="text-align:center;"| 1–1
+| bgcolor="#ffdddd" style="text-align:center;"| 0–2
+| style="text-align:center;"| 1–3
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2022–23 UEFA Europa Conference League|2022–23]]
+| [[UEFA Europa Conference League]]
+| [[2022–23 UEFA Europa Conference League#First qualifying round|1Q]]
+| {{flagicon|Kosovo}} [[FC Drita|Drita]]
+| bgcolor="#ddffdd" style="text-align:center;"| 1–0
+| bgcolor="#ffdddd" style="text-align:center;"| 0–3
+| style="text-align:center;"| 1–3
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=4|[[2026–27 UEFA Conference League|2026–27]]
+|rowspan=4| [[UEFA Conference League]]
+| [[2026–27 UEFA Conference League#First qualifying round|1Q]]
+| {{flagicon|BIH}} [[FK Sarajevo|Sarajevo]]
+| bgcolor="#ddffdd" style="text-align:center;"| 2–1
+| bgcolor="#ffffdd" style="text-align:center;"| 1–1
+| style="text-align:center;"| 3–2
+| [[File:Symbol keep vote.svg|17px]]
+|-
+| [[2026–27 UEFA Conference League#Second qualifying round|2Q]]
+| {{flagicon|TUR}} [[İstanbul Başakşehir F.K.|İstanbul Başakşehir]]
+| bgcolor="#ddffdd" style="text-align:center;"| 2–0
+| bgcolor="#ffffdd" style="text-align:center;"| 1–1
+| style="text-align:center;"| 3–1
+| [[File:Symbol keep vote.svg|17px]]
+|-
+| [[2026–27 UEFA Conference League#Third qualifying round|3Q]]
+| {{flagicon|LIE}} [[FC Vaduz|Vaduz]]
+| bgcolor="#ddffdd" style="text-align:center;"| 2–1
+| bgcolor="#ffffdd" style="text-align:center;"| 2–2
+| style="text-align:center;"| 4–3
+| [[File:Symbol keep vote.svg|17px]]
+|-
+| [[2026–27 UEFA Conference League#Play-off round|PO]]
+| {{flagicon|DEN}} [[FC Copenhagen|Copenhagen]]
+| bgcolor="#ffffdd" style="text-align:center;"| 0–0
+| bgcolor="#ffdddd" style="text-align:center;"| 1–4
+| style="text-align:center;"| 1–4
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|}
+
+==Season to season==
+{{cot
+|fc=black
+|bg=#275EF5
+
+|{{nowrap|Season to Season}}
+}}
+{|
+|valign="top" width=0%|
+{|  class="wikitable"
+|- style="background:#f0f6fa;"
+!'''Season'''
+!'''Level'''
+!'''Division'''
+!'''Section'''
+!'''Administration'''
+!'''Position'''
+!'''Movements'''
+|-
+|style="background:#FF7F00;"|1992
+|style="background:#FF7F00;"|Tier 4
+|style="background:#FF7F00;"|'''III divisioona''' ''(Third Division)''
+|style="background:#FF7F00;"|Group 3
+|style="background:#FF7F00;"|Turku District ''(SPL Turku)''
+|style="background:#FF7F00;"|'''6th'''
+|style="background:#FF7F00;"|
+|-
+|style="background:#77DD77;"|1993
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|West Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#77DD77;"| '''2nd'''
+|style="background:#77DD77;"| Promoted
+|-
+|style="background:#87CEFA;"|1994
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"| '''3rd'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|1995
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"| '''1st'''
+|style="background:#87CEFA;"| Promoted
+|-
+|style="background:#FFFF00;"|1996
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|Upper Group&nbsp;– '''6th'''
+|-
+|style="background:#FFFF00;"|1997
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''7th'''
+|style="background:#FFFF00;"|Third round&nbsp;– '''10th'''&nbsp;– Relegated
+|-
+|style="background:#87CEFA;"|1998
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|South Group
+|style="background:#87CEFA;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"| '''2nd'''
+|style="background:#87CEFA;"| Upper Group&nbsp;– '''3rd'''&nbsp;– Promoted
+|-
+|style="background:#FFFF00;"|1999
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"|Upper Group&nbsp;– '''5th'''
+|-
+|style="background:#FFFF00;"|2000
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''7th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2001
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2002
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2003
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''7th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2004
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2005
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2006
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''10th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2007
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''9th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2008
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"|2009
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2010
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2011
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2012
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2013
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''9th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2014
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''10th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2015
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2016
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''11th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2017
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''9th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2018
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''7th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2019
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2020
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2021
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''3rd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2022
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2023
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2024
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''7th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2025
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"|
+|}
+*'''29''' seasons in ''[[Veikkausliiga]]''
+*'''3''' seasons in ''[[Ykkönen]]''
+*'''1''' seasons in ''[[Kakkonen]]''
+*'''1''' seasons in ''[[Kolmonen]]''
+|}
+{{cob}}
+
+==Record transfers==
+{|border="0" class="wikitable"
+!! style="color:black; background:#275EF5;"|Rank
+!! style="color:black; background:#275EF5;"|Player
+!! style="color:black; background:#275EF5;"|To
+!! style="color:black; background:#275EF5;"|Fee
+!! style="color:black; background:#275EF5;"|Year
+|-
+|1.||{{flagicon|FIN}} [[Ilari Kangasniemi]]||{{flagicon|ENG}} [[Leicester City F.C.|Leicester City]]||€2.5 million||2026<ref>[https://yle.fi/a/74-20242488 Ylen tiedot: Ilari Kangasniemi jättisiirrolla Englantiin – FC Inter kuittaa ennätyssumman], [[Yle]], 24 August 2026</ref>
+|-
+|2.||{{flagicon|CIV}} [[Axel Kouame]]||{{flagicon|SWE}} [[AIK Fotboll|AIK]]||€1.0 million||2025<ref>[https://www.iltalehti.fi/veikkausliiga/a/255ad456-5f3b-44bd-960b-3ee071c7bdb1 Expressen: Suomen pääsarjassa jysähti – Tähtipelaaja lähtee miljoonasiirrolla], [[Iltalehti]], 29 August 2025</ref>
+|-
+|3.||{{flagicon|CMR}} [[Antoin Essomba]]||{{flagicon|SAU}} [[Al-Kholood Club|Al-Kholood]]||€1.0 million||2026<ref>[https://x.com/TInnanen/status/2094444381889564883 FC Inter on saamassa tehottomasti tällä kaudella operoineesta laituristaan Loic Essombasta yli miljoonan euron siirtokorvauksen. Essomban uusi osoite tarkentunee piakkoin.], Timo Innanen, 31 August 2026</ref>
+|-
+|4.||{{flagicon|FIN}} [[Djoully Nzoko]]||{{flagicon|BEL}} [[KRC Genk#Jong Genk|Jong Genk]]||€800,000||2024<ref>[https://www.ts.fi/a/6424338 Belgiassa kiinnostuttiin Interin teinitähdestä – turkulaisseura tavoittelee ainakin miljoonan euron siirtopottia neljässä vuodessa], [[Turun Sanomat]], 4 September 2024</ref>
+|-
+|5.||{{flagicon|FIN}} [[Timo Stavitski]]||{{flagicon|SWE}} [[Mjällby AIF|Mjällby]]||undisclosed||2024<ref>[https://www.suomifutis.com/2024/08/timo-stavitski-siirtyy-ruotsin-paasarjaan/ Timo Stavitski siirtyy Ruotsin pääsarjaan], suomifutis.com, 23 August 2024</ref>
+|}
+
+==Current squad==
+{{updated|24 August 2026}}<ref>{{Cite web |url=https://fcinter.fi/joukkue/ |title=Joukkue FC Inter |access-date=2021-03-05 |archive-date=2021-04-11 |archive-url=https://web.archive.org/web/20210411220706/https://fcinter.fi/joukkue/ |url-status=live }}</ref>
+{{Fs start}}
+{{Fs player|no= 1|nat=FIN|pos=GK|name=[[Eetu Huuhtanen]]}}
+{{Fs player|no= 2|nat=FIN|pos=DF|name=[[Jussi Niska]]}}
+{{Fs player|no= 3|nat=FIN|pos=DF|name=[[Juuso Hämäläinen]]}}
+{{Fs player|no= 4|nat=GHA|pos=MF|name=[[Prosper Ahiabu]]}}
+{{Fs player|no= 5|nat=FIN|pos=DF|name=[[Albin Granlund]]}}
+{{Fs player|no=7|nat=SWE|pos=FW|name=[[Herman Sjögrell]]}}
+{{Fs player|no= 8|nat=FIN|pos=MF|name=[[Johannes Yli-Kokko]]}}
+{{Fs player|no= 9|nat=FIN|pos=FW|name=[[Jasse Tuominen]]}}
+{{Fs player|no=10|nat=SLE|pos=FW|name=[[Alie Conteh]]|other=on loan from [[Strømsgodset Toppfotball|Strømsgodset]]}}
+{{Fs player|no=11|nat=BFA|pos=FW|name=[[Kouamé Botué|Jean Botué]]}}
+{{Fs player|no=12|nat=FIN|pos=GK|name=[[Eero Vuorjoki]]}}
+{{Fs player|no=13|nat=FIN|pos=GK|name=Alex Hilden}}
+{{Fs player|no=14|nat=FIN|pos=MF|name=[[Janne-Pekka Laine]]}}
+{{Fs player|no=16|nat=NGA|pos=FW|name=[[Clinton Jephta]]}}
+{{Fs player|no=17|nat=GHA|pos=MF|name=[[Bismark Ampofo]]}}
+{{fs mid}}
+{{Fs player|no=18|nat=FIN|pos=DF|name=[[Seth Saarinen]]}}
+{{Fs player|no=19|nat=FIN|pos=MF|name=[[Iiro Järvinen]]}}
+{{Fs player|no=20|nat=FIN|pos=DF|name=[[Axel Sandler]]}}
+{{Fs player|no=22|nat=FIN|pos=DF|name=[[Luka Kuittinen]]}}
+{{Fs player|no=23|nat=CMR|pos=FW|name=[[Antoin Essomba|Loic Essomba]]}}
+{{Fs player|no=24|nat=FIN|pos=DF|name=[[Julius Tauriainen]]}}
+{{Fs player|no=26|nat=FIN|pos=FW|name=[[Vilho Huovila]]}}
+{{Fs player|no=27|nat=FIN|pos=MF|name=[[Vincent Ulundu]]}}
+{{Fs player|no=28|nat=FIN|pos=MF|name=[[Lauri Laine]]|other=on loan from [[FC Baník Ostrava|Baník Ostrava]]}}
+{{Fs player|no=30|nat=GHA|pos=DF|name=[[Yeboah Amankwah]]}}
+{{Fs player|no=35|nat=FIN|pos=MF|name=[[Eeli Kiiskilä]]}}
+{{Fs player|no=36|nat=FIN|pos=GK|name=[[Ville Seppä]]}}
+{{Fs player|no=  |nat=SVK|pos=FW|name=[[Lukáš Prokop]]|other=on loan from [[MŠK Žilina|Žilina]]}}
+{{Fs player|no=|nat=FIN|pos=DF|name=[[Robert Ivanov]]}}
+{{Fs player|no=|nat=GAM|pos=FW|name=[[Muhammed Suso]]|other=on loan from [[FK Pardubice|Pardubice]]}}
+{{Fs end}}
+
+===Out on loan===
+{{Fs start}}
+{{Fs end}}
+
+==Management==
+''As of 29.04.2026''
+{| class="wikitable"
+!style="color:black; background:#275EF5;"|Name
+!style="color:black; background:#275EF5;"|Role
+|-
+|{{Flag icon|FIN}} [[Vesa Vasara]]
+|Manager
+|-
+|{{Flag icon|FIN}} [[Riku Paularinne]]
+|Assistant coach
+|-
+|{{Flag icon|FIN}} [[Jussi-Pekka Savolainen]]
+|Reserve team head coach
+|-
+|{{Flag icon|FIN}} Miika Salmi
+|Goalkeeping coach
+|-
+|{{Flag icon|FIN}} Niko Lehikoinen
+|First Team Administrator
+|-
+|{{Flag icon|FIN}} Ville Peltonen
+|Physiotherapist
+|-
+|{{Flag icon|FIN}} Teemu Ahonen
+|Physiotherapist
+|-
+|{{Flag icon|FIN}} Aleksi Moilanen
+|Physiotherapist
+|-
+|{{Flag icon|FIN}} Seppo Pajunen
+|Kit Manager
+|-
+|{{Flag icon|FIN}} Tero Silto
+|Team doctor
+|-
+|{{Flag icon|FIN}} [[Jani Meriläinen]]
+|InterAction director
+|-
+|{{Flag icon|FIN}} [[Kalle Parviainen]]
+|Sporting director
+|}
+
+{| class="wikitable"
+!style="color:black; background:#275EF5;"|Name
+!style="color:black; background:#275EF5;"|Role
+|-
+|{{flagicon|FIN}} [[Jyrki Ahola]]
+|Scout
+|-
+|{{flagicon|FIN}} Viki Savonen
+|Head of scout
+|}
+
+==Honours==
+*'''[[Veikkausliiga]]'''
+**'''Winners (1):''' [[Veikkausliiga 2008|2008]]
+**''Runners-up (3):'' [[2019 Veikkausliiga|2019]], [[2020 Veikkausliiga|2020]], [[2025 Veikkausliiga|2025]]
+* '''[[Finnish Cup]]'''
+**'''Winners (3):''' [[2009 Finnish Cup|2009]], [[2017–18 Finnish Cup|2017–18]], [[2026 Finnish Cup|2026]]
+**''Runners-up (5):'' [[2014 Finnish Cup|2014]], [[2015 Finnish Cup|2015]], [[2020 Finnish Cup|2020]], [[2022 Finnish Cup|2022]], [[2024 Finnish Cup|2024]]
+*'''[[Finnish League Cup]]'''
+**'''Winners (4):''' [[2008 Finnish League Cup|2008]], 2024, 2025, 2026
+**''Runners-up (2):'' 2007, 2022
+
+===Player records===
+*Most goals scored: [[Tero Forss]] (74 goals)
+*Most matches played: [[Petri Lehtonen]] (227 matches)
+
+==Past managers==
+*{{flagicon|Finland}} Anders Romberg (1992)
+*{{flagicon|Finland}} Timo Sinkkonen (1993 – 1994)
+*{{flagicon|Finland}} Hannu Paatelo (1995 – 1997)
+*{{flagicon|Finland}} [[Tomi Jalo]] (1997 – 1998)
+*{{flagicon|England}} [[Steven Polack]] (1998)
+*{{flagicon|Finland}} [[Timo Askolin]] (1999 – 2000)
+*{{flagicon|Finland}} [[Pertti Lundell]] (January 1, 2001 – December 31, 2002)
+*{{flagicon|Finland}} [[Kari Virtanen]] (January 1, 2003 – September 16, 2006)
+*{{flagicon|Netherlands}} [[René van Eck]] (September 16, 2006 – November 16, 2006)
+*{{flagicon|Netherlands}} [[Job Dragtsma]] (January 1, 2007 – May 26, 2016)
+*{{flagicon|Finland}} [[Jami Wallenius]] (May 26, 2016 – August 3, 2016)
+*{{flagicon|Finland}} [[Shefki Kuqi]] (August 3, 2016 – August 3, 2017)
+*{{flagicon|Italy}} [[Fabrizio Piccareta]] (August 3, 2017 – June 10, 2018)
+*{{flagicon|Spain}} [[José Riveiro]] (January 1, 2019 – December 31, 2021)
+*{{flagicon|Spain}} [[Miguel Grau (football manager)|Miguel Grau]] (January 1, 2022 – September 19, 2022)
+*{{flagicon|Spain}} [[Ramiro Muñoz]] (September 20, 2022 – December 31, 2022)
+*{{flagicon|Finland}} [[Jarkko Wiss]] (January 1, 2023 – November 6, 2023)
+*{{flagicon|Finland}} [[Vesa Vasara]] (January 1, 2024 – present)
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.fcinter.fi FCInter.fi]&nbsp;– The club's official site.
+
+{{Veikkausliiga}}
+{{Finnish Champions in Football}}
+
+[[Category:FC Inter Turku| ]]
+[[Category:Football clubs in Finland|International Turku]]
+[[Category:Sport in Turku]]
+[[Category:Sports clubs and teams in Southwest Finland]]
+[[Category:Association football clubs established in 1990]]
+[[Category:1990 establishments in Finland]]

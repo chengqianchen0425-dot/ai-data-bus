@@ -1,0 +1,171 @@
+{
+  "Telia 5G -areena": {
+    "resolved_title": "Töölö Football Stadium",
+    "lat": 60.1875,
+    "lon": 24.9225,
+    "query_title": "Bolt Arena"
+  },
+  "Veritas Stadion": {
+    "resolved_title": "Kupittaa Football Stadium",
+    "lat": 60.44277778,
+    "lon": 22.29166667,
+    "query_title": "Veritas Stadion"
+  },
+  "Wiklöf Holding Arena": {
+    "opensearch_titles": [
+      "Wiklöf Holding Arena"
+    ],
+    "resolved_title": "Wiklöf Holding Arena",
+    "lat": 60.10222222,
+    "lon": 19.93527778
+  },
+  "Tammelan Stadion": {
+    "opensearch_titles": [
+      "Tammelan Stadion",
+      "Tammelan Stadion (1931)"
+    ],
+    "resolved_title": "Tammelan Stadion",
+    "lat": 61.5003,
+    "lon": 23.7853
+  },
+  "Ratinan Stadion": {
+    "resolved_title": "Tampere Stadium",
+    "lat": 61.4925,
+    "lon": 23.76416667,
+    "query_title": "Ratina Stadium"
+  },
+  "Savon Sanomat Areena": {
+    "resolved_title": "Kuopio Football Stadium",
+    "lat": 62.88463,
+    "lon": 27.6718,
+    "query_title": "Savon Sanomat Areena"
+  },
+  "Väinölänniemen stadion": {
+    "resolved_title": null,
+    "lat": null,
+    "lon": null,
+    "query_titles": [
+      "Väinölänniemi Stadium",
+      "Väinölänniemen stadion"
+    ]
+  },
+  "Myyrmäen jalkapallostadion": {
+    "opensearch_titles": [
+      "Myyrmäen jalkapallostadion"
+    ],
+    "resolved_title": "Myyrmäen jalkapallostadion",
+    "lat": 60.2621,
+    "lon": 24.83818333
+  },
+  "Rovaniemen Keskuskenttä": {
+    "resolved_title": null,
+    "lat": null,
+    "lon": null,
+    "query_titles": [
+      "Rovaniemen keskuskenttä"
+    ]
+  },
+  "Raatin stadion": {
+    "opensearch_titles": [
+      "Raatti Stadium",
+      "Ratina Stadion"
+    ],
+    "resolved_title": "Raatti Stadium",
+    "lat": 65.01972222,
+    "lon": 25.46583333
+  },
+  "Sauvosaaren urheilupuisto": {
+    "resolved_title": null,
+    "lat": null,
+    "lon": null,
+    "query_titles": [
+      "Sauvosaaren Urheilupuisto"
+    ]
+  },
+  "Kisapuisto": {
+    "opensearch_titles": [
+      "Kisapuisto",
+      "Kis pistol",
+      "Kisaku Itō"
+    ],
+    "resolved_title": "Kisapuisto",
+    "lat": 61.05777778,
+    "lon": 28.22888889
+  },
+  "Lahden Stadion": {
+    "resolved_title": "Lahti Stadium",
+    "lat": 60.98305556,
+    "lon": 25.63416667,
+    "query_title": "Lahti Stadium"
+  },
+  "Kaarlen kenttä": {
+    "opensearch_titles": [
+      "Kaarlen kenttä"
+    ],
+    "resolved_title": "Kaarlen kenttä",
+    "lat": 63.08277778,
+    "lon": 21.64111111
+  },
+  "Elisa Stadion": {
+    "resolved_title": "Hietalahti Stadium",
+    "lat": 63.08527778,
+    "lon": 21.62777778,
+    "query_title": "Elisa Stadion"
+  },
+  "Jouppilanvuoren tekonurmi": {
+    "resolved_title": null,
+    "lat": null,
+    "lon": null,
+    "query_titles": [
+      "Jouppilanvuoren tekonurmi"
+    ]
+  },
+  "Seinäjoen keskuskenttä": {
+    "opensearch_titles": [
+      "Seinäjoen keskuskenttä"
+    ],
+    "resolved_title": "Seinäjoen keskuskenttä",
+    "lat": 62.78194444,
+    "lon": 22.85111111
+  },
+  "OmaSP Stadion": {
+    "opensearch_titles": [
+      "OmaSP Stadion"
+    ],
+    "resolved_title": "OmaSP Stadion",
+    "lat": 62.77861,
+    "lon": 22.81472
+  },
+  "Harjun stadion": {
+    "opensearch_titles": [
+      "Harjun stadion"
+    ],
+    "resolved_title": "Harjun stadion",
+    "lat": 62.24472222,
+    "lon": 25.74083333
+  },
+  "Tapiolan Urheilupuisto": {
+    "opensearch_titles": [
+      "Tapiolan urheilupuisto"
+    ],
+    "resolved_title": "Tapiolan urheilupuisto",
+    "lat": 60.1791,
+    "lon": 24.7813
+  },
+  "Paavo Nurmi Stadion": {
+    "opensearch_titles": [
+      "Paavo Nurmi Stadium"
+    ],
+    "resolved_title": "Paavo Nurmi Stadium",
+    "lat": 60.4425,
+    "lon": 22.26083333
+  },
+  "City Sport Areena": {
+    "resolved_title": null,
+    "lat": null,
+    "lon": null,
+    "query_titles": [
+      "City Sport Areena"
+    ]
+  }
+}

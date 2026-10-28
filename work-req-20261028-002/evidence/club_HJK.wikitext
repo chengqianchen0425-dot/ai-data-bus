@@ -1,0 +1,2541 @@
+{{Short description|Association football club in Helsinki, Finland}}
+{{Redirect|HJK Helsinki|their ice hockey team|Helsingin Jalkapalloklubi (ice hockey)|the 1972 established HJK ice hockey team|Helsingin Jääkiekkoklubi}}
+{{Use dmy dates|date=March 2025}}
+{{Infobox football club
+| clubname = HJK Helsinki
+| current = 2026 HJK season
+| image = HJK Helsinki Logo.svg
+| image_size = 200px
+| fullname = Helsingin Jalkapalloklubi
+| nickname = ''Klubi'' (The Club)
+| founded = {{Start date and age|df=yes|1907|6|19}}
+| ground = [[Töölö Football Stadium]]
+| capacity = 10,770
+| chairman = {{ill|Olli-Pekka Lyytikäinen|fi}}
+| manager = [[Joonas Rantanen]]
+| league = [[Veikkausliiga]]
+| season = [[2025 Veikkausliiga|2025]]
+| position = Veikkausliiga, 5th of 12
+| website = {{URL|www.hjk.fi}}
+| pattern_la1 = _hjk26h
+| pattern_b1 = _hjk26h
+| pattern_ra1 = _hjk26h
+| pattern_sh1 = _adidasblue
+| pattern_so1 = _color_3_stripes_blue
+| leftarm1 = FFFFFF
+| body1 = 0000FF
+| rightarm1 = FFFFFF
+| shorts1 = FFFFFF
+| socks1 = FFFFFF
+| pattern_la2 = _hjk26a
+| pattern_b2 = _hjk26a
+| pattern_ra2 = _hjk26a
+| pattern_sh2 = _hjk26a
+| pattern_so2 = _hjk26a
+| leftarm2 = 000066
+| body2 = 000066
+| rightarm2 = 000066
+| shorts2 = 000066
+| socks2 = 000066
+| pattern_la3 = _hjk26t
+| pattern_b3 = _hjk26t
+| pattern_ra3 = _hjk26t
+| pattern_sh3 = _hjk26t
+| pattern_so3 = _hjk26t
+| leftarm3 = 80BFFF
+| body3 = 80BFFF
+| rightarm3 = 80BFFF
+| shorts3 = 80BFFF
+| socks3 = 80BFFF
+}}
+'''Helsingin Jalkapalloklubi''' ({{Literal translation|''Helsinki's Football Club''}}), commonly known as '''HJK Helsinki''' ({{langx|sv|HJK Helsingfors}}) outside of Finland, or simply as '''HJK''' ({{IPA|fi|'hoː jiː koː|lang}}), is a Finnish [[Association football|football club]] based in [[Helsinki]]. The club competes in [[Veikkausliiga]], the top division of the [[Finnish football league system]]. Founded in 1907, the club has spent most of its history in the top tier of Finnish football. The club's home ground is the 10,770-seat [[Töölö Football Stadium]], where they have played their home games since 2000.<ref>{{cite web|url=http://www.hjk.fi/V2/palvelut/sonerastadium|title=HJK Helsinki – HJK.fi|access-date=2 August 2015|archive-url=https://web.archive.org/web/20171201031847/http://www.hjk.fi/V2/palvelut/sonerastadium|archive-date=1 December 2017|url-status=dead}}</ref>
+
+Generally considered as Finland's biggest football club, HJK is the most successful Finnish club in terms of [[Veikkausliiga|championship]] titles with 33. The club has also won 14 [[Finnish Cup]]s and 6 [[Finnish League Cup]]s. Many of Finland's most successful players have played for HJK before moving abroad. The club has also similar success with [[Helsingin Jalkapalloklubi (women)|women's]] [[Kansallinen Liiga]].
+
+HJK is the only Finnish club that has participated in the [[UEFA Champions League]] group stage. In 1998, they beat [[FC Metz|Metz]] in the [[1998–99 UEFA Champions League qualifying rounds|play-off round]] to clinch their place in the competition for the [[1998–99 UEFA Champions League|following season]]. HJK have also participated twice in the group stages of the [[UEFA Europa League]] in [[2014–15 UEFA Europa League|2014–15]] and [[2022–23 UEFA Europa League|2022–23]] respectively, along with appearing three times in the [[UEFA Europa Conference League]]. The club's highest score in a European competition came during the [[2011–12 UEFA Champions League|2011–12 season]], with a 13–0 aggregate victory over Welsh champions [[Bangor City F.C.|Bangor City]], which included a 10–0 home win.
+
+HJK's traditional kit colours have long been blue and white striped shirts with blue shorts and socks. The club's crest has been nearly untouched for a century, it has only undergone one minor font change to modernize it.
+
+==History==
+===20th century===
+[[File:HJK champions 1911.png|thumb|HJK squad that won the club's first title in 1911.|left]]
+
+The club was founded as '''Helsingin Jalkapalloklubi&nbsp;– Helsingfors Fotbollsklubb''' in 1907 by Fredrik Wathén. The founding meeting was held at a bowling alley in [[Kaisaniemi Park]] in May. The first ever competitive fixture was played against [[Ekenäs IF]] in [[Ekenäs, Finland|Ekenäs]]. HJK won 2–4.
+
+Early on, HJK became popular among Finnish-speaking students, while Swedish-speaking students preferred to play mainly for Unitas or [[HIFK Fotboll|HIFK]]. In late 1908, after a heated debate, the language was switched to unilingually Finnish and this resulted in many Swedish-speaking members switching over to HIFK and other clubs, although a few chose to stay.
+
+In 1909, the colours blue and white were chosen to support the [[fennoman movement]] and [[bandy]] was introduced as the club's second official sport. The club moved from Kaisaniemi Ground to the new [[Eläintarha Stadium]]. At the end of the year, Fredrik Wathen was forced to leave his post as the club's chairman due to illness.
+
+In 1910, [[Lauri Tanner]] became the longest-running club chairman to date. The same year, the club's first international match was played, against Eriksdals IF from [[Stockholm]] in Kaisaniemi. The first championship title was won in 1911. In 1915, the club moved to newly build [[Töölön Pallokenttä]]. In 1916, tennis was introduced as the third official sport in HJK, and it was played in the club until the early 1920s. During the [[Finnish Civil War]] in 1918, two HJK club members, fighting for the "[[Finnish Civil War#White Guards and Sweden's role|Whites]]", were killed.
+
+In 1921, the first [[bandy]] championship was won and during the following five seasons, HJK reached five finals, winning three more titles. Bowling was added to the club's repertoire in 1925, but the bowlers formed their own club, Helsingin Keilaajat, the following year. In 1928, [[ice hockey]] became an official sport and the first championship was won in 1929. League format was introduced to Finnish football in 1930 but HJK failed to qualify for the first season. In 1931, HJK played their first season in the league, however at the end of the season, they were relegated.
+
+During World War II, HJK lost 22 members serving in the military, of which nine fell in the [[Winter War]], twelve in the [[Continuation War]] and one in the [[Lapland War]]. In 1943, [[handball]] was introduced as the club's sixth official sport. HJK won one silver and two bronze medals in handball during the following three seasons but did not gain further success. Handball was first of HJK's sports where women also competed. The [[Helsingin Jalkapalloklubi (women)|women's team]] played a total of 22 seasons at the highest level; their highest finish was fourth.
+
+In 1963, HJK played their last ever season in the second level of the football pyramid, winning 20 out of 22 matches and scoring 127 goals. In 1964, the newly promoted club won their tenth championship title and the following season, in [[1965–66 European Cup|1965–66]], they played their first [[UEFA Champions League|European Cup]] match, against [[Manchester United F.C.|Manchester United]] at the [[Helsinki Olympic Stadium]]. However, a 2–9 aggregate loss resulted in HJK's elimination from the competition.
+
+In 1966, the club secured their first ever cup title by winning [[Kotkan Työväen Palloilijat|KTP]] 6–1 in the final in front of 7,000 spectators. Bandy section was disbanded in the late 1960s. The last official sport, [[figure skating]], was added into the club's repertoire in 1966, was abolished in 1972. The ice hockey section was also disbanded in 1972 and the last season in handball was played in 1978. Hereafter, HJK therefore only participated in football following 69 years as a multisport club.
+
+===1998–1999: First Champions League appearance===
+{{football squad on pitch|align=right
+| GK_nat = FIN| GK = [[Tommi Koivistoinen|Koivistoinen]]
+| RB_nat = FIN| RB = [[Jari Ilola|Ilola]]
+| RCB_nat = FIN| RCB = [[Hannu Tihinen|Tihinen]]
+| LCB_nat = FIN| LCB = [[Jarmo Saastamoinen|Saastamoinen]]
+| LB_nat = FIN| LB = [[Ville Nylund|Nylund]]
+| RM_nat = FIN| RM = [[Vesa Vasara|Vasara]]
+| RCM_nat = FIN| RCM = [[Aki Riihilahti|Riihilahti]]
+| LCM_nat = FIN| LCM = [[Mika Lehkosuo|Lehkosuo]]
+| LM_nat = BRA| LM = [[Piracaia (footballer)|Piracaia]]
+| LCF_nat = FIN| LCF = [[Shefki Kuqi|Kuqi]]
+| RCF_nat = FIN| RCF = [[Mika Kottila|Kottila]]
+| caption = The starting line-up in HJK's first-ever [[1998–99 UEFA Champions League|UEFA Champions League]] group stage match against [[PSV Eindhoven|PSV]] on 16 September 1998.
+}}
+
+The [[1998–99 UEFA Champions League|1998–99 season]] saw HJK become the first and, to date, only Finnish club to play in the group stage of the [[UEFA Champions League]], after defeating [[FC Metz|Metz]] in the [[1998–99 UEFA Champions League qualifying rounds|second qualifying round]]. The club also managed a respectable five points in their group, defeating [[S.L. Benfica|Benfica]] at home and earning draws at home to [[1. FC Kaiserslautern]] and away to Benfica. They lost to [[PSV Eindhoven|PSV]] twice and to Kaiserslautern away.
+
+===2000–2018: First Europa League appearance===
+The club's current home stadium, the [[Bolt Arena]], was opened in 2000. The 20th championship title was won in 2002, and in 2008 the club won its tenth [[Finnish Cup]] title. The [[2009 Helsingin Jalkapalloklubi season|2009 season]] was the start of a championship run that resulted in six titles in a row from 2009 to 2014.
+
+In 2014, HJK became the first Finnish club to play in the [[UEFA Europa League]] group stage after defeating [[SK Rapid Wien|Rapid Wien]] in the [[2014–15 UEFA Europa League qualifying phase and play-off round|play-off round]]. HJK, with wins over [[Torino F.C.|Torino]] and [[F.C. Copenhagen|Copenhagen]] at home, finished third in their group with six points.<ref name="auto">Aalto, Seppo ym: Tähtien tarina: Helsingin jalkapalloklubi 100 vuotta. Helsingin Jalkapalloklubi, 2007. {{ISBN|978-952-92-2062-5}}.</ref><ref name="auto1">Tuhkunen, Yrjö: Helsingin Jalkapalloklubi 1907–1957. Helsinki: Laatupaino Oy, 1957.</ref><ref>{{Cite web|url=https://www.hjk.fi/|title=HJK Helsinki – Helsingin Jalkapalloklubi – HJK.fi|website=HJK Helsinki|access-date=7 March 2017|archive-date=24 February 2011|archive-url=https://web.archive.org/web/20110224140248/http://hjk.fi/|url-status=live}}</ref>
+
+[[File:Sonera Stadium 22.7.2014.jpg|thumb|[[Bolt Arena]], located in the [[Töölö]] district of Helsinki, was opened in 2000.|left]]
+
+HJK made several acquisitions during the winter of 2015, including [[Córdoba CF|Córdoba]] forward [[Mike Havenaar]], [[J-league]] playmaker [[Atomu Tanaka]] and [[Birmingham City F.C.|Birmingham City]] holding midfielder [[Guy Moussi]]. With the new signings on their side, HJK began the season on a high by winning the league cup, a feat they had not accomplished since 1998. HJK also played its first [[Stadin derby|local derby]] against HIFK since April 1972, drawing 1–1. However, HJK could not replicate the league success they had enjoyed for the last six seasons, finishing the 2015 season in third place, behind champions [[Seinäjoen Jalkapallokerho|SJK]] and runners-up [[RoPS]].
+
+During the 2017 campaign the club lost only three games, which resulted in a domestic double.
+
+HJK won the 2018 Veikkausliiga, 16 points clear at the top.
+
+===2019–2023: Toni Koskela era===
+[[File:Toni Koskela.jpg|thumb|Toni Koskela managed HJK to win three Veikkausliiga titles in 2020–2022]]
+
+HJK failed to win the 2019 championship, as [[Kuopion Palloseura|KuPS]] won the league. HJK's season was unusually unsuccessful, manager [[Mika Lehkosuo]] was replaced by [[Toni Koskela]] mid-season, and the club finished in a disappointing 5th place in the league with 37 points. During the season, HJK named [[Miika Takkula]] their new [[sporting director]] in July.
+
+Koskela's first three full seasons have seen HJK win three titles in a row, including the club's 30th championship in 2020. HJK also won the Finnish cup in 2020. For the [[2022 Veikkausliiga|2022 season]], HJK loaned in some new additions like [[Conor Hazard]], [[Nassim Boujellab]], [[Bojan Radulović (footballer)|Bojan Radulović]] and [[Malik Abubakari]]. The club's 2022 title was a remarkable 11th in 15 years.<ref>[https://www.ts.fi/urheilu/5787033 HJK jälleen mestari – kolmas peräkkäinen ja kautta aikain jo 32:s Suomen mestaruus ratkesi Tehtaan kentällä] {{Webarchive|url=https://web.archive.org/web/20231128092345/https://www.ts.fi/urheilu/5787033 |date=28 November 2023 }}, [[Turun Sanomat]], 9 October 2022</ref>
+
+The club has also fared well in European competitions under Koskela. During the 2021 season, HJK qualified for the [[2021–22 UEFA Europa Conference League]] group stage, where they finished 3rd in the group with six points. During the 2022 season, HJK qualified for the [[2022–23 UEFA Europa League]] for only the second time in the club's history, by defeating [[Silkeborg IF]] 2–1 on aggregate in the play-off round. HJK's group included Italian [[AS Roma]], Spanish [[Real Betis Balompie|Real Betis]], and Bulgarian [[PFC Ludogorets Razgrad|Ludogorets]]. Despite valiant home performances, HJK performed poorly on the road, losing all three away games with a total goal difference of 0–7. HJK ended the campaign fourth in the group with a single point, from a 1–1 draw to Ludogorets at home.<ref>[https://terrikon.com/en/europa-league/2022-23 Europa League 2022–23] {{Webarchive|url=https://web.archive.org/web/20231128092347/https://terrikon.com/en/europa-league/2022-23 |date=28 November 2023 }}, terrikon.com</ref>
+
+HJK started the [[2023 Veikkausliiga]] season relatively poorly, and eventually head coach Koskela was dismissed, following a 1–0 home victory against [[Larne FC]] in the Champions League qualifiers in July.
+
+===2023–present===
+Koskela was replaced by his last season's assistant coach [[Toni Korkeakunnas]].<ref>{{Cite web |url=https://www.belfastlive.co.uk/sport/football/football-news/larnes-impressive-champions-league-debut-27312344.amp |title=Larne's impressive Champions League debut as HJK Helsinki sack manager |date=13 July 2023 |access-date=7 October 2023 |archive-date=28 November 2023 |archive-url=https://web.archive.org/web/20231128092345/https://www.belfastlive.co.uk/sport/football/football-news/larnes-impressive-champions-league-debut-27312344.amp |url-status=live }}</ref> Korkeakunnas led HJK to a third consecutive European group stage, advancing to the [[2023–24 UEFA Europa Conference League]], by defeating Romanian champions [[FCV Farul Constanța|Farul Constanța]] in the play-off round 3–2 on aggregate.<ref>[https://www.is.fi/jalkapallo/art-2000009824716.html HJK taisteli jättimäisen voiton! Europelien lohkovaihe kutsuu] {{Webarchive|url=https://web.archive.org/web/20230901114602/https://www.is.fi/jalkapallo/art-2000009824716.html |date=1 September 2023 }}, [[Ilta-Sanomat]], 31 August 2023</ref> HJK also renewed their league title for the fourth straight season, on a goal difference against [[Kuopion Palloseura|KuPS]].
+
+After the season, the club announced that Korkeakunnas will not receive a contract extension, and that the new manager would be announced soon.<ref>[https://www.iltalehti.fi/veikkausliiga/a/f8c06409-3189-4aa8-95ce-22fc7bf4f5c6 HJK vahvisti: Toni Korkeakunnas saa lähteä] {{Webarchive|url=https://web.archive.org/web/20231101194804/https://www.iltalehti.fi/veikkausliiga/a/f8c06409-3189-4aa8-95ce-22fc7bf4f5c6 |date=1 November 2023 }}, [[Iltalehti]], 28 October 2023</ref> It was also announced earlier in late August 2023, that sporting director [[Miika Takkula]] departs from the club.<ref>[https://www.hjk.fi/artikkelit/miehet/miika-takkula-jattaa-hjkn-urheilujohtajan-tehtavat/ Miika Takkula jättää HJK:n urheilujohtajan tehtävät], hjk.fi, 28 August 2023</ref> In September, [[:fi:Vesa Mäki (jalkapallovaikuttaja)|Vesa Mäki]] was named as his replacement as a new sporting director.<ref>[https://www.hjk.fi/artikkelit/miehet/vesa-maki-on-hjkn-uusi-urheilujohtaja/ Vesa Mäki on HJK:n uusi urheilujohtaja], hjk.fi, 4 September 2023</ref>
+
+On 3 November 2023, the club announced that they had appointed Spanish coach [[Ferran Sibila]] as the manager of HJK on a two-year deal, starting in January 2024.<ref>[https://www.hjk.fi/artikkelit/miehet/ferran-sibila-hjkn-paavalmentajaksi-kahden-vuoden-sopimuksella/ Ferran Sibila HJK:n päävalmentajaksi kahden vuoden sopimuksella] {{Webarchive|url=https://web.archive.org/web/20231107134445/https://www.hjk.fi/artikkelit/miehet/ferran-sibila-hjkn-paavalmentajaksi-kahden-vuoden-sopimuksella/ |date=7 November 2023 }}, hjk.fi, 3 November 2023</ref> On 21 December, it was reported by [[Helsingin Sanomat]] that Sibila lacks the required UEFA Pro -coaching licence, and thus would not be eligible to work solely as a head coach in [[Veikkausliiga]].<ref>[https://www.hs.fi/urheilu/art-2000010075140.html HJK:n uudelta päävalmentajalta puuttuu vaadittava lisenssi tehtävään – sanktiot uhkana], [[Helsingin Sanomat]], Ari Virtanen, 21 December 2023</ref> The club's new sporting director [[:fi:Vesa Mäki (jalkapallovaikuttaja)|Vesa Mäki]], who was in charge of recruiting Sibila, said in the media that Sibila is going to start the required UEFA Pro -training in February 2024 in Sweden, or the club could name their assistant coach [[Ossi Virta]] as an associate head coach with Sibila.
+
+On 3 January 2024, it was reported in Swedish media that Sibila was not granted a spot in the aforementioned UEFA Pro -training class by [[Swedish Football Association|Swedish FA]].<ref>[https://www.fotbollskanalen.se/finland-1/sibila-nobbad-av-svff-hjk-tvingas-byta-huvudtranare/ Sibila nobbad av SvFF, HJK tvingas "byta" huvudtränare], fotbollskanalen.se, 3 January 2024</ref><ref>[https://www.mtvuutiset.fi/artikkeli/kommentti-hapeallista-hjk-nolo-tilanne-voi-pakottaa-rajuun-ratkaisuun/8851438 Kommentti: Häpeällistä, HJK! Nolo tilanne voi pakottaa rajuun ratkaisuun], [[MTV Oy]]/ mtvuutiset.fi, Eetu Ikola, 4 January 2024</ref><ref>[https://www.hs.fi/urheilu/art-2000010098334.html Valmentajan lisenssin puuttuminen ajoi HJK:n umpikujaan – edessä vain huonoja vaihtoehtoja], [[Helsingin Sanomat]], Juha Kanerva, 4 January 2024</ref> The next day, HJK announced that the club will comply with the licence requirements set by [[Veikkausliiga]], [[Football Association of Finland|Finnish FA]] and [[UEFA]].<ref>[https://www.hjk.fi/artikkelit/miehet/paivitys-paavalmentajauutisointiin/ Päivitys päävalmentajauutisointiin], hjk.fi, 4 January 2024</ref><ref>[https://www.hs.fi/urheilu/art-2000010107109.html Näin syntyi HJK:n valmentajasotku], [[Helsingin Sanomat]], Ari Virtanen, 10 January 2024</ref> On 12 January, HJK appointed Ossi Virta as the club's new interim head coach, until Sibila is able to attend the UEFA Pro -class.<ref>[https://www.hjk.fi/artikkelit/miehet/ossi-virrasta-hjkn-paavalmentaja/ Ossi Virrasta HJK:n päävalmentaja], hjk.fi, 12 January 2024</ref>
+
+During the 2024 pre-season, reigning Veikkausliiga Top Goalscorer [[Bojan Radulović (footballer)|Bojan Radulović]] was sold to [[Huddersfield Town F.C.|Huddersfield Town]] for £1.2&nbsp;million and Defender of the Year [[Tuomas Ollila]] was acquired by [[Paris FC]].
+
+On 20 May 2024, Ferran Sibila and the sporting director Vesa Mäki were both sacked and [[Toni Korkeakunnas]] was appointed the head coach of the first team again.<ref>[https://www.hjk.fi/artikkelit/miehet/toni-korkeakunnas-palaa-hjkn-paavalmentajaksi/ Toni Korkeakunnas palaa HJK:n päävalmentajaksi], hjk.fi, 20 May 2024</ref>
+
+Winger [[Topi Keskinen]] joined [[Aberdeen FC]] in August for an estimated transfer fee of around €1&nbsp;million.<ref>[https://yle.fi/a/74-20104583 Topi Keskinen siirtyy Skotlannin pääsarjaan – HJK:lle merkittävä siirtokorvaus], [[Yle]], 12 August 2024</ref> During the summer of 2024, as has become routine, HJK made a slate of transfers mid-season as the team's form remained poor. The club brought in striker and former Veikkausliiga golden boot winner [[Lee Erwin (footballer)|Lee Erwin]], goalkeeper [[Thijmen Nijhuis]], centre-backs [[Georgios Antzoulas]] and [[Daniel O'Shaughnessy]], midfielder [[Kevor Palumets]], and wingers [[Alessandro Albanese]] and [[Ozan Kökcü]]. Despite being knocked out of the Champions League earlier in the 1st qualifying round by [[FK Panevėžys|Panevėžys]], HJK managed to qualify for the [[2024–25 UEFA Conference League]] new league phase, after defeating [[Klaksvíkar Ítróttarfelag|KÍ Klaksvík]] in the play-off round 3–2 on aggregate with two stoppage-time goals, making it the club's fourth consecutive appearance in the final phase of a European competition. During the club's European qualification campaign, Erwin scored five goals in six matches, including three goals over the two games against Klaksvik.<ref>[https://www.suomifutis.com/2024/08/lee-erwin-teki-sen-taas-hjk-menee-konferenssiliigaan/ Lee Erwin teki sen taas! HJK menee Konferenssiliigaan], suomifutis.com, 29 August 2024</ref>
+
+After HJK was not able to defend their championship and had finished third in Veikkausliiga, in late October 2024 the club appointed [[Petri Vuorinen]] the new sporting director to fill the vacancy. Korkeakunnas led the club to start the 2025 Veikkausliiga season with a historical record-breaking six-game losing streak.<ref>[https://www.is.fi/veikkausliiga/art-2000011185483.html HJK:n katastrofi syvenee – taas turpiin ja päälle surkuhupaisa ennätys], [[Ilta-Sanomat]], 22 April 2025</ref> Korkeakunnas was fired on 4 May, after 1–1 draw against [[Inter Turku]].<ref>[https://www.hjk.fi/artikkelit/miehet/kiitos-toke-hjkn-valmennukseen-muutos/ Kiitos, Toke! – HJK:n valmennukseen muutos], hjk.fi, 4 May 2025</ref> Assistant coach [[Miika Nuutinen]] was named the interim manager.
+
+HJK started their European campaign poorly by losing 4–0 away against Faroese club [[NSÍ Runavík]] in the first leg game of the [[2025–26 UEFA Conference League qualifying|2025–26 UECL qualifiers]]. However, they managed to advance to the second round, thanks to a 5–0 comeback win at home.<ref>[https://www.hjk.fi/artikkelit/miehet/hurja-ilta-toteutui-hjk-eteni-konferenssiliigan-karsintojen-toiselle-kierrokselle/ Hurja ilta toteutui! – HJK eteni Konferenssiliigan karsintojen toiselle kierrokselle], hjk.fi, 17 July 2025</ref> Next round they were knocked out by Bulgarian [[FC Arda Kardzhali|Arda Kardzhali]] on penalties.<ref>[https://www.hjk.fi/artikkelit/miehet/eurotaistelu-paattyi-pettymykseen-pilkuilla-tama-joukkue-nousee-tasta/ Eurotaistelu päättyi pettymykseen pilkuilla: ”Tämä joukkue nousee tästä”], hjk.fi, 31 July 2025</ref> In late-September, HJK won the [[2025 Finnish Cup]] title by 1–0 win over [[KuPS]], which was the club's first cup title since 2020. They finished the 2025 season in disappointing 5th place, having not won a single game in Veikkausliiga championship group in over two years.
+
+After the 2025 league season, HJK announced [[Joonas Rantanen]] as the new head coach. They had paid Ilves €250,000 for buy-out of his contract.<ref>[https://elmotv.com/joonas-rantasen-siirtokorvaus-ei-ole-mitaan-verrattuna-hjkn-tunaroinnin-hintalappuun/ Joonas Rantasen siirtokorvaus ei ole mitään verrattuna HJK:n tunaroinnin hintalappuun], {{ill|Elmo (lehti)|fi}}, 1 December 2025</ref><ref>[https://www.mtvuutiset.fi/artikkeli/mtv-urheilun-tiedot-hjk-loi-poytaan-jattipinkan-rahaa-ilveksen-paavalmentajasta/9263410 MTV Urheilun tiedot: HJK löi pöytään jättipinkan rahaa Ilveksen päävalmentajasta], mtvuutiset.fi, [[MTV Oy]], 30 November 2025</ref>
+
+==Crest and colours==
+[[File:Demba Savage & Nabil Bahoui.jpg|thumb|[[Nabil Bahoui]] of [[AIK Fotboll|AIK]] taking on HJK winger [[Demba Savage]] during a friendly match in March 2013]]
+===Badge===
+In 1910, HJK arranged competition to find a crest for club, but the club board wasn't happy with the proposals. The crest was finally designed by Osmo Korvenkontio in 1913, it has only gone through minor changes during history.<ref>{{cite book |title= Tähtien Tarina|year= 2007|publisher= Gummerus|page=18|isbn=978-952-92-2062-5}}</ref>
+
+===Colours===
+First kit of HJK was plain white shirt, black shorts and black socks with few white horizontal stripes on top. In 1909 HJK introduced its trademark blue and white striped shirt. Blue and white colours were homage to [[fennoman movement]].<ref>{{cite book |title= Tähtien Tarina|year= 2007|publisher= Gummerus|page=14|isbn=978-952-92-2062-5}}</ref> Black trunks still remained for decades. Shirt was changed to unicolour blue for season 1973 due to pressure from sponsors. In attempt to professionalize hockey department club had fallen in to financial despair and sponsors demanded more visibility for their logos. Clubs financial situation had improved by 1986 and due fans demands shirt was changed back to striped by the end of the year and has remained so ever since.<ref>Helsingin Sanomat 14 August 1986 no 209</ref>
+{| class="toccolours thumb floatright" style="width: 120px; margin: 0.5em; float: center"
+| class="roccolours thumbinner"|
+{{Football kit box
+ | align      = center
+ | pattern_la = _white
+ | pattern_b  = _white
+ | pattern_ra = _white
+ | pattern_so = _2 white stripes
+ | leftarm    = ffffff
+ | body       = ffffff
+ | rightarm   = ffffff
+ | shorts     = 000000
+ | socks      = 000000
+ | title      = HJK home colours 1907–08
+}}
+| class="roccolours thumbinner"|
+{{Football kit box
+ | align      = center
+ | pattern_la = _blue_stripes
+ | pattern_b  = _bluestripes
+ | pattern_ra = _blue_stripes
+ | pattern_so = _whitetop
+ | leftarm    = ffffff
+ | body       = ffffff
+ | rightarm   = ffffff
+ | shorts     = 000000
+ | socks      = 0000FF
+ | title      = HJK home colours 1909–50s
+}}
+| class="roccolours thumbinner"|
+{{Football kit box
+ | align      = center
+ | pattern_la = _blue_stripes
+ | pattern_b  = _bluestripes
+ | pattern_ra = _blue_stripes
+ | pattern_so = _whitetop
+ | leftarm    = ffffff
+ | body       = ffffff
+ | rightarm   = ffffff
+ | shorts     = 0000FF
+ | socks      = 0000FF
+ | title      = HJK home colours 1960s–72, 1986–
+}}
+| class="roccolours thumbinner"|
+{{Football kit box
+ | align      = center
+ | pattern_la = 
+ | pattern_b  = _whitesides
+ | pattern_ra = 
+ | pattern_sh = 
+ | pattern_so = _2_blue_stripes
+ | leftarm    = ffffff
+ | body       = 0000FF
+ | rightarm   = ffffff
+ | shorts     = 0000FF
+ | socks      = ffffff
+ | title      = HJK home colours 1973
+}}
+| class="roccolours thumbinner"|
+{{Football kit box
+ | align      = center
+ | pattern_la = _bluelines
+ | pattern_b  = _2blueshoulderstripes
+ | pattern_ra = _bluelines
+ | pattern_sh = _adidaswhite
+ | pattern_so = _2 yellow stripes
+ | leftarm    = ffffff
+ | body       = ffffff
+ | rightarm   = ffffff
+ | shorts     = 0000FF
+ | socks      = 0000FF
+ | title      = HJK home colours 1979
+}}
+| class="roccolours thumbinner"|
+{{Football kit box
+ | align      = center
+ | pattern_la = _skyblueborder
+ | pattern_b  = _lightbluehorizontal
+ | pattern_ra = _skyblueborder
+ | leftarm    = 000080
+ | body       = 000080
+ | rightarm   = 000080
+ | shorts     = 87CEEB
+ | socks      = 87CEEB
+ | title      = HJK home colours 1985
+}}
+| class="roccolours thumbinner"|
+|-
+|}<ref>https://www.facebook.com/search/photos?q=urheilumuseo {{User-generated source|certain=yes|date=March 2022}}</ref><ref>{{Cite web|url=http://www.jukkajoutsi.com/porifutis.html|title=Porifutis|access-date=15 August 2020|archive-date=21 October 2013|archive-url=https://web.archive.org/web/20131021053635/http://www.jukkajoutsi.com/porifutis.html|url-status=live}}</ref><ref>{{Cite web|url=https://www.hs.fi/urheilu/art-2000005330321.html|title=Pertti Alajan entinen pelikaveri muistelee, miten "Pera ei meinannut mennä millään kentälle kultaisissa kengissä"|date=18 August 2017|website=Helsingin Sanomat|access-date=27 March 2021|archive-date=14 August 2019|archive-url=https://web.archive.org/web/20190814134725/https://www.hs.fi/urheilu/art-2000005330321.html|url-status=live}}</ref><ref>{{Cite web|url=https://juhatamminen.photoshelter.com/|title=Juha Tamminen|website=juhatamminen.photoshelter.com|access-date=15 August 2020|archive-date=13 July 2020|archive-url=https://web.archive.org/web/20200713124503/https://juhatamminen.photoshelter.com/|url-status=live}}</ref>
+
+==Honours==
+[[File:HJK cup winners 1966.jpg|thumb|HJK after winning the club's first [[Finnish Cup]] title in 1966]]
+
+*'''[[Veikkausliiga]]:'''
+**'''Winners (33):''' 1911, 1912, 1917, 1918, 1919, 1923, 1925, [[1936 Mestaruussarja – Finnish League Championship|1936]], [[1938 Mestaruussarja – Finnish League Championship|1938]], [[1964 Mestaruussarja|1964]], [[1973 Mestaruussarja|1973]], [[1978 Mestaruussarja|1978]], [[1981 Mestaruussarja|1981]], [[1985 Mestaruussarja|1985]], [[1987 Mestaruussarja|1987]], [[1988 Mestaruussarja|1988]], [[1990 Futisliiga|1990]], [[1992 Veikkausliiga|1992]], [[1997 Veikkausliiga|1997]], [[2002 Veikkausliiga|2002]], [[2003 Veikkausliiga|2003]], [[2009 Veikkausliiga|2009]], [[2010 Veikkausliiga|2010]], [[2011 Veikkausliiga|2011]], [[2012 Veikkausliiga|2012]], [[2013 Veikkausliiga|2013]], [[2014 Veikkausliiga|2014]], [[2017 Veikkausliiga|2017]], [[2018 Veikkausliiga|2018]], [[2020 Veikkausliiga|2020]], [[2021 Veikkausliiga|2021]], [[2022 Veikkausliiga|2022]], [[2023 Veikkausliiga|2023]]
+**'''Runners-up (14):''' 1921, [[1933 Mestaruussarja – Finnish League Championship|1933]], [[1937 Mestaruussarja – Finnish League Championship|1937]], [[1939 Mestaruussarja – Finnish League Championship|1939]], [[1956 Mestaruussarja|1956]], [[1965 Mestaruussarja|1965]], [[1966 Mestaruussarja|1966]], [[1982 Mestaruussarja|1982]], [[1983 Mestaruussarja|1983]], [[1999 Veikkausliiga|1999]], [[2001 Veikkausliiga|2001]], [[2005 Veikkausliiga|2005]], [[2006 Veikkausliiga|2006]], [[2016 Veikkausliiga|2016]]
+*'''[[Finnish Cup]]:'''
+**'''Winners (15):''' 1966, 1981, 1984, 1993, [[1996 Finnish Cup|1996]], [[1998 Finnish Cup|1998]], [[2000 Finnish Cup|2000]], [[2003 Finnish Cup|2003]], [[2006 Finnish Cup|2006]], [[2008 Finnish Cup|2008]], [[2011 Finnish Cup|2011]], [[2014 Finnish Cup|2014]], [[2016–17 Finnish Cup|2016–17]], [[2020 Finnish Cup|2020]], [[2025 Finnish Cup|2025]]<ref>[https://yle.fi/a/74-20184087 HJK voitti jalkapallon miesten Suomen cupin mestaruuden – voittomaalin tehnyt Teemu Pukki kritisoi otteluaikataulua], [[Yle]], 20 September 2025</ref>
+**'''Runners-up (9):''' 1975, 1985, 1990, 1994, [[2010 Finnish Cup|2010]], [[2016 Finnish Cup|2016]], [[2017–18 Finnish Cup|2017–18]], [[2021 Finnish Cup|2021]], [[2026 Finnish Cup|2026]]
+*'''[[Finnish League Cup]]:'''
+**'''Winners (6):''' 1994, 1996, 1997, 1998, [[2015 Finnish League Cup|2015]], 2023
+**'''Runners-up (3):''' 1995, [[2009 Finnish League Cup|2009]], [[2012 Finnish League Cup|2012]]
+
+
+{{cot
+|bg=
+|fc=
+|{{nowrap|Honours of HJK women and other sports}}
+}}
+===Women's football===
+*'''[[Naisten Liiga|Finnish Women's Championship]]:'''
+**'''Winners (24):''' 1971, 1972, 1973, 1974, 1975, 1979, 1980, 1981, 1984, 1986, 1987, 1988, 1991. 1992, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2005, 2019, 2024
+*'''[[Finnish Women's Cup]]:'''
+**'''Winners (17):''' 1981, 1984, 1985, 1986, 1991, 1992, 1993, 1998, 1999, 2000, 2002, 2006, 2007, 2008, 2010, 2017, 2019
+
+===Ice hockey===
+{{Main|Helsingin Jalkapalloklubi (ice hockey)}}
+
+*'''[[SM-sarja|Finnish Championship]]:'''
+**'''Winners (3):''' [[1928–29 SM-sarja season|1928–29]], [[1931–32 SM-sarja season|1931–32]], [[1934–35 SM-sarja season|1934–35]]
+**'''Runners-up (6):''' [[1930–31 SM-sarja season|1930–31]], [[1932–33 SM-sarja season|1932–33]], [[1937–38 SM-sarja season|1937–38]], [[1938–39 SM-sarja season|1938–39]], [[1940–41 SM-sarja season|1940–41]], [[1971–72 SM-sarja season|1971–72]]
+*'''Finnish Cup:'''
+**'''Winners (1):''' 1970
+
+===Bandy===
+*'''[[List of Finnish bandy champions|Finnish Championship]]:'''
+**'''Winners (5):''' 1921, 1923, 1924, 1928, 1937
+**'''Runners-up (3):''' 1925, 1927, 1946
+
+===Figure skating===
+*'''Finnish Champions'''
+**Pia Wingisaar: 1966, 1967
+**Anuliisa Numminen: 1970
+**Tarja Säde: 1971
+**Tarja Näsi: 1972
+
+{{cob}}
+
+==League history==
+*'''86''' seasons in ''[[Veikkausliiga]]/[[Mestaruussarja]]/SM-Sarja''
+*'''6''' seasons in ''[[Ykkönen]]/Suomisarja''
+: Sources:<ref>{{Cite web|url=https://www.rsssf.org/tablesf/finhist.html|publisher=[[Rec.Sport.Soccer Statistics Foundation]]|title=Finland – List of League First Level Tables|access-date=3 February 2023|archive-date=17 July 2010|archive-url=https://web.archive.org/web/20100717200558/http://www.rsssf.com/tablesf/finhist.html|url-status=live}}</ref><ref>{{Cite web|url=https://www.rsssf.org/tablesf/fin2hist.html|publisher=[[Rec.Sport.Soccer Statistics Foundation]]|title=Finland – List of League Second Level Tables|access-date=3 February 2023|archive-date=24 September 2022|archive-url=https://web.archive.org/web/20220924214238/https://www.rsssf.org/tablesf/fin2hist.html|url-status=live}}</ref>
+
+{{cot
+|bg=#0000FF
+|fc=#FFFFFF
+|{{nowrap|Season to Season of HJK Helsinki}}
+}}
+{|  class="wikitable sortable" style="background:whitesmoke; font-size:small; width:100%; white-space:nowrap;"
+|-
+!Season
+!Level
+!Division
+!Section
+!Record
+!Position
+!Movements
+|-
+|style="background:#FFFF00;"|1931
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 7 0 3 4 12–16 3
+|style="background:#FFFF00;"| '''7th'''
+|style="background:#FFFF00;"| Relegated
+|-
+|style="background:#87CEFA;"|1932
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Suomensarja''' ''(Division Two)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"| 5	4 0 1 10–4 8
+|style="background:#87CEFA;"| '''1st'''
+|style="background:#87CEFA;"| Promoted
+|-
+|style="background:#FFFF00;"|1933
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 14 5 6 3 20–14 16
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1934
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 14 5 4 5 23–18 14
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1935
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 14 6 2 6 32–26 14
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1936
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 14 9 1 4 37–21 19
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 1937
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 14 8 4 2 58–24 20
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1938
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 14 8 4 2 43–24 20
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 1939
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 13 7 4 2 40–18 18
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1940–1941
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 12 4 2 6 22–30 10
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1943–1944
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 7 1 2 4 20–22 4
+|style="background:#FFFF00;"| '''7th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1945
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 5 2 1 2 11–13 5
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"| Relegated
+|-
+|style="background:#87CEFA;"| 1945–1946
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(Division Two)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"| 14 11 0 3 60–25 20
+|style="background:#87CEFA;"| '''2nd'''
+|style="background:#87CEFA;"| Promoted
+|-
+|style="background:#FFFF00;"| 1946–1947
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 14 4 3 7 26–41 11
+|style="background:#FFFF00;"| '''6th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1947–1948
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 14 6 2 6 33–27 14
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1948
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 15 6 6 3 32–20 18
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1949
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 5 4 13 27–55
+|style="background:#FFFF00;"| '''10th'''
+|style="background:#FFFF00;"| Relegated
+|-
+|style="background:#87CEFA;"| 1950
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(Division Two)''
+|style="background:#87CEFA;"| East
+|style="background:#87CEFA;"| 18 13 3 2 56–17 29
+|style="background:#87CEFA;"| '''2nd'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"| 1951
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(Division Two)''
+|style="background:#87CEFA;"| East
+|style="background:#87CEFA;"| 18 12 2 4 56–20 26
+|style="background:#87CEFA;"| '''2nd'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"| 1952
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(Division Two)''
+|style="background:#87CEFA;"| West
+|style="background:#87CEFA;"| 18 12 3 3 63–27 27
+|style="background:#87CEFA;"| '''1st'''
+|style="background:#87CEFA;"| Promoted
+|-
+|style="background:#FFFF00;"| 1953
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 18 7 3 8 28–22 17
+|style="background:#FFFF00;"| '''6th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1954
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 18 9 4 5 31–18 22
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1955
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 18 5 5 8 35–35 15
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1956
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 18 9 3 6 39–28 21
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1957
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 18 5 8 5 26–26 18
+|style="background:#FFFF00;"| '''6th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1958
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 18 9 2 7 45–34 20
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1959
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 18 4 5 9 28–39 13
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1960
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 5 8 9 44–51 18
+|style="background:#FFFF00;"| '''9th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1961
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 7 7 8 42–41 21
+|style="background:#FFFF00;"| '''6th'''
+|style="background:#FFFF00;"| 
+|-
+
+|style="background:#FFFF00;"| 1962
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 6 4 12 33–57 16
+|style="background:#FFFF00;"| '''11th'''
+|style="background:#FFFF00;"| Relegated
+|-
+|style="background:#87CEFA;"| 1963
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(Division Two)''
+|style="background:#87CEFA;"| East
+|style="background:#87CEFA;"| 22 20 1 1 127–18 41
+|style="background:#87CEFA;"| '''1st'''
+|style="background:#87CEFA;"| Promoted
+|-
+|style="background:#FFFF00;"| 1964
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 14 6 2 42–18 34
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 1965
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 12 5 5 50–30 29
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1966
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 10 7 5 46–30 27
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1967
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 11 3 8 59–38 25
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1968
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 11 7 4 51–30 29
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1969
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 11 5 6 50–32 27
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1970
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 9 7 6 37–26 25
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1971
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 26 10 11 5 46–32 31
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1972
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 10 1 11 24–32 21
+|style="background:#FFFF00;"| '''9th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1973
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 14 5 3 36–21 33
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 1974
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 12 4 6 43–27 28
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1975
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 8 2 12 29–37 18
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1976
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 12 5 5 40–25 29
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1977
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 9 5 8 27–25 23
+|style="background:#FFFF00;"| '''7th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1978
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 13 7 2 52–29 33
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 1979
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 29 14 7 8 48–36 35
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1980
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 29 15 9 5 48–28 24
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1981
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 29 17 5 7 57–32 25
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 1982
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 29 15 4 10 62–47 22
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1983
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 29 15 9 5 61–37 25
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1984
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 10 6 6 49–37 26
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1985
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 11 6 5 41–23 28(Preliminary)
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions via Playoffs
+|-
+|style="background:#FFFF00;"| 1986
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 10 10 2 42–23 30
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1987
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 15 3 4 38–14 33
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 1988
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 27 20 3 4 55–28 43
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 1989
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' SM-Sarja''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 27 11 7 9 36–28 29
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1990
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 11 6 5 40–29 28(Preliminary)
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions via Playoffs
+|-
+|style="background:#FFFF00;"| 1991
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 33 14 9 10 61–44 51
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1992
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 33 20 6 7 59–35 66
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 1993
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 29 15 4 10 34–26 49
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1994
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 26 12 7 7 40–29 43
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1995
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 26 14 10 2 44–18 52
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1996
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 27 11 5 11 36–37 38
+|style="background:#FFFF00;"| '''9th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1997
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 27 18 4 5 53–18 58
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 1998
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 27 9 11 7 33–31 38
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 1999
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 29 20 5 4 53–18 65
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 2000
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 33 16 9 8 51–33 57
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 2001
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 33 19 10 4 64–19 67
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 2002
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 29 20 5 4 51–21 65
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2003
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 26 17 6 3 51–15 57
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2004
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 26 9 12 5 42–31 39
+|style="background:#FFFF00;"| '''6th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 2005
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 26 15 7 4 43–26 52
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 2006
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 24 13 6 5 45–18 45
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 2007
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 26 7 13 6 31–25 34
+|style="background:#FFFF00;"| '''7th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 2008
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 26 14 5 7 47–29 47
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"| 2009
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 26 14 10 2 45–21 52
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2010
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 26 15 7 4	43–19 52
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2011
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 33 26 3 4	86–23 81
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2012
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 33 19 7 7	63–33 64
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2013
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 33 22 7 4	78–25 73
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2014
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 33 21 9 3	65–22 72
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2015
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 33 16 10 7	45–30 58
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"| 2016
+|style="background:#FFFF00;"| Tier 1
+|style="background:#FFFF00;"| ''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 33 16 10 7 52–36 58
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"| 2017
+|style="background:#FFFF00;"| Tier 1
+|style="background:#FFFF00;"| ''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 33 23 7 3	78–16 76
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2018
+|style="background:#FFFF00;"| Tier 1
+|style="background:#FFFF00;"| ''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 33 24 6 3 61–19 78
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2019
+|style="background:#FFFF00;"| Tier 1
+|style="background:#FFFF00;"| ''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 27 9 10 8 33–29 37
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"| 2020
+|style="background:#FFFF00;"| Tier 1
+|style="background:#FFFF00;"| ''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 22 14 6 2 53–17 48
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2021
+|style="background:#FFFF00;"| Tier 1
+|style="background:#FFFF00;"| ''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 27 18 5 4 41–19 59
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2022
+|style="background:#FFFF00;"| Tier 1
+|style="background:#FFFF00;"| ''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 27 18 4 5 41–23 58
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2023
+|style="background:#FFFF00;"| Tier 1
+|style="background:#FFFF00;"| ''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 27 15 8 4 50–26 53
+|style="background:#FFFF00;"| '''1st'''
+|style="background:#FFFF00;"| Champions
+|-
+|style="background:#FFFF00;"| 2024
+|style="background:#FFFF00;"| Tier 1
+|style="background:#FFFF00;"| ''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 27 13 6 8 44–27 45
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"| 2025
+|style="background:#FFFF00;"| Tier 1
+|style="background:#FFFF00;"| ''' Veikkausliiga''' ''(Division One)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| 32 14 7 11 52–22 49
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|}
+{{cob}}
+
+==Supporters and rivalries==
+[[File:HJK klubipääty.jpg|thumb|HJK supporters at the Bolt Arena in 2017.]]
+[[File:Hjk-hifk-1.jpg|thumb|HJK supporters [[Tifo]] in 2022]]
+HJK Helsinki supporters
+Historically HJK had a wide support within Finnish speaking, prosperous middle class of Helsinki. The club's supporters were often nationalistic after the fashion of almost every other [[Football Association of Finland|Finnish FA]] club at the time. Leftist working class' clubs played their own leagues and competitions under the [[Finnish Workers' Sports Federation]]. However, The club remained open to all 'honorable citizens' regardless of their native language, race or social class, and always had members from other communities as well. Before the 1970s HJK came to be known especially as a [[Töölö]]an club due to most of their activity taking place in this particular district.
+
+During recent decades the club's old image as a prosperous, middle class group from Töölö has largely disappeared due to social changes in Finland as well as migration from inner city to housing projects built during the mass migration from the countryside during the 1960s and the 1970s.<ref name="auto1"/><ref name="auto"/>
+
+===The Helsinki Derby and other local rivalries===
+HJK's main rivals in Helsinki were widely considered to be [[FC Kiffen 08|Kiffen]], [[Helsingin Palloseura|HPS]] and [[HIFK Fotboll|HIFK]]. In the past these were the four big clubs from Helsinki. The clubs were mainly separated by language, HJK and HPS being Finnish speaking clubs whereas HIFK and KIF were Swedish speaking. These four clubs competed also in bandy, ice hockey and handball. The support for HJK mainly came from around the inner city and after 1940s also from [[Töölö]], in its early years HPS Support came from same areas as HJK. Later in 1940s and 1950s when HJK support shifted more towards Töölö area, HPS gained more support in [[Vallila]] and [[Alppila]] districts, this was mostly due their youth activities taking part in those particular areas, these boundaries were not strict however and each of the four clubs had support, players and members across the city. HJK were already founding youth teams to new suburbs in 1960s and their reputation as a Töölöan club was short lived.<ref>Tähtien tarina: Helsingin jalkapalloklubi 100 vuotta. Helsingin Jalkapalloklubi, 2007. ISBN 978-952-92-2062-5.</ref> KIF and HPS were both struggling to survive and were both relegated to lower leagues after 1964 season and rapidly lost their support. KIF made a brief two season stint to first level in 1977–78. While both KIF and HPS are still active as of 2020, they have spend their recent decades playing in lower levels, HPS focusing more on youth football in northern Helsinki.<ref>{{Cite web|url=https://www.hps.fi/seura/seuran-historia/|title=SEURAN HISTORIA – Helsingin palloseura ry|website=hps.fi|access-date=27 March 2021|archive-date=14 April 2021|archive-url=https://web.archive.org/web/20210414074720/https://www.hps.fi/seura/seuran-historia/|url-status=live}}</ref>
+
+[[File:Stadin derby 2017.jpg|thumb|[[Stadin derby]] against [[HIFK Fotboll|HIFK]] in 2017|left]]
+
+HJK and HIFK share the biggest rivalry being two of the oldest and most successful clubs. Both were also successful in Bandy which was major winter sport in the first half of the 20th century, KIF and HPS gained lesser success. Also in Ice Hockey clubs faced numerous times and played more seasons in first level than HPS or KIF. A match between these two clubs is called as [[Stadin derby]]. Language was the biggest separating factor between the clubs, HIFK was the club of choice for the Swedish speaking population of the city and HJK for the Finnish speaking. In 2015 HIFK was promoted back to the [[Veikkausliiga|top flight]] after 40 years of struggling in the lower leagues having played their last season in the top division in 1972. Since HJK ceased their activity in other sports during the 1960s and 1970s the rivalry faded away on a large scale and in recent decades many even supported both clubs at the same time, HJK in football and HIFK in ice hockey. However, due to the rise of the Finnish [[Supporters' groups|supporter scene]] in the 2000s, there is a high tension between the most vocal supporters.
+
+HJK shared a short but fierce rivalry with [[FC Jokerit]] around the late 1990s and the early 2000s. [[Jokerit]] were well supported due to their popular ice hockey section and the clubs also competed against each other in ice hockey in the late 1960s and the early 1970s.<ref>{{cite web|url=http://www.urheilumuseo.fi/portals/47/veikkausliiga/seurat/jokerit.htm|title=Veikkausliigan verkkonäyttely: FC Jokerit|access-date=11 February 2015|archive-url=https://web.archive.org/web/20141208154425/http://www.urheilumuseo.fi/portals/47/veikkausliiga/seurat/jokerit.htm|archive-date=8 December 2014|url-status=dead}}</ref><ref>{{Cite web|url=http://huippufutistaboriksenmitalla.blogspot.com/2012/01/arkiston-katkoista-osa-1-koko-kansan.html|title=Huippufutista Boriksen mitalla: Arkiston kätköistä, osa 1: koko kansan Paavo|first=Boris|last=Runqvist|date=24 January 2012|access-date=18 June 2021|archive-date=24 June 2021|archive-url=https://web.archive.org/web/20210624200345/http://huippufutistaboriksenmitalla.blogspot.com/2012/01/arkiston-katkoista-osa-1-koko-kansan.html|url-status=live}}</ref><ref>{{Cite web|url=https://www.jokerit.com/kaikki-alkoi-toolon-vesasta|title=Kaikki alkoi Töölön Vesasta|website=Jokerit.com|access-date=18 June 2021|archive-date=30 July 2021|archive-url=https://web.archive.org/web/20210730230242/https://www.jokerit.com/kaikki-alkoi-toolon-vesasta|url-status=live}}</ref>
+
+Multiple Helsinki based clubs have played in the league but due to their short term visits and relatively low support base large scale rivalries were never born. Some notable clubs were [[Ponnistus]], [[FinnPa]], [[Pallo-Pojat Juniorit|Pallo-Pojat]] and [[Toverit Helsinki|Helsingin Toverit]].<ref>{{cite web|url=http://jalkapallolehti.fi/vieraalle-maalle/|title=Vieraalle maalle|date=28 October 2014|access-date=11 February 2015|archive-date=17 February 2015|archive-url=https://web.archive.org/web/20150217064737/http://jalkapallolehti.fi/vieraalle-maalle/|url-status=live}}</ref><ref>{{cite web|url=http://jalkapallolehti.fi/yhdella-jalalla/|title=Yhdellä jalalla|date=8 July 2014|access-date=11 February 2015|archive-date=11 February 2015|archive-url=https://web.archive.org/web/20150211185248/http://jalkapallolehti.fi/yhdella-jalalla/|url-status=live}}</ref><ref>{{cite web|url=http://hifkfotboll.fi/punaisia-hetkia-olympiastadionilla/|title=Punaisia hetkiä Olympiastadionilla – HIFK Fotboll|date=11 June 2014|access-date=11 February 2015|archive-date=5 January 2017|archive-url=https://web.archive.org/web/20170105001055/http://hifkfotboll.fi/punaisia-hetkia-olympiastadionilla/|url-status=live}}</ref><ref>{{cite web|url=http://www.hs.fi/urheilu/a1409578086197|title=Moni Helsingin futisjätti on kadonnut kartalta|date=2 September 2014|access-date=11 February 2015|archive-date=11 February 2015|archive-url=https://web.archive.org/web/20150211194401/http://www.hs.fi/urheilu/a1409578086197|url-status=live}}</ref><ref name="auto1"/><ref name="auto"/>
+
+===Helsinki-Lahti rivalry===
+HJK has competed against [[Lahti]] based clubs from the 1960s, between 1964 and 1980 HJK and [[FC Lahti|Lahden Reipas]] had a minor rivalry as both clubs gained good success winning some titles and were also generally well supported. Reipas also won seven cup titles against one of HJK. Reipas was relegated after 1980 season. More notable rivalry was against [[FC Lahti|Kuusysi]] from the early 1980s to the mid-1990s. Between 1981 and 1992 HJK won six league titles against Kuusysi's five, both clubs also won the cup twice, facing two times in the finals (which were both won by HJK). Both clubs also performed well in the European competitions. In 1996 both the Lahti clubs merged and FC Lahti was born, HJK and FC Lahti matches are more known from outside pitch activities, some crowd disturbances and small fights have occurred<ref>{{cite web|url=http://www.mtv3.fi/uutiset/rikos.shtml/2009/03/842364/taas-joukkotappelu-hjk-lahti--ottelussa|title=Taas joukkotappelu HJK-Lahti -ottelussa|access-date=24 April 2011|archive-date=21 October 2012|archive-url=https://web.archive.org/web/20121021122606/http://www.mtv3.fi/uutiset/rikos.shtml/2009/03/842364/taas-joukkotappelu-hjk-lahti--ottelussa|url-status=live}}</ref> which otherwise are rare in Finnish football. Due to a relatively short distance between the two cities, these matches often draw more notable away support than others.
+
+===HJK-Haka rivalry===
+HJK and [[FC Haka|Valkeakosken Haka]] are the two most successful clubs in Finnish football, HJK with 27 league and 12 cup titles and Haka with 9 league and 12 cup titles. The match is also considered as "urban vs. rural" rivalry as HJK is a club from Finland's biggest city Helsinki and Haka is representing the small town of [[Valkeakoski]].
+
+On 1 October 2012, in a Veikkausliiga match at the [[Tehtaan kenttä]], Valkeakoski, Haka and HJK drew 2–2 after scandalous events. When Haka was leading the match 2–0, HJK was given a throw-in. Two HJK players threw two balls in at the same time in different places, and the referee let the game continue with two balls on the field. Seconds later, [[Juho Mäkelä]] scored a goal for HJK with the ball which was thrown-in further up the pitch.<ref>[https://www.is.fi/veikkausliiga/art-2000000544892.html Kaksi palloa kentällä – HJK:lle tärkeä maali käsittämättömästä tilanteesta!], [[Ilta-Sanomat]], 1 October 2012</ref><ref>[https://yle.fi/a/3-6317960 Palloliitto käsittelee Haka-HJK-ottelun tapahtumat], [[Yle]], 2 October 2012</ref><ref>[https://www.youtube.com/watch?v=eBwk0L8lgQA Kaksi palloa kentällä - tuomari hyväksyi HJK:n maalin], youtube</ref> The goal was granted and shortly after HJK equalized the game. At the end of the season, HJK won their 18th Finnish championship title, and Haka were relegated to second-tier [[Ykkönen]], after 15 consecutive seasons in the Veikkausliiga.
+
+==Stadiums==
+[[File:Stadionit.jpg|thumb|Stadiums in [[Töölö]] in 2005: [[Helsinki Olympic Stadium]] before the renovation (above), [[Töölö Football Stadium]] (front) and [[Töölön Pallokenttä]] (right)]]
+
+The club's current home stadium is [[Töölö Football Stadium]], located in [[Töölö]] neighbourhood in Helsinki, where HJK has played their home matches since its completion in 2000. Initially the stadium had natural grass pitch, but in 2003 the surface was changed to [[artificial turf]].
+
+During their first years in 1907–1908, HJK played at the [[Kaisaniemi Park|Kaisaniemen kenttä]], and in 1909–1914 at the [[Eläintarha Stadium]]. HJK's first official home ground was [[Töölön Pallokenttä]] where they played in 1915–1998. During the [[Veikkausliiga]] era, HJK played their home matches occasionally also at the [[Helsinki Olympic Stadium]].
+
+===Home grounds===
+*[[Kaisaniemi Park|Kaisaniemen kenttä]]: 1907–1908
+*[[Eläintarha Stadium]]: 1909–1914
+*[[Töölön Pallokenttä]]: 1915–1998
+*[[Helsinki Olympic Stadium]]: 1939–2000
+*[[Töölö Football Stadium]]: 2000–present
+
+===Attendances===
+
+HJK reached their highest average attendance record in the [[1969 Mestaruussarja]]-season with 8,058 spectators, when the club was playing at [[Töölön Pallokenttä]].
+
+{{Col-begin|width=auto}}
+{{Col-2}}
+
+{| class="wikitable sortable" style="text-align: center"
+|+HJK's average league attendance<ref name=efs>[http://www.european-football-statistics.co.uk/attn.htm League attendances], european-football-statistics.co.uk</ref><ref>[https://www.worldfootball.net/competition/co134/se84284/attendance/ Veikkausliiga attendances], worldfootball.net</ref>
+|-
+! Season
+! Avg. attendance
+|-
+|[[2010 Veikkausliiga|2010]]
+|3,464
+|-
+|[[2011 Veikkausliiga|2011]]
+|3,610
+|-
+|[[2012 Veikkausliiga|2012]]
+|3,744
+|-
+|[[2013 Veikkausliiga|2013]]
+|5,098
+|-
+|[[2014 Veikkausliiga|2014]]
+|4,017
+|-
+|[[2015 Veikkausliiga|2015]]<ref name=attendance/>
+|5,281
+|-
+|[[2016 Veikkausliiga|2016]]<ref name=attendance/>
+|5,101
+|-
+|[[2017 Veikkausliiga|2017]]<ref name=attendance/>
+|4,779
+|-
+|[[2018 Veikkausliiga|2018]]<ref name=attendance/>
+|3,779
+|-
+|[[2019 Veikkausliiga|2019]]<ref name=attendance/>
+|5,007
+|-
+|[[2020 Veikkausliiga|2020]]<ref name=attendance/>
+|2,117{{efn|The season interrupted by the [[COVID-19 pandemic]]}}
+|-
+|[[2021 Veikkausliiga|2021]]<ref name=attendance/>
+|1,530{{efn|Attendance limitations due to COVID-19 pandemic}}
+|-
+|[[2022 Veikkausliiga|2022]]<ref name=attendance/>
+|4,002
+|-
+|[[2023 Veikkausliiga|2023]]<ref name=attendance/>
+|5,631
+|-
+|[[2024 Veikkausliiga|2024]]<ref name=attendance>[https://www.hjk.fi/artikkelit/miehet/hjkn-yleisokeskiarvo-ja-kausikorttimyynti-rikkoivat-ennatyksia/ HJK:n yleisökeskiarvo ja kausikorttimyynti rikkoivat ennätyksiä], hjk.fi, 30 October 2024</ref>
+| 6,363{{efn|The highest average attendance in [[Bolt Arena]]-era since 2000.}}
+|-
+|[[2025 Veikkausliiga|2025]]<ref name=attendance/>
+|6,223
+|}
+{{notelist}}
+{{Col-break|gap=5em}}
+
+{| class="wikitable sortable" style="text-align: center"
+|+HJK's average league attendance over a ten-year interval
+|-
+! Season
+! Avg. attendance
+! Ten-year<br />change
+|-
+|[[1950 Mestaruussarja|1950]]–[[1959 Mestaruussarja|1959]]<ref name=efs/>
+|2,372
+|{{NA}}
+|-
+|[[1960 Mestaruussarja|1960]]–[[1969 Mestaruussarja|1969]]<ref name=efs/>
+| 5,099
+| +114,97% {{increase}}
+|-
+|[[1970 Mestaruussarja|1970]]–[[1979 Mestaruussarja|1979]]<ref name=efs/>
+|3,365
+| —34% {{decrease}}
+|-
+|[[1980 Mestaruussarja|1980]]–[[1989 Mestaruussarja|1989]]<ref name=efs/>
+|4,501
+| +33,76% {{increase}}
+|-
+|[[1990 Futisliiga|1990]]–[[1999 Veikkausliiga|1999]]<ref name=efs/>
+|3,528
+| —21,62% {{decrease}}
+|-
+|[[2000 Veikkausliiga|2000]]–[[2009 Veikkausliiga|2009]]<ref name=efs/>
+|4,099
+| +16,18% {{increase}}
+|-
+|[[2010 Veikkausliiga|2010]]–[[2019 Veikkausliiga|2019]]<ref name=efs/>
+|4,397
+| +7,27% {{increase}}
+|}
+{{Col-end}}
+
+==Transfers==
+HJK Helsinki has produced a large number of players who have gone on to represent the [[Finland national football team|Finland national team]].<ref>[https://www.hs.fi/urheilu/art-2000009636843.html Toistuva ilmiö ärsyttää – HJK on monelle pelaajalle pikatie Huuhkajiin], [[Helsingin Sanomat]], 11 June 2023</ref> Over the years, HJK has also provided the most probable way for transfers abroad in Finland for Finnish and international players. In August 2011, HJK sold [[Teemu Pukki]] to a German [[Bundesliga]] club [[FC Schalke 04|Schalke 04]] for €1.8 million, which wass the record transfer fee in [[Veikkausliiga]] until 2026. Besides Pukki, also [[Joel Pohjanpalo]], [[Alexander Ring]], [[Jukka Raitala]], [[Dawda Bah]] and [[Luka Hyryläinen]] transferred to [[Bundesliga]] clubs from HJK.
+
+===Record transfers===
+{|border="0" class="wikitable"
+!! style="color:#FFFFFF; background:#0000FF;"|Rank
+!! style="color:#FFFFFF; background:#0000FF;"|Player
+!! style="color:#FFFFFF; background:#0000FF;"|To
+!! style="color:#FFFFFF; background:#0000FF;"|Fee
+!! style="color:#FFFFFF; background:#0000FF;"|Year
+|-
+|1.||{{flagicon|FIN}} [[Teemu Pukki]]||{{flagicon|GER}} [[FC Schalke 04|Schalke 04]]||€1.8 million||2011<ref>[https://www.hs.fi/urheilu/art-2000010358333.html HJK pyytää Topi Keskisestä lähes Suomen ennätyshintaa – Pukin ennätyshinta voi rikkoutua], [[Helsingin Sanomat]], 13 April 2024</ref>
+|-
+|2. ||{{flagicon|FIN}} [[Joel Pohjanpalo]]||{{flagicon|GER}} [[Bayer 04 Leverkusen|Bayer Leverkusen]]||€1.5 million||2014
+|-
+|3. ||{{flagicon|SER}} [[Bojan Radulović (footballer)|Bojan Radulović]]||{{flagicon|ENG}} [[Huddersfield Town A.F.C.|Huddersfield Town]]||€1.4 million||2024<ref>[https://footballleagueworld.co.uk/i-feel-sorry-for-him-huddersfield-town-outcast-backed-to-come-good/ “I feel sorry for him” - Huddersfield Town's £1m+ star backed to come good], footballleagueworld.co.uk, 13 March 2024</ref>
+|-
+|4. ||{{flagicon|COL}} [[Alfredo Morelos]] ||{{flagicon|SCO}} [[Rangers F.C.|Rangers]]||€1.2 million||2017<ref>[https://www.hs.fi/urheilu/art-2000005538963.html HJK:ssa maaleja sylkenyt Alfredo Morelos on Skotlannin pääsarjan paras maalintekijä ja aiheutti myös kohun – Rangers laittoi huiman hintalapun], [[Helsingin Sanomat]], 25 January 2018</ref>
+|-
+|5. ||{{flagicon|FIN}} [[Topi Keskinen]] ||{{flagicon|SCO}} [[Aberdeen F.C.|Aberdeen]]||€1.0 million||2024<ref>[https://www.mtvuutiset.fi/artikkeli/mtv-urheilun-tiedot-hjk-tahti-hylkasi-mls-n-siirtyy-isolla-rahalla-skotlantiin/8986470 MTV Urheilun tiedot: HJK-tähti hylkäsi MLS:n – siirtyy isolla rahalla Skotlantiin], [[MTV Oy]], mtvuutiset.fi, 9 August 2024</ref>
+|-
+|rowspan=2|6.||{{flagicon|FIN}} [[Sakari Mattila]] ||{{flagicon|ITA}} [[Udinese Calcio|Udinese]]||€800,000||2009<ref>[https://www.iltalehti.fi/jalkapallo/a/200811218628403 Sakari Mattila siirtyy Udineseen], [[Iltalehti]], 21 November 2008</ref>
+|-
+|{{flagicon|FIN}} [[Janne Saarinen]] ||{{flagicon|NOR}} [[Rosenborg BK|Rosenborg]]||€800,000||2001<ref>[https://www.mtvuutiset.fi/artikkeli/janne-saarisen-siirtosumma-hjkn-suurin-kautta-aikojen/3990878 Janne Saarisen siirtosumma HJK:n suurin kautta aikojen], mtvuutiset.fi, [[MTV Oy]], 29 December 2000</ref>
+|-
+|8. ||{{flagicon|FIN}} [[Juho Mäkelä]] ||{{flagicon|SCO}} [[Heart of Midlothian F.C.|Hearts]]||€730,000||2006<ref>[https://yle.fi/a/3-5987169 Juho Mäkelä siirtyi Heartsiin], [[Yle]], 31 January 2006</ref>
+|-
+|9. ||{{flagicon|FIN}} [[Lassi Lappalainen]] ||{{flagicon|ITA}} [[Bologna FC 1909|Bologna]]||€700,000||2019<ref>[https://www.hs.fi/urheilu/art-2000009789602.html Maailmalle kasvamaan], [[Helsingin Sanomat]], 19 August 2023</ref>
+|-
+|10. ||{{flagicon|FIN}} [[Juhani Ojala]] ||{{flagicon|SWI}} [[BSC Young Boys|Young Boys]]||€600,000||2011
+|-
+|11. ||{{flagicon|FIN}} [[Aapo Halme]] ||{{flagicon|ENG}} [[Leeds United F.C.|Leeds United]]||€560,000||2018<ref>[https://www.hs.fi/urheilu/art-2000005510776.html HJK:n Aapo Halme siirtyy Leeds Unitediin neljän ja puolen vuoden sopimuksella], [[Helsingin Sanomat]], 2 January 2018</ref>
+|-
+|rowspan=3|12. ||{{flagicon|FIN}} [[Paulus Roiha]] ||{{flagicon|NED}} [[FC Utrecht|Utrecht]]||€500,000||2002
+|-
+|{{flagicon|FIN}} [[Mika Kottila]] ||{{flagicon|NOR}} [[SK Brann|Brann]]||€500,000||1999
+|-
+|{{flagicon|FIN}} [[Alexander Ring]] ||{{flagicon|GER}} [[1. FC Kaiserslautern|FC Kaiserslautern]]||€500,000||2013<ref>[https://www.is.fi/jalkapallo/art-2000000643664.html Kicker: Näin saksalaisseurat maksoivat suomalaispelaajistaan], [[Ilta-Sanomat]], 30 July 2013</ref>
+|-
+|15. ||{{flagicon|FIN}} [[Perparim Hetemaj]] ||{{flagicon|GRE}} [[AEK Athens F.C.|AEK Athens]]||€450,000||2006<ref>[https://www.is.fi/urheilu/art-2000000136646.html Hetemaj'n siirtosumma 450 000 euroa], [[Ilta-Sanomat]], 1 June 2006</ref>
+|}
+
+==Players==
+=== First team squad ===
+{{Updated|24 July 2026|<ref>{{cite web | url=https://www.hjk.fi/tools/squad/ | title=Squad & Staff | access-date=2 January 2024 }}</ref>}}
+{{fs start}}
+{{fs player | no= 1  | nat=FIN | pos=GK | name= [[Jesse Öst]]}}
+{{fs player | no= 3  | nat=FRA | pos=DF | name= [[Till Cissokho]]}}
+{{fs player | no= 4  | nat=FIN | pos=MF | name= [[Alexander Ring]]}}
+{{fs player | no= 5  | nat=ENG | pos=DF | name= [[Amara Nallo]]|other={{small|on loan from [[Liverpool F.C.|Liverpool]]}}}}
+{{fs player | no= 6  | nat=FIN | pos=DF | name= [[Ville Tikkanen (footballer)|Ville Tikkanen]]}}
+{{fs player | no= 7  | nat=ENG | pos=MF | name= [[Alfie Cicale]]}}
+{{fs player | no= 8  | nat=FIN | pos=MF | name= [[Pyry Mentu]]}}
+{{fs player | no= 9  | nat=DEN | pos=FW | name= [[Mads Borchers]]}}
+{{fs player | no= 10 | nat=FIN | pos=MF | name= [[Lucas Lingman]]}}
+{{fs player | no= 11 | nat=FIN | pos=FW | name= [[Roni Hudd]]}}
+{{fs player | no= 12 | nat=FIN | pos=GK | name= Mitja Haapanen}}
+{{fs player | no= 13 | nat=FIN | pos=DF | name= [[Kaius Simojoki]]}}
+{{fs player | no= 14 | nat=DEN | pos=DF | name= [[Leonel Montano]]|other={{small|on loan from [[Silkeborg IF|Silkeborg]]}}}}
+{{fs player | no= 15 | nat=FIN | pos=MF | name= [[Jere Kallinen]]}}
+{{fs player | no= 16 | nat=FIN | pos=MF | name= Antton Nylund}}
+{{fs mid}}
+{{fs player | no= 17 | nat=FIN | pos=MF | name= [[Martin Kirilov]]}}
+{{fs player | no= 19 | nat=FIN | pos=FW | name= [[David Ezeh]]}}
+{{fs player | no= 20 | nat=FIN | pos=FW | name= [[Teemu Pukki]]}}
+{{fs player | no= 22 | nat=FIN | pos=MF | name= [[Liam Möller]]}}
+{{fs player | no= 24 | nat=FIN | pos=DF | name= Emil Leveälahti}}
+{{fs player | no= 26 | nat=FIN | pos=FW | name= [[Lassi Lappalainen]]}}
+{{fs player | no= 28 | nat=FIN | pos=DF | name= [[Miska Ylitolva]]}}
+{{fs player | no= 29 | nat=FIN | pos=FW | name= [[Santeri Haarala]]}}
+{{fs player | no= 31 | nat=SRB | pos=DF | name= [[Mihailo Bogićević]]}}
+{{fs player | no= 32 | nat=SEN | pos=MF | name= Mouhamed Guèye}}
+{{fs player | no= 35 | nat=FIN | pos=DF | name= [[Eemil Toivonen]]}}
+{{fs player | no= 44 | nat=CRO | pos=GK | name= [[Matej Marković]]}}
+{{fs player | no=    | nat=FIN | pos=GK | name= [[Jasper Samooja]]|other={{small|on loan from [[US Lecce|Lecce]]}}}}
+{{fs player | no=    | nat=FIN | pos=DF | name= [[Nikolai Alho]]}}
+{{fs end}}
+
+===Out on loan===
+{{Football squad start}}
+{{Football squad end}}
+
+==Reserve team==
+{{Main|Klubi 04}}
+
+HJK's reserve team Klubi 04 currently plays in the [[Ykkösliiga]], Finnish second tier.<ref>{{cite news|title=Klubi 04|url=https://www.hjk.fi/joukkue/klubi04|publisher=hjk.fi|access-date=10 February 2021|archive-date=27 March 2019|archive-url=https://web.archive.org/web/20190327054823/https://www.hjk.fi/joukkue/klubi04|url-status=live}}</ref>
+
+===Klubi 04 squad===
+{{Updated|19 January 2026}}<ref>{{cite web | url=https://www.hjk.fi/joukkue/klubi04 | title=HJK Klubi 04 Team | publisher=HJK Helsinki | access-date=22 January 2024}}</ref>
+{{Fs start}}
+{{Fs player|no=45|nat=FIN|name=Lukas Kuusisto|pos=DF}}
+{{Fs player|no=48|nat=NGA|name=Francis Etu|pos=FW}}
+{{Fs player|no=51|nat=FIN|name=Kaius Hardén|pos=FW}}
+{{Fs player|no=62|nat=SWE|name=[[Nils Svensson]]|pos=DF}}
+{{Fs player|no=76|nat=FIN|name=Vilho Tuokkola|pos=GK}}
+{{Fs player|no=98|nat=FIN|name=Alex Lietsa|pos=DF}}
+{{Fs player|no=|nat=FIN|name=Otto Hannula|pos=MF}}
+{{Fs player|no=|nat=KVX|name=Art Berisha|pos=FW}}
+{{Fs mid}}
+{{Fs player|no=|nat=FIN|name=Mustafa Abdulmuttaleb|pos=GK}}
+{{Fs player|no=|nat=FIN|name=Jere Kari|pos=DF}}
+{{Fs player|no=|nat=FIN|name=Marlo Hyvönen|pos=MF}}
+{{Fs player|no=|nat=FIN|name=Emil Ingman|pos=FW}}
+{{Fs player|no=|nat=FIN|name=Arop Ring|pos=DF}}
+{{Fs player|no=|nat=AUS|name=Liam Rippon|pos=FW}}
+{{Fs player|no=|nat=SWE|name=[[Hadi Noori]]|pos=MF}}
+{{Fs end}}
+
+===Out on loan===
+{{Fs start}}
+{{Fs player|no=|nat=FIN|name=[[Salem Bouajila]]|pos=FW|other=at [[SV Ried|SV Ried II]] until 30 June 2025}}
+{{Fs end}}
+
+==Management and boardroom==
+
+===Coaching staff===
+''Updated 22 April 2026''<ref>[https://www.hjk.fi/joukkue/hjk-miehet HJK Team], hjk.fi</ref>
+{| class="wikitable"
+! style="color:#FFFFFF; background:#0000FF;"|Name
+
+! style="color:#FFFFFF; background:#0000FF;"|Role
+|-
+|{{flagicon|FIN}} [[Joonas Rantanen]]
+|Manager
+|-
+|{{Flagicon|FIN}} Aleksi Lalli
+|Interim manager
+|-
+|{{Flagicon|FIN}} [[Erkka V. Lehtola]]
+|Assistant coach
+|-
+|{{Flagicon|ESP}} Edgar Reina
+|Coach, Analyst
+|-
+|{{Flagicon|FIN}} [[Ville Wallén]]
+|Goalkeeping coach, Team Manager
+|-
+|{{Flagicon|FIN}} [[Joni Ruuskanen]]
+|Conditioning coach
+|-
+|{{flagicon|HUN}} [[Tamás Gruborovics]]
+|Mental coach
+|-
+|{{Flagicon|FIN}} [[Lasse Lagerblom]]
+|Physiotherapist
+|-
+|{{Flagicon|FIN}} Matias Kalliokoski
+|Physiotherapist
+|-
+|{{Flagicon|FIN}}/{{flagicon|CHI}} Boris Wistuba-Marino
+|Kit manager
+|-
+|{{Flagicon|FIN}} Petteri Jutila
+|Kit manager
+|}
+
+===Performance Unit===
+''Also with [[Helsingin Jalkapalloklubi (women)|Women's team]] and [[Klubi 04|Reserve team]]. Updated 24 April 2025''
+{| class="wikitable"
+|-
+! style="color:#FFFFFF; background:#0000FF;"|Name
+
+! style="color:#FFFFFF; background:#0000FF;"|Role
+|-
+|{{Flagicon|FIN}} Risto-Matti Toivonen
+|Head of sports science
+|-
+|{{Flagicon|FIN}} [[Joni Ruuskanen]]
+|Conditioning coach
+|-
+|{{Flagicon|FIN}} Toni Taipale
+|Physiotherapist 
+|-
+|{{Flagicon|FIN}} Tony Elomaa
+|Physiotherapist 
+|-
+|{{Flagicon|FIN}} Tuomas Brinck
+|Doctor
+|-
+|{{Flagicon|FIN}} Klaus Köhler
+|Doctor
+|}
+
+===Boardroom===
+''Updated 20 May 2024''<ref>{{Cite web |title=Contacts |url=https://www.hjk.fi/en/contacts/ |access-date=11 September 2023 |website=HJK Helsinki |language=en-US |archive-date=28 November 2023 |archive-url=https://web.archive.org/web/20231128093850/https://www.hjk.fi/en/contacts/ |url-status=live }}</ref><ref>{{Cite web |last=Mäntylä |first=Pekka |date=4 September 2023 |title=Vesa Mäki on HJK:n uusi urheilujohtaja |url=https://www.hjk.fi/artikkelit/miehet/vesa-maki-on-hjkn-uusi-urheilujohtaja/ |access-date=11 September 2023 |website=HJK Helsinki |language=fi |archive-date=7 September 2023 |archive-url=https://web.archive.org/web/20230907014815/https://www.hjk.fi/artikkelit/miehet/vesa-maki-on-hjkn-uusi-urheilujohtaja/ |url-status=live }}</ref>
+{| class="wikitable"
+|-
+! style="color:#FFFFFF; background:#0000FF;"|Name
+
+! style="color:#FFFFFF; background:#0000FF;"|Role
+|-
+|{{Flagicon|FIN}} [[Aki Riihilahti]]
+|CEO
+|-
+|{{Flagicon|FIN}} Sirja Luomaniemi
+|Commercial Director
+|-
+|{{flagicon|FIN}} [[Petri Vuorinen]]
+|Sporting Director
+|}
+
+==Managers and captains==
+{{Col-begin|width=auto}}
+{{Col-2}}
+===Managers===
+{{div col|colwidth=35em}}
+{| class="wikitable"
+|-
+! style="color:#FFFFFF; background:#0000FF;"|Name
+! style="color:#FFFFFF; background:#0000FF;"|Year(s)
+|-
+|{{flagicon|Finland}} Yrjö Larha
+|1933–1944
+|-
+|{{flagicon|Finland}} Eino Nuutinen
+|1945–1947
+|-
+|{{flagicon|England}} George Duke
+|1948–1949
+|-
+|{{flagicon|Finland}} Eino Nuutinen
+|1950
+|-
+|{{flagicon|Hungary}} János Nagy
+|1951
+|-
+|{{flagicon|Finland}} Eino Nuutinen
+|1952
+|-
+|{{flagicon|Finland}} Niilo Nordman
+|1953–1955
+|-
+|{{flagicon|Finland}} [[Aatos Lehtonen]]
+|1956–1958
+|-
+|{{flagicon|Finland}} [[Aulis Rytkönen]]
+|1960–1971
+|-
+|{{flagicon|Finland}} Raimo Kauppinen
+|1 January 1972 – 1974
+|-
+|{{flagicon|Finland}} [[Kai Pahlman]]
+|1973–1974
+|-
+|{{flagicon|Finland}} [[Aulis Rytkönen]]
+|1 July 1975 – 1979
+|-
+|{{flagicon|Finland}} Raimo Kauppinen
+|1975–31 December 1979
+|-
+|{{flagicon|Finland}} [[Martti Kuusela]]
+|1 January 1980 – 31 December 1981
+|-
+|{{flagicon|Finland}} Raimo Kauppinen
+|1 January 1981 – 1982
+|-
+|{{flagicon|Finland}} Thure Sarnola
+|1982
+|-
+|{{flagicon|Finland}} [[Miikka Toivola]]
+|1983–1984
+|-
+|{{flagicon|Finland}} [[Jyrki Heliskoski]]
+|1 January 1985 – 31 December 1989
+|-
+|{{flagicon|Finland}} [[Martti Kuusela]]
+|1 January 1990 – 31 December 1990
+|-
+|{{flagicon|Finland}} [[Jyrki Nieminen]]
+|1 January 1991 – 31 December 1991
+|-
+|{{flagicon|Finland}} [[Jari-Pekka Keurulainen]]
+|1 January 1992 – 31 December 1994
+|-
+|{{flagicon|Sweden}} [[Bo Johansson]]
+|1 January 1995 – 31 December 1995
+|-
+|{{flagicon|Finland}} [[Tommy Lindholm]]
+|1 January 1996 – 8 July 1996
+|-
+|{{flagicon|Finland}} [[Jari-Pekka Keurulainen]] / {{flagicon|Finland}} [[Martti Kuusela]]
+|8 July 1996 – 31 December 1996
+|-
+|{{flagicon|Finland}} [[Antti Muurinen]]
+|1 January 1997 – 31 December 1999
+|-
+|{{flagicon|Finland}} [[Jyrki Heliskoski]]
+|1 January 2000 – 31 December 2001
+|-
+|{{flagicon|England}} {{flagicon|Finland}} [[Keith Armstrong (footballer)|Keith Armstrong]]
+|1 January 2002 – 5 September 2007
+|-
+|{{flagicon|Finland}} [[Aki Hyryläinen]]
+|6 September 2007 – 10 October 2007
+|-
+|{{flagicon|Finland}} [[Antti Muurinen]]
+|10 October 2007 – 31 December 2012
+|-
+|{{flagicon|Finland}} [[Sixten Boström]]
+|1 Jan 2013–28 April 2014
+|-
+|{{flagicon|Finland}} [[Mika Lehkosuo]]
+|29 April 2014 – 22 May 2019
+|-
+|{{flagicon|Finland}} [[Toni Koskela]]
+|22 May 2019 – 13 July 2023
+|-
+|{{flagicon|Finland}} [[Toni Korkeakunnas]]
+|13 July 2023 – 31 December 2023
+|-
+|{{flagicon|Finland}} [[Ossi Virta]] / {{flagicon|Spain}} [[Ferran Sibila]]
+|1 January 2024 – 20 May 2024
+|-
+|{{flagicon|Finland}} [[Toni Korkeakunnas]]
+|20 May 2024 – 4 May 2025
+|-
+|{{flagicon|FIN}} [[Miika Nuutinen]] (interim)
+|4 May 2025 – 31 December 2025
+|-
+|{{flagicon|FIN}} [[Joonas Rantanen]]
+|1 January 2026 – ''present''
+|}
+{{div col end}}
+{{Col-break|gap=5em}}
+
+===Captains===
+{{div col|colwidth=35em}}
+{| class="wikitable"
+|-
+! style="color:#FFFFFF; background:#0000FF;"|Name
+! style="color:#FFFFFF; background:#0000FF;"|Year(s)
+|-
+|{{flagicon|FIN}} [[Jarkko Wiss]]
+|1997–1998<ref>[https://www.hjk.fi/artikkelit/miehet/tapahtui-tana-paivana/tapahtui-tana-paivana-vuonna-1997/ Tapahtui tänä päivänä vuonna 1997], hjk.fi, 22 May 2022</ref>
+|-
+|{{flagicon|FIN}} [[Ville Nylund]]
+|2001–2006<ref>[https://yle.fi/a/3-5936962 Ville Nylundin kausi ohi], [[Yle]], 29 August 2001</ref>
+|-
+|{{flagicon|FIN}} [[Mika Nurmela]]
+|2007<ref>{{cite web |title=hjk |url=http://www.hjk.fi/joukkueet/pelaajat/?J=&hae=35 |archive-url=https://web.archive.org/web/20070916213727/http://www.hjk.fi/joukkueet/pelaajat/?J=&hae=35 |archive-date=16 September 2007 |url-status=dead}}</ref>
+|-
+|{{flagicon|FIN}} [[Tuomas Aho]]
+|2008<ref>{{cite web |title=MTVuutiset |date=27 March 2008 |url=https://www.mtvuutiset.fi/artikkeli/tuomas-aho-kipparoi-hjkta/4048594#gs.q7cqr2 |access-date=24 February 2022 |archive-date=24 February 2022 |archive-url=https://web.archive.org/web/20220224152233/https://www.mtvuutiset.fi/artikkeli/tuomas-aho-kipparoi-hjkta/4048594#gs.q7cqr2 |url-status=live }}</ref>
+|-
+|{{flagicon|FIN}} [[Tuomas Haapala]]
+|2009
+|-
+|{{flagicon|FIN}} [[Ville Wallén]]
+|2010–2013<ref>{{cite web |title=kymppipaikka |date=16 March 2011 |url=https://kymppipaikka.fi/Veikkausliiga/HJK-n-kapteenisto-ensi-kaudeksi-valittu/(offset)/3 |access-date=24 February 2022 |archive-date=24 February 2022 |archive-url=https://web.archive.org/web/20220224152235/https://kymppipaikka.fi/Veikkausliiga/HJK-n-kapteenisto-ensi-kaudeksi-valittu/(offset)/3 |url-status=live }}</ref><ref>{{cite web |title=hjk |date=18 March 2013 |url=https://www.hjk.fi/artikkelit/miehet/hjkn-kapteenit-valittu/ |access-date=24 February 2022 |archive-date=24 February 2022 |archive-url=https://web.archive.org/web/20220224152239/https://www.hjk.fi/artikkelit/miehet/hjkn-kapteenit-valittu/ |url-status=live }}</ref>
+|-
+|{{flagicon|FIN}} [[Teemu Tainio]]
+|2014<ref>{{cite web |title=hjk |date=27 March 2014 |url=https://www.hjk.fi/artikkelit/miehet/hjk-valitsi-kapteeninsa-kaudelle-2014/ |access-date=24 February 2022 |archive-date=24 February 2022 |archive-url=https://web.archive.org/web/20220224152235/https://www.hjk.fi/artikkelit/miehet/hjk-valitsi-kapteeninsa-kaudelle-2014/ |url-status=live }}</ref>
+|-
+|{{flagicon|FIN}} [[Markus Heikkinen]]
+|2015<ref>{{cite web |title=hjk |date=10 March 2015 |url=https://www.hjk.fi/artikkelit/miehet/heikkinen-hjkn-kapteeni-kaudella-2015/ |access-date=24 February 2022 |archive-date=24 February 2022 |archive-url=https://web.archive.org/web/20220224152238/https://www.hjk.fi/artikkelit/miehet/heikkinen-hjkn-kapteeni-kaudella-2015/ |url-status=live }}</ref>
+|-
+|{{flagicon|FIN}} [[Sebastian Sorsa]]
+|2016<ref>{{cite web |title=yle |date=2 April 2016 |url=https://yle.fi/urheilu/3-8783135 |access-date=24 February 2022 |archive-date=24 February 2022 |archive-url=https://web.archive.org/web/20220224153737/https://yle.fi/urheilu/3-8783135 |url-status=live }}</ref>
+|-
+|{{flagicon|BRA}}/{{flagicon|FIN}} [[Rafinha (footballer, born 1982)|Rafinha]]
+|2017–2018<ref>{{cite web |title=hjk |date=28 February 2018 |url=https://www.hjk.fi/artikkelit/miehet/joukkueen-kapteenit-valittu/ |access-date=24 February 2022 |archive-date=24 February 2022 |archive-url=https://web.archive.org/web/20220224152237/https://www.hjk.fi/artikkelit/miehet/joukkueen-kapteenit-valittu/ |url-status=live }}</ref>
+|-
+|{{flagicon|FIN}} [[Sebastian Dahlström]]
+|2019<ref>{{cite web |title=veikkausliiga |url=http://www.veikkausliiga.com/uutiset/2019/03/12/hjkn-dahlstrom-minun-taytyy-olla-kapteenin-roolin-arvoinen |access-date=24 February 2022 |archive-date=24 February 2022 |archive-url=https://web.archive.org/web/20220224152236/http://www.veikkausliiga.com/uutiset/2019/03/12/hjkn-dahlstrom-minun-taytyy-olla-kapteenin-roolin-arvoinen |url-status=live }}</ref>
+|-
+|{{flagicon|FIN}} [[Nikolai Alho]]
+|2020<ref>{{cite web |title=hjk |date=3 March 2020 |url=https://www.hjk.fi/artikkelit/miehet/klubin-kapteenisto-2020/ |access-date=24 February 2022 |archive-date=24 February 2022 |archive-url=https://web.archive.org/web/20220224152243/https://www.hjk.fi/artikkelit/miehet/klubin-kapteenisto-2020/ |url-status=live }}</ref>
+|-
+|{{flagicon|FIN}} [[Daniel O'Shaughnessy]]
+|2021<ref>{{cite web |title=hjk |date=19 March 2021 |url=https://www.hjk.fi/artikkelit/miehet/hjkn-kapteenit-2021/ |access-date=24 February 2022 |archive-date=24 February 2022 |archive-url=https://web.archive.org/web/20220224152241/https://www.hjk.fi/artikkelit/miehet/hjkn-kapteenit-2021/ |url-status=live }}</ref>
+|-
+|{{flagicon|FIN}} [[Miro Tenho]]
+|2022–2023<ref>{{cite web |title=hjk |date=21 February 2022 |url=https://www.hjk.fi/artikkelit/miehet/hjk-valitsi-kapteeninsa-miro-tenho-kantaa-nauhaa/ |access-date=24 February 2022 |archive-date=21 February 2022 |archive-url=https://web.archive.org/web/20220221191538/https://www.hjk.fi/artikkelit/miehet/hjk-valitsi-kapteeninsa-miro-tenho-kantaa-nauhaa/ |url-status=live }}</ref>
+|-
+|{{flagicon|FIN}} [[Joona Toivio]]
+|2024<ref>[https://www.hjk.fi/artikkelit/miehet/kapteenisto-valittu-kaudelle-2024/ Kapteenisto valittu kaudelle 2024], hjk.fi, 14 March 2024</ref>
+|-
+|{{flagicon|FIN}} [[Daniel O'Shaughnessy]]
+|2025<ref>[https://www.hjk.fi/artikkelit/miehet/daniel-oshaughnessy-kipparoi-klubia/], hjk.fi, 28 March 2025</ref>
+|-
+|{{flagicon|FIN}} [[Alexander Ring]]
+|2026 – ''present''
+|}
+{{div col end}}
+{{Col-end}}
+
+==Hall of Fame==
+The HJK Hall of Fame was established in 1997, when the club celebrated its 90th anniversary. Initially 16 people were named, after which it has been completed several times.<ref>[https://www.hjk.fi/seura/hjk-hall-of-fame/ HJK Hall of Fame], hjk.fi</ref>
+
+{{div col|colwidth=15em}}
+*  1. {{fbicon|FIN}} [[Niilo Tammisalo]]
+*  2. {{fbicon|FIN}} [[Eino Soinio]]
+*  3. {{fbicon|FIN}} [[Aatos Lehtonen]]
+*  4. {{fbicon|FIN}} [[Reijo Jalava]]
+*  5. {{fbicon|FIN}} [[Kai Pahlman]]
+*  6. {{fbicon|FIN}} [[Aulis Rytkönen]]
+*  7. {{fbicon|FIN}} {{ill|Paavo Heinonen|fi}}
+*  8. {{fbicon|FIN}} [[Lauri Lehtinen]]
+*  9. {{fbicon|FIN}} [[Miikka Toivola]]
+* 10. {{fbicon|FIN}} [[Jari Europaeus]]
+* 11. {{fbicon|FIN}} {{ill|Henry Forssell|fi}}
+* 12. {{fbicon|FIN}} [[Juha Dahllund]]
+* 13. {{fbicon|FIN}} [[Pasi Rautiainen]]
+* 14. {{fbicon|FIN}} [[Jyrki Nieminen]]
+* 15. {{fbicon|FIN}} [[Hanna-Mari Sarlin]]
+* 16. {{fbicon|FIN}} [[Atik Ismail]]
+* 17. {{fbicon|FIN}} [[Markku Kanerva]]
+* 18. {{fbicon|FIN}} [[Markku Peltoniemi]]
+* 19. {{fbicon|FIN}} [[Jari Rantanen]]
+* 20. {{fbicon|FIN}} [[Kari Rissanen]]
+* 21. {{fbicon|FIN}} [[Aki Hyryläinen]]
+* 22. {{fbicon|FIN}} [[Tommi Grönlund]]
+* 23. {{fbicon|FIN}} [[Petri Helin]]
+* 24. {{fbicon|FIN}} [[Mika Lehkosuo]]
+* 25. {{fbicon|FIN}} [[Aarno Turpeinen]]
+* 26. {{fbicon|FIN}} [[Ville Nylund]]
+* 27. {{fbicon|FIN}} [[Christina Forssell]]
+* 28. {{fbicon|FIN}} [[Terhi Uusi-Luomalahti]]
+* 29. {{fbicon|FIN}} {{ill|Markku Palmroos|fi}}
+* 30. {{fbicon|FIN}} [[Aki Riihilahti]]
+* 31. {{fbicon|FIN}} [[Pasi Rasimus]]
+* 32. {{fbicon|FIN}} [[Kaija Salopuro]]
+* 33. {{fbicon|FIN}} [[Heidi Lindström]]
+* 34. {{fbicon|FIN}} [[Ville Wallén]]
+* 35. {{fbicon|FIN}} [[Mikael Forssell]]
+* 36. {{fbicon|FIN}} [[Sanna Malaska]]
+* 37. {{fbicon|FIN}} [[Sebastian Sorsa]]
+{{div col end}}
+
+==European record==
+
+===UEFA club competition record===
+''Updated 22 April 2026.''
+{| class="wikitable sortable" style="text-align: center;"
+|-
+!style="color:#FFFFFF; background:#0000FF;"|Competition
+!style="color:#FFFFFF; background:#0000FF;"|Pld
+!style="color:#FFFFFF; background:#0000FF;"|W
+!style="color:#FFFFFF; background:#0000FF;"|D
+!style="color:#FFFFFF; background:#0000FF;"|L
+!style="color:#FFFFFF; background:#0000FF;"|GF
+!style="color:#FFFFFF; background:#0000FF;"|GA
+|-
+|'''[[UEFA Champions League]]'''|| 85 || 31 || 14 || 40 || 109 || 132
+|-
+|'''[[UEFA Cup]]''' / '''[[UEFA Europa League]]'''||78||22||12||44||79||152
+|-
+|'''[[UEFA Cup Winners' Cup]]'''||12||6||1||5||18||24
+|-
+|'''[[UEFA Conference League]]'''||24||8||6||13||31||54
+|-
+|'''[[UEFA Intertoto Cup]]'''||4||1||2||1||6||6
+|-
+|'''Total'''||'''206'''||'''68'''||'''36'''||'''102'''||'''252'''||'''371'''
+|}
+
+===Matches===
+{|
+|valign="top" width=0%|
+{| class="wikitable"
+! style="color:#FFFFFF; background:#0000FF;"|Season
+! style="color:#FFFFFF; background:#0000FF;"|Competition
+! style="color:#FFFFFF; background:#0000FF;"|Round
+! style="color:#FFFFFF; background:#0000FF;"|Opponent
+! style="color:#FFFFFF; background:#0000FF;"|Home
+! style="color:#FFFFFF; background:#0000FF;"|Away
+! style="color:#FFFFFF; background:#0000FF;"|Aggregate
+! style="color:#FFFFFF; background:#0000FF;"|Y/N
+|-
+|1965–66
+|[[1965–66 European Cup|European Cup]]
+|PR
+|{{flagicon|England}} [[Manchester United F.C.|Manchester United]]
+| style="text-align:center; background:#fdd;"| 2–3
+| style="text-align:center; background:#fdd;"| 0–6
+| style="text-align:center; | '''2–9'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|1967–68
+|[[1967–68 UEFA Cup Winners' Cup|UEFA Cup Winners' Cup]]
+|1R
+|{{flagicon|Poland}} [[Wisła Kraków]]
+| style="text-align:center; background:#fdd;"| 1–4
+| style="text-align:center; background:#fdd;"| 0–4
+| style="text-align:center; | '''1–8'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2| 1974–75
+|rowspan=2| [[1974–75 European Cup|European Cup]]
+|1R
+|{{flagicon|Malta}} [[Valletta F.C.|Valletta]]
+| style="text-align:center; background:#dfd;"| 4–1
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; |'''4–2'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2R
+|{{flagicon|Sweden}} [[Åtvidabergs FF]]
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; | '''0–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|1975–76
+|[[1975–76 UEFA Cup|UEFA Cup]]
+|PR
+|{{flagicon|Germany}} [[Hertha BSC|Hertha Berlin]]
+| style="text-align:center; background:#fdd;"| 1–2
+| style="text-align:center; background:#fdd;"| 1–4
+| style="text-align:center; | '''2–6'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|1979–80
+|[[1979–80 European Cup|European Cup]]
+|1R
+|{{flagicon|Netherlands}} [[AFC Ajax|Ajax Amsterdam]]
+| style="text-align:center; background:#fdd;"| 1–8
+| style="text-align:center; background:#fdd;"| 1–8
+| style="text-align:center; | '''2–16'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2| 1982–83
+|rowspan=2| [[1982–83 European Cup|European Cup]]
+|1R
+|{{flagicon|Cyprus}} [[AC Omonia|Omonia]]
+| style="text-align:center; background:#dfd;"| 3–0
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center; | '''3–2'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2R
+|{{flagicon|England}} [[Liverpool F.C.|Liverpool]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#fdd;"| 0–5
+| style="text-align:center; |'''1–5'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|1983–84
+|[[1983–84 UEFA Cup|UEFA Cup]]
+|1R
+|{{flagicon|Soviet Union}} [[FC Spartak Moscow|Spartak Moscow]]
+| style="text-align:center; background:#fdd;"| 0–5
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center; |'''0–7'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|1984–85
+|[[1984–85 UEFA Cup|UEFA Cup]]
+|PR
+|{{flagicon|Soviet Union}} [[FC Dinamo Minsk|Dinamo Minsk]]
+| style="text-align:center; background:#fdd;"| 0–6
+| style="text-align:center; background:#fdd;"| 0–4
+| style="text-align:center; |'''0–10'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2| 1985–86
+|rowspan=2| [[1985–86 UEFA Cup Winners' Cup|UEFA Cup Winners' Cup]]
+|1R
+|{{flagicon|Albania|1946}} [[Flamurtari Vlorë|Flamurtari]]
+| style="text-align:center; background:#dfd;"| 3–2
+| style="text-align:center; background:#dfd;"| 2–1
+| style="text-align:center; |'''5–3'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2R
+|{{flagicon|East Germany}} [[Dynamo Dresden]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#fdd;"| 2–7
+| style="text-align:center; |'''3–7'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|1986–87
+|[[1986–87 European Cup|European Cup]]
+|1R
+|{{flagicon|Cyprus}} [[APOEL FC|APOEL]]
+| style="text-align:center; background:#dfd;"| 3–2
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; | '''3–3 ([[away goals|a]])'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|1988–89
+|[[1988–89 European Cup|European Cup]]
+|1R
+|{{flagicon|Portugal}} [[F.C. Porto|FC Porto]]
+| style="text-align:center; background:#dfd;"| 2–0
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center; |'''2–3'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|1989–90
+|[[1989–90 European Cup|European Cup]]
+|1R
+|{{flagicon|Italy}} [[A.C. Milan]]
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; background:#fdd;"| 0–4
+| style="text-align:center; |'''0–5'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|1991–92
+|[[1991–92 European Cup|European Cup]]
+|1R
+|{{flagicon|Soviet Union}} [[FC Dynamo Kyiv|Dynamo Kyiv]]
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center; |'''0–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2| 1993–94
+|rowspan=2| [[1993–94 UEFA Champions League|UEFA Champions League]]
+|PR
+|{{flagicon|Estonia}} [[FC Norma Tallinn|Norma Tallinn]]
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; |'''2–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|1R
+|{{flagicon|Belgium}} [[RSC Anderlecht|Anderlecht]]
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center; |'''0–6'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2| 1994–95
+|rowspan=2| [[1994–95 UEFA Cup Winners' Cup|UEFA Cup Winners' Cup]]
+|PR
+|{{flagicon|Faroe Islands}} [[B71 Sandur]]
+| style="text-align:center; background:#dfd;"| 2–0
+| style="text-align:center; background:#dfd;"| 5–0
+| style="text-align:center; |'''7–0'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|1R
+|{{flagicon|Turkey}} [[Beşiktaş J.K.|Beşiktaş]]
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center; |'''1–3'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=4| 1995
+|rowspan=4| [[1995 UEFA Intertoto Cup|UEFA Intertoto Cup]]
+|rowspan=4| Group 5
+|{{flagicon|Sweden}} [[IFK Norrköping]]
+| {{n/a}}
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center;" rowspan=4| '''3rd'''
+| rowspan=4|  [[File:Symbol delete vote.svg|17px]]
+|-
+|{{flagicon|Ireland}} [[Bohemian F.C.|Bohemians]]
+| style="text-align:center; background:#dfd;"| 3–2
+| {{n/a}}
+|-
+|{{flagicon|Denmark}} [[Odense Boldklub|OB Odense]]
+| {{n/a}}
+| style="text-align:center; background:#fdd;"| 1–2
+|-
+|{{flagicon|France}} [[FC Girondins de Bordeaux|Bordeaux]]
+| style="text-align:center; background:#ffd;"| 1–1
+| {{n/a}}
+|-
+|rowspan=2| 1996–97
+|rowspan=2| [[1996–97 UEFA Cup|UEFA Cup]]
+|PR
+|{{flagicon|Armenia}} [[FC Pyunik|Pyunik Yerevan]]
+| style="text-align:center; background:#dfd;"| 5–2 ([[extra time|aet]])
+| style="text-align:center; background:#fdd;"| 1–3
+| style="text-align:center; |'''6–5'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|QR
+|{{flagicon|Ukraine}} [[FC Chornomorets Odesa|Chernomorets Odesa]]
+| style="text-align:center; background:#ffd;"| 2–2
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center; |'''2–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|1997–98
+|[[1997–98 UEFA Cup Winners' Cup|UEFA Cup Winners' Cup]]
+|QR
+|{{flagicon|Serbia and Montenegro}} [[Red Star Belgrade]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center; |'''1–3'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=5| 1998–99
+|rowspan=5| [[1998–99 UEFA Champions League|UEFA Champions League]]
+|1QR
+|{{flagicon|Armenia}} [[FC Yerevan]]
+| style="text-align:center; background:#dfd;"| 2–0
+| style="text-align:center; background:#dfd;"| 3–0
+| style="text-align:center; |'''5–0'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2QR
+|{{flagicon|France}} [[FC Metz]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center; |'''2–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|rowspan=3|Group F
+|{{flagicon|Netherlands}} [[PSV Eindhoven]]
+| style="text-align:center; background:#fdd;"| 1–3
+| style="text-align:center; background:#fdd;"| 1–2
+| style="text-align:center;" rowspan=3| '''4th'''
+| rowspan=3|  [[File:Symbol delete vote.svg|17px]]
+|-
+|{{flagicon|Germany}} [[1. FC Kaiserslautern]]
+| style="text-align:center; background:#ffd;"| 0–0
+| style="text-align:center; background:#fdd;"| 2–5
+|-
+|{{flagicon|Portugal}} [[S.L. Benfica|Benfica]]
+| style="text-align:center; background:#dfd;"| 2–0
+| style="text-align:center; background:#ffd;"| 2–2
+|-
+|rowspan=2| 1999–00
+|rowspan=2| [[1999–2000 UEFA Cup|UEFA Cup]]
+|QR
+|{{flagicon|Armenia}} [[FC Shirak|Shirak Gyumri]]
+| style="text-align:center; background:#dfd;"| 2–0
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; |'''2–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|1R
+|{{flagicon|France}} [[Olympique Lyonnais|Lyon]]
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; background:#fdd;"| 1–5
+| style="text-align:center; |'''1–6'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2| 2000–01
+|rowspan=2| [[2000–01 UEFA Cup|UEFA Cup]]
+|QR
+|{{flagicon|Luxembourg}} [[CS Grevenmacher]]
+| style="text-align:center; background:#dfd;"| 4–1
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center; |'''4–3'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|1R
+|{{flagicon|Scotland}} [[Celtic F.C.|Celtic]]
+| style="text-align:center; background:#dfd;"| 2–1 ([[extra time|aet]])
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center; |'''2–3'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2| 2001–02
+|rowspan=2| [[2001–02 UEFA Cup|UEFA Cup]]
+|QR
+|{{flagicon|Latvia}} [[FK Ventspils]]
+| style="text-align:center; background:#dfd;"| 2–1
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; |'''3–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|1R
+|{{flagicon|Italy}} [[Parma Calcio 1913|Parma]]
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; |'''0–3'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|2002–03
+|[[2002–03 UEFA Cup|UEFA Cup]]
+|QR
+|{{flagicon|Belarus}} [[FC Gomel]]
+| style="text-align:center; background:#fdd;"| 0–4
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; |'''0–5'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2| 2003–04
+|rowspan=2| [[2003–04 UEFA Champions League|UEFA Champions League]]
+|1QR
+|{{flagicon|Northern Ireland}} [[Glentoran F.C.|Glentoran]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#ffd;"| 0–0
+| style="text-align:center; |'''1–0'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2QR
+|{{flagicon|Hungary}} [[MTK Budapest FC|MTK Budapest]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#fdd;"| 1–3
+| style="text-align:center; |'''2–3'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2| 2004–05
+|rowspan=2| [[2004–05 UEFA Champions League|UEFA Champions League]]
+|1QR
+|{{flagicon|Northern Ireland}} [[Linfield F.C.|Linfield]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; |'''2–0'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2QR
+|{{flagicon|Israel}} [[Maccabi Tel Aviv]]
+| style="text-align:center; background:#ffd;"| 0–0
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; |'''0–1'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|2006–07
+|[[2006–07 UEFA Cup|UEFA Cup]]
+|1QR
+|{{flagicon|Ireland}} [[Drogheda United F.C.|Drogheda United]]
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center; background:#fdd;"| 1–3 ([[extra time|aet]])
+| style="text-align:center; |'''2–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2| 2007–08
+|rowspan=2| [[2007–08 UEFA Cup|UEFA Cup]]
+|1QR
+|{{flagicon|Luxembourg}} [[FC Etzella Ettelbruck]]
+| style="text-align:center; background:#dfd;"| 2–0
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; |'''3–0'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2QR
+|{{flagicon|Denmark}} [[AaB Fodbold|Aalborg BK]]
+| style="text-align:center; background:#dfd;"| 2–1
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center; |'''2–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|2009–10
+|[[2009–10 UEFA Europa League|UEFA Europa League]]
+|2QR
+|{{flagicon|Lithuania}} [[FK Vėtra]]
+| style="text-align:center; background:#fdd;"| 1–3
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; |'''2–3'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=3| 2010–11
+|rowspan=2| [[2010–11 UEFA Champions League|UEFA Champions League]]
+|2QR
+|{{flagicon|Lithuania}} [[FK Ekranas]]
+| style="text-align:center; background:#dfd;"| 2–0 ([[extra time|aet]])
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; |'''2–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|3QR
+|{{flagicon|Serbia}} [[FK Partizan]]
+| style="text-align:center; background:#fdd;"| 1–2
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center; |'''1–5'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|[[2010–11 UEFA Europa League|UEFA Europa League]]
+|PO
+|{{flagicon|Turkey}} [[Beşiktaş J.K.|Beşiktaş]]
+| style="text-align:center; background:#fdd;"| 0–4
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center; |'''0–6'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=3| 2011–12
+|rowspan=2| [[2011–12 UEFA Champions League|UEFA Champions League]]
+|2QR
+|{{flagicon|Wales}} [[Bangor City F.C.|Bangor City]]
+| style="text-align:center; background:#dfd;"| 10–0
+| style="text-align:center; background:#dfd;"| 3–0
+| style="text-align:center; |'''13–0'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|3QR
+|{{flagicon|Croatia}} [[GNK Dinamo Zagreb|Dinamo Zagreb]]
+| style="text-align:center; background:#fdd;"| 1–2
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; |'''1–3'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|[[2011–12 UEFA Europa League|UEFA Europa League]]
+|PO
+|{{flagicon|Germany}} [[FC Schalke 04|Schalke 04]]
+| style="text-align:center; background:#dfd;"| 2–0
+| style="text-align:center; background:#fdd;"| 1–6
+| style="text-align:center; |'''3–6'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=3| 2012–13
+|rowspan=2| [[2012–13 UEFA Champions League|UEFA Champions League]]
+|2QR
+|{{flagicon|Iceland}} [[Knattspyrnufélag Reykjavíkur|KR Reykjavik]]
+| style="text-align:center; background:#dfd;"| 7–0
+| style="text-align:center; background:#dfd;"| 2–1
+| style="text-align:center; |'''9–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|3QR
+|{{flagicon|Scotland}} [[Celtic F.C.|Celtic]]
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center; background:#fdd;"| 1–2
+| style="text-align:center; |'''1–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|[[2012–13 UEFA Europa League|UEFA Europa League]]
+|PO
+|{{flagicon|Spain}} [[Athletic Bilbao]]
+| style="text-align:center; background:#ffd;"| 3–3
+| style="text-align:center; background:#fdd;"| 0–6
+| style="text-align:center; |'''3–9'''
+|  [[File:Symbol delete vote.svg|17px]]
+|-
+|2013–14
+|[[2013–14 UEFA Champions League|UEFA Champions League]]
+|2QR
+|{{flagicon|Estonia}} [[Nõmme Kalju FC|Nõmme Kalju]]
+| style="text-align:center; background:#ffd;"| 0–0
+| style="text-align:center; background:#fdd;"| 1–2
+| style="text-align:center; |'''1–2'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=6| 2014–15
+|rowspan=2| [[2014–15 UEFA Champions League|UEFA Champions League]]
+|2QR
+|{{flagicon|Macedonia}} [[FK Rabotnički]]
+| style="text-align:center; background:#dfd;"| 2–1
+| style="text-align:center; background:#ffd;"| 0–0
+| style="text-align:center; |'''2–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|3QR
+|{{flagicon|Cyprus}} [[APOEL FC|APOEL]]
+| style="text-align:center; background:#ffd;"| 2–2
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center; |'''2–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=4| [[2014–15 UEFA Europa League|UEFA Europa League]]
+|PO
+|{{flagicon|Austria}} [[SK Rapid Wien]]
+| style="text-align:center; background:#dfd;"| 2–1
+| style="text-align:center; background:#ffd;"| 3–3
+| style="text-align:center; |'''5–4'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|rowspan=3|Group B
+|{{flagicon|Denmark}} [[F.C. Copenhagen|Copenhagen]]
+| style="text-align:center; background:#dfd;"| 2–1
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center;" rowspan=3| '''3rd'''
+| rowspan=3|  [[File:Symbol delete vote.svg|17px]]
+|-
+|{{flagicon|Belgium}} [[Club Brugge KV|Club Brugge]]
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center; background:#fdd;"| 1–2
+|-
+|{{flagicon|Italy}} [[Torino F.C.|Torino]]
+| style="text-align:center; background:#dfd;"| 2–1
+| style="text-align:center; background:#fdd;"| 0–2
+|-
+|rowspan=3| 2015–16
+|rowspan=2| [[2015–16 UEFA Champions League|UEFA Champions League]]
+|2QR
+|{{flagicon|Latvia}} [[FK Ventspils]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#dfd;"| 3–1
+| style="text-align:center; |'''4–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|3QR
+|{{flagicon|KAZ}} [[FC Astana|Astana]]
+| style="text-align:center; background:#ffd;"| 0–0
+| style="text-align:center; background:#fdd;"| 3–4
+| style="text-align:center; |'''3–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|[[2015–16 UEFA Europa League|UEFA Europa League]]
+|PO
+|{{flagicon|RUS}} [[FC Krasnodar|Krasnodar]]
+| style="text-align:center; background:#ffd;"| 0–0
+| style="text-align:center; background:#fdd;"| 1–5
+| style="text-align:center; |'''1–5'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=3| 2016–17
+|rowspan=3| [[2016–17 UEFA Europa League|UEFA Europa League]]
+|1QR
+|{{flagicon|Lithuania}} [[FK Atlantas]]
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center; background:#dfd;"| 2–0
+| style="text-align:center; |'''3–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2QR
+|{{Flagicon|Bulgaria}} [[PFC Beroe Stara Zagora|Beroe Stara Zagora]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center; |'''2–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|3QR
+|{{Flagicon|Sweden}} [[IFK Göteborg]]
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center; background:#dfd;"| 2–1
+| style="text-align:center; |'''2–3'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2| 2017–18
+|rowspan=2| [[2017–18 UEFA Europa League|UEFA Europa League]]
+|1QR
+|{{flagicon|Wales}} [[Connah's Quay Nomads F.C.|Connah's Quay Nomads]]
+| style="text-align:center; background:#dfd;"| 3–0
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; |'''3–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2QR
+|{{flagicon|Macedonia}} [[KF Shkëndija|Shkëndija]]
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center; background:#fdd;"| 1–3
+| style="text-align:center; |'''2–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=3| 2018–19
+|rowspan=2| [[2018–19 UEFA Champions League|UEFA Champions League]]
+|1QR
+|{{flagicon|Faroe Islands}} [[Víkingur Gøta]]
+| style="text-align:center; background:#dfd;"| 3–1
+| style="text-align:center; background:#dfd;"| 2–1
+| style="text-align:center; |'''5–2'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2QR
+|{{flagicon|Belarus}} [[FC BATE Borisov|BATE Borisov]]
+| style="text-align:center; background:#fdd;"| 1–2
+| style="text-align:center; background:#ffd;"| 0–0
+| style="text-align:center; |'''1–2'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|[[2018–19 UEFA Europa League|UEFA Europa League]]
+|3QR
+|{{flagicon|Slovenia}} [[NK Olimpija Ljubljana|Olimpija Ljubljana]]
+| style="text-align:center; background:#fdd;"| 1–4
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center; | '''1–7'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=3| 2019–20
+|rowspan=2| [[2019–20 UEFA Champions League|UEFA Champions League]]
+|1QR
+| {{flagicon|Faroe Islands}} [[Havnar Bóltfelag|HB Tórshavn]]
+| style="text-align:center; background:#dfd;"| 3–0
+| style="text-align:center; background:#ffd;"| 2–2
+| style="text-align:center;| '''5–2'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2QR
+| {{flagicon|Serbia}} [[Red Star Belgrade]]
+| style="text-align:center; background:#dfd;"| 2–1
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center;| '''2–3'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2019–20 UEFA Europa League|UEFA Europa League]]
+|3QR
+| {{flagicon|Latvia}} [[Riga FC]]
+| style="text-align:center; background:#ffd;"| 2–2
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center;| '''3–3 ([[away goals|a]])'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=7| 2021–22
+|rowspan=2| [[2021–22 UEFA Champions League|UEFA Champions League]]
+|1QR
+| {{flagicon|Montenegro}} [[FK Budućnost Podgorica|Budućnost Podgorica]]
+| style="text-align:center; background:#dfd;"| 3–1
+| style="text-align:center; background:#dfd;"| 4–0
+| style="text-align:center;| '''7–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2QR
+| {{flagicon|Sweden}} [[Malmö FF]]
+| style="text-align:center; background:#ffd;"| 2–2
+| style="text-align:center; background:#fdd;"| 1–2
+| style="text-align:center;| '''3–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2| [[2021–22 UEFA Europa League|UEFA Europa League]]
+|3QR
+| {{flagicon|Azerbaijan}} [[Neftçi PFK|Neftçi Baku]]
+| style="text-align:center; background:#dfd;"| 3–0
+| style="text-align:center; background:#ffd;"| 2–2
+| style="text-align:center;| '''5–2'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|PO
+| {{flagicon|Turkey}} [[Fenerbahçe S.K. (football)|Fenerbahçe]]
+| style="text-align:center; background:#fdd;"| 2–5
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center;| '''2–6'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=3| [[2021–22 UEFA Europa Conference League|UEFA Europa Conference League]]
+|rowspan=3|Group A
+|{{flagicon|Austria}} [[LASK]] 
+| style="text-align:center; background:#fdd;"| 0–2 
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center;" rowspan=3| '''3rd'''
+| rowspan=3|  [[File:Symbol delete vote.svg|17px]]
+|-
+|{{flagicon|Armenia}} [[FC Alashkert|Alashkert]] 
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#dfd;"| 4–2
+|-
+|{{flagicon|Israel}} [[Maccabi Tel Aviv F.C.|Maccabi Tel Aviv]]
+| style="text-align:center; background:#fdd;"| 0–5
+| style="text-align:center; background:#fdd;"| 0–3
+|-
+|rowspan=7| 2022–23
+|rowspan=2| [[2022–23 UEFA Champions League|UEFA Champions League]]
+|1QR
+|{{flagicon|Latvia}} [[FK RFS|RFS]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#fdd;"| 1–2 {{aet}}
+| style="text-align:center;| '''2–2 {{pso|5–4}}'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2QR
+|{{flagicon|Czech Republic}} [[FC Viktoria Plzeň|Viktoria Plzeň]]
+| style="text-align:center; background:#fdd;"| 1–2
+| style="text-align:center; background:#fdd;"| 0–5
+| style="text-align:center;| '''1–7'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=5| [[2022–23 UEFA Europa League|UEFA Europa League]]
+|3QR
+|{{flagicon|Slovenia}} [[NK Maribor|Maribor]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#dfd;"| 2–0
+| style="text-align:center;| '''3–0'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|PO
+|{{flagicon|Denmark}} [[Silkeborg IF|Silkeborg]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center;| '''2–1'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|rowspan=3|Group C
+|{{flagicon|ITA}} [[AS Roma]] 
+| style="text-align:center; background:#fdd;"| 1–2
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center;" rowspan=3| '''4th'''
+| rowspan=3|  [[File:Symbol delete vote.svg|17px]]
+|-
+|{{flagicon|BUL}} [[Ludogorets Razgrad]] 
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center; background:#fdd;"| 0–2
+|-
+|{{flagicon|SPA}} [[Real Betis]] 
+| style="text-align:center; background:#fdd;"| 0–2
+| style="text-align:center; background:#fdd;"| 0–3
+|-
+|rowspan=7| 2023–24
+|rowspan=2| [[2023–24 UEFA Champions League|UEFA Champions League]]
+|1QR
+|{{flagicon|Northern Ireland}} [[Larne F.C.|Larne]]
+| style="text-align:center; background:#dfd;" | 1–0
+| style="text-align:center; background:#ffd;" | 2–2 {{aet}}
+| style="text-align:center; | '''3–2'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2QR
+|{{flagicon|Norway}} [[Molde FK|Molde]]
+| style="text-align:center; background:#dfd;" | 1–0 
+| style="text-align:center; background:#fdd;" | 0–2
+| style="text-align:center; | '''1–2'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2023–24 UEFA Europa League|UEFA Europa League]]
+|3QR
+|{{flagicon|Azerbaijan}} [[Qarabağ FK|Qarabağ]]
+| style="text-align:center; background:#fdd;" | 1–2
+| style="text-align:center; background:#fdd;" | 1–2
+| style="text-align:center; | '''2–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=4| [[2023–24 UEFA Europa Conference League|UEFA Europa Conference League]]
+|PO
+|{{flagicon|Romania}} [[FCV Farul Constanța|Farul Constanța]]
+| style="text-align:center; background:#dfd;" | 2–0
+| style="text-align:center; background:#fdd;" | 1–2 
+| style="text-align:center; | '''3–2'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|rowspan=3|Group G
+|{{flagicon|GER}} [[Eintracht Frankfurt]]
+| style="text-align:center; background:#fdd;"| 0–1
+| style="text-align:center; background:#fdd;"| 0–6
+| style="text-align:center;" rowspan=3| '''4th'''
+| rowspan=3|  [[File:Symbol delete vote.svg|17px]]
+|-
+|{{flagicon|GRE}} [[PAOK FC|PAOK]]
+| style="text-align:center; background:#fdd;"| 2–3
+| style="text-align:center; background:#fdd;"| 2–4
+|-
+|{{flagicon|SCO}} [[Aberdeen F.C.|Aberdeen]]
+| style="text-align:center; background:#ffd;" | 2–2 
+| style="text-align:center; background:#ffd;" | 1–1
+|-
+|rowspan=10| 2024–25
+|[[2024–25 UEFA Champions League|UEFA Champions League]]
+|1QR
+|{{flagicon|LIT}} [[FK Panevėžys|Panevėžys]]
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center; background:#fdd;"| 0–3
+| style="text-align:center; | '''1–4'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=9|[[2024–25 UEFA Conference League|UEFA Conference League]]
+| 2QR
+| [[Bye (sports)|Bye]]
+| {{n/a}} 
+| {{n/a}} 
+| {{n/a}} 
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|3QR
+|{{flagicon|MNE}} [[FK Dečić|Dečić]]
+| style="text-align:center; background:#dfd;"| 1–0
+| style="text-align:center; background:#fdd;"| 1–2 {{aet}}
+| style="text-align:center;| '''2–2 {{pso|4–3}}'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|PO
+|{{flagicon|FRO}} [[Klaksvíkar Ítróttarfelag|KÍ Klaksvík]]
+| style="text-align:center; background:#dfd;"| 2–1
+| style="text-align:center; background:#ffd;"| 2–2
+| style="text-align:center;| '''4–3'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|rowspan=6|League
+|{{flagicon|SUI}} [[FC Lugano|Lugano]]
+|{{n/a}}
+| style="text-align:center; background:#fdd;"|0–3
+| style="text-align:center;" rowspan=6|'''30th'''
+| style="text-align:center;" rowspan=6| [[File:Symbol delete vote.svg|17px]]
+|-
+|{{flagicon|BLR}} [[FC Dinamo Minsk|Dinamo Minsk]]
+| style="text-align:center; background:#dfd;"|1–0
+|{{n/a}}
+|-
+|{{flagicon|SLO}} [[NK Olimpija Ljubljana|Olimpija Ljubljana]]
+| style="text-align:center; background:#fdd;"|0–2
+|{{n/a}}
+|-
+|{{flagicon|GRE}} [[Panathinaikos F.C.|Panathinaikos]]
+|{{n/a}}
+| style="text-align:center; background:#fdd;"|0–1
+|-
+|{{flagicon|NOR}} [[Molde FK|Molde]]
+| style="text-align:center; background:#ffd;"| 2–2
+|{{n/a}}
+|-
+|{{flagicon|SPA}} [[Real Betis]] 
+|{{n/a}}
+| style="text-align:center; background:#fdd;"|0–1
+|-
+|rowspan=2|2025–26
+|rowspan=2|[[2025–26 UEFA Conference League|UEFA Conference League]]
+|1QR
+|{{flagicon|FRO}} [[NSÍ Runavík]]
+| style="text-align:center; background:#dfd;"|5–0 {{aet}}
+| style="text-align:center; background:#fdd;"|0–4
+| style="text-align:center;| '''5–4'''
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|2QR
+|{{flagicon|BUL}} [[FC Arda Kardzhali|Arda Kardzhali]]
+| style="text-align:center; background:#ffd;"| 2–2 {{aet}}
+| style="text-align:center; background:#ffd;"| 0–0
+| style="text-align:center;| '''2–2 {{pso|3–4}}'''
+| [[File:Symbol delete vote.svg|17px]]
+|-
+|rowspan=2|2026–27
+|rowspan=2|[[2026–27 UEFA Conference League|UEFA Conference League]]
+|2QR
+|{{flagicon|NIR}} [[Coleraine F.C.|Coleraine]]
+| style="text-align:center; background:#dfd;"|5–0
+| style="text-align:center; background:#dfd;"|3–0
+| style="text-align:center; background:#dfd;"|8–0
+| [[File:Symbol keep vote.svg|17px]]
+|-
+|3QR
+|{{flagicon|SCO}} [[Motherwell F.C.|Motherwell]]
+| style="text-align:center; background:#ffd;"| 1–1
+| style="text-align:center;|
+| style="text-align:center;|
+|
+|-
+|}
+|}
+
+=== UEFA coefficient ===
+
+{{further|UEFA coefficient}}
+
+''Correct as of 21 May 2025.''<ref>{{cite web|publisher = [[UEFA]]|title = Club coefficients|url = https://www.uefa.com/nationalassociations/uefarankings/club/?year=2025 |access-date = 24 May 2025}}</ref>
+
+{| class="wikitable" style="text-align: center;"
+|-
+! style="color:#FFFFFF; background:#0000FF;"| Rank
+! style="color:#FFFFFF; background:#0000FF;"| Team
+! style="color:#FFFFFF; background:#0000FF;"| Points
+|-
+|126|| align="left" |{{flagicon|RUS}} [[FC Zenit Saint Petersburg|Zenit Saint Petersburg]]||13.000
+|-
+|127|| align="left" |{{flagicon|BEL}} [[Cercle Brugge KSV|Cercle Brugge]]||12.750
+|-bgcolor="#ddffdd" style="font-weight:bold"
+|128|| align="left" |{{flagicon|FIN}} [[HJK Helsinki]]||12.500
+|-
+|129|| align="left" |{{flagicon|POR}} [[F.C. Arouca|Arouca]]||12.453
+|-
+|130|| align="left" |{{flagicon|POR}} [[Gil Vicente F.C.|Gil Vicente]]||12.453
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+{{commons category|Helsingin Jalkapalloklubi}}
+*[http://www.hjk.fi/index.php?lang=en official website] {{in lang|en}}
+*[https://fi-fi.facebook.com/Klubipaaty Klubipääty&nbsp;– supporters] {{in lang|fi}}
+*[http://forzahjk.yhdistysavain.fi/ Forza HJK&nbsp;– fan club] {{in lang|fi}}
+
+{{Helsingin Jalkapalloklubi}}
+{{Veikkausliiga}}
+{{Finnish Champions in Football}}
+
+[[Category:Helsingin Jalkapalloklubi| ]]
+[[Category:Football clubs in Helsinki]]
+[[Category:Football clubs in Finland]]
+[[Category:1907 establishments in Finland]]
+[[Category:Association football clubs established in 1907]]
+[[Category:Bandy clubs established in 1907]]
+[[Category:Defunct bandy clubs in Finland]]

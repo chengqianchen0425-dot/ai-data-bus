@@ -1,0 +1,94 @@
+{
+  "FC Inter Turku": {
+    "resolved_title": "FC Inter Turku",
+    "file": "club_FC_Inter_Turku.html",
+    "sha256": "40a18e8c30401d1bb007ff6a4f49b6be524c34ffa662895fedc8a64cc512bd6c",
+    "founded_snippet": "1990 ;"
+  },
+  "FC Lahti": {
+    "resolved_title": "FC Lahti",
+    "file": "club_FC_Lahti.html",
+    "sha256": "8793c40b2c852e2876f890cebb0a46efb123df79ba7d84b7c80bc524437aa0f6",
+    "founded_snippet": "1996 ;"
+  },
+  "HIFK": {
+    "resolved_title": "HIFK Fotboll",
+    "file": "club_HIFK.html",
+    "sha256": "b0648cb680de03145469f3df791c8100743f634fe965f802a5483e397a8512a1",
+    "founded_snippet": "1897 ;"
+  },
+  "HJK": {
+    "resolved_title": "Helsingin Jalkapalloklubi",
+    "file": "club_HJK.html",
+    "sha256": "f2d2d16db47f914cbf20bc29c73b6ad61a9b497e9f1b7eb98866692e58784d8f",
+    "founded_snippet": "Founded 19 June 1907 (infobox)"
+  },
+  "IFK Mariehamn": {
+    "resolved_title": "IFK Mariehamn",
+    "file": "club_IFK_Mariehamn.html",
+    "sha256": "765f5ec70fc206a6c1ba7fb64a9853cc8e1de1e4d144c170b219d9faafd89122",
+    "founded_snippet": "1919 ;"
+  },
+  "KuPS": {
+    "resolved_title": "Kuopion Palloseura",
+    "file": "club_KuPS.html",
+    "sha256": "fb47b928c3e3eac5a146a7f96cae71d07ca34c1c93f30ad493f2d480923b6caa",
+    "founded_snippet": "1923 ;"
+  },
+  "PK-35 Vantaa": {
+    "resolved_title": "PK-35 Vantaa (men)",
+    "file": "wikitext_PK35_Vantaa_men.json",
+    "sha256": "27b913882e2fad1b7fc2c3be7b4a00dd7d819ee2dce616ba0366031e1cf0c016",
+    "founded_snippet": "as Viipurin Pallokerho 1935; as Pallokerho-35 1948; as PK-35 Vantaa 2008; dissolved 2016; ground Myyrmäen jalkapallostadion, Vantaa; coord 60|15.726|N 24|50.291|E",
+    "identity_note": "Disambiguation: PK-35 (men, Helsinki, current) is a different club from PK-35 Vantaa (men, former, Vantaa). The 2016 Veikkausliiga club is PK-35 Vantaa (men), dissolved 2016."
+  },
+  "PS Kemi": {
+    "resolved_title": "Palloseura Kemi Kings -> REDIRECTS to Kemin Palloseura",
+    "file": "club_PSKemiKings.html",
+    "sha256": "5c83affa264fb7e9aacaeed2b352f7d09c62f1ca45eed08586ae4e49bdb19fda",
+    "founded_snippet": "CONFLICT: infobox says Kemin Palloseura Founded 1932; history text says club established 21 Oct 1999 via merger of KePS + KPT-85 + Visan Pallo",
+    "identity_note": "Title 'Palloseura Kemi Kings' redirects to 'Kemin Palloseura'. Infobox founded 1932 vs history establishment 1999 must both be preserved, not merged. FBref label 'Kemi Kings' = the 2016-2018 Veikkausliiga club."
+  },
+  "RoPS": {
+    "resolved_title": "Rovaniemen Palloseura",
+    "file": "club_RoPS.html",
+    "sha256": "14d202d96adcf96c11fcc6ae924a9f54208ae3fe51176863812b967030feff2e",
+    "founded_snippet": "1950 ;"
+  },
+  "SJK": {
+    "resolved_title": "Seinäjoen Jalkapallokerho",
+    "file": "club_SJK.html",
+    "sha256": "753ad6cb6aa4767da43475dca17144db0ca5edfeb70000fa51d11dfd4dbb327f",
+    "founded_snippet": "Founded 5 November 2007 (infobox; merger-era club)"
+  },
+  "VPS": {
+    "resolved_title": "Vaasan Palloseura",
+    "file": "club_VPS.html",
+    "sha256": "180ac17682ad25571404bee138d90aed3ab50148a4f225708be056ccdc5de8c4",
+    "founded_snippet": "1924 ;"
+  },
+  "JJK": {
+    "resolved_title": "Jyväskylän Jalkapalloklubi",
+    "file": "club_JJK.html",
+    "sha256": "c89bd76c9f979d59a5bd4c15065c1de18e1732a9a814b117da4d24b13cd90e1d",
+    "founded_snippet": "Founded 2000 (1992) (infobox, verbatim)"
+  },
+  "FC Honka": {
+    "resolved_title": "FC Honka",
+    "file": "club_FC_Honka.html",
+    "sha256": "0c8cb24eaa3543b503c957be0258a884b762f1150cbafb4132341a21e24112d8",
+    "founded_snippet": "1957"
+  },
+  "TPS": {
+    "resolved_title": "Turun Palloseura",
+    "file": "club_TPS.html",
+    "sha256": "fb4c39a4a67b9e4d5d416b6a6bf2ec286ab47c98af9e35e2f64d85715505a179",
+    "founded_snippet": "1922 ;"
+  },
+  "Ilves": {
+    "resolved_title": "FC Ilves",
+    "file": "club_Ilves.html",
+    "sha256": "597fc1063f27bb37c85472aee5c6d1820f2020753d48ff8427585acd7c45f2f0",
+    "founded_snippet": "Founded 1931 (infobox)"
+  }
+}

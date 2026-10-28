@@ -1,0 +1,1062 @@
+{{Short description|Finnish football club}}
+{{Use dmy dates|date=September 2024}}
+{{Infobox football club
+| clubname = VPS
+| image = Vaasan Palloseura logo.svg
+| upright = 0.8
+| fullname = Vaasan Palloseura
+| nickname = ''Vepsu'', ''Raita'' (The Stripe)
+| founded = {{Start date and age|df=yes|1924}}
+| ground = [[Hietalahti Stadium|Hietalahti]],<br />[[Vaasa]], Finland
+| capacity = 6,009<ref>{{cite web|url=http://stadiumdb.com/designs/fin/hietalahden_stadion|title=Design: Hietalahden Stadion – StadiumDB.com|work=stadiumdb.com|access-date=9 March 2017}}</ref>
+| chairman = Timo Harri
+| mgrtitle = Head coach
+| manager = [[Jussi Nuorela]]
+| league = [[Veikkausliiga]]
+| season = [[2025 Veikkausliiga|2025]]
+| position = Veikkausliiga, 9th of 12
+| pattern_la1 = _nikestripeddivision5wb
+| pattern_b1 = _nikestripeddivision5wb
+| pattern_ra1 = _nikestripeddivision5wb
+| pattern_sh1 = 
+| leftarm_so1 =
+| leftarm1 = FFFFFF
+| body1 = FFFFFF
+| rightarm1 = FFFFFF
+| shorts1 = 000000
+| socks1 = 000000
+| pattern_la2 = 
+| pattern_b2 = _nikepark7w
+| pattern_ra2 = 
+| pattern_sh2 = 
+| pattern_so2 = 
+| leftarm2 = FFFFFF
+| body2 = FFFFFF
+| rightarm2 = FFFFFF
+| shorts2 = FFFFFF
+| socks2 = FFFFFF
+| pattern_la3 = 
+| pattern_b3 = _nikepark7b
+| pattern_ra3 = 
+| pattern_sh3 = 
+| pattern_so3 = 
+| leftarm3 = 000000
+| body3 = 000000
+| rightarm3 = 000000
+| shorts3 = 000000
+| socks3 = 000000
+| website = {{URL|http://vepsu.fi/}}
+}}
+
+[[File:Elisa stadion 2016.jpg|260px|thumb|[[Hietalahti Stadium|Hietalahden Jalkapallostadion]]]]
+
+'''Vaasan Palloseura''', commonly known as '''VPS''', is a Finnish professional [[association football|football]] club based in [[Vaasa]]. It currently plays in the first tier of Finnish football, [[Veikkausliiga]]. The club plays its home matches at [[Hietalahti Stadium]]. VPS played twice in the [[UEFA Cup]], in [[UEFA Cup 1998–99|1998–99]] and [[UEFA Cup 1999–00|1999–00]].
+
+== Achievements ==
+*'''[[Mestaruussarja]]/[[Veikkausliiga]]'''
+**'''Winners''': [[1945 Mestaruussarja|1945]], [[1948 Mestaruussarja|1948]]
+**Runners-up: (5) [[1932 Mestaruussarja – Finnish League Championship|1932]], [[1941 Mestaruussarja – Finnish League Championship|1940–41]], [[1949 Mestaruussarja|1949]], [[1997 Veikkausliiga|1997]], [[1998 Veikkausliiga|1998]]
+**Third place: (3) [[1938 Mestaruussarja – Finnish League Championship|1938]], [[2013 Veikkausliiga|2013]], [[2023 Veikkausliiga|2023]]<ref>[https://www.hs.fi/urheilu/art-2000009908629.html Draamaa Vaasassa - VPS nousi voittoon ja pronssille lisäajalla, HJK:n mestaruusjuhlat siirtyivät], helsinginsanomat.fi, 8 October 2023</ref>
+*'''[[Ykkönen]]'''
+**'''Winners''': 2021
+*'''[[Finnish Cup]]'''
+**Runners-up: 1972
+*'''[[Finnish League Cup]]'''
+**'''Winners''': 1999, 2000
+**Runners-up: 1997, 2014
+
+== European campaigns ==
+{| class="wikitable"
+!Season
+!Competition
+!Round
+!Club
+!1st leg
+!2nd leg
+!Aggregate
+|-
+|rowspan="2"|[[1998–99 UEFA Cup|1998–99]]
+|rowspan="2"|[[UEFA Europa League|UEFA Cup]]
+|[[1998–99 UEFA Cup#First qualifying round|1Q]]
+|{{flagicon|Faroe Islands}} [[Havnar Bóltfelag|HB Tórshavn]]
+|bgcolor="#FFDDDD" style="text-align:center;"|0–2
+|bgcolor="#DDFFDD" style="text-align:center;"|4–0
+|bgcolor="#DDFFDD" style="text-align:center;"|'''4–2'''
+|-
+|[[1998–99 UEFA Cup#Second qualifying round|2Q]]
+|{{flagicon|Austria}} [[Grazer AK]]
+|bgcolor="#ffffdd" style="text-align:center;"|0–0
+|bgcolor="#FFDDDD" style="text-align:center;"|0–3
+|bgcolor="#FFDDDD" style="text-align:center;"|'''0–3'''
+|-
+|[[1999–2000 UEFA Cup|1999–00]]
+|[[UEFA Europa League|UEFA Cup]]
+|[[1999-2000 UEFA Cup#Qualifying round|QR]]
+|{{flagicon|Scotland}} [[St Johnstone F.C.|St Johnstone]]
+|bgcolor="#FFFFDD" style="text-align:center;"|1–1
+|bgcolor="#ffdddd" style="text-align:center;"|0–2
+|bgcolor="#FFDDDD" style="text-align:center;"|'''1–3'''
+|-
+|[[2014–15 UEFA Europa League|2014–15]]
+|[[UEFA Europa League]]
+|[[2014–15 UEFA Europa League#First qualifying round|1Q]]
+|{{flagicon|Sweden}} [[IF Brommapojkarna]]
+|bgcolor="#DDFFDD" style="text-align:center;"|2–1
+|bgcolor="#FFDDDD" style="text-align:center;"|0–2
+|bgcolor="#FFDDDD" style="text-align:center;"|'''2–3'''
+|-
+|[[2015–16 UEFA Europa League|2015–16]]
+|[[UEFA Europa League]]
+|[[2015–16 UEFA Europa League#First qualifying round|1Q]]
+|{{flagicon|Sweden}} [[AIK Fotboll|AIK]]
+|bgcolor="#FFFFDD" style="text-align:center;"|2–2
+|bgcolor="#FFDDDD" style="text-align:center;"|0–4
+|bgcolor="#FFDDDD" style="text-align:center;"|'''2–6'''
+|-
+|rowspan="2"|[[2017–18 UEFA Europa League|2017–18]]
+|rowspan="2"|[[UEFA Europa League]]
+|[[2017–18 UEFA Europa League#First qualifying round|1Q]]
+|{{flagicon|Slovenia}} [[NK Olimpija Ljubljana|Olimpija Ljubljana]]
+|bgcolor="#ddffdd" style="text-align:center;"|1–0
+|bgcolor="#ddffdd" style="text-align:center;"|1–0 
+|bgcolor="#DDFFDD" style="text-align:center;"|'''2–0'''
+|-
+|[[2017–18 UEFA Europa League#First qualifying round|2Q]]
+|{{flagicon|Denmark}} [[Brøndby IF]]
+|bgcolor="#FFDDDD" style="text-align:center;"|0–2
+|bgcolor="#DDFFDD" style="text-align:center;"|2–1 
+|bgcolor="#FFDDDD" style="text-align:center;"|'''2–3'''
+|-
+|[[2024–25 UEFA Conference League|2024–25]]
+|[[UEFA Conference League]]
+|[[2024–25 UEFA Conference League#First qualifying round|1Q]]
+|{{flagicon|Lithuania}} [[FK Žalgiris|Žalgiris]]
+|bgcolor="#FFDDDD" style="text-align:center;"|1–2
+|bgcolor="#FFDDDD" style="text-align:center;"|0–1
+|bgcolor="#FFDDDD" style="text-align:center;"|'''1−3'''
+|}
+
+== Season to season ==
+{{collapse top|Season to season}}
+{|  class="wikitable"
+|- style="background:#F0F6FA;"
+!'''Season'''
+!'''Level'''
+!'''Division'''
+!'''Section'''
+!'''Administration'''
+!'''Position'''
+!'''Movements'''
+|-
+|style="background:#FFFF00;"|1930
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''A-sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1931
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''A-sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''4th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1932
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''A-sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1933
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''A-sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''7th'''
+|style="background:#FFFF00;"|Relegated
+|-
+|style="background:#87CEFA;"|1934
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Itä-Länsi-sarja''' ''(First Division)''
+|style="background:#87CEFA;"|West Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"|Promotion Group 1st, Promoted
+|-
+|style="background:#FFFF00;"|1935
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1936
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''7th'''
+|style="background:#FFFF00;"|Relegated
+|-
+|style="background:#87CEFA;"|1937
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Itä-Länsi-sarja''' ''(First Division)''
+|style="background:#87CEFA;"|West Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"|Promotion Play-Off, Promoted
+|-
+|style="background:#FFFF00;"|1938
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''3rd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1939
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1940-41
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1943-44
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1945
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja Karsinta''' ''(Premier League Qualification)''
+|style="background:#FFFF00;"|Group 1
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''3rd'''
+|style="background:#FFFF00;"|Qualification to 1945-46 Mestaruussarja, Official Champions via cup-competition
+|-
+|style="background:#FFFF00;"|1945-46
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''3rd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1946-47
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''3rd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1947-48
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1948
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''1st'''
+|style="background:#FFFF00;"|Championship Rematch, Champions
+|-
+|style="background:#FFFF00;"|1949
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1950
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1951
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1952
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1953
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''9th'''
+|style="background:#FFFF00;"|Relegated
+|-
+|style="background:#87CEFA;"|1954
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"|West Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"|Promoted
+|-
+|style="background:#FFFF00;"|1955
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1956
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1957
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''7th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1958
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''9th'''
+|style="background:#FFFF00;"|Relegated
+|-
+|style="background:#87CEFA;"|1959
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"|North Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''5th'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|1960
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"|North Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''4th'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|1961
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"|North Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"|Promotion Play-Off, Promoted
+|-
+|style="background:#FFFF00;"|1962
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''10th'''
+|style="background:#FFFF00;"|Relegated
+|-
+|style="background:#87CEFA;"|1963
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"|North Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''2nd'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|1964
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"|North Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"|Promoted
+|-
+|style="background:#FFFF00;"|1965
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''9th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1966
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''9th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1967
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''9th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1968
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''12th'''
+|style="background:#FFFF00;"|Relegated
+|-
+|style="background:#87CEFA;"|1969
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''II divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|West Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''4th'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|1970
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''II divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|North Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"|Promoted
+|-
+|style="background:#FFFF00;"|1971
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''10th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1972
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''11th'''
+|style="background:#FFFF00;"|Relegated
+|-
+|style="background:#87CEFA;"|1973
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''I divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''3rd'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"|1974
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''I divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''2nd'''
+|style="background:#87CEFA;"|Promoted
+|-
+|style="background:#FFFF00;"|1975
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''7th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1976
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''7th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1977
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''12th'''
+|style="background:#FFFF00;"|Relegated
+|-
+|style="background:#87CEFA;"|1978
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''I divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''11th'''
+|style="background:#87CEFA;"|Relegated
+|-
+|style="background:#77DD77;"|1979
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|North Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''7th'''
+|style="background:#77DD77;"| 
+|-
+|style="background:#77DD77;"|1980
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|North Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''11th'''
+|style="background:#77DD77;"|Relegated
+|-
+|style="background:#FF7F00;"|1981
+|style="background:#FF7F00;"|Tier 4
+|style="background:#FF7F00;"|'''III divisioona''' ''(Third Division)''
+|style="background:#FF7F00;"|Section 8
+|style="background:#FF7F00;"|
+|style="background:#FF7F00;"|'''1st'''
+|style="background:#FF7F00;"|Promotion play-offs, Promoted
+|-
+|style="background:#77DD77;"|1982
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|North Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''3rd'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1983
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|North Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''3rd'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1984
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|North Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''5th'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1985
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|North Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''5th'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1986
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|North Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''2nd'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1987
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|North Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''4th'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1988
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|North Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''9th'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1989
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|North Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''5th'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1990
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|North Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''4th'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1991
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|North Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''1st'''
+|style="background:#77DD77;"|Promoted
+|-
+|style="background:#87CEFA;"|1992
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''I divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''5th'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|1993
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''I divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''10th'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|1994
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''2nd'''
+|style="background:#87CEFA;"|Promoted
+|-
+|style="background:#FFFF00;"|1995
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''10th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1996
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''7th'''
+|style="background:#FFFF00;"| Relegation Group&nbsp;– '''7th'''
+|-
+|style="background:#FFFF00;"|1997
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"|UEFA Cup First qualifying round
+|-
+|style="background:#FFFF00;"|1998
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"|UEFA Cup Qualifying round
+|-
+|style="background:#FFFF00;"|1999
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''11th'''
+|style="background:#FFFF00;"|Relegation Group&nbsp;– Play-offs
+|-
+|style="background:#FFFF00;"|2000
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''10th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2001
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2002
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''11th'''
+|style="background:#FFFF00;"|Relegation Group&nbsp;– '''7th'''&nbsp;– Relegated
+|-
+|style="background:#87CEFA;"|2003
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''5th'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|2004
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''6th'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|2005
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''2nd'''
+|style="background:#87CEFA;"|Play-offs&nbsp;– Promoted
+|-
+|style="background:#FFFF00;"|2006
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''9th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2007
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''10th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2008
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''11th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2009
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2010
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''10th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2011
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''9th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2012
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2013
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''3rd'''
+|style="background:#FFFF00;"|UEFA Europa League First qualifying round
+|-
+|style="background:#FFFF00;"|[[2014 Veikkausliiga|2014]]
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''4th'''
+|style="background:#FFFF00;"|UEFA Europa League First qualifying round
+|-
+|style="background:#FFFF00;"|[[2015 Veikkausliiga|2015]]
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''10th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|[[2016 Veikkausliiga|2016]]
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''4th'''
+|style="background:#FFFF00;"|UEFA Europa League First qualifying round
+|-
+|style="background:#FFFF00;"|[[2017 Veikkausliiga|2017]]
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|[[2018 Veikkausliiga|2018]]
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|[[2019 Veikkausliiga|2019]]
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''12th'''
+|style="background:#FFFF00;"|Relegated
+|-
+|style="background:#87CEFA;"|[[2020 Ykkönen|2020]] 
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''6th'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|2021
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"|Promoted
+|-
+|style="background:#FFFF00;"|[[2022 Veikkausliiga|2022]]
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|[[2023 Veikkausliiga|2023]]
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|'''3rd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|[[2024 Veikkausliiga|2024]]
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|
+|-
+|}
+*'''59''' seasons in ''[[Veikkausliiga]]''
+*'''21''' seasons in ''[[Ykkönen]]''
+*'''12''' seasons in ''[[Kakkonen]]''
+*'''1''' season in ''[[Kolmonen]]''
+<ref name="auto">Jalkapallokirjat 1946–>, Suomen Palloliitto, {{ISSN|0787-7188}}</ref><ref>Helsingin Sanomat, Volumes 1979-1987</ref><ref>{{cite web |url=https://www.urheilumuseo.fi/Desktopmodules/Museo_Aineistot/tiedostot.aspx?ID=2742 |title=Tulostus |website=www.urheilumuseo.fi |url-status=dead |archive-url=https://web.archive.org/web/20140413154757/http://www.urheilumuseo.fi/Desktopmodules/Museo_Aineistot/tiedostot.aspx?ID=2742 |archive-date=13 April 2014}}</ref>
+{{cob}}
+
+== Current squad ==
+{{updated|24 August 2026}}<ref>{{cite web|url=https://www.vepsu.fi/joukkueet/joukkue-miehet/|title=VPS - Vaasan Palloseura. Vepsun viralliset kotisivut. Since 1924! - Joukkue|website=VPS - Vaasan Palloseura. Vepsun viralliset kotisivut. Since 1924!|access-date=21 March 2024}}</ref>
+{{Fs start}}
+{{Fs player|no=1|nat=FIN|pos=GK|name=Aleksi Piispa}}
+{{Fs player|no=2|nat=GNB|pos=DF|name=Lassana Mané}}
+{{Fs player|no=3|nat=GHA|pos=DF|name=[[Razak Simpson]]}}
+{{Fs player|no=5|nat=SWE|pos=DF|name=[[Vilmer Rönnberg]]}}
+{{Fs player|no=6|nat=NGR|pos=DF|name=[[Emmanuel Okereke]]}}
+{{Fs player|no=7|nat=SUR|pos=DF|name=[[Jayden Turfkruier]]}}
+{{Fs player|no=8|nat=STP|pos=MF|name=[[Paulo Lima (footballer, born 1998)|Paulo Lima]]}}
+{{Fs player|no=9|nat=DEN|pos=FW|name=Casper Holmelund}}
+{{Fs player|no=11|nat=FIN|pos=FW|name=[[Jonathan Muzinga]]}}
+{{Fs player|no=12|nat=FIN|pos=GK|name=Lucas Väyrynen}}
+{{Fs player|no=13|nat=NGA|pos=FW|name=Oluwaseyi Ogunniyi|other=on loan from [[AC Horsens|Horsens]]}}
+{{Fs player|no=14|nat=FIN|pos=MF|name=[[Simon Lindholm]]}}
+{{Fs player|no=17|nat=FIN|pos=MF|name=[[Dren Terrnava]]}}
+{{Fs player|no=18|nat=FIN|pos=DF|name=Adrian Arrakoski}}
+{{Fs player|no=19|nat=FIN|pos=DF|name=[[Martti Haukioja]]}}
+{{Fs mid}}
+{{Fs player|no=20|nat=KEN|pos=FW|name=Xavier Odhiambo|other=on loan from [[Landskrona BoIS|Landskrona]]}}
+{{Fs player|no=21|nat=GHA|pos=DF|name=Arnold Adu-Boahen|other=on loan from [[AC Horsens|Horsens]]}}
+{{Fs player|no=22|nat=FIN|pos=GK|name=Eino Ehrnrooth}}
+{{Fs player|no=23|nat=FIN|pos=DF|name=[[Miika Niemi]]}}
+{{Fs player|no=24|nat=FIN|pos=DF|name=[[Yassin Daoussi]]}}
+{{Fs player|no=25|nat=FIN|pos=MF|name=[[Henri Salomaa]]}}
+{{Fs player|no=26|nat=FIN|pos=MF|name=Rasmus Forsbacka}}
+{{Fs player|no=27|nat=FIN|pos=DF|name=[[Kevin Kouassivi-Benissan]]}}
+{{Fs player|no=29|nat=MLI|pos=FW|name=Wilson Samaké|other={{small|on loan from [[Bandırmaspor]]}}}}
+{{Fs player|no=30|nat=FIN|pos=MF|name=[[Joonas Vahtera]]}}
+{{Fs player|no=31|nat=FIN|pos=FW|name=Alex Myntti}}
+{{Fs player|no=34|nat=FIN|pos=MF|name=[[Antti-Ville Räisänen]]}}
+{{Fs player|no=37|nat=FIN|pos=FW|name=Joona Somppi}}
+{{Fs player|no=41|nat=SLE|pos=GK|name=Mamadou Jalloh|other={{small|on loan from [[Brøndby IF|Brøndby]]}}}}
+{{Fs end}}
+
+=== Out on loan ===
+{{Fs start}}
+{{Fs player|no=35|nat=FIN|pos=FW|name=Olavi Keturi|other={{small|at [[Jippo]] until 31 December 2026}}}}
+{{Fs end}}
+
+== Management and boardroom ==
+=== Management ===
+''As of 10 March 2024''<ref>{{cite web |url=https://vepsu.fi/joukkue/edustusjoukkue|publisher=VPS |language=fi |access-date=15 February 2024|title=VPS 2023}}</ref>
+{| class="wikitable"
+|-
+!Name
+!Role
+|-
+|{{Flag icon|FIN}} [[Jussi Nuorela]]
+|Head coach
+|-
+|{{Flag icon|FIN}} [[Henri Sillanpää]]
+|Assistant coach
+|-
+|{{Flag icon|FIN}} Kari Salmi
+|Fitness coach
+|-
+|{{Flag icon|FIN}} Vesa Kumpula
+|Goalkeeper coach
+|-
+|{{Flag icon|FIN}} Tommi Helminen
+|Video analyst
+|-
+|{{Flag icon|EGY}} Loai Mohamed
+|Video analyst
+|-
+|{{Flag icon|FIN}} [[Veli Lampi]]
+|Team manager
+|-
+|{{Flag icon|FIN}} Jouko Jokinen
+|Team manager
+|-
+|}
+
+=== Boardroom ===
+''As of 24 Septer 2024''
+{|
+|-
+|valign="top"|
+{| class="wikitable"
+|-
+!Name
+!Role
+|-
+|{{Flag icon|FIN}} Timo Harri
+|Chairman
+|-
+|{{Flag icon|FIN}} Riku Asukas
+|Vice chairman
+|-
+|{{Flag icon|FIN}} [[Tommi Pikkarainen]]
+|[[Sporting director]]
+|-
+|}
+|}
+
+== Coaches ==
+{{div col|colwidth=28em}}
+*{{flagicon|Finland}} Nuutti Lintamo (1945–46)
+*{{flagicon|Finland}} Heikki Kultti (1945–48)
+*{{flagicon|Hungary}} [[Géza Toldi]] (1948–49)
+*{{flagicon|Finland}} Tauno Koistinen (1950)
+*{{flagicon|Finland}} Jussi Sillanpää (1951)
+*{{flagicon|Finland}} Tauno Koistinen (1952–53)
+*{{flagicon|Finland}} Martti Häyhä (1954–58)
+*{{flagicon|Finland}} Ole Stolpe (1959)
+*{{flagicon|Finland}} Erkki Riihimäki (1960–62)
+*{{flagicon|Finland}} Niilo Kinnunen (1963)
+*{{flagicon|Finland}} Jussi Sillanpää (1964–68)
+*{{flagicon|Yugoslavia}} Jovan Jevtić (1969–70)
+*{{flagicon|Finland}} Kari Dahlsten (1970–72)
+*{{flagicon|Finland}} Raimo Hudd (1973)
+*{{flagicon|Finland}} Eero Tuhkanen (1974–77)
+*{{flagicon|Finland}} Pekka Mäkelä (1978)
+*{{flagicon|Finland}} Erkki Myllyaho (1979)
+*{{flagicon|Finland}} Esa Virta (1980–82)
+*{{flagicon|Finland}} Raimo Hudd (1983)
+*{{flagicon|Finland}} Jarmo Meltoranta (1984)
+*{{flagicon|Poland}} Jerzy Wojtowicz (1985–87)
+*{{flagicon|Finland}} Jarmo Meltoranta (1988–89)
+*{{flagicon|Finland}} Markku Myötänen (1989–90)
+*{{flagicon|Poland}} [[Boguslaw Hajdas]] (1991–92)
+*{{flagicon|Poland}} Jerzy Wojtowicz (1993)
+*{{flagicon|Poland}} [[Bogusław Hajdas]] (1993–95)
+*{{flagicon|Poland}} Tomasz Arceusz (1995)
+*{{flagicon|Finland}} [[Heikki Suhonen]] (1995)
+*{{flagicon|Finland}} [[Hannu Touru]] (1996–98)
+*{{flagicon|Sweden}} [[Sören Cratz]] (1999)
+*{{flagicon|Finland}} [[Kimmo Lipponen]] (1999)
+*{{flagicon|Finland}} [[Jukka Ikäläinen]] (2000–01)
+*{{flagicon|Finland}} Keijo Paananen (2002)
+*{{flagicon|England}} Stephen Ward (2003–04)
+*{{flagicon|Finland}} [[Jari Pyykölä]] (1 January 2006&nbsp;– 9 June 2007)
+*{{flagicon|Finland}} Mika Koivumäki (2007)
+*{{flagicon|Finland}} [[Janne Lindberg]] (18 June 2007&nbsp;– 31 December 2007)
+*{{flagicon|Finland}} Tomi Kärkkäinen (1 January 2008&nbsp;– 15 May 2009)
+*{{flagicon|Finland}} [[Petri Vuorinen]] (1 January 2009&nbsp;– 15 May 2009)
+*{{flagicon|Finland}} [[Tommi Pikkarainen]] (2010–11)
+*{{flagicon|Finland}} [[Petri Vuorinen]] (10 January 2011&nbsp;– 28 July 2011)
+*{{flagicon|Finland}} [[Olli Huttunen]] (1 January 2012 – 29 June 2015)
+*{{flagicon|Finland}} [[Petri Vuorinen]] (29 June 2015 – 8 July 2019)
+*{{flagicon|Finland}} [[Christian Sund]] (8 July 2019 – 31 December 2020)
+*{{flagicon|Finland}} Jukka Karjalainen (1 January 2021 – 17 June 2021)
+*{{flagicon|Finland}} [[Jussi Nuorela]] (18 June 2021–)
+{{div col end}}
+
+== References ==
+{{Reflist}}
+
+== External links ==
+*[http://www.vepsu.fi/ Official website] {{in lang|fi}}
+
+{{Veikkausliiga}}
+{{Finnish Champions in Football}}
+
+[[Category:Vaasan Palloseura| ]]
+[[Category:Football clubs in Finland]]
+[[Category:Association football clubs established in 1924]]
+[[Category:Sports clubs and teams in Vaasa]]
+[[Category:1924 establishments in Finland]]

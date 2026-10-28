@@ -1,0 +1,1031 @@
+{{short description|Former Football club from Helsinki, Finland}}
+{{Multiple issues|
+{{More citations needed|date=January 2024}}
+{{Tone|date=January 2024}}
+}}
+{{Use dmy dates|date=October 2025}}
+{{Infobox football club|
+| clubname = HIFK Fotboll
+| image = HIFK-Jalkapallo.svg
+| upright = 0.7
+| fullname = Idrottsföreningen Kamraterna, Helsingfors
+| nickname = IFK <br/>''Tähtirinnat'' (The Star Chested) <br/>Stadens stolthet (The City's Pride) <br/>Röda (The Reds)
+ Stadin Kingit (Helsinki’s Kings)
+| founded = {{Start date and age|1897}}
+| dissolved = 
+| ground = [[Töölön pallokenttä]]<br/> [[Helsinki]], Finland
+| capacity = 4000
+| coordinates = 
+| owntitle = 
+| owner = 
+| chrtitle = 
+| chairman = Jan-Erik Eklöf
+| mgrtitle = Head Coach
+| manager = Telmo Manninen
+| coach = 
+| league = [[Kakkonen]]
+| season = [[2026 Kakkonen|2026]]
+| position = Kakkonen Group A, 4th of 10
+| website = {{URL|http://hifkfotboll.fi}}
+| kit_alt1 = 
+| pattern_la1 = _pumafinal21r
+| pattern_b1 = _pumafinal21r
+| pattern_ra1 = _pumafinal21r
+| leftarm1 = ff0000
+| body1 = ff0000
+| rightarm1 = ff0000
+| shorts1 = ffffff
+| socks1 = 000000
+| pattern_la2 = _pumafinalg21w
+| pattern_b2 = _pumafinalg21w
+| pattern_ra2 = _pumafinalg21w
+| leftarm2 = ffffff
+| body2 = ffffff
+| rightarm2 = ffffff
+| shorts2 = 000000
+| socks2 = ffffff
+}}
+{{HIFK sections}}
+
+'''HIFK Fotboll''' or '''IFK Helsingfors''' is the [[association football]] section of [[HIFK]], a sports club based in [[Helsinki]], Finland. The men's football team currently competes in the [[Kakkonen]] whereas the women's first team is in Naisten Kakkonen. Both teams use Väinämöisen kenttä in Töölö as their home ground.
+
+==History==
+[[File:Finnair Stadium Helsinki.JPG|thumb|260px|[[Bolt Arena]]]]
+Idrottsföreningen Kamraterna i Helsingfors was formed on 15 October 1897 by Georges Doubitsky, a 15-year-old student at the Svenska Reallyceum school in Helsinki. In the early years the club specialised in [[Athletics (sport)|athletics]], [[association football|football]] and [[bandy]]. The football section was established in 1907, the same year that the [[Football Association of Finland]] was founded. HIFK's first football game was at the Kaisaniemi ground on 17 May 1908 where the new team lost 1–2 to Unitas.<ref>{{cite web|url= http://www.hifksoccer.fi/index.php?k=13088|title= HIFK Soccer&nbsp;– Historia|access-date= 2010-07-21|archive-url= https://web.archive.org/web/20111006001922/http://www.hifksoccer.fi/index.php?k=13088|archive-date= 2011-10-06|url-status= dead}}</ref>
+
+In those early years{{When|date=January 2024}} HIFK were runners-up in the Mestaruussarja (then played as a cup competition) on 5 occasions in 1909, 1912, 1928 and 1929. In addition in 1912 the Finnish Football team at the Stockholm Olympics comprised a team of HIFK players.
+
+HIFK won their first Finnish championship (Mestaruussarja) in [[Mestaruussarja 1930|1930]] a feat that they were to repeat on three other occasions in [[Mestaruussarja 1931|1931]], [[Mestaruussarja 1933|1933]] and [[Mestaruussarja 1937|1937]] in a brilliant decade for the club.  HIFK also won the Mestaruussarja in [[Mestaruussarja 1947|1947]], [[Mestaruussarja 1959|1959]] and [[Mestaruussarja 1961|1961]]. In total HIFK won the Finnish championship on 7 occasions.
+
+HIFK was one of the most successful football sides in Finland until the early 1970s, when the team were relegated from the Mestaruussarja (Finnish Premier League). After 1972 the team spent time in the lower divisions of Finnish football, and at one point found themselves playing in the [[Nelonen (soccer league)|Nelonen]] (Fourth Division), the fifth tier of the [[Finnish football league system]], between 1980 and 1983, and later on between 2003 and 2005, and would only return to the first division in 2006, 43 years later.
+
+Since 1930, HIFK have played 33 seasons in the Mestaruussarja (the top tier), 22 seasons in the second tier and 19 seasons in the third tier.  Their best spell in recent decades was from 1999 to 2002, when the club participated in the [[Ykkönen]] (First Division).<ref name="auto">{{cite news |title=Finland&nbsp;– Divisional Movements 1930–2011 |year=2011 |website=[[RSSSF]] |url=https://www.rsssf.org/tablesf/finall.html |access-date=2011-09-22 |archive-date=2010-02-18 |archive-url=https://web.archive.org/web/20100218125405/http://www.rsssf.com/tablesf/finall.html |url-status=live }}</ref> However, the club overstretched themselves which resulted in the withdrawal from the Ykkönen at the end of the 2002 season and taking the place of the second team in the [[Nelonen (soccer league)|Nelonen]] (Fourth Division) in 2003. More recently, in 2010, they won the third tier, after defeating [[FC Santa Claus]] in the promotional playoff match.<ref name=inside>{{Cite web|url=https://www.fourfourtwo.com/us/features/inside-fc-santa-claus-laplands-favourite-football-team-who-are-finally-getting-serious|title=Inside FC Santa Claus: Lapland's favourite football team – who are finally getting serious|first=Chris|last=Flanagan|work=FourFourTwo|date=December 21, 2017}}</ref> This saw them return to the second-tier ([[Ykkönen]]) of [[Finnish football league system|Finnish football]] for seasons 2011 and 2012, only to be relegated back to Kakkonen after their 2012 season. Back in Kakkonen, HIFK rehired coach [[Jani Honkavaara]], who managed them when they were first promoted back to the [[Ykkönen]]. During his second term they returned to the Ykkönen for a third time within the century, when they beat [[PS Kemi Kings]] in the promotion playoffs.
+
+HIFK won Ykkönen in 2014, and therefore were automatically promoted into the highest tier of Finnish football, [[Veikkausliiga]]. After securing promotion, HIFK announced that they would play their 2015 season home games at the [[Telia 5G -areena]], the ground which belonged to their local rivals [[Helsingin Jalkapalloklubi|HJK Helsinki]].<ref>{{cite web|author1=Tapio Keskitalo|author2=Ari Virtanen|title=HIFK kaappasi FC Hongan Nnaemeka Anyamelen&nbsp;– joukkue pelaa liigaa Sonera-stadionilla|url=http://www.hs.fi/urheilu/a1415591912339|website=HS.fi|publisher=[[Helsingin Sanomat]]|access-date=17 November 2014|language=fi|date=10 November 2014|archive-date=11 November 2014|archive-url=https://web.archive.org/web/20141111021614/http://www.hs.fi/urheilu/a1415591912339|url-status=live}}</ref> In December 2014 HIFK launched a [[crowdfunding]] campaign through [[Invesdor]]. HIFK aimed to gather 250.000&nbsp;– 500.000 euros by selling shares of the club valued at 189,70 euros a piece. According to club chairman René Österman, HIFK was in need of funding for the upcoming [[Veikkausliiga]] season and [[crowdfunding]] gave a chance for the club's supporters to own a part of the club. The campaign ended successfully in January 2015 and HIFK gathered 335.495 euros from 786 investors.<ref>{{cite news|title=HIFK hakee joukkorahoitusta|url=http://www.hs.fi/urheilu/a1418659155398|access-date=15 April 2015|work=[[Helsingin Sanomat]]|publisher=Sanoma Oy|date=16 December 2014|language=fi|archive-date=24 September 2015|archive-url=https://web.archive.org/web/20150924185716/http://www.hs.fi/urheilu/a1418659155398|url-status=live}}</ref><ref>{{cite news|last1=Herala|first1=Olli|title=Futis-HIFK:n osakeanti: "Ei mitään pikavoittoja"|url=http://www.kauppalehti.fi/uutiset/futis-hifkn-osakeanti-ei-mitaan-pikavoittoja/9bYunHXB|access-date=15 April 2015|work=[[Kauppalehti]]|publisher=Kauppalehti Oy|date=11 December 2014|language=fi|archive-date=17 April 2015|archive-url=https://web.archive.org/web/20150417170723/http://www.kauppalehti.fi/uutiset/futis-hifkn-osakeanti-ei-mitaan-pikavoittoja/9bYunHXB|url-status=live}}</ref><ref>{{cite web|title=Veikkausliiga, här kommer HIFK!|url=https://www.invesdor.com/finland/en/pitches/399|website=invesdor.com|publisher=[[Invesdor]]|access-date=15 April 2015|archive-date=19 September 2015|archive-url=https://web.archive.org/web/20150919020206/https://www.invesdor.com/finland/en/pitches/399|url-status=live}}</ref>
+
+After three seasons in Veikkausliiga, HIFK were relegated to Ykkönen after finishing 11th in [[2017 Veikkausliiga|2017 season]] and losing [[2017 Veikkausliiga#Relegation play-offs|relegation play-offs]] against [[FC Honka]] on away goals. However, after a successful [[2018 Ykkönen|2018 campaign]] in Ykkönen, HIFK was promoted back to Veikkausliiga for the [[2019 Veikkausliiga|2019 season]].
+
+In the early [[2022 Veikkausliiga]] season, after the newly recruited manager [[Bernardo Tavares]] had unexpectedly left the club after the first league match of the season, it was reported that HIFK would name [[Fabrizio Piccareta]] the club's new manager. Later he was sidelined in the process and [[Mixu Paatelainen]] was appointed. Later it was revealed that HIFK and Piccareta had already signed a deal, and Piccareta sued the club for the breach of contract.<ref>[https://www.iltalehti.fi/jalkapallo/a/c41c3d56-f1f9-4bec-b553-29eb642ff3c5 MTV: HIFK-leirissä uskomatonta sekoilua – seura joutumassa oikeuteen], [[Iltalehti]], 12 July 2022</ref> The club's sporting director, [[Mika Lönnström]], who was responsible for the manager recruit, was later fired.<ref>[https://www.suomifutis.com/2022/09/hifk-fabrizio-piccareta-mika-lonnstrom-sopimus/ HIFK kertoi oman versionsa Fabrizio Piccareta -kohusta – näin seuran luottamus Mika Lönnströmiin mureni: "Antaisin Piccaretalle yhden neuvon"] {{Webarchive|url=https://web.archive.org/web/20240814005218/https://www.suomifutis.com/2022/09/hifk-fabrizio-piccareta-mika-lonnstrom-sopimus/ |date=2024-08-14 }}, suomifutis.com, 1 September 2022</ref><ref>[https://www.mtvuutiset.fi/artikkeli/hifk-n-soppa-sakenee-kohun-keskelle-joutunut-valmentaja-vastaa-seuran-vaitteisiin-minulla-on-kaikki-kirjalliset-todisteet/8489688#gs.1pmwe3 HIFK:n soppa sakenee – kohun keskelle joutunut valmentaja vastaa seuran väitteisiin: "Minulla on kaikki kirjalliset todisteet"], [[MTV Oy]]/ mtvuutiset.fi, 17 August 2022</ref> Piccareta appealed to the FIFA's Court of Arbitration for Sport (CAS), and his complain succeeded, as in May 2023, HIFK was ordered to pay Piccareta €86,000 damages for the breach of contract.<ref>[https://yle.fi/a/74-20013000/64-3-165421 HIFK Fotboll valitti Fifan Piccareta-päätöksestä Urheilun kansainväliseen vetoomustuomioistuimeen] {{Webarchive|url=https://web.archive.org/web/20231217095546/https://yle.fi/a/74-20013000/64-3-165421 |date=2023-12-17 }}, [[Yle]], 19 July 2023</ref> HIFK first announced that they will appeal on the decision, but later withdrew their appeal due to lack of money.
+
+During the 2022 and 2023 seasons, the club had repeated financial problems, and had several fund raising campaigns to be able to continue its first team's actions.<ref>[https://yle.fi/a/3-12497238 Jalkapalloliigassa pelaava HIFK vaarassa ajautua konkurssiin – tarvitsee akuutisti 140 000 euroa ja puoli miljoonaa vuoden loppuun mennessä] {{Webarchive|url=https://web.archive.org/web/20240822102055/https://yle.fi/a/3-12497238 |date=2024-08-22 }}, [[Yle]], 16 June 2022</ref>
+
+On 4 January 2024, after the club finished 6th in the second-tier [[2023 Ykkönen]], HIFK Fotboll Ab, the limited liability company under which the men's first team operated since 2012, filed for bankruptcy.<ref>{{Cite web |title=Jalkapallo-HIFK konkurssiin |url=https://www.iltalehti.fi/jalkapallo/a/885e1371-db16-4769-99ff-7659a5edc45d |access-date=2024-01-04 |website=www.iltalehti.fi |language=fi |archive-date=2024-01-04 |archive-url=https://web.archive.org/web/20240104102045/https://www.iltalehti.fi/jalkapallo/a/885e1371-db16-4769-99ff-7659a5edc45d |url-status=live }}</ref><ref>{{Cite web |date=2024-01-04 |title=Jalkapallo {{!}} HIFK lopettaa toimintansa – jättää konkurssihakemuksen |url=https://www.hs.fi/urheilu/art-2000010097794.html |access-date=2024-01-04 |website=Helsingin Sanomat |language=fi |archive-date=2024-01-04 |archive-url=https://web.archive.org/web/20240104102045/https://www.hs.fi/urheilu/art-2000010097794.html |url-status=live }}</ref><ref>{{Cite web |last=Siippainen |first=Aapo |date=2024-01-04 |title=Jalkapallo {{!}} Nyt tuli loppu! – näin HIFK perustelee konkurssihakemusta |url=https://www.helsinginuutiset.fi/paikalliset/6462037 |access-date=2024-01-04 |website=Helsingin Uutiset |language=fi |archive-date=2024-01-04 |archive-url=https://web.archive.org/web/20240104102721/https://www.helsinginuutiset.fi/paikalliset/6462037 |url-status=live }}</ref> HIFK/2, which was registered under [[HIFK Soccer rf]] and was therefor not affected by HIFK Fotboll ABs bankruptcy, assumed the position of the men's first team in the new fifth tier [[Kolmonen]].<ref>[https://hifkfotboll.fi/2024/01/hifk-fotboll-ab-lopettaa-toimintansa/ HIFK Fotboll Ab lopettaa toimintansa] {{Webarchive|url=https://web.archive.org/web/20240104102045/https://hifkfotboll.fi/2024/01/hifk-fotboll-ab-lopettaa-toimintansa/ |date=2024-01-04 }}, hifkfotboll.fi, 4 January 2024</ref>
+
+==European campaigns==
+HIFK participated in the [[European Cup]] in the 1960–61 and 1962–63 seasons and played in the [[UEFA cup]] in 1971–72.
+{| class="wikitable"
+! Season
+! Competition
+! Round
+! Country
+! Club
+! Score
+! Agg.
+|-
+|rowspan="1"| [[1960–61 European Cup|1960–61]]
+|rowspan="1" align="center" | [[UEFA Champions League|European Cup]]
+|Preliminary round
+|align="center" | {{flagicon|Sweden}}
+|[[IFK Malmö Fotboll|IFK Malmö]]
+|1–3, 1–2
+|'''2–5'''
+|-
+|rowspan="1"| [[1962–63 European Cup|1962–63]]
+|rowspan="1" align="center" | [[UEFA Champions League|European Cup]]
+|First round
+|align="center" | {{flagicon|Austria}}
+|[[FK Austria Wien|Austria Wien]]
+|3–5, 0–2
+|'''3–7'''
+|-
+|rowspan="1"| [[1971–72 UEFA Cup|1971–72]]
+|rowspan="1" align="center" | [[UEFA Europa League|UEFA Cup]]
+|First round
+|align="center" | {{flagicon|Norway}}
+|[[Rosenborg BK|Rosenborg]]
+|0–3, 0–1
+|'''0–4'''
+|-
+|}
+
+==Honours==
+*'''[[Mestaruussarja]]'''
+** ''' Champions (7)''': [[1930 Mestaruussarja&nbsp;– Finnish League Championship|1930]], [[1931 Mestaruussarja&nbsp;– Finnish League Championship|1931]], [[1933 Mestaruussarja&nbsp;– Finnish League Championship|1933]], [[1937 Mestaruussarja&nbsp;– Finnish League Championship|1937]], [[1947 Mestaruussarja|1947]], [[1959 Mestaruussarja|1959]], [[1961 Mestaruussarja|1961]]
+** Runners-up (7): [[1909 Finnish football championship|1909]], 1912, 1928, [[1929 Finnish football championship|1929]], [[1934 Mestaruussarja&nbsp;– Finnish League Championship|1934]], [[1935 Mestaruussarja&nbsp;– Finnish League Championship|1935]], [[1971 Mestaruussarja|1971]]
+*'''Attendance Record''': 10,500 (HIFK&nbsp;– [[Helsingin Jalkapalloklubi|HJK]], [[Telia 5G -areena]], 10 August 2016)<ref>{{cite web|url=http://www.veikkausliiga.com/tilastot/2016/veikkausliiga/ottelut/498127/tilastot/|title=Veikkausliiga&nbsp;– Ottelutilastot|access-date=2015-04-25|archive-date=2016-10-06|archive-url=https://web.archive.org/web/20161006032338/http://www.veikkausliiga.com/tilastot/2016/veikkausliiga/ottelut/498127/tilastot/|url-status=live}}</ref>
+
+==Divisional movements since 1930==
+
+*'''Top Level''' (32 seasons): 1930–45, 1947–49, 1958–66, 1970–72, 2015–2017, 2019–2022
+*'''Second Level''' (23 seasons): 1945–46, 1950–57, 1967–69, 1973–74, 1999–02, 2011–12, 2014, 2018, 2023
+*'''Third Level''' (19 seasons): 1975–78, 1988–98, 2008–10, 2013<ref name="auto"/>
+
+==Season to season==
+{{collapse top|Season to season}}
+{|
+|valign="top" width=0%|
+{|  class="wikitable"
+|- style="background:#f0f6fa;"
+!'''Season'''
+!'''Level'''
+!'''Division'''
+!'''Section'''
+!'''Administration'''
+!'''Position'''
+!'''Movements'''
+|-
+|style="background:#FFFF00;"|1930
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' A-sarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''1st'''
+|style="background:#FFFF00;"| '''Champions'''
+|-
+|style="background:#FFFF00;"|1931
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' A-sarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''1st'''
+|style="background:#FFFF00;"| '''Champions'''
+|-
+|style="background:#FFFF00;"|1932
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' A-sarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1933
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' A-sarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''1st'''
+|style="background:#FFFF00;"| '''Champions'''
+|-
+|style="background:#FFFF00;"|1934
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' A-sarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1935
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' A-sarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1936
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1937
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''1st'''
+|style="background:#FFFF00;"| '''Champions'''
+|-
+|style="background:#FFFF00;"|1938
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''6th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1939
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''4th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1940–41
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''4th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1943–44
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1945
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"| Group 1
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#87CEFA;"|1945–46
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"| 
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"| Promoted
+|-
+|style="background:#FFFF00;"|1946–47
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"| Championship Series 1st, '''Champions'''
+|-
+|style="background:#FFFF00;"|1947–48
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1948
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''10th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1949
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''9th'''
+|style="background:#FFFF00;"| Relegated
+|-
+|style="background:#87CEFA;"|1950
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"| West Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''2nd'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"|1951
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"| West Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''6th'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"|1952
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"| East Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''4th'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"|1953
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"| East Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''4th'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"|1954
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"| East Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''5th'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"|1955
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"| East Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''8th'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"|1956
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"| East Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''3rd'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"|1957
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"| East Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"| Promoted
+|-
+|style="background:#FFFF00;"|1958
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1959
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''1st'''
+|style="background:#FFFF00;"| '''Champions'''
+|-
+|style="background:#FFFF00;"|1960
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1961
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''1st'''
+|style="background:#FFFF00;"| '''Champions'''
+|-
+|style="background:#FFFF00;"|1962
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''7th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1963
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''4th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1964
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''6th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1965
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''5th'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1966
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''10th'''
+|style="background:#FFFF00;"| Relegated
+|-
+|style="background:#87CEFA;"|1967
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"| East Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''4th'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|1968
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"| South Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''4th'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|1969
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Suomensarja''' ''(First Division)''
+|style="background:#87CEFA;"| East Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"|Promotion Group 2nd, promoted
+|-
+|style="background:#FFFF00;"|1970
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''3rd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1971
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''2nd'''
+|style="background:#FFFF00;"| 
+|-
+|style="background:#FFFF00;"|1972
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Mestaruussarja'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"| Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''10th'''
+|style="background:#FFFF00;"| Relegated
+|-
+|style="background:#87CEFA;"|1973
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' I divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''4th'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"|1974
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' I divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''11th'''
+|style="background:#87CEFA;"| Relegated
+|-
+|style="background:#77DD77;"|1975
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II Divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|East Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''6th'''
+|style="background:#77DD77;"| 
+|-
+|style="background:#77DD77;"|1976
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II Divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|East Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''4th'''
+|style="background:#77DD77;"| 
+|-
+|style="background:#77DD77;"|1977
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II Divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|East Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''9th'''
+|style="background:#77DD77;"| 
+|-
+|style="background:#77DD77;"|1978
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II Divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|East Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''11th'''
+|style="background:#77DD77;"| Relegated
+|-
+|style="background:#FF7F00;"|1979
+|style="background:#FF7F00;"|Tier 4
+|style="background:#FF7F00;"|'''III divisioona''' ''(Third Division)''
+|style="background:#FF7F00;"|Section 2
+|style="background:#FF7F00;"|Helsinki & Uusimaa
+|style="background:#FF7F00;"|'''11th'''
+|style="background:#FF7F00;"| Relegated
+|-
+|style="background:#CECE1B;"|1980
+|style="background:#CECE1B;"|Tier 5
+|style="background:#CECE1B;"|'''IV divisioona''' ''(Fourth Division)''
+|style="background:#CECE1B;"|Section 4
+|style="background:#CECE1B;"|Helsinki & Uusimaa
+|style="background:#CECE1B;"|'''8th'''
+|style="background:#CECE1B;"|
+|-
+|style="background:#CECE1B;"|1981
+|style="background:#CECE1B;"|Tier 5
+|style="background:#CECE1B;"|'''IV divisioona''' ''(Fourth Division)''
+|style="background:#CECE1B;"|Section 1
+|style="background:#CECE1B;"|Helsinki & Uusimaa
+|style="background:#CECE1B;"|'''7th'''
+|style="background:#CECE1B;"|
+|-
+|style="background:#CECE1B;"|1982
+|style="background:#CECE1B;"|Tier 5
+|style="background:#CECE1B;"|'''IV divisioona''' ''(Fourth Division)''
+|style="background:#CECE1B;"|Section 2
+|style="background:#CECE1B;"|Helsinki & Uusimaa
+|style="background:#CECE1B;"|'''4th'''
+|style="background:#CECE1B;"|
+|-
+|style="background:#CECE1B;"|1983
+|style="background:#CECE1B;"|Tier 5
+|style="background:#CECE1B;"|'''IV divisioona''' ''(Fourth Division)''
+|style="background:#CECE1B;"|Section 3
+|style="background:#CECE1B;"|Helsinki & Uusimaa
+|style="background:#CECE1B;"|'''1st'''
+|style="background:#CECE1B;"|Promoted via play-offs
+|-
+|style="background:#FF7F00;"|1984
+|style="background:#FF7F00;"|Tier 4
+|style="background:#FF7F00;"|'''III divisioona''' ''(Third Division)''
+|style="background:#FF7F00;"|Section 2
+|style="background:#FF7F00;"|Helsinki & Uusimaa
+|style="background:#FF7F00;"|'''1st'''
+|style="background:#FF7F00;"| Promotion play-offs
+|-
+|style="background:#FF7F00;"|1985
+|style="background:#FF7F00;"|Tier 4
+|style="background:#FF7F00;"|'''III divisioona''' ''(Third Division)''
+|style="background:#FF7F00;"|Section 1
+|style="background:#FF7F00;"|Helsinki & Uusimaa
+|style="background:#FF7F00;"|'''3rd'''
+|style="background:#FF7F00;"| 
+|-
+|style="background:#FF7F00;"|1986
+|style="background:#FF7F00;"|Tier 4
+|style="background:#FF7F00;"|'''III divisioona''' ''(Third Division)''
+|style="background:#FF7F00;"|Section 2
+|style="background:#FF7F00;"|Helsinki & Uusimaa
+|style="background:#FF7F00;"|'''2nd'''
+|style="background:#FF7F00;"| 
+|-
+|style="background:#FF7F00;"|1987
+|style="background:#FF7F00;"|Tier 4
+|style="background:#FF7F00;"|'''III divisioona''' ''(Third Division)''
+|style="background:#FF7F00;"|Section 2
+|style="background:#FF7F00;"|Helsinki & Uusimaa
+|style="background:#FF7F00;"|'''1st'''
+|style="background:#FF7F00;"| Promoted
+|-
+|style="background:#77DD77;"|1988
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II Divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|West Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''5th'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1989
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II Divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|East Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''2nd'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1990
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II Divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|East Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''2nd'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1991
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II Divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|East Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''4th'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1992
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II Divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|East Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''4th'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1993
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''II Divisioona''' ''(Second Division)''
+|style="background:#77DD77;"|East Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''4th'''
+|style="background:#77DD77;"|FC HIFK
+|-
+|style="background:#77DD77;"|1994
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|South Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''4th'''
+|style="background:#77DD77;"|FC HIFK
+|-
+|style="background:#77DD77;"|1995
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|South Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''8th'''
+|style="background:#77DD77;"|FC HIFK
+|-
+|style="background:#77DD77;"|1996
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|South Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''8th'''
+|style="background:#77DD77;"|FC HIFK
+|-
+|style="background:#77DD77;"|1997
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|East Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''2nd'''
+|style="background:#77DD77;"|FC HIFK
+|-
+|style="background:#77DD77;"|1998
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|East Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''2nd'''
+|style="background:#77DD77;"|FC HIFK
+|-
+|style="background:#87CEFA;"|1999
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|South Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''6th'''
+|style="background:#87CEFA;"|FC HIFK&nbsp;– Relegation Group South&nbsp;– '''8th'''
+|-
+|style="background:#87CEFA;"|2000
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|South Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''8th'''
+|style="background:#87CEFA;"|FC HIFK&nbsp;– Relegation Group South&nbsp;– '''7th'''
+|-
+|style="background:#87CEFA;"|2001
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|South Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''6th'''
+|style="background:#87CEFA;"|FC HIFK
+|-
+|style="background:#87CEFA;"|2002
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|South Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''7th'''
+|style="background:#87CEFA;"|FC HIFK&nbsp;– Relegation Group South&nbsp;– '''7th'''&nbsp;– Play-offs
+|-
+|style="background:#CECE1B;"|2003
+|style="background:#CECE1B;"|Tier 5
+|style="background:#CECE1B;"|'''Nelonen''' ''(Fourth Division)''
+|style="background:#CECE1B;"|Section 1
+|style="background:#CECE1B;"|Uusimaa ''(SPL Helsinki)''
+|style="background:#CECE1B;"|'''5th'''
+|style="background:#CECE1B;"|
+|-
+|style="background:#CECE1B;"|2004
+|style="background:#CECE1B;"|Tier 5
+|style="background:#CECE1B;"|'''Nelonen''' ''(Fourth Division)''
+|style="background:#CECE1B;"|Section 1
+|style="background:#CECE1B;"|Uusimaa ''(SPL Helsinki)''
+|style="background:#CECE1B;"|'''2nd'''
+|style="background:#CECE1B;"|
+c
+|-
+|style="background:#FF7F00;"|2006
+|style="background:#FF7F00;"|Tier 4
+|style="background:#FF7F00;"|'''Kolmonen''' ''(Third Division)''
+|style="background:#FF7F00;"|Section 3
+|style="background:#FF7F00;"|Helsinki & Uusimaa ''(SPL Helsinki)''
+|style="background:#FF7F00;"|'''2nd'''
+|style="background:#FF7F00;"|
+|-
+|style="background:#FF7F00;"|2007
+|style="background:#FF7F00;"|Tier 4
+|style="background:#FF7F00;"|'''Kolmonen''' ''(Third Division)''
+|style="background:#FF7F00;"|Section 2
+|style="background:#FF7F00;"|Helsinki & Uusimaa ''(SPL Helsinki)''
+|style="background:#FF7F00;"|'''1st'''
+|style="background:#FF7F00;"|Promoted
+|-
+|style="background:#77DD77;"|2008
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|Group B
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''7th'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|2009
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|Group A
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''7th'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|2010
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|Group A
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''1st'''
+|style="background:#77DD77;"|Play-offs, promoted
+|-
+|style="background:#87CEFA;"|2011
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''9th'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|2012
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''10th'''
+|style="background:#87CEFA;"|Relegated
+|-
+|style="background:#77DD77;"|2013
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|''' Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|East Group
+|style="background:#77DD77;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#77DD77;"|'''1st'''
+|style="background:#77DD77;"|Play-offs, promoted
+|-
+|style="background:#87CEFA;"|2014
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"|Promoted to [[Veikkausliiga]]
+|-
+|style="background:#FFFF00;"|2015
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''7th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2016
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''10th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2017
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''11th'''
+|style="background:#FFFF00;"|Play-offs, relegated
+|-
+|style="background:#87CEFA;"|2018
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"|Promoted
+|-
+|style="background:#FFFF00;"|2019
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''7th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2020
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2021
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2022
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|''' Veikkausliiga'''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA (Suomen Palloliitto)
+|style="background:#FFFF00;"|'''12th'''
+|style="background:#FFFF00;"|Relegated
+|-
+|style="background:#87CEFA;"|2023
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|''' Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Pallolitto)''
+|style="background:#87CEFA;"|'''6th'''
+|style="background:#87CEFA;"|Bankruptcy
+|-
+|style="background:#CECE1B;"|2024
+|style="background:#CECE1B;"|Tier 5
+|style="background:#CECE1B;"|'''Kolmonen'''
+|style="background:#CECE1B;"|
+|style="background:#CECE1B;"|Uusimaa ''(SPL Helsinki)''
+|style="background:#CECE1B;"|
+|style="background:#CECE1B;"|
+|}
+
+*'''36''' seasons in ''[[Veikkausliiga]]''
+*'''23''' seasons in ''[[Ykkönen]]''
+*'''19''' seasons in ''[[Kakkonen]]''
+*'''7''' seasons in ''[[Kolmonen]]''
+*'''7''' seasons in ''[[Nelonen (soccer league)|Nelonen]]''
+|}<ref>Jalkapallokirjat 1946–>, Suomen Palloliitto, {{ISSN|0787-7188}}</ref><ref>{{cite web|url=http://www.urheilumuseo.fi/Desktopmodules/Museo_Aineistot/tiedostot.aspx?ID=2742|title=Tulostus|work=urheilumuseo.fi|access-date=9 March 2017|archive-date=20 September 2017|archive-url=https://web.archive.org/web/20170920190727/http://www.urheilumuseo.fi/Desktopmodules/Museo_Aineistot/tiedostot.aspx?ID=2742|url-status=dead}}</ref>
+{{cob}}
+
+==Supporters and rivalries==
+[[File:Stadin Kingit.jpg|thumb|HIFK Fotboll supporters June 2017.]]
+
+Historically, HIFK was primarily a club for the [[Swedish-speaking Finns|Swedish-speaking population]] in Helsinki. Nowadays the club is bilingual. The most renowned supporter group of the club was ''Stadin Kingit'' (in English: ''"the kings of Stadi"''). Its name was derived from the common slang nickname for Helsinki (Stadi). Many members attend the handball, [[HIFK Bandy|bandy]] and [[HIFK (ice hockey)|ice hockey]] matches of [[HIFK]] as well.
+
+The single most important fixture for HIFK supporters is against the major local rivals, [[HJK Helsinki|HJK]]. The fixture is commonly known as the [[Stadin derby]] and was last played during the [[Veikkausliiga]] season of 2022.
+
+==Club structure==
+
+HIFK Fotboll operate a large number of teams including 3 men's teams, 3 women's teams, 1 men's veterans team, 16 boys' teams and 5 girls' teams.
+
+*''' HIFK''' competes in Group B of [[Kolmonen]] (Fifth tier) administered by the [[SPL Uudenmaan piiri|SPL Uusimaa]]. 
+* ''' HIFK / 3''' competes in Group 4 of [[Vitonen]] (Seventh tier) administered by the [[SPL Uudenmaan piiri|SPL Uusimaa]].
+
+<small>Updated as of season 2024.
+<ref>{{cite web|title=Veikkausliiga|url=http://www.veikkausliiga.com/|website=veikkausliiga.com|publisher=Veikkausliiga|access-date=31 January 2020|language=fi|archive-date=17 February 2011|archive-url=https://web.archive.org/web/20110217101021/http://www.veikkausliiga.com/|url-status=live}}</ref>
+<ref>{{cite web|title=Miehet Kolmonen|url=https://tulospalvelu.palloliitto.fi/category/M3!etejp22/tables|website=palloliitto.fi|publisher=Football Association of Finland|access-date=15 February 2022|language=fi|archive-date=15 February 2022|archive-url=https://web.archive.org/web/20220215104804/https://tulospalvelu.palloliitto.fi/category/M3!etejp22/tables|url-status=live}}</ref>
+<ref>{{cite web|title=Miehet Kutonen|url=https://tulospalvelu.palloliitto.fi/category/M6!etejp22/tables|publisher=Football Association of Finland|access-date=15 February 2022|language=fi}}</ref>
+</small>
+
+==Players==
+[[File:HIFK 1930.jpg|thumb|HIFK football players in 1930s]]
+{{Updated|24 July 2024}}<ref>{{cite web|url=https://hifkfotboll.fi/edustusjoukkue/|title=Edustusjoukkue 2023|work=hifkfotboll.fi|date=13 March 2014|access-date=3 August 2023|archive-date=23 September 2023|archive-url=https://web.archive.org/web/20230923000045/https://hifkfotboll.fi/edustusjoukkue/|url-status=live}}</ref>
+
+===Current squad===
+{{Fs start}}
+{{Fs player|no=2|nat=FIN|pos=DF|name=Elias Kaukamo}}
+{{Fs player|no=3|nat=FIN|pos=DF|name=Roger Prezioso}}
+{{Fs player|no=4|nat=FIN|pos=DF|name=Leo Halme}}
+{{Fs player|no=5|nat=FIN|pos=FW|name=Leevi Hoppania}}
+{{Fs player|no=6|nat=FIN|pos=FW|name=Nicolas Prezioso}}
+{{Fs player|no=7|nat=FIN|pos=DF|name=Niko Turunen}}
+{{Fs player|no=8|nat=FIN|pos=FW|name=Dolynnyi Nazar}}
+{{Fs player|no=9|nat=FIN|pos=DF|name=Peik Westerlund}}
+{{Fs player|no=10|nat=FIN|pos=FW|name=Said Mijoc}}
+{{Fs player|no=11|nat=FIN|pos=MF|name=Robin Leskinen}}
+{{Fs player|no=14|nat=FIN|pos=MF|name=Nelson Holmberg}}
+{{Fs player|no=15|nat=FIN|pos=MF|name=Lotus Kurkio}}
+{{Fs player|no=16|nat=FIN|pos=MF|name=Fonkah Alakotila}}
+{{Fs player|no=17|nat=FIN|pos=DF|name=Arian Ahmadi}}
+{{Fs player|no=18|nat=FIN|pos=FW|name=Lauri Korkeila}}
+{{Fs player|no=19|nat=FIN|pos=MF|name=Noa Kiema}}
+{{Fs player|no=20|nat=FIN|pos=MF|name=Adam Oyegoke}}
+{{Fs player|no=21|nat=FIN|pos=DF|name=Seifedine Eshrouk-Maharzah}}
+{{Fs player|no=22|nat=FIN|pos=GK|name=Nikke Vesterinen}}
+{{Fs player|no=22|nat=FIN|pos=FW|name=Danjaal Hamzaaghaei}}
+{{Fs mid}}
+{{Fs player|no=24|nat=FIN|pos=FW|name=Zakaria El Hayani El Mourabi}}
+{{Fs player|no=25|nat=FIN|pos=GK|name=Alex Hendren}}
+{{Fs player|no=27|nat=FIN|pos=DF|name=Robert Razmus}}
+{{Fs player|no=27|nat=FIN|pos=GK|name=Teddy Schalin}}
+{{Fs player|no=28|nat=FIN|pos=FW|name=Guled Hasan Farah}}
+{{Fs player|no=30|nat=FIN|pos=MF|name=Aatos Rajanummi}}
+{{Fs player|no=31|nat=FIN|pos=FW|name=Daniel Eidet}}
+{{Fs player|no=32|nat=FIN|pos=GK|name=Olli Hyvärinen}}
+{{Fs player|no=33|nat=FIN|pos=DF|name=Veikko Pelkonen}}
+{{Fs player|no=45|nat=FIN|pos=MF|name=Markus Juolahti}}
+{{Fs player|no=45|nat=FIN|pos=DF|name=Roope Seppänen}}
+{{Fs player|no=|nat=GAM|pos=GK|name=Sam Jammeh}}
+{{Fs player|no=|nat=FIN|pos=FW|name=[[Antti Ulmanen]]}}
+{{Football squad player|no= |nat=FIN |pos=DF |name=Tomi Kurvinen |other=}}
+{{Football squad player|no= |nat=FIN |pos=DF |name=Eero Karjalainen |other= }}
+{{Football squad player|no= |nat=BRA |pos=FW |name=[[Tiquinho (footballer, born 1995)|Tiquinho]] |other= }}
+{{Fs player|no=|nat=FIN|pos=MF|name=[[Arttu Auranen]]}}
+{{Fs player|no=|nat=FIN|pos=MF|name=[[Eetu Puro]]}}
+{{Fs player|no=|nat=FIN|pos=MF|name=[[Rico Finnäs]]}}
+{{Fs player|no=|nat=FIN|pos=MF|name=[[Moshtagh Yaghoubi]]}}
+{{Fs end}}
+
+==Management and boardroom==
+
+<small>''As of 24 July 2024''<ref>{{cite web|url=https://hifkfotboll.fi/2022/04/hifk-ja-mixu-paatelainen-sopimukseen/|title=HIFK ja Mixu Paatelainen sopimukseen|work=hifkfotboll.fi|date=17 April 2022|access-date=17 April 2022|archive-date=17 April 2022|archive-url=https://web.archive.org/web/20220417164615/https://hifkfotboll.fi/2022/04/hifk-ja-mixu-paatelainen-sopimukseen/|url-status=live}}</ref></small>
+{|
+|-
+|valign="top"|
+{| class="wikitable"
+!Name
+
+!Role
+|-
+|{{Flag icon|FIN}} [[Alex Maylett]]
+| Head coach
+|-
+|Anas Abdi
+|Assistant coach
+|-
+|Umid Dibachy
+|Assistant coach
+|-
+|[[Tomi Maanoja]]
+|Assistant coach
+|-
+|Joona Haavisto
+|Team manager
+|-
+|Aapo Haavisto
+|Doctor
+
+|}
+|}
+
+===Boardroom===
+<ref>{{cite web|url=https://hifkfotboll.fi/yhteystiedot/|publisher=HIFK Fotboll|language=fi|access-date=24 July 2024|title=Yhteystiedot - HIFK Fotboll|date=29 March 2014|archive-date=19 June 2024|archive-url=https://web.archive.org/web/20240619143101/https://hifkfotboll.fi/yhteystiedot/|url-status=live}}</ref>
+{|
+|-
+|valign="top"|
+{| class="wikitable"
+|-
+!Name
+!Role
+|-
+|{{Flag icon|FIN}} Jan-Erik Eklöf
+|Chairman
+|-
+|{{Flag icon|FIN}} Viktor Fagerudd
+|Vice-Chairman
+|-
+|{{Flag icon|FIN}} Janne Räsänen
+|Member
+|-
+|{{Flag icon|FIN}} Janne Rasinkangas
+|Member
+|-
+|{{Flag icon|FIN}} Hanna Khalili
+|Member
+|-
+|{{Flag icon|FIN}} Dan Nordström
+|Member
+|-
+|}
+|}
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{in lang|fi}} [http://www.hifkfotboll.fi Official football website]
+*{{in lang|fi}} [http://www.ifk.fi/ Official club website]
+*[https://globalsportsarchive.com/team/soccer/hifk-fotboll/2294/ Team info] at GSA
+
+{{Finnish Champions in Football}}
+{{Ykkönen}}
+
+[[Category:HIFK Fotboll| ]]
+[[Category:Football clubs in Finland]]
+[[Category:Association football clubs established in 1897]]
+[[Category:1897 establishments in Finland]]
+[[Category:Sports clubs and teams in Helsinki]]
+[[Category:HIFK|football]]

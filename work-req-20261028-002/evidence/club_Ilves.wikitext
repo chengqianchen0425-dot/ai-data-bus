@@ -1,0 +1,821 @@
+{{Short description|Finnish football club}}
+{{other uses|Ilves (disambiguation)}}
+{{Use dmy dates|date=April 2024}}
+{{Infobox football club
+| clubname = Ilves
+| image = Ilves logo.svg
+| upright = 0.85
+| fullname = Tampereen Ilves<ref name="Tampereen Ilves"/>
+| nickname = Ipa
+| founded = {{Start date and age|1931}}
+| ground = [[Tammelan Stadion|Tammela Stadion]], [[Tampere]]
+| capacity = 8,000
+| chairman = Petri Ojala
+| manager = [[Camilo Speranza]]
+| league = [[Veikkausliiga]]
+| season = [[2026 Veikkausliiga|2026]]
+| position = Veikkausliiga, 8th of 12
+| website = {{URL|https://ilvesfootball.com}}
+| pattern_la1 = _ilves26h 
+| pattern_b1 = _ilves26h 
+| pattern_ra1 = _ilves26h 
+| pattern_sh1 = _ilves26h 
+| pattern_so1 = 
+| leftarm1 = FFEE00
+| body1 = FFEE00
+| rightarm1 = FFEE00
+| shorts1 = 008030
+| socks1 = FFEE00
+| pattern_la2 = _ilves26a
+| pattern_b2 = _ilves26a
+| pattern_ra2 = _ilves26a
+| pattern_sh2 = _ilves26h 
+| pattern_so2 = 
+| leftarm2 = 008030
+| body2 = 008030
+| rightarm2 = 008030
+| shorts2 = 008030
+| socks2 = 008030
+| pattern_la3 = _ilves26t
+| pattern_b3 = _ilves26t
+| pattern_ra3 = _ilves26t
+| pattern_sh3 = 
+| pattern_so3 = 
+| leftarm3 = E00000
+| body3 = E00000
+| rightarm3 = E00000
+| shorts3 = E00000
+| socks3 = E00000
+}}
+
+'''Tampereen Ilves''' ({{IPA|fi|ˈilʋes|pron}}; [[Finnish language|Finnish]] for "[[Eurasian lynx|Lynx]]"; {{langx|sv|Ilves Tammerfors}}), commonly known as '''Ilves''', is a Finnish professional [[association football|football]] club based in [[Tampere]]. They currently play in the [[Veikkausliiga]], the highest level of professional football in Finland.
+
+== History ==
+
+The club was founded in 1931 and played its first official football matches in the following year, playing in the local city and district leagues.
+
+The young club found it difficult to recruit experienced players, however, and schoolboys who at the time made up the bulk of the membership often spent their summers in the country and were thus unavailable for matches. Thus the Ilves football team was disbanded in 1938 and the club concentrated on its other main sport, [[ice hockey]].
+
+Another brief stint of football activity begun during [[World War II]], and in 1947, Ilves was for the first time close to being promoted to nationwide leagues. However, they lost the decisive match—their only loss that year—and after this disappointment, football was again removed from the club repertoire.
+
+The third coming proved to be more long-lasting and successful, as Ilves merged with erstwhile rivals [[TaPa|Tampellan Palloilijat]] and [[Ilves-Kissat]] (an unrelated club despite the similar name) in 1974. Ilves assumed the considerable debts of Ilves-Kissat and in return inherited their league berth in the I-Divisioona (first division). They spent four years there before gaining promotion to the [[Mestaruussarja]] for the first time in 1978.<ref>{{cite web|url=https://www.rsssf.org/tablesf/finhist.html|title=Finland - List of League First Level Tables|last=Heikki Pietarinen|date=13 December 2018|website=[[RSSSF]]|access-date=3 June 2019}}</ref>
+
+Ilves' first year in the top flight was a mediocre one but they managed to avoid relegation and, more importantly, won their first major trophy as they beat [[Turun Palloseura|TPS]] in the [[Finnish Cup]] final.
+
+The cup win brought along Ilves' first European matches next year as they were drawn against [[Feyenoord]] in the [[1980–81 European Cup Winners' Cup|1980–81 Cup Winners' Cup]]. The Dutch giants proved too tough for the Finnish amateurs who won both legs.
+
+The years 1983 to 1985 were Ilves' most successful to date. The club won their first league championship in 1983, finished 3rd the following year and 2nd in 1985. In the 1984–85 European Cup they met [[Juventus]] who easily swept Ilves away on their way to win the whole competition. The home leg at [[Tampere Stadium]] was witnessed by Ilves' all-time largest crowd of 24,073 spectators.
+
+In the [[1986–87 UEFA Cup]] Ilves played against [[Glasgow Rangers]]. Ilves scored their first European win on their home turf but the Glaswegians advanced to the second round with aggregate goals 2–4.
+
+In 1990, Ilves scored their last trophy for a long while when they won the Finnish Cup. In the 1991–92 Cup Winners' Cup Ilves advanced for the first time to the second round in European competitions as they beat the Northern Irish club [[Glenavon F.C.]] They held [[AS Roma]] to a draw at home in the second round, but in the end Roma won the second leg 5–2.
+
+In the early 1990s, Ilves struggled on and off the pitch. The Finnish economy entered a deep recession. Ilves found it difficult to acquire sponsorships, and high unemployment and lack of disposable income resulted in low attendance figures. At the end of the 1996 season they were relegated to the Ykkönen.
+
+After two seasons on the second tier, Ilves was close to bankruptcy. Another merger was attempted, this time with [[Tampereen Pallo-Veikot|TPV]], but they withdrew from the talks after a close membership vote. Despite this, the Ilves' men's football team was reformed as [[Tampere United]], and Ilves focused on its junior teams.
+
+[[File:Jari niemi.jpg|thumb|right|[[Jari Niemi]] of Ilves in a local derby against TPV in 2011]]In the early 2010s, Tampere United was embroiled in a match-fixing and money laundering scandal. They were disqualified from the league and consequently went bankrupt. This left Tampere without a top-level football team, as TPV was also mired in the lower leagues.
+
+Ilves had restarted its men's team in 2008 in the Kakkonen and begun a slow climb back to the top. After the demise of United, this was accelerated, and Ilves reached the Ykkönen in 2013 and returned to the Veikkausliiga for the 2015 season.
+
+[[Image:Ilves-Inter 2016 1.jpg|thumb|Against [[Inter Turku]] at the [[Tammelan Stadion (1931)|old Tammela Stadium]] in 2016]]
+The club managed solidify its place in the Veikkausliiga, finishing in the middle of the table in their first two seasons and reaching 3rd place in 2017. This achievement brought them back into the [[2018–19 UEFA Europa League|Europa League]], but the Bulgarian side [[PFC Slavia Sofia|Slavia Sofia]] proved too tough in the first qualifying round.
+
+Ilves claimed their third Finnish Cup title in 2019 and returned to Europe in the following year, playing against [[Shamrock Rovers]] of [[Dublin]] in the 1st qualifying round of the [[2020–21 UEFA Europa League|Europa League]]. The match—played as a single leg due to the [[COVID-19 pandemic]]—ended 2–2, but after a lengthy penalty shootout which featured 13 attempts from both sides, the Rovers were victorious 12 to 11.
+
+[[Image:Ilves vs Haka July 2021 1.jpg|thumb|Against [[FC Haka|Haka]] at [[Tampere Stadium]] in 2021]]
+Coming to the late 2010s, the atmospheric but aging [[Tammelan stadion (1931)|Tammela stadium]] was no longer fit for professional football. The city decided to tear it down and build a completely [[Tammelan stadion|new stadium]] in its place. This forced Ilves to relocate to the [[Tampere Stadium]] starting from the 2020 season. With a capacity of over 16,000, the Tampere Stadium was too large for the crowds Ilves was drawing at the time, and the running track between the pitch and the stands further contributed to a poor atmosphere in the games. This, combined with the effects of the pandemic and disappointing performance on the pitch, resulted in poor attendance and financial trouble.
+
+[[Image:Ilves vs KuPS May 2024 1.jpg|thumb|Against [[KuPS]] at the new [[Tammelan Stadion]] 2024]]
+However, with a surprise Cup victory in 2023, together with the completion of the new stadium and the [[Ilves (ice hockey)|ice hockey division of Ilves]] stepping in to provide financial backing, Ilves was soon back among the top teams of the Veikkausliiga, having acquired sporting director [[Miika Takkula]] and head coach [[Joonas Rantanen]]. The first season in their rebuilt home resulted in a 2nd-place finish in the league and a strong run in Europe, during which Ilves eliminated [[Austria Wien]] in the 2nd qualification round of the [[2024–25 UEFA Conference League]] before falling to [[Djurgårdens IF Fotboll|Djurgården]] in the 3rd, with the aggregate score of 2–4.
+
+== Colours and Badge ==
+Ilves' traditional colours are green and yellow, with the home kit usually consisting of a yellow shirt and green shorts and the away kit being all green. Their first shirt had green and black vertical stripes; this has occasionally been repeated as a special kit, for example for the club's 90th anniversary match in 2021.
+
+In 1992 and 1993 Ilves played in red, in accordance with the wishes of their main sponsor at the time; the away kit was white. The choice proved highly unpopular among supporters.
+
+Ilves' first badge depicted a lynx [[Attitude (heraldry)#Passant|passant]]. The current logo was designed by Rauno Broms in 1962 and has been used ever since.
+
+=== Kit Suppliers ===
+[[File:Ilves football shirt 1993.jpg|thumb|right|The infamous red shirt of the 1990s]]
+{| class="wikitable" style="margin: 0 0 0 0;"
+|-
+! Supplier
+! Period
+|-
+|[[Adidas]] 
+|1975–1983
+|-
+|[[Umbro]]
+|1984–1986
+|-
+|[[Hummel International|Hummel]]
+|1987–1989
+|-
+|NR
+|1990
+|-
+|[[Hummel International|Hummel]]
+|1991–1992
+|-
+|[[Diadora]]
+|1993–1996
+|-
+|[[Mitre Sports International|Mitre]]
+|1997–1998
+|-
+|[[Umbro]]
+|1999–2014
+|-
+|[[Adidas]]
+|2015–
+|}
+
+== Grounds ==
+{{Further|Tammelan Stadion|Tampere Stadium}}
+The club's home ground is the [[Tammelan Stadion]]. Between 2020 and 2023, they played at [[Tampere Stadium]] while waiting for the Tammela stadium to be rebuilt.<ref name="Tampereen Ilves">{{cite web |title=Tampereen Ilves |url=https://us.soccerway.com/teams/finland/tampereen-ilves/2385/ |website=Soccerway |publisher=Perform |access-date=26 January 2022}}</ref>
+
+== Honours ==
+*[[Veikkausliiga|'''Mestaruussarja'''/'''Veikkausliiga''']]
+**'''Champions:''' [[1983 Mestaruussarja|1983]]
+**Runners-up: [[1985 Mestaruussarja|1985]], [[2024 Veikkausliiga|2024]]
+*'''[[Finnish Cup]]'''
+** '''Winners:''' 1979, 1990, [[2019 Finnish Cup|2019]], [[2023 Finnish Cup|2023]]
+
+==Season to season==
+{{collapse top|Season to Season}}
+{|
+|valign="top" width=0%|
+{|  class="wikitable"
+|- style="background:#f0f6fa;"
+!'''Season'''
+!'''Level'''
+!'''Division'''
+!'''Section'''
+!'''Administration'''
+!'''Position'''
+!'''Movements'''
+|-
+|style="background:;"|1932-38 Tampere District Leagues
+|-
+|style="background:;"|1939-42 No men's team.
+|-
+|style="background:#77DD77;"|1945-46
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''SPL Maakuntasarja''' ''(Third Division)''
+|style="background:#77DD77;"|Group Häme
+|style="background:#77DD77;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#77DD77;"|'''2nd'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|1946-47
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''SPL Maakuntasarja''' ''(Third Division)''
+|style="background:#77DD77;"|Group Tampere
+|style="background:#77DD77;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#77DD77;"|'''3rd'''
+|style="background:#77DD77;"|
+|-
+|style="background:;"|1948-74 Tampere District Leagues
+|-
+|style="background:#87CEFA;"|1975
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''I Divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''3rd'''
+|style="background:#87CEFA;"|Received league position from Ilves-Kissat
+|-
+|style="background:#87CEFA;"|1976
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''I Divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''4th'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"|1977
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''I Divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''5th'''
+|style="background:#87CEFA;"| 
+|-
+|style="background:#87CEFA;"|1978
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''I Divisioona''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''1st'''
+|style="background:#87CEFA;"|Promoted
+|-
+|style="background:#FFFF00;"|1979
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Mestaruussarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''10th'''
+|style="background:#FFFF00;"|Relegation Group 1st
+|-
+|style="background:#FFFF00;"|1980
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''SM-Sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''6th'''
+|style="background:#FFFF00;"|Championship Group 6th
+|-
+|style="background:#FFFF00;"|1981
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''SM-Sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''7th'''
+|style="background:#FFFF00;"|Championship Group 5th
+|-
+|style="background:#FFFF00;"|1982
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''SM-Sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"|Championship Group 7th
+|-
+|style="background:#FFFF00;"|1983
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''SM-Sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"|Championship Group 1st - '''Champions'''
+|-
+|style="background:#FFFF00;"|1984
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''SM-Sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"|Championship Playoffs 3rd
+|-
+|style="background:#FFFF00;"|1985
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''SM-Sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"|Championship Playoffs 2nd
+|-
+|style="background:#FFFF00;"|1986
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''SM-Sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1987
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''SM-Sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1988
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''SM-Sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"|Relegation Group 3rd
+|-
+|style="background:#FFFF00;"|1989
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''SM-Sarja''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''6th'''
+|style="background:#FFFF00;"|Championship Group 6th
+|-
+|style="background:#FFFF00;"|1990
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Futisliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''9th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1991
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Futisliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''6th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1992
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1993
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''12th'''
+|style="background:#FFFF00;"|Relegation Group 6th
+|-
+|style="background:#FFFF00;"|1994
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''12th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1995
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''7th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|1996
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''10th'''
+|style="background:#FFFF00;"|Relegation Group 4th - Relegated
+|-
+|style="background:#87CEFA;"|1997
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|North Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''8th'''
+|style="background:#87CEFA;"|Relegation Group North 2nd
+|-
+|style="background:#87CEFA;"|1998
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|North Group
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''2nd'''
+|style="background:#87CEFA;"|Relegation Group 5th, Promotion Playoff. First team continued as [[Tampere United|TamU]]
+|-
+|style="background:;"|1999-2007 No men's team.
+|-
+|style="background:#77DD77;"|2008
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|Group B
+|style="background:#77DD77;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#77DD77;"|'''5th'''
+|style="background:#77DD77;"|Received league spot from KooVee
+|-
+|style="background:#77DD77;"|2009
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|Group B
+|style="background:#77DD77;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#77DD77;"|'''3rd'''
+|style="background:#77DD77;"|
+|-
+|style="background:#77DD77;"|2010
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|Group B
+|style="background:#77DD77;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#77DD77;"|'''1st'''
+|style="background:#77DD77;"|Promotion Group 3rd
+|-
+|style="background:#77DD77;"|2011
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|Group B
+|style="background:#77DD77;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#77DD77;"|'''2nd'''
+|style="background:#77DD77;"|Promotion Playoff
+|-
+|style="background:#77DD77;"|2012
+|style="background:#77DD77;"|Tier 3
+|style="background:#77DD77;"|'''Kakkonen''' ''(Second Division)''
+|style="background:#77DD77;"|Group West
+|style="background:#77DD77;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#77DD77;"|'''1st'''
+|style="background:#77DD77;"|Promotion Playoff - Promoted
+|-
+|style="background:#87CEFA;"|2013
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''4th'''
+|style="background:#87CEFA;"|
+|-
+|style="background:#87CEFA;"|2014
+|style="background:#87CEFA;"|Tier 2
+|style="background:#87CEFA;"|'''Ykkönen''' ''(First Division)''
+|style="background:#87CEFA;"|
+|style="background:#87CEFA;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#87CEFA;"|'''3rd'''
+|style="background:#87CEFA;"|Promoted
+|-
+|style="background:#FFFF00;"|2015
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2016
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2017
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''3rd'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2018
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2019
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''4th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2020
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2021
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''5th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2022
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''9th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2023
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''8th'''
+|style="background:#FFFF00;"|
+|-
+|style="background:#FFFF00;"|2024
+|style="background:#FFFF00;"|Tier 1
+|style="background:#FFFF00;"|'''Veikkausliiga''' ''(Premier League)''
+|style="background:#FFFF00;"|
+|style="background:#FFFF00;"|Finnish FA ''(Suomen Palloliitto)''
+|style="background:#FFFF00;"| '''2nd'''
+|style="background:#FFFF00;"|
+|}
+
+*'''28''' seasons in the top flight (Mestaruussarja, SM-sarja, Futisliiga or ''[[Veikkausliiga]]'')
+*'''13''' seasons on tier 2 (then ''[[Ykkönen]]'')
+*'''8''' seasons on tier 3 (then ''[[Kakkonen]]'')
+<ref>{{cite web|url=http://www.finlandfootball.net/|title=Football Archive - Index of SPL Finnish League Suomen Cup Seasons|date=13 December 2018|publisher=Football Archive|access-date=4 February 2023}}</ref>
+|}
+{{cob}}
+
+==European record==
+{| class="wikitable"
+|-
+! Season
+! Competition
+! Round
+! Club
+! 1st leg
+! 2nd leg
+! Aggregate
+! Y/N
+|-
+| [[1980–81 European Cup Winners' Cup|1980–81]]
+| [[UEFA Cup Winners' Cup]]
+| [[1980–81 European Cup Winners' Cup#First round|1R]]
+| {{flagicon|Netherlands}} [[Feyenoord]]
+| style="text-align:center;background:#fdd;"| 1–3
+| style="text-align:center;background:#fdd;"| 2–4
+| style="text-align:center;"| 3–7
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[1984–85 European Cup|1984–85]]
+| [[UEFA Champions League|European Cup]]
+| [[1984–85 European Cup#First round|1R]]
+| {{flagicon|Italy}} [[Juventus FC|Juventus]]
+| style="text-align:center;background:#fdd;"| 0–4
+| style="text-align:center;background:#fdd;"| 1–2
+| style="text-align:center;"| 1–6
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[1986–87 UEFA Cup|1986–87]]
+| [[UEFA Europa League|UEFA Cup]]
+| [[1986–87 UEFA Cup#First round|1R]]
+| {{flagicon|Scotland}} [[Rangers F.C.|Rangers]]
+| style="text-align:center;background:#fdd;"| 0–4
+| style="text-align:center;background:#dfd;"| 2–0
+| style="text-align:center;"| 2–4
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| rowspan="2"| [[1991–92 European Cup Winners' Cup|1991–92]]
+| rowspan="2"| [[UEFA Cup Winners' Cup]]
+| [[1991–92 European Cup Winners' Cup#First round|1R]]
+| {{flagicon|Northern Ireland}} [[Glenavon F.C.|Glenavon]]
+| style="text-align:center;background:#fdd;"| 2–3
+| style="text-align:center;background:#dfd;"| 2–1
+| style="text-align:center;"| 4–4 ([[Away goals rule|a]])
+| [[File:Symbol keep vote.svg|17px]]
+|-
+| [[1991–92 European Cup Winners' Cup#Second round|2R]]
+| {{flagicon|Italy}} [[A.S. Roma|Roma]]
+| style="text-align:center;background:#ffd;"| 1–1
+| style="text-align:center;background:#fdd;"| 2–5
+| style="text-align:center;"| 3–6
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2018–19 UEFA Europa League|2018–19]]
+| [[UEFA Europa League]]
+| [[2018–19 UEFA Europa League#First qualifying round|1QR]]
+| {{flagicon|Bulgaria}} [[PFC Slavia Sofia|Slavia Sofia]]
+| style="text-align:center;background:#fdd;"| 0–1
+| style="text-align:center;background:#fdd;"| 1–2
+| style="text-align:center;"| 1–3
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[2020–21 UEFA Europa League|2020–21]]
+| [[UEFA Europa League]]
+| [[2020–21 UEFA Europa League#First qualifying round|1QR]]
+| {{flagicon|Ireland}} [[Shamrock Rovers F.C.|Shamrock Rovers]]
+| colspan=2 style="text-align:center;"|
+| style="text-align:center;"|2–2 (11–12 [[Penalty shoot-out (association football)|p]])
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| rowspan=2|[[2024–25 UEFA Conference League|2024–25]]
+| rowspan=2|[[UEFA Conference League]]
+| [[2024–25 UEFA Conference League#Second qualifying round|2QR]]
+| {{flagicon|Austria}} [[FK Austria Wien|Austria Wien]]
+| style="text-align:center;background:#dfd;"| 2–1
+| style="text-align:center;background:#fdd;"| 3–4 {{aet}}
+| style="text-align:center;"| 5–5 {{pso|5–4}}
+| [[File:Symbol keep vote.svg|17px]]
+|-
+| [[2024–25 UEFA Conference League#Second qualifying round|3QR]]
+| | {{flagicon|SWE}} [[Djurgårdens IF Fotboll|Djurgården]]
+| style="text-align:center;background:#ffd;"| 1–1
+| style="text-align:center;background:#fdd;"| 1–3
+| style="text-align:center;"| 2–4
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| rowspan="2"|[[Template:2025–26 in European football (UEFA)|2025–26]]
+| [[UEFA Europa League]]
+| [[2025–26 UEFA Europa League#First qualifying round|1QR]]
+| {{flagicon|Ukraine}} [[FC Shakhtar Donetsk|Shakhtar Donetsk]]
+| style="text-align:center;background:#fdd;"| 0–6
+| style="text-align:center;background:#ffd;"| 0–0 
+| style="text-align:center;"| 0–6 
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| [[UEFA Conference League]]
+| [[2025–26 UEFA Conference League#Second qualifying round|2QR]]
+| {{flagicon|Netherlands}} [[AZ Alkmaar|AZ]]
+| style="text-align:center;background:#dfd;"| 4–3
+| style="text-align:center;background:#fdd;"| 0–5
+| style="text-align:center;"| 4–8
+| [[File:Symbol delete vote.svg|17px]]
+|-
+| rowspan="3"| [[2026–27 UEFA Conference League|2026–27]]
+| rowspan="3"| [[UEFA Conference League]]
+| [[2026–27 UEFA Conference League#First qualifying round|1QR]]
+| {{flagicon|Luxembourg}} [[Differdange 03]]
+| style="text-align:center;background:#ffd;"| 0–0 
+| style="text-align:center;background:#dfd;"| 3–1
+| style="text-align:center;"| 3–1
+| [[File:Symbol keep vote.svg|17px]]
+|-
+| [[2026–27 UEFA Conference League#Second qualifying round|2QR]]
+| {{flagicon|ISL}} [[Stjarnan (men's football)|Stjarnan]]
+| style="text-align:center;background:#fdd;"| 0–1
+| style="text-align:center;background:#dfd;"| 2–1 {{aet}}
+| style="text-align:center;"| 2–2 {{pso|5–4}}
+| [[File:Symbol keep vote.svg|17px]]
+|-
+| [[2026–27 UEFA Conference League#Second qualifying round|3QR]]
+| {{flagicon|CRO}} [[HNK Rijeka|Rijeka]]
+| style="text-align:center;background:#fdd;"| 0–1
+| style="text-align:center;background:#ffd;"| 1–1
+| style="text-align:center;"| 1–2
+| [[File:Symbol delete vote.svg|17px]]
+|}
+
+==Current squad==
+{{updated|11 September 2026}}<ref name="Joukkue - Ilves Tampere">{{Cite web |url=https://www.ilvesfootball.com/joukkue/ |title=Joukkue - Ilves Tampere |access-date=11 September 2026}}</ref>
+
+{{Fs start}}
+{{Fs player|no= 3|nat=FIN|pos=DF|name=[[Matias Rale]]}}
+{{Fs player|no= 4|nat=FIN|pos=DF|name=[[Oliver Pettersson]]}}
+{{Fs player|no= 5|nat=FIN|pos=DF|name=[[Sauli Väisänen]]|other=[[Captain (association football)|captain]]}}
+{{Fs player|no= 6|nat=VEN|pos=MF|name=[[Yiandro Raap]]}}
+{{Fs player|no= 8|nat=FIN|pos=MF|name=[[Maksim Stjopin]]}}
+{{Fs player|no= 9|nat=FIN|pos=FW|name=[[Teemu Hytönen]]}}
+{{Fs player|no=11|nat=CIV|pos=FW|name=Hamidou Coulibaly}}
+{{Fs player|no=12|nat=BIH|pos=GK|name=[[Faris Krkalić]]}}
+{{Fs player|no=13|nat=FIN|pos=DF|name=[[Kalle Wallius]]}}
+{{Fs player|no=14|nat=FIN|pos=MF|name=[[Anton Popovitch]]}}
+{{Fs player|no=15|nat=FIN|pos=MF|name=[[Lauri Ala-Myllymäki]]}}
+{{Fs mid}}
+{{Fs player|no=16|nat=FIN|pos=DF|name=[[Tatu Miettunen]]}}
+{{Fs player|no=17|nat=FIN|pos=FW|name=[[Stanislav Baranov]]}}
+{{Fs player|no=19|nat=CIV|pos=DF|name=[[Goudouss Bamba]]}}
+{{Fs player|no=22|nat=FIN|pos=MF|name=[[Oskari Multala]]}}
+{{Fs player|no=24|nat=FIN|pos=DF|name=[[Ville Kumpu]]}}
+{{Fs player|no=25|nat=FIN|pos=DF|name=[[Sebastian Suvanne]]}}
+{{Fs player|no=27|nat=CIV|pos=DF|name=Franck Kouakou}}
+{{Fs player|no=28|nat=FIN|pos=MF|name=[[Jesse Kilo]]}}
+{{Fs player|no=31|nat=FIN|pos=GK|name=[[Rasmus Leislahti]]}}
+{{Fs player|no=33|nat=CIV|pos=MF|name=Yacouba Sacko}}
+{{Fs end}}
+
+===On loan===
+{{Fs start}}
+{{Fs player|no= 1|nat=FIN|pos=GK|name=[[Otso Virtanen]]|other=at [[IF Gnistan|Gnistan]] until 31 December 2026}}
+{{Fs player|no= 2|nat=FIN|pos=DF|name=[[Eetu Turkki]]|other=at [[Turun Palloseura|TPS]] until 31 December 2026}}
+{{Fs player|no=|nat=FIN|pos=MF|name=Miko Koivuniemi|other=at [[Mikkelin Palloilijat|MP]] until 31 December 2026}}
+{{Fs player|no=20|nat=FIN|pos=MF|name=[[Otto Tiitinen]]|other=at [[Charlton Athletic F.C.|Charlton Athletic]] until 30 June 2027}}
+{{Fs player|no=10|nat=FIN|pos=FW|name=[[Roope Riski]]|other=at [[AC Oulu]] until 31 December 2026}}
+{{Fs player|no=33|nat=FIN|pos=FW|name=Oskari Paavola|other=at [[FC Haka|Haka]] until 31 December 2026}}
+{{Fs player|no=|nat=LVA|pos=FW|name=[[Nils Veinbergs]]|other=at [[Turun Palloseura|TPS]] until 31 December 2026}}
+{{Fs end}}
+
+==Management and boardroom==
+
+===Management and staff===
+{{Ilves sections}}
+''As of 8 July 2026.''<ref name="Joukkue - Ilves jalkapalloedustus">{{Cite web |url=https://www.ilvesfootball.com/valmennus-johto/ |title=Valmennus & johto - Ilves Tampere |access-date=7 February 2026}}</ref>
+{|
+|-
+|valign="top"|
+{| class="wikitable"
+|-
+!Name
+
+!Role
+|-
+|{{Flag icon|URU}} [[Camilo Speranza]]
+|Head coach
+|-
+|{{Flag icon|FIN}} Henri Jussila
+|Coach
+|-
+|{{Flag icon|FIN}} Jarkko Ojaniemi
+|Goalkeeping coach
+|-
+|{{Flag icon|FIN}} Ville Niemelä
+|Kit manager / Team manager
+|-
+|{{Flag icon|FIN}} Heli Rekimies
+|Fitness coach / Physiotherapist
+|-
+|{{Flag icon|FIN}} Jonne Väisänen
+|Doctor
+|-
+|{{Flag icon|FIN}} Jussi Saariaho
+|Physiotherapist
+|-
+|{{Flag icon|FIN}} Tiina Röning
+|Mental coach
+|}
+|}
+
+===Scouting===
+''As of 28 August 2024''<ref>[https://www.ilvesfootball.com/ilveksen-urheilujohdon-toimintaa-tukeva-scouting-tiimi-vahvistui-henri-maatalla/ Ilveksen urheilujohdon toimintaa tukeva scouting-tiimi vahvistui Henri Määtällä], ilvesfootball.com, 28 August 2024</ref>
+{|
+|-
+|valign="top"|
+{| class="wikitable"
+|-
+!Name
+
+!Role
+|-
+|{{Flag icon|FIN}} [[Jyrki Ahola]]
+|Scout
+|-
+|{{Flag icon|FIN}} [[Henri Määttä]]
+|Scout
+|-
+|{{Flag icon|FRA}} Simon Garnier
+|Scout
+|}
+|}
+
+===Boardroom===
+''As of 7 February 2026''<ref>{{cite web |url=http://ilvesedustus.fi/yhteystiedot/|publisher=Ilves |language=fi |access-date=7 February 2026|title=Yhteystiedot - Ilves Tampere}}</ref>
+{|
+|-
+|valign="top"|
+{| class="wikitable"
+|-
+!Name
+!Role
+|-
+|{{Flag icon|FIN}} Petri Ojala
+|Chairman
+|-
+|{{Flag icon|FIN}} Risto Niklas-Salminen
+|[[Chief Executive Officer]]
+|-
+|{{Flag icon|FIN}} [[Iikka Miettinen]]
+|[[Sporting director]]
+|-
+|{{Flag icon|FIN}} Sanna Rinne
+|[[Chief Financial Officer]]
+|-
+|}
+|}
+
+== Ilves/2 ==
+Ilves/2 is the reserve team of Ilves. The team plays in [[Kakkonen]] in 2026 season. It is coached by [[Pasi Tuutti]].<ref>[https://www.ilvesfootball.com/ilveksen-valmennukseen-muutoksia-henri-jussilan-ja-pasi-tuutin-roolit-vaihtuvat/ Ilveksen valmennukseen muutoksia], Ilves</ref>
+
+==Managers==
+*{{flagicon|Finland}} {{ill|Raimo Vasama|fi}} (1975)
+*{{flagicon|Finland}} [[Martti Halme]] (1976–1977)
+*{{flagicon|Finland}} [[Pertti Mäkipää]] (1978–1981)
+*{{flagicon|Finland}} [[Jussi Ristimäki]] (1982–1984)
+*{{flagicon|Finland}} {{ill|Turo Flink|fi}} (1985–1986)
+*{{flagicon|Finland}} {{ill|Harri Holli|fi}} (1987–1989)
+*{{flagicon|Finland}} [[Jussi Ristimäki]] (1990)
+*{{flagicon|Scotland}} [[Ian Crawford (footballer)|Ian Crawford]] (1991–1992)
+*{{flagicon|Finland}} [[Matti Paatelainen]] (1993)
+*{{flagicon|Finland}} {{ill|Markku Wacklin|fi}} (1993–1994)
+*{{flagicon|Finland}} Esa Kuusisto (1995–1996)
+*{{flagicon|Finland}} {{ill|Arto Uimonen|fi}} (1997)
+*{{flagicon|Finland}} [[Ari Hjelm]] (1997)
+*{{flagicon|Finland}} Kari Nikkilä (1998)
+*{{flagicon|Finland}} Janne Salovaara / Jarmo Virtanen (2001)
+*{{flagicon|Finland}} [[Veijo Visuri]] (2008–2009)
+*{{flagicon|Russia}} {{flagicon|Finland}} [[Valeri Popovitch]] (2010–11)
+*{{flagicon|Finland}} {{ill|Mika Malinen|fi}} (2012–2014)
+*{{flagicon|England}} [[Keith Armstrong (footballer)|Keith Armstrong]] (2015)
+*{{flagicon|Finland}} [[Jarkko Wiss]] (2016–2021)
+*{{flagicon|Finland}} [[Toni Kallio]] (2021–2023)
+*{{flagicon|Finland}} [[Joonas Rantanen]] (2023–2025)
+*{{flagicon|Finland}} [[Joni Lehtonen]] (2023, 2026)
+*{{flagicon|Uruguay}} [[Camilo Speranza]] (2026–present)
+
+==See also==
+* [[Ilves (ice hockey)]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{official website|http://www.ilvesedustus.com/}} {{in lang|fi}}
+
+{{Veikkausliiga}}
+{{Finnish Champions in Football}}
+
+{{DEFAULTSORT:Ilves, FC}}
+[[Category:Football clubs in Finland]]
+[[Category:Sport in Tampere]]
+[[Category:Sports clubs and teams in Pirkanmaa]]
+[[Category:1931 establishments in Finland]]
+[[Category:Association football clubs established in 1931]]
+[[Category:Ilves (football)| ]]

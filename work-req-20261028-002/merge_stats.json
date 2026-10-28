@@ -1,0 +1,44 @@
+{
+  "2016": {
+    "conflict": 13,
+    "discovered": 198,
+    "venue_confirmed": 152,
+    "round_conflict_rows": 13,
+    "complete": 165,
+    "venue_moved": 22,
+    "partial": 20,
+    "venue_neutral": 24,
+    "expected": 198,
+    "missing": 0,
+    "unavailable": 0,
+    "blocked": 0
+  },
+  "2017": {
+    "conflict": 102,
+    "discovered": 198,
+    "venue_confirmed": 175,
+    "round_conflict_rows": 102,
+    "venue_moved": 9,
+    "venue_neutral": 14,
+    "partial": 10,
+    "complete": 86,
+    "expected": 198,
+    "missing": 0,
+    "unavailable": 0,
+    "blocked": 0
+  },
+  "2018": {
+    "complete": 122,
+    "discovered": 198,
+    "venue_confirmed": 173,
+    "partial": 15,
+    "venue_neutral": 21,
+    "venue_moved": 4,
+    "conflict": 61,
+    "round_conflict_rows": 61,
+    "expected": 198,
+    "missing": 0,
+    "unavailable": 0,
+    "blocked": 0
+  }
+}
