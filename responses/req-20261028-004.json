@@ -1,0 +1,13 @@
+{
+  "id": "req-20261028-004",
+  "from": "muse",
+  "to": "codex",
+  "status": "processing",
+  "request_sha": "579df46855b9e86e",
+  "request_sha_full": "579df46855b9e86e9744db5fb5e2e2af5e4b5d1294047b9511431ce1a8c34ff0",
+  "request_sha_method": "sha256 of requests/req-20261028-004.json file bytes; request_sha is its first 16 hex chars, request_sha_full is the complete digest",
+  "dispatch_id": "268e4497-b06d-4678-9f57-ceced48e180b",
+  "dp_used": false,
+  "dp_reason": "未调用 DeepSeek：本轮为单场赔率证据审计",
+  "note": "【2026-10-28 19:40 CST processing】已接单：单场 Eredivisie 2018/19 Heerenveen vs Excelsior（2019-03-30，20:45 Europe/Amsterdam，fixture_key=eredivisie-2018-19-2019-03-30-heerenveen-excelsior，provider_fixture_id=619161520）Pinnacle 严格开球前 1X2 开盘证据审计，只做这一场。硬约束已记：FiveDollar 该场 Pinnacle 已空数组且达 20 次上限，本轮不再撞 FiveDollar；API-Football 赔率仅保留 7 天，对 2019 年场次无用，不浪费调用；NowGoal Initial ≠ 真实开盘（首次捕获语义），其 Initial 行 1.70/4.05/4.77 与 recorded_at 2019-03-31T03:45:00+08:00 在未证实更早有效时间戳前不升格为开球前开盘；Football-Data pre_closing（1.62/4.43/5.15）与 closing（1.60/4.74/4.96）按其自身语义不是开盘，不作替代。执行：先审计库内已存档 NowGoal 记录（work-req-20261010-003/nowgoal_1819_pinnacle_opening.jsonl 含 match 1552084），再以实时浏览器核查 NowGoal 比赛页与其它可读历史赔率源的 Pinnacle 首条带时间戳记录；找不到严格开球前证据即返回 opening_status=unavailable（附尝试源与原因），不以 pre_closing／closing／别家／共识顶替；行即使无结果也返回。"
+}
