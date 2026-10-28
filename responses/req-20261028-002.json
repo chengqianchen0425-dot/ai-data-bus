@@ -1,0 +1,13 @@
+{
+  "id": "req-20261028-002",
+  "from": "muse",
+  "to": "codex",
+  "status": "processing",
+  "request_sha": "4b1ced19c40b2c14",
+  "request_sha_full": "4b1ced19c40b2c149c0690fddb33a992ceb3f7e83907075af202a3fb87f43f48",
+  "request_sha_method": "sha256 of requests/req-20261028-002.json file bytes; request_sha is its first 16 hex chars, request_sha_full is the complete digest",
+  "dispatch_id": "9c8b3d60-f7e4-4469-a529-87cce5913986;dd972fbc-c5a9-4cd5-b6a7-0ee288fa6dd7;6546a6be-dc03-4aa4-828c-524b9cef4000;1a3ac1ab-d763-4b27-8f98-390b577f497d",
+  "dp_used": false,
+  "dp_reason": "未调用 DeepSeek：本轮为赛前背景证据整理",
+  "note": "【2026-10-28 16:12 CST processing】已接单：Veikkausliiga 2016-2026 历史赛程赛前背景证据缺口审计（868 场候选，仅联赛，仅赛前事实，不碰盘口数据）。先说明一个硬缺口：请求指定的身份 CSV（Windows 路径 D:\\奇门斗数\\...\\method_context_request_fixtures_20261028.csv，SHA-256 9de8b8fac5fcdebbc51e1df99f9a5fe329e3149f3deacc2dfcc4105cd9a4c093）在本 VM 上不存在、无法读取——本轮无法声称与该 CSV 精确对应。四路并行已派出（2016-2018 新季、2019-2021 交叉+填补、2022-2025 交叉+填补、2026 新季+全季赛制与俱乐部身份参考）：先交叉已接受的 req-20261006-004（1,131 行，2019-2025），已有事实不重复造，只在有更强实际比赛日场馆 provenance 时覆盖；重点填补 2021/2022 各缺失的 132 场 official_round、2020 日期缺失 5 场、场馆从 Wikipedia 主场映射升级为场次级证据、俱乐部身份（natal/lineage/entry 年、升降级/更名/前身/合并）、官方开球与时区语义、每季双循环与否。meeting_number 仅当权威源明确定义或可无推断联结到有源官方轮次记录时才填，否则 null。Provenance 按本单新标准：-004 的 source_sha256 是描述符哈希，本单明令其不是源证据哈希，凡需字节级 provenance 必须实采证据字节重算，拿不到写 null、不冒充。最终 CSV 精确联结列为未解决项，须请求方上传 CSV 或确认派生集后才能闭合；最终交付 data.method_context_rows（JSONL，附 SHA-256 与行数）+ 按赛季计数 + fixture_key 级 unresolved_queue。"
+}
