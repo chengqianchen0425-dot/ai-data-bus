@@ -1,0 +1,46 @@
+{
+  "id": "req-20261028-001",
+  "type": "deep_research",
+  "target": "muse",
+  "from": "codex",
+  "created_at": "2026-10-28T14:04:19+08:00",
+  "params": {
+    "topic": "Eliteserien 2018-2025 Qimen chart input venue and coordinate provenance gap audit",
+    "execution_note": "Incremental request for raw facts required before local Qimen chart generation. Reuse the accepted 1,920-row fixture dataset from req-20261017-002 and the local evidence copy at D:\\奇门斗数\\work\\eliteserien_historical_2018_2025_5dollar_20261027\\evidence\\muse\\fixtures_2018_2025.jsonl. Do not repeat fixture discovery or return already accepted kickoff, timezone, round, team, or meeting-number values unless needed to uniquely crosswalk a venue record. Existing venue coordinates were geocoded but lack sufficient fixture-level direct source provenance and actual-matchday/neutral-venue verification. The exact scope is Norway calendar seasons 2018 through 2025 inclusive; exclude 2026 completely.",
+    "questions": [
+      "For every existing Eliteserien record_key in seasons 2018-2025, audit the actual matchday venue used for that exact fixture. Return the record_key, season, local_date, home_team, away_team, kickoff_local, official round, provider_fixture_id, source venue name/city, verified actual_matchday_venue name/city, and venue_status (confirmed, neutral, moved, conflict, unavailable, or blocked). Preserve the source spelling and all competing venue candidates; do not substitute the club's default stadium when the fixture evidence does not establish the actual venue.",
+      "For every confirmed or competing actual venue, return WGS84 latitude and longitude with field-level source_url, final_url, retrieved_at with timezone, field_locator, source/value, and SHA-256 of the captured source evidence. Prefer official NFF match/tournament pages and club/venue sources for which ground was used; use direct map/geocoding sources for coordinates and state the match quality. Preserve nulls and conflicts; do not silently choose among coordinates or venue identities.",
+      "Return a fixture row even where venue or coordinates are unavailable. Do not infer neutral status, a venue change, or coordinates from the home club's normal ground, a final result, standings, odds, or another fixture. If evidence is shared by multiple fixtures at the same verified ground, retain the source evidence and explicitly map it to each applicable record_key without claiming fixture-specific confirmation that the source does not provide.",
+      "Use the accepted fixture artifact as the identity baseline and return only venue-related fields and the crosswalk needed to join them. Do not repeat or modify the existing local kickoff, Europe/Oslo timezone, official-round, meeting-number, or team identity values. The local charting pipeline will compute true solar time and generate Qimen palaces from verified kickoff and venue longitude; Muse must not calculate true solar time or return any Qimen/chart interpretation.",
+      "Provide expected, discovered, confirmed, neutral, moved, conflict, unavailable, blocked, and missing counts by season and in total. Expected is 240 fixtures per season for the eight in-scope seasons. Include an unresolved_queue with each unresolved record_key, field, reason, attempted source, and next action. If row-level output is too large, write a JSONL artifact under work-req-20261028-001/ and report its SHA-256, row count, and schema.",
+      "Strictly exclude all 2026 fixtures and any odds, scores, results, post-match status, final standings, pre-kickoff standings, Qimen chart output, palaces, stems, doors, stars, deities, five-element interpretation, prediction direction, probability, Snapshot, Outcome, Review, or Gold fields. This request is for source-backed pre-match chart inputs only; do not write to project files or formal records."
+    ],
+    "scope": {
+      "competition_key": "eliteserien",
+      "competition_name": "Eliteserien",
+      "country": "Norway",
+      "timezone": "Europe/Oslo",
+      "seasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+      "season_type": "Norway calendar-year seasons",
+      "expected_fixtures_by_season": 240,
+      "expected_fixtures_total": 1920,
+      "exclude_seasons": [2026],
+      "league_only": true,
+      "exclude_competitions": ["Norwegian Cup", "European competitions", "friendlies", "other Norwegian divisions"],
+      "parent_request_ids": ["req-20261017-001", "req-20261017-002"]
+    },
+    "output_contract": {
+      "format": "json_report_plus_fixture_venue_evidence_jsonl_and_unresolved_queue",
+      "qimen_chart_generation": "excluded_local_pipeline_only",
+      "pre_match_inputs_only": true,
+      "preserve_nulls": true,
+      "conflicts_not_auto_resolved": true,
+      "required_provenance": ["source_url", "final_url", "retrieved_at", "field_locator", "source_sha256"],
+      "required_statuses": ["ok", "unavailable", "blocked", "conflict", "parse_failed"],
+      "include_expected_discovered_complete_partial_missing_audit": true,
+      "formal_model_unchanged": true,
+      "promotion_allowed": false
+    }
+  },
+  "dp_used": false
+}
