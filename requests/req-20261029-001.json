@@ -1,0 +1,54 @@
+{
+  "id": "req-20261029-001",
+  "type": "deep_research",
+  "params": {
+    "topic": "Bundesliga 2018-19 exact kickoff provenance for local pre-match Qimen chart inputs",
+    "questions": [
+      "Return row-level evidence for all 306 Bundesliga league fixtures in season 2018-19, matched exactly to the supplied Football-Data D1.csv by season, match date, home team, and away team. The local baseline file is D:\\奇门斗数\\work\\bundesliga-eight-season-source-20261002\\201819_D1.csv with SHA-256 f03ee41b741aca9c43cbafb800bbc6f01ca9d7ed19c1a9dd4c309389280cfe11. Do not include cups, playoffs, or other competitions.",
+      "For each exact fixture return kickoff_local, IANA timezone, official_round, source_url, final_url, retrieved_at, field_locator, and source_sha256 of the exact source bytes when available. Prefer original DFL/Bundesliga schedule releases. Do not substitute a regular league kickoff pattern for a fixture-specific source.",
+      "The known official schedule coverage candidates are DFL matchdays 1-6 (https://media.dfl.de/sites/3/2018/11/Bundesliga_2018-19_Spieltage_1-6.pdf), matchdays 7-14 (https://media.dfl.de/sites/3/2018/11/Bundesliga_2018-19_Spieltage_7-14.pdf), matchdays 15-21 (https://media.bundesliga-gruppe.de/sites/2/2018/11/Bundesliga_2018-19_Spieltage_15-21-1.pdf), matchdays 22-28 (DFL announcement https://www.bundesliga-gruppe.de/aktuelles/dfl-terminiert-spiele-der-bundesliga-und-2-bundesliga-bis-zum-28-spieltag/), and matchdays 29-34 (https://media.dfl.de/sites/2/2019/03/Bundesliga_Spieltage_29-34.pdf). Verify these URLs and coverage independently; return an alternative official source where a candidate is unavailable or incomplete.",
+      "Preserve all 306 target fixtures in the response, including unavailable or conflict rows. If two authoritative sources disagree on kickoff, retain both values and source evidence and place the fixture in unresolved_queue; do not choose one automatically. A source_sha256 that cannot be computed from exact fetched bytes must be null with a specific reason.",
+      "Do not return or infer match outcomes, odds, Qimen charts, palaces, model tokens, prediction directions, Miss labels, probabilities, Outcome, Review, or Gold. This request is only for pre-match fixture facts and source provenance."
+    ],
+    "source_hints": [
+      "https://www.dfl.de/",
+      "https://www.bundesliga.com/",
+      "https://www.bundesliga-gruppe.de/"
+    ]
+  },
+  "created_at": "2026-10-29T13:37:59+08:00",
+  "scope": {
+    "competition_key": "bundesliga",
+    "country": "Germany",
+    "season": "2018-19",
+    "league_only": true,
+    "football_only": true,
+    "incremental_only": true,
+    "expected_fixtures": 306,
+    "baseline_file_sha256": "f03ee41b741aca9c43cbafb800bbc6f01ca9d7ed19c1a9dd4c309389280cfe11",
+    "required_fields": [
+      "kickoff_local",
+      "timezone_iana",
+      "official_round",
+      "source_url",
+      "final_url",
+      "retrieved_at",
+      "field_locator",
+      "source_sha256"
+    ]
+  },
+  "output_contract": {
+    "format": "json_report_plus_row_level_evidence_and_unresolved_queue",
+    "preserve_nulls": true,
+    "conflicts_not_auto_resolved": true,
+    "required_provenance": [
+      "source_url",
+      "final_url",
+      "retrieved_at",
+      "field_locator",
+      "source_sha256"
+    ],
+    "formal_model_unchanged": true,
+    "promotion_allowed": false
+  }
+}
