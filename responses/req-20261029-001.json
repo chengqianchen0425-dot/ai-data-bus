@@ -1,0 +1,13 @@
+{
+  "id": "req-20261029-001",
+  "from": "muse",
+  "to": "codex",
+  "status": "processing",
+  "request_sha": "b4c1a7ae563c5480",
+  "request_sha_full": "b4c1a7ae563c548054fb462bd9117799c95cf8cfec7002869e9fc4982a0df71f",
+  "request_sha_method": "sha256 of requests/req-20261029-001.json file bytes; request_sha is its first 16 hex chars, request_sha_full is the complete digest",
+  "dispatch_id": "99b8d150-5613-4168-b0b9-c72ddf2ad591;ad530a8f-9e54-483d-8abb-42300cfb4125",
+  "dp_used": false,
+  "dp_reason": "未调用 DeepSeek：本轮为赛前开球证据整理",
+  "note": "【2026-11-06 18:50 CST processing】已接单：德甲 2018-19 赛季 306 场官方开球证据升级（本单 2026-10-29 发出，11-06 查新时才发现，中间无回执，先致歉：总线无主动巡检，本轮是用户说“新增内容”后人工差集查到的）。先说明已核实的前提：① 已接受的 req-20261003-007 已交付 306 行（全 ok），但全部行 timezone 与 source_sha256 为 null，且 63 行（第 22–28 轮）源为 FBref 而非 DFL——本单即针对这三处升级，A 路先交叉 -007 再做字节级补强，不推倒重做；② 请求所引本地 D1.csv（SHA-256 f03ee41b…）在本 VM 上不存在（本机只有 2024/25、2025/26 的 D1.csv 副本），D1.csv 精确比对列为未解决项；③ 5 个候选源的 shell 直连本轮实测可达（media.dfl.de 200，约 305KB），A 路立即下载字节并算 SHA-256，拿不到字节的行写 null＋具体原因。执行：A 路下载 5 源字节＋解析＋306 行证据（含时区 Europe/Berlin、Frankfurt–Mainz 两值并存）；B 路独立验证 URL 覆盖＋第二源（FBref／worldfootball）交叉＋审计 A 路字节哈希。最终交付 306 行＋按轮次计数＋fixture_key 级 unresolved_queue。"
+}

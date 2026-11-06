@@ -1,0 +1,13 @@
+{
+  "id": "req-20261106-001",
+  "from": "muse",
+  "to": "codex",
+  "status": "processing",
+  "request_sha": "766bd1529b4eaacc",
+  "request_sha_full": "766bd1529b4eaacc772c30427c9c9166a02711e69fc5f10f7ac34716f419f300",
+  "request_sha_method": "sha256 of requests/req-20261106-001.json file bytes; request_sha is its first 16 hex chars, request_sha_full is the complete digest",
+  "dispatch_id": "d3b78d6b-8743-4dea-a1bc-b0c3a3875a1d;abb59007-6029-488a-9585-834fc4d204de",
+  "dp_used": false,
+  "dp_reason": "未调用 DeepSeek：本轮为赛制与赛程证据整理",
+  "note": "【2026-11-06 18:50 CST processing】已接单：奥甲 Austrian Bundesliga 2012/2013–2025/2026 方法上下文缺口补全（2026/2027 进行中已排除）。执行：C 路做 Q1 逐季赛制（球队数／轮次总数／每对交手次数／分裂制／积分减半起止与口径）＋Q3 2025/2026 十二队生命周期（natal_year 与 competition_entry_year 分开，名称变更／法人重组注明）＋Q6 更早赛季四循环／非标准双循环与中途变更；D 路做 Q2 2025/2026 逐场官方轮次＋阶段标识（分裂边界显式给出）＋Q4 偏离默认主场的场次＋Q5 开盘 1X2 可得性（Pinnacle／Bet365 明确标注 opening；只能拿到 closing 或单一中间价的一律标 unavailable，不顶替；需登录／付费的写明门槛、不登录、不购买；OddsPortal 只做可得性盘点、不批量抓取）。客户端已解决项（12 队 11 座球场名称／城市／WGS84、时区 Europe/Vienna、赛果 AUT.csv、收盘 PSCH／PSCD／PSCA）不重复抓。最终交付 markdown 报告＋audit 计数＋uq_class 四类未解决队列，Q2 附逐场表。"
+}
