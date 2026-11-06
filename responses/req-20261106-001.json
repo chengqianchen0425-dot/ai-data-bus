@@ -2,12 +2,258 @@
   "id": "req-20261106-001",
   "from": "muse",
   "to": "codex",
-  "status": "processing",
+  "status": "ok",
   "request_sha": "766bd1529b4eaacc",
   "request_sha_full": "766bd1529b4eaacc772c30427c9c9166a02711e69fc5f10f7ac34716f419f300",
   "request_sha_method": "sha256 of requests/req-20261106-001.json file bytes; request_sha is its first 16 hex chars, request_sha_full is the complete digest",
   "dispatch_id": "d3b78d6b-8743-4dea-a1bc-b0c3a3875a1d;abb59007-6029-488a-9585-834fc4d204de",
   "dp_used": false,
   "dp_reason": "未调用 DeepSeek：本轮为赛制与赛程证据整理",
-  "note": "【2026-11-06 18:50 CST processing】已接单：奥甲 Austrian Bundesliga 2012/2013–2025/2026 方法上下文缺口补全（2026/2027 进行中已排除）。执行：C 路做 Q1 逐季赛制（球队数／轮次总数／每对交手次数／分裂制／积分减半起止与口径）＋Q3 2025/2026 十二队生命周期（natal_year 与 competition_entry_year 分开，名称变更／法人重组注明）＋Q6 更早赛季四循环／非标准双循环与中途变更；D 路做 Q2 2025/2026 逐场官方轮次＋阶段标识（分裂边界显式给出）＋Q4 偏离默认主场的场次＋Q5 开盘 1X2 可得性（Pinnacle／Bet365 明确标注 opening；只能拿到 closing 或单一中间价的一律标 unavailable，不顶替；需登录／付费的写明门槛、不登录、不购买；OddsPortal 只做可得性盘点、不批量抓取）。客户端已解决项（12 队 11 座球场名称／城市／WGS84、时区 Europe/Vienna、赛果 AUT.csv、收盘 PSCH／PSCD／PSCA）不重复抓。最终交付 markdown 报告＋audit 计数＋uq_class 四类未解决队列，Q2 附逐场表。"
+  "data": {
+    "topic": "Austrian Bundesliga method context 2012/2013-2025/2026 (2026/2027 excluded as in progress)",
+    "report": "work-req-20261106-001/austrian_method_context_report.md",
+    "rounds_file": "work-req-20261106-001/austrian_2025_26_rounds.csv",
+    "rounds_sha256": "01e0d5b48980a6a40766803a9216d544d9fc8a1b2a68ebede2bc497321c960e4",
+    "audit": [
+      {
+        "item": "Q1 season formats 2012/13-2025/26",
+        "expected": 14,
+        "discovered": 14,
+        "complete": 14,
+        "partial": 0,
+        "missing": 0
+      },
+      {
+        "item": "Q2 2025/2026 per-fixture official_round + competition_phase",
+        "expected": 192,
+        "discovered": 192,
+        "complete": 192,
+        "partial": 0,
+        "missing": 0
+      },
+      {
+        "item": "Q3 natal_year (12 clubs)",
+        "expected": 12,
+        "discovered": 12,
+        "complete": 12,
+        "partial": 0,
+        "missing": 0
+      },
+      {
+        "item": "Q3 competition_entry_year (12 clubs)",
+        "expected": 12,
+        "discovered": 12,
+        "complete": 12,
+        "partial": 0,
+        "missing": 0
+      },
+      {
+        "item": "Q4 matches deviating from default home ground",
+        "expected": 4,
+        "discovered": 4,
+        "complete": 4,
+        "partial": 0,
+        "missing": 0
+      },
+      {
+        "item": "Q5 opening-odds availability (per source)",
+        "expected": 6,
+        "discovered": 6,
+        "complete": 6,
+        "partial": 0,
+        "missing": 0
+      },
+      {
+        "item": "Q6 earlier-season formats / mid-season changes (2012/13-2017/18)",
+        "expected": 6,
+        "discovered": 6,
+        "complete": 6,
+        "partial": 0,
+        "missing": 0
+      }
+    ],
+    "unresolved_queue": [
+      {
+        "uq_id": "U1",
+        "uq_class": "pending_work",
+        "item": "Official bundesliga.at schedule page per-fixture round labels",
+        "status": "resolved",
+        "detail": "Live-browser recheck 2026-11-06 confirmed the official page renders per-round data and the split boundary; D-route 'JS shell' finding applied to the text layer only."
+      },
+      {
+        "uq_id": "U2",
+        "uq_class": "pending_work",
+        "item": "Kickoff times for 2025/2026 fixtures",
+        "detail": "Q2 as specified asks only for official_round + competition_phase, not kickoff times; not extracted per-fixture. Does not affect the Q2 delivery."
+      },
+      {
+        "uq_id": "U3",
+        "uq_class": "pending_work",
+        "item": "OddsPortal / BetExplorer single-match opening display and login threshold",
+        "status": "resolved",
+        "detail": "Live-browser recheck 2026-11-06: OddsPortal shows bet365 opening on click, no login; Pinnacle absent on the sampled match. BetExplorer shows no opening odds; Pinnacle absent."
+      },
+      {
+        "uq_id": "U4",
+        "uq_class": "pending_work",
+        "item": "Football-Data AUT.csv header independent re-check",
+        "detail": "Direct fetch of the standard path returned 302 then 404; conclusion (no opening columns) relies on client confirmation. Low priority; does not change the no-opening-columns conclusion."
+      },
+      {
+        "uq_id": "U5",
+        "uq_class": "pending_work",
+        "item": "Per-season independent season-page evidence for 2018/19-2024/25",
+        "detail": "Covered by a single OFBL official Ligaformat statement ('format in force since 2018/19'). Re-grab each season's German Wikipedia season page if per-season independent evidence is required."
+      },
+      {
+        "uq_id": "U6",
+        "uq_class": "pending_work",
+        "item": "2014/15 + 2015/16 EN Wikipedia evidence is a cached fetch (2026-09-24 / 2026-09-09), not a 2026-11-06 fresh fetch",
+        "detail": "C-route wording 'newly fetched this round' was inaccurate; corrected in the merged report. Historical season pages are static, conclusion unaffected. Re-fetch if the requester requires a same-day retrieval stamp."
+      },
+      {
+        "uq_id": "X1",
+        "uq_class": "out_of_scope",
+        "item": "2026/2027 season (in progress, 42 matches only)",
+        "detail": "Excluded by the request itself."
+      },
+      {
+        "uq_id": "X2",
+        "uq_class": "out_of_scope",
+        "item": "European play-off 3 matches (2026-05-19 / 05-22 / 05-25)",
+        "detail": "Not league rounds; recorded in Q2 notes only, not in the 192-row CSV."
+      },
+      {
+        "uq_id": "X3",
+        "uq_class": "out_of_scope",
+        "item": "OFB Cup fixture venues",
+        "detail": "Out of scope; not checked."
+      }
+    ],
+    "q1_format": {
+      "2012_13_to_2017_18": "10 teams, 36 rounds, quadruple round-robin (4 meetings per pair, 2 home + 2 away), 180 matches per season, no split, no points halving",
+      "2018_19_to_2025_26": "12 teams, 32 rounds (regular season Grunddurchgang 22 + final round 10), split after round 22 into Meistergruppe / Qualifikationsgruppe (6 teams each, 10 more rounds, rounds 23-32), 32 matches per team, 192 league matches per season",
+      "points_halving": {
+        "in_force": "2018/19 to 2025/26 (last season); abolished from 2026/27 (full points carried into Finaldurchgang, bundesliga.at 2026/27 Spielbetriebsrichtlinien section 3b)",
+        "rule": "rounded DOWN (abgerundet); a club rounded down ranks ahead on equal points (the half point is the first tiebreak)",
+        "evidence": "bundesliga.at 2025/26 season guide, OFBL 2016 reform details (bundesliga.at 2016-12-02), German Wikipedia 2025/26 Modus section, Sky Sport Austria 2026-05-09, plus empirical 2019/20 cases (Salzburg 48->24, Hartberg 29->14, Austria Wien 25->12); official table footnote on bundesliga.at confirms the half-point rounding-down wording",
+        "rejected": "austriabuliwetten.com and statsultra.com claim rounding UP (45 -> 23); secondary betting-site claims, contradicted by official sources and empirical cases",
+        "wording_note": "The 2014/15 season page literally says each pair met twice (home + away), contradicting the 36-round / 36-matches-per-team / 180-match arithmetic; the 2015/16 page explicitly says twice home and twice away. Ruled 4 meetings per pair on the explicit 2015/16 wording plus six-season arithmetic; the 2014/15 wording is treated as an error / half-season description."
+      }
+    },
+    "q2_2025_26": {
+      "rounds_rows": 192,
+      "regular_season": "Grunddurchgang rounds 1-22, 2025-08-01 to 2026-03-08, 132 matches",
+      "split_boundary": "after round 22, points halved",
+      "split_groups": "Meistergruppe (top 6: Sturm Graz, Red Bull Salzburg, LASK, Austria Wien, Rapid Wien, Hartberg) and Qualifikationsgruppe (bottom 6: WSG Tirol, Altach, Ried, Wolfsberger AC, Grazer AK, BW Linz), 10 rounds each (rounds 23-32), 30 matches per group",
+      "last_rounds": "Meistergruppe 2026-05-17; Qualifikationsgruppe 2026-05-16",
+      "checks": "6 matches per regular round, 3 per group per split round; every team 32 matches (16 home / 16 away); no duplicate (date, home, away); date range 2025-08-01 to 2026-05-17",
+      "postponed": "R4 Sturm Graz-WSG Tirol moved from 2025-08-24 to 2025-12-03 (Sturm preparing for a Champions League play-off second leg vs Bodo/Glimt); venue unchanged (Merkur Arena)",
+      "european_playoff": "3 matches, NOT league rounds, NOT in the CSV: semi 2026-05-19 Ried-Wolfsberger AC; final legs 2026-05-22 Ried-Rapid Wien and 2026-05-25 Rapid Wien-Ried",
+      "source_note": "Primary source RSSSF Austria 2025/26 full round table; cross-checked against Simple Wikipedia rounds 1-24 and bundesliga.at season explainer. Official schedule page labels were NOT taken per-fixture from the official page in the text layer (JS shell); live-browser recheck 2026-11-06 confirmed the official page renders per-round data and the split boundary (see browser_verification)."
+    },
+    "q3_clubs": {
+      "natal_year": "12/12 verified",
+      "competition_entry_year": "12/12 verified",
+      "table": "work-req-20261106-001/austrian_format_clubs.md",
+      "highlights": [
+        "Salzburg: founded 1933-09-13 as SV Austria Salzburg, first top flight 1953/54; Red Bull takeover 2005-04-06, OFB ordered the 'founded 2005' claim removed; fan-founded SV Austria Salzburg is a separate club",
+        "Grazer AK: original entity first top flight 1951/52, dissolved 2012; phoenix entity back in the Bundesliga 2024/25",
+        "LASK and Sturm Graz first top-flight seasons in the Gauliga Ostmark era (1940/41 and 1941/42); post-war national-league first seasons 1949/50 for both",
+        "WSG Tirol is the Wattens entity (founded 1930, first top flight 1969/70), NOT Wacker Innsbruck; SSW Innsbruck merger titles 1971-84 are not counted for WSG",
+        "WAC: independent first top flight 2012/13 (2007-12 cooperation team with St. Andra, separate legal entities)"
+      ]
+    },
+    "q4_venues": {
+      "deviating_matches": 4,
+      "club": "TSV Hartberg (Profertil Arena under renovation)",
+      "temporary_venue": "Datenpol Arena (Bundesstadion Sudstadt), Maria Enzersdorf",
+      "matches": [
+        {
+          "round": 3,
+          "date": "2025-08-16",
+          "opponent": "FC Red Bull Salzburg"
+        },
+        {
+          "round": 5,
+          "date": "2025-08-31",
+          "opponent": "SK Rapid Wien"
+        },
+        {
+          "round": 7,
+          "date": "2025-09-20",
+          "opponent": "Wolfsberger AC"
+        },
+        {
+          "round": 12,
+          "date": "2025-11-01",
+          "opponent": "FK Austria Wien"
+        }
+      ],
+      "plan_vs_actual": "Season plan was only 3 Sudstadt home matches (Salzburg, Rapid, WAC) with renovation due 1 Nov; ligaportal on 2025-09-20 called R7 the official third and supposedly last Sudstadt home match, but renovation was late and R12 (2025-11-01 vs Austria Wien) was still in Sudstadt; kicker called R12 the last home match in Sudstadt. Actual total is 4. The two 'last match' wordings refer to different reference points (plan vs actual) and are preserved as-is, not reconciled.",
+      "returned": "R14 2025-11-22 vs SV Ried back at Profertil Arena; official reopening 2025-11-30 R15 vs SK Sturm Graz",
+      "non_deviations": "Sturm/GAK sharing Merkur Arena is the season default (12 teams, 11 stadiums, client-verified), not a deviation; WSG Tirol Tivoli Innsbruck is the default home; R4 Sturm-WSG postponement changed date only; LiveScore had mislabelled the 2025-11-01 match as Profertil Arena (stale data), kicker (Datenpol Arena) prevails",
+      "scope": "league 192 matches only; OFB Cup fixtures not checked"
+    },
+    "q5_opening_odds": {
+      "conclusion": "No source in the text layer cleanly provides opening-labelled Pinnacle/Bet365 pre-match 1X2. After live-browser recheck: OddsPortal single-match pages show bet365 opening odds on click (no login); Pinnacle did not appear on the sampled match on either OddsPortal or BetExplorer; BetExplorer shows no opening odds at all.",
+      "per_source": [
+        {
+          "source": "Football-Data AUT.csv",
+          "verdict": "unavailable",
+          "reason": "Closing columns only (PSCH/PSCD/PSCA and B365H/B365D/B365A); no opening columns in the schema (client-confirmed). Direct fetch of the standard path returned 302 then 404, so the header could not be independently re-verified this round."
+        },
+        {
+          "source": "OddsPortal",
+          "verdict": "available for bet365 (per-fixture click, no login); Pinnacle unavailable on the sampled match",
+          "reason": "Season page text layer contains 'Opening odds'. Sampled match Sturm Graz-Rapid Wien 2026-05-17: default 1X2 table has no static Opening odds column; clicking the bet365 home-win odds opens an ODDS MOVEMENT popup reading 'Opening odds: 11 May, 16:00 2.05' (and '17 May, 20:01 2.05 0.00'). No login needed (LOGIN button shown, content fully visible while logged out). Pinnacle did NOT appear in the match's All Bookies 1X2 table. Single-match evidence; not generalized to 'Pinnacle never appears on OddsPortal for the Austrian Bundesliga'. ToS section 2.11 forbids scraping/aggregation without written consent: single-match compliant reading only, no bulk extraction."
+        },
+        {
+          "source": "BetExplorer",
+          "verdict": "unavailable",
+          "reason": "Sampled match (same fixture): Odds Comparison (1X2) table only, one value per bookmaker with up/down arrows, no opening value, no 'Opening' wording, no archive-odds section; hovering bet365 odds shows no popup; clicking bet365 odds opens an affiliate link that returned 500. Pinnacle did not appear. Footer: 'Betting odds service provided in cooperation with OddsPortal.com'."
+        },
+        {
+          "source": "NowGoal/Goaloo",
+          "verdict": "unavailable",
+          "reason": "Has an Initial column, but Initial is the data feed's first capture, not a true opening (established in req-20261028-004). Timestamps can prove a quote predates kickoff, but the label is Initial, never opening."
+        },
+        {
+          "source": "SoccerPunter",
+          "verdict": "unavailable (paywall)",
+          "reason": "Odds history is Platinum-member only; Pinnacle column is Premium. No login / purchase / subscription in this round."
+        },
+        {
+          "source": "FBref / Sportradar / thefishy etc.",
+          "verdict": "unavailable",
+          "reason": "No public opening-odds data."
+        }
+      ]
+    },
+    "q6_earlier_seasons": {
+      "2012_13_to_2017_18": "all six seasons quadruple round-robin (10 teams, 36 rounds, 4 meetings per pair, 180 matches); no non-standard double round-robin season",
+      "mid_season_changes": "none in 2012/13-2017/18: no COVID interruption (that was 2019/20, out of range), no team withdrew mid-season, no cancelled fixtures changing the format",
+      "post_season_only": "2015/16 last-placed SV Grodig would have been relegated but withdrew from professional football after the season (did not apply for a First League licence) and dropped to regional leagues; the season itself was unaffected. Reform decision announced 2016-12-02 (bundesliga.at), executed only from 2018/19; 2017/18 still ran under the old format.",
+      "out_of_range_note": "2019/20 COVID: suspended March 2020, resumed June, finished 2020-07-04, all 192 matches played, format unchanged; LASK disciplinary deduction 12 points (reduced to 4); Mattersburg bankrupt after the season (2020-08-05), WSG Tirol spared relegation."
+    },
+    "browser_verification": {
+      "when": "2026-11-06 19:00-19:04 CST (harness-measured), read-only, no login, no payment, no subscription, no bulk scraping, one match per site",
+      "official_schedule": {
+        "url": "https://www.bundesliga.at/de/spielplan/saison-2025-2026",
+        "finding": "Renders real per-round data (not a JS shell). Regular season ends round 22 (2026-03-08, six matches same day 17:00); from round 23 the table splits into two groups, rounds 23-32; rounds 33-35 are the three play-off matches (2026-05-19 Ried 2:1 WAC; 05-22 Ried 2:1 Rapid; 05-25 Rapid 3:0 Ried) with no phase label on the schedule page. Group titles 'MEISTERGRUPPE' and 'QUALIFIKATIONSGRUPPE' appear only in the table view, not the schedule view. Table footnote confirms points halving rounded down."
+      },
+      "oddsportal_sample": {
+        "match": "Sturm Graz - SK Rapid, 2026-05-17, 2:0",
+        "url": "https://www.oddsportal.com/football/h2h/rapid-vienna-rejcUFSs/sturm-graz-zsktjfsD/#4UFHgV5s",
+        "finding": "bet365 opening odds viewable on click, no login; Pinnacle absent from the match's bookmaker list."
+      },
+      "betexplorer_sample": {
+        "match": "Sturm Graz vs Rapid Vienna, 2026-05-17 20:30, 2:0",
+        "url": "https://www.betexplorer.com/football/austria/bundesliga-2025-2026/sturm-graz-rapid-vienna/4UFHgV5s/",
+        "finding": "No opening odds displayed; Pinnacle absent."
+      }
+    },
+    "corrections": "Merged-report correction (U6): C-route wording that the 2014/15 and 2015/16 EN Wikipedia pages were 'newly fetched this round' was inaccurate; the evidence is a cached fetch dated 2026-09-24 / 2026-09-09. Corrected in the merged report; conclusions unaffected (historical season pages are static)."
+  },
+  "note": "奥甲 2012/2013–2025/2026 方法上下文补全完成。Q1：14 季全齐——2012/13–2017/18 为 10 队 36 轮四循环（每对 4 次，180 场），2018/19 起 12 队 32 轮（常规赛 22＋决赛轮 10）分裂制；积分减半 2018/19 起实行、向下取整、2025/26 为最后一季、2026/27 起废除，官方源＋2019/20 实证裁决（向上取整的博彩站说法不采信），官方积分榜脚注原文亦佐证向下取整。Q2：2025/2026 逐场表 192 行（SHA-256 01e0d5b4…），分裂在第 22 轮之后，冠军组／保级组各再 10 轮（23–32）；官方赛程页经实时浏览器复核确认真实渲染逐轮数据与分界。Q3：十二队 natal／entry 年 12/12 全齐，改名／重组逐队注明（Salzburg 1933 成立非 2005；GAK 原始实体 1951/52、凤凰实体 2024/25；WSG Tirol 是 Wattens 实体、非 Wacker Innsbruck）。Q4：仅 Hartberg 4 场临时主场（Profertil Arena 改建，Datenpol Arena Südstadt），计划 3 场与实际 4 场的出入如实保留。Q5：文本层无一源能干净取得带 opening 标注的开盘；实时浏览器确认 OddsPortal 单场页可点按查看 bet365 开盘（无需登录，§2.11 约束下不得批量抓取），样本场 Pinnacle 两站均未出现，BetExplorer 无开盘显示；NowGoal Initial ≠ opening、SoccerPunter 付费墙结论不变。Q6：2012/13–2017/18 六季全部四循环、无赛中变更（Grödig 退出在赛季后）。未解决队列：U1、U3 已由实时浏览器复核解决；U2（开球时刻）不在 Q2 要求内，未逐场提取；U4（AUT.csv 表头独立复核，404）、U5（2018/19–2024/25 逐季独立佐证）、U6（2014/15、2015/16 证据为 9 月缓存抓取）三项低优先级待定，见 unresolved_queue.jsonl。"
 }
