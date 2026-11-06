@@ -1,0 +1,63 @@
+{
+  "request": "req-20261106-001",
+  "audit": [
+    {
+      "item": "Q1 season formats 2012/13-2025/26",
+      "expected": 14,
+      "discovered": 14,
+      "complete": 14,
+      "partial": 0,
+      "missing": 0
+    },
+    {
+      "item": "Q2 2025/2026 per-fixture official_round + competition_phase",
+      "expected": 192,
+      "discovered": 192,
+      "complete": 192,
+      "partial": 0,
+      "missing": 0
+    },
+    {
+      "item": "Q3 natal_year (12 clubs)",
+      "expected": 12,
+      "discovered": 12,
+      "complete": 12,
+      "partial": 0,
+      "missing": 0
+    },
+    {
+      "item": "Q3 competition_entry_year (12 clubs)",
+      "expected": 12,
+      "discovered": 12,
+      "complete": 12,
+      "partial": 0,
+      "missing": 0
+    },
+    {
+      "item": "Q4 matches deviating from default home ground",
+      "expected": 4,
+      "discovered": 4,
+      "complete": 4,
+      "partial": 0,
+      "missing": 0
+    },
+    {
+      "item": "Q5 opening-odds availability (per source)",
+      "expected": 6,
+      "discovered": 6,
+      "complete": 6,
+      "partial": 0,
+      "missing": 0,
+      "notes": "OddsPortal confirmed (bet365 opening viewable per-fixture by click, no login; Pinnacle absent on the sampled match); BetExplorer confirmed no opening display; other 4 sources unchanged."
+    },
+    {
+      "item": "Q6 earlier-season formats / mid-season changes (2012/13-2017/18)",
+      "expected": 6,
+      "discovered": 6,
+      "complete": 6,
+      "partial": 0,
+      "missing": 0
+    }
+  ],
+  "notes": "Q2 192 complete means round+phase+date+teams present; source is RSSSF primary + two cross-checks, official-page per-fixture labels not directly taken from the official page (see U1). Q5 2 partial = OddsPortal and BetExplorer pending live-browser confirmation. Live-browser recheck 2026-11-06 19:00-19:04 CST resolved U1 and U3; see report addendum."
+}
