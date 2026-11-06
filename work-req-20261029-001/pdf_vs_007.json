@@ -1,0 +1,2467 @@
+{
+ "pdf_rows": [
+  {
+   "date": "24/08/2018",
+   "kickoff": "20:30",
+   "round": 1,
+   "home_off": "FC Bayern München",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": "  24.08.2018 - Fr      20.30        1         1      FC Bayern München                  TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "25/08/2018",
+   "kickoff": "15:30",
+   "round": 1,
+   "home_off": "Hertha BSC",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 25.08.2018 - Sa       15.30        1         4      Hertha BSC                         1. FC Nürnberg"
+  },
+  {
+   "date": "25/08/2018",
+   "kickoff": "15:30",
+   "round": 1,
+   "home_off": "SV Werder Bremen",
+   "away_off": "Hannover 96",
+   "raw": " 25.08.2018 - Sa       15.30        1         5      SV Werder Bremen                   Hannover 96"
+  },
+  {
+   "date": "25/08/2018",
+   "kickoff": "15:30",
+   "round": 1,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 25.08.2018 - Sa       15.30        1         6      Sport-Club Freiburg                Eintracht Frankfurt"
+  },
+  {
+   "date": "25/08/2018",
+   "kickoff": "15:30",
+   "round": 1,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "FC Schalke 04",
+   "raw": " 25.08.2018 - Sa       15.30        1         8      VfL Wolfsburg                      FC Schalke 04"
+  },
+  {
+   "date": "25/08/2018",
+   "kickoff": "15:30",
+   "round": 1,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "FC Augsburg",
+   "raw": " 25.08.2018 - Sa       15.30        1         9      Fortuna Düsseldorf                 FC Augsburg"
+  },
+  {
+   "date": "25/08/2018",
+   "kickoff": "18:30",
+   "round": 1,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 25.08.2018 - Sa       18.30        1         3      Borussia Mönchengladbach Bayer 04 Leverkusen"
+  },
+  {
+   "date": "26/08/2018",
+   "kickoff": "15:30",
+   "round": 1,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "VfB Stuttgart",
+   "raw": " 26.08.2018 - So       15.30        1         7      1. FSV Mainz 05          VfB Stuttgart"
+  },
+  {
+   "date": "26/08/2018",
+   "kickoff": "18:00",
+   "round": 1,
+   "home_off": "Borussia Dortmund",
+   "away_off": "RB Leipzig",
+   "raw": " 26.08.2018 - So       18.00        1         2      Borussia Dortmund                  RB Leipzig"
+  },
+  {
+   "date": "31/08/2018",
+   "kickoff": "20:30",
+   "round": 2,
+   "home_off": "Hannover 96",
+   "away_off": "Borussia Dortmund",
+   "raw": "  31.08.2018 - Fr      20.30        2        17      Hannover 96                        Borussia Dortmund"
+  },
+  {
+   "date": "01/09/2018",
+   "kickoff": "15:30",
+   "round": 2,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 01.09.2018 - Sa       15.30        2        11      TSG 1899 Hoffenheim                Sport-Club Freiburg"
+  },
+  {
+   "date": "01/09/2018",
+   "kickoff": "15:30",
+   "round": 2,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 01.09.2018 - Sa       15.30        2        12      Bayer 04 Leverkusen                VfL Wolfsburg"
+  },
+  {
+   "date": "01/09/2018",
+   "kickoff": "15:30",
+   "round": 2,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "SV Werder Bremen",
+   "raw": " 01.09.2018 - Sa       15.30        2        15      Eintracht Frankfurt                SV Werder Bremen"
+  },
+  {
+   "date": "01/09/2018",
+   "kickoff": "15:30",
+   "round": 2,
+   "home_off": "FC Augsburg",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 01.09.2018 - Sa       15.30        2        16      FC Augsburg                        Borussia Mönchengladbach"
+  },
+  {
+   "date": "01/09/2018",
+   "kickoff": "15:30",
+   "round": 2,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 01.09.2018 - Sa       15.30        2        18      1. FC Nürnberg                     1. FSV Mainz 05"
+  },
+  {
+   "date": "01/09/2018",
+   "kickoff": "18:30",
+   "round": 2,
+   "home_off": "VfB Stuttgart",
+   "away_off": "FC Bayern München",
+   "raw": " 01.09.2018 - Sa       18.30        2        14      VfB Stuttgart                      FC Bayern München"
+  },
+  {
+   "date": "02/09/2018",
+   "kickoff": "15:30",
+   "round": 2,
+   "home_off": "RB Leipzig",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 02.09.2018 - So       15.30        2        13      RB Leipzig                         Fortuna Düsseldorf"
+  },
+  {
+   "date": "02/09/2018",
+   "kickoff": "18:00",
+   "round": 2,
+   "home_off": "FC Schalke 04",
+   "away_off": "Hertha BSC",
+   "raw": " 02.09.2018 - So       18.00        2        10      FC Schalke 04                      Hertha BSC"
+  },
+  {
+   "date": "14/09/2018",
+   "kickoff": "20:30",
+   "round": 3,
+   "home_off": "Borussia Dortmund",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 14.09.2018 - Fr       20.30        3        20      Borussia Dortmund                  Eintracht Frankfurt"
+  },
+  {
+   "date": "15/09/2018",
+   "kickoff": "15:30",
+   "round": 3,
+   "home_off": "FC Bayern München",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 15.09.2018 - Sa       15.30        3        19      FC Bayern München                  Bayer 04 Leverkusen"
+  },
+  {
+   "date": "15/09/2018",
+   "kickoff": "15:30",
+   "round": 3,
+   "home_off": "RB Leipzig",
+   "away_off": "Hannover 96",
+   "raw": " 15.09.2018 - Sa       15.30        3        21      RB Leipzig                         Hannover 96"
+  },
+  {
+   "date": "15/09/2018",
+   "kickoff": "15:30",
+   "round": 3,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "FC Augsburg",
+   "raw": " 15.09.2018 - Sa       15.30        3        25      1. FSV Mainz 05                    FC Augsburg"
+  },
+  {
+   "date": "15/09/2018",
+   "kickoff": "15:30",
+   "round": 3,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "Hertha BSC",
+   "raw": " 15.09.2018 - Sa       15.30        3        26      VfL Wolfsburg                      Hertha BSC"
+  },
+  {
+   "date": "15/09/2018",
+   "kickoff": "15:30",
+   "round": 3,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 15.09.2018 - Sa       15.30        3        27      Fortuna Düsseldorf                 TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "15/09/2018",
+   "kickoff": "18:30",
+   "round": 3,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "FC Schalke 04",
+   "raw": " 15.09.2018 - Sa       18.30        3        22      Borussia Mönchengladbach FC Schalke 04"
+  },
+  {
+   "date": "16/09/2018",
+   "kickoff": "15:30",
+   "round": 3,
+   "home_off": "SV Werder Bremen",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 16.09.2018 - So       15.30        3        23      SV Werder Bremen                   1. FC Nürnberg"
+  },
+  {
+   "date": "16/09/2018",
+   "kickoff": "18:00",
+   "round": 3,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "VfB Stuttgart",
+   "raw": " 16.09.2018 - So       18.00        3        24      Sport-Club Freiburg                VfB Stuttgart"
+  },
+  {
+   "date": "21/09/2018",
+   "kickoff": "20:30",
+   "round": 4,
+   "home_off": "VfB Stuttgart",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": "  21.09.2018 - Fr      20.30        4        31      VfB Stuttgart                      Fortuna Düsseldorf"
+  },
+  {
+   "date": "22/09/2018",
+   "kickoff": "15:30",
+   "round": 4,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "Borussia Dortmund",
+   "raw": " 22.09.2018 - Sa       15.30        4        29      TSG 1899 Hoffenheim                Borussia Dortmund"
+  },
+  {
+   "date": "22/09/2018",
+   "kickoff": "15:30",
+   "round": 4,
+   "home_off": "Hertha BSC",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 22.09.2018 - Sa       15.30        4        33      Hertha BSC                         Borussia Mönchengladbach"
+  },
+  {
+   "date": "22/09/2018",
+   "kickoff": "15:30",
+   "round": 4,
+   "home_off": "FC Augsburg",
+   "away_off": "SV Werder Bremen",
+   "raw": " 22.09.2018 - Sa       15.30        4        34      FC Augsburg                        SV Werder Bremen"
+  },
+  {
+   "date": "22/09/2018",
+   "kickoff": "15:30",
+   "round": 4,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 22.09.2018 - Sa       15.30        4        35      VfL Wolfsburg                      Sport-Club Freiburg"
+  },
+  {
+   "date": "22/09/2018",
+   "kickoff": "15:30",
+   "round": 4,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "Hannover 96",
+   "raw": " 22.09.2018 - Sa       15.30        4        36      1. FC Nürnberg                     Hannover 96"
+  },
+  {
+   "date": "22/09/2018",
+   "kickoff": "18:30",
+   "round": 4,
+   "home_off": "FC Schalke 04",
+   "away_off": "FC Bayern München",
+   "raw": " 22.09.2018 - Sa       18.30        4        28      FC Schalke 04                      FC Bayern München"
+  },
+  {
+   "date": "23/09/2018",
+   "kickoff": "15:30",
+   "round": 4,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 23.09.2018 - So       15.30        4        30      Bayer 04 Leverkusen                1. FSV Mainz 05"
+  },
+  {
+   "date": "23/09/2018",
+   "kickoff": "18:00",
+   "round": 4,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "RB Leipzig",
+   "raw": " 23.09.2018 - So       18.00        4        32      Eintracht Frankfurt                RB Leipzig"
+  },
+  {
+   "date": "25/09/2018",
+   "kickoff": "18:30",
+   "round": 5,
+   "home_off": "SV Werder Bremen",
+   "away_off": "Hertha BSC",
+   "raw": "  25.09.2018 - Di      18.30        5        41      SV Werder Bremen                   Hertha BSC"
+  },
+  {
+   "date": "25/09/2018",
+   "kickoff": "20:30",
+   "round": 5,
+   "home_off": "FC Bayern München",
+   "away_off": "FC Augsburg",
+   "raw": "  25.09.2018 - Di      20.30        5        37      FC Bayern München                  FC Augsburg"
+  },
+  {
+   "date": "25/09/2018",
+   "kickoff": "20:30",
+   "round": 5,
+   "home_off": "Hannover 96",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": "  25.09.2018 - Di      20.30        5        42      Hannover 96                        TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "25/09/2018",
+   "kickoff": "20:30",
+   "round": 5,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "FC Schalke 04",
+   "raw": "  25.09.2018 - Di      20.30        5        43      Sport-Club Freiburg                FC Schalke 04"
+  },
+  {
+   "date": "26/09/2018",
+   "kickoff": "18:30",
+   "round": 5,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 26.09.2018 - Mi       18.30        5        45      Fortuna Düsseldorf                 Bayer 04 Leverkusen"
+  },
+  {
+   "date": "26/09/2018",
+   "kickoff": "20:30",
+   "round": 5,
+   "home_off": "Borussia Dortmund",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 26.09.2018 - Mi       20.30        5        38      Borussia Dortmund                  1. FC Nürnberg"
+  },
+  {
+   "date": "26/09/2018",
+   "kickoff": "20:30",
+   "round": 5,
+   "home_off": "RB Leipzig",
+   "away_off": "VfB Stuttgart",
+   "raw": " 26.09.2018 - Mi       20.30        5        39      RB Leipzig               VfB Stuttgart"
+  },
+  {
+   "date": "26/09/2018",
+   "kickoff": "20:30",
+   "round": 5,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 26.09.2018 - Mi       20.30        5        40      Borussia Mönchengladbach Eintracht Frankfurt"
+  },
+  {
+   "date": "26/09/2018",
+   "kickoff": "20:30",
+   "round": 5,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 26.09.2018 - Mi       20.30        5        44      1. FSV Mainz 05                    VfL Wolfsburg"
+  },
+  {
+   "date": "28/09/2018",
+   "kickoff": "20:30",
+   "round": 6,
+   "home_off": "Hertha BSC",
+   "away_off": "FC Bayern München",
+   "raw": "  28.09.2018 - Fr      20.30        6        51      Hertha BSC                         FC Bayern München"
+  },
+  {
+   "date": "29/09/2018",
+   "kickoff": "15:30",
+   "round": 6,
+   "home_off": "FC Schalke 04",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 29.09.2018 - Sa       15.30        6        46      FC Schalke 04                      1. FSV Mainz 05"
+  },
+  {
+   "date": "29/09/2018",
+   "kickoff": "15:30",
+   "round": 6,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "RB Leipzig",
+   "raw": " 29.09.2018 - Sa       15.30        6        47      TSG 1899 Hoffenheim                RB Leipzig"
+  },
+  {
+   "date": "29/09/2018",
+   "kickoff": "15:30",
+   "round": 6,
+   "home_off": "VfB Stuttgart",
+   "away_off": "SV Werder Bremen",
+   "raw": " 29.09.2018 - Sa       15.30        6        49      VfB Stuttgart                      SV Werder Bremen"
+  },
+  {
+   "date": "29/09/2018",
+   "kickoff": "15:30",
+   "round": 6,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 29.09.2018 - Sa       15.30        6        53      VfL Wolfsburg                      Borussia Mönchengladbach"
+  },
+  {
+   "date": "29/09/2018",
+   "kickoff": "15:30",
+   "round": 6,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 29.09.2018 - Sa       15.30        6        54      1. FC Nürnberg                     Fortuna Düsseldorf"
+  },
+  {
+   "date": "29/09/2018",
+   "kickoff": "18:30",
+   "round": 6,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "Borussia Dortmund",
+   "raw": " 29.09.2018 - Sa       18.30        6        48      Bayer 04 Leverkusen                Borussia Dortmund"
+  },
+  {
+   "date": "30/09/2018",
+   "kickoff": "15:30",
+   "round": 6,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "Hannover 96",
+   "raw": " 30.09.2018 - So       15.30        6        50      Eintracht Frankfurt                Hannover 96"
+  },
+  {
+   "date": "30/09/2018",
+   "kickoff": "18:00",
+   "round": 6,
+   "home_off": "FC Augsburg",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 30.09.2018 - So       18.00        6        52      FC Augsburg                        Sport-Club Freiburg"
+  },
+  {
+   "date": "05/10/2018",
+   "kickoff": "20:30",
+   "round": 7,
+   "home_off": "SV Werder Bremen",
+   "away_off": "VfL Wolfsburg",
+   "raw": "  05.10.2018 - Fr      20.30        7        59      SV Werder Bremen                   VfL Wolfsburg"
+  },
+  {
+   "date": "06/10/2018",
+   "kickoff": "15:30",
+   "round": 7,
+   "home_off": "Borussia Dortmund",
+   "away_off": "FC Augsburg",
+   "raw": " 06.10.2018 - Sa       15.30        7        57      Borussia Dortmund                  FC Augsburg"
+  },
+  {
+   "date": "06/10/2018",
+   "kickoff": "15:30",
+   "round": 7,
+   "home_off": "Hannover 96",
+   "away_off": "VfB Stuttgart",
+   "raw": " 06.10.2018 - Sa       15.30        7        60      Hannover 96                        VfB Stuttgart"
+  },
+  {
+   "date": "06/10/2018",
+   "kickoff": "15:30",
+   "round": 7,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "Hertha BSC",
+   "raw": " 06.10.2018 - Sa       15.30        7        62      1. FSV Mainz 05                    Hertha BSC"
+  },
+  {
+   "date": "06/10/2018",
+   "kickoff": "15:30",
+   "round": 7,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "FC Schalke 04",
+   "raw": " 06.10.2018 - Sa       15.30        7        63      Fortuna Düsseldorf                 FC Schalke 04"
+  },
+  {
+   "date": "06/10/2018",
+   "kickoff": "18:30",
+   "round": 7,
+   "home_off": "FC Bayern München",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 06.10.2018 - Sa       18.30        7        55      FC Bayern München                  Borussia Mönchengladbach"
+  },
+  {
+   "date": "07/10/2018",
+   "kickoff": "13:30",
+   "round": 7,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 07.10.2018 - So       13.30        7        61      Sport-Club Freiburg                Bayer 04 Leverkusen"
+  },
+  {
+   "date": "07/10/2018",
+   "kickoff": "15:30",
+   "round": 7,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 07.10.2018 - So       15.30        7        56      TSG 1899 Hoffenheim                Eintracht Frankfurt"
+  },
+  {
+   "date": "07/10/2018",
+   "kickoff": "18:00",
+   "round": 7,
+   "home_off": "RB Leipzig",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 07.10.2018 - So       18.00        7        58      RB Leipzig                         1. FC Nürnberg"
+  },
+  {
+   "date": "19/10/2018",
+   "kickoff": "20:30",
+   "round": 8,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 19.10.2018 - Fr       20.30        8        67      Eintracht Frankfurt                Fortuna Düsseldorf"
+  },
+  {
+   "date": "20/10/2018",
+   "kickoff": "15:30",
+   "round": 8,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "Hannover 96",
+   "raw": " 20.10.2018 - Sa       15.30        8        65      Bayer 04 Leverkusen                Hannover 96"
+  },
+  {
+   "date": "20/10/2018",
+   "kickoff": "15:30",
+   "round": 8,
+   "home_off": "VfB Stuttgart",
+   "away_off": "Borussia Dortmund",
+   "raw": " 20.10.2018 - Sa       15.30        8        66      VfB Stuttgart                      Borussia Dortmund"
+  },
+  {
+   "date": "20/10/2018",
+   "kickoff": "15:30",
+   "round": 8,
+   "home_off": "FC Augsburg",
+   "away_off": "RB Leipzig",
+   "raw": " 20.10.2018 - Sa       15.30        8        70      FC Augsburg                        RB Leipzig"
+  },
+  {
+   "date": "20/10/2018",
+   "kickoff": "15:30",
+   "round": 8,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "FC Bayern München",
+   "raw": " 20.10.2018 - Sa       15.30        8        71      VfL Wolfsburg                      FC Bayern München"
+  },
+  {
+   "date": "20/10/2018",
+   "kickoff": "15:30",
+   "round": 8,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 20.10.2018 - Sa       15.30        8        72      1. FC Nürnberg                     TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "20/10/2018",
+   "kickoff": "18:30",
+   "round": 8,
+   "home_off": "FC Schalke 04",
+   "away_off": "SV Werder Bremen",
+   "raw": " 20.10.2018 - Sa       18.30        8        64      FC Schalke 04                      SV Werder Bremen"
+  },
+  {
+   "date": "21/10/2018",
+   "kickoff": "15:30",
+   "round": 8,
+   "home_off": "Hertha BSC",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 21.10.2018 - So       15.30        8        69      Hertha BSC               Sport-Club Freiburg"
+  },
+  {
+   "date": "21/10/2018",
+   "kickoff": "18:00",
+   "round": 8,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 21.10.2018 - So       18.00        8        68      Borussia Mönchengladbach 1. FSV Mainz 05"
+  },
+  {
+   "date": "26/10/2018",
+   "kickoff": "20:30",
+   "round": 9,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": "  26.10.2018 - Fr      20.30        9        78      Sport-Club Freiburg                Borussia Mönchengladbach"
+  },
+  {
+   "date": "27/10/2018",
+   "kickoff": "15:30",
+   "round": 9,
+   "home_off": "Borussia Dortmund",
+   "away_off": "Hertha BSC",
+   "raw": " 27.10.2018 - Sa       15.30        9        74      Borussia Dortmund                  Hertha BSC"
+  },
+  {
+   "date": "27/10/2018",
+   "kickoff": "15:30",
+   "round": 9,
+   "home_off": "Hannover 96",
+   "away_off": "FC Augsburg",
+   "raw": " 27.10.2018 - Sa       15.30        9        77      Hannover 96                        FC Augsburg"
+  },
+  {
+   "date": "27/10/2018",
+   "kickoff": "15:30",
+   "round": 9,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "FC Bayern München",
+   "raw": " 27.10.2018 - Sa       15.30        9        79      1. FSV Mainz 05                    FC Bayern München"
+  },
+  {
+   "date": "27/10/2018",
+   "kickoff": "15:30",
+   "round": 9,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 27.10.2018 - Sa       15.30        9        80      Fortuna Düsseldorf                 VfL Wolfsburg"
+  },
+  {
+   "date": "27/10/2018",
+   "kickoff": "18:30",
+   "round": 9,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "VfB Stuttgart",
+   "raw": " 27.10.2018 - Sa       18.30        9        73      TSG 1899 Hoffenheim                VfB Stuttgart"
+  },
+  {
+   "date": "28/10/2018",
+   "kickoff": "13:30",
+   "round": 9,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 28.10.2018 - So       13.30        9        81      1. FC Nürnberg                     Eintracht Frankfurt"
+  },
+  {
+   "date": "28/10/2018",
+   "kickoff": "15:30",
+   "round": 9,
+   "home_off": "RB Leipzig",
+   "away_off": "FC Schalke 04",
+   "raw": " 28.10.2018 - So       15.30        9        75      RB Leipzig                         FC Schalke 04"
+  },
+  {
+   "date": "28/10/2018",
+   "kickoff": "18:00",
+   "round": 9,
+   "home_off": "SV Werder Bremen",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 28.10.2018 - So       18.00        9        76      SV Werder Bremen                   Bayer 04 Leverkusen"
+  },
+  {
+   "date": "02/11/2018",
+   "kickoff": "20:30",
+   "round": 10,
+   "home_off": "VfB Stuttgart",
+   "away_off": "Eintracht Frankfurt",
+   "raw": "  02.11.2018 - Fr      20.30       10        85      VfB Stuttgart                      Eintracht Frankfurt"
+  },
+  {
+   "date": "03/11/2018",
+   "kickoff": "15:30",
+   "round": 10,
+   "home_off": "FC Bayern München",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 03.11.2018 - Sa       15.30       10        82      FC Bayern München                  Sport-Club Freiburg"
+  },
+  {
+   "date": "03/11/2018",
+   "kickoff": "15:30",
+   "round": 10,
+   "home_off": "FC Schalke 04",
+   "away_off": "Hannover 96",
+   "raw": " 03.11.2018 - Sa       15.30       10        83      FC Schalke 04                      Hannover 96"
+  },
+  {
+   "date": "03/11/2018",
+   "kickoff": "15:30",
+   "round": 10,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 03.11.2018 - Sa       15.30       10        84      Bayer 04 Leverkusen                TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "03/11/2018",
+   "kickoff": "15:30",
+   "round": 10,
+   "home_off": "FC Augsburg",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 03.11.2018 - Sa       15.30       10        88      FC Augsburg                        1. FC Nürnberg"
+  },
+  {
+   "date": "03/11/2018",
+   "kickoff": "15:30",
+   "round": 10,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "Borussia Dortmund",
+   "raw": " 03.11.2018 - Sa       15.30       10        90      VfL Wolfsburg                      Borussia Dortmund"
+  },
+  {
+   "date": "03/11/2018",
+   "kickoff": "18:30",
+   "round": 10,
+   "home_off": "Hertha BSC",
+   "away_off": "RB Leipzig",
+   "raw": " 03.11.2018 - Sa       18.30       10        87      Hertha BSC               RB Leipzig"
+  },
+  {
+   "date": "04/11/2018",
+   "kickoff": "15:30",
+   "round": 10,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 04.11.2018 - So       15.30       10        86      Borussia Mönchengladbach Fortuna Düsseldorf"
+  },
+  {
+   "date": "04/11/2018",
+   "kickoff": "18:00",
+   "round": 10,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "SV Werder Bremen",
+   "raw": " 04.11.2018 - So       18.00       10        89      1. FSV Mainz 05                    SV Werder Bremen"
+  },
+  {
+   "date": "09/11/2018",
+   "kickoff": "20:30",
+   "round": 11,
+   "home_off": "Hannover 96",
+   "away_off": "VfL Wolfsburg",
+   "raw": "  09.11.2018 - Fr      20.30       11        96      Hannover 96                        VfL Wolfsburg"
+  },
+  {
+   "date": "10/11/2018",
+   "kickoff": "15:30",
+   "round": 11,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "FC Augsburg",
+   "raw": " 10.11.2018 - Sa       15.30       11        91      TSG 1899 Hoffenheim                FC Augsburg"
+  },
+  {
+   "date": "10/11/2018",
+   "kickoff": "15:30",
+   "round": 11,
+   "home_off": "SV Werder Bremen",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 10.11.2018 - Sa       15.30       11        95      SV Werder Bremen                   Borussia Mönchengladbach"
+  },
+  {
+   "date": "10/11/2018",
+   "kickoff": "15:30",
+   "round": 11,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 10.11.2018 - Sa       15.30       11        97      Sport-Club Freiburg                1. FSV Mainz 05"
+  },
+  {
+   "date": "10/11/2018",
+   "kickoff": "15:30",
+   "round": 11,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "Hertha BSC",
+   "raw": " 10.11.2018 - Sa       15.30       11        98      Fortuna Düsseldorf                 Hertha BSC"
+  },
+  {
+   "date": "10/11/2018",
+   "kickoff": "15:30",
+   "round": 11,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "VfB Stuttgart",
+   "raw": " 10.11.2018 - Sa       15.30       11        99      1. FC Nürnberg                     VfB Stuttgart"
+  },
+  {
+   "date": "10/11/2018",
+   "kickoff": "18:30",
+   "round": 11,
+   "home_off": "Borussia Dortmund",
+   "away_off": "FC Bayern München",
+   "raw": " 10.11.2018 - Sa       18.30       11        92      Borussia Dortmund                  FC Bayern München"
+  },
+  {
+   "date": "11/11/2018",
+   "kickoff": "15:30",
+   "round": 11,
+   "home_off": "RB Leipzig",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 11.11.2018 - So       15.30       11        93      RB Leipzig                         Bayer 04 Leverkusen"
+  },
+  {
+   "date": "11/11/2018",
+   "kickoff": "18:00",
+   "round": 11,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "FC Schalke 04",
+   "raw": " 11.11.2018 - So       18.00       11        94      Eintracht Frankfurt                FC Schalke 04"
+  },
+  {
+   "date": "23/11/2018",
+   "kickoff": "20:30",
+   "round": 12,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "VfB Stuttgart",
+   "raw": " 23.11.2018 - Fr       20.30       12       102      Bayer 04 Leverkusen                VfB Stuttgart"
+  },
+  {
+   "date": "24/11/2018",
+   "kickoff": "15:30",
+   "round": 12,
+   "home_off": "FC Bayern München",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 24.11.2018 - Sa       15.30       12       100      FC Bayern München                  Fortuna Düsseldorf"
+  },
+  {
+   "date": "24/11/2018",
+   "kickoff": "15:30",
+   "round": 12,
+   "home_off": "Hertha BSC",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 24.11.2018 - Sa       15.30       12       104      Hertha BSC                         TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "24/11/2018",
+   "kickoff": "15:30",
+   "round": 12,
+   "home_off": "FC Augsburg",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 24.11.2018 - Sa       15.30       12       105      FC Augsburg                        Eintracht Frankfurt"
+  },
+  {
+   "date": "24/11/2018",
+   "kickoff": "15:30",
+   "round": 12,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "Borussia Dortmund",
+   "raw": " 24.11.2018 - Sa       15.30       12       107      1. FSV Mainz 05                    Borussia Dortmund"
+  },
+  {
+   "date": "24/11/2018",
+   "kickoff": "15:30",
+   "round": 12,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "RB Leipzig",
+   "raw": " 24.11.2018 - Sa       15.30       12       108      VfL Wolfsburg                      RB Leipzig"
+  },
+  {
+   "date": "24/11/2018",
+   "kickoff": "18:30",
+   "round": 12,
+   "home_off": "FC Schalke 04",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 24.11.2018 - Sa       18.30       12       101      FC Schalke 04                      1. FC Nürnberg"
+  },
+  {
+   "date": "25/11/2018",
+   "kickoff": "15:30",
+   "round": 12,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "SV Werder Bremen",
+   "raw": " 25.11.2018 - So       15.30       12       106      Sport-Club Freiburg      SV Werder Bremen"
+  },
+  {
+   "date": "25/11/2018",
+   "kickoff": "18:00",
+   "round": 12,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "Hannover 96",
+   "raw": " 25.11.2018 - So       18.00       12       103      Borussia Mönchengladbach Hannover 96"
+  },
+  {
+   "date": "30/11/2018",
+   "kickoff": "20:30",
+   "round": 13,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "1. FSV Mainz 05",
+   "raw": "  30.11.2018 - Fr      20.30       13       116      Fortuna Düsseldorf                 1. FSV Mainz 05"
+  },
+  {
+   "date": "01/12/2018",
+   "kickoff": "15:30",
+   "round": 13,
+   "home_off": "Borussia Dortmund",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 01.12.2018 - Sa       15.30       13       110      Borussia Dortmund                  Sport-Club Freiburg"
+  },
+  {
+   "date": "01/12/2018",
+   "kickoff": "15:30",
+   "round": 13,
+   "home_off": "VfB Stuttgart",
+   "away_off": "FC Augsburg",
+   "raw": " 01.12.2018 - Sa       15.30       13       112      VfB Stuttgart                      FC Augsburg"
+  },
+  {
+   "date": "01/12/2018",
+   "kickoff": "15:30",
+   "round": 13,
+   "home_off": "SV Werder Bremen",
+   "away_off": "FC Bayern München",
+   "raw": " 01.12.2018 - Sa       15.30       13       114      SV Werder Bremen                   FC Bayern München"
+  },
+  {
+   "date": "01/12/2018",
+   "kickoff": "15:30",
+   "round": 13,
+   "home_off": "Hannover 96",
+   "away_off": "Hertha BSC",
+   "raw": " 01.12.2018 - Sa       15.30       13       115      Hannover 96                        Hertha BSC"
+  },
+  {
+   "date": "01/12/2018",
+   "kickoff": "18:30",
+   "round": 13,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "FC Schalke 04",
+   "raw": " 01.12.2018 - Sa       18.30       13       109      TSG 1899 Hoffenheim                FC Schalke 04"
+  },
+  {
+   "date": "02/12/2018",
+   "kickoff": "15:30",
+   "round": 13,
+   "home_off": "RB Leipzig",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 02.12.2018 - So       15.30       13       111      RB Leipzig                         Borussia Mönchengladbach"
+  },
+  {
+   "date": "02/12/2018",
+   "kickoff": "18:00",
+   "round": 13,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 02.12.2018 - So       18.00       13       113      Eintracht Frankfurt                VfL Wolfsburg"
+  },
+  {
+   "date": "03/12/2018",
+   "kickoff": "20:30",
+   "round": 13,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 03.12.2018 - Mo       20.30       13       117      1. FC Nürnberg                     Bayer 04 Leverkusen"
+  },
+  {
+   "date": "07/12/2018",
+   "kickoff": "20:30",
+   "round": 14,
+   "home_off": "SV Werder Bremen",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": "  07.12.2018 - Fr      20.30       14       123      SV Werder Bremen                   Fortuna Düsseldorf"
+  },
+  {
+   "date": "08/12/2018",
+   "kickoff": "15:30",
+   "round": 14,
+   "home_off": "FC Bayern München",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 08.12.2018 - Sa       15.30       14       118      FC Bayern München                  1. FC Nürnberg"
+  },
+  {
+   "date": "08/12/2018",
+   "kickoff": "15:30",
+   "round": 14,
+   "home_off": "FC Schalke 04",
+   "away_off": "Borussia Dortmund",
+   "raw": " 08.12.2018 - Sa       15.30       14       119      FC Schalke 04                      Borussia Dortmund"
+  },
+  {
+   "date": "08/12/2018",
+   "kickoff": "15:30",
+   "round": 14,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "FC Augsburg",
+   "raw": " 08.12.2018 - Sa       15.30       14       120      Bayer 04 Leverkusen                FC Augsburg"
+  },
+  {
+   "date": "08/12/2018",
+   "kickoff": "15:30",
+   "round": 14,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "RB Leipzig",
+   "raw": " 08.12.2018 - Sa       15.30       14       124      Sport-Club Freiburg                RB Leipzig"
+  },
+  {
+   "date": "08/12/2018",
+   "kickoff": "15:30",
+   "round": 14,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 08.12.2018 - Sa       15.30       14       126      VfL Wolfsburg                      TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "08/12/2018",
+   "kickoff": "18:30",
+   "round": 14,
+   "home_off": "Hertha BSC",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 08.12.2018 - Sa       18.30       14       122      Hertha BSC                         Eintracht Frankfurt"
+  },
+  {
+   "date": "09/12/2018",
+   "kickoff": "15:30",
+   "round": 14,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "Hannover 96",
+   "raw": " 09.12.2018 - So       15.30       14       125      1. FSV Mainz 05                    Hannover 96"
+  },
+  {
+   "date": "09/12/2018",
+   "kickoff": "18:00",
+   "round": 14,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "VfB Stuttgart",
+   "raw": " 09.12.2018 - So       18.00       14       121      Borussia Mönchengladbach VfB Stuttgart"
+  },
+  {
+   "date": "14/12/2018",
+   "kickoff": "20:30",
+   "round": 15,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "VfL Wolfsburg",
+   "raw": "  14.12.2018 - Fr      20.30       15       135      1. FC Nürnberg                     VfL Wolfsburg"
+  },
+  {
+   "date": "15/12/2018",
+   "kickoff": "15:30",
+   "round": 15,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 15.12.2018 - Sa       15.30       15       127      TSG 1899 Hoffenheim                Borussia Mönchengladbach"
+  },
+  {
+   "date": "15/12/2018",
+   "kickoff": "15:30",
+   "round": 15,
+   "home_off": "VfB Stuttgart",
+   "away_off": "Hertha BSC",
+   "raw": " 15.12.2018 - Sa       15.30       15       130      VfB Stuttgart                      Hertha BSC"
+  },
+  {
+   "date": "15/12/2018",
+   "kickoff": "15:30",
+   "round": 15,
+   "home_off": "FC Augsburg",
+   "away_off": "FC Schalke 04",
+   "raw": " 15.12.2018 - Sa       15.30       15       132      FC Augsburg                        FC Schalke 04"
+  },
+  {
+   "date": "15/12/2018",
+   "kickoff": "15:30",
+   "round": 15,
+   "home_off": "Hannover 96",
+   "away_off": "FC Bayern München",
+   "raw": " 15.12.2018 - Sa       15.30       15       133      Hannover 96                        FC Bayern München"
+  },
+  {
+   "date": "15/12/2018",
+   "kickoff": "15:30",
+   "round": 15,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 15.12.2018 - Sa       15.30       15       134      Fortuna Düsseldorf                 Sport-Club Freiburg"
+  },
+  {
+   "date": "15/12/2018",
+   "kickoff": "18:30",
+   "round": 15,
+   "home_off": "Borussia Dortmund",
+   "away_off": "SV Werder Bremen",
+   "raw": " 15.12.2018 - Sa       18.30       15       128      Borussia Dortmund                  SV Werder Bremen"
+  },
+  {
+   "date": "16/12/2018",
+   "kickoff": "15:30",
+   "round": 15,
+   "home_off": "RB Leipzig",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 16.12.2018 - So       15.30       15       129      RB Leipzig                         1. FSV Mainz 05"
+  },
+  {
+   "date": "16/12/2018",
+   "kickoff": "18:00",
+   "round": 15,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 16.12.2018 - So       18.00       15       131      Eintracht Frankfurt                Bayer 04 Leverkusen"
+  },
+  {
+   "date": "18/12/2018",
+   "kickoff": "18:30",
+   "round": 16,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 18.12.2018 - Di       18.30       16       138      Borussia Mönchengladbach 1. FC Nürnberg"
+  },
+  {
+   "date": "18/12/2018",
+   "kickoff": "20:30",
+   "round": 16,
+   "home_off": "Hertha BSC",
+   "away_off": "FC Augsburg",
+   "raw": " 18.12.2018 - Di       20.30       16       139      Hertha BSC                         FC Augsburg"
+  },
+  {
+   "date": "18/12/2018",
+   "kickoff": "20:30",
+   "round": 16,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "VfB Stuttgart",
+   "raw": " 18.12.2018 - Di       20.30       16       143      VfL Wolfsburg                      VfB Stuttgart"
+  },
+  {
+   "date": "18/12/2018",
+   "kickoff": "20:30",
+   "round": 16,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "Borussia Dortmund",
+   "raw": " 18.12.2018 - Di       20.30       16       144      Fortuna Düsseldorf                 Borussia Dortmund"
+  },
+  {
+   "date": "19/12/2018",
+   "kickoff": "18:30",
+   "round": 16,
+   "home_off": "FC Schalke 04",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 19.12.2018 - Mi       18.30       16       137      FC Schalke 04                      Bayer 04 Leverkusen"
+  },
+  {
+   "date": "19/12/2018",
+   "kickoff": "20:30",
+   "round": 16,
+   "home_off": "FC Bayern München",
+   "away_off": "RB Leipzig",
+   "raw": " 19.12.2018 - Mi       20.30       16       136      FC Bayern München                  RB Leipzig"
+  },
+  {
+   "date": "19/12/2018",
+   "kickoff": "20:30",
+   "round": 16,
+   "home_off": "SV Werder Bremen",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 19.12.2018 - Mi       20.30       16       140      SV Werder Bremen                   TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "19/12/2018",
+   "kickoff": "20:30",
+   "round": 16,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "Hannover 96",
+   "raw": " 19.12.2018 - Mi       20.30       16       141      Sport-Club Freiburg                Hannover 96"
+  },
+  {
+   "date": "19/12/2018",
+   "kickoff": "20:30",
+   "round": 16,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 19.12.2018 - Mi       20.30       16       142      1. FSV Mainz 05                    Eintracht Frankfurt"
+  },
+  {
+   "date": "21/12/2018",
+   "kickoff": "20:30",
+   "round": 17,
+   "home_off": "Borussia Dortmund",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": "  21.12.2018 - Fr      20.30       17       146      Borussia Dortmund                  Borussia Mönchengladbach"
+  },
+  {
+   "date": "22/12/2018",
+   "kickoff": "15:30",
+   "round": 17,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "Hertha BSC",
+   "raw": " 22.12.2018 - Sa       15.30       17       147      Bayer 04 Leverkusen                Hertha BSC"
+  },
+  {
+   "date": "22/12/2018",
+   "kickoff": "15:30",
+   "round": 17,
+   "home_off": "RB Leipzig",
+   "away_off": "SV Werder Bremen",
+   "raw": " 22.12.2018 - Sa       15.30       17       148      RB Leipzig                         SV Werder Bremen"
+  },
+  {
+   "date": "22/12/2018",
+   "kickoff": "15:30",
+   "round": 17,
+   "home_off": "VfB Stuttgart",
+   "away_off": "FC Schalke 04",
+   "raw": " 22.12.2018 - Sa       15.30       17       149      VfB Stuttgart                      FC Schalke 04"
+  },
+  {
+   "date": "22/12/2018",
+   "kickoff": "15:30",
+   "round": 17,
+   "home_off": "Hannover 96",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 22.12.2018 - Sa       15.30       17       152      Hannover 96                        Fortuna Düsseldorf"
+  },
+  {
+   "date": "22/12/2018",
+   "kickoff": "15:30",
+   "round": 17,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 22.12.2018 - Sa       15.30       17       153      1. FC Nürnberg                     Sport-Club Freiburg"
+  },
+  {
+   "date": "22/12/2018",
+   "kickoff": "18:30",
+   "round": 17,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "FC Bayern München",
+   "raw": " 22.12.2018 - Sa       18.30       17       150      Eintracht Frankfurt                FC Bayern München"
+  },
+  {
+   "date": "23/12/2018",
+   "kickoff": "15:30",
+   "round": 17,
+   "home_off": "FC Augsburg",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 23.12.2018 - So       15.30       17       151      FC Augsburg                        VfL Wolfsburg"
+  },
+  {
+   "date": "23/12/2018",
+   "kickoff": "18:00",
+   "round": 17,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 23.12.2018 - So       18.00       17       145      TSG 1899 Hoffenheim                1. FSV Mainz 05"
+  },
+  {
+   "date": "18/01/2019",
+   "kickoff": "20:30",
+   "round": 18,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "FC Bayern München",
+   "raw": "  18.01.2019 - Fr      20.30       18       155      TSG 1899 Hoffenheim                FC Bayern München"
+  },
+  {
+   "date": "19/01/2019",
+   "kickoff": "15:30",
+   "round": 18,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 19.01.2019 - Sa       15.30       18       156      Bayer 04 Leverkusen                Borussia Mönchengladbach"
+  },
+  {
+   "date": "19/01/2019",
+   "kickoff": "15:30",
+   "round": 18,
+   "home_off": "VfB Stuttgart",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 19.01.2019 - Sa       15.30       18       158      VfB Stuttgart                      1. FSV Mainz 05"
+  },
+  {
+   "date": "19/01/2019",
+   "kickoff": "15:30",
+   "round": 18,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 19.01.2019 - Sa       15.30       18       159      Eintracht Frankfurt                Sport-Club Freiburg"
+  },
+  {
+   "date": "19/01/2019",
+   "kickoff": "15:30",
+   "round": 18,
+   "home_off": "FC Augsburg",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 19.01.2019 - Sa       15.30       18       160      FC Augsburg                        Fortuna Düsseldorf"
+  },
+  {
+   "date": "19/01/2019",
+   "kickoff": "15:30",
+   "round": 18,
+   "home_off": "Hannover 96",
+   "away_off": "SV Werder Bremen",
+   "raw": " 19.01.2019 - Sa       15.30       18       161      Hannover 96                        SV Werder Bremen"
+  },
+  {
+   "date": "19/01/2019",
+   "kickoff": "18:30",
+   "round": 18,
+   "home_off": "RB Leipzig",
+   "away_off": "Borussia Dortmund",
+   "raw": " 19.01.2019 - Sa       18.30       18       157      RB Leipzig                         Borussia Dortmund"
+  },
+  {
+   "date": "20/01/2019",
+   "kickoff": "15:30",
+   "round": 18,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "Hertha BSC",
+   "raw": " 20.01.2019 - So       15.30       18       162      1. FC Nürnberg                     Hertha BSC"
+  },
+  {
+   "date": "20/01/2019",
+   "kickoff": "18:00",
+   "round": 18,
+   "home_off": "FC Schalke 04",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 20.01.2019 - So       18.00       18       154      FC Schalke 04                      VfL Wolfsburg"
+  },
+  {
+   "date": "25/01/2019",
+   "kickoff": "20:30",
+   "round": 19,
+   "home_off": "Hertha BSC",
+   "away_off": "FC Schalke 04",
+   "raw": "  25.01.2019 - Fr      20.30       19       166      Hertha BSC                         FC Schalke 04"
+  },
+  {
+   "date": "26/01/2019",
+   "kickoff": "15:30",
+   "round": 19,
+   "home_off": "Borussia Dortmund",
+   "away_off": "Hannover 96",
+   "raw": " 26.01.2019 - Sa       15.30       19       164      Borussia Dortmund        Hannover 96"
+  },
+  {
+   "date": "26/01/2019",
+   "kickoff": "15:30",
+   "round": 19,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "FC Augsburg",
+   "raw": " 26.01.2019 - Sa       15.30       19       165      Borussia Mönchengladbach FC Augsburg"
+  },
+  {
+   "date": "26/01/2019",
+   "kickoff": "15:30",
+   "round": 19,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 26.01.2019 - Sa       15.30       19       168      Sport-Club Freiburg                TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "26/01/2019",
+   "kickoff": "15:30",
+   "round": 19,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 26.01.2019 - Sa       15.30       19       169      1. FSV Mainz 05                    1. FC Nürnberg"
+  },
+  {
+   "date": "26/01/2019",
+   "kickoff": "15:30",
+   "round": 19,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 26.01.2019 - Sa       15.30       19       170      VfL Wolfsburg                      Bayer 04 Leverkusen"
+  },
+  {
+   "date": "26/01/2019",
+   "kickoff": "18:30",
+   "round": 19,
+   "home_off": "SV Werder Bremen",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 26.01.2019 - Sa       18.30       19       167      SV Werder Bremen                   Eintracht Frankfurt"
+  },
+  {
+   "date": "27/01/2019",
+   "kickoff": "15:30",
+   "round": 19,
+   "home_off": "FC Bayern München",
+   "away_off": "VfB Stuttgart",
+   "raw": " 27.01.2019 - So       15.30       19       163      FC Bayern München                  VfB Stuttgart"
+  },
+  {
+   "date": "27/01/2019",
+   "kickoff": "18:00",
+   "round": 19,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "RB Leipzig",
+   "raw": " 27.01.2019 - So       18.00       19       171      Fortuna Düsseldorf                 RB Leipzig"
+  },
+  {
+   "date": "01/02/2019",
+   "kickoff": "20:30",
+   "round": 20,
+   "home_off": "Hannover 96",
+   "away_off": "RB Leipzig",
+   "raw": "  01.02.2019 - Fr      20.30       20       179      Hannover 96                        RB Leipzig"
+  },
+  {
+   "date": "02/02/2019",
+   "kickoff": "15:30",
+   "round": 20,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 02.02.2019 - Sa       15.30       20       173      TSG 1899 Hoffenheim                Fortuna Düsseldorf"
+  },
+  {
+   "date": "02/02/2019",
+   "kickoff": "15:30",
+   "round": 20,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "FC Bayern München",
+   "raw": " 02.02.2019 - Sa       15.30       20       174      Bayer 04 Leverkusen                FC Bayern München"
+  },
+  {
+   "date": "02/02/2019",
+   "kickoff": "15:30",
+   "round": 20,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "Borussia Dortmund",
+   "raw": " 02.02.2019 - Sa       15.30       20       176      Eintracht Frankfurt                Borussia Dortmund"
+  },
+  {
+   "date": "02/02/2019",
+   "kickoff": "15:30",
+   "round": 20,
+   "home_off": "Hertha BSC",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 02.02.2019 - Sa       15.30       20       177      Hertha BSC                         VfL Wolfsburg"
+  },
+  {
+   "date": "02/02/2019",
+   "kickoff": "15:30",
+   "round": 20,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "SV Werder Bremen",
+   "raw": " 02.02.2019 - Sa       15.30       20       180      1. FC Nürnberg                     SV Werder Bremen"
+  },
+  {
+   "date": "02/02/2019",
+   "kickoff": "18:30",
+   "round": 20,
+   "home_off": "FC Schalke 04",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 02.02.2019 - Sa       18.30       20       172      FC Schalke 04                      Borussia Mönchengladbach"
+  },
+  {
+   "date": "03/02/2019",
+   "kickoff": "15:30",
+   "round": 20,
+   "home_off": "FC Augsburg",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 03.02.2019 - So       15.30       20       178      FC Augsburg                        1. FSV Mainz 05"
+  },
+  {
+   "date": "03/02/2019",
+   "kickoff": "18:00",
+   "round": 20,
+   "home_off": "VfB Stuttgart",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 03.02.2019 - So       18.00       20       175      VfB Stuttgart                      Sport-Club Freiburg"
+  },
+  {
+   "date": "08/02/2019",
+   "kickoff": "20:30",
+   "round": 21,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 08.02.2019 - Fr      20.30       21       188      1. FSV Mainz 05                    Bayer 04 Leverkusen"
+  },
+  {
+   "date": "09/02/2019",
+   "kickoff": "15:30",
+   "round": 21,
+   "home_off": "Borussia Dortmund",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 09.02.2019 - Sa      15.30       21       182      Borussia Dortmund                  TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "09/02/2019",
+   "kickoff": "15:30",
+   "round": 21,
+   "home_off": "RB Leipzig",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 09.02.2019 - Sa      15.30       21       183      RB Leipzig               Eintracht Frankfurt"
+  },
+  {
+   "date": "09/02/2019",
+   "kickoff": "15:30",
+   "round": 21,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "Hertha BSC",
+   "raw": " 09.02.2019 - Sa      15.30       21       184      Borussia Mönchengladbach Hertha BSC"
+  },
+  {
+   "date": "09/02/2019",
+   "kickoff": "15:30",
+   "round": 21,
+   "home_off": "Hannover 96",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 09.02.2019 - Sa      15.30       21       186      Hannover 96                        1. FC Nürnberg"
+  },
+  {
+   "date": "09/02/2019",
+   "kickoff": "15:30",
+   "round": 21,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 09.02.2019 - Sa      15.30       21       187      Sport-Club Freiburg                VfL Wolfsburg"
+  },
+  {
+   "date": "09/02/2019",
+   "kickoff": "18:30",
+   "round": 21,
+   "home_off": "FC Bayern München",
+   "away_off": "FC Schalke 04",
+   "raw": " 09.02.2019 - Sa      18.30       21       181      FC Bayern München                  FC Schalke 04"
+  },
+  {
+   "date": "10/02/2019",
+   "kickoff": "15:30",
+   "round": 21,
+   "home_off": "SV Werder Bremen",
+   "away_off": "FC Augsburg",
+   "raw": " 10.02.2019 - So      15.30       21       185      SV Werder Bremen                   FC Augsburg"
+  },
+  {
+   "date": "10/02/2019",
+   "kickoff": "18:00",
+   "round": 21,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "VfB Stuttgart",
+   "raw": " 10.02.2019 - So      18.00       21       189      Fortuna Düsseldorf                 VfB Stuttgart"
+  },
+  {
+   "date": "15/02/2019",
+   "kickoff": "20:30",
+   "round": 22,
+   "home_off": "FC Augsburg",
+   "away_off": "FC Bayern München",
+   "raw": " 15.02.2019 - Fr    20.30        22       196      FC Augsburg                           FC Bayern München"
+  },
+  {
+   "date": "16/02/2019",
+   "kickoff": "15:30",
+   "round": 22,
+   "home_off": "FC Schalke 04",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 16.02.2019 - Sa    15.30        22       190      FC Schalke 04                         Sport-Club Freiburg"
+  },
+  {
+   "date": "16/02/2019",
+   "kickoff": "15:30",
+   "round": 22,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "Hannover 96",
+   "raw": " 16.02.2019 - Sa    15.30        22       191      TSG 1899 Hoffenheim                   Hannover 96"
+  },
+  {
+   "date": "16/02/2019",
+   "kickoff": "15:30",
+   "round": 22,
+   "home_off": "VfB Stuttgart",
+   "away_off": "RB Leipzig",
+   "raw": " 16.02.2019 - Sa    15.30        22       193      VfB Stuttgart                         RB Leipzig"
+  },
+  {
+   "date": "16/02/2019",
+   "kickoff": "15:30",
+   "round": 22,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 16.02.2019 - Sa    15.30        22       197      VfL Wolfsburg                         1. FSV Mainz 05"
+  },
+  {
+   "date": "16/02/2019",
+   "kickoff": "18:30",
+   "round": 22,
+   "home_off": "Hertha BSC",
+   "away_off": "SV Werder Bremen",
+   "raw": " 16.02.2019 - Sa    18.30        22       195      Hertha BSC                            SV Werder Bremen"
+  },
+  {
+   "date": "17/02/2019",
+   "kickoff": "15:30",
+   "round": 22,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 17.02.2019 - So    15.30        22       194      Eintracht Frankfurt                   Borussia Mönchengladbach"
+  },
+  {
+   "date": "17/02/2019",
+   "kickoff": "18:00",
+   "round": 22,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": "17.02.2019 - So     18.00        22       192      Bayer 04 Leverkusen                   Fortuna Düsseldorf"
+  },
+  {
+   "date": "18/02/2019",
+   "kickoff": "20:30",
+   "round": 22,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "Borussia Dortmund",
+   "raw": "18.02.2019 - Mo     20.30        22       198      1. FC Nürnberg                        Borussia Dortmund"
+  },
+  {
+   "date": "22/02/2019",
+   "kickoff": "20:30",
+   "round": 23,
+   "home_off": "SV Werder Bremen",
+   "away_off": "VfB Stuttgart",
+   "raw": " 22.02.2019 - Fr    20.30        23       203      SV Werder Bremen                      VfB Stuttgart"
+  },
+  {
+   "date": "23/02/2019",
+   "kickoff": "15:30",
+   "round": 23,
+   "home_off": "FC Bayern München",
+   "away_off": "Hertha BSC",
+   "raw": " 23.02.2019 - Sa    15.30        23       199      FC Bayern München                     Hertha BSC"
+  },
+  {
+   "date": "23/02/2019",
+   "kickoff": "15:30",
+   "round": 23,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 23.02.2019 - Sa    15.30        23       202      Borussia Mönchengladbach              VfL Wolfsburg"
+  },
+  {
+   "date": "23/02/2019",
+   "kickoff": "15:30",
+   "round": 23,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "FC Augsburg",
+   "raw": " 23.02.2019 - Sa    15.30        23       205      Sport-Club Freiburg                   FC Augsburg"
+  },
+  {
+   "date": "23/02/2019",
+   "kickoff": "15:30",
+   "round": 23,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "FC Schalke 04",
+   "raw": " 23.02.2019 - Sa    15.30        23       206      1. FSV Mainz 05                       FC Schalke 04"
+  },
+  {
+   "date": "23/02/2019",
+   "kickoff": "18:30",
+   "round": 23,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 23.02.2019 - Sa    18.30        23       207      Fortuna Düsseldorf                    1. FC Nürnberg"
+  },
+  {
+   "date": "24/02/2019",
+   "kickoff": "15:30",
+   "round": 23,
+   "home_off": "Hannover 96",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 24.02.2019 - So    15.30        23       204      Hannover 96                           Eintracht Frankfurt"
+  },
+  {
+   "date": "24/02/2019",
+   "kickoff": "18:00",
+   "round": 23,
+   "home_off": "Borussia Dortmund",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": "24.02.2019 - So     18.00        23       200      Borussia Dortmund                     Bayer 04 Leverkusen"
+  },
+  {
+   "date": "25/02/2019",
+   "kickoff": "20:30",
+   "round": 23,
+   "home_off": "RB Leipzig",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": "25.02.2019 - Mo     20.30        23       201      RB Leipzig                            TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "01/03/2019",
+   "kickoff": "20:30",
+   "round": 24,
+   "home_off": "FC Augsburg",
+   "away_off": "Borussia Dortmund",
+   "raw": " 01.03.2019 - Fr    20.30        24       214      FC Augsburg                          Borussia Dortmund"
+  },
+  {
+   "date": "02/03/2019",
+   "kickoff": "15:30",
+   "round": 24,
+   "home_off": "FC Schalke 04",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 02.03.2019 - Sa    15.30        24       208      FC Schalke 04                        Fortuna Düsseldorf"
+  },
+  {
+   "date": "02/03/2019",
+   "kickoff": "15:30",
+   "round": 24,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 02.03.2019 - Sa    15.30        24       209      Bayer 04 Leverkusen                  Sport-Club Freiburg"
+  },
+  {
+   "date": "02/03/2019",
+   "kickoff": "15:30",
+   "round": 24,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 02.03.2019 - Sa    15.30        24       211      Eintracht Frankfurt                  TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "02/03/2019",
+   "kickoff": "15:30",
+   "round": 24,
+   "home_off": "Hertha BSC",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 02.03.2019 - Sa    15.30        24       213      Hertha BSC                           1. FSV Mainz 05"
+  },
+  {
+   "date": "02/03/2019",
+   "kickoff": "15:30",
+   "round": 24,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "RB Leipzig",
+   "raw": " 02.03.2019 - Sa    15.30        24       216      1. FC Nürnberg                       RB Leipzig"
+  },
+  {
+   "date": "02/03/2019",
+   "kickoff": "18:30",
+   "round": 24,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "FC Bayern München",
+   "raw": " 02.03.2019 - Sa    18.30        24       212      Borussia Mönchengladbach             FC Bayern München"
+  },
+  {
+   "date": "03/03/2019",
+   "kickoff": "15:30",
+   "round": 24,
+   "home_off": "VfB Stuttgart",
+   "away_off": "Hannover 96",
+   "raw": " 03.03.2019 - So    15.30        24       210      VfB Stuttgart                        Hannover 96"
+  },
+  {
+   "date": "03/03/2019",
+   "kickoff": "18:00",
+   "round": 24,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "SV Werder Bremen",
+   "raw": " 03.03.2019 - So    18.00        24       215      VfL Wolfsburg                        SV Werder Bremen"
+  },
+  {
+   "date": "08/03/2019",
+   "kickoff": "20:30",
+   "round": 25,
+   "home_off": "SV Werder Bremen",
+   "away_off": "FC Schalke 04",
+   "raw": " 08.03.2019 - Fr    20.30        25       221      SV Werder Bremen                     FC Schalke 04"
+  },
+  {
+   "date": "09/03/2019",
+   "kickoff": "15:30",
+   "round": 25,
+   "home_off": "FC Bayern München",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 09.03.2019 - Sa    15.30        25       217      FC Bayern München                    VfL Wolfsburg"
+  },
+  {
+   "date": "09/03/2019",
+   "kickoff": "15:30",
+   "round": 25,
+   "home_off": "Borussia Dortmund",
+   "away_off": "VfB Stuttgart",
+   "raw": " 09.03.2019 - Sa    15.30        25       219      Borussia Dortmund                    VfB Stuttgart"
+  },
+  {
+   "date": "09/03/2019",
+   "kickoff": "15:30",
+   "round": 25,
+   "home_off": "RB Leipzig",
+   "away_off": "FC Augsburg",
+   "raw": " 09.03.2019 - Sa    15.30        25       220      RB Leipzig                           FC Augsburg"
+  },
+  {
+   "date": "09/03/2019",
+   "kickoff": "15:30",
+   "round": 25,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "Hertha BSC",
+   "raw": " 09.03.2019 - Sa    15.30        25       223      Sport-Club Freiburg                  Hertha BSC"
+  },
+  {
+   "date": "09/03/2019",
+   "kickoff": "18:30",
+   "round": 25,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 09.03.2019 - Sa    18.30        25       224      1. FSV Mainz 05                      Borussia Mönchengladbach"
+  },
+  {
+   "date": "10/03/2019",
+   "kickoff": "15:30",
+   "round": 25,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 10.03.2019 - So    15.30        25       218      TSG 1899 Hoffenheim                  1. FC Nürnberg"
+  },
+  {
+   "date": "10/03/2019",
+   "kickoff": "18:00",
+   "round": 25,
+   "home_off": "Hannover 96",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 10.03.2019 - So    18.00        25       222      Hannover 96                          Bayer 04 Leverkusen"
+  },
+  {
+   "date": "11/03/2019",
+   "kickoff": "20:30",
+   "round": 25,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "Eintracht Frankfurt",
+   "raw": "11.03.2019 - Mo     20.30        25       225      Fortuna Düsseldorf                   Eintracht Frankfurt"
+  },
+  {
+   "date": "15/03/2019",
+   "kickoff": "20:30",
+   "round": 26,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 15.03.2019 - Fr    20.30        26       231      Borussia Mönchengladbach            Sport-Club Freiburg"
+  },
+  {
+   "date": "16/03/2019",
+   "kickoff": "15:30",
+   "round": 26,
+   "home_off": "FC Schalke 04",
+   "away_off": "RB Leipzig",
+   "raw": " 16.03.2019 - Sa    15.30        26       227      FC Schalke 04                       RB Leipzig"
+  },
+  {
+   "date": "16/03/2019",
+   "kickoff": "15:30",
+   "round": 26,
+   "home_off": "VfB Stuttgart",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 16.03.2019 - Sa    15.30        26       229      VfB Stuttgart                       TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "16/03/2019",
+   "kickoff": "15:30",
+   "round": 26,
+   "home_off": "FC Augsburg",
+   "away_off": "Hannover 96",
+   "raw": " 16.03.2019 - Sa    15.30        26       233      FC Augsburg                         Hannover 96"
+  },
+  {
+   "date": "16/03/2019",
+   "kickoff": "15:30",
+   "round": 26,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 16.03.2019 - Sa    15.30        26       234      VfL Wolfsburg                       Fortuna Düsseldorf"
+  },
+  {
+   "date": "16/03/2019",
+   "kickoff": "18:30",
+   "round": 26,
+   "home_off": "Hertha BSC",
+   "away_off": "Borussia Dortmund",
+   "raw": " 16.03.2019 - Sa    18.30        26       232      Hertha BSC                          Borussia Dortmund"
+  },
+  {
+   "date": "17/03/2019",
+   "kickoff": "13:30",
+   "round": 26,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "SV Werder Bremen",
+   "raw": " 17.03.2019 - So    13.30        26       228      Bayer 04 Leverkusen                 SV Werder Bremen"
+  },
+  {
+   "date": "17/03/2019",
+   "kickoff": "15:30",
+   "round": 26,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 17.03.2019 - So    15.30        26       230      Eintracht Frankfurt                 1. FC Nürnberg"
+  },
+  {
+   "date": "17/03/2019",
+   "kickoff": "18:00",
+   "round": 26,
+   "home_off": "FC Bayern München",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 17.03.2019 - So    18.00        26       226      FC Bayern München                   1. FSV Mainz 05"
+  },
+  {
+   "date": "29/03/2019",
+   "kickoff": "20:30",
+   "round": 27,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 29.03.2019 - Fr    20.30        27       235      TSG 1899 Hoffenheim                 Bayer 04 Leverkusen"
+  },
+  {
+   "date": "30/03/2019",
+   "kickoff": "15:30",
+   "round": 27,
+   "home_off": "Borussia Dortmund",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 30.03.2019 - Sa    15.30        27       236      Borussia Dortmund                   VfL Wolfsburg"
+  },
+  {
+   "date": "30/03/2019",
+   "kickoff": "15:30",
+   "round": 27,
+   "home_off": "SV Werder Bremen",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 30.03.2019 - Sa    15.30        27       239      SV Werder Bremen                    1. FSV Mainz 05"
+  },
+  {
+   "date": "30/03/2019",
+   "kickoff": "15:30",
+   "round": 27,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "FC Bayern München",
+   "raw": " 30.03.2019 - Sa    15.30        27       241      Sport-Club Freiburg                 FC Bayern München"
+  },
+  {
+   "date": "30/03/2019",
+   "kickoff": "15:30",
+   "round": 27,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 30.03.2019 - Sa    15.30        27       242      Fortuna Düsseldorf                  Borussia Mönchengladbach"
+  },
+  {
+   "date": "30/03/2019",
+   "kickoff": "15:30",
+   "round": 27,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "FC Augsburg",
+   "raw": " 30.03.2019 - Sa    15.30        27       243      1. FC Nürnberg                      FC Augsburg"
+  },
+  {
+   "date": "30/03/2019",
+   "kickoff": "18:30",
+   "round": 27,
+   "home_off": "RB Leipzig",
+   "away_off": "Hertha BSC",
+   "raw": " 30.03.2019 - Sa    18.30        27       237      RB Leipzig                          Hertha BSC"
+  },
+  {
+   "date": "31/03/2019",
+   "kickoff": "15:30",
+   "round": 27,
+   "home_off": "Hannover 96",
+   "away_off": "FC Schalke 04",
+   "raw": " 31.03.2019 - So    15.30        27       240      Hannover 96                         FC Schalke 04"
+  },
+  {
+   "date": "31/03/2019",
+   "kickoff": "18:00",
+   "round": 27,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "VfB Stuttgart",
+   "raw": " 31.03.2019 - So    18.00        27       238      Eintracht Frankfurt                 VfB Stuttgart"
+  },
+  {
+   "date": "05/04/2019",
+   "kickoff": "20:30",
+   "round": 28,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 05.04.2019 - Fr    20.30        28       251      1. FSV Mainz 05                     Sport-Club Freiburg"
+  },
+  {
+   "date": "06/04/2019",
+   "kickoff": "15:30",
+   "round": 28,
+   "home_off": "FC Schalke 04",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 06.04.2019 - Sa    15.30        28       245      FC Schalke 04                       Eintracht Frankfurt"
+  },
+  {
+   "date": "06/04/2019",
+   "kickoff": "15:30",
+   "round": 28,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "RB Leipzig",
+   "raw": " 06.04.2019 - Sa    15.30        28       246      Bayer 04 Leverkusen                 RB Leipzig"
+  },
+  {
+   "date": "06/04/2019",
+   "kickoff": "15:30",
+   "round": 28,
+   "home_off": "VfB Stuttgart",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 06.04.2019 - Sa    15.30        28       247      VfB Stuttgart                       1. FC Nürnberg"
+  },
+  {
+   "date": "06/04/2019",
+   "kickoff": "15:30",
+   "round": 28,
+   "home_off": "Hertha BSC",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 06.04.2019 - Sa    15.30        28       249      Hertha BSC                          Fortuna Düsseldorf"
+  },
+  {
+   "date": "06/04/2019",
+   "kickoff": "15:30",
+   "round": 28,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "Hannover 96",
+   "raw": " 06.04.2019 - Sa    15.30        28       252      VfL Wolfsburg                       Hannover 96"
+  },
+  {
+   "date": "06/04/2019",
+   "kickoff": "18:30",
+   "round": 28,
+   "home_off": "FC Bayern München",
+   "away_off": "Borussia Dortmund",
+   "raw": " 06.04.2019 - Sa    18.30        28       244      FC Bayern München                   Borussia Dortmund"
+  },
+  {
+   "date": "07/04/2019",
+   "kickoff": "15:30",
+   "round": 28,
+   "home_off": "FC Augsburg",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 07.04.2019 - So    15.30        28       250      FC Augsburg                         TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "07/04/2019",
+   "kickoff": "18:00",
+   "round": 28,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "SV Werder Bremen",
+   "raw": " 07.04.2019 - So    18.00        28       248      Borussia Mönchengladbach            SV Werder Bremen"
+  },
+  {
+   "date": "12/04/2019",
+   "kickoff": "20:30",
+   "round": 29,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "FC Schalke 04",
+   "raw": "  12.04.2019 - Fr      20.30       29       261      1. FC Nürnberg                     FC Schalke 04"
+  },
+  {
+   "date": "13/04/2019",
+   "kickoff": "15:30",
+   "round": 29,
+   "home_off": "RB Leipzig",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 13.04.2019 - Sa       15.30       29       255      RB Leipzig                         VfL Wolfsburg"
+  },
+  {
+   "date": "13/04/2019",
+   "kickoff": "15:30",
+   "round": 29,
+   "home_off": "VfB Stuttgart",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 13.04.2019 - Sa       15.30       29       256      VfB Stuttgart                      Bayer 04 Leverkusen"
+  },
+  {
+   "date": "13/04/2019",
+   "kickoff": "15:30",
+   "round": 29,
+   "home_off": "SV Werder Bremen",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 13.04.2019 - Sa       15.30       29       258      SV Werder Bremen                   Sport-Club Freiburg"
+  },
+  {
+   "date": "13/04/2019",
+   "kickoff": "15:30",
+   "round": 29,
+   "home_off": "Hannover 96",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 13.04.2019 - Sa       15.30       29       259      Hannover 96                        Borussia Mönchengladbach"
+  },
+  {
+   "date": "13/04/2019",
+   "kickoff": "18:30",
+   "round": 29,
+   "home_off": "Borussia Dortmund",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 13.04.2019 - Sa       18.30       29       254      Borussia Dortmund                  1. FSV Mainz 05"
+  },
+  {
+   "date": "14/04/2019",
+   "kickoff": "13:30",
+   "round": 29,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "Hertha BSC",
+   "raw": " 14.04.2019 - So       13.30       29       253      TSG 1899 Hoffenheim                Hertha BSC"
+  },
+  {
+   "date": "14/04/2019",
+   "kickoff": "15:30",
+   "round": 29,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "FC Bayern München",
+   "raw": " 14.04.2019 - So       15.30       29       260      Fortuna Düsseldorf                 FC Bayern München"
+  },
+  {
+   "date": "14/04/2019",
+   "kickoff": "18:00",
+   "round": 29,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "FC Augsburg",
+   "raw": " 14.04.2019 - So       18.00       29       257      Eintracht Frankfurt                FC Augsburg"
+  },
+  {
+   "date": "20/04/2019",
+   "kickoff": "15:30",
+   "round": 30,
+   "home_off": "FC Bayern München",
+   "away_off": "SV Werder Bremen",
+   "raw": " 20.04.2019 - Sa       15.30       30       262      FC Bayern München                  SV Werder Bremen"
+  },
+  {
+   "date": "20/04/2019",
+   "kickoff": "15:30",
+   "round": 30,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 20.04.2019 - Sa       15.30       30       264      Bayer 04 Leverkusen                1. FC Nürnberg"
+  },
+  {
+   "date": "20/04/2019",
+   "kickoff": "15:30",
+   "round": 30,
+   "home_off": "FC Augsburg",
+   "away_off": "VfB Stuttgart",
+   "raw": " 20.04.2019 - Sa       15.30       30       267      FC Augsburg                        VfB Stuttgart"
+  },
+  {
+   "date": "20/04/2019",
+   "kickoff": "15:30",
+   "round": 30,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 20.04.2019 - Sa       15.30       30       269      1. FSV Mainz 05                    Fortuna Düsseldorf"
+  },
+  {
+   "date": "20/04/2019",
+   "kickoff": "18:30",
+   "round": 30,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "RB Leipzig",
+   "raw": " 20.04.2019 - Sa       18.30       30       265      Borussia Mönchengladbach RB Leipzig"
+  },
+  {
+   "date": "20/04/2019",
+   "kickoff": "20:30",
+   "round": 30,
+   "home_off": "FC Schalke 04",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 20.04.2019 - Sa       20.30       30       263      FC Schalke 04                      TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "21/04/2019",
+   "kickoff": "15:30",
+   "round": 30,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "Borussia Dortmund",
+   "raw": " 21.04.2019 - So       15.30       30       268      Sport-Club Freiburg                Borussia Dortmund"
+  },
+  {
+   "date": "21/04/2019",
+   "kickoff": "18:00",
+   "round": 30,
+   "home_off": "Hertha BSC",
+   "away_off": "Hannover 96",
+   "raw": " 21.04.2019 - So       18.00       30       266      Hertha BSC                         Hannover 96"
+  },
+  {
+   "date": "22/04/2019",
+   "kickoff": "20:30",
+   "round": 30,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 22.04.2019 - Mo       20.30       30       270      VfL Wolfsburg                      Eintracht Frankfurt"
+  },
+  {
+   "date": "26/04/2019",
+   "kickoff": "20:30",
+   "round": 31,
+   "home_off": "FC Augsburg",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": "  26.04.2019 - Fr      20.30       31       276      FC Augsburg                        Bayer 04 Leverkusen"
+  },
+  {
+   "date": "27/04/2019",
+   "kickoff": "15:30",
+   "round": 31,
+   "home_off": "Borussia Dortmund",
+   "away_off": "FC Schalke 04",
+   "raw": " 27.04.2019 - Sa       15.30       31       272      Borussia Dortmund                  FC Schalke 04"
+  },
+  {
+   "date": "27/04/2019",
+   "kickoff": "15:30",
+   "round": 31,
+   "home_off": "RB Leipzig",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 27.04.2019 - Sa       15.30       31       273      RB Leipzig                         Sport-Club Freiburg"
+  },
+  {
+   "date": "27/04/2019",
+   "kickoff": "15:30",
+   "round": 31,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "Hertha BSC",
+   "raw": " 27.04.2019 - Sa       15.30       31       275      Eintracht Frankfurt                Hertha BSC"
+  },
+  {
+   "date": "27/04/2019",
+   "kickoff": "15:30",
+   "round": 31,
+   "home_off": "Hannover 96",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 27.04.2019 - Sa       15.30       31       277      Hannover 96                        1. FSV Mainz 05"
+  },
+  {
+   "date": "27/04/2019",
+   "kickoff": "15:30",
+   "round": 31,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "SV Werder Bremen",
+   "raw": " 27.04.2019 - Sa       15.30       31       278      Fortuna Düsseldorf                 SV Werder Bremen"
+  },
+  {
+   "date": "27/04/2019",
+   "kickoff": "18:30",
+   "round": 31,
+   "home_off": "VfB Stuttgart",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 27.04.2019 - Sa       18.30       31       274      VfB Stuttgart                      Borussia Mönchengladbach"
+  },
+  {
+   "date": "28/04/2019",
+   "kickoff": "15:30",
+   "round": 31,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 28.04.2019 - So       15.30       31       271      TSG 1899 Hoffenheim                VfL Wolfsburg"
+  },
+  {
+   "date": "28/04/2019",
+   "kickoff": "18:00",
+   "round": 31,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "FC Bayern München",
+   "raw": " 28.04.2019 - So       18.00       31       279      1. FC Nürnberg                     FC Bayern München"
+  },
+  {
+   "date": "03/05/2019",
+   "kickoff": "20:30",
+   "round": 32,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "RB Leipzig",
+   "raw": "  03.05.2019 - Fr      20.30       32       287      1. FSV Mainz 05                    RB Leipzig"
+  },
+  {
+   "date": "04/05/2019",
+   "kickoff": "15:30",
+   "round": 32,
+   "home_off": "FC Bayern München",
+   "away_off": "Hannover 96",
+   "raw": " 04.05.2019 - Sa       15.30       32       280      FC Bayern München                  Hannover 96"
+  },
+  {
+   "date": "04/05/2019",
+   "kickoff": "15:30",
+   "round": 32,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 04.05.2019 - Sa       15.30       32       283      Borussia Mönchengladbach TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "04/05/2019",
+   "kickoff": "15:30",
+   "round": 32,
+   "home_off": "Hertha BSC",
+   "away_off": "VfB Stuttgart",
+   "raw": " 04.05.2019 - Sa       15.30       32       284      Hertha BSC                         VfB Stuttgart"
+  },
+  {
+   "date": "04/05/2019",
+   "kickoff": "15:30",
+   "round": 32,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 04.05.2019 - Sa       15.30       32       288      VfL Wolfsburg                      1. FC Nürnberg"
+  },
+  {
+   "date": "04/05/2019",
+   "kickoff": "18:30",
+   "round": 32,
+   "home_off": "SV Werder Bremen",
+   "away_off": "Borussia Dortmund",
+   "raw": " 04.05.2019 - Sa       18.30       32       285      SV Werder Bremen                   Borussia Dortmund"
+  },
+  {
+   "date": "05/05/2019",
+   "kickoff": "13:30",
+   "round": 32,
+   "home_off": "FC Schalke 04",
+   "away_off": "FC Augsburg",
+   "raw": " 05.05.2019 - So       13.30       32       281      FC Schalke 04                      FC Augsburg"
+  },
+  {
+   "date": "05/05/2019",
+   "kickoff": "15:30",
+   "round": 32,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 05.05.2019 - So       15.30       32       286      Sport-Club Freiburg                Fortuna Düsseldorf"
+  },
+  {
+   "date": "05/05/2019",
+   "kickoff": "18:00",
+   "round": 32,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 05.05.2019 - So       18.00       32       282      Bayer 04 Leverkusen                Eintracht Frankfurt"
+  },
+  {
+   "date": "11/05/2019",
+   "kickoff": "15:30",
+   "round": 33,
+   "home_off": "TSG 1899 Hoffenheim",
+   "away_off": "SV Werder Bremen",
+   "raw": " 11.05.2019 - Sa       15:30       33       289      TSG 1899 Hoffenheim                SV Werder Bremen"
+  },
+  {
+   "date": "11/05/2019",
+   "kickoff": "15:30",
+   "round": 33,
+   "home_off": "Borussia Dortmund",
+   "away_off": "Fortuna Düsseldorf",
+   "raw": " 11.05.2019 - Sa       15:30       33       290      Borussia Dortmund                  Fortuna Düsseldorf"
+  },
+  {
+   "date": "11/05/2019",
+   "kickoff": "15:30",
+   "round": 33,
+   "home_off": "Bayer 04 Leverkusen",
+   "away_off": "FC Schalke 04",
+   "raw": " 11.05.2019 - Sa       15:30       33       291      Bayer 04 Leverkusen                FC Schalke 04"
+  },
+  {
+   "date": "11/05/2019",
+   "kickoff": "15:30",
+   "round": 33,
+   "home_off": "RB Leipzig",
+   "away_off": "FC Bayern München",
+   "raw": " 11.05.2019 - Sa       15:30       33       292      RB Leipzig                         FC Bayern München"
+  },
+  {
+   "date": "11/05/2019",
+   "kickoff": "15:30",
+   "round": 33,
+   "home_off": "VfB Stuttgart",
+   "away_off": "VfL Wolfsburg",
+   "raw": " 11.05.2019 - Sa       15:30       33       293      VfB Stuttgart                      VfL Wolfsburg"
+  },
+  {
+   "date": "11/05/2019",
+   "kickoff": "15:30",
+   "round": 33,
+   "home_off": "Eintracht Frankfurt",
+   "away_off": "1. FSV Mainz 05",
+   "raw": " 11.05.2019 - Sa       15:30       33       294      Eintracht Frankfurt                1. FSV Mainz 05"
+  },
+  {
+   "date": "11/05/2019",
+   "kickoff": "15:30",
+   "round": 33,
+   "home_off": "FC Augsburg",
+   "away_off": "Hertha BSC",
+   "raw": " 11.05.2019 - Sa       15:30       33       295      FC Augsburg                        Hertha BSC"
+  },
+  {
+   "date": "11/05/2019",
+   "kickoff": "15:30",
+   "round": 33,
+   "home_off": "Hannover 96",
+   "away_off": "Sport-Club Freiburg",
+   "raw": " 11.05.2019 - Sa       15:30       33       296      Hannover 96                        Sport-Club Freiburg"
+  },
+  {
+   "date": "11/05/2019",
+   "kickoff": "15:30",
+   "round": 33,
+   "home_off": "1. FC Nürnberg",
+   "away_off": "Borussia Mönchengladbach",
+   "raw": " 11.05.2019 - Sa       15:30       33       297      1. FC Nürnberg                     Borussia Mönchengladbach"
+  },
+  {
+   "date": "18/05/2019",
+   "kickoff": "15:30",
+   "round": 34,
+   "home_off": "FC Bayern München",
+   "away_off": "Eintracht Frankfurt",
+   "raw": " 18.05.2019 - Sa       15:30       34       298      FC Bayern München                  Eintracht Frankfurt"
+  },
+  {
+   "date": "18/05/2019",
+   "kickoff": "15:30",
+   "round": 34,
+   "home_off": "FC Schalke 04",
+   "away_off": "VfB Stuttgart",
+   "raw": " 18.05.2019 - Sa       15:30       34       299      FC Schalke 04            VfB Stuttgart"
+  },
+  {
+   "date": "18/05/2019",
+   "kickoff": "15:30",
+   "round": 34,
+   "home_off": "Borussia Mönchengladbach",
+   "away_off": "Borussia Dortmund",
+   "raw": " 18.05.2019 - Sa       15:30       34       300      Borussia Mönchengladbach Borussia Dortmund"
+  },
+  {
+   "date": "18/05/2019",
+   "kickoff": "15:30",
+   "round": 34,
+   "home_off": "Hertha BSC",
+   "away_off": "Bayer 04 Leverkusen",
+   "raw": " 18.05.2019 - Sa       15:30       34       301      Hertha BSC                         Bayer 04 Leverkusen"
+  },
+  {
+   "date": "18/05/2019",
+   "kickoff": "15:30",
+   "round": 34,
+   "home_off": "SV Werder Bremen",
+   "away_off": "RB Leipzig",
+   "raw": " 18.05.2019 - Sa       15:30       34       302      SV Werder Bremen                   RB Leipzig"
+  },
+  {
+   "date": "18/05/2019",
+   "kickoff": "15:30",
+   "round": 34,
+   "home_off": "Sport-Club Freiburg",
+   "away_off": "1. FC Nürnberg",
+   "raw": " 18.05.2019 - Sa       15:30       34       303      Sport-Club Freiburg                1. FC Nürnberg"
+  },
+  {
+   "date": "18/05/2019",
+   "kickoff": "15:30",
+   "round": 34,
+   "home_off": "1. FSV Mainz 05",
+   "away_off": "TSG 1899 Hoffenheim",
+   "raw": " 18.05.2019 - Sa       15:30       34       304      1. FSV Mainz 05                    TSG 1899 Hoffenheim"
+  },
+  {
+   "date": "18/05/2019",
+   "kickoff": "15:30",
+   "round": 34,
+   "home_off": "VfL Wolfsburg",
+   "away_off": "FC Augsburg",
+   "raw": " 18.05.2019 - Sa       15:30       34       305      VfL Wolfsburg                      FC Augsburg"
+  },
+  {
+   "date": "18/05/2019",
+   "kickoff": "15:30",
+   "round": 34,
+   "home_off": "Fortuna Düsseldorf",
+   "away_off": "Hannover 96",
+   "raw": " 18.05.2019 - Sa       15:30       34       306      Fortuna Düsseldorf                 Hannover 96"
+  }
+ ],
+ "diffs": [],
+ "unmatched": [
+  {
+   "row": {
+    "date": "11/05/2019",
+    "kickoff": "15:30",
+    "round": 33,
+    "home_off": "Eintracht Frankfurt",
+    "away_off": "1. FSV Mainz 05",
+    "raw": " 11.05.2019 - Sa       15:30       33       294      Eintracht Frankfurt                1. FSV Mainz 05"
+   },
+   "why": "no -007 row"
+  }
+ ],
+ "missing_in_pdf": []
+}

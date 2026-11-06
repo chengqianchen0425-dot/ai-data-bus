@@ -1,0 +1,307 @@
+wk,date,time,home,away
+1,2018-08-24,20:30,Bayern Munich,Hoffenheim
+1,2018-08-25,15:30,Düsseldorf,Augsburg
+1,2018-08-25,15:30,Hertha BSC,Nürnberg
+1,2018-08-25,15:30,Werder Bremen,Hannover 96
+1,2018-08-25,15:30,Wolfsburg,Schalke 04
+1,2018-08-25,15:30,Freiburg,Frankfurt
+1,2018-08-25,18:30,Gladbach,Leverkusen
+1,2018-08-26,15:30,Mainz 05,Stuttgart
+1,2018-08-26,18:00,Dortmund,RB Leipzig
+2,2018-08-31,20:30,Hannover 96,Dortmund
+2,2018-09-01,15:30,Augsburg,Gladbach
+2,2018-09-01,15:30,Nürnberg,Mainz 05
+2,2018-09-01,15:30,Hoffenheim,Freiburg
+2,2018-09-01,15:30,Frankfurt,Werder Bremen
+2,2018-09-01,15:30,Leverkusen,Wolfsburg
+2,2018-09-01,18:30,Stuttgart,Bayern Munich
+2,2018-09-02,15:30,RB Leipzig,Düsseldorf
+2,2018-09-02,18:00,Schalke 04,Hertha BSC
+3,2018-09-14,20:30,Dortmund,Frankfurt
+3,2018-09-15,15:30,Wolfsburg,Hertha BSC
+3,2018-09-15,15:30,RB Leipzig,Hannover 96
+3,2018-09-15,15:30,Bayern Munich,Leverkusen
+3,2018-09-15,15:30,Düsseldorf,Hoffenheim
+3,2018-09-15,15:30,Mainz 05,Augsburg
+3,2018-09-15,18:30,Gladbach,Schalke 04
+3,2018-09-16,15:30,Werder Bremen,Nürnberg
+3,2018-09-16,18:00,Freiburg,Stuttgart
+4,2018-09-21,20:30,Stuttgart,Düsseldorf
+4,2018-09-22,15:30,Hertha BSC,Gladbach
+4,2018-09-22,15:30,Wolfsburg,Freiburg
+4,2018-09-22,15:30,Nürnberg,Hannover 96
+4,2018-09-22,15:30,Hoffenheim,Dortmund
+4,2018-09-22,15:30,Augsburg,Werder Bremen
+4,2018-09-22,18:30,Schalke 04,Bayern Munich
+4,2018-09-23,15:30,Leverkusen,Mainz 05
+4,2018-09-23,18:00,Frankfurt,RB Leipzig
+5,2018-09-25,18:30,Werder Bremen,Hertha BSC
+5,2018-09-25,20:30,Bayern Munich,Augsburg
+5,2018-09-25,20:30,Freiburg,Schalke 04
+5,2018-09-25,20:30,Hannover 96,Hoffenheim
+5,2018-09-26,18:30,Düsseldorf,Leverkusen
+5,2018-09-26,20:30,Gladbach,Frankfurt
+5,2018-09-26,20:30,RB Leipzig,Stuttgart
+5,2018-09-26,20:30,Dortmund,Nürnberg
+5,2018-09-26,20:30,Mainz 05,Wolfsburg
+6,2018-09-28,20:30,Hertha BSC,Bayern Munich
+6,2018-09-29,15:30,Hoffenheim,RB Leipzig
+6,2018-09-29,15:30,Wolfsburg,Gladbach
+6,2018-09-29,15:30,Schalke 04,Mainz 05
+6,2018-09-29,15:30,Stuttgart,Werder Bremen
+6,2018-09-29,15:30,Nürnberg,Düsseldorf
+6,2018-09-29,18:30,Leverkusen,Dortmund
+6,2018-09-30,15:30,Frankfurt,Hannover 96
+6,2018-09-30,18:00,Augsburg,Freiburg
+7,2018-10-05,20:30,Werder Bremen,Wolfsburg
+7,2018-10-06,15:30,Mainz 05,Hertha BSC
+7,2018-10-06,15:30,Hannover 96,Stuttgart
+7,2018-10-06,15:30,Dortmund,Augsburg
+7,2018-10-06,15:30,Düsseldorf,Schalke 04
+7,2018-10-06,18:30,Bayern Munich,Gladbach
+7,2018-10-07,13:30,Freiburg,Leverkusen
+7,2018-10-07,15:30,Hoffenheim,Frankfurt
+7,2018-10-07,18:00,RB Leipzig,Nürnberg
+8,2018-10-19,20:30,Frankfurt,Düsseldorf
+8,2018-10-20,15:30,Wolfsburg,Bayern Munich
+8,2018-10-20,15:30,Stuttgart,Dortmund
+8,2018-10-20,15:30,Leverkusen,Hannover 96
+8,2018-10-20,15:30,Augsburg,RB Leipzig
+8,2018-10-20,15:30,Nürnberg,Hoffenheim
+8,2018-10-20,18:30,Schalke 04,Werder Bremen
+8,2018-10-21,15:30,Hertha BSC,Freiburg
+8,2018-10-21,18:00,Gladbach,Mainz 05
+9,2018-10-26,20:30,Freiburg,Gladbach
+9,2018-10-27,15:30,Mainz 05,Bayern Munich
+9,2018-10-27,15:30,Dortmund,Hertha BSC
+9,2018-10-27,15:30,Düsseldorf,Wolfsburg
+9,2018-10-27,15:30,Hannover 96,Augsburg
+9,2018-10-27,18:30,Hoffenheim,Stuttgart
+9,2018-10-28,13:30,Nürnberg,Frankfurt
+9,2018-10-28,15:30,RB Leipzig,Schalke 04
+9,2018-10-28,18:00,Werder Bremen,Leverkusen
+10,2018-11-02,20:30,Stuttgart,Frankfurt
+10,2018-11-03,15:30,Augsburg,Nürnberg
+10,2018-11-03,15:30,Wolfsburg,Dortmund
+10,2018-11-03,15:30,Bayern Munich,Freiburg
+10,2018-11-03,15:30,Leverkusen,Hoffenheim
+10,2018-11-03,15:30,Schalke 04,Hannover 96
+10,2018-11-03,18:30,Hertha BSC,RB Leipzig
+10,2018-11-04,15:30,Gladbach,Düsseldorf
+10,2018-11-04,18:00,Mainz 05,Werder Bremen
+11,2018-11-09,20:30,Hannover 96,Wolfsburg
+11,2018-11-10,15:30,Werder Bremen,Gladbach
+11,2018-11-10,15:30,Freiburg,Mainz 05
+11,2018-11-10,15:30,Hoffenheim,Augsburg
+11,2018-11-10,15:30,Düsseldorf,Hertha BSC
+11,2018-11-10,15:30,Nürnberg,Stuttgart
+11,2018-11-10,18:30,Dortmund,Bayern Munich
+11,2018-11-11,15:30,RB Leipzig,Leverkusen
+11,2018-11-11,18:00,Frankfurt,Schalke 04
+12,2018-11-23,20:30,Leverkusen,Stuttgart
+12,2018-11-24,15:30,Mainz 05,Dortmund
+12,2018-11-24,15:30,Augsburg,Frankfurt
+12,2018-11-24,15:30,Wolfsburg,RB Leipzig
+12,2018-11-24,15:30,Bayern Munich,Düsseldorf
+12,2018-11-24,15:30,Hertha BSC,Hoffenheim
+12,2018-11-24,18:30,Schalke 04,Nürnberg
+12,2018-11-25,15:30,Freiburg,Werder Bremen
+12,2018-11-25,18:00,Gladbach,Hannover 96
+13,2018-11-30,20:30,Düsseldorf,Mainz 05
+13,2018-12-01,15:30,Hannover 96,Hertha BSC
+13,2018-12-01,15:30,Werder Bremen,Bayern Munich
+13,2018-12-01,15:30,Stuttgart,Augsburg
+13,2018-12-01,15:30,Dortmund,Freiburg
+13,2018-12-01,18:30,Hoffenheim,Schalke 04
+13,2018-12-02,15:30,RB Leipzig,Gladbach
+13,2018-12-02,18:00,Frankfurt,Wolfsburg
+13,2018-12-03,20:30,Nürnberg,Leverkusen
+14,2018-12-07,20:30,Werder Bremen,Düsseldorf
+14,2018-12-08,15:30,Wolfsburg,Hoffenheim
+14,2018-12-08,15:30,Schalke 04,Dortmund
+14,2018-12-08,15:30,Bayern Munich,Nürnberg
+14,2018-12-08,15:30,Freiburg,RB Leipzig
+14,2018-12-08,15:30,Leverkusen,Augsburg
+14,2018-12-08,18:30,Hertha BSC,Frankfurt
+14,2018-12-09,15:30,Mainz 05,Hannover 96
+14,2018-12-09,18:00,Gladbach,Stuttgart
+15,2018-12-14,20:30,Nürnberg,Wolfsburg
+15,2018-12-15,15:30,Hannover 96,Bayern Munich
+15,2018-12-15,15:30,Hoffenheim,Gladbach
+15,2018-12-15,15:30,Düsseldorf,Freiburg
+15,2018-12-15,15:30,Augsburg,Schalke 04
+15,2018-12-15,15:30,Stuttgart,Hertha BSC
+15,2018-12-15,18:30,Dortmund,Werder Bremen
+15,2018-12-16,15:30,RB Leipzig,Mainz 05
+15,2018-12-16,18:00,Frankfurt,Leverkusen
+16,2018-12-18,18:30,Gladbach,Nürnberg
+16,2018-12-18,20:30,Düsseldorf,Dortmund
+16,2018-12-18,20:30,Wolfsburg,Stuttgart
+16,2018-12-18,20:30,Hertha BSC,Augsburg
+16,2018-12-19,18:30,Schalke 04,Leverkusen
+16,2018-12-19,20:30,Mainz 05,Frankfurt
+16,2018-12-19,20:30,Freiburg,Hannover 96
+16,2018-12-19,20:30,Werder Bremen,Hoffenheim
+16,2018-12-19,20:30,Bayern Munich,RB Leipzig
+17,2018-12-21,20:30,Dortmund,Gladbach
+17,2018-12-22,15:30,Hannover 96,Düsseldorf
+17,2018-12-22,15:30,Nürnberg,Freiburg
+17,2018-12-22,15:30,Stuttgart,Schalke 04
+17,2018-12-22,15:30,Leverkusen,Hertha BSC
+17,2018-12-22,15:30,RB Leipzig,Werder Bremen
+17,2018-12-22,18:30,Frankfurt,Bayern Munich
+17,2018-12-23,15:30,Augsburg,Wolfsburg
+17,2018-12-23,18:00,Hoffenheim,Mainz 05
+18,2019-01-18,20:30,Hoffenheim,Bayern Munich
+18,2019-01-19,15:30,Hannover 96,Werder Bremen
+18,2019-01-19,15:30,Frankfurt,Freiburg
+18,2019-01-19,15:30,Augsburg,Düsseldorf
+18,2019-01-19,15:30,Leverkusen,Gladbach
+18,2019-01-19,15:30,Stuttgart,Mainz 05
+18,2019-01-19,18:30,RB Leipzig,Dortmund
+18,2019-01-20,15:30,Nürnberg,Hertha BSC
+18,2019-01-20,18:00,Schalke 04,Wolfsburg
+19,2019-01-25,20:30,Hertha BSC,Schalke 04
+19,2019-01-26,15:30,Wolfsburg,Leverkusen
+19,2019-01-26,15:30,Gladbach,Augsburg
+19,2019-01-26,15:30,Mainz 05,Nürnberg
+19,2019-01-26,15:30,Dortmund,Hannover 96
+19,2019-01-26,15:30,Freiburg,Hoffenheim
+19,2019-01-26,18:30,Werder Bremen,Frankfurt
+19,2019-01-27,15:30,Bayern Munich,Stuttgart
+19,2019-01-27,18:00,Düsseldorf,RB Leipzig
+20,2019-02-01,20:30,Hannover 96,RB Leipzig
+20,2019-02-02,15:30,Hertha BSC,Wolfsburg
+20,2019-02-02,15:30,Frankfurt,Dortmund
+20,2019-02-02,15:30,Leverkusen,Bayern Munich
+20,2019-02-02,15:30,Hoffenheim,Düsseldorf
+20,2019-02-02,15:30,Nürnberg,Werder Bremen
+20,2019-02-02,18:30,Schalke 04,Gladbach
+20,2019-02-03,15:30,Augsburg,Mainz 05
+20,2019-02-03,18:00,Stuttgart,Freiburg
+21,2019-02-08,20:30,Mainz 05,Leverkusen
+21,2019-02-09,15:30,Gladbach,Hertha BSC
+21,2019-02-09,15:30,Freiburg,Wolfsburg
+21,2019-02-09,15:30,Dortmund,Hoffenheim
+21,2019-02-09,15:30,Hannover 96,Nürnberg
+21,2019-02-09,15:30,RB Leipzig,Frankfurt
+21,2019-02-09,18:30,Bayern Munich,Schalke 04
+21,2019-02-10,15:30,Werder Bremen,Augsburg
+21,2019-02-10,18:00,Düsseldorf,Stuttgart
+22,2019-02-15,20:30,Augsburg,Bayern Munich
+22,2019-02-16,15:30,Hoffenheim,Hannover 96
+22,2019-02-16,15:30,Schalke 04,Freiburg
+22,2019-02-16,15:30,Wolfsburg,Mainz 05
+22,2019-02-16,15:30,Stuttgart,RB Leipzig
+22,2019-02-16,18:30,Hertha BSC,Werder Bremen
+22,2019-02-17,15:30,Frankfurt,Gladbach
+22,2019-02-17,18:00,Leverkusen,Düsseldorf
+22,2019-02-18,20:30,Nürnberg,Dortmund
+23,2019-02-22,20:30,Werder Bremen,Stuttgart
+23,2019-02-23,15:30,Mainz 05,Schalke 04
+23,2019-02-23,15:30,Bayern Munich,Hertha BSC
+23,2019-02-23,15:30,Freiburg,Augsburg
+23,2019-02-23,15:30,Gladbach,Wolfsburg
+23,2019-02-23,18:30,Düsseldorf,Nürnberg
+23,2019-02-24,15:30,Hannover 96,Frankfurt
+23,2019-02-24,18:00,Dortmund,Leverkusen
+23,2019-02-25,20:30,RB Leipzig,Hoffenheim
+24,2019-03-01,20:30,Augsburg,Dortmund
+24,2019-03-02,15:30,Leverkusen,Freiburg
+24,2019-03-02,15:30,Nürnberg,RB Leipzig
+24,2019-03-02,15:30,Frankfurt,Hoffenheim
+24,2019-03-02,15:30,Hertha BSC,Mainz 05
+24,2019-03-02,15:30,Schalke 04,Düsseldorf
+24,2019-03-02,18:30,Gladbach,Bayern Munich
+24,2019-03-03,15:30,Stuttgart,Hannover 96
+24,2019-03-03,18:00,Wolfsburg,Werder Bremen
+25,2019-03-08,20:30,Werder Bremen,Schalke 04
+25,2019-03-09,15:30,RB Leipzig,Augsburg
+25,2019-03-09,15:30,Freiburg,Hertha BSC
+25,2019-03-09,15:30,Dortmund,Stuttgart
+25,2019-03-09,15:30,Bayern Munich,Wolfsburg
+25,2019-03-09,18:30,Mainz 05,Gladbach
+25,2019-03-10,15:30,Hoffenheim,Nürnberg
+25,2019-03-10,18:00,Hannover 96,Leverkusen
+25,2019-03-11,20:30,Düsseldorf,Frankfurt
+26,2019-03-15,20:30,Gladbach,Freiburg
+26,2019-03-16,15:30,Augsburg,Hannover 96
+26,2019-03-16,15:30,Schalke 04,RB Leipzig
+26,2019-03-16,15:30,Wolfsburg,Düsseldorf
+26,2019-03-16,15:30,Stuttgart,Hoffenheim
+26,2019-03-16,18:30,Hertha BSC,Dortmund
+26,2019-03-17,13:30,Leverkusen,Werder Bremen
+26,2019-03-17,15:30,Frankfurt,Nürnberg
+26,2019-03-17,18:00,Bayern Munich,Mainz 05
+27,2019-03-29,20:30,Hoffenheim,Leverkusen
+27,2019-03-30,15:30,Düsseldorf,Gladbach
+27,2019-03-30,15:30,Freiburg,Bayern Munich
+27,2019-03-30,15:30,Nürnberg,Augsburg
+27,2019-03-30,15:30,Werder Bremen,Mainz 05
+27,2019-03-30,15:30,Dortmund,Wolfsburg
+27,2019-03-30,18:30,RB Leipzig,Hertha BSC
+27,2019-03-31,15:30,Hannover 96,Schalke 04
+27,2019-03-31,18:00,Frankfurt,Stuttgart
+28,2019-04-05,20:30,Mainz 05,Freiburg
+28,2019-04-06,15:30,Wolfsburg,Hannover 96
+28,2019-04-06,15:30,Leverkusen,RB Leipzig
+28,2019-04-06,15:30,Hertha BSC,Düsseldorf
+28,2019-04-06,15:30,Stuttgart,Nürnberg
+28,2019-04-06,15:30,Schalke 04,Frankfurt
+28,2019-04-06,18:30,Bayern Munich,Dortmund
+28,2019-04-07,15:30,Augsburg,Hoffenheim
+28,2019-04-07,18:00,Gladbach,Werder Bremen
+29,2019-04-12,20:30,Nürnberg,Schalke 04
+29,2019-04-13,15:30,RB Leipzig,Wolfsburg
+29,2019-04-13,15:30,Werder Bremen,Freiburg
+29,2019-04-13,15:30,Stuttgart,Leverkusen
+29,2019-04-13,15:30,Hannover 96,Gladbach
+29,2019-04-13,18:30,Dortmund,Mainz 05
+29,2019-04-14,13:30,Hoffenheim,Hertha BSC
+29,2019-04-14,15:30,Düsseldorf,Bayern Munich
+29,2019-04-14,18:00,Frankfurt,Augsburg
+30,2019-04-20,15:30,Bayern Munich,Werder Bremen
+30,2019-04-20,15:30,Leverkusen,Nürnberg
+30,2019-04-20,15:30,Mainz 05,Düsseldorf
+30,2019-04-20,15:30,Augsburg,Stuttgart
+30,2019-04-20,18:30,Gladbach,RB Leipzig
+30,2019-04-20,20:30,Schalke 04,Hoffenheim
+30,2019-04-21,15:30,Freiburg,Dortmund
+30,2019-04-21,18:00,Hertha BSC,Hannover 96
+30,2019-04-22,20:30,Wolfsburg,Frankfurt
+31,2019-04-26,20:30,Augsburg,Leverkusen
+31,2019-04-27,15:30,Dortmund,Schalke 04
+31,2019-04-27,15:30,Düsseldorf,Werder Bremen
+31,2019-04-27,15:30,Hannover 96,Mainz 05
+31,2019-04-27,15:30,Frankfurt,Hertha BSC
+31,2019-04-27,15:30,RB Leipzig,Freiburg
+31,2019-04-27,18:30,Stuttgart,Gladbach
+31,2019-04-28,15:30,Hoffenheim,Wolfsburg
+31,2019-04-28,18:00,Nürnberg,Bayern Munich
+32,2019-05-03,20:30,Mainz 05,RB Leipzig
+32,2019-05-04,15:30,Hertha BSC,Stuttgart
+32,2019-05-04,15:30,Wolfsburg,Nürnberg
+32,2019-05-04,15:30,Bayern Munich,Hannover 96
+32,2019-05-04,15:30,Gladbach,Hoffenheim
+32,2019-05-04,18:30,Werder Bremen,Dortmund
+32,2019-05-05,13:30,Schalke 04,Augsburg
+32,2019-05-05,15:30,Freiburg,Düsseldorf
+32,2019-05-05,18:00,Leverkusen,Frankfurt
+33,2019-05-11,15:30,Nürnberg,Gladbach
+33,2019-05-11,15:30,Hoffenheim,Werder Bremen
+33,2019-05-11,15:30,Hannover 96,Freiburg
+33,2019-05-11,15:30,Leverkusen,Schalke 04
+33,2019-05-11,15:30,RB Leipzig,Bayern Munich
+33,2019-05-11,15:30,Stuttgart,Wolfsburg
+33,2019-05-11,15:30,Augsburg,Hertha BSC
+33,2019-05-11,15:30,Dortmund,Düsseldorf
+33,2019-05-12,18:00,Frankfurt,Mainz 05
+34,2019-05-18,15:30,Bayern Munich,Frankfurt
+34,2019-05-18,15:30,Hertha BSC,Leverkusen
+34,2019-05-18,15:30,Schalke 04,Stuttgart
+34,2019-05-18,15:30,Düsseldorf,Hannover 96
+34,2019-05-18,15:30,Mainz 05,Hoffenheim
+34,2019-05-18,15:30,Gladbach,Dortmund
+34,2019-05-18,15:30,Werder Bremen,RB Leipzig
+34,2019-05-18,15:30,Wolfsburg,Augsburg
+34,2019-05-18,15:30,Freiburg,Nürnberg
