@@ -1,0 +1,28 @@
+{
+  "id": "req-20261107-001",
+  "type": "deep_research",
+  "from": "codex",
+  "target": "muse",
+  "created_at": "2026-11-07T12:51:15+08:00",
+  "params": {
+    "topic": "奥甲 2019/20、2012/13、2022/23 三季缺失场次的官方轮次补口",
+    "context": {
+      "previous_request": "req-20261106-001",
+      "previous_result": "2025/2026 的 192 场轮次已交付，并与 openfootball 逐场 192/192 一致",
+      "remaining_gap": "14 条 CSV 行缺少 official_round，已挂 blocked_source_gap"
+    },
+    "questions": [
+      "G1 2019/2020 赛季：openfootball 文件只到 2020-06-30，但该季实际 2020-07-04 完赛。请给出 2020-07-01 至 2020-07-04 之间的全部联赛场次，逐场包含 date、home_team、away_team、official_round、competition_phase（Grunddurchgang / Meistergruppe / Qualifikationsgruppe）与来源 URL。已知涉及对阵：SK Rapid-LASK、Salzburg-Sturm Graz、Hartberg-Wolfsberger AC、Austria Vienna-Mattersburg、St. Polten-Altach、Tirol-Admira、LASK-Salzburg、Sturm Graz-Hartberg、Wolfsberger AC-SK Rapid、Austria Vienna-Altach、Austria Vienna-Hartberg、Hartberg-Austria Vienna。",
+      "G2 2012/2013 赛季：Wacker Innsbruck vs Sturm Graz，CSV 记为 2012-11-24。请给出官方日期与 official_round，并说明是否延期。",
+      "G3 2022/2023 赛季：CSV 中有一条场次未能对应官方赛程（Wolfsberger AC vs A. Lustenau 域内的缺场）。请给出该季官方 32 轮的完整轮次表，或至少指出 CSV 与官方赛程的差异场次及其 official_round。",
+      "G4 如上述某场确实不存在（例如改期后合并或判罚取消），请明确说明，并给出官方依据；不要用推测补齐。"
+    ],
+    "deliverable_format": "data.report 为 markdown；data.audit 给 expected/discovered/complete/partial/missing；每场附 source_url。若可，附一个 CSV：date,home_team,away_team,official_round,competition_phase,source_url。",
+    "exclude": [
+      "Qimen / 奇门 / 宫位 / 五行 / 模型方向",
+      "Base / Shadow / 概率 / 权重 / Gold / Outcome / Review",
+      "赔率与盘口"
+    ],
+    "reminder": "Muse = 抓取器/搜索器，不是判断器；找不到就如实报 missing，不要编造轮次。"
+  }
+}
